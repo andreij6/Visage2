@@ -251,7 +251,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\API\Store\" />
-    <Folder Include="Scripts\custom\" />
+    <Folder Include="Scripts\custom\VisageApp\controllers\" />
+    <Folder Include="Scripts\custom\VisageApp\factories\" />
     <Folder Include="Templates\Admin\" />
     <Folder Include="Templates\Front\" />
   </ItemGroup>
@@ -277,6 +278,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\routes\Config.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\VisageApp.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
