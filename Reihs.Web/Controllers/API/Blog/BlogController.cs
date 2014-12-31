@@ -4,19 +4,25 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Visage.Services.Blog;
 
 namespace Reihs.Web.Controllers.API
 {
 	public class BlogController : ApiController
 	{
 		#region Dependencies
-
+		public IBlogService BlogService { get; set; }
 		#endregion
 
-		#region Constructor
+		#region Constructors
 		public BlogController()
 		{
+			BlogService = new BlogService();
+		}
 
+		public BlogController(IBlogService blogService)
+		{
+			BlogService = blogService;
 		}
 		#endregion
 
