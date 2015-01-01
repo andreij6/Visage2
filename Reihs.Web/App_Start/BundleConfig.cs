@@ -9,10 +9,27 @@ namespace Reihs.Web
 		public static void RegisterBundles(BundleCollection bundles)
 		{
 			bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-					  "~/Scripts/defaults/jquery-{version}.js"));
+					  "~/Scripts/defaults/jquery/jquery-{version}.js"));
 
 			bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-					  "~/Scripts/defaults/jquery.validate*"));
+					  "~/Scripts/defaults/jquery/jquery.validate*"));
+
+			bundles.Add(new ScriptBundle("~/bundles/angularcore").Include(
+						"~/Scripts/defaults/angular/angular.js",
+						"~/Scripts/defaults/angular/angular-route.js",
+						"~/Scripts/defaults/angular/angular-sanitize.js"));
+
+			bundles.Add(new ScriptBundle("~/bundles/holder").Include(
+						"~/Scripts/defaults/holder/holder.js"
+					));
+
+			bundles.Add(new ScriptBundle("~/bundles/VisageApp").Include(
+						"~/Scripts/custom/VisageApp/controllers/Index.js",
+						"~/Scripts/custom/VisageApp/controllers/About.js",
+						"~/Scripts/custom/VisageApp/controllers/Contact.js",
+						"~/Scripts/custom/VisageApp/routes/Config.js",
+						"~/Scripts/custom/VisageApp/VisageApp.js"
+						));
 
 			// Use the development version of Modernizr to develop with and learn from. Then, when you're
 			// ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -20,12 +37,15 @@ namespace Reihs.Web
 					  "~/Scripts/defaults/modernizr-*"));
 
 			bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-					"~/Scripts/defaults/bootstrap.js",
+					"~/Scripts/defaults/bootstrap/bootstrap.js",
 					"~/Scripts/defaults/respond.js"));
 
 			bundles.Add(new StyleBundle("~/Content/css").Include(
-					"~/Content/defaults/bootstrap.css",
-					"~/Content/defaults/site.css"));
+					"~/Content/defaults/bootstrap.css"));
+
+			bundles.Add(new StyleBundle("~/Content/Front/css").Include(
+					"~/Content/Front/carousel.css",
+					"~/Content/Front/Site.css"));
 		}
 	}
 }

@@ -186,34 +186,50 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Front\carousel.css" />
     <Content Include="Content\defaults\bootstrap.css" />
     <Content Include="Content\defaults\bootstrap.min.css" />
     <Content Include="Content\defaults\font-awesome.css" />
     <Content Include="Content\defaults\font-awesome.min.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\defaults\bootstrap.js" />
-    <Content Include="Scripts\defaults\bootstrap.min.js" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Content\Front\Site.css" />
+    <Content Include="Scripts\custom\google-map\HomeMap.js" />
+    <Content Include="Scripts\defaults\angular\angular-route.js" />
+    <Content Include="Scripts\defaults\angular\angular-route.min.js" />
+    <Content Include="Scripts\defaults\angular\angular-sanitize.js" />
+    <Content Include="Scripts\defaults\angular\angular-sanitize.min.js" />
+    <Content Include="Scripts\defaults\angular\angular-mocks.js" />
+    <Content Include="Scripts\defaults\angular\angular.js" />
+    <Content Include="Scripts\defaults\angular\angular.min.js" />
+    <Content Include="Scripts\defaults\bootstrap\bootstrap.js" />
+    <Content Include="Scripts\defaults\bootstrap\bootstrap.min.js" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\Visage.pubxml" />
-    <None Include="Scripts\defaults\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\defaults\jquery-1.10.2.js" />
-    <Content Include="Scripts\defaults\jquery-1.10.2.min.js" />
-    <None Include="Scripts\defaults\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\defaults\jquery.validate.js" />
-    <Content Include="Scripts\defaults\jquery.validate.min.js" />
-    <Content Include="Scripts\defaults\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\defaults\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\defaults\angular\angular.min.js.map" />
+    <Content Include="Scripts\defaults\angular\angular-route.min.js.map" />
+    <Content Include="Scripts\defaults\angular\angular-sanitize.min.js.map" />
+    <None Include="Scripts\defaults\jquery\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\defaults\jquery\jquery-1.10.2.js" />
+    <Content Include="Scripts\defaults\jquery\jquery-1.10.2.min.js" />
+    <None Include="Scripts\defaults\jquery\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\defaults\jquery\jquery.validate.js" />
+    <Content Include="Scripts\defaults\jquery\jquery.validate.min.js" />
+    <Content Include="Scripts\defaults\jquery\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\defaults\jquery\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\defaults\modernizr-2.6.2.js" />
     <Content Include="Scripts\defaults\respond.js" />
     <Content Include="Scripts\defaults\respond.min.js" />
     <Content Include="Scripts\defaults\_references.js" />
+    <Content Include="Scripts\defaults\holder\holder.js" />
+    <Content Include="Templates\Front\About.html" />
+    <Content Include="Templates\Front\Contact.html" />
+    <Content Include="Templates\Front\Home.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -225,7 +241,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Scripts\defaults\jquery-1.10.2.min.map" />
+    <Content Include="Scripts\defaults\jquery\jquery-1.10.2.min.map" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -247,19 +263,19 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\API\Store\" />
-    <Folder Include="Scripts\custom\VisageApp\controllers\" />
     <Folder Include="Scripts\custom\VisageApp\factories\" />
+    <Folder Include="Scripts\custom\VisageApp\models\" />
     <Folder Include="Templates\Admin\" />
-    <Folder Include="Templates\Front\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
@@ -278,6 +294,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\About.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Contact.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Index.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IAboutScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IContactScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IIndexScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\routes\Config.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\VisageApp.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />

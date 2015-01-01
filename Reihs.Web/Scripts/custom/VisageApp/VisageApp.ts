@@ -11,4 +11,7 @@ module VisageApp {
 
 	VisageApp.config(Config);
 
+	VisageApp.controller('Index', Index);
+	VisageApp.controller('About', About);
+	VisageApp.controller('Contact', Contact);
 }
