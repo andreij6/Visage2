@@ -198,6 +198,12 @@
     <Content Include="Content\defaults\bootstrap.min.css" />
     <Content Include="Content\defaults\font-awesome.css" />
     <Content Include="Content\defaults\font-awesome.min.css" />
+    <Content Include="Content\Front\store.css">
+      <DependentUpon>store.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\store.min.css">
+      <DependentUpon>store.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
@@ -220,6 +226,10 @@
     <Content Include="Content\Front\blog.scss" />
     <Content Include="Content\Front\blog.css.map">
       <DependentUpon>blog.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\store.scss" />
+    <Content Include="Content\Front\store.css.map">
+      <DependentUpon>store.css</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\Visage.pubxml" />
     <Content Include="Scripts\defaults\angular\angular.min.js.map" />

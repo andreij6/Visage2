@@ -56,6 +56,7 @@ namespace Reihs.Web
 			bundles.Add(new StyleBundle("~/Content/Front/css").Include(
 					"~/Content/Front/carousel.css",
 					"~/Content/Front/blog.min.css",
+					"~/Content/Front/store.min.css",
 					"~/Content/Front/Site.css"));
 		}
 	}
