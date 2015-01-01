@@ -16,4 +16,5 @@ module VisageApp {
 	VisageApp.controller('Contact', Contact);
 	VisageApp.controller('Blog', Blog);
 	VisageApp.controller('Market', Market);
+	VisageApp.controller('LayoutCtrl', LayoutCtrl);
 }
