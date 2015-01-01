@@ -4,6 +4,9 @@ using Reihs.Web.Controllers.API;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
+using System.Web.Http;
+using Visage.Repository.Models.Blog;
+using System.Web.Http.Results;
 
 namespace Reihs.Web.Tests.Controllers.API
 {
@@ -11,15 +14,32 @@ namespace Reihs.Web.Tests.Controllers.API
 	public class BlogControllerTest
 	{
 		[TestMethod]
-		public void Get()
+		public void GetAllBlogs()
 		{
 			BlogController controller = new BlogController();
 
-			IEnumerable<string> result = controller.Get();
+			IHttpActionResult actionResult = controller.Get();
 
-			List<string> results = result.ToList();
+			var contentResult = actionResult as OkNegotiatedContentResult<IEnumerable<bPost>>;
 
-			Assert.AreEqual(results.Count, 2);
+			Assert.IsNotNull(contentResult);
+			Assert.IsNotNull(contentResult.Content);
 		}
+
+		//[TestMethod]
+		//public void GetAllBlogsThrowsException()
+		//{
+		//	BlogController controller = new BlogController();
+
+		//	IHttpActionResult actionResult = controller.Get();
+
+		//	var contentResult = actionResult as BadRequestErrorMessageResult;
+
+		//	Assert.IsNotNull(contentResult);
+		//	Assert.IsNotNull(contentResult.Message);
+		//	Assert.Equals(contentResult.Message, "No Blogs found");
+		//}
+
+		
 	}
 }

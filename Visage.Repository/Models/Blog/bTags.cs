@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Visage.Repository.Models.Blog
 {
-	public class bTag : Audit
+	public class bTag
 	{
 		public string Name { get; set; }
 	}

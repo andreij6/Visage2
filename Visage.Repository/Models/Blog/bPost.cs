@@ -11,6 +11,8 @@ namespace Visage.Repository.Models.Blog
 	{
 		public int Id { get; set; }
 
+		public int CategoryId { get; set; }
+
 		public bCategory Category { get; set; }
 
 		public string Title { get; set; }
@@ -18,6 +20,10 @@ namespace Visage.Repository.Models.Blog
 		public string Subtitle { get; set; }
 
 		public string Content { get; set; }
+
+		public string AuthorId { get; set; }
+
+		public ApplicationUser Author { get; set; }
 
 		public int Rating { get; set; }
 
