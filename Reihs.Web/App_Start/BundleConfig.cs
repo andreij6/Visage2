@@ -51,13 +51,18 @@ namespace Reihs.Web
 					"~/Scripts/defaults/respond.js"));
 
 			bundles.Add(new StyleBundle("~/Content/css").Include(
-					"~/Content/defaults/bootstrap.css"));
+					"~/Content/defaults/bootstrap.css",
+					"~/Content/defaults/font-awesome.min.css"));
 
 			bundles.Add(new StyleBundle("~/Content/Front/css").Include(
 					"~/Content/Front/carousel.css",
 					"~/Content/Front/blog.min.css",
 					"~/Content/Front/store.min.css",
 					"~/Content/Front/Site.css"));
+
+			bundles.Add(new StyleBundle("~/Content/Admin/css").Include(
+					"~/Content/Admin/sb-admin-2.min.css"
+				));
 		}
 	}
 }
