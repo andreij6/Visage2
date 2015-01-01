@@ -186,6 +186,12 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Front\blog.css">
+      <DependentUpon>blog.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\blog.min.css">
+      <DependentUpon>blog.css</DependentUpon>
+    </Content>
     <Content Include="Content\Front\carousel.css" />
     <Content Include="Content\defaults\bootstrap.css" />
     <Content Include="Content\defaults\bootstrap.min.css" />
@@ -210,6 +216,10 @@
     <Content Include="Content\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\Front\blog.scss" />
+    <Content Include="Content\Front\blog.css.map">
+      <DependentUpon>blog.css</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\Visage.pubxml" />
     <Content Include="Scripts\defaults\angular\angular.min.js.map" />
     <Content Include="Scripts\defaults\angular\angular-route.min.js.map" />
@@ -228,8 +238,10 @@
     <Content Include="Scripts\defaults\_references.js" />
     <Content Include="Scripts\defaults\holder\holder.js" />
     <Content Include="Templates\Front\About.html" />
+    <Content Include="Templates\Front\Blog\Index.html" />
     <Content Include="Templates\Front\Contact.html" />
     <Content Include="Templates\Front\Home.html" />
+    <Content Include="Templates\Front\Market\Index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -295,11 +307,15 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\About.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Blog.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Contact.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Index.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Market.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IAboutScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IBlogScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IContactScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IIndexScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IMarketScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\routes\Config.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\VisageApp.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />

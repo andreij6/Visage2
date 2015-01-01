@@ -27,6 +27,8 @@ namespace Reihs.Web
 						"~/Scripts/custom/VisageApp/controllers/Index.js",
 						"~/Scripts/custom/VisageApp/controllers/About.js",
 						"~/Scripts/custom/VisageApp/controllers/Contact.js",
+						"~/Scripts/custom/VisageApp/controllers/Blog.js",
+						"~/Scripts/custom/VisageApp/controllers/Market.js",
 						"~/Scripts/custom/VisageApp/routes/Config.js",
 						"~/Scripts/custom/VisageApp/VisageApp.js"
 						));
@@ -45,6 +47,7 @@ namespace Reihs.Web
 
 			bundles.Add(new StyleBundle("~/Content/Front/css").Include(
 					"~/Content/Front/carousel.css",
+					"~/Content/Front/blog.min.css",
 					"~/Content/Front/Site.css"));
 		}
 	}

@@ -15,6 +15,16 @@
 					templateUrl: '/Templates/Front/Contact.html',
 					controller: 'Contact'
 				}
+				).when('/Blog',
+				{
+					templateUrl: '/Templates/Front/Blog/Index.html',
+					controller: 'Blog'
+				}
+				).when('/Market',
+				{
+					templateUrl: 'Templates/Front/Market/Index.html',
+					controller: 'Market'
+				}
 				).otherwise({ redirectTo: '/' })
 		}
 	}
