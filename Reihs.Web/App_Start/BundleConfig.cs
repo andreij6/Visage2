@@ -23,6 +23,13 @@ namespace Reihs.Web
 						"~/Scripts/defaults/holder/holder.js"
 					));
 
+			bundles.Add(new ScriptBundle("~/bundles/AdminApp").Include(
+						"~/Scripts/custom/AdminApp/controllers/LayoutCtrl.js",
+						"~/Scripts/custom/AdminApp/controllers/Index.js",
+						"~/Scripts/custom/AdminApp/routes/Config.js",
+						"~/Scripts/custom/AdminApp/AdminApp.js"
+					));
+
 			bundles.Add(new ScriptBundle("~/bundles/VisageApp").Include(
 						"~/Scripts/custom/VisageApp/controllers/LayoutCtrl.js",
 						"~/Scripts/custom/VisageApp/controllers/Index.js",

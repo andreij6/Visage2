@@ -175,6 +175,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\API\Blog\BlogController.cs" />
     <Compile Include="Controllers\MVC\AccountController.cs" />
+    <Compile Include="Controllers\MVC\AdminController.cs" />
     <Compile Include="Controllers\MVC\HomeController.cs" />
     <Compile Include="Controllers\MVC\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -237,6 +238,7 @@
     <Content Include="Scripts\defaults\respond.min.js" />
     <Content Include="Scripts\defaults\_references.js" />
     <Content Include="Scripts\defaults\holder\holder.js" />
+    <Content Include="Templates\Admin\Home.html" />
     <Content Include="Templates\Front\About.html" />
     <Content Include="Templates\Front\Blog\Index.html" />
     <Content Include="Templates\Front\Contact.html" />
@@ -276,13 +278,16 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout2.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Shared\_AdminLayoutPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\API\Store\" />
+    <Folder Include="Scripts\custom\AdminApp\factories\" />
+    <Folder Include="Scripts\custom\AdminApp\models\" />
     <Folder Include="Scripts\custom\VisageApp\factories\" />
     <Folder Include="Scripts\custom\VisageApp\models\" />
-    <Folder Include="Templates\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
@@ -306,6 +311,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\AdminApp.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\Index.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\LayoutCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IIndexScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\ILayoutScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\routes\Config.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\About.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Blog.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Contact.ts" />
@@ -327,6 +338,8 @@
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-route.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\d3\d3.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\d3\plugins\d3.superformula.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
   <PropertyGroup>

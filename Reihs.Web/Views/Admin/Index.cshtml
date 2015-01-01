@@ -1,0 +1,16 @@
+﻿@{
+	Layout = "~/Views/Shared/_AdminLayoutPage.cshtml";
+	ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div ng-controller="LayoutCtrl">
+	{{test}}
+	<div ng-view></div>
+</div>
+
+@section Scripts {
+	@Scripts.Render("~/bundles/angularcore")
+	@Scripts.Render("~/bundles/AdminApp")
+}
