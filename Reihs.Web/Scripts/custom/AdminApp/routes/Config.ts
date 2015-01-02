@@ -13,6 +13,10 @@
 				{
 					templateUrl: 'Templates/Admin/Blogs/Manage.html',
 					controller: 'Blogs'
+				}).when('/Blogs/Edit/:Id',
+				{
+					templateUrl: 'Templates/Admin/Blogs/New.html',
+					controller: 'Blogs'
 				}).when('/Blogs/New',
 				{
 					templateUrl: 'Templates/Admin/Blogs/New.html',
