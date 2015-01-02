@@ -34,6 +34,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Services", "Visage.Services\Visage.Services.csproj", "{24D1D175-309E-4A27-89A7-D86605F582DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Services.Tests", "Visage.Services.Tests\Visage.Services.Tests.csproj", "{33FF4DE8-77AD-4891-BF1F-63A99D94C410}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +66,10 @@ Global
 		{24D1D175-309E-4A27-89A7-D86605F582DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24D1D175-309E-4A27-89A7-D86605F582DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24D1D175-309E-4A27-89A7-D86605F582DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33FF4DE8-77AD-4891-BF1F-63A99D94C410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33FF4DE8-77AD-4891-BF1F-63A99D94C410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33FF4DE8-77AD-4891-BF1F-63A99D94C410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33FF4DE8-77AD-4891-BF1F-63A99D94C410}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,5 +82,6 @@ Global
 		{0C4928F1-99EF-4124-8EDD-79CF4CAE589A} = {D41E2D11-937F-4C40-92F8-1E0BE34261EB}
 		{61E4B3E9-2D08-4E49-902B-A60C838F4ED1} = {9EFBF167-CF74-4707-BDE1-0F36C1B51505}
 		{24D1D175-309E-4A27-89A7-D86605F582DD} = {5A3C0931-3D38-45FD-965C-1E0EEC13FAC2}
+		{33FF4DE8-77AD-4891-BF1F-63A99D94C410} = {5A3C0931-3D38-45FD-965C-1E0EEC13FAC2}
 	EndGlobalSection
 EndGlobal
