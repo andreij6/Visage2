@@ -96,8 +96,6 @@ namespace Visage.Services.Market
 				cartItem.Quantity++;
 			}
 
-			MarketRepo.SaveChanges();
-
 			return true;
 		}
 
@@ -200,7 +198,8 @@ namespace Visage.Services.Market
 
 				if (myItem != null)
 				{
-					MarketRepo.UpdateCartItem(myItem, quantity);
+					myItem.Quantity = quantity;
+					MarketRepo.SaveChanges();
 				}
 			}
 			catch (Exception exp)
@@ -234,12 +233,7 @@ namespace Visage.Services.Market
 		{
 			IEnumerable<CartItem> shoppingCart = MarketRepo.GetCartItems(cartId);
 			
-			//foreach (CartItem item in shoppingCart)
-			//{
-			//	item.CartId = userName;
-			//}
-
-			MarketRepo.SetCartId(userName);
+			MarketRepo.SetCartId(userName, shoppingCart);
 
 			HttpContext.Current.Session[CartSessionKey] = userName;
 

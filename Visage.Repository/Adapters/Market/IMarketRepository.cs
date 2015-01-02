@@ -15,16 +15,14 @@ namespace Visage.Repository.Adapters.Market
 
 		void AddtoCart(CartItem cartItem);
 
-		void SaveChanges();
-
 		IEnumerable<CartItem> GetCartItems(string ShoppingCartId);
 
 		void RemoveFromCart(CartItem myItem);
 
-		void UpdateCartItem(CartItem myItem, int quantity);
-
 		void RemoveFromCart(IEnumerable<CartItem> cartItems);
 
-		void SetCartId(string userName);
+		void SetCartId(string userName, IEnumerable<CartItem> shoppingCart);
+
+		void SaveChanges();
 	}
 }

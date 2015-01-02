@@ -11,47 +11,88 @@ namespace Visage.Repository.Adapters.Market
 	{
 		public CartItem GetCartItem(string ShoppingCartId, int ProductId)
 		{
-			throw new NotImplementedException();
+			CartItem cartItem = null;
+
+			using(AppDB db = new AppDB())
+			{
+				cartItem = db.ShoppingCartItems
+							.SingleOrDefault(c => c.CartId == ShoppingCartId
+									&& c.ProductId == ProductId);
+			}
+
+			return cartItem;
 		}
 
 		public mProduct GetProductById(int ProductId)
 		{
-			throw new NotImplementedException();
+			mProduct product = null;
+
+			using (AppDB db = new AppDB())
+			{
+				product = db.mProducts.FirstOrDefault(x => x.Id == ProductId);
+			}
+
+			return product;
 		}
 
 		public void AddtoCart(CartItem cartItem)
 		{
-			throw new NotImplementedException();
-		}
-
-		public void SaveChanges()
-		{
-			throw new NotImplementedException();
+			using (AppDB db = new AppDB())
+			{
+				db.ShoppingCartItems.Add(cartItem);
+				db.SaveChanges();
+			}
 		}
 
 		public IEnumerable<CartItem> GetCartItems(string ShoppingCartId)
 		{
-			throw new NotImplementedException();
+			IEnumerable<CartItem> cartItems = Enumerable.Empty<CartItem>();
+
+			using (AppDB db = new AppDB())
+			{
+				cartItems = db.ShoppingCartItems.Where(c => c.CartId == ShoppingCartId).ToList();
+			}
+
+			return cartItems;
 		}
 
 		public void RemoveFromCart(CartItem myItem)
 		{
-			throw new NotImplementedException();
-		}
-
-		public void UpdateCartItem(CartItem myItem, int quantity)
-		{
-			throw new NotImplementedException();
+			using (AppDB db = new AppDB())
+			{
+				db.ShoppingCartItems.Remove(myItem);
+				db.SaveChanges();
+			}
 		}
 
 		public void RemoveFromCart(IEnumerable<CartItem> cartItems)
 		{
-			throw new NotImplementedException();
+			using (AppDB db = new AppDB())
+			{
+				db.ShoppingCartItems.RemoveRange(cartItems);
+				db.SaveChanges();
+			}
 		}
 
-		public void SetCartId(string userName)
+		public void SetCartId(string userName, IEnumerable<CartItem> shoppingCart)
 		{
-			throw new NotImplementedException();
+			using (AppDB db = new AppDB())
+			{
+				foreach (CartItem item in shoppingCart)
+				{
+					item.CartId = userName;
+				}
+
+				db.SaveChanges();
+			}
+		}
+
+		public void SaveChanges()
+		{
+			using (AppDB db = new AppDB())
+			{
+				db.SaveChanges();
+			}
 		}
 	}
 }
