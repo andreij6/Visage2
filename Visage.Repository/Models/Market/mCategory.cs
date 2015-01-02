@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Visage.Repository.Models.Blog
+namespace Visage.Repository.Models.Market
 {
-	public class bCategory : Audit
+	public class mCategory
 	{
-		public int CategoryId { get; set; }
+		public int Id { get; set; }
 
 		public string Name { get; set; }
 
 		public string Description { get; set; }
 
-		public IEnumerable<bPost> Posts { get; set; }
+		public IEnumerable<mProduct> Products { get; set; }
 	}
 }

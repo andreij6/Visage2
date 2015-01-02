@@ -8,6 +8,7 @@ using Owin;
 using Reihs.Web.Models;
 using Visage.Repository.Models;
 using Visage.Repository;
+using System.Web.Configuration;
 
 namespace Reihs.Web
 {
@@ -60,11 +61,11 @@ namespace Reihs.Web
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+			  ClientId = WebConfigurationManager.AppSettings["GooglePlusAPIClientId"],
+			  ClientSecret = WebConfigurationManager.AppSettings["GooglePlusAPIClientSecret"]
+            });
         }
     }
 }

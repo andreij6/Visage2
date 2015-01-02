@@ -52,6 +52,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\Blog\Category\CategoryRepository.cs" />
+    <Compile Include="Adapters\Blog\Category\ICategoryRepository.cs" />
+    <Compile Include="Adapters\Blog\Post\IPostRepository.cs" />
+    <Compile Include="Adapters\Blog\Post\PostRepository.cs" />
+    <Compile Include="Adapters\Blog\Tag\ITagRepository.cs" />
+    <Compile Include="Adapters\Blog\Tag\TagRepository.cs" />
+    <Compile Include="Adapters\Market\IMarketRepository.cs" />
+    <Compile Include="Adapters\Market\MarketRepository.cs" />
     <Compile Include="DBContext.cs" />
     <Compile Include="Models\Interfaces\IRate.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -60,6 +68,11 @@
     <Compile Include="Models\Blog\bCategory.cs" />
     <Compile Include="Models\Blog\bPost.cs" />
     <Compile Include="Models\Blog\bTags.cs" />
+    <Compile Include="Models\Market\CartItem.cs" />
+    <Compile Include="Models\Market\mCategory.cs" />
+    <Compile Include="Models\Market\mProduct.cs" />
+    <Compile Include="Models\Market\Order.cs" />
+    <Compile Include="Models\Market\OrderDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seeder.cs" />
   </ItemGroup>
@@ -67,11 +80,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Adapters\Blog\Category\" />
-    <Folder Include="Adapters\Blog\Post\" />
-    <Folder Include="Adapters\Blog\Tag\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

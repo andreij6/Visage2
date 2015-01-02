@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,6 +42,8 @@
   <ItemGroup>
     <Compile Include="Blog\BlogService.cs" />
     <Compile Include="Blog\IBlogService.cs" />
+    <Compile Include="Market\IShoppingCartService.cs" />
+    <Compile Include="Market\ShoppingCartService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

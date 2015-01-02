@@ -29,6 +29,7 @@ namespace Reihs.Web.Controllers.API
 		#endregion
 
 		[Route("Get")]
+		[HttpGet]
 		public IHttpActionResult Get()
 		{
 			IEnumerable<bPost> posts = BlogService.GetAll();
@@ -40,6 +41,7 @@ namespace Reihs.Web.Controllers.API
 		}
 
 		[Route("Get/{PostId:int}")]
+		[HttpGet]
 		public IHttpActionResult Get(int PostId)
 		{
 			bPost post = BlogService.GetById(PostId);
@@ -50,7 +52,8 @@ namespace Reihs.Web.Controllers.API
 				return Response(false, "Blog with Id " + PostId + " not found");
 		}
 
-		[Route("Get")]
+		[Route("Post")]
+		[HttpPost]
 		public IHttpActionResult Post([FromBody]bPost value)
 		{
 			bool success = BlogService.Post(value);
@@ -61,6 +64,7 @@ namespace Reihs.Web.Controllers.API
 		}
 
 		[Route("Update/{PostId:int}")]
+		[HttpPut]
 		public IHttpActionResult Put(int PostId, [FromBody]bPost value)
 		{
 			bool success = BlogService.Update(value);
@@ -71,6 +75,7 @@ namespace Reihs.Web.Controllers.API
 		}
 
 		[Route("Delete/{PostId:int}")]
+		[HttpDelete]
 		public IHttpActionResult Delete(int PostId)
 		{
 			bool success = BlogService.Delete(PostId);
