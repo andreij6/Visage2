@@ -242,6 +242,7 @@
     <Content Include="Content\Admin\sb-admin-2.css.map">
       <DependentUpon>sb-admin-2.css</DependentUpon>
     </Content>
+    <Content Include="AppSecrets.config" />
     <None Include="Properties\PublishProfiles\Visage.pubxml" />
     <Content Include="Scripts\defaults\angular\angular.min.js.map" />
     <Content Include="Scripts\defaults\angular\angular-route.min.js.map" />
