@@ -29,7 +29,7 @@ namespace Visage.Repository.Adapters.Blog.Category
 
 			using (AppDB db = new AppDB()) 
 			{ 
-				bCategory category = db.bCategories.FirstOrDefault(x => x.CategoryId == id);
+				bCategory category = db.bCategories.FirstOrDefault(x => x.Id == id);
 
 				db.bCategories.Remove(category);
 			}
@@ -55,7 +55,7 @@ namespace Visage.Repository.Adapters.Blog.Category
 			
 			using (AppDB db = new AppDB()) 
 			{
-				category = db.bCategories.FirstOrDefault(x => x.CategoryId == category.CategoryId);
+				category = db.bCategories.FirstOrDefault(x => x.Id == category.Id);
 			}
 
 			return category;
@@ -83,7 +83,7 @@ namespace Visage.Repository.Adapters.Blog.Category
 
 			using (AppDB db = new AppDB()) 
 			{
-				bCategory oldCategory = db.bCategories.FirstOrDefault(x => x.CategoryId == id);
+				bCategory oldCategory = db.bCategories.FirstOrDefault(x => x.Id == id);
 
 				oldCategory.Modified = DateTime.Now;
 				oldCategory.Name = category.Name;

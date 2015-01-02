@@ -57,9 +57,9 @@ namespace Reihs.Web
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+		  app.UseFacebookAuthentication(
+			appId: WebConfigurationManager.AppSettings["FacebookAppId"],
+			appSecret: WebConfigurationManager.AppSettings["FacebookAppSecret"]);
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {

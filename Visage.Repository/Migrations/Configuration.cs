@@ -14,7 +14,7 @@ namespace Visage.Repository.Migrations
 
 		protected override void Seed(AppDB context)
 		{
-
+			Seeder.Seed(context);
 		}
 
 

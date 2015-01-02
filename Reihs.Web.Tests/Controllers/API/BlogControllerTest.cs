@@ -7,38 +7,46 @@ using System.Linq;
 using System.Web.Http;
 using Visage.Repository.Models.Blog;
 using System.Web.Http.Results;
+using Reihs.Web.Tests.Services;
 
 namespace Reihs.Web.Tests.Controllers.API
 {
 	[TestClass]
 	public class BlogControllerTest
 	{
-		//[TestMethod]
-		//public void GetAllBlogs()
-		//{
-		//	BlogController controller = new BlogController();
+		[TestMethod]
+		public void GetAllBlogs()
+		{
+			MoqBlogService blogService = new MoqBlogService();
 
-		//	IHttpActionResult actionResult = controller.Get();
+			BlogController controller = new BlogController(blogService);
 
-		//	var contentResult = actionResult as OkNegotiatedContentResult<IEnumerable<bPost>>;
+			IHttpActionResult actionResult = controller.Get();
 
-		//	Assert.IsNotNull(contentResult);
-		//	Assert.IsNotNull(contentResult.Content);
-		//}
+			var contentResult = actionResult as OkNegotiatedContentResult<IEnumerable<bPost>>;
 
-		//[TestMethod]
-		//public void GetAllBlogsThrowsException()
-		//{
-		//	BlogController controller = new BlogController();
+			Assert.IsNotNull(contentResult);
+			Assert.IsNotNull(contentResult.Content);
+			Assert.AreEqual(contentResult.Content.Count(), 3);
+		}
 
-		//	IHttpActionResult actionResult = controller.Get();
+		[TestMethod]
+		public void GetBlogById()
+		{
+			//using real DB
+			BlogController controller = new BlogController();
 
-		//	var contentResult = actionResult as BadRequestErrorMessageResult;
+			IHttpActionResult actionResult = controller.Get(1);
 
-		//	Assert.IsNotNull(contentResult);
-		//	Assert.IsNotNull(contentResult.Message);
-		//	Assert.Equals(contentResult.Message, "No Blogs found");
-		//}
+			var contentResult = actionResult as OkNegotiatedContentResult<bPost>;
+
+			Assert.IsNotNull(contentResult);
+			Assert.IsNotNull(contentResult.Content);
+			Assert.AreEqual(contentResult.Content.Title, "My first Blog Post");
+			Assert.AreEqual(contentResult.Content.Tags.Count(), 2);
+		}
+
+		
 
 		
 	}
