@@ -12,6 +12,10 @@ namespace Visage.Repository.Models.Market
 	{
 		public int Id { get; set; }
 
+		public DateTime OrderDate { get; set; }
+
+		public string UserName { get; set; }
+
 		[Required(ErrorMessage = "First Name is required")]
 		[DisplayName("First Name")]
 		[StringLength(160)]

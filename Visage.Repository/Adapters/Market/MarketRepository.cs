@@ -34,7 +34,6 @@ namespace Visage.Repository.Adapters.Market
 			throw new NotImplementedException();
 		}
 
-
 		public void RemoveFromCart(CartItem myItem)
 		{
 			throw new NotImplementedException();
@@ -49,7 +48,6 @@ namespace Visage.Repository.Adapters.Market
 		{
 			throw new NotImplementedException();
 		}
-
 
 		public void SetCartId(string userName)
 		{

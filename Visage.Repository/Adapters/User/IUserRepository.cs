@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Visage.Repository.Models.Blog
+namespace Visage.Repository.Adapters.User
 {
-	public class bTag
+	public interface IUserRepository
 	{
-		public int Id { get; set; }
-
-		public string Name { get; set; }
-
+		Models.ApplicationUser GetByName(string userName);
 	}
 }

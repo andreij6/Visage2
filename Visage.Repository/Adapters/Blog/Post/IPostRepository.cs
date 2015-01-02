@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Visage.Repository.Adapters.Blog.Post
 {
-	class IPostRepository
+	public interface IPostRepository
 	{
+		bool Add(Models.Blog.bPost value);
+
+		Models.Blog.bPost GetById(int PostId);
+
+		IEnumerable<Models.Blog.bPost> GetAll();
+
+		bool Update(int PostId, Models.Blog.bPost value);
+
+		bool Delete(int PostId);
 	}
 }

@@ -56,7 +56,9 @@ namespace Reihs.Web.Controllers.API
 		[HttpPost]
 		public IHttpActionResult Post([FromBody]bPost value)
 		{
-			bool success = BlogService.Post(value);
+			string userName = User.Identity.Name;
+
+			bool success = BlogService.Post(value, userName);
 
 			string BadRequestMessage = "Blog Could not be created";
 
@@ -67,7 +69,7 @@ namespace Reihs.Web.Controllers.API
 		[HttpPut]
 		public IHttpActionResult Put(int PostId, [FromBody]bPost value)
 		{
-			bool success = BlogService.Update(value);
+			bool success = BlogService.Update(PostId, value);
 
 			string BadRequestMessage = String.Format("Blog with Id: {0} did not update", PostId);
 

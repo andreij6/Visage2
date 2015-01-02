@@ -60,7 +60,9 @@
     <Compile Include="Adapters\Blog\Tag\TagRepository.cs" />
     <Compile Include="Adapters\Market\IMarketRepository.cs" />
     <Compile Include="Adapters\Market\MarketRepository.cs" />
-    <Compile Include="DBContext.cs" />
+    <Compile Include="Adapters\User\IUserRepository.cs" />
+    <Compile Include="Adapters\User\UserRepository.cs" />
+    <Compile Include="DbContext.cs" />
     <Compile Include="Models\Interfaces\IRate.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationUser.cs" />

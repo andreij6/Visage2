@@ -11,16 +11,16 @@ using Visage.Repository.Models.Market;
 
 namespace Visage.Repository
 {
-	public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+	public class AppDB : IdentityDbContext<ApplicationUser>
 	{
-		public ApplicationDbContext()
+		public AppDB()
 			: base("DefaultConnection", throwIfV1Schema: false)
 		{
 		}
 
-		public static ApplicationDbContext Create()
+		public static AppDB Create()
 		{
-			return new ApplicationDbContext();
+			return new AppDB();
 		}
 
 		public DbSet<bPost> bPosts { get; set; }
@@ -29,11 +29,8 @@ namespace Visage.Repository
 
 		//Market
 		public DbSet<mCategory> mCategories { get; set; }
-
 		public DbSet<mProduct> mProducts { get; set; }
-
 		public DbSet<CartItem> ShoppingCartItems { get; set; }
-
 		public DbSet<Order> Orders { get; set; }
 
 		public DbSet<OrderDetail> OrderDetails { get; set; }

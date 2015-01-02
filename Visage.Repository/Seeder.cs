@@ -8,7 +8,7 @@ namespace Visage.Repository
 {
 	public static class Seeder
 	{
-		public static void Seed(ApplicationDbContext context)
+		public static void Seed(AppDB context)
 		{
 			//			This method will be called after migrating to the latest version.
 

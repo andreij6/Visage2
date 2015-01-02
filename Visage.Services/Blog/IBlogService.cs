@@ -11,12 +11,12 @@ namespace Visage.Services.Blog
 	{
 		bool Delete(int PostId);
 
-		bool Update(bPost value);
-
-		bool Post(bPost value);
+		bool Post(bPost value, string userName);
 
 		bPost GetById(int PostId);
 
 		IEnumerable<bPost> GetAll();
+
+		bool Update(int PostId, bPost value);
 	}
 }
