@@ -25,6 +25,8 @@ namespace Reihs.Web
 
 			bundles.Add(new ScriptBundle("~/bundles/AdminApp").Include(
 						"~/Scripts/custom/AdminApp/controllers/LayoutCtrl.js",
+						"~/Scripts/custom/AdminApp/controllers/Blogs.js",
+						"~/Scripts/custom/AdminApp/controllers/MarketCtrl.js",
 						"~/Scripts/custom/AdminApp/controllers/Index.js",
 						"~/Scripts/custom/AdminApp/routes/Config.js",
 						"~/Scripts/custom/AdminApp/AdminApp.js"

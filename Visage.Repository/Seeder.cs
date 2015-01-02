@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Visage.Repository.Models.Blog;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Visage.Repository.Models;
 
 namespace Visage.Repository
 {
@@ -188,5 +190,7 @@ namespace Visage.Repository
 			context.SaveChanges();
 		}
 		#endregion
+
+		
 	}
 }

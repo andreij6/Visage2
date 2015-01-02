@@ -16,6 +16,7 @@ namespace Visage.Repository
 		public AppDB()
 			: base("DefaultConnection", throwIfV1Schema: false)
 		{
+			this.Configuration.LazyLoadingEnabled = true;
 		}
 
 		public static AppDB Create()
@@ -32,7 +33,6 @@ namespace Visage.Repository
 		public DbSet<mProduct> mProducts { get; set; }
 		public DbSet<CartItem> ShoppingCartItems { get; set; }
 		public DbSet<Order> Orders { get; set; }
-
 		public DbSet<OrderDetail> OrderDetails { get; set; }
 
 	}

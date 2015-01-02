@@ -13,4 +13,6 @@ module AdminApp {
 
 	AdminApp.controller('Index', Index);
 	AdminApp.controller('LayoutCtrl', LayoutCtrl);
+	AdminApp.controller('Blogs', Blogs);
+	AdminApp.controller('MarketCtrl', MarketCtrl);
 }

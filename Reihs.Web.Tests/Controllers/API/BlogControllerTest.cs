@@ -45,9 +45,5 @@ namespace Reihs.Web.Tests.Controllers.API
 			Assert.AreEqual(contentResult.Content.Title, "My first Blog Post");
 			Assert.AreEqual(contentResult.Content.Tags.Count(), 2);
 		}
-
-		
-
-		
 	}
 }
