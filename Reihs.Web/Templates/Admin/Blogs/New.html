@@ -7,23 +7,24 @@
 	<div class="row">
 		<form class="form-horizontal">
 			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Blog Title">
+				<input type="text" class="form-control" placeholder="Blog Title" ng-model="Post.Title">
 			</div>
 			<div class="form-group">
-				<input type="text" class="form-control" placeholder="SubTitle">
+				<input type="text" class="form-control" placeholder="SubTitle" ng-model="Post.SubTitle">
 			</div>
 			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Category">
+				<input type="text" class="form-control" placeholder="Category" ng-model="Post.Category">
 			</div>
 			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Tags">
+				<input type="text" class="form-control" placeholder="Tags" ng-model="Post.Tags" ng-list>
 			</div>
 			<div class="form-group">
-				<div text-angular placeholder="Write A Blog" id="txtEditor"></div>
+				<div text-angular placeholder="Write A Blog" id="txtEditor" ng-model="Post.Content"></div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default">Save Blog</button>
+					<button type="submit" class="btn btn-default" ng-click="Print(Post)">Save</button>
+					<button type="submit" class="btn btn-default" ng-click="Print(Post)">Save And Publish</button>
 				</div>
 			</div>
 		</form>

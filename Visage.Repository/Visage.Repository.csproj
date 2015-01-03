@@ -78,6 +78,10 @@
     <Compile Include="Migrations\201501030927161_manytomanyTagPost.Designer.cs">
       <DependentUpon>201501030927161_manytomanyTagPost.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201501031845551_addPublicToPost.cs" />
+    <Compile Include="Migrations\201501031845551_addPublicToPost.Designer.cs">
+      <DependentUpon>201501031845551_addPublicToPost.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Interfaces\IRate.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -103,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201501030927161_manytomanyTagPost.resx">
       <DependentUpon>201501030927161_manytomanyTagPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201501031845551_addPublicToPost.resx">
+      <DependentUpon>201501031845551_addPublicToPost.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -11,5 +11,6 @@
 		Likes: number;
 		Clicks: number;
 		Tags: Array<bTags>;
+		Public: boolean;
 	}
 } 

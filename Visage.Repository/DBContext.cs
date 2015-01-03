@@ -24,6 +24,7 @@ namespace Visage.Repository
 			return new AppDB();
 		}
 
+
 		public DbSet<bPost> bPosts { get; set; }
 		public DbSet<bCategory> bCategories { get; set; }
 		public DbSet<bTag> bTags { get; set; }

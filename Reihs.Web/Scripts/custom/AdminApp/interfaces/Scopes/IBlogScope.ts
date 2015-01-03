@@ -8,5 +8,6 @@
 		GetAllPosts(): void;
 		EditPosts(post: Extensions.bPost): void;
 		DeletePosts(post: Extensions.bPost): void;
+		Print(post: Extensions.bPost): void;
 	}
 }    

@@ -29,9 +29,14 @@
 				
 			}
 
+			function Print(post: Extensions.bPost): void {
+				console.log(self.$scope.Post);
+			}
+
 			self.$scope.GetAllPosts = GetAllPosts;
 			self.$scope.DeletePosts = DeletePost;
 			self.$scope.EditPosts = EditPost;
+			self.$scope.Print = Print;
 			
 			self.init();
 		}

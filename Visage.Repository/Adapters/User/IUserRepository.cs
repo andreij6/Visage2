@@ -9,5 +9,7 @@ namespace Visage.Repository.Adapters.User
 	public interface IUserRepository
 	{
 		Models.ApplicationUser GetByName(string userName);
+
+		bool IsUserAdmin(string userName);
 	}
 }

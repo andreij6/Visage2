@@ -32,5 +32,7 @@ namespace Visage.Repository.Models.Blog
 		public int Likes { get; set; }
 
 		public int Clicks { get; set; }
+
+		public bool Public { get; set; }
 	}
 }
