@@ -13,13 +13,27 @@
 			this.qService = $q;
 		}
 
-		public static PDSFactory($http: ng.IHttpService, $q: ng.IQService): PostDataService {
+		public static Builder($http: ng.IHttpService, $q: ng.IQService): PostDataService {
 			return new PostDataService($http, $q);
 		}
 
 		getAll(): ng.IPromise<any> {
 			var self = this;
-			var deferred = self.qService.defer();
+
+			if (self.Posts !== undefined) {
+				return self.qService.when(this.Posts);
+			} else {
+				var deferred = self.qService.defer();
+
+				self.httpService.get(self.PostAPI + "/Get").then(function (result: any) {
+					console.log(result);
+					self.Posts = result.data;
+					deferred.resolve(self.Posts);
+				}, function (error) {
+						deferred.reject(error);
+				});
+			}
+
 			return deferred.promise;
 		}
 

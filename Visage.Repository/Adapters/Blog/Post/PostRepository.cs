@@ -47,7 +47,10 @@ namespace Visage.Repository.Adapters.Blog.Post
 			
 			using (AppDB db = new AppDB())
 			{
-				result = db.bPosts.Include("Tags").FirstOrDefault(x => x.Id == PostId);
+				result = db.bPosts.Include("Tags")
+								.Include("Category")
+								.Include("Author")
+								.FirstOrDefault(x => x.Id == PostId);
 			}
 
 			return result;
@@ -59,7 +62,7 @@ namespace Visage.Repository.Adapters.Blog.Post
 
 			using (AppDB db = new AppDB())
 			{
-				results = db.bPosts.ToList();
+				results = db.bPosts.Include("Tags").Include("Category").Include("Author").ToList();
 			}
 
 			return results;

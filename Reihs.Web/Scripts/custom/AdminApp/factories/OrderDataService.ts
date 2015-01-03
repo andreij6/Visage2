@@ -12,7 +12,7 @@
 			this.qService = $q;
 		}
 
-		public static ODSFactory($http: ng.IHttpService, $q: ng.IQService): OrderDataService {
+		public static Builder($http: ng.IHttpService, $q: ng.IQService): OrderDataService {
 			return new OrderDataService($http, $q);
 		}
 		

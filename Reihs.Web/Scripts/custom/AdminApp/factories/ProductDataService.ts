@@ -12,7 +12,7 @@
 			this.qService = $q;
 		}
 
-		public static PDSFactory($http: ng.IHttpService, $q: ng.IQService): ProductDataService {
+		public static Builder($http: ng.IHttpService, $q: ng.IQService): ProductDataService {
 			return new ProductDataService($http, $q);
 		}
 

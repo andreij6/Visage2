@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Visage.Repository.Models.Blog;
 using Visage.Services.Blog;
+using Visage.Services.Models;
 
 namespace Reihs.Web.Controllers.API
 {
@@ -30,14 +31,11 @@ namespace Reihs.Web.Controllers.API
 
 		[Route("Get")]
 		[HttpGet]
-		public IHttpActionResult Get()
+		public IEnumerable<PostModel> Get()
 		{
-			IEnumerable<bPost> posts = BlogService.GetAll();
+			IEnumerable<PostModel> posts = BlogService.GetAll();
 
-			if (posts != null)
-				return Ok<IEnumerable<bPost>>(posts);
-			else
-				return Response(false, "No Blogs found");
+			return posts;
 		}
 
 		[Route("Get/{PostId:int}")]

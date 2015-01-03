@@ -13,7 +13,7 @@
 			this.qService = $q;
 		}
 
-		public static CDSFactory($http: ng.IHttpService, $q: ng.IQService): CategoryDataService {
+		public static Builder($http: ng.IHttpService, $q: ng.IQService): CategoryDataService {
 			return new CategoryDataService($http, $q);
 		}
 

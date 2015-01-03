@@ -14,20 +14,20 @@ namespace Reihs.Web.Tests.Controllers.API
 	[TestClass]
 	public class BlogControllerTest
 	{
-		[TestMethod]
-		public void GetAllBlogs()
-		{
-			MoqBlogService blogService = new MoqBlogService();
+		//[TestMethod]
+		//public void GetAllBlogs()
+		//{
+		//	MoqBlogService blogService = new MoqBlogService();
 
-			BlogController controller = new BlogController(blogService);
+		//	BlogController controller = new BlogController(blogService);
 
-			IHttpActionResult actionResult = controller.Get();
+		//	IHttpActionResult actionResult = controller.Get();
 
-			var contentResult = actionResult as OkNegotiatedContentResult<IEnumerable<bPost>>;
+		//	var contentResult = actionResult as OkNegotiatedContentResult<IEnumerable<bPost>>;
 
-			Assert.IsNotNull(contentResult);
-			Assert.IsNotNull(contentResult.Content);
-		}
+		//	Assert.IsNotNull(contentResult);
+		//	Assert.IsNotNull(contentResult.Content);
+		//}
 
 		[TestMethod]
 		public void GetBlogById()

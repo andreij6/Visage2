@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Visage.Repository.Models.Blog;
+using Visage.Services.Models;
 
 namespace Visage.Services.Blog
 {
@@ -15,7 +16,7 @@ namespace Visage.Services.Blog
 
 		bPost GetById(int PostId);
 
-		IEnumerable<bPost> GetAll();
+		IEnumerable<PostModel> GetAll();
 
 		bool Update(int PostId, bPost value);
 	}

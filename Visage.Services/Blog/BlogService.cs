@@ -10,6 +10,7 @@ using Visage.Repository.Adapters;
 using Visage.Repository.Models;
 using Visage.Repository.Models.Blog;
 using Visage.Repository.Adapters.User;
+using Visage.Services.Models;
 
 namespace Visage.Services.Blog
 {
@@ -65,9 +66,31 @@ namespace Visage.Services.Blog
 			return PostRepo.GetById(PostId);
 		}
 
-		public IEnumerable<bPost> GetAll()
+		public IEnumerable<PostModel> GetAll()
 		{
-			return PostRepo.GetAll();
+			IEnumerable<bPost> bposts = PostRepo.GetAll();
+			List<PostModel> results = new List<PostModel>();
+
+			foreach (var post in bposts)
+			{
+				PostModel newPost = new PostModel
+				{
+					Id = post.Id,
+					CategoryId = post.CategoryId,
+					Tags = post.Tags,
+					Title = post.Title,
+					Subtitle = post.Subtitle,
+					Content = post.Content,
+					Author = post.Author.UserName,
+					Rating = post.Rating,
+					Likes = post.Likes,
+					Clicks = post.Clicks
+				};
+
+				results.Add(newPost);
+			}
+
+			return results;
 		}
 	}
 }

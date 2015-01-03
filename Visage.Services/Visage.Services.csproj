@@ -62,6 +62,7 @@
     <Compile Include="Blog\ICategoryService.cs" />
     <Compile Include="Market\IShoppingCartService.cs" />
     <Compile Include="Market\ShoppingCartService.cs" />
+    <Compile Include="Models\PostModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

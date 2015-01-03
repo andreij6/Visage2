@@ -1,5 +1,12 @@
 ﻿module Admin_Extensions {
 	export interface IBlogScope extends ng.IScope {
-		test: string;
+		//Properties
+		Posts: Array<Extensions.bPost>;
+		Post: Extensions.bPost;
+
+		//Functions
+		GetAllPosts(): void;
+		EditPosts(post: Extensions.bPost): void;
+		DeletePosts(post: Extensions.bPost): void;
 	}
 }    

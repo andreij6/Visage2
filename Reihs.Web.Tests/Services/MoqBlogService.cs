@@ -34,5 +34,11 @@ namespace Reihs.Web.Tests.Services
 		{
 			throw new NotImplementedException();
 		}
+
+
+		IEnumerable<Visage.Services.Models.PostModel> IBlogService.GetAll()
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

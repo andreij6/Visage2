@@ -12,11 +12,11 @@ module AdminApp {
 
 	AdminApp.config(Config);
 
-	AdminApp.factory('PostDataService', ['$http', '$q', PostDataService.PDSFactory]);
-	AdminApp.factory('CategoryDataService', ['$http', '$q', CategoryDataService.CDSFactory]);
-	AdminApp.factory('OrderDataService', ['$http', '$q', OrderDataService.ODSFactory]);
-	AdminApp.factory('mCategoryDataService', ['$http', '$q', mCategoryDataService.CDSFactory]);
-	AdminApp.factory('ProductDataService', ['$http', '$q', ProductDataService.PDSFactory]);
+	AdminApp.factory('PostDataService', ['$http', '$q', PostDataService.Builder]);
+	AdminApp.factory('CategoryDataService', ['$http', '$q', CategoryDataService.Builder]);
+	AdminApp.factory('OrderDataService', ['$http', '$q', OrderDataService.Builder]);
+	AdminApp.factory('mCategoryDataService', ['$http', '$q', mCategoryDataService.Builder]);
+	AdminApp.factory('ProductDataService', ['$http', '$q', ProductDataService.Builder]);
 
 	AdminApp.controller('Index', Index);
 	AdminApp.controller('LayoutCtrl', LayoutCtrl);
