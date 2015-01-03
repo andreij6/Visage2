@@ -52,15 +52,15 @@ namespace Reihs.Web.Controllers.API
 
 		[Route("Post")]
 		[HttpPost]
-		public IHttpActionResult Post([FromBody]bPost value)
+		public void Post([FromBody]NewPostModel value)
 		{
-			string userName = User.Identity.Name;
+			value.Author = User.Identity.Name;
 
-			bool success = BlogService.Post(value, userName);
+			bool success = BlogService.Post(value);
 
-			string BadRequestMessage = "Blog Could not be created";
+			//string BadRequestMessage = "Blog Could not be created";
 
-			return Response(success, BadRequestMessage);
+			//return Response(success, BadRequestMessage);
 		}
 
 		[Route("Update/{PostId:int}")]

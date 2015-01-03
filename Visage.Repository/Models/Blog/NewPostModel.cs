@@ -3,17 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Models.Blog;
 
-namespace Visage.Services.Models
+namespace Visage.Repository.Models.Blog
 {
-	public class PostModel
+	public class NewPostModel
 	{
-		public int Id { get; set; }
+		public string Category { get; set; }
 
-		public int CategoryId { get; set; }
-
-		public IEnumerable<bTag> Tags { get; set; }
+		public IEnumerable<string> Tags { get; set; }
 
 		public string Title { get; set; }
 
@@ -22,12 +19,6 @@ namespace Visage.Services.Models
 		public string Content { get; set; }
 
 		public string Author { get; set; }
-
-		public int Rating { get; set; }
-
-		public int Likes { get; set; }
-
-		public int Clicks { get; set; }
 
 		public bool Public { get; set; }
 	}

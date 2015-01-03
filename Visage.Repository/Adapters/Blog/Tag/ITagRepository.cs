@@ -9,6 +9,6 @@ namespace Visage.Repository.Adapters.Blog.Tag
 {
 	public interface ITagRepository
 	{
-		void Add(IEnumerable<bTag> enumerable);
+		void Add(IEnumerable<string> enumerable, int postId);
 	}
 }

@@ -9,20 +9,6 @@ namespace Visage.Repository.Adapters.Blog.Category
 {
 	public class CategoryRepository : ICategoryRepository
 	{
-		public void AddIfNull(bCategory bCategory)
-		{
-			using(AppDB db = new AppDB())
-			{
-				bCategory Category = db.bCategories.FirstOrDefault(x => x.Name == bCategory.Name);
-
-				if (Category == null)
-				{
-					db.bCategories.Add(bCategory);
-					db.SaveChanges();
-				}
-			}
-		}
-
 		public bool Delete(int id)
 		{
 			bool result = false;
@@ -93,6 +79,37 @@ namespace Visage.Repository.Adapters.Blog.Category
 
 				if (saved != null)
 					result = true;
+			}
+
+			return result;
+		}
+		
+		public bCategory AddIfNull(string CategoryName)
+		{
+			bCategory result = null;
+
+			using (AppDB db = new AppDB())
+			{
+				bCategory Category = db.bCategories.FirstOrDefault(x => x.Name == CategoryName);
+
+				if (Category == null)
+				{
+					bCategory category = new bCategory
+					{
+						Name = CategoryName,
+						Created = DateTime.Now,
+						Modified = DateTime.Now
+					};
+
+					db.bCategories.Add(category);
+					int id = db.SaveChanges();
+					category.Id = id;
+					result = category;
+				}
+				else
+				{
+					result = Category;
+				}
 			}
 
 			return result;

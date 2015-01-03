@@ -9,8 +9,6 @@ namespace Visage.Repository.Adapters.Blog.Category
 {
 	public interface ICategoryRepository
 	{
-		void AddIfNull(bCategory bCategory);
-
 		bool Delete(int id);
 
 		IEnumerable<bCategory> GetAll();
@@ -20,5 +18,7 @@ namespace Visage.Repository.Adapters.Blog.Category
 		bool Add(bCategory category);
 
 		bool Update(int id, bCategory category);
+
+		bCategory AddIfNull(string CategoryName);
 	}
 }

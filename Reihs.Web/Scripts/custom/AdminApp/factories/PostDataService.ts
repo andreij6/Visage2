@@ -58,6 +58,13 @@
 		save(blog: Extensions.bPost): ng.IPromise<any> {
 			var self = this;
 			var deferred = self.qService.defer();
+
+			self.httpService.post(self.PostAPI + '/Post', blog).then(
+				function (result) {
+					self.Posts.push(blog);
+				},
+				function (error) { deferred.reject(error); });
+
 			return deferred.promise;
 		}
 

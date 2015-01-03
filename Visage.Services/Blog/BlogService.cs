@@ -50,17 +50,6 @@ namespace Visage.Services.Blog
 			return PostRepo.Update(PostId, value);
 		}
 
-		public bool Post(bPost value, string userName)
-		{
-			ApplicationUser user = UserRepo.GetByName(userName);
-
-			CategoryRepo.AddIfNull(value.Category);
-
-			TagRepo.Add(value.Tags);
-
-			return PostRepo.Add(value);
-		}
-
 		public bPost GetById(int PostId)
 		{
 			return PostRepo.GetById(PostId);
@@ -84,13 +73,27 @@ namespace Visage.Services.Blog
 					Author = post.Author.UserName,
 					Rating = post.Rating,
 					Likes = post.Likes,
-					Clicks = post.Clicks
+					Clicks = post.Clicks,
+					Public = post.Public
 				};
 
 				results.Add(newPost);
 			}
 
 			return results;
+		}
+
+		public bool Post(NewPostModel value)
+		{
+			ApplicationUser user = UserRepo.GetByName(value.Author);
+
+			bCategory category = CategoryRepo.AddIfNull(value.Category);
+
+			int postId = PostRepo.Add(value, category);
+
+			TagRepo.Add(value.Tags, postId);
+
+			return true;
 		}
 	}
 }

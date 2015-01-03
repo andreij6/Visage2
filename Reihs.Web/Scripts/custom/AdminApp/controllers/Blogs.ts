@@ -15,10 +15,16 @@
 			self.$scope = $scope;
 			self.postSvc = postSvc;
 
+			function HandleFailedAPI(reson: any): void {
+
+			}
+
 			function GetAllPosts(): void {
-				self.postSvc.getAll().then(function (data) {
-					self.$scope.Posts = data;
-				});
+				self.postSvc.getAll().then(
+					function (data) {
+						self.$scope.Posts = data;
+					},
+					function (reason) { HandleFailedAPI(reason) });
 			}
 
 			function EditPost(post: Extensions.bPost): void {
@@ -29,14 +35,28 @@
 				
 			}
 
-			function Print(post: Extensions.bPost): void {
-				console.log(self.$scope.Post);
+			function Save(post: Extensions.bPost): void {
+				console.log(post);
+				post.Public = false;
+
+				self.postSvc.save(post).then(
+					function (data) { },
+					function (reason) { HandleFailedAPI(reason) });
+			}
+
+			function Publish(post: Extensions.bPost): void {
+				post.Public = true;
+
+				self.postSvc.save(post).then(
+					function (data) { },
+					function (reason) { HandleFailedAPI(reason) });
 			}
 
 			self.$scope.GetAllPosts = GetAllPosts;
 			self.$scope.DeletePosts = DeletePost;
 			self.$scope.EditPosts = EditPost;
-			self.$scope.Print = Print;
+			self.$scope.Save = Save;
+			self.$scope.Publish = Publish;
 			
 			self.init();
 		}

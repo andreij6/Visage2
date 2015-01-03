@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Visage.Repository.Models.Blog;
 
 namespace Visage.Repository.Adapters.Blog.Post
 {
@@ -17,5 +18,7 @@ namespace Visage.Repository.Adapters.Blog.Post
 		bool Update(int PostId, Models.Blog.bPost value);
 
 		bool Delete(int PostId);
+
+		int Add(NewPostModel value, bCategory category);
 	}
 }
