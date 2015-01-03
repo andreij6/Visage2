@@ -18,18 +18,18 @@ namespace Visage.Services.Market
 		public const string CartSessionKey = "CartId";
 
 		#region Dependencies
-		private readonly IMarketRepository MarketRepo;
+		private readonly IShoppingCartRepository MarketRepo;
 		#endregion
 
 		#region Constructors
-		public ShoppingCartService(IMarketRepository marketRepository)
+		public ShoppingCartService(IShoppingCartRepository marketRepository)
 		{
 			MarketRepo = marketRepository;
 		}
 
 		public ShoppingCartService()
 		{
-			MarketRepo = new MarketRepository();
+			MarketRepo = new ShoppingCartRepository();
 		}
 		#endregion
 
@@ -94,6 +94,7 @@ namespace Visage.Services.Market
 				// If the item does exist in the cart,                  
 				// then add one to the quantity.                 
 				cartItem.Quantity++;
+				MarketRepo.SaveChanges();
 			}
 
 			return true;

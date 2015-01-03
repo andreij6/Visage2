@@ -7,7 +7,7 @@ using Visage.Repository.Models.Market;
 
 namespace Visage.Repository.Adapters.Market
 {
-	public interface IMarketRepository
+	public interface IShoppingCartRepository
 	{
 		CartItem GetCartItem(string ShoppingCartId, int ProductId);
 

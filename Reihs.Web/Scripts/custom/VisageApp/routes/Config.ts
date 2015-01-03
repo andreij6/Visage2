@@ -25,7 +25,24 @@
 					templateUrl: 'Templates/Front/Market/Index.html',
 					controller: 'Market'
 				}
-				).otherwise({ redirectTo: '/' })
+				).when('/Market/Product/:name',
+				{
+					templateUrl: 'Templates/Front/Market/ProductDetail.html',
+					controller: 'ProductCtrl'
+				}
+				).when('/Market/Cart',
+				{
+					templateUrl: 'Templates/Front/Market/CartDetail.html',
+					controller: 'CartCtrl'
+				}).when('/Market/Order',
+				{
+					templateUrl: 'Templates/Front/Market/Checkout.html',
+					controller: 'OrderCtrl'
+				}).when('/Market/OrderSuccess',
+				{
+					templateUrl: 'Templates/Front/Market/CompletedOrder.html',
+					controller: 'OrderCtrl'
+				}).otherwise({ redirectTo: '/' })
 		}
 	}
 } 

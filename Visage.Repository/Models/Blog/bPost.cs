@@ -15,7 +15,7 @@ namespace Visage.Repository.Models.Blog
 
 		public bCategory Category { get; set; }
 
-		public virtual IEnumerable<bTag> Tags { get; set; }
+		public virtual ICollection<bTag> Tags { get; set; }
 
 		public string Title { get; set; }
 

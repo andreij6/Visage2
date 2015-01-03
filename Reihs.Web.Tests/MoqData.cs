@@ -50,7 +50,6 @@ namespace Reihs.Web.Tests
 					Likes = 50,
 					Clicks = 60,
 					Author = Andre,
-					Tags = Enumerable.Empty<bTag>(),
 					Category = categories.First()
 				},
 				new bPost
@@ -63,7 +62,6 @@ namespace Reihs.Web.Tests
 					Likes = 25,
 					Clicks = 30,
 					Author = Andre,
-					Tags = Enumerable.Empty<bTag>(),
 					Category = categories.Last()
 				},
 				new bPost
@@ -76,7 +74,6 @@ namespace Reihs.Web.Tests
 					Likes = 5,
 					Clicks = 20,
 					Author = Andre,
-					Tags = Enumerable.Empty<bTag>(),
 					Category = categories.First()
 				}
 			};

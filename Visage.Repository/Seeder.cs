@@ -8,6 +8,7 @@ using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Visage.Repository.Models;
+using Microsoft.AspNet.Identity;
 
 namespace Visage.Repository
 {
@@ -15,8 +16,10 @@ namespace Visage.Repository
 	{
 		public static void Seed(AppDB context)
 		{
-			SeedBlogInfo(context);
+			SeedUserInfo(context);
 
+			SeedBlogInfo(context);
+			
 			//SeedMarketInfo(context);
 		}
 
@@ -60,8 +63,8 @@ namespace Visage.Repository
 		#region Blog Seeders
 		private static void SeedBlogInfo(AppDB context)
 		{
-			//SeedCategories(context);
-			//SeedTags(context);
+			SeedCategories(context);
+			SeedTags(context);
 			SeedPosts(context);
 		}
 
@@ -191,6 +194,52 @@ namespace Visage.Repository
 		}
 		#endregion
 
-		
+		#region SeedUsers
+		private static void SeedUserInfo(AppDB context)
+		{
+			SeedRoles(context);
+			SeedUsers(context);
+		}
+
+		private static void SeedUsers(AppDB context)
+		{
+			if (!context.Roles.Any(r => r.Name == "SuperAdmin"))
+			{
+				var store = new RoleStore<IdentityRole>(context);
+				var manager = new RoleManager<IdentityRole>(store);
+				var role = new IdentityRole { Name = "SuperAdmin" };
+
+				manager.Create(role);
+			}
+
+			if (!context.Users.Any(u => u.UserName == "andreij6@gmail.com"))
+			{
+				var store = new UserStore<ApplicationUser>(context);
+				var manager = new UserManager<ApplicationUser>(store);
+				var user = new ApplicationUser { UserName = "andreij6@gmail.com" };
+
+				manager.Create(user, "ChangeItAsap!");
+				manager.AddToRole(user.Id, "SuperAdmin");
+			}
+
+			context.SaveChanges();
+
+		}
+
+		private static void SeedRoles(AppDB context)
+		{
+			context.Roles.AddOrUpdate(r => r.Name,
+					new IdentityRole
+					{
+						Name = "Editor"
+					},
+					new IdentityRole
+					{
+						Name = "User"
+					}
+				);
+		}
+
+		#endregion
 	}
 }

@@ -12,5 +12,7 @@ namespace Visage.Repository.Models.Blog
 
 		public string Name { get; set; }
 
+		public virtual ICollection<bPost> Blogs { get; set; }
+
 	}
 }

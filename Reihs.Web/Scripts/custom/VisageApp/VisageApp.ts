@@ -17,4 +17,7 @@ module VisageApp {
 	VisageApp.controller('Blog', Blog);
 	VisageApp.controller('Market', Market);
 	VisageApp.controller('LayoutCtrl', LayoutCtrl);
+	VisageApp.controller('CartCtrl', CartCtrl);
+	VisageApp.controller('OrderCtrl', OrderCtrl);
+	VisageApp.controller('ProductCtrl', ProductCtrl);
 }
