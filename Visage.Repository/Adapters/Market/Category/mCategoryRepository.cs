@@ -3,10 +3,58 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Visage.Repository.Models.Market;
 
 namespace Visage.Repository.Adapters.Market.Category
 {
 	public class mCategoryRepository : ImCategoryRepository
 	{
+		public mCategory GetById(int CategoryId)
+		{
+			mCategory result = null;
+
+			using (AppDB db = new AppDB())
+			{
+				
+			}
+
+			return result;
+		}
+
+		public IEnumerable<mCategory> GetAll()
+		{
+			IEnumerable<mCategory> results = Enumerable.Empty<mCategory>();
+
+			using (AppDB db = new AppDB())
+			{
+
+			}
+
+			return results;
+		}
+
+		public void Add(mCategory category)
+		{
+			using (AppDB db = new AppDB())
+			{
+
+			}
+		}
+
+		public void Remove(int CategoryId)
+		{
+			using (AppDB db = new AppDB())
+			{
+
+			}
+		}
+
+		public void Update(int CategoryId, mCategory category)
+		{
+			using (AppDB db = new AppDB())
+			{
+
+			}
+		}
 	}
 }

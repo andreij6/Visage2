@@ -60,8 +60,9 @@
     <Compile Include="Adapters\Blog\Tag\TagRepository.cs" />
     <Compile Include="Adapters\Market\Category\ImCategoryRepository.cs" />
     <Compile Include="Adapters\Market\Category\mCategoryRepository.cs" />
-    <Compile Include="Adapters\Market\Order\IOrderRepository.cs" />
-    <Compile Include="Adapters\Market\Order\OrderRepository.cs" />
+    <Compile Include="Adapters\Market\OrderRepository\IOrderDetailRepository.cs" />
+    <Compile Include="Adapters\Market\OrderRepository\IOrderRepository.cs" />
+    <Compile Include="Adapters\Market\OrderRepository\OrderRepository.cs" />
     <Compile Include="Adapters\Market\Product\IProductRepository.cs" />
     <Compile Include="Adapters\Market\Product\ProductRepository.cs" />
     <Compile Include="Adapters\Market\ShoppingCart\IShoppingCartRepository.cs" />
