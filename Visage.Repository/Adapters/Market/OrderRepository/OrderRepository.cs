@@ -52,7 +52,7 @@ namespace Visage.Repository.Adapters.Market.OrderRepository
 		#endregion
 
 		#region OrderDetail
-		OrderDetail GetById(int OrderDetailId)
+		OrderDetail IOrderDetailRepository.GetById(int OrderDetailId)
 		{
 			OrderDetail orderDetail = null;
 
@@ -62,7 +62,7 @@ namespace Visage.Repository.Adapters.Market.OrderRepository
 			return orderDetail;
 		}
 
-		IEnumerable<OrderDetail> GetAll()
+		IEnumerable<OrderDetail> IOrderDetailRepository.GetAll()
 		{
 			IEnumerable<OrderDetail> results = Enumerable.Empty<OrderDetail>();
 
