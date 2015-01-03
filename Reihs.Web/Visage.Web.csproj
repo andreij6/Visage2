@@ -174,6 +174,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\API\Blog\BlogController.cs" />
+    <Compile Include="Controllers\API\Blog\CategoryController.cs" />
     <Compile Include="Controllers\API\Market\MarketController.cs" />
     <Compile Include="Controllers\MVC\AccountController.cs" />
     <Compile Include="Controllers\MVC\AdminController.cs" />
@@ -216,6 +217,10 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Front\Site.css" />
+    <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.js" />
+    <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.min.js" />
+    <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.js" />
+    <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.min.js" />
     <Content Include="Scripts\custom\google-map\HomeMap.js" />
     <Content Include="Scripts\Plugins\textAngular\textAngular-sanitize.js" />
     <Content Include="Scripts\Plugins\textAngular\textAngular.js" />
@@ -321,7 +326,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\API\Store\" />
-    <Folder Include="Scripts\custom\AdminApp\factories\" />
     <Folder Include="Scripts\custom\AdminApp\models\" />
     <Folder Include="Scripts\custom\VisageApp\factories\" />
     <Folder Include="Scripts\custom\VisageApp\models\" />
@@ -353,11 +357,24 @@
     <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\Index.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\LayoutCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\MarketCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\bCategoryDataService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\mCategoryDataService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\OrderDataService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\PostDataService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\ProductDataService.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IBlogScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IIndexScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\ILayoutScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IMarketScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\routes\Config.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\bCategory.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\bPost.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\bTag.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\CartItem.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\mCategory.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\Order.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\OrderDetail.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\Product.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\About.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Blog.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\CartCtrl.ts" />

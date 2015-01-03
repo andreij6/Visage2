@@ -44,10 +44,10 @@ namespace Visage.Repository.Adapters.Blog.Post
 		public bPost GetById(int PostId)
 		{
 			bPost result = null;
-
+			
 			using (AppDB db = new AppDB())
 			{
-				result = db.bPosts.FirstOrDefault(x => x.Id == PostId);
+				result = db.bPosts.Include("Tags").FirstOrDefault(x => x.Id == PostId);
 			}
 
 			return result;

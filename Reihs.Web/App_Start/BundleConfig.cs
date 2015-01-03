@@ -19,6 +19,13 @@ namespace Reihs.Web
 						"~/Scripts/defaults/angular/angular-route.js",
 						"~/Scripts/defaults/angular/angular-sanitize.js"));
 
+			bundles.Add(new ScriptBundle("~/bundles/angularplugins").Include(
+						"~/Scripts/Plugins/textAngular/textAngular-sanitize.js",  //make a plugins bundle
+						"~/Scripts/Plugins/textAngular/textAngular.js",
+						"~/Scripts/Plugins/textAngular/textAngularSetup.js",
+						"~/Scripts/Plugins/angular-ui/ui-bootstrap-tpls.min.js",
+						"~/Scripts/Plugins/angular-ui/ui-bootstrap.min.js"));
+
 			bundles.Add(new ScriptBundle("~/bundles/holder").Include(
 						"~/Scripts/defaults/holder/holder.js"
 					));
@@ -28,9 +35,11 @@ namespace Reihs.Web
 						"~/Scripts/custom/AdminApp/controllers/Blogs.js",
 						"~/Scripts/custom/AdminApp/controllers/MarketCtrl.js",
 						"~/Scripts/custom/AdminApp/controllers/Index.js",
-						"~/Scripts/Plugins/textAngular/textAngular-sanitize.js",
-						"~/Scripts/Plugins/textAngular/textAngular.js",
-						"~/Scripts/Plugins/textAngular/textAngularSetup.js",
+						"~/Scripts/custom/AdminApp/factories/bCategoryDataService.js",
+						"~/Scripts/custom/AdminApp/factories/PostDataService.js",
+						"~/Scripts/custom/AdminApp/factories/mCategoryDataService.js",
+						"~/Scripts/custom/AdminApp/factories/ProductDataService.js",
+						"~/Scripts/custom/AdminApp/factories/OrderDataService.js",
 						"~/Scripts/custom/AdminApp/routes/Config.js",
 						"~/Scripts/custom/AdminApp/AdminApp.js"
 					));

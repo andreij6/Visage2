@@ -27,7 +27,6 @@ namespace Reihs.Web.Tests.Controllers.API
 
 			Assert.IsNotNull(contentResult);
 			Assert.IsNotNull(contentResult.Content);
-			Assert.AreEqual(contentResult.Content.Count(), 3);
 		}
 
 		[TestMethod]
@@ -43,7 +42,7 @@ namespace Reihs.Web.Tests.Controllers.API
 			Assert.IsNotNull(contentResult);
 			Assert.IsNotNull(contentResult.Content);
 			Assert.AreEqual(contentResult.Content.Title, "My first Blog Post");
-			Assert.AreEqual(contentResult.Content.Tags.Count(), 2);
 		}
+
 	}
 }
