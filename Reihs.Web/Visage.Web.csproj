@@ -217,6 +217,9 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Front\Site.css" />
     <Content Include="Scripts\custom\google-map\HomeMap.js" />
+    <Content Include="Scripts\Plugins\textAngular\textAngular-sanitize.js" />
+    <Content Include="Scripts\Plugins\textAngular\textAngular.js" />
+    <Content Include="Scripts\Plugins\textAngular\textAngularSetup.js" />
     <Content Include="Scripts\defaults\angular\angular-route.js" />
     <Content Include="Scripts\defaults\angular\angular-route.min.js" />
     <Content Include="Scripts\defaults\angular\angular-sanitize.js" />

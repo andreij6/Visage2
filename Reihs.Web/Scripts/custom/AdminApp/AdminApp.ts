@@ -5,7 +5,7 @@
 
 module AdminApp {
 
-	var AdminApp = angular.module("AdminApp", ['ngRoute', 'ngSanitize']);
+	var AdminApp = angular.module("AdminApp", ['ngRoute', 'ngSanitize', 'textAngular']);
 
 	Config.$inject = ['$routeProvider'];
 

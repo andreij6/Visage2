@@ -28,6 +28,9 @@ namespace Reihs.Web
 						"~/Scripts/custom/AdminApp/controllers/Blogs.js",
 						"~/Scripts/custom/AdminApp/controllers/MarketCtrl.js",
 						"~/Scripts/custom/AdminApp/controllers/Index.js",
+						"~/Scripts/Plugins/textAngular/textAngular-sanitize.js",
+						"~/Scripts/Plugins/textAngular/textAngular.js",
+						"~/Scripts/Plugins/textAngular/textAngularSetup.js",
 						"~/Scripts/custom/AdminApp/routes/Config.js",
 						"~/Scripts/custom/AdminApp/AdminApp.js"
 					));
