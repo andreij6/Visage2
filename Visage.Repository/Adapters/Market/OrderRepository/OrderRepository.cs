@@ -13,8 +13,10 @@ namespace Visage.Repository.Adapters.Market.OrderRepository
 		public Order GetById(int OrderId)
 		{
 			Order result = null;
+
 			using (AppDB db = new AppDB())
-			{ 
+			{
+				result = db.Orders.FirstOrDefault(x => x.Id == OrderId);
 			}
 
 			return result;
@@ -25,7 +27,9 @@ namespace Visage.Repository.Adapters.Market.OrderRepository
 			IEnumerable<Order> results = Enumerable.Empty<Order>();
 
 			using (AppDB db = new AppDB())
-			{ }
+			{
+				results = db.Orders.ToList();
+			}
 
 			return results;
 		}
@@ -33,20 +37,27 @@ namespace Visage.Repository.Adapters.Market.OrderRepository
 		public void Add(Order order)
 		{
 			using (AppDB db = new AppDB())
-			{ }
+			{
+				db.Orders.Add(order);
+				db.SaveChanges();
+			}
 		}
 
 		public void Remove(int OrderId)
 		{
 			using (AppDB db = new AppDB())
-			{ }
+			{
+				var order = db.Orders.FirstOrDefault(x => x.Id == OrderId);
+				db.Orders.Remove(order);
+				db.SaveChanges();
+			}
 		}
 
 		public void Update(int OrderId, Order order)
 		{
 			using (AppDB db = new AppDB())
 			{
-
+				throw new NotImplementedException();
 			}
 		}
 		#endregion
@@ -57,7 +68,9 @@ namespace Visage.Repository.Adapters.Market.OrderRepository
 			OrderDetail orderDetail = null;
 
 			using (AppDB db = new AppDB())
-			{ }
+			{
+				orderDetail = db.OrderDetails.FirstOrDefault(x => x.OrderDetailId == OrderDetailId);
+			}
 
 			return orderDetail;
 		}
@@ -67,7 +80,9 @@ namespace Visage.Repository.Adapters.Market.OrderRepository
 			IEnumerable<OrderDetail> results = Enumerable.Empty<OrderDetail>();
 
 			using (AppDB db = new AppDB())
-			{ }
+			{
+				results = db.OrderDetails.ToList();
+			}
 
 			return results;
 		}
@@ -75,13 +90,18 @@ namespace Visage.Repository.Adapters.Market.OrderRepository
 		public void Add(OrderDetail order)
 		{
 			using (AppDB db = new AppDB())
-			{ }
+			{
+				db.OrderDetails.Add(order);
+				db.SaveChanges();
+			}
 		}
 
 		public void Update(int OrderDetailId, OrderDetail order)
 		{
 			using (AppDB db = new AppDB())
-			{ }
+			{
+				throw new NotImplementedException();
+			}
 		}
 		#endregion
 	}

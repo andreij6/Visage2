@@ -15,7 +15,7 @@ namespace Visage.Repository.Adapters.Market.Product
 
 			using (AppDB db = new AppDB())
 			{
-
+				result = db.mProducts.FirstOrDefault(x => x.Id == ProductId);
 			}
 
 			return result;
@@ -27,7 +27,7 @@ namespace Visage.Repository.Adapters.Market.Product
 
 			using (AppDB db = new AppDB())
 			{
-
+				results = db.mProducts.ToList();
 			}
 
 			return results;
@@ -37,7 +37,8 @@ namespace Visage.Repository.Adapters.Market.Product
 		{
 			using (AppDB db = new AppDB())
 			{
-
+				db.mProducts.Add(product);
+				db.SaveChanges();
 			}
 		}
 
@@ -45,7 +46,8 @@ namespace Visage.Repository.Adapters.Market.Product
 		{
 			using (AppDB db = new AppDB())
 			{
-
+				var prod = db.mProducts.FirstOrDefault(x => x.Id == ProductId);
+				db.mProducts.Remove(prod);
 			}
 		}
 
@@ -53,7 +55,7 @@ namespace Visage.Repository.Adapters.Market.Product
 		{
 			using (AppDB db = new AppDB())
 			{
-
+				throw new NotImplementedException();
 			}
 		}
 	}
