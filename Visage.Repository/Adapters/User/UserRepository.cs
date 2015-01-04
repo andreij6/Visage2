@@ -41,7 +41,7 @@ namespace Visage.Repository.Adapters.User
 				{
 					foreach (var storedRole in roles)
 					{
-						if (storedRole.Name == "Admin")
+						if (storedRole.Name == "Admin" || storedRole.Name == "SuperAdmin")
 						{
 							if (role.RoleId == storedRole.Id)
 							{
