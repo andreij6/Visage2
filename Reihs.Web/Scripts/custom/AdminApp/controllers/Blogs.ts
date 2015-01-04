@@ -12,7 +12,14 @@
 			self.$scope.cGetAll();
 		}
 
-		constructor($scope: Admin_Extensions.IBlogScope, $location: ng.ILocationService, $routeParams: IRouteParams, postSvc: PostDataService, catSvc: CategoryDataService) {
+		constructor(
+			$scope: Admin_Extensions.IBlogScope, 
+			$location: ng.ILocationService,
+			$routeParams: IRouteParams,
+			postSvc: PostDataService,
+			catSvc: CategoryDataService
+			) {
+
 			var self = this;
 			self.$scope = $scope;
 			self.postSvc = postSvc;
@@ -20,7 +27,7 @@
 			self.$location = $location;
 			self.$scope.Editing = false;
 			
-			//Helpers
+			//#region Helper Functions
 			function HandleFailedAPI(reson: any): void {
 
 			}
@@ -30,13 +37,25 @@
 					self.$scope.Post = post;
 			}
 
-			//Registered Functions
+			function addCategory(category: Extensions.bCategory, post: Extensions.bPost): void {
+				if (post) {
+					if (post.CategoryId == category.Id)
+					{
+						self.$scope.Category = category;
+						self.$scope.Post.Category = category;
+					}
+						
+				}
+			}
+			//#endregion
+
+			//#region Registered Functions
 			function Print(): void {
 				console.log(self.$scope.Post);
 				console.log(self.$scope.Editing);
 			}
 
-			//Post
+			//#region Post Functions
 			function GetAll(): void {
 				self.postSvc.getAll().then(
 					function (data) {
@@ -81,10 +100,21 @@
 			function EditLink(post: Extensions.bPost): void {
 				self.$location.path('/Blogs/Edit/' + post.Id);
 			}
+			//#endregion
 
-			//Category
+			//#region Category Functions
 			function GetAllCategories(): void {
-				
+				self.catSvc.getAll().then(
+					function (data) {
+						self.$scope.Categories = data;
+
+						if ($routeParams.Id) {
+							self.$scope.Categories.forEach(cat => addCategory(cat, self.$scope.Post));
+							self.$scope.Editing = true;
+						}
+
+					},
+					function (reason) { HandleFailedAPI(reason) });
 			}
 
 			function EditCategory(category: Extensions.bCategory): void {
@@ -94,13 +124,20 @@
 			}
 
 			function DeleteCategory(category: Extensions.bCategory): void {
+				self.catSvc.deleteCategory(category).then(
+					function (data) {
+						console.log(data);
+					}, function (error) { HandleFailedAPI(error) });
 			}
 
 			function SaveCategory(category: Extensions.bCategory): void {
+				console.log("Saved");
+				self.$location.path('/Blogs/Manage');
 			}
+			//#endregion
+			//#endregion
 
-
-			//Registration
+			//#region Registering Functions
 			self.$scope.GetAll = GetAll;
 			self.$scope.Delete = Delete;
 			self.$scope.Edit = EditPost;
@@ -114,6 +151,7 @@
 			self.$scope.cUpdate = UpdateCategory;
 			self.$scope.cDelete = DeleteCategory;
 			self.$scope.cSave = SaveCategory;
+			//#endregion
 
 			self.init();
 		}

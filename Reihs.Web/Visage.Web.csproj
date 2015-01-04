@@ -270,6 +270,7 @@
     <Content Include="Scripts\defaults\holder\holder.js" />
     <Content Include="Templates\Admin\Blogs\Index.html" />
     <Content Include="Templates\Admin\Blogs\Manage.html" />
+    <Content Include="Templates\Admin\Blogs\NewCategory.html" />
     <Content Include="Templates\Admin\Home.html" />
     <Content Include="Templates\Admin\Blogs\New.html" />
     <Content Include="Templates\Admin\Market\Index.html" />

@@ -2,9 +2,10 @@
 
 	export class bPost {
 		Id: number;
+		Category: bCategory;
 		CategoryId: number;
 		Title: string;
-		Subtitle: string;
+		SubTitle: string;
 		Content: string;
 		AuthorId: string;
 		Rating: number;

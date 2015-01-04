@@ -22,7 +22,11 @@
 					templateUrl: 'Templates/Admin/Blogs/New.html',
 					controller: 'Blogs'
 				}
-				).when('/Market',
+				).when('/Blogs/Category/New',
+				{
+					templateUrl: 'Templates/Admin/Blogs/NewCategory.html',
+					controller: 'Blogs'
+				}).when('/Market',
 				{
 					templateUrl: 'Templates/Admin/Market/Index.html',
 					controller: 'MarketCtrl'

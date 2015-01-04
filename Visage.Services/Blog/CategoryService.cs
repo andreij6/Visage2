@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Visage.Repository.Adapters.Blog.Category;
 using Visage.Repository.Adapters.User;
 using Visage.Repository.Models.Blog;
+using Visage.Repository.ViewModels;
 
 namespace Visage.Services.Blog
 {
@@ -35,9 +36,20 @@ namespace Visage.Services.Blog
 			return CategoryRepo.Delete(id);
 		}
 
-		public IEnumerable<bCategory> GetAll()
+		public IEnumerable<bCategoryModel> GetAll()
 		{
-			return CategoryRepo.GetAll();
+			List<bCategoryModel> results = new List<bCategoryModel>();
+
+			IEnumerable<bCategory> categories = CategoryRepo.GetAll();
+
+			foreach (var cat in categories)
+			{
+				bCategoryModel category = new bCategoryModel(cat);
+				results.Add(category);
+			}
+
+			return results;
+
 		}
 
 		public bCategory GetById(int id)
@@ -45,9 +57,11 @@ namespace Visage.Services.Blog
 			return CategoryRepo.GetById(id);
 		}
 
-		public bool Post(bCategory category)
+		public bool Post(NewCategoryModel category)
 		{
-			return CategoryRepo.Add(category);
+			bCategory add = new bCategory(category);
+
+			return CategoryRepo.Add(add);
 		}
 
 		public bool Update(int id, bCategory category)

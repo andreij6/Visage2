@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,8 +17,19 @@ namespace Visage.Repository.Adapters.Blog.Category
 			using (AppDB db = new AppDB()) 
 			{ 
 				bCategory category = db.bCategories.FirstOrDefault(x => x.Id == id);
+				var associatedPosts = db.bPosts.Where(x => x.CategoryId == category.Id).ToList();
+				bCategory unCategorized = db.bCategories.FirstOrDefault(x => x.Name == "UnCategorized");
+
+				foreach (var post in associatedPosts)
+				{
+					post.CategoryId = unCategorized.Id;
+				}
+
+				db.SaveChanges();
 
 				db.bCategories.Remove(category);
+
+				db.SaveChanges();
 			}
 
 			return result;

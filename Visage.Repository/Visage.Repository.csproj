@@ -82,6 +82,8 @@
     <Compile Include="Migrations\201501031845551_addPublicToPost.Designer.cs">
       <DependentUpon>201501031845551_addPublicToPost.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\bCategoryModel.cs" />
+    <Compile Include="ViewModels\NewCategoryModel.cs" />
     <Compile Include="ViewModels\NewPostModel.cs" />
     <Compile Include="Models\Interfaces\IRate.cs" />
     <Compile Include="Migrations\Configuration.cs" />

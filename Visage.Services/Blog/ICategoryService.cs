@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Visage.Repository.Models.Blog;
+using Visage.Repository.ViewModels;
 
 namespace Visage.Services.Blog
 {
@@ -11,11 +12,11 @@ namespace Visage.Services.Blog
 	{
 		bool Delete(int id);
 
-		IEnumerable<bCategory> GetAll();
+		IEnumerable<bCategoryModel> GetAll();
 
 		bCategory GetById(int id);
 
-		bool Post(bCategory category);
+		bool Post(NewCategoryModel category);
 
 		bool Update(int id, bCategory category);
 	}
