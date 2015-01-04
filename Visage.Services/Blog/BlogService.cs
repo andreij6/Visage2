@@ -62,11 +62,13 @@ namespace Visage.Services.Blog
 
 			foreach (var post in bposts)
 			{
+				var tags = post.Tags.Select(x => x.Name);
+
 				PostModel newPost = new PostModel
 				{
 					Id = post.Id,
 					CategoryId = post.CategoryId,
-					Tags = post.Tags,
+					Tags = tags,
 					Title = post.Title,
 					Subtitle = post.Subtitle,
 					Content = post.Content,

@@ -366,6 +366,7 @@
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\ILayoutScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IMarketScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\routes\Config.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\interfaces\IRouteParams.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\bCategory.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\bPost.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\bTag.ts" />

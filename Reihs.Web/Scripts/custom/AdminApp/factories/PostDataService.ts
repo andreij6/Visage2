@@ -1,12 +1,11 @@
 ﻿module AdminApp {
 	export class PostDataService {
-		private Posts: Array<Extensions.bPost>;
+		public Posts: Array<Extensions.bPost>;
 		private PostAPI: string;
 		private httpService: ng.IHttpService;
 		private qService: ng.IQService;
 
-		constructor($http: ng.IHttpService, $q: ng.IQService)
-		{
+		constructor($http: ng.IHttpService, $q: ng.IQService){
 			this.PostAPI = "api/Blog";
 
 			this.httpService = $http;
@@ -37,37 +36,48 @@
 			return deferred.promise;
 		}
 
-		getById(blogId: number) {
+		getById(postId: number) {
 			var self = this;
 			var deferred = self.qService.defer();
 			return deferred.promise;
 		}
 
-		deletePost(blog: Extensions.bPost): ng.IPromise<any> {
+		Delete(post: Extensions.bPost): ng.IPromise<any> {
+			var self = this;
+			var deferred = self.qService.defer();
+
+			self.httpService.delete(self.PostAPI + "/Delete/" + post.Id).then(function (result) {
+
+				var index = self.Posts.indexOf(post);
+
+				self.Posts.splice(index, 1);
+
+				deferred.resolve();
+			}, function (error) {
+					deferred.reject(error);
+				});
+
+			return deferred.promise;
+		}
+
+		update(post: Extensions.bPost): ng.IPromise<any> {
 			var self = this;
 			var deferred = self.qService.defer();
 			return deferred.promise;
 		}
 
-		update(blog: Extensions.bPost): ng.IPromise<any> {
-			var self = this;
-			var deferred = self.qService.defer();
-			return deferred.promise;
-		}
-
-		save(blog: Extensions.bPost): ng.IPromise<any> {
+		save(post: Extensions.bPost): ng.IPromise<any> {
 			var self = this;
 			var deferred = self.qService.defer();
 
-			self.httpService.post(self.PostAPI + '/Post', blog).then(
+			self.httpService.post(self.PostAPI + '/Post', post).then(
 				function (result) {
-					self.Posts.push(blog);
+					self.Posts.push(post);
 				},
 				function (error) { deferred.reject(error); });
 
 			return deferred.promise;
 		}
 
-		
 	}
 }

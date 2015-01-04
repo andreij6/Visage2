@@ -9,25 +9,27 @@
 			<div class="row">
 
 				<div class="col-md-12">
-					<h4>Bootstrap Snipp for Datatable</h4>
+					<h4>Blogs</h4>
 					<div class="table-responsive">
 
 						<table id="mytable" class="table table-bordred table-striped">
 
 							<thead>
-
-							<th><input type="checkbox" id="checkall" /></th>
-							<th>Title</th>
-							<th>Author</th> 
-							<th>Edit</th>
-							<th>Delete</th>
+								<th><input type="checkbox" id="checkall" /></th>
+								<th>Title</th>
+								<th>Author</th>
+								<th>View</th>
+								<th>My Delete</th>
+								<th>Edit</th>
+								<th>Delete</th>
 							</thead>
 							<tbody ng-repeat="post in Posts">
-
 								<tr>
 									<td><input type="checkbox" class="checkthis" /></td>
 									<td>{{post.Title}}</td>
 									<td>{{post.Author}}</td>
+									<td><p><button ng-click="EditLink(post)" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+									<td><p><button class="btn btn-danger btn-xs" ng-click="Delete(post)"><span class="glyphicon glyphicon-trash"></span></button></p></td>
 									<td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
 									<td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p></td>
 								</tr>
@@ -51,6 +53,44 @@
 
 				</div>
 
+				<div class="col-md-12">
+					<h4>Categories</h4>
+					<div class="table-responsive">
+
+						<table id="mytable" class="table table-bordred table-striped">
+
+							<thead>
+							<th><input type="checkbox" id="checkall" /></th>
+							<th>Name</th>
+							<th>View</th>
+							<th>My Delete</th>
+							</thead>
+							<tbody ng-repeat="category in Categories">
+								<tr>
+									<td><input type="checkbox" class="checkthis" /></td>
+									<td>{{category.Name}}</td>
+									<td><p><button ng-click="cEdit(category)" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+									<td><p><button class="btn btn-danger btn-xs" ng-click="cDelete(category)"><span class="glyphicon glyphicon-trash"></span></button></p></td>
+								</tr>
+
+							</tbody>
+
+						</table>
+
+						<div class="clearfix"></div>
+						<ul class="pagination pull-right">
+							<li class="disabled"><a><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+							<li class="active"><a>1</a></li>
+							<li><a>2</a></li>
+							<li><a>3</a></li>
+							<li><a>4</a></li>
+							<li><a>5</a></li>
+							<li><a><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+						</ul>
+
+					</div>
+
+				</div>
 			</div>
 		</div>
 

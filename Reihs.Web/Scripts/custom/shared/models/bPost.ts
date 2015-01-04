@@ -1,7 +1,7 @@
 ﻿module Extensions {
 
 	export class bPost {
-		PostId: number;
+		Id: number;
 		CategoryId: number;
 		Title: string;
 		Subtitle: string;

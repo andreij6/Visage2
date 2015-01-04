@@ -9,7 +9,6 @@ namespace Visage.Repository.Adapters.Blog.Tag
 {
 	public class TagRepository : ITagRepository
 	{
-
 		public void Add(IEnumerable<string> tagNames, int postId)
 		{
 			using (AppDB db = new AppDB())

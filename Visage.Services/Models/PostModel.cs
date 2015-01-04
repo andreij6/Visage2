@@ -13,7 +13,7 @@ namespace Visage.Services.Models
 
 		public int CategoryId { get; set; }
 
-		public IEnumerable<bTag> Tags { get; set; }
+		public IEnumerable<string> Tags { get; set; }
 
 		public string Title { get; set; }
 
