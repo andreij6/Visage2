@@ -1269,6 +1269,9 @@ interface JQueryStatic {
  * The jQuery instance members
  */
 interface JQuery {
+	carousel(): void;
+	s3Slider(any): void;
+
     /**
      * Register a handler to be called when Ajax requests complete. This is an AjaxEvent.
      *
