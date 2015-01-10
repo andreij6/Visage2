@@ -208,14 +208,25 @@
     </Content>
     <Content Include="Content\Front\li-scroller.css" />
     <Content Include="Content\Front\s3slider.css" />
+    <Content Include="Content\Front\theme\animate.css" />
+    <Content Include="Content\Front\theme\flexslider.css" />
+    <Content Include="Content\Front\theme\magnific-popup.css" />
+    <Content Include="Content\Front\theme\owl.carousel.css" />
+    <Content Include="Content\Front\theme\owl.theme.css" />
+    <Content Include="Content\Front\theme\style.css" />
+    <Content Include="Content\Front\theme\yamm.css" />
+    <Content Include="Content\Front\theme\YTPlayer.css" />
     <Content Include="Content\Front\Visage.css">
       <DependentUpon>Visage.scss</DependentUpon>
     </Content>
     <Content Include="Content\Front\Visage.min.css">
       <DependentUpon>Visage.css</DependentUpon>
     </Content>
+    <Content Include="Content\Images\bollard.jpg" />
     <Content Include="Content\Images\eye.jpg" />
     <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\mother.jpg" />
+    <Content Include="Content\Images\winter.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
@@ -274,6 +285,23 @@
     <Content Include="Scripts\defaults\respond.min.js" />
     <Content Include="Scripts\defaults\_references.js" />
     <Content Include="Scripts\defaults\holder\holder.js" />
+    <Content Include="Scripts\theme\contact_me.js" />
+    <Content Include="Scripts\theme\custom.js" />
+    <Content Include="Scripts\theme\jqBootstrapValidation.js" />
+    <Content Include="Scripts\theme\jquery.countdown.js" />
+    <Content Include="Scripts\theme\jquery.counterup.min.js" />
+    <Content Include="Scripts\theme\jquery.easing.1.3.min.js" />
+    <Content Include="Scripts\theme\jquery.flexslider-min.js" />
+    <Content Include="Scripts\theme\jquery.magnific-popup.min.js" />
+    <Content Include="Scripts\theme\jquery.mb.YTPlayer.min.js" />
+    <Content Include="Scripts\theme\jquery.min.js" />
+    <Content Include="Scripts\theme\jquery.mixitup.min.js" />
+    <Content Include="Scripts\theme\jquery.stellar.min.js" />
+    <Content Include="Scripts\theme\jquery.sticky.js" />
+    <Content Include="Scripts\theme\owl.carousel.min.js" />
+    <Content Include="Scripts\theme\tweetie.min.js" />
+    <Content Include="Scripts\theme\typed.js" />
+    <Content Include="Scripts\theme\wow.min.js" />
     <Content Include="Templates\Admin\Blogs\Index.html" />
     <Content Include="Templates\Admin\Blogs\Manage.html" />
     <Content Include="Templates\Admin\Blogs\NewCategory.html" />
@@ -287,6 +315,7 @@
     <Content Include="Templates\Front\Blog\Index.html" />
     <Content Include="Templates\Front\Contact.html" />
     <Content Include="Templates\Front\Headers\HomeHeader.html" />
+    <Content Include="Templates\Front\Headers\OtherHeaders.html" />
     <Content Include="Templates\Front\Home.html" />
     <Content Include="Templates\Front\Market\CartDetail.html" />
     <Content Include="Templates\Front\Market\Checkout.html" />

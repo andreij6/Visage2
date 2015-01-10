@@ -59,6 +59,21 @@ namespace Reihs.Web
 						"~/Scripts/custom/VisageApp/VisageApp.js"
 						));
 
+			bundles.Add(new ScriptBundle("~/bundle/ThemeScripts").Include(
+					"~/Scripts/theme/owl.carousel.min.js",
+					"~/Scripts/theme/typed.js",
+					"~/Scripts/theme/wow.min.js",
+					"~/Scripts/theme/jquery.sticky.js",
+					"~/Scripts/theme/jquery.stellar.min.js",
+					"~/Scripts/theme/jquery.easing.1.3.min.js",
+					"~/Scripts/theme/jquery.flexslider-min.js",
+					"~/Scripts/theme/jquery.mixitup.min.js",
+					"~/Scripts/theme/jquery.countdown.js",
+					"~/Scripts/theme/jquery.counterup.min.js",
+					"~/Scripts/theme/jquery.magnific-popup.min.js",
+					"~/Scripts/theme/custom.js"
+				));
+
 			// Use the development version of Modernizr to develop with and learn from. Then, when you're
 			// ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
 			bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
@@ -78,10 +93,8 @@ namespace Reihs.Web
 					));
 
 			bundles.Add(new StyleBundle("~/Content/Front/css").Include(
-					"~/Content/Front/Colors.css",
 					"~/Content/Front/s3slider.css",
-					"~/Content/Front/li-scroller.css",
-					"~/Content/Front/Visage.css"));
+					"~/Content/Front/li-scroller.css"));
 
 			bundles.Add(new StyleBundle("~/Content/Admin/css").Include(
 					"~/Content/Admin/sb-admin-2.min.css"
