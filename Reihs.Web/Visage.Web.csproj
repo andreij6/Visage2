@@ -221,7 +221,6 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\custom\scripts\li-scroller-starter.js" />
-    <Content Include="Scripts\custom\scripts\s3starter.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.min.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.js" />
@@ -287,6 +286,7 @@
     <Content Include="Templates\Front\Blog\Detail.html" />
     <Content Include="Templates\Front\Blog\Index.html" />
     <Content Include="Templates\Front\Contact.html" />
+    <Content Include="Templates\Front\Headers\HomeHeader.html" />
     <Content Include="Templates\Front\Home.html" />
     <Content Include="Templates\Front\Market\CartDetail.html" />
     <Content Include="Templates\Front\Market\Checkout.html" />
@@ -387,6 +387,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Blog.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\CartCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Contact.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\HeaderCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Index.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\LayoutCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Market.ts" />
@@ -396,6 +397,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IBlogScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ICartScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IContactScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IHeaderCtrlScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IIndexScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ILayoutScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IMarketScope.ts" />
