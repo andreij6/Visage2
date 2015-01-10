@@ -8,6 +8,7 @@ using Owin;
 using Reihs.Web.Models;
 using Visage.Repository.Models;
 using Visage.Repository;
+using System.Web.Configuration;
 
 namespace Reihs.Web
 {
@@ -17,7 +18,7 @@ namespace Reihs.Web
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure the db context, user manager and signin manager to use a single instance per request
-            app.CreatePerOwinContext(ApplicationDbContext.Create);
+            app.CreatePerOwinContext(AppDB.Create);
             app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
             app.CreatePerOwinContext<ApplicationSignInManager>(ApplicationSignInManager.Create);
 
@@ -56,15 +57,15 @@ namespace Reihs.Web
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+		  app.UseFacebookAuthentication(
+			appId: WebConfigurationManager.AppSettings["FacebookAppId"],
+			appSecret: WebConfigurationManager.AppSettings["FacebookAppSecret"]);
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+			  ClientId = WebConfigurationManager.AppSettings["GooglePlusAPIClientId"],
+			  ClientSecret = WebConfigurationManager.AppSettings["GooglePlusAPIClientSecret"]
+            });
         }
     }
 }

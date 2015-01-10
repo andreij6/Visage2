@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Web", "Reihs.Web\Visage.Web.csproj", "{D3715040-3B5E-41F6-8AA1-7ED4AE3E139F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Web.Tests", "Reihs.Web.Tests\Visage.Web.Tests.csproj", "{3198816D-88C9-48F2-8B24-85B8E04F59B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{7645A678-994F-4195-AFF1-D85A3FEC0392}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{9B7BDB27-9918-4F7B-B337-41B04FE696C7}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\ReihsWeb-WAWS-dev.json = PublishScripts\Configurations\ReihsWeb-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Library", "Visage.Library\Visage.Library.csproj", "{96EE6122-7265-400C-83FF-E88EF33EB9DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Repository", "Visage.Repository\Visage.Repository.csproj", "{0C4928F1-99EF-4124-8EDD-79CF4CAE589A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Library.Tests", "Visage.Library.Tests\Visage.Library.Tests.csproj", "{61E4B3E9-2D08-4E49-902B-A60C838F4ED1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{9EFBF167-CF74-4707-BDE1-0F36C1B51505}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{D41E2D11-937F-4C40-92F8-1E0BE34261EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{659996DD-73C7-4397-8A00-4F009CB7F89D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5A3C0931-3D38-45FD-965C-1E0EEC13FAC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Services", "Visage.Services\Visage.Services.csproj", "{24D1D175-309E-4A27-89A7-D86605F582DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Services.Tests", "Visage.Services.Tests\Visage.Services.Tests.csproj", "{33FF4DE8-77AD-4891-BF1F-63A99D94C410}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3715040-3B5E-41F6-8AA1-7ED4AE3E139F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3715040-3B5E-41F6-8AA1-7ED4AE3E139F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3715040-3B5E-41F6-8AA1-7ED4AE3E139F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3715040-3B5E-41F6-8AA1-7ED4AE3E139F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3198816D-88C9-48F2-8B24-85B8E04F59B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3198816D-88C9-48F2-8B24-85B8E04F59B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3198816D-88C9-48F2-8B24-85B8E04F59B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3198816D-88C9-48F2-8B24-85B8E04F59B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96EE6122-7265-400C-83FF-E88EF33EB9DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96EE6122-7265-400C-83FF-E88EF33EB9DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96EE6122-7265-400C-83FF-E88EF33EB9DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96EE6122-7265-400C-83FF-E88EF33EB9DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C4928F1-99EF-4124-8EDD-79CF4CAE589A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C4928F1-99EF-4124-8EDD-79CF4CAE589A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C4928F1-99EF-4124-8EDD-79CF4CAE589A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C4928F1-99EF-4124-8EDD-79CF4CAE589A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E4B3E9-2D08-4E49-902B-A60C838F4ED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E4B3E9-2D08-4E49-902B-A60C838F4ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E4B3E9-2D08-4E49-902B-A60C838F4ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E4B3E9-2D08-4E49-902B-A60C838F4ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24D1D175-309E-4A27-89A7-D86605F582DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24D1D175-309E-4A27-89A7-D86605F582DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24D1D175-309E-4A27-89A7-D86605F582DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24D1D175-309E-4A27-89A7-D86605F582DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33FF4DE8-77AD-4891-BF1F-63A99D94C410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33FF4DE8-77AD-4891-BF1F-63A99D94C410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33FF4DE8-77AD-4891-BF1F-63A99D94C410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33FF4DE8-77AD-4891-BF1F-63A99D94C410}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D3715040-3B5E-41F6-8AA1-7ED4AE3E139F} = {659996DD-73C7-4397-8A00-4F009CB7F89D}
+		{3198816D-88C9-48F2-8B24-85B8E04F59B7} = {659996DD-73C7-4397-8A00-4F009CB7F89D}
+		{9B7BDB27-9918-4F7B-B337-41B04FE696C7} = {7645A678-994F-4195-AFF1-D85A3FEC0392}
+		{96EE6122-7265-400C-83FF-E88EF33EB9DD} = {9EFBF167-CF74-4707-BDE1-0F36C1B51505}
+		{0C4928F1-99EF-4124-8EDD-79CF4CAE589A} = {D41E2D11-937F-4C40-92F8-1E0BE34261EB}
+		{61E4B3E9-2D08-4E49-902B-A60C838F4ED1} = {9EFBF167-CF74-4707-BDE1-0F36C1B51505}
+		{24D1D175-309E-4A27-89A7-D86605F582DD} = {5A3C0931-3D38-45FD-965C-1E0EEC13FAC2}
+		{33FF4DE8-77AD-4891-BF1F-63A99D94C410} = {5A3C0931-3D38-45FD-965C-1E0EEC13FAC2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,37 @@
+﻿.navbar {
+  border: none;
+  z-index: 100; }
+  .navbar .navbar-brand img {
+    width: 250px; }
+
+.nav-elements {
+  background: #8c7556;
+  filter: alpha(opacity=50);
+  /* here you can set the opacity of box with text */
+  -moz-opacity: 0.5;
+  /* here you can set the opacity of box with text */
+  -khtml-opacity: 0.5;
+  /* here you can set the opacity of box with text */
+  opacity: 0.5; }
+  .nav-elements li a {
+    color: white;
+    font-weight: bold; }
+  .nav-elements li a:hover {
+    color: #8c7556; }
+
+#myCarousel {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.list-group-item {
+  background-color: transparent;
+  border: none; }
+
+#Ad-Bar {
+  background-color: #291c0b;
+  padding: 10px;
+  margin-top: 50px; }
+
+
+/*# sourceMappingURL=Visage.css.map */

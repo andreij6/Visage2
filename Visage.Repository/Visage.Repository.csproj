@@ -52,7 +52,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBContext.cs" />
+    <Compile Include="Adapters\Blog\Category\CategoryRepository.cs" />
+    <Compile Include="Adapters\Blog\Category\ICategoryRepository.cs" />
+    <Compile Include="Adapters\Blog\Post\IPostRepository.cs" />
+    <Compile Include="Adapters\Blog\Post\PostRepository.cs" />
+    <Compile Include="Adapters\Blog\Tag\ITagRepository.cs" />
+    <Compile Include="Adapters\Blog\Tag\TagRepository.cs" />
+    <Compile Include="Adapters\Market\Category\ImCategoryRepository.cs" />
+    <Compile Include="Adapters\Market\Category\mCategoryRepository.cs" />
+    <Compile Include="Adapters\Market\OrderRepository\IOrderDetailRepository.cs" />
+    <Compile Include="Adapters\Market\OrderRepository\IOrderRepository.cs" />
+    <Compile Include="Adapters\Market\OrderRepository\OrderRepository.cs" />
+    <Compile Include="Adapters\Market\Product\IProductRepository.cs" />
+    <Compile Include="Adapters\Market\Product\ProductRepository.cs" />
+    <Compile Include="Adapters\Market\ShoppingCart\IShoppingCartRepository.cs" />
+    <Compile Include="Adapters\Market\ShoppingCart\ShoppingCartRepository.cs" />
+    <Compile Include="Adapters\User\IUserRepository.cs" />
+    <Compile Include="Adapters\User\UserRepository.cs" />
+    <Compile Include="DbContext.cs" />
+    <Compile Include="Migrations\201501021702321_initial.cs" />
+    <Compile Include="Migrations\201501021702321_initial.Designer.cs">
+      <DependentUpon>201501021702321_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201501030927161_manytomanyTagPost.cs" />
+    <Compile Include="Migrations\201501030927161_manytomanyTagPost.Designer.cs">
+      <DependentUpon>201501030927161_manytomanyTagPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201501031845551_addPublicToPost.cs" />
+    <Compile Include="Migrations\201501031845551_addPublicToPost.Designer.cs">
+      <DependentUpon>201501031845551_addPublicToPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\bCategoryModel.cs" />
+    <Compile Include="ViewModels\NewCategoryModel.cs" />
+    <Compile Include="ViewModels\NewPostModel.cs" />
     <Compile Include="Models\Interfaces\IRate.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -60,6 +92,11 @@
     <Compile Include="Models\Blog\bCategory.cs" />
     <Compile Include="Models\Blog\bPost.cs" />
     <Compile Include="Models\Blog\bTags.cs" />
+    <Compile Include="Models\Market\CartItem.cs" />
+    <Compile Include="Models\Market\mCategory.cs" />
+    <Compile Include="Models\Market\mProduct.cs" />
+    <Compile Include="Models\Market\Order.cs" />
+    <Compile Include="Models\Market\OrderDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seeder.cs" />
   </ItemGroup>
@@ -68,9 +105,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Adapters\Blog\Category\" />
-    <Folder Include="Adapters\Blog\Post\" />
-    <Folder Include="Adapters\Blog\Tag\" />
+    <EmbeddedResource Include="Migrations\201501021702321_initial.resx">
+      <DependentUpon>201501021702321_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201501030927161_manytomanyTagPost.resx">
+      <DependentUpon>201501030927161_manytomanyTagPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201501031845551_addPublicToPost.resx">
+      <DependentUpon>201501031845551_addPublicToPost.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

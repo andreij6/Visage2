@@ -17,7 +17,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -174,7 +174,10 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\API\Blog\BlogController.cs" />
+    <Compile Include="Controllers\API\Blog\CategoryController.cs" />
+    <Compile Include="Controllers\API\Market\MarketController.cs" />
     <Compile Include="Controllers\MVC\AccountController.cs" />
+    <Compile Include="Controllers\MVC\AdminController.cs" />
     <Compile Include="Controllers\MVC\HomeController.cs" />
     <Compile Include="Controllers\MVC\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -186,34 +189,110 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Admin\sb-admin-2.css">
+      <DependentUpon>sb-admin-2.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Admin\sb-admin-2.min.css">
+      <DependentUpon>sb-admin-2.css</DependentUpon>
+    </Content>
     <Content Include="Content\defaults\bootstrap.css" />
     <Content Include="Content\defaults\bootstrap.min.css" />
     <Content Include="Content\defaults\font-awesome.css" />
     <Content Include="Content\defaults\font-awesome.min.css" />
+    <Content Include="Content\Front\carousel.css" />
+    <Content Include="Content\Front\Colors.css">
+      <DependentUpon>Colors.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\Colors.min.css">
+      <DependentUpon>Colors.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\li-scroller.css" />
+    <Content Include="Content\Front\s3slider.css" />
+    <Content Include="Content\Front\Visage.css">
+      <DependentUpon>Visage.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\Visage.min.css">
+      <DependentUpon>Visage.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Images\eye.jpg" />
+    <Content Include="Content\Images\logo.png" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\defaults\bootstrap.js" />
-    <Content Include="Scripts\defaults\bootstrap.min.js" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Scripts\custom\scripts\li-scroller-starter.js" />
+    <Content Include="Scripts\custom\scripts\s3starter.js" />
+    <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.js" />
+    <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.min.js" />
+    <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.js" />
+    <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.min.js" />
+    <Content Include="Scripts\custom\google-map\HomeMap.js" />
+    <Content Include="Scripts\Plugins\li-scroller\li-scroller.js" />
+    <Content Include="Scripts\Plugins\s3Slider\s3Slider.js" />
+    <Content Include="Scripts\Plugins\textAngular\textAngular-sanitize.js" />
+    <Content Include="Scripts\Plugins\textAngular\textAngular.js" />
+    <Content Include="Scripts\Plugins\textAngular\textAngularSetup.js" />
+    <Content Include="Scripts\defaults\angular\angular-route.js" />
+    <Content Include="Scripts\defaults\angular\angular-route.min.js" />
+    <Content Include="Scripts\defaults\angular\angular-sanitize.js" />
+    <Content Include="Scripts\defaults\angular\angular-sanitize.min.js" />
+    <Content Include="Scripts\defaults\angular\angular-mocks.js" />
+    <Content Include="Scripts\defaults\angular\angular.js" />
+    <Content Include="Scripts\defaults\angular\angular.min.js" />
+    <Content Include="Scripts\defaults\bootstrap\bootstrap.js" />
+    <Content Include="Scripts\defaults\bootstrap\bootstrap.min.js" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\Admin\sb-admin-2.scss" />
+    <Content Include="Content\Admin\sb-admin-2.css.map">
+      <DependentUpon>sb-admin-2.css</DependentUpon>
+    </Content>
+    <Content Include="AppSecrets.config" />
+    <Content Include="Content\Front\Visage.scss" />
+    <Content Include="Content\Front\Visage.css.map">
+      <DependentUpon>Visage.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\Colors.scss" />
+    <Content Include="Content\Front\Colors.css.map">
+      <DependentUpon>Colors.css</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\Visage.pubxml" />
-    <None Include="Scripts\defaults\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\defaults\jquery-1.10.2.js" />
-    <Content Include="Scripts\defaults\jquery-1.10.2.min.js" />
-    <None Include="Scripts\defaults\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\defaults\jquery.validate.js" />
-    <Content Include="Scripts\defaults\jquery.validate.min.js" />
-    <Content Include="Scripts\defaults\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\defaults\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\defaults\angular\angular.min.js.map" />
+    <Content Include="Scripts\defaults\angular\angular-route.min.js.map" />
+    <Content Include="Scripts\defaults\angular\angular-sanitize.min.js.map" />
+    <None Include="Scripts\defaults\jquery\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\defaults\jquery\jquery-1.10.2.js" />
+    <Content Include="Scripts\defaults\jquery\jquery-1.10.2.min.js" />
+    <None Include="Scripts\defaults\jquery\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\defaults\jquery\jquery.validate.js" />
+    <Content Include="Scripts\defaults\jquery\jquery.validate.min.js" />
+    <Content Include="Scripts\defaults\jquery\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\defaults\jquery\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\defaults\modernizr-2.6.2.js" />
     <Content Include="Scripts\defaults\respond.js" />
     <Content Include="Scripts\defaults\respond.min.js" />
     <Content Include="Scripts\defaults\_references.js" />
+    <Content Include="Scripts\defaults\holder\holder.js" />
+    <Content Include="Templates\Admin\Blogs\Index.html" />
+    <Content Include="Templates\Admin\Blogs\Manage.html" />
+    <Content Include="Templates\Admin\Blogs\NewCategory.html" />
+    <Content Include="Templates\Admin\Home.html" />
+    <Content Include="Templates\Admin\Blogs\New.html" />
+    <Content Include="Templates\Admin\Market\Index.html" />
+    <Content Include="Templates\Admin\Market\Orders.html" />
+    <Content Include="Templates\Admin\Market\Products.html" />
+    <Content Include="Templates\Front\About.html" />
+    <Content Include="Templates\Front\Blog\Detail.html" />
+    <Content Include="Templates\Front\Blog\Index.html" />
+    <Content Include="Templates\Front\Contact.html" />
+    <Content Include="Templates\Front\Home.html" />
+    <Content Include="Templates\Front\Market\CartDetail.html" />
+    <Content Include="Templates\Front\Market\Checkout.html" />
+    <Content Include="Templates\Front\Market\CompletedOrder.html" />
+    <Content Include="Templates\Front\Market\ProductDetail.html" />
+    <Content Include="Templates\Front\Market\Index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -225,7 +304,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Scripts\defaults\jquery-1.10.2.min.map" />
+    <Content Include="Scripts\defaults\jquery\jquery-1.10.2.min.map" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -245,20 +324,23 @@
     <Content Include="Views\Manage\SetPassword.cshtml" />
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial2.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout2.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Shared\_AdminLayoutPage.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\API\Store\" />
-    <Folder Include="Scripts\custom\" />
-    <Folder Include="Templates\Admin\" />
-    <Folder Include="Templates\Front\" />
+    <Folder Include="Scripts\custom\AdminApp\models\" />
+    <Folder Include="Scripts\custom\VisageApp\factories\" />
+    <Folder Include="Scripts\custom\VisageApp\models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
@@ -277,6 +359,50 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\AdminApp.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\Blogs.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\Index.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\LayoutCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\MarketCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\bCategoryDataService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\mCategoryDataService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\OrderDataService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\PostDataService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\ProductDataService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IBlogScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IIndexScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\ILayoutScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IMarketScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\routes\Config.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\interfaces\IRouteParams.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\bCategory.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\bPost.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\bTag.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\CartItem.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\mCategory.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\Order.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\OrderDetail.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\Product.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\About.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Blog.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\CartCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Contact.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Index.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\LayoutCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Market.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\OrderCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\ProductCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IAboutScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IBlogScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ICartScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IContactScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IIndexScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ILayoutScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IMarketScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IOrderScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IProductScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\routes\Config.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\VisageApp.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
@@ -284,6 +410,8 @@
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-route.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\d3\d3.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\d3\plugins\d3.superformula.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
   <PropertyGroup>
@@ -305,7 +433,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>18661</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:18661/</IISUrl>
+          <IISUrl>https://localhost:44300/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

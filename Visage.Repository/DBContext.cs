@@ -7,25 +7,34 @@ using System.Text;
 using System.Threading.Tasks;
 using Visage.Repository.Models;
 using Visage.Repository.Models.Blog;
+using Visage.Repository.Models.Market;
 
 namespace Visage.Repository
 {
-	public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+	public class AppDB : IdentityDbContext<ApplicationUser>
 	{
-		public ApplicationDbContext()
+		public AppDB()
 			: base("DefaultConnection", throwIfV1Schema: false)
 		{
+			this.Configuration.LazyLoadingEnabled = true;
 		}
 
-		public static ApplicationDbContext Create()
+		public static AppDB Create()
 		{
-			return new ApplicationDbContext();
+			return new AppDB();
 		}
 
-		public DbSet<bPost> Posts { get; set; }
-		public DbSet<bCategory> Categories { get; set; }
-		public DbSet<bTag> Tags { get; set; }
 
+		public DbSet<bPost> bPosts { get; set; }
+		public DbSet<bCategory> bCategories { get; set; }
+		public DbSet<bTag> bTags { get; set; }
+
+		//Market
+		public DbSet<mCategory> mCategories { get; set; }
+		public DbSet<mProduct> mProducts { get; set; }
+		public DbSet<CartItem> ShoppingCartItems { get; set; }
+		public DbSet<Order> Orders { get; set; }
+		public DbSet<OrderDetail> OrderDetails { get; set; }
 
 	}
 }

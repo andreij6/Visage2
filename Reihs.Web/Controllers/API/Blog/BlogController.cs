@@ -4,10 +4,13 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Visage.Repository.Models.Blog;
 using Visage.Services.Blog;
+using Visage.Services.Models;
 
 namespace Reihs.Web.Controllers.API
 {
+	[RoutePrefix("api/Blog")]
 	public class BlogController : ApiController
 	{
 		#region Dependencies
@@ -26,31 +29,73 @@ namespace Reihs.Web.Controllers.API
 		}
 		#endregion
 
-		// GET: api/Blog
-		public IEnumerable<string> Get()
+		[Route("Get")]
+		[HttpGet]
+		public IEnumerable<PostModel> Get()
 		{
-			return new string[] { "value1", "value2" };
+			IEnumerable<PostModel> posts = BlogService.GetAll();
+
+			return posts;
 		}
 
-		// GET: api/Blog/5
-		public string Get(int id)
+		[Route("Get/{PostId:int}")]
+		[HttpGet]
+		public IHttpActionResult Get(int PostId)
 		{
-			return "value";
+			bPost post = BlogService.GetById(PostId);
+
+			if (post != null)
+				return Ok<bPost>(post);
+			else
+				return Response(false, "Blog with Id " + PostId + " not found");
 		}
 
-		// POST: api/Blog
-		public void Post([FromBody]string value)
+		[Route("Post")]
+		[HttpPost]
+		public void Post([FromBody]NewPostModel value)
 		{
+			value.Author = User.Identity.Name;
+
+			bool success = BlogService.Post(value);
+
+			//string BadRequestMessage = "Blog Could not be created";
+
+			//return Response(success, BadRequestMessage);
 		}
 
-		// PUT: api/Blog/5
-		public void Put(int id, [FromBody]string value)
+		[Route("Update/{PostId:int}")]
+		[HttpPut]
+		public IHttpActionResult Put(int PostId, [FromBody]bPost value)
 		{
+			bool success = BlogService.Update(PostId, value);
+
+			string BadRequestMessage = String.Format("Blog with Id: {0} did not update", PostId);
+
+			return Response(success, BadRequestMessage);
 		}
 
-		// DELETE: api/Blog/5
-		public void Delete(int id)
+		[Route("Delete/{PostId:int}")]
+		[HttpDelete]
+		public IHttpActionResult Delete(int PostId)
 		{
+			bool success = BlogService.Delete(PostId);
+
+			string BadRequestMessage = String.Format("Blog with Id: {0} did not delete", PostId);
+
+			return Response(success, BadRequestMessage);
+		}
+
+		[NonAction]
+		public IHttpActionResult Response(bool success, string BadRequestMessage)
+		{
+			if (success)
+			{
+				return Ok();
+			}
+			else
+			{
+				return BadRequest(BadRequestMessage);
+			}
 		}
 	}
 }

@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Visage.Repository.Models.Blog
 {
-	public class bTag : Audit
+	public class bTag
 	{
+		public int Id { get; set; }
+
 		public string Name { get; set; }
+
+		public virtual ICollection<bPost> Blogs { get; set; }
+
 	}
 }
