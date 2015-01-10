@@ -67,15 +67,20 @@ namespace Reihs.Web
 					"~/Scripts/defaults/bootstrap/bootstrap.js",
 					"~/Scripts/defaults/respond.js"));
 
+			bundles.Add(new ScriptBundle("~/bundles/Plugins").Include(
+					"~/Scripts/Plugins/s3Slider/s3Slider.js",
+					"~/Scripts/Plugins/li-scroller/li-scroller.js"));
+
 			bundles.Add(new StyleBundle("~/Content/css").Include(
 					"~/Content/defaults/bootstrap.css",
-					"~/Content/defaults/font-awesome.min.css"));
+					"~/Content/defaults/font-awesome.min.css"
+					));
 
 			bundles.Add(new StyleBundle("~/Content/Front/css").Include(
-					"~/Content/Front/carousel.css",
-					"~/Content/Front/blog.min.css",
-					"~/Content/Front/store.min.css",
-					"~/Content/Front/Site.css"));
+					"~/Content/Front/Colors.css",
+					"~/Content/Front/s3slider.css",
+					"~/Content/Front/li-scroller.css",
+					"~/Content/Front/Visage.css"));
 
 			bundles.Add(new StyleBundle("~/Content/Admin/css").Include(
 					"~/Content/Admin/sb-admin-2.min.css"

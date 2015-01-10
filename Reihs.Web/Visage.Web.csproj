@@ -195,33 +195,40 @@
     <Content Include="Content\Admin\sb-admin-2.min.css">
       <DependentUpon>sb-admin-2.css</DependentUpon>
     </Content>
-    <Content Include="Content\Front\blog.css">
-      <DependentUpon>blog.scss</DependentUpon>
-    </Content>
-    <Content Include="Content\Front\blog.min.css">
-      <DependentUpon>blog.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Front\carousel.css" />
     <Content Include="Content\defaults\bootstrap.css" />
     <Content Include="Content\defaults\bootstrap.min.css" />
     <Content Include="Content\defaults\font-awesome.css" />
     <Content Include="Content\defaults\font-awesome.min.css" />
-    <Content Include="Content\Front\store.css">
-      <DependentUpon>store.scss</DependentUpon>
+    <Content Include="Content\Front\carousel.css" />
+    <Content Include="Content\Front\Colors.css">
+      <DependentUpon>Colors.scss</DependentUpon>
     </Content>
-    <Content Include="Content\Front\store.min.css">
-      <DependentUpon>store.css</DependentUpon>
+    <Content Include="Content\Front\Colors.min.css">
+      <DependentUpon>Colors.css</DependentUpon>
     </Content>
+    <Content Include="Content\Front\li-scroller.css" />
+    <Content Include="Content\Front\s3slider.css" />
+    <Content Include="Content\Front\Visage.css">
+      <DependentUpon>Visage.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\Visage.min.css">
+      <DependentUpon>Visage.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Images\eye.jpg" />
+    <Content Include="Content\Images\logo.png" />
     <Content Include="favicon.ico" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Front\Site.css" />
+    <Content Include="Scripts\custom\scripts\li-scroller-starter.js" />
+    <Content Include="Scripts\custom\scripts\s3starter.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.min.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.min.js" />
     <Content Include="Scripts\custom\google-map\HomeMap.js" />
+    <Content Include="Scripts\Plugins\li-scroller\li-scroller.js" />
+    <Content Include="Scripts\Plugins\s3Slider\s3Slider.js" />
     <Content Include="Scripts\Plugins\textAngular\textAngular-sanitize.js" />
     <Content Include="Scripts\Plugins\textAngular\textAngular.js" />
     <Content Include="Scripts\Plugins\textAngular\textAngularSetup.js" />
@@ -238,19 +245,19 @@
     <Content Include="Content\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\fonts\FontAwesome.otf" />
-    <Content Include="Content\Front\blog.scss" />
-    <Content Include="Content\Front\blog.css.map">
-      <DependentUpon>blog.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Front\store.scss" />
-    <Content Include="Content\Front\store.css.map">
-      <DependentUpon>store.css</DependentUpon>
-    </Content>
     <Content Include="Content\Admin\sb-admin-2.scss" />
     <Content Include="Content\Admin\sb-admin-2.css.map">
       <DependentUpon>sb-admin-2.css</DependentUpon>
     </Content>
     <Content Include="AppSecrets.config" />
+    <Content Include="Content\Front\Visage.scss" />
+    <Content Include="Content\Front\Visage.css.map">
+      <DependentUpon>Visage.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\Colors.scss" />
+    <Content Include="Content\Front\Colors.css.map">
+      <DependentUpon>Colors.css</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\Visage.pubxml" />
     <Content Include="Scripts\defaults\angular\angular.min.js.map" />
     <Content Include="Scripts\defaults\angular\angular-route.min.js.map" />

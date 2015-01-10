@@ -3,34 +3,80 @@
 
 }
 
-<div ng-controller="LayoutCtrl">
-
-	<div class="blog-masthead">
+	<nav class="navbar">
 		<div class="container">
-			<nav class="blog-nav">
-				<a class="blog-nav-item active" href="#/Home">Home</a>
-				<a class="blog-nav-item" href="#/About">About</a>
-				<a class="blog-nav-item" href="#/Blog">Blog</a>
-				<a class="blog-nav-item" href="#/Contact">Contact</a>
-				<a class="blog-nav-item" href="#/Market">Market</a>
-				@Html.Partial("_LoginPartial")
-			</nav>
-
+			<ul class="list-group pull-left">
+				<li><a><img class=".navbar-brand" src="../../Content/Images/logo.png"></a></li>
+				<li class="list-group-item">HOME</li>
+				<li class="list-group-item">MEET THE TEAM</li>
+				<li class="list-group-item">PATIENT RESOURCES</li>
+				<li class="list-group-item">PATIENT STORIES</li>
+			</ul>
+			<ul class="nav navbar-nav nav-elements pull-right">
+				<li><a href="#">DR. REIHS</a></li>
+				<li><a href="#">SURGICAL</a></li>
+				<li><a href="#">NON-SURGICAL</a></li>
+				<li><a href="#">PHOTO GALLERY</a></li>
+				<li><a href="#">VIDEOS</a></li>
+				<li><a href="#">BLOG</a></li>
+				<li><a href="#">CONTACT US</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="s3slider">
+		<div id="s3sliderContent">
+			<div class="s3sliderImage container">
+				<a><img class="sliderImage" src="../../Content/Images/eye.jpg" alt="Jill p. - Real Patients Real Stories" width="100%" height="400"/></a>
+				<span><a><img class="span-image" src="../../Content/Images/eye.jpg" alt="Jill p. - Real Patients Real Stories" width="396" height="227" /></a></span>
+			</div>
+			<div class="s3sliderImage container">
+				<a href="#"><img class="sliderImage" src="../../Content/Images/eye.jpg" /></a>
+				<span><a href="#"><img class="span-image" src="../../Content/Images/eye.jpg" /></a></span>
+			</div>
+			<div class="s3sliderImage container">
+				<a><img class="sliderImage" src="../../Content/Images/eye.jpg" alt="Mickie - Real Patients Real Stories" /></a>
+				<span><a><img class="span-image" src="../../Content/Images/eye.jpg" /></a></span>
+			</div>
+			<div class="s3sliderImage container">
+				<a href="/mondays"><img class="sliderImage" image src="../Content/Images/eye.jpg" /></a>
+				<span><a href="/mondays"><img class="span-image"  src="../../Content/Images/eye.jpg" /></a></span>
+			</div>
+			<div class="s3sliderImage container">
+				<a><img class="sliderImage" src="../../Content/Images/eye.jpg" /></a>
+				<span><a><img class="span-image" src="../../Content/Images/eye.jpg" /></a></span>
+			</div>
+			<div class="clear s3sliderImage"></div>
 		</div>
 	</div>
-
+	<section id="Ad-Bar">
+		<div class="container">
+			<ul class="nav-tabs nav-justified" id="Ad-Bar-Ul">
+				<li><img src="holder.js/60x40"></li>
+				<li><img src="holder.js/60x40"></li>
+				<li><img src="holder.js/60x40"></li>
+				<li><img src="holder.js/60x40"></li>
+				<li><img src="holder.js/60x40"></li>
+			</ul>
+		</div>
+	</section>
 	<div ng-view></div>
 
-	<footer class="container">
-		<p class="pull-right"><a href="">Back to top</a></p>
-		<p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-				<p><a href="/Admin">Admin Portal</a></p>
-	</footer>
-
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container tickerwrapper">
+			<ul id="ticker01">
+				<li><span>10/10/2007</span><a href="#">The first thing ...</a></li>
+				<li><span>10/10/2007</span><a href="#">End up doing is ...</a></li>
+				<li><span>10/10/2007</span><a href="#">The code that you ...</a></li>
+			</ul>
 		</div>
+	</nav>
 
-		@section Scripts {
-			@Scripts.Render("~/bundles/angularcore")
-			@Scripts.Render("~/bundles/angularplugins")
-			@Scripts.Render("~/bundles/VisageApp")
-		}
+
+
+@section Scripts {
+	@Scripts.Render("~/bundles/angularcore")
+	@Scripts.Render("~/bundles/angularplugins")
+	@Scripts.Render("~/bundles/VisageApp")
+	<script src="~/Scripts/custom/scripts/s3starter.js"></script>
+	<script src="~/Scripts/custom/scripts/li-scroller-starter.js"></script>
+}
