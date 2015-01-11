@@ -56,12 +56,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Blog\BlogService.cs" />
-    <Compile Include="Blog\CategoryService.cs" />
-    <Compile Include="Blog\IBlogService.cs" />
-    <Compile Include="Blog\ICategoryService.cs" />
-    <Compile Include="Market\IShoppingCartService.cs" />
-    <Compile Include="Market\ShoppingCartService.cs" />
+    <Compile Include="Handlers\Blog\BlogService.cs" />
+    <Compile Include="Handlers\Blog\CategoryService.cs" />
+    <Compile Include="Handlers\Blog\IBlogService.cs" />
+    <Compile Include="Handlers\Blog\ICategoryService.cs" />
+    <Compile Include="Handlers\Contact\ContactUsService.cs" />
+    <Compile Include="Handlers\Contact\IContactUsService.cs" />
+    <Compile Include="Handlers\Market\IShoppingCartService.cs" />
+    <Compile Include="Handlers\Market\ShoppingCartService.cs" />
     <Compile Include="Models\PostModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,6 +81,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

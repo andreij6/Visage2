@@ -42,6 +42,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Postal">
+      <HintPath>..\packages\Postal.Mvc5.1.2.0\lib\net45\Postal.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine">
+      <HintPath>..\packages\RazorEngine.3.4.2\lib\net45\RazorEngine.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -175,6 +181,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\API\Blog\BlogController.cs" />
     <Compile Include="Controllers\API\Blog\CategoryController.cs" />
+    <Compile Include="Controllers\API\ContactController.cs" />
     <Compile Include="Controllers\API\Market\MarketController.cs" />
     <Compile Include="Controllers\MVC\AccountController.cs" />
     <Compile Include="Controllers\MVC\AdminController.cs" />
@@ -370,11 +377,13 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Shared\_AdminLayoutPage.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Emails\Web.config" />
+    <Content Include="Views\Emails\_ViewStart.cshtml" />
+    <Content Include="Views\Emails\ContactUs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Scripts\custom\AdminApp\models\" />
-    <Folder Include="Scripts\custom\VisageApp\factories\" />
     <Folder Include="Scripts\custom\VisageApp\models\" />
     <Folder Include="Templates\Front\Treatments\Partials\" />
   </ItemGroup>
@@ -420,6 +429,7 @@
     <TypeScriptCompile Include="Scripts\custom\shared\models\bPost.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\bTag.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\CartItem.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\ContactMessage.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\mCategory.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\Order.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\OrderDetail.ts" />
@@ -436,6 +446,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\OrderCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\ProductCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Treatments.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\ContactAPIService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IAboutScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IBlogScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ICartScope.ts" />

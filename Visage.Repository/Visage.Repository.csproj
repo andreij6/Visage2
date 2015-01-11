@@ -83,6 +83,7 @@
       <DependentUpon>201501031845551_addPublicToPost.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\bCategoryModel.cs" />
+    <Compile Include="ViewModels\ContactMessage.cs" />
     <Compile Include="ViewModels\NewCategoryModel.cs" />
     <Compile Include="ViewModels\NewPostModel.cs" />
     <Compile Include="Models\Interfaces\IRate.cs" />
