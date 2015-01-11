@@ -7,23 +7,62 @@
 <!-- Static navbar -->
 <div class="row row-offcanvas row-offcanvas-right">
 	<div class="visible-sm visible-md visible-lg navbar navbar-default container" role="navigation">
-		<a class="navbar-brand">lebeau visage</a>
+		<a href="#/" class="navbar-brand">lebeau visage</a>
 		<ul class="nav navbar-nav pull-right">
 			<li>
-				<a href="#/">DR REIHS</a>
+				<a href="#/About">DR RIEHS</a>
 			</li>
 			<li>
-				<a href="#/About" class="dropdown-toggle">SURGICAL</a>
+				<a href="#/Treatments" class="dropdown-toggle">TREATMENTS</a>
 			</li>
 			<li>
-				<a href="#" class="dropdown-toggle ">NONSURGICAL</a>
-			</li>
-			<li>
-				<a href="#" class="dropdown-toggle">PHOTO GALLERY</a>
+				<a href="#/Gallery" class="dropdown-toggle">PHOTO GALLERY</a>
 			</li>
 			<!--mega menu-->
+			<li class="dropdown yamm-fw">
+				<a data-toggle="dropdown" class="dropdown-toggle">Market<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li>
+						<div class="yamm-content">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="col-sm-3">
+										<h3 class="heading">Shopping Cart</h3>
+										<p>
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+											Duis mollis, est non commodo luctus. Nullam quis risus eget urna mollis ornare vel eu leo cras consectetur.
+										</p>
+
+									</div>
+									<div class="col-sm-6">
+										<h3 class="heading">Featured Items</h3>
+										<p>
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam
+										</p>
+										<div class="mega-contact">
+											<p><strong><i class="fa fa-map-marker"></i></strong> vaisahali, jaipur, 302012</p>
+											<p><strong><i class="fa fa-envelope"></i></strong> Support@designmylife.com</p>
+											<p><strong><i class="fa fa-phone"></i></strong> +91 1800 2345 2132</p>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<h3 class="heading">Categories</h3>
+										<ul class="nav mega-vertical-nav">
+											<li><a href="typography.html">Typography</a></li>
+											<li><a href="element.html">Elements</a></li>
+											<li><a href="footer-2.html">Footer - 2</a></li>
+											<li><a href="home-soon.html">Coming Soon</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</li>
+				</ul>
+			</li>
 			<li>
-				<a href="#" class="dropdown-toggle">BLOG</a>
+				<a href="#/Blog" class="dropdown-toggle">BLOG</a>
 			</li>
 			<!--mega menu end-->
 			<li>
@@ -45,24 +84,21 @@
 			<div class="sidebar-nav">
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="#/">DR REIHS</a>
+						<a href="#/About">DR RHIES</a>
 					</li>
 					<li>
-						<a href="#/About" class="dropdown-toggle">SURGICAL</a>
+						<a href="#/Treatments" class="dropdown-toggle">TREATMENTS</a>
 					</li>
 					<li>
-						<a href="#" class="dropdown-toggle ">NONSURGICAL</a>
-					</li>
-					<li>
-						<a href="#" class="dropdown-toggle">PHOTO GALLERY</a>
+						<a href="#/Gallery" class="dropdown-toggle">PHOTO GALLERY</a>
 					</li>
 					<!--mega menu-->
 					<li>
-						<a href="#" class="dropdown-toggle">BLOG</a>
+						<a href="#/Blog" class="dropdown-toggle">BLOG</a>
 					</li>
 					<!--mega menu end-->
 					<li>
-						<a href="#" class="dropdown-toggle ">CONTACT US</a>
+						<a href="#/Contact" class="dropdown-toggle ">CONTACT US</a>
 					</li>
 				</ul>
 			</div>
@@ -152,4 +188,5 @@
 		@Scripts.Render("~/bundle/ThemeScripts")
 		<script src="~/Scripts/custom/scripts/li-scroller-starter.js"></script>
 		<script src="~/Scripts/custom/scripts/navBar.js"></script>
+		<script src="~/Scripts/custom/google-map/HomeMap.js"></script>
 	}

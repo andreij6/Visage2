@@ -2260,10 +2260,16 @@ label span{
     margin: 5px;
 }
 
+#location {
+	height: 200px;
+	-moz-box-shadow:    0 0 10px #ccc;
+	-webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow:         0 0 10px #ccc;
+}
 
-
-
-
+#locationContainer {
+	background: #121214;
+}
 
 
 

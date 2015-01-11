@@ -325,14 +325,14 @@
     <Content Include="Templates\Front\Blog\Detail.html" />
     <Content Include="Templates\Front\Blog\Index.html" />
     <Content Include="Templates\Front\Contact.html" />
-    <Content Include="Templates\Front\Headers\HomeHeader.html" />
-    <Content Include="Templates\Front\Headers\OtherHeaders.html" />
+    <Content Include="Templates\Front\Gallery.html" />
     <Content Include="Templates\Front\Home.html" />
     <Content Include="Templates\Front\Market\CartDetail.html" />
     <Content Include="Templates\Front\Market\Checkout.html" />
     <Content Include="Templates\Front\Market\CompletedOrder.html" />
     <Content Include="Templates\Front\Market\ProductDetail.html" />
     <Content Include="Templates\Front\Market\Index.html" />
+    <Content Include="Templates\Front\Treatments\Index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -376,6 +376,7 @@
     <Folder Include="Scripts\custom\AdminApp\models\" />
     <Folder Include="Scripts\custom\VisageApp\factories\" />
     <Folder Include="Scripts\custom\VisageApp\models\" />
+    <Folder Include="Templates\Front\Treatments\Partials\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
@@ -427,23 +428,26 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Blog.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\CartCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Contact.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\GalleryCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\HeaderCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Index.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\LayoutCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Market.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\OrderCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\ProductCtrl.ts" />
-    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\JQuery.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Treatments.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IAboutScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IBlogScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ICartScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IContactScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IGalleryScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IHeaderCtrlScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IIndexScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ILayoutScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IMarketScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IOrderScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IProductScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITreatmentScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\routes\Config.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\VisageApp.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />

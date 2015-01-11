@@ -21,4 +21,6 @@ module VisageApp {
 	VisageApp.controller('OrderCtrl', OrderCtrl);
 	VisageApp.controller('ProductCtrl', ProductCtrl);
 	VisageApp.controller('HeaderCtrl', HeaderCtrl);
+	VisageApp.controller('GalleryCtrl', GalleryCtrl);
+	VisageApp.controller('Treatments', Treatments);
 }

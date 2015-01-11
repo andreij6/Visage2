@@ -20,7 +20,11 @@
 					templateUrl: '/Templates/Front/Blog/Index.html',
 					controller: 'Blog'
 				}
-				).when('/Market',
+				).when('/Gallery',
+				{
+					templateUrl: '/Templates/Front/Gallery.html',
+					controller: 'GalleryCtrl'
+				}).when('/Market',
 				{
 					templateUrl: 'Templates/Front/Market/Index.html',
 					controller: 'Market'
@@ -42,6 +46,10 @@
 				{
 					templateUrl: 'Templates/Front/Market/CompletedOrder.html',
 					controller: 'OrderCtrl'
+				}).when('/Treatments',
+				{
+					templateUrl: 'Templates/Front/Treatments/Index.html',
+					controller: 'Treatments'
 				}).otherwise({ redirectTo: '/' })
 		}
 	}

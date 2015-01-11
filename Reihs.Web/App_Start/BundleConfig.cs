@@ -47,6 +47,8 @@ namespace Reihs.Web
 			bundles.Add(new ScriptBundle("~/bundles/VisageApp").Include(
 						"~/Scripts/custom/VisageApp/controllers/LayoutCtrl.js",
 						"~/Scripts/custom/VisageApp/controllers/HeaderCtrl.js",
+						"~/Scripts/custom/VisageApp/controllers/GalleryCtrl.js",
+						"~/Scripts/custom/VisageApp/controllers/Treatments.js",
 						"~/Scripts/custom/VisageApp/controllers/Index.js",
 						"~/Scripts/custom/VisageApp/controllers/About.js",
 						"~/Scripts/custom/VisageApp/controllers/Contact.js",
