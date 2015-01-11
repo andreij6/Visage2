@@ -5,9 +5,9 @@ using System.Data.Entity.Validation;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Models;
+using Reihs.Repository.Models;
 
-namespace Visage.Repository.Adapters.User
+namespace Reihs.Repository.Adapters.User
 {
 	public class UserRepository : IUserRepository
 	{

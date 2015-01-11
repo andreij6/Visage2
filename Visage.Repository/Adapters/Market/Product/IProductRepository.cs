@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Models.Market;
+using Reihs.Repository.Models.Market;
 
-namespace Visage.Repository.Adapters.Market.Product
+namespace Reihs.Repository.Adapters.Market.Product
 {
 	public interface IProductRepository
 	{

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Visage.Repository.Models
+namespace Reihs.Repository.Models
 {
 	public abstract class Audit
 	{

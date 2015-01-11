@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.ViewModels;
+using Reihs.Repository.ViewModels;
 
-namespace Visage.Repository.Models.Blog
+namespace Reihs.Repository.Models.Blog
 {
 	public class bCategory : Audit
 	{

@@ -11,8 +11,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Reihs.Web.Models;
-using Visage.Repository.Models;
-using Visage.Repository;
+using Reihs.Repository.Models;
+using Reihs.Repository;
 
 namespace Reihs.Web
 {

@@ -7,7 +7,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Visage.Repository.Models
+namespace Reihs.Repository.Models
 {
 	public class ApplicationUser : IdentityUser
 	{

@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.SessionState;
-using Visage.Repository;
-using Visage.Repository.Adapters.Market;
-using Visage.Repository.Models.Market;
+using Reihs.Repository;
+using Reihs.Repository.Adapters.Market;
+using Reihs.Repository.Models.Market;
 
-namespace Visage.Services.Market
+namespace Reihs.Services.Market
 {
 	public class ShoppingCartService : IShoppingCartService
 	{

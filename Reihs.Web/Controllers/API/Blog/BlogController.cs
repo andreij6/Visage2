@@ -4,9 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Visage.Repository.Models.Blog;
-using Visage.Services.Blog;
-using Visage.Services.Models;
+using Reihs.Repository.Models.Blog;
+using Reihs.Services.Blog;
+using Reihs.Services.Models;
 
 namespace Reihs.Web.Controllers.API
 {

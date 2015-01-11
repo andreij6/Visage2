@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Models.Blog;
-using Visage.Services.Blog;
+using Reihs.Repository.Models.Blog;
+using Reihs.Services.Blog;
 
 namespace Reihs.Web.Tests.Services
 {

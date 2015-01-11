@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.SessionState;
 
-namespace Visage.Services.Market
+namespace Reihs.Services.Market
 {
 	public interface IShoppingCartService
 	{

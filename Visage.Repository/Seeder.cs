@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Models.Blog;
+using Reihs.Repository.Models.Blog;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Visage.Repository.Models;
+using Reihs.Repository.Models;
 using Microsoft.AspNet.Identity;
 
-namespace Visage.Repository
+namespace Reihs.Repository
 {
 	public static class Seeder
 	{

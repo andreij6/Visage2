@@ -5,8 +5,8 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
-using Visage.Repository.Models.Market;
-using Visage.Services.Market;
+using Reihs.Repository.Models.Market;
+using Reihs.Services.Market;
 
 namespace Reihs.Web.Controllers.API.Market
 {

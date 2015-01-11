@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Visage.Repository.ViewModels
+namespace Reihs.Repository.ViewModels
 {
 	public class NewCategoryModel
 	{

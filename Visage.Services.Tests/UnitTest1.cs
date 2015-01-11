@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Visage.Services.Tests
+namespace Reihs.Services.Tests
 {
 	[TestClass]
 	public class UnitTest1

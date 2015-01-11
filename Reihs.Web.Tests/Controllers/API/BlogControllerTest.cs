@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
 using System.Web.Http;
-using Visage.Repository.Models.Blog;
+using Reihs.Repository.Models.Blog;
 using System.Web.Http.Results;
 using Reihs.Web.Tests.Services;
 

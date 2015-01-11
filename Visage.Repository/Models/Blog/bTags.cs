@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Visage.Repository.Models.Blog
+namespace Reihs.Repository.Models.Blog
 {
 	public class bTag
 	{

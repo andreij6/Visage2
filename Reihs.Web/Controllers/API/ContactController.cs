@@ -1,12 +1,14 @@
-﻿using Postal;
+﻿using SendGrid;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Mail;
 using System.Web.Http;
-using Visage.Repository.ViewModels;
-using Visage.Services.Handlers.Contact;
+using Reihs.Repository.ViewModels;
+using Reihs.Services.Handlers.Contact;
+using System.Web.Configuration;
 
 namespace Reihs.Web.Controllers.API
 {
@@ -23,17 +25,11 @@ namespace Reihs.Web.Controllers.API
 		[HttpPost]
 		public void Post([FromBody]ContactMessage value)
 		{
-			dynamic email = new Email("ContactUs");
-			email.To = "andreij6@gmail.com";
-			try
-			{
-				email.Send();
-			}
-			catch (Exception e)
-			{
+			var username = WebConfigurationManager.AppSettings["SendGridUserName"];
+			var pswd = WebConfigurationManager.AppSettings["SendGridPswd"];
 
-			}
-			contactService.Send(value);
+			contactService.Send(value, username, pswd);
+			
 		}
 	}
 }

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Visage.Repository.Models.Market
+namespace Reihs.Repository.Models.Market
 {
 	public class CartItem
 	{

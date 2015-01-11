@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.ViewModels;
+using Reihs.Repository.ViewModels;
 
-namespace Visage.Services.Handlers.Contact
+namespace Reihs.Services.Handlers.Contact
 {
 	public interface IContactUsService
 	{
-		void Send(ContactMessage value);
+		void Send(ContactMessage value, string username, string password);
 	}
 }

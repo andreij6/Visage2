@@ -5,11 +5,11 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Models;
-using Visage.Repository.Models.Blog;
-using Visage.Repository.Models.Market;
+using Reihs.Repository.Models;
+using Reihs.Repository.Models.Blog;
+using Reihs.Repository.Models.Market;
 
-namespace Visage.Repository
+namespace Reihs.Repository
 {
 	public class AppDB : IdentityDbContext<ApplicationUser>
 	{

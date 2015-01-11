@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Adapters.Blog.Category;
-using Visage.Repository.Adapters.Blog.Post;
-using Visage.Repository.Adapters.Blog.Tag;
-using Visage.Repository.Adapters;
-using Visage.Repository.Models;
-using Visage.Repository.Models.Blog;
-using Visage.Repository.Adapters.User;
-using Visage.Services.Models;
+using Reihs.Repository.Adapters.Blog.Category;
+using Reihs.Repository.Adapters.Blog.Post;
+using Reihs.Repository.Adapters.Blog.Tag;
+using Reihs.Repository.Adapters;
+using Reihs.Repository.Models;
+using Reihs.Repository.Models.Blog;
+using Reihs.Repository.Adapters.User;
+using Reihs.Services.Models;
 
-namespace Visage.Services.Blog
+namespace Reihs.Services.Blog
 {
 	public class BlogService : IBlogService
 	{

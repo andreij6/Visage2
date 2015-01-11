@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Adapters.Blog.Category;
-using Visage.Repository.Adapters.User;
-using Visage.Repository.Models.Blog;
-using Visage.Repository.ViewModels;
+using Reihs.Repository.Adapters.Blog.Category;
+using Reihs.Repository.Adapters.User;
+using Reihs.Repository.Models.Blog;
+using Reihs.Repository.ViewModels;
 
-namespace Visage.Services.Blog
+namespace Reihs.Services.Blog
 {
 	public class CategoryService : ICategoryService
 	{

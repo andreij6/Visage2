@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Models.Blog;
+using Reihs.Repository.Models.Blog;
 
-namespace Visage.Repository.Adapters.Blog.Category
+namespace Reihs.Repository.Adapters.Blog.Category
 {
 	public interface ICategoryRepository
 	{

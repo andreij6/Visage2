@@ -6,8 +6,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using Reihs.Web.Models;
-using Visage.Repository.Models;
-using Visage.Repository;
+using Reihs.Repository.Models;
+using Reihs.Repository;
 using System.Web.Configuration;
 
 namespace Reihs.Web

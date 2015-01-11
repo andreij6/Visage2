@@ -1,4 +1,4 @@
-namespace Visage.Repository.Migrations
+namespace Reihs.Repository.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

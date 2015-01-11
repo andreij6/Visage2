@@ -4,11 +4,11 @@ using System.Data.Entity.Validation;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Adapters.User;
-using Visage.Repository.Models;
-using Visage.Repository.Models.Blog;
+using Reihs.Repository.Adapters.User;
+using Reihs.Repository.Models;
+using Reihs.Repository.Models.Blog;
 
-namespace Visage.Repository.Adapters.Blog.Post
+namespace Reihs.Repository.Adapters.Blog.Post
 {
 	public class PostRepository : IPostRepository
 	{

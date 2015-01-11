@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Interfaces;
+using Reihs.Repository.Interfaces;
 
-namespace Visage.Repository.Models.Blog
+namespace Reihs.Repository.Models.Blog
 {
 	public class bPost : Audit, IRate
 	{

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Models.Blog;
-using Visage.Repository.ViewModels;
+using Reihs.Repository.Models.Blog;
+using Reihs.Repository.ViewModels;
 
-namespace Visage.Services.Blog
+namespace Reihs.Services.Blog
 {
 	public interface ICategoryService
 	{
