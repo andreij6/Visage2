@@ -1,51 +1,16 @@
 ﻿@import "Colors";
+//Ugly I know Please change it
+.side-nav {
+	margin-top: 40px;
 
-.navbar {
-	border: none;
-	z-index: 100;
+	li a {
+		color: #2b2a2a;
+		font-weight: bold;
+		font-family:'Raleway', sans-serif;
+
+		&:hover {
+			background-color: #ffffff;
+		}
+	} 
 	
-	.navbar-brand img {
-		width: 250px;
-	}
 }
-
-.nav-elements {
-	background: $backgroundLightBrown;
-	filter: alpha(opacity=50); /* here you can set the opacity of box with text */
-    -moz-opacity: 0.5; /* here you can set the opacity of box with text */
-    -khtml-opacity: 0.5; /* here you can set the opacity of box with text */
-    opacity: 0.5;
-    
-    li a {
-	    color: white;
-	    font-weight: bold;
-    }
-
-    li a:hover {
-	    color: $backgroundLightBrown;
-    }
-}
-
-#myCarousel {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-
-.list-group-item {
-	background-color: transparent;
-	border: none;
-}
-
-#Ad-Bar {
-	background-color: $backgroundDarkBrown;
-	padding: 10px;
-	margin-top: 50px;
-}
-
-#Ad-Bar-Ul {
-	li img {
-		
-	}
-}
-

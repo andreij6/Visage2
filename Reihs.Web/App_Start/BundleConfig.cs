@@ -97,7 +97,8 @@ namespace Reihs.Web
 
 			bundles.Add(new StyleBundle("~/Content/Front/css").Include(
 					"~/Content/Front/s3slider.css",
-					"~/Content/Front/li-scroller.css"));
+					"~/Content/Front/li-scroller.css",
+					"~/Content/Front/Visage.css"));
 
 			bundles.Add(new StyleBundle("~/Content/Admin/css").Include(
 					"~/Content/Admin/sb-admin-2.min.css"
