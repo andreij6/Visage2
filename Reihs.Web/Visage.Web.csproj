@@ -223,6 +223,7 @@
       <DependentUpon>Visage.css</DependentUpon>
     </Content>
     <Content Include="Content\Images\bollard.jpg" />
+    <Content Include="Content\Images\coffee-569178_1280.jpg" />
     <Content Include="Content\Images\eye.jpg" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\mother.jpg" />

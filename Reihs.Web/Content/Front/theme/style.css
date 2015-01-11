@@ -280,7 +280,6 @@ p {
     width:100%;
     min-height: 80px;
     padding: 15px 0;
-    box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
     background-color:rgba(255,255,255,0.9);
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
@@ -616,6 +615,15 @@ input[type="color"]:focus,
 /*carousel slider*/
 #myCarousel {
 	
+}
+
+.carousel-nav {
+	background: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	height: 100%;
 }
 
 .bollard {
@@ -1633,9 +1641,9 @@ ul.post-desc li + li{
 }
 
 /****************************breadcrumb***************************/
-.breadcrumb-wrap{
-    padding: 25px 0;
-    background:#eee;
+.breadcrumb-wrap {
+	padding: 25px 0;
+	background: #eee;
 }
 .breadcrumb-wrap h4{
     margin: 0px;
