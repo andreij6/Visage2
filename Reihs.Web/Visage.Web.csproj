@@ -343,6 +343,7 @@
     <Content Include="Templates\Front\Market\Partials\SomeCategory.html" />
     <Content Include="Templates\Front\Market\ProductDetail.html" />
     <Content Include="Templates\Front\Market\Index.html" />
+    <Content Include="Templates\Front\Resources\Index.html" />
     <Content Include="Templates\Front\Treatments\Index.html" />
     <Content Include="Templates\Front\Treatments\Partials\Bodyshaping.html" />
     <Content Include="Templates\Front\Treatments\Partials\FacialInjectibles.html" />
@@ -456,6 +457,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Market.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\OrderCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\ProductCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Resources.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Treatments.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\ContactAPIService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IAboutScope.ts" />
@@ -469,6 +471,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IMarketScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IOrderScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IProductScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IResourcesScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITreatmentScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\routes\Config.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\VisageApp.ts" />

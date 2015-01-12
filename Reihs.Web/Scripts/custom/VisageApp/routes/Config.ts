@@ -50,6 +50,10 @@
 				{
 					templateUrl: 'Templates/Front/Treatments/Index.html',
 					controller: 'Treatments'
+				}).when('/Resources',
+				{
+					templateUrl: 'Templates/Front/Resources/Index.html',
+					controller: 'Resources'
 				}).otherwise({ redirectTo: '/' })
 		}
 	}

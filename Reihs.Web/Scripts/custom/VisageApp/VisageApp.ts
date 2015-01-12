@@ -25,4 +25,5 @@ module VisageApp {
 	VisageApp.controller('HeaderCtrl', HeaderCtrl);
 	VisageApp.controller('GalleryCtrl', GalleryCtrl);
 	VisageApp.controller('Treatments', Treatments);
+	VisageApp.controller('Resources', Resources);
 }
