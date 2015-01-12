@@ -338,6 +338,9 @@
     <Content Include="Templates\Front\Market\CartDetail.html" />
     <Content Include="Templates\Front\Market\Checkout.html" />
     <Content Include="Templates\Front\Market\CompletedOrder.html" />
+    <Content Include="Templates\Front\Market\Partials\ProductDetail.html" />
+    <Content Include="Templates\Front\Market\Partials\Index.html" />
+    <Content Include="Templates\Front\Market\Partials\SomeCategory.html" />
     <Content Include="Templates\Front\Market\ProductDetail.html" />
     <Content Include="Templates\Front\Market\Index.html" />
     <Content Include="Templates\Front\Treatments\Index.html" />

@@ -1,5 +1,8 @@
 ﻿module Extensions {
 	export interface IMarketScope extends ng.IScope {
-		test: string;
+		templates: any;
+		template: any;
+		SetTemplate(name: string): void;
+		SeeDetail(product: string): void;
 	}
 }    
