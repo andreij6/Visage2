@@ -7,4 +7,8 @@
     .side-nav li a:hover {
       background-color: #ffffff; }
 
+.cart-items-list {
+  height: 400px;
+  overflow: auto; }
+
 /*# sourceMappingURL=Visage.css.map */

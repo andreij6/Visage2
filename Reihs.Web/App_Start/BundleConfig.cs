@@ -91,6 +91,15 @@ namespace Reihs.Web
 					"~/Scripts/Plugins/s3Slider/s3Slider.js",
 					"~/Scripts/Plugins/li-scroller/li-scroller.js"));
 
+			bundles.Add(new StyleBundle("~/bundles/Theme").Include(
+					"~/Content/Front/theme/flexslider.css",
+					"~/Content/Front/theme/animate.css",
+					"~/Content/Front/theme/owl.carousel.css",
+					"~/Content/Front/theme/owl.theme.css",
+					"~/Content/Front/theme/yamm.css",
+					"~/Content/Front/theme/magnific-popup.css",
+					"~/Content/Front/theme/SassyStyle.css"));
+
 			bundles.Add(new StyleBundle("~/Content/css").Include(
 					"~/Content/defaults/bootstrap.css",
 					"~/Content/defaults/font-awesome.min.css"

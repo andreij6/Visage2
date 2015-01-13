@@ -216,11 +216,23 @@
     <Content Include="Content\Front\li-scroller.css" />
     <Content Include="Content\Front\s3slider.css" />
     <Content Include="Content\Front\theme\animate.css" />
+    <Content Include="Content\Front\theme\Colors.css">
+      <DependentUpon>Colors.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\theme\Colors.min.css">
+      <DependentUpon>Colors.css</DependentUpon>
+    </Content>
     <Content Include="Content\Front\theme\flexslider.css" />
     <Content Include="Content\Front\theme\magnific-popup.css" />
     <Content Include="Content\Front\theme\owl.carousel.css" />
     <Content Include="Content\Front\theme\owl.theme.css" />
     <Content Include="Content\Front\theme\style.css" />
+    <Content Include="Content\Front\theme\SassyStyle.css">
+      <DependentUpon>SassyStyle.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\theme\SassyStyle.min.css">
+      <DependentUpon>SassyStyle.css</DependentUpon>
+    </Content>
     <Content Include="Content\Front\theme\yamm.css" />
     <Content Include="Content\Front\theme\YTPlayer.css" />
     <Content Include="Content\Front\Visage.css">
@@ -242,6 +254,13 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\bollard.jpg" />
+    <Content Include="Images\coffee-569178_1280.jpg" />
+    <Content Include="Images\eye.jpg" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\mother.jpg" />
+    <Content Include="Images\winter.jpg" />
+    <Content Include="Images\Zoom.ico" />
     <Content Include="Scripts\custom\scripts\li-scroller-starter.js" />
     <Content Include="Scripts\custom\scripts\navBar.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.js" />
@@ -287,6 +306,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Front\theme\SassyStyle.scss" />
+    <Content Include="Content\Front\theme\SassyStyle.css.map">
+      <DependentUpon>SassyStyle.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\theme\Colors.scss" />
+    <Content Include="Content\Front\theme\Colors.css.map">
+      <DependentUpon>Colors.css</DependentUpon>
+    </Content>
+    <Content Include="PDFs\Cancellation-Policy-Consent.pdf" />
+    <Content Include="PDFs\Health-Information-Form.pdf" />
+    <Content Include="PDFs\HIPPA-Notice-of-Privacy-Practices.pdf" />
+    <Content Include="PDFs\NOTICE-OF-PRIVACY-PRACTICES.pdf" />
     <None Include="Properties\PublishProfiles\Visage.pubxml" />
     <Content Include="Scripts\defaults\angular\angular.min.js.map" />
     <Content Include="Scripts\defaults\angular\angular-route.min.js.map" />
@@ -338,12 +369,18 @@
     <Content Include="Templates\Front\Market\CartDetail.html" />
     <Content Include="Templates\Front\Market\Checkout.html" />
     <Content Include="Templates\Front\Market\CompletedOrder.html" />
+    <Content Include="Templates\Front\Market\Partials\Category2.html" />
+    <Content Include="Templates\Front\Market\Partials\Category3.html" />
+    <Content Include="Templates\Front\Market\Partials\Category4.html" />
     <Content Include="Templates\Front\Market\Partials\ProductDetail.html" />
     <Content Include="Templates\Front\Market\Partials\Index.html" />
-    <Content Include="Templates\Front\Market\Partials\SomeCategory.html" />
     <Content Include="Templates\Front\Market\ProductDetail.html" />
     <Content Include="Templates\Front\Market\Index.html" />
     <Content Include="Templates\Front\Resources\Index.html" />
+    <Content Include="Templates\Front\Resources\FactSheets.html" />
+    <Content Include="Templates\Front\Resources\NewPatients.html" />
+    <Content Include="Templates\Front\Resources\PostCare.html" />
+    <Content Include="Templates\Front\Special\Events.html" />
     <Content Include="Templates\Front\Treatments\Index.html" />
     <Content Include="Templates\Front\Treatments\Partials\Bodyshaping.html" />
     <Content Include="Templates\Front\Treatments\Partials\FacialInjectibles.html" />
@@ -397,6 +434,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Scripts\custom\AdminApp\models\" />
     <Folder Include="Scripts\custom\VisageApp\models\" />
+    <Folder Include="Templates\Front\Resources\Partials\FactSheets\" />
+    <Folder Include="Templates\Front\Resources\Partials\PostCare\" />
     <Folder Include="Views\Emails\" />
   </ItemGroup>
   <ItemGroup>

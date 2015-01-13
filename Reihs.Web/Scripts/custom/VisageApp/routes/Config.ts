@@ -29,7 +29,7 @@
 					templateUrl: 'Templates/Front/Market/Index.html',
 					controller: 'Market'
 				}
-				).when('/Market/Product/:name',
+				).when('/Market/Item/:id',
 				{
 					templateUrl: 'Templates/Front/Market/ProductDetail.html',
 					controller: 'ProductCtrl'
@@ -38,11 +38,11 @@
 				{
 					templateUrl: 'Templates/Front/Market/CartDetail.html',
 					controller: 'CartCtrl'
-				}).when('/Market/Order',
+				}).when('/Market/Purchase',
 				{
 					templateUrl: 'Templates/Front/Market/Checkout.html',
 					controller: 'OrderCtrl'
-				}).when('/Market/OrderSuccess',
+				}).when('/Market/Purchase/Success',
 				{
 					templateUrl: 'Templates/Front/Market/CompletedOrder.html',
 					controller: 'OrderCtrl'
@@ -54,7 +54,20 @@
 				{
 					templateUrl: 'Templates/Front/Resources/Index.html',
 					controller: 'Resources'
-				}).otherwise({ redirectTo: '/' })
+				}).when('/Resources/NewPatients',
+				{
+					templateUrl: 'Templates/Front/Resources/NewPatients.html',
+					controller: 'Resources'
+				}).when('/Resources/PostCare', {
+					templateUrl: 'Templates/Front/Resources/PostCare.html',
+					controller: 'Resources'
+				}).when('/Resources/FactSheets',
+				{
+					templateUrl: 'Templates/Front/Resources/FactSheets.html',
+					controller: 'Resources'
+				}).otherwise({ redirectTo: '/' });
+
+			
 		}
 	}
 } 

@@ -18,14 +18,14 @@
 			var templates = [
 				{ name: "Index", url: nav + "Index.html" },
 				{ name: "FacialInject", url: nav + "FacialInjectibles.html" },
-                { name: "Pigment", url: nav + "Pigment.html" },
-                { name: "SkinResurface", url: nav + "SkinResurface.html" },
-                { name: "SkinTight", url: nav + "SkinTight.html" },
-                { name: "Bodyshaping", url: nav + "Bodyshaping.html" },
-                { name: "Microderma", url: nav + "Microderma.html" },
-                { name: "PermCos", url: nav + "PermCos.html" },
-                { name: "LaserHair", url: nav + "LaserHair.html" },
-                { name: "VeinReduce", url: nav + "VeinReduce.html" }
+				{ name: "Pigment", url: nav + "Pigment.html" },
+				{ name: "SkinResurface", url: nav + "SkinResurface.html" },
+				{ name: "SkinTight", url: nav + "SkinTight.html" },
+				{ name: "Bodyshaping", url: nav + "Bodyshaping.html" },
+				{ name: "Microderma", url: nav + "Microderma.html" },
+				{ name: "PermCos", url: nav + "PermCos.html" },
+				{ name: "LaserHair", url: nav + "LaserHair.html" },
+				{ name: "VeinReduce", url: nav + "VeinReduce.html" }
 			];
 
 			function setTemplate(name: string) {

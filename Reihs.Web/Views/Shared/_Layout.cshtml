@@ -1,27 +1,17 @@
 ﻿<!DOCTYPE html>
 <html ng-app="VisageApp">
 <head>
+	<base href="/">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>@ViewBag.Title - My ASP.NET Application</title>
 	@Styles.Render("~/Content/css")
 	@Styles.Render("~/Content/Front/css")
 	<link rel="icon" type="img/ico" href="~/Content/Images/Zoom.ico" />
-	<!-- flex slider css -->
-	<link href="~/Content/Front/theme/flexslider.css" rel="stylesheet" />
-	<!-- animated css  -->
-	<link href="~/Content/Front/theme/animate.css" rel="stylesheet" />
 	<!--web fonts-->
 	<link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='//fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-	<!--owl carousel css-->
-	<link href="~/Content/Front/theme/owl.carousel.css" rel="stylesheet" />
-	<link href="~/Content/Front/theme/owl.theme.css" rel="stylesheet" />
-	<!--mega menu -->
-	<link href="~/Content/Front/theme/yamm.css" rel="stylesheet" />
-	<!--popups css-->
-	<link href="~/Content/Front/theme/magnific-popup.css" rel="stylesheet" />
-	<link href="~/Content/Front/theme/style.css" rel="stylesheet" />
+	@Styles.Render("~/bundles/Theme")
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
