@@ -10,7 +10,7 @@
 		constructor($scope: Extensions.IHeaderCtrlScope, MarketSvc: MarketService) {
 			var self = this;
 			self.$scope = $scope;
-			self.$scope.SideOpen = true;
+			self.$scope.SideOpen = false;
 			self.$scope.ShoppingCart = MarketSvc.Cart;
 			self.MarketSvc = MarketSvc;
 			self.$scope.HasItems = false;
@@ -21,20 +21,29 @@
 					});
 			}
 			function UpdateSO() {
-				if (self.$scope.SideOpen == true)
+				if (self.$scope.SideOpen == true) {
 					self.$scope.SideOpen = false;
+				}
 				else {
 					self.$scope.SideOpen = true;
 				}
 			}
 
 			function CloseSideBar(newValue, oldValue) {
-				if (newValue == true) {
-					$('.row-offcanvas').addClass('active');
-					$('.showhide').toggle();
-				} else {
-					$('.row-offcanvas').removeClass('active');
-					$('.showhide').toggle();
+				if (oldValue !== undefined) {
+					if (newValue === true) {
+						console.log('37');
+						$('.row-offcanvas').addClass('active');
+						$('.showhide').toggle();
+					} else {
+						if (newValue !== oldValue)
+						{
+							$('.row-offcanvas').removeClass('active');
+							$('.showhide').toggle();
+						}
+					}
+
+
 				}
 			}
 			
@@ -48,8 +57,6 @@
 
 				console.log(self.$scope.ShoppingCart);
 			}
-
-			
 
 			self.$scope.$watch('SideOpen', CloseSideBar);
 
