@@ -10,7 +10,7 @@
 		constructor($scope: Extensions.IHeaderCtrlScope, MarketSvc: MarketService) {
 			var self = this;
 			self.$scope = $scope;
-			self.$scope.SideOpen = false;
+			self.$scope.SideOpen = true;
 			self.$scope.ShoppingCart = MarketSvc.Cart;
 			self.MarketSvc = MarketSvc;
 			self.$scope.HasItems = false;
@@ -20,11 +20,20 @@
 						timeOut: 8000
 					});
 			}
+			function UpdateSO() {
+				if (self.$scope.SideOpen == true)
+					self.$scope.SideOpen = false;
+				else {
+					self.$scope.SideOpen = true;
+				}
+			}
 
 			function CloseSideBar(newValue, oldValue) {
-				if (newValue == false && oldValue == true)
-				{
-					$('.row-offcanvas').toggleClass('active');
+				if (newValue == true) {
+					$('.row-offcanvas').addClass('active');
+					$('.showhide').toggle();
+				} else {
+					$('.row-offcanvas').removeClass('active');
 					$('.showhide').toggle();
 				}
 			}
@@ -40,9 +49,13 @@
 				console.log(self.$scope.ShoppingCart);
 			}
 
+			
+
 			self.$scope.$watch('SideOpen', CloseSideBar);
 
 			self.$scope.$on('CartItem-Added', CartUpdated);
+			self.$scope.UpdateSO = UpdateSO;
+
 
 
 
