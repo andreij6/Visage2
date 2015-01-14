@@ -32,7 +32,7 @@
 	}
 
 	.nav-title {
-		font-size: 24px;
+		font-size: 16px;
 		hr { 
 			display: block; 
 			height: 1px;
@@ -46,6 +46,16 @@
 		}
 	}
 	
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	margin-top: 10px;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+	border-left: 10px solid #c4c4c4;;
 }
 
 .fa-home {
