@@ -49,9 +49,9 @@ namespace Reihs.Web
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
             // Uncomment the following lines to enable logging in with third party login providers
-            //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+		  app.UseMicrosoftAccountAuthentication(
+			 clientId: WebConfigurationManager.AppSettings["MicrosoftClientId"],
+			 clientSecret: WebConfigurationManager.AppSettings["MicrosoftClientSecret"]);
 
             //app.UseTwitterAuthentication(
             //   consumerKey: "",

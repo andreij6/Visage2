@@ -3,7 +3,7 @@
 		ItemId: string;
 		CartId: string;
 		Quantity: number;
-		DateCreated: Date;
+		DateCreated: string;
 		ProductId: number;
 		Product: Product;
 	}

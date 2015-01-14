@@ -485,6 +485,7 @@
     <TypeScriptCompile Include="Scripts\custom\shared\models\Order.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\OrderDetail.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\Product.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\ShoppingCart.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\About.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Blog.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\CartCtrl.ts" />
@@ -499,6 +500,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Resources.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Treatments.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\ContactAPIService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\MarketService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IAboutScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IBlogScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ICartScope.ts" />

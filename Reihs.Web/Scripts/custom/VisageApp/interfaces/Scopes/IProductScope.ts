@@ -1,5 +1,7 @@
 ﻿module Extensions {
 	export interface IProductScope extends ng.IScope {
-		test: string;
+		Product: Extensions.Product;
+
+		AddToCart(product: Extensions.Product): void;
 	}
 } 

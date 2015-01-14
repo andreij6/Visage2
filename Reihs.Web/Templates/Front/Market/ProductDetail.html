@@ -49,8 +49,8 @@
 		<div class="col-md-8 col-md-offset-1">
 			<div class="mix col-sm-8 page1 page4 margin30 mix_all" style="display: inline-block; opacity: 1;">
 				<div class="item-img-wrap ">
-					<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg">
-
+					
+					<img ng-src="{{Product.ImagePath}}" class="img-responsive" alt="workimg">
 					<div class="item-img-overlay">
 						<a href="img/img-1.jpg" class="show-image">
 							<span></span>
@@ -58,22 +58,22 @@
 					</div>
 				</div>
 				<div class="work-desc">
-					<h3><a href="portfolio-single.html">Psd Design</a></h3>
-					<span>Photoshop</span>
+					<h3><a href="portfolio-single.html">{{Product.Name}}</a></h3>
+					<span>Product Category or Brand slogan</span>
 				</div><!--work desc-->
 			</div>
 			<div class="col-md-4 margin20 wow animated fadeInRight animated" style="visibility: visible; -webkit-animation: fadeInRight;">
 				<div class="price-wrap">
 					<div class="price-title">
-						<h4>Business</h4>
+						<h4>{{Product.Brand}}</h4>
 					</div><!--price title-->
 					<div class="price-price popular">
-						$88.00
+						{{Product.UnitPrice | currency:"$"}}
 						<span>Per Month</span>
 					</div><!--price price-->
 					<div class="price-features">
 						<ul class="list-unstyled">
-							<li>Full Support</li>
+							<li>{{Product.Brand}}</li>
 							<li>5 Email account</li>
 							<li>50 GB disk space</li>
 							<li>1 year validity</li>
@@ -81,17 +81,18 @@
 						</ul>
 					</div><!--price features-->
 					<div class="price-action">
-						<a class="btn btn-theme-bg">Add To Cart</a>
 					</div><!--price action-->
 				</div><!--price-wrap-->
+				
+
 			</div>
 			<div class="col-md-12">
+				<button class="btn btn-theme-bg btn-block" ng-click="AddToCart(Product)">Add To Cart</button>
 				<p class="lead">
-					Product Detail Description
+					{{Product.Name}}
 				</p><hr>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.
-
+					{{Product.Description}}
 				</p>
 			</div>
 		</div>

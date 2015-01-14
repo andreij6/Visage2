@@ -12,6 +12,7 @@ module VisageApp {
 	VisageApp.config(Config);
 
 	VisageApp.factory('ContactAPIService', ['$http', '$q', ContactAPIService.Builder]);
+	VisageApp.factory('MarketService', [MarketService.Builder]);
 
 	VisageApp.controller('Index', Index);
 	VisageApp.controller('About', About);

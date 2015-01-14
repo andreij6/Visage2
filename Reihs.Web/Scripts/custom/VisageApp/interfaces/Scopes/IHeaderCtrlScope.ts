@@ -1,7 +1,8 @@
 ﻿module Extensions {
 	export interface IHeaderCtrlScope extends ng.IScope {
-		template: any;
-		templates: any;
+		SideOpen: boolean;
 		addjQuery(): void;
+		ShoppingCart: Array<CartItem>;
+		HasItems: boolean;
 	}
 }    
