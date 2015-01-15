@@ -77,6 +77,10 @@
 				{
 					templateUrl: 'Templates/Front/Resources/FactSheets.html',
 					controller: 'Resources'
+				}).when('/SiteMap',
+				{
+					templateUrl: 'Templates/Front/SiteMap.html',
+					controller: 'SiteMapCtrl'
 				}).when('/Videos',
 				{
 					templateUrl: 'Templates/Front/Videos.html',

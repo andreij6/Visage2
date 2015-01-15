@@ -59,7 +59,7 @@
 }
 
 .fa-home {
-	color: $color_red_approx;
+	color: #3498db;
 }
 
 .cart-items-list {
@@ -114,6 +114,14 @@
     display: none;
   
   }
+}
+
+.sitemap {
+	background-color: #c4c4c4;
+}
+
+#site-map-link {
+	color: #323232;
 }
 
 .wrapper {

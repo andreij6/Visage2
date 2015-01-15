@@ -381,6 +381,7 @@
     <Content Include="Templates\Front\Resources\FactSheets.html" />
     <Content Include="Templates\Front\Resources\NewPatients.html" />
     <Content Include="Templates\Front\Resources\PostCare.html" />
+    <Content Include="Templates\Front\SiteMap.html" />
     <Content Include="Templates\Front\Special\Events.html" />
     <Content Include="Templates\Front\Team.html" />
     <Content Include="Templates\Front\Testimonials.html" />
@@ -503,6 +504,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\OrderCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\ProductCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Resources.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\SiteMapCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\TeamCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\TestimonialCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Treatments.ts" />
@@ -522,6 +524,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IOrderScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IProductScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IResourcesScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ISiteMapScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITeamScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITestimonialScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITreatmentScope.ts" />

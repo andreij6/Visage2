@@ -2193,7 +2193,7 @@ label span{
     vertical-align: middle;
     z-index: 1;
 }
-/*.parallax-overlay{
+.parallax-overlay{
     position: absolute;
     left: 0;
     top: 0;
@@ -2203,7 +2203,7 @@ label span{
     background-repeat: repeat;
     background-color: rgba(44,62,80,0.3);
     z-index: 2;
-}*/
+}
 .video-wrap-content {
     position: relative;
     display: table-cell;

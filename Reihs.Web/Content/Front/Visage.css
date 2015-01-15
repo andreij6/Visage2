@@ -43,7 +43,7 @@
   border-left: 10px solid #c4c4c4; }
 
 .fa-home {
-  color: red; }
+  color: #3498db; }
 
 .cart-items-list {
   height: 400px;
@@ -89,6 +89,12 @@
     height: 100%;
     display: none; }
  }
+
+.sitemap {
+  background-color: #c4c4c4; }
+
+#site-map-link {
+  color: #323232; }
 
 .wrapper {
   position: relative;

@@ -31,4 +31,5 @@ module VisageApp {
 	VisageApp.controller('LocationsCtrl', LocationsCtrl);
 	VisageApp.controller('VideoCtrl', VideoCtrl);
 	VisageApp.controller('TestimonialCtrl', TestimonialCtrl);
+	VisageApp.controller('SiteMapCtrl', SiteMapCtrl);
 }
