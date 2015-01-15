@@ -32,7 +32,6 @@
 			function CloseSideBar(newValue, oldValue) {
 				if (oldValue !== undefined) {
 					if (newValue === true) {
-						console.log('37');
 						$('.row-offcanvas').addClass('active');
 						$('.showhide').toggle();
 					} else {
@@ -61,10 +60,8 @@
 			self.$scope.$watch('SideOpen', CloseSideBar);
 
 			self.$scope.$on('CartItem-Added', CartUpdated);
+
 			self.$scope.UpdateSO = UpdateSO;
-
-
-
 
 			self.init();
 		}

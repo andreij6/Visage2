@@ -24,6 +24,10 @@
 				{
 					templateUrl: '/Templates/Front/Gallery.html',
 					controller: 'GalleryCtrl'
+				}).when('/Locations',
+				{
+					templateUrl: 'Templates/Front/Locations.html',
+					controller: 'LocationsCtrl'
 				}).when('/Market',
 				{
 					templateUrl: 'Templates/Front/Market/Index.html',
@@ -50,6 +54,14 @@
 				{
 					templateUrl: 'Templates/Front/Treatments/Index.html',
 					controller: 'Treatments'
+				}).when('/Team',
+				{
+					templateUrl: 'Templates/Front/Team.html',
+					controller: 'TeamCtrl'
+				}).when('/Testimonials',
+				{
+					templateUrl: 'Templates/Front/Testimonials.html',
+					controller: 'TestimonialCtrl'
 				}).when('/Resources',
 				{
 					templateUrl: 'Templates/Front/Resources/Index.html',
@@ -65,6 +77,10 @@
 				{
 					templateUrl: 'Templates/Front/Resources/FactSheets.html',
 					controller: 'Resources'
+				}).when('/Videos',
+				{
+					templateUrl: 'Templates/Front/Videos.html',
+					controller: 'VideoCtrl'
 				}).otherwise({ redirectTo: '/' });
 
 			

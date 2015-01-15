@@ -27,4 +27,8 @@ module VisageApp {
 	VisageApp.controller('GalleryCtrl', GalleryCtrl);
 	VisageApp.controller('Treatments', Treatments);
 	VisageApp.controller('Resources', Resources);
+	VisageApp.controller('TeamCtrl', TeamCtrl);
+	VisageApp.controller('LocationsCtrl', LocationsCtrl);
+	VisageApp.controller('VideoCtrl', VideoCtrl);
+	VisageApp.controller('TestimonialCtrl', TestimonialCtrl);
 }

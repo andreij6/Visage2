@@ -366,6 +366,7 @@
     <Content Include="Templates\Front\Contact.html" />
     <Content Include="Templates\Front\Gallery.html" />
     <Content Include="Templates\Front\Home.html" />
+    <Content Include="Templates\Front\Locations.html" />
     <Content Include="Templates\Front\Market\CartDetail.html" />
     <Content Include="Templates\Front\Market\Checkout.html" />
     <Content Include="Templates\Front\Market\CompletedOrder.html" />
@@ -381,6 +382,8 @@
     <Content Include="Templates\Front\Resources\NewPatients.html" />
     <Content Include="Templates\Front\Resources\PostCare.html" />
     <Content Include="Templates\Front\Special\Events.html" />
+    <Content Include="Templates\Front\Team.html" />
+    <Content Include="Templates\Front\Testimonials.html" />
     <Content Include="Templates\Front\Treatments\Index.html" />
     <Content Include="Templates\Front\Treatments\Partials\Bodyshaping.html" />
     <Content Include="Templates\Front\Treatments\Partials\FacialInjectibles.html" />
@@ -392,6 +395,7 @@
     <Content Include="Templates\Front\Treatments\Partials\SkinResurface.html" />
     <Content Include="Templates\Front\Treatments\Partials\SkinTight.html" />
     <Content Include="Templates\Front\Treatments\Partials\VeinReduce.html" />
+    <Content Include="Templates\Front\Videos.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -494,11 +498,15 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\HeaderCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Index.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\LayoutCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\LocationsCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Market.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\OrderCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\ProductCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Resources.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\TeamCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\TestimonialCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Treatments.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\VideoCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\ContactAPIService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\MarketService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IAboutScope.ts" />
@@ -509,11 +517,15 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IHeaderCtrlScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IIndexScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ILayoutScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ILocationsScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IMarketScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IOrderScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IProductScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IResourcesScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITeamScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITestimonialScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITreatmentScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IVideoScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\routes\Config.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\VisageApp.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
