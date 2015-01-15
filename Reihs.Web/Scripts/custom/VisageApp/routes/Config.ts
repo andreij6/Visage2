@@ -81,6 +81,10 @@
 				{
 					templateUrl: 'Templates/Front/SiteMap.html',
 					controller: 'SiteMapCtrl'
+				}).when('/Special/Event',
+				{
+					templateUrl: 'Templates/Front/Special/Events.html',
+					controller: 'SpecialCtrl'
 				}).when('/Videos',
 				{
 					templateUrl: 'Templates/Front/Videos.html',
