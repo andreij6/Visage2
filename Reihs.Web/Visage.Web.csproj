@@ -505,6 +505,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\ProductCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Resources.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\SiteMapCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\SpecialCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\TeamCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\TestimonialCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Treatments.ts" />
@@ -525,6 +526,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IProductScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IResourcesScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ISiteMapScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ISpecialScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITeamScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITestimonialScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITreatmentScope.ts" />
