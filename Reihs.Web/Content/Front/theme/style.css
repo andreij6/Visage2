@@ -627,7 +627,7 @@ input[type="color"]:focus,
 }
 
 .bollard {
-	background: url('../../Images/bollard.jpg') no-repeat center center fixed;
+	background: url('../../Images/Face_1170x344.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -635,7 +635,7 @@ input[type="color"]:focus,
 }
 
 .mother {
-	background: url('../../Images/mother.jpg') no-repeat center center fixed;
+	background: url('../../Images/Hips_1170x344.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;

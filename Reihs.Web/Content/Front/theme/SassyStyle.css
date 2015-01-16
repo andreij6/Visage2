@@ -547,14 +547,14 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   height: 100%; }
 
 .bollard {
-  background: url('../../Images/bollard.jpg') no-repeat center center fixed;
+  background: url('../../Images/Face_1170x344.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 .mother {
-  background: url('../../Images/mother.jpg') no-repeat center center fixed;
+  background: url('../../Images/Hips_1170x344.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

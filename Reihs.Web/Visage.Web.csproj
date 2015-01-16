@@ -245,6 +245,8 @@
     <Content Include="Content\Images\coffee-569178_1280.jpg" />
     <Content Include="Content\Images\DrJMRiehs_600x600.jpg" />
     <Content Include="Content\Images\eye.jpg" />
+    <Content Include="Content\Images\Face_1170x344.jpg" />
+    <Content Include="Content\Images\Hips_1170x344.jpg" />
     <Content Include="Content\Images\Zoom.ico" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\mother.jpg" />
@@ -259,6 +261,8 @@
     <Content Include="Images\coffee-569178_1280.jpg" />
     <Content Include="Images\DrJMRiehs_600x600.jpg" />
     <Content Include="Images\eye.jpg" />
+    <Content Include="Images\Face_1170x344.jpg" />
+    <Content Include="Images\Hips_1170x344.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\mother.jpg" />
     <Content Include="Images\winter.jpg" />
