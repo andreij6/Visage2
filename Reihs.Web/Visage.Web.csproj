@@ -243,6 +243,7 @@
     </Content>
     <Content Include="Content\Images\bollard.jpg" />
     <Content Include="Content\Images\coffee-569178_1280.jpg" />
+    <Content Include="Content\Images\DrJMRiehs_600x600.jpg" />
     <Content Include="Content\Images\eye.jpg" />
     <Content Include="Content\Images\Zoom.ico" />
     <Content Include="Content\Images\logo.png" />
@@ -256,6 +257,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\bollard.jpg" />
     <Content Include="Images\coffee-569178_1280.jpg" />
+    <Content Include="Images\DrJMRiehs_600x600.jpg" />
     <Content Include="Images\eye.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\mother.jpg" />
