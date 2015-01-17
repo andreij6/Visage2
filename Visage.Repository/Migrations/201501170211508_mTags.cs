@@ -3,7 +3,7 @@ namespace Reihs.Repository.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initial : DbMigration
+    public partial class mTags : DbMigration
     {
         public override void Up()
         {
@@ -32,6 +32,7 @@ namespace Reihs.Repository.Migrations
                         Rating = c.Int(nullable: false),
                         Likes = c.Int(nullable: false),
                         Clicks = c.Int(nullable: false),
+                        Public = c.Boolean(nullable: false),
                         Created = c.DateTime(nullable: false, precision: 7, storeType: "datetime2"),
                         Modified = c.DateTime(nullable: false, precision: 7, storeType: "datetime2"),
                     })
@@ -109,30 +110,26 @@ namespace Reihs.Repository.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
-                "dbo.mCategories",
-                c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        Description = c.String(),
-                    })
-                .PrimaryKey(t => t.Id);
-            
-            CreateTable(
                 "dbo.mProducts",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        CategoryId = c.Int(),
                         Name = c.String(),
                         Description = c.String(),
                         ImagePath = c.String(),
                         Brand = c.String(),
                         UnitPrice = c.Double(nullable: false),
                     })
-                .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.mCategories", t => t.CategoryId)
-                .Index(t => t.CategoryId);
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.mTags",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
             
             CreateTable(
                 "dbo.OrderDetails",
@@ -190,8 +187,34 @@ namespace Reihs.Repository.Migrations
                         ProductId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ItemId)
-                .ForeignKey("dbo.mProducts", t => t.ProductId, cascadeDelete: false)
+                .ForeignKey("dbo.mProducts", t => t.ProductId, cascadeDelete: true)
                 .Index(t => t.ProductId);
+            
+            CreateTable(
+                "dbo.bTagbPosts",
+                c => new
+                    {
+                        bTag_Id = c.Int(nullable: false),
+                        bPost_Id = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => new { t.bTag_Id, t.bPost_Id })
+                .ForeignKey("dbo.bTags", t => t.bTag_Id, cascadeDelete: true)
+                .ForeignKey("dbo.bPosts", t => t.bPost_Id, cascadeDelete: true)
+                .Index(t => t.bTag_Id)
+                .Index(t => t.bPost_Id);
+            
+            CreateTable(
+                "dbo.mTagsmProducts",
+                c => new
+                    {
+                        mTags_Id = c.Int(nullable: false),
+                        mProduct_Id = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => new { t.mTags_Id, t.mProduct_Id })
+                .ForeignKey("dbo.mTags", t => t.mTags_Id, cascadeDelete: true)
+                .ForeignKey("dbo.mProducts", t => t.mProduct_Id, cascadeDelete: true)
+                .Index(t => t.mTags_Id)
+                .Index(t => t.mProduct_Id);
             
         }
         
@@ -199,15 +222,21 @@ namespace Reihs.Repository.Migrations
         {
             DropForeignKey("dbo.CartItems", "ProductId", "dbo.mProducts");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
-            DropForeignKey("dbo.mProducts", "CategoryId", "dbo.mCategories");
+            DropForeignKey("dbo.mTagsmProducts", "mProduct_Id", "dbo.mProducts");
+            DropForeignKey("dbo.mTagsmProducts", "mTags_Id", "dbo.mTags");
+            DropForeignKey("dbo.bTagbPosts", "bPost_Id", "dbo.bPosts");
+            DropForeignKey("dbo.bTagbPosts", "bTag_Id", "dbo.bTags");
             DropForeignKey("dbo.bPosts", "CategoryId", "dbo.bCategories");
             DropForeignKey("dbo.bPosts", "AuthorId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
+            DropIndex("dbo.mTagsmProducts", new[] { "mProduct_Id" });
+            DropIndex("dbo.mTagsmProducts", new[] { "mTags_Id" });
+            DropIndex("dbo.bTagbPosts", new[] { "bPost_Id" });
+            DropIndex("dbo.bTagbPosts", new[] { "bTag_Id" });
             DropIndex("dbo.CartItems", new[] { "ProductId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
-            DropIndex("dbo.mProducts", new[] { "CategoryId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
@@ -215,12 +244,14 @@ namespace Reihs.Repository.Migrations
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.bPosts", new[] { "AuthorId" });
             DropIndex("dbo.bPosts", new[] { "CategoryId" });
+            DropTable("dbo.mTagsmProducts");
+            DropTable("dbo.bTagbPosts");
             DropTable("dbo.CartItems");
             DropTable("dbo.AspNetRoles");
             DropTable("dbo.Orders");
             DropTable("dbo.OrderDetails");
+            DropTable("dbo.mTags");
             DropTable("dbo.mProducts");
-            DropTable("dbo.mCategories");
             DropTable("dbo.bTags");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetUserLogins");

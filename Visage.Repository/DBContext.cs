@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using Reihs.Repository.Models;
 using Reihs.Repository.Models.Blog;
 using Reihs.Repository.Models.Market;
+using Visage.Repository;
+using Visage.Repository.Models.Market;
 
 namespace Reihs.Repository
 {
@@ -30,7 +32,7 @@ namespace Reihs.Repository
 		public DbSet<bTag> bTags { get; set; }
 
 		//Market
-		public DbSet<mCategory> mCategories { get; set; }
+		public DbSet<mTags> mTags { get; set; }
 		public DbSet<mProduct> mProducts { get; set; }
 		public DbSet<CartItem> ShoppingCartItems { get; set; }
 		public DbSet<Order> Orders { get; set; }

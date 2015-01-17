@@ -183,6 +183,7 @@
     <Compile Include="Controllers\API\Blog\CategoryController.cs" />
     <Compile Include="Controllers\API\ContactController.cs" />
     <Compile Include="Controllers\API\Market\MarketController.cs" />
+    <Compile Include="Controllers\API\Market\ProductController.cs" />
     <Compile Include="Controllers\MVC\AccountController.cs" />
     <Compile Include="Controllers\MVC\AdminController.cs" />
     <Compile Include="Controllers\MVC\HomeController.cs" />
@@ -376,9 +377,10 @@
     <Content Include="Templates\Front\Market\CartDetail.html" />
     <Content Include="Templates\Front\Market\Checkout.html" />
     <Content Include="Templates\Front\Market\CompletedOrder.html" />
-    <Content Include="Templates\Front\Market\Partials\Category2.html" />
-    <Content Include="Templates\Front\Market\Partials\Category3.html" />
-    <Content Include="Templates\Front\Market\Partials\Category4.html" />
+    <Content Include="Templates\Front\Market\Partials\Clarisonic.html" />
+    <Content Include="Templates\Front\Market\Partials\RevitaLash.html" />
+    <Content Include="Templates\Front\Market\Partials\EltaMD.html" />
+    <Content Include="Templates\Front\Market\Partials\SkinMedica.html" />
     <Content Include="Templates\Front\Market\Partials\ProductDetail.html" />
     <Content Include="Templates\Front\Market\Partials\Index.html" />
     <Content Include="Templates\Front\Market\ProductDetail.html" />
@@ -518,6 +520,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\VideoCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\ContactAPIService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\MarketService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\ProductService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IAboutScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IBlogScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ICartScope.ts" />

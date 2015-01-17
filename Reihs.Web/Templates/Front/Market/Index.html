@@ -28,13 +28,8 @@
 
 			<div class="sidebar-box margin40">
 				<h4 ng-click="SetTemplate('Index')"><a>Products</a></h4>
-				<ul class="list-unstyled cat-list">
-					<li ng-click="SetTemplate('Category2')"><a>Videos</a> <i class="fa fa-angle-right"></i></li>
-					<li ng-click="SetTemplate('Category3')"><a>Sports</a> <i class="fa fa-angle-right"></i></li>
-					<li ng-click="SetTemplate('Category4')"><a>Fashion</a> <i class="fa fa-angle-right"></i></li>
-					<li><a>Media</a> <i class="fa fa-angle-right"></i></li>
-					<li><a>Seo</a> <i class="fa fa-angle-right"></i></li>
-					<li><a>Marketing</a> <i class="fa fa-angle-right"></i></li>
+				<ul class="list-unstyled cat-list" ng-repeat="category in Categories">
+					<li ng-click="template.url = category.url"><a>{{category.Name}}</a> <i class="fa fa-angle-right"></i></li>
 				</ul>
 			</div><!--sidebar-box-->
 

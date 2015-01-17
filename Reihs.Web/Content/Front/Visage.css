@@ -34,6 +34,18 @@
       -moz-box-shadow: 0 8px 6px -6px black;
       box-shadow: 0 8px 6px -6px black; }
 
+.bollard {
+  background: url('../../Images/Face_1170x344.jpg') no-repeat center center fixed;
+  background-size: cover; }
+
+.mother {
+  background: url('../../Images/Hips_1170x344.jpg') no-repeat center center fixed;
+  background-size: cover; }
+
+.winter {
+  background: url('../../Images/winter.jpg') no-repeat center center fixed;
+  background-size: cover; }
+
 .arrow-right {
   width: 0;
   height: 0;
@@ -151,5 +163,9 @@
   width: 300px;
   height: 300px;
   padding-right: 20px; }
+
+.productlist {
+  height: 400px;
+  overflow: scroll; }
 
 /*# sourceMappingURL=Visage.css.map */

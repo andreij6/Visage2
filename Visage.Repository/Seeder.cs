@@ -9,6 +9,7 @@ using System.Data.Entity.Migrations;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Reihs.Repository.Models;
 using Microsoft.AspNet.Identity;
+using Reihs.Repository.Models.Market;
 
 namespace Reihs.Repository
 {
@@ -20,13 +21,12 @@ namespace Reihs.Repository
 
 			SeedBlogInfo(context);
 			
-			//SeedMarketInfo(context);
+			SeedMarketInfo(context);
 		}
 
 		#region Market Seeders
 		private static void SeedMarketInfo(AppDB context)
 		{
-			SeedMarketCategories(context);
 			SeedProducts(context);
 			SeedCartItems(context);
 			SeedOrderDetails(context);
@@ -36,28 +36,197 @@ namespace Reihs.Repository
 
 		private static void SeedOrders(AppDB context)
 		{
-			throw new NotImplementedException();
+			
 		}
 
 		private static void SeedOrderDetails(AppDB context)
 		{
-			throw new NotImplementedException();
+			
 		}
 
 		private static void SeedCartItems(AppDB context)
 		{
-			throw new NotImplementedException();
+			
 		}
 
 		private static void SeedProducts(AppDB context)
 		{
-			throw new NotImplementedException();
+			context.mProducts.AddOrUpdate(x => x.Id,
+					new mProduct
+					{
+						Name = "Lytera® Skin Brightening Complex",
+						Brand = "SkinMedica",
+						UnitPrice = 125.0
+					},
+					new mProduct
+					{
+						Name = "AHA / BHA Cleanser",
+						Brand = "SkinMedica",
+						UnitPrice = 46.0
+					},
+					new mProduct
+					{
+						Name = "AHA/BHA Cream",
+						Brand = "SkinMedica",
+						UnitPrice = 42.0
+					},
+					new mProduct
+					{
+						Name = "Daily Physical Defense® Sunscreen Broad Spectrum SPF 30+",
+						Brand = "SkinMedica",
+						UnitPrice = 46.0
+					},
+					new mProduct
+					{
+						Name = "Dermal Repair Cream",
+						Brand = "SkinMedica",
+						UnitPrice = 124.0
+					},
+					new mProduct
+					{
+						Name = "Environmental Defense Sunscreen™ SPF 50+ with UV ProPlex™",
+						Brand = "SkinMedica",
+						UnitPrice = 46.0
+					},
+					new mProduct
+					{
+						Name = "Facial Cleanser",
+						Brand = "SkinMedica",
+						UnitPrice = 36.0
+					},
+					new mProduct
+					{
+						Name = "Hydrating Complex",
+						Brand = "SkinMedica",
+						UnitPrice = 84.0
+					},
+					new mProduct
+					{
+						Name = "Purifying Foaming Wash",
+						Brand = "SkinMedica",
+						UnitPrice = 42.0
+					},
+					new mProduct
+					{
+						Name = "Redness Relief CalmPlex",
+						Brand = "SkinMedica",
+						UnitPrice = 84.0
+					},
+					new mProduct
+					{
+						Name = "Rejuvenative Moisturizer",
+						Brand = "SkinMedica",
+						UnitPrice = 56.0
+					},
+					new mProduct
+					{
+						Name = "Rejuvenative Toner",
+						Brand = "SkinMedica",
+						UnitPrice = 36.0
+					},
+					new mProduct
+					{
+						Name = "Retinol Complex .25",
+						Brand = "SkinMedica",
+						UnitPrice = 60.0
+					},
+					new mProduct
+					{
+						Name = "Retinol Complex 0.5",
+						Brand = "SkinMedica",
+						UnitPrice = 75.0
+					},
+					new mProduct
+					{
+						Name = "Retinol Complex 1.0",
+						Brand = "SkinMedica",
+						UnitPrice = 90.0
+					},
+					new mProduct
+					{
+						Name = "Scar Recovery Gel with Centelline™ (0.5 Oz.)",
+						Brand = "SkinMedica",
+						UnitPrice = 42.0
+					},
+					new mProduct
+					{
+						Name = "Scar Recovery Gel with Centelline™ (2 Oz.)",
+						Brand = "SkinMedica",
+						UnitPrice = 98.0
+					},
+					new mProduct
+					{
+						Name = "Sensitive Skin Cleanser",
+						Brand = "SkinMedica",
+						UnitPrice = 36.0
+					},
+					new mProduct
+					{
+						Name = "TNS Ceramide Treatment Cream™",
+						Brand = "SkinMedica",
+						UnitPrice = 66.0
+					},
+					new mProduct
+					{
+						Name = "TNS Essential Serum®",
+						Brand = "SkinMedica",
+						UnitPrice = 270.0
+					},
+					new mProduct
+					{
+						Name = "TNS Eye Repair™",
+						Brand = "SkinMedica",
+						UnitPrice = 98.0
+					},
+					new mProduct
+					{
+						Name = "TNS Illuminating Eye Cream®",
+						Brand = "SkinMedica",
+						UnitPrice = 88.0
+					},
+					new mProduct
+					{
+						Name = "TNS Lip Plump System®",
+						Brand = "SkinMedica",
+						UnitPrice = 58.0
+					},
+					new mProduct
+					{
+						Name = "TNS Recovery Complex®",
+						Brand = "SkinMedica",
+						UnitPrice = 172.0
+					},
+					new mProduct
+					{
+						Name = "TNS Ultimate Daily Moisturizer™ SPF 20 Sunscreen",
+						Brand = "SkinMedica",
+						UnitPrice = 88.0
+					},
+					new mProduct
+					{
+						Name = "Ultra Sheer Moisturizer",
+						Brand = "SkinMedica",
+						UnitPrice = 56.0
+					},
+					new mProduct
+					{
+						Name = "Uplifting Eye Serum™",
+						Brand = "SkinMedica",
+						UnitPrice = 58.0
+					},
+					new mProduct
+					{
+						Name = "Vitamin C+E Complex",
+						Brand = "SkinMedica",
+						UnitPrice = 98.0
+					}
+
+				);
+
+			context.SaveChanges();
 		}
 
-		private static void SeedMarketCategories(AppDB context)
-		{
-			throw new NotImplementedException();
-		}
+		
 		#endregion
 
 		#region Blog Seeders

@@ -16,6 +16,12 @@
 			return new ProductDataService($http, $q);
 		}
 
+		getAll() {
+			var self = this;
+			var deferred = self.qService.defer();
+			return deferred.promise;
+		}
+
 		getById(productId: number) {
 			var self = this;
 			var deferred = self.qService.defer();

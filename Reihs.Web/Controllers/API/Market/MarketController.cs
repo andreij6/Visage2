@@ -7,19 +7,23 @@ using System.Web;
 using System.Web.Http;
 using Reihs.Repository.Models.Market;
 using Reihs.Services.Market;
+using Visage.Services.Handlers.Market;
 
 namespace Reihs.Web.Controllers.API.Market
 {
+	[RoutePrefix("api/Market")]
 	public class MarketController : ApiController
 	{
 		#region Dependencies
-		public IShoppingCartService CartService { get; set; }
+		public readonly IShoppingCartService CartService;
+		
 		#endregion
 
 		#region Constructors
 		public MarketController()
 		{
 			CartService = new ShoppingCartService();
+			
 		}
 
 		public MarketController(IShoppingCartService cartService)
@@ -41,6 +45,8 @@ namespace Reihs.Web.Controllers.API.Market
 			return Response(success, BadRequestMessage);
 		}
 
+		
+
 		[NonAction]
 		public IHttpActionResult Response(bool success, string BadRequestMessage)
 		{
@@ -53,5 +59,7 @@ namespace Reihs.Web.Controllers.API.Market
 				return BadRequest(BadRequestMessage);
 			}
 		}
+
+
 	}
 }

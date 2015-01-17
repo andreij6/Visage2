@@ -7,13 +7,13 @@ namespace Reihs.Repository.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class addPublicToPost : IMigrationMetadata
+    public sealed partial class mTags : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addPublicToPost));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(mTags));
         
         string IMigrationMetadata.Id
         {
-            get { return "201501031845551_addPublicToPost"; }
+            get { return "201501170211508_mTags"; }
         }
         
         string IMigrationMetadata.Source

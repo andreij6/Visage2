@@ -31,16 +31,6 @@
 				
 			}
 
-			self.$scope.Product = {
-				Id: 4,
-				Category: 1,
-				Name: "Skin Lotion",
-				Description: "This is a great product. You should buy it. Buy it filler filler filler ipsum",
-				ImagePath: "../../Content/Images/coffee-569178_1280.jpg",
-				Brand: "SkinMedica",
-				UnitPrice: 10.25
-			};
-
 			self.$scope.AddToCart = addtocart;
 
 			self.init();

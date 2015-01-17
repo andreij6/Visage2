@@ -13,6 +13,7 @@ module VisageApp {
 
 	VisageApp.factory('ContactAPIService', ['$http', '$q', ContactAPIService.Builder]);
 	VisageApp.factory('MarketService', [MarketService.Builder]);
+	VisageApp.factory('ProductService', ['$http', '$q', ProductService.Builder]);
 
 	VisageApp.controller('Index', Index);
 	VisageApp.controller('About', About);

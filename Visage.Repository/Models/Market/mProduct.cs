@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Visage.Repository.Models.Market;
 
 namespace Reihs.Repository.Models.Market
 {
@@ -10,9 +11,7 @@ namespace Reihs.Repository.Models.Market
 	{
 		public int Id { get; set; }
 
-		public int? CategoryId { get; set; }
-
-		public virtual mCategory Category { get; set; }
+		public ICollection<mTags> Categories { get; set; }
 
 		public string Name { get; set; }
 

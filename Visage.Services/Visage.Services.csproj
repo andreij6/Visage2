@@ -68,7 +68,9 @@
     <Compile Include="Handlers\Blog\ICategoryService.cs" />
     <Compile Include="Handlers\Contact\ContactUsService.cs" />
     <Compile Include="Handlers\Contact\IContactUsService.cs" />
+    <Compile Include="Handlers\Market\IProductService.cs" />
     <Compile Include="Handlers\Market\IShoppingCartService.cs" />
+    <Compile Include="Handlers\Market\ProductService.cs" />
     <Compile Include="Handlers\Market\ShoppingCartService.cs" />
     <Compile Include="Models\PostModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
