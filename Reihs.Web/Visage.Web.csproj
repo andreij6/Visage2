@@ -377,14 +377,9 @@
     <Content Include="Templates\Front\Market\CartDetail.html" />
     <Content Include="Templates\Front\Market\Checkout.html" />
     <Content Include="Templates\Front\Market\CompletedOrder.html" />
-    <Content Include="Templates\Front\Market\Partials\Clarisonic.html" />
-    <Content Include="Templates\Front\Market\Partials\RevitaLash.html" />
-    <Content Include="Templates\Front\Market\Partials\EltaMD.html" />
-    <Content Include="Templates\Front\Market\Partials\SkinMedica.html" />
-    <Content Include="Templates\Front\Market\Partials\ProductDetail.html" />
-    <Content Include="Templates\Front\Market\Partials\Index.html" />
     <Content Include="Templates\Front\Market\ProductDetail.html" />
     <Content Include="Templates\Front\Market\Index.html" />
+    <Content Include="Templates\Front\Market\ProductList.html" />
     <Content Include="Templates\Front\Resources\Index.html" />
     <Content Include="Templates\Front\Resources\FactSheets.html" />
     <Content Include="Templates\Front\Resources\NewPatients.html" />

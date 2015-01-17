@@ -10,5 +10,7 @@ namespace Visage.Services.Handlers.Market
 	public interface IProductService
 	{
 		IEnumerable<mProduct> GetAll();
+
+		mProduct GetById(int productId);
 	}
 }

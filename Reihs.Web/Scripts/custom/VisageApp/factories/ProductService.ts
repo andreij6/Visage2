@@ -3,6 +3,7 @@
 		private httpService: ng.IHttpService;
 		private qService: ng.IQService;
 		public Products: Array<Extensions.Product>;
+		private Product: Extensions.Product;
 		private ProductAPI: string;
 
 		constructor($http: ng.IHttpService, $q: ng.IQService) {
@@ -36,10 +37,20 @@
 			return deferred.promise;
 		}
 
-
 		getById(productId: number) {
 			var self = this;
 			var deferred = self.qService.defer();
+
+			self.httpService.get(self.ProductAPI + "/" + productId).then(
+				function (result: any) {
+					self.Product = result.data;
+					deferred.resolve(self.Product);
+				}, function (error) {
+					deferred.reject(error);
+				});
+			
+			
+
 			return deferred.promise;
 		}
 

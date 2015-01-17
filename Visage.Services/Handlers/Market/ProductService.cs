@@ -21,5 +21,10 @@ namespace Visage.Services.Handlers.Market
 		{
 			return ProductRepo.GetAll();
 		}
+
+		public mProduct GetById(int productId)
+		{
+			return ProductRepo.GetById(productId);
+		}
 	}
 }

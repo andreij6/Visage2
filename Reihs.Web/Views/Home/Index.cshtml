@@ -20,7 +20,7 @@
 			</li>
 			<!--mega menu-->
 			<li class="dropdown yamm-fw">
-				<a data-toggle="dropdown" class="dropdown-toggle"><span ng-show="HasItems"><i class="fa fa-shopping-cart fa-2x"></i><span class="badge">{{ShoppingCart.length}}</span></span>Market<b class="caret"></b></a>
+				<a data-toggle="dropdown" class="dropdown-toggle">Market<b class="caret"></b></a>
 				<ul class="dropdown-menu">
 					<li>
 						<div class="yamm-content">
@@ -29,12 +29,14 @@
 									<a href="#/Market" class="btn btn-block">Go To The Market</a>
 									<div class="col-sm-3">
 										<h3 class="heading">Shopping Cart</h3>
-										<ul>
+										<p></p>
+										<ul ng-show="HasItems">
 											<li>Item</li>
 											<li>Item 2</li>
 											<li>More...</li>
 										</ul>
-										<a href="#/Market/Cart" class="btn btn-theme-dark">View Cart <i class="fa fa-shopping-cart"></i></a>
+										<a href="#/Market/Cart" ng-show="HasItems" class="btn btn-theme-dark">View Cart <i class="fa fa-shopping-cart"></i></a>
+										<a href="#/Market" ng-show="!HasItems" class="btn btn-theme-dark">Market <i class="fa fa-shopping-cart"></i></a>
 									</div>
 									<div class="col-sm-6">
 										<h3 class="heading">Featured Items</h3>
@@ -65,7 +67,11 @@
 			<li>
 				<a href="#/Contact" class="dropdown-toggle">CONTACT US</a>
 			</li>
+			<li ng-show="HasItems">
+				<a href="#/Market/Cart">View Cart <span class="pull-right"> <i class="fa fa-shopping-cart fa-2x"></i><span class="badge">{{ShoppingCart.length}}</span></span></a>
+			</li>
 		</ul>
+		
 	</div>
 
 	<div class=" visible-xs">
@@ -98,12 +104,17 @@
 					</li>
 
 					<li ng-click="SideOpen = false">
-						<a href="#/Treatments">TREATMENTS <i class="fa fa-eyedropper"></i></a>
+						<a href="#/Market">MARKET <i class="fa fa-gift"></i></a>
+					</li>
+
+					<li ng-click="SideOpen = false" ng-show="HasItems">
+						<a href="#/Market/Cart" class="dropdown-toggle ">Shopping Cart <i class="fa fa-shopping-cart fa"></i></a>
 					</li>
 
 					<li ng-click="SideOpen = false">
-						<a href="#/Market">MARKET <i class="fa fa-gift"></i></a>
+						<a href="#/Treatments">TREATMENTS <i class="fa fa-eyedropper"></i></a>
 					</li>
+
 
 					<li ng-click="SideOpen = false">
 						<a href="#/Gallery">PHOTO GALLERY <i class="fa fa-file-image-o"></i></a>
@@ -116,6 +127,7 @@
 					<li ng-click="SideOpen = false">
 						<a href="#/Contact" class="dropdown-toggle ">CONTACT US <i class="fa fa-phone-square"></i></a>
 					</li>
+					
 					<li ng-click="SideOpen = false" class="sitemap">
 						<a href="#/SiteMap" id="site-map-link">Site Map <i class="fa fa-sitemap"></i></a>
 					</li>

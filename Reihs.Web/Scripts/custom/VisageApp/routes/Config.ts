@@ -33,7 +33,11 @@
 					templateUrl: 'Templates/Front/Market/Index.html',
 					controller: 'Market'
 				}
-				).when('/Market/Item/:id',
+				).when('/Market/Products/:Category',
+				{
+					templateUrl: 'Templates/Front/Market/ProductList.html',
+					controller: 'Market'
+				}).when('/Market/Item/:id',
 				{
 					templateUrl: 'Templates/Front/Market/ProductDetail.html',
 					controller: 'ProductCtrl'

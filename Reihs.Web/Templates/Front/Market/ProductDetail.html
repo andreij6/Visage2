@@ -18,39 +18,19 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-3">
-			<div class="sidebar-box margin40">
+			<!--<div class="sidebar-box margin40">
 				<h4>Search</h4>
 				<form role="form" class="search-widget">
 					<input type="text" class="form-control">
 					<i class="fa fa-search"></i>
 				</form>
-			</div><!--sidebar-box-->
-
-			<div class="sidebar-box margin40">
-				<h4 ng-click="SetTemplate('Index')"><a>Products</a></h4>
-				<ul class="list-unstyled cat-list">
-					<li ng-click="SetTemplate('Category2')"><a>Videos</a> <i class="fa fa-angle-right"></i></li>
-					<li ng-click="SetTemplate('Category3')"><a>Sports</a> <i class="fa fa-angle-right"></i></li>
-					<li ng-click="SetTemplate('Category4')"><a>Fashion</a> <i class="fa fa-angle-right"></i></li>
-					<li><a>Media</a> <i class="fa fa-angle-right"></i></li>
-					<li><a>Seo</a> <i class="fa fa-angle-right"></i></li>
-					<li><a>Marketing</a> <i class="fa fa-angle-right"></i></li>
-				</ul>
-			</div><!--sidebar-box-->
-
-			<div class="sidebar-box margin40">
-				<h4>Text widget</h4>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.
-				</p>
-			</div><!--sidebar-box-->
+			</div>sidebar-box-->
 		</div>
 
 		<div class="col-md-8 col-md-offset-1">
 			<div class="mix col-sm-8 page1 page4 margin30 mix_all" style="display: inline-block; opacity: 1;">
 				<div class="item-img-wrap ">
-					
-					<img ng-src="{{Product.ImagePath}}" class="img-responsive" alt="workimg">
+					<img src="../../../Images/coffee-569178_1280.jpg" class="img-responsive" alt="coffee" />
 					<div class="item-img-overlay">
 						<a href="img/img-1.jpg" class="show-image">
 							<span></span>
@@ -83,11 +63,12 @@
 					<div class="price-action">
 					</div><!--price action-->
 				</div><!--price-wrap-->
-				
-
 			</div>
 			<div class="col-md-12">
-				<button class="btn btn-theme-bg btn-block" ng-click="AddToCart(Product)">Add To Cart</button>
+				
+				<button class="btn btn-theme-bg btn-block" ng-click="AddToCart(Product, Quantity)">Add To Cart</button>
+				<label for="quantity">How Many</label>
+				<input name="quantity" type="number" value="1" min="1" ng-model="Quantity"/>
 				<p class="lead">
 					{{Product.Name}}
 				</p><hr>

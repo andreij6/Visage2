@@ -10,20 +10,27 @@ using Visage.Services.Handlers.Market;
 namespace Reihs.Web.Controllers.API.Market
 {
 	[RoutePrefix("api/Products")]
-    public class ProductController : ApiController
-    {
-	    public readonly IProductService ProductService;
+	public class ProductController : ApiController
+	{
+		public readonly IProductService ProductService;
 
-	    public ProductController()
-	    {
-		    ProductService = new ProductService();
-	    }
+		public ProductController()
+		{
+			ProductService = new ProductService();
+		}
 
-	    [Route()]
-	    [HttpGet]
-	    public IEnumerable<mProduct> GetAllProducts()
-	    {
-		    return ProductService.GetAll();
-	    }
-    }
+		[Route()]
+		[HttpGet]
+		public IEnumerable<mProduct> GetAllProducts()
+		{
+			return ProductService.GetAll();
+		}
+
+		[Route("{productId:int}")]
+		[HttpGet]
+		public mProduct GetById(int productId)
+		{
+			return ProductService.GetById(productId);
+		}
+	}
 }

@@ -3,7 +3,7 @@
 		templates: any;
 		template: any;
 		Categories: any;
-		SetTemplate(name: string): void;
+		Category: string;
 		SeeDetail(product: string): void;
 		Products: any;
 		GetProducts(): void;
