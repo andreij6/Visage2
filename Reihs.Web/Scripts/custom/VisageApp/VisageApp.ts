@@ -34,4 +34,5 @@ module VisageApp {
 	VisageApp.controller('TestimonialCtrl', TestimonialCtrl);
 	VisageApp.controller('SiteMapCtrl', SiteMapCtrl);
 	VisageApp.controller('SpecialCtrl', SpecialCtrl);
+	VisageApp.controller('PackageCtrl', PackageCtrl);
 }

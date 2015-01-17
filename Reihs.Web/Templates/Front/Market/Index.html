@@ -27,18 +27,25 @@
 			</div><!--sidebar-box-->
 
 			<div class="sidebar-box margin40">
-				<h4><a href="#/Market">Products</a></h4>
-				<ul class="list-unstyled cat-list" ng-repeat="category in Categories">
-					<li><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a> <i class="fa fa-angle-right"></i></li>
+				<h4 class="heading"><a href="#/Market">Products</a></h4>
+				<ul class="list-unstyled cat-list visible-md visible-lg">
+					<li ng-repeat="category in Categories"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a> <i class="fa fa-angle-right"></i></li>
 				</ul>
-			</div><!--sidebar-box-->
 
-			<div class="sidebar-box margin40">
-				<h4>Text widget</h4>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.
-				</p>
-			</div><!--sidebar-box-->
+				<ul class=" portfolio-filters text-center visible-sm visible-xs">
+					<li class="filter" ng-repeat="category in Categories"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a></li>
+				</ul>
+				<div class="divide40"></div>
+				<h4 class="heading"><a href="#/Market">Treatment Packages</a></h4>
+
+				<ul class="list-unstyled cat-list visible-md visible-lg">
+					<li><a href="#/Market/Treatments/Botox">Botox</a> <i class="fa fa-angle-right"></i></li>
+				</ul>
+
+				<ul class="portfolio-filters text-center visible-sm visible-xs">
+					<li class="filter"><a href="#/Market/Treatments/Botox">Botox</a></li>
+				</ul>
+</div><!--sidebar-box-->
 		</div>
 
 		<div class="col-md-8 col-md-offset-1">

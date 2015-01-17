@@ -33,7 +33,15 @@
 					templateUrl: 'Templates/Front/Market/Index.html',
 					controller: 'Market'
 				}
-				).when('/Market/Products/:Category',
+				).when('/Market/Treatments/:Product',
+				{
+					templateUrl: 'Templates/Front/Market/Packages.html',
+					controller: 'Market'
+				}).when('/Market/Packages/:Id',
+				{
+					templateUrl: 'Templates/Front/Market/PackageDetail.html',
+					controller: 'PackageCtrl'
+				}).when('/Market/Products/:Category',
 				{
 					templateUrl: 'Templates/Front/Market/ProductList.html',
 					controller: 'Market'

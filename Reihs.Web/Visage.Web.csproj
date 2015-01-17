@@ -377,6 +377,8 @@
     <Content Include="Templates\Front\Market\CartDetail.html" />
     <Content Include="Templates\Front\Market\Checkout.html" />
     <Content Include="Templates\Front\Market\CompletedOrder.html" />
+    <Content Include="Templates\Front\Market\PackageDetail.html" />
+    <Content Include="Templates\Front\Market\Packages.html" />
     <Content Include="Templates\Front\Market\ProductDetail.html" />
     <Content Include="Templates\Front\Market\Index.html" />
     <Content Include="Templates\Front\Market\ProductList.html" />
@@ -505,6 +507,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\LocationsCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Market.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\OrderCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\PackageCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\ProductCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Resources.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\SiteMapCtrl.ts" />
@@ -527,6 +530,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ILocationsScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IMarketScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IOrderScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IPackageScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IProductScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IResourcesScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ISiteMapScope.ts" />
