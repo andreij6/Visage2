@@ -1,0 +1,30 @@
+﻿<div class="col-md-8 col-lg-offset-4">
+	<p class="lead">
+		SkinMedica Description
+	</p><hr>
+</div>
+
+<!--SubCategories-->
+
+<div id="grid" >
+	<section class="row productlist col-md-10">
+		<div class="col-md-6" ng-repeat="product in Products">
+			<div class="mix" style="display: inline-block; opacity: 1;">
+				<div class="item-img-wrap ">
+					<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="Product Name">
+
+					<div class="item-img-overlay">
+						<a href="#/Market/Item/{{product.Id}}" class="show-image">
+							<span></span>
+						</a>
+					</div>
+				</div>
+				<div class="work-desc">
+					<h3><a href="#/Market/Item/{{product.Id}}">{{product.Name}}</a></h3>
+					<span>{{product.UnitPrice | currency : "$"}}</span>
+				</div><!--work desc-->
+			</div>
+		</div>
+	</section>
+
+</div>

@@ -27,7 +27,10 @@ namespace Reihs.Repository
 		#region Market Seeders
 		private static void SeedMarketInfo(AppDB context)
 		{
-			SeedProducts(context);
+			SeedSkinMedicaProducts(context);
+			SeedClarisonic(context);
+			SeedRevitaLashProducts(context);
+			SeedEltaMDProducts(context);
 			SeedCartItems(context);
 			SeedOrderDetails(context);
 			SeedOrders(context);
@@ -49,7 +52,7 @@ namespace Reihs.Repository
 			
 		}
 
-		private static void SeedProducts(AppDB context)
+		private static void SeedSkinMedicaProducts(AppDB context)
 		{
 			context.mProducts.AddOrUpdate(x => x.Id,
 					new mProduct
@@ -226,6 +229,87 @@ namespace Reihs.Repository
 			context.SaveChanges();
 		}
 
+		private static void SeedEltaMDProducts(AppDB context) 
+		{
+			context.mProducts.AddOrUpdate(x => x.Id,
+					new mProduct
+					{
+						Name = "Intense Moisturizer",
+						Brand = "Elta MD",
+						UnitPrice = 14.5
+					},
+					new mProduct
+					{
+						Name = "UV Clear 46 SPF",
+						Brand = "Elta MD",
+						UnitPrice = 37.0
+					},
+					new mProduct
+					{
+						Name = "UV Daily 40 SPF",
+						Brand = "Elta MD",
+						UnitPrice = 30
+					},
+					new mProduct
+					{
+						Name = "UV Physical 41",
+						Brand = "Elta MD",
+						UnitPrice = 36.0
+					},
+					new mProduct
+					{
+						Name = "UV Shield 45 SPF",
+						Brand = "Elta MD",
+						UnitPrice = 36.0
+					}
+			);
+
+			context.SaveChanges();
+		}
+
+		private static void SeedRevitaLashProducts(AppDB context) 
+		{
+			context.mProducts.AddOrUpdate(x => x.Id,
+				new mProduct
+				{
+					Name = "RevitaLash Advanced Formula",
+					Brand = "RevitaLash",
+					UnitPrice = 120.0
+				});
+
+			context.SaveChanges();
+		}
+
+		private static void SeedClarisonic(AppDB context) 
+		{
+			context.mProducts.AddOrUpdate(x => x.Id,
+				new mProduct
+				{
+					Name = "Clarisonic Mia",
+					Brand = "Clarisonic",
+					UnitPrice = 125.0
+				},
+				new mProduct
+				{
+					Name = "Clarisonic Pro",
+					Brand = "Clarisonic",
+					UnitPrice = 195.0
+				},
+				new mProduct
+				{
+					Name = "Clarisonic Pro System Kit",
+					Brand = "Clarisonic",
+					UnitPrice = 195.0
+				},
+				new mProduct 
+				{
+					Name = "Clarisonic Pro System Plus Body",
+					Brand = "Clarisonic",
+					UnitPrice = 250.0
+				});
+
+			context.SaveChanges();
+		}
 		
 		#endregion
 
