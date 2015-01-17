@@ -40,21 +40,16 @@
 				self.ProductSvc.getAll().then(
 					function (data) {
 						self.$scope.Products = data;
-						console.log(data);
-						console.log(self.$scope.Products);
 					},
 					function (error) {
 						console.log(error);
 					});
-				console.log(self.$scope.Products);
 			}
 
 			self.$scope.GetProducts = GetProducts;
 
 			self.$scope.Products = self.ProductSvc.Products;
 
-			console.log(self.$scope.Products);
-			console.log(self.ProductSvc.Products);
 
 			self.$scope.SetTemplate = setTemplate;
 
