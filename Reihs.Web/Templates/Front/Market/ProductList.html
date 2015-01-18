@@ -28,8 +28,12 @@
 
 			<div class="sidebar-box margin40">
 				<h4><a href="#/Market">Products</a></h4>
-				<ul class="list-unstyled cat-list" ng-repeat="category in Categories">
+				<ul class="list-unstyled cat-list visible-md visible-lg" ng-repeat="category in Categories">
 					<li><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a> <i class="fa fa-angle-right"></i></li>
+				</ul>
+
+				<ul class="portfolio-filters text-center cat-list visible-sm visible-xs" ng-repeat="category in Categories">
+					<li class="filter"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a></li>
 				</ul>
 			</div><!--sidebar-box-->
 
