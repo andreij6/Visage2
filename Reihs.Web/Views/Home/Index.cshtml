@@ -47,10 +47,9 @@
 									<div class="col-sm-3">
 										<h3 class="heading">Categories</h3>
 										<ul class="nav mega-vertical-nav">
-											<li><a href="typography.html">Typography</a></li>
-											<li><a href="element.html">Elements</a></li>
-											<li><a href="footer-2.html">Footer - 2</a></li>
-											<li><a href="home-soon.html">Coming Soon</a></li>
+											<li><a href="#/Market">Gift Cards</a></li>
+											<li><a href="#/Market">Skin Care</a></li>
+											<li><a href="#/Market">Treatment Packages</a></li>
 										</ul>
 									</div>
 								</div>
@@ -73,7 +72,7 @@
 		</ul>
 		
 	</div>
-
+		
 	<div class=" visible-xs">
 		<div class="navbar navbar-default" role="navigation">
 			<div class="container">
@@ -137,6 +136,10 @@
 		</div>
 	</div>
 
+	<div class="alert-success alert container" ng-show="IsAlertVisible">
+		<button type="button" class="close" ng-click="IsAlertVisible = false">×</button>
+		Item Successfully added!!!
+	</div>
 	<div ng-view></div>
 
 	<footer id="footer-option">

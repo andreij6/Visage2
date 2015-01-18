@@ -1,4 +1,11 @@
-﻿<div class="container">
+﻿<div id="lightbox" ng-show="Showing" ng-click="Showing = false">
+	<p>Click to close</p>
+	<div id="content">
+		<img ng-src="{{Image}}" id="lighbox-img" />
+	</div>
+</div>
+
+<div class="container">
 	<div class="row">
 		<div class="col-md-12">
 			<p class="lead">
@@ -17,15 +24,10 @@
 
 			<div id="grid" class="row">
 				<div class="mix col-sm-4 page1 page4 margin30 mix_all" style="display: inline-block; opacity: 1;">
-					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg">
+					<div class="item-img-wrap">
+						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
 
-						<div class="item-img-overlay">
-							<a href="../../Content/Images/coffee-569178_1280.jpg" class="show-image">
-								<span></span>
-							</a>
 						</div>
-					</div>
 					<div class="work-desc">
 						<h3><a href="portfolio-single.html">Psd Design</a></h3>
 						<span>Photoshop</span>
@@ -33,12 +35,7 @@
 				</div>
 				<div class="mix col-sm-4 page2 page3 margin30 mix_all" style="display: inline-block; opacity: 1;">
 					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg">
-						<div class="item-img-overlay">
-							<a href="img/img-2.jpg" class="show-image">
-								<span></span>
-							</a>
-						</div>
+						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
 					</div>
 					<div class="work-desc">
 						<h3><a href="portfolio-single.html">Mockup Design</a></h3>
@@ -47,12 +44,7 @@
 				</div>
 				<div class="mix col-sm-4  page3 page2 margin30  mix_all" style="display: inline-block; opacity: 1;">
 					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg">
-						<div class="item-img-overlay">
-							<a href="img/img-3.jpg" class="show-image">
-								<span></span>
-							</a>
-						</div>
+						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
 					</div>
 					<div class="work-desc">
 						<h3><a href="portfolio-single.html"> Real estate</a></h3>
@@ -61,12 +53,7 @@
 				</div>
 				<div class="mix col-sm-4  page4 margin30 mix_all" style="display: inline-block; opacity: 1;">
 					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg">
-						<div class="item-img-overlay">
-							<a href="img/img-4.jpg" class="show-image">
-								<span></span>
-							</a>
-						</div>
+						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
 					</div>
 					<div class="work-desc">
 						<h3><a href="portfolio-single.html">E Commerce</a></h3>
@@ -75,12 +62,7 @@
 				</div>
 				<div class="mix col-sm-4 page1 margin30  mix_all" style="display: inline-block; opacity: 1;">
 					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg">
-						<div class="item-img-overlay">
-							<a href="img/img-5.jpg" class="show-image">
-								<span></span>
-							</a>
-						</div>
+						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
 					</div>
 					<div class="work-desc">
 						<h3><a href="portfolio-single.html">Website Design</a></h3>
@@ -89,12 +71,7 @@
 				</div>
 				<div class="mix col-sm-4  page2 margin30 mix_all" style="display: inline-block; opacity: 1;">
 					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg">
-						<div class="item-img-overlay">
-							<a href="img/img-6.jpg" class="show-image">
-								<span></span>
-							</a>
-						</div>
+						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
 					</div>
 					<div class="work-desc">
 						<h3><a href="portfolio-single.html">Graphics Design</a></h3>
@@ -103,12 +80,7 @@
 				</div>
 				<div class="mix col-sm-4  page3 margin30 mix_all" style="display: inline-block; opacity: 1;">
 					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg">
-						<div class="item-img-overlay">
-							<a href="img/img-6.jpg" class="show-image">
-								<span></span>
-							</a>
-						</div>
+						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
 					</div>
 					<div class="work-desc">
 						<h3><a href="portfolio-single.html">Website Develop </a></h3>
@@ -117,12 +89,7 @@
 				</div>
 				<div class="mix col-sm-4 page4  margin30 mix_all" style="display: inline-block; opacity: 1;">
 					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg">
-						<div class="item-img-overlay">
-							<a href="img/img-7.jpg" class="show-image">
-								<span></span>
-							</a>
-						</div>
+						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
 					</div>
 					<div class="work-desc">
 						<h3><a href="portfolio-single.html">Logo Design</a></h3>
@@ -131,12 +98,7 @@
 				</div>
 				<div class="mix col-sm-4 page3  margin30 mix_all" style="display: inline-block; opacity: 1;">
 					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg">
-						<div class="item-img-overlay">
-							<a href="img/img-8.jpg" class="show-image">
-								<span></span>
-							</a>
-						</div>
+						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
 					</div>
 					<div class="work-desc">
 						<h3><a href="portfolio-single.html">Logo Design</a></h3>
@@ -147,3 +109,4 @@
 		</div>
 	</div>
 </div>
+

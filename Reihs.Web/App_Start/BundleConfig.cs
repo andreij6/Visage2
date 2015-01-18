@@ -62,6 +62,7 @@ namespace Reihs.Web
 						"~/Scripts/custom/VisageApp/controllers/PackageCtrl.js",
 						"~/Scripts/custom/VisageApp/controllers/LocationsCtrl.js",
 						"~/Scripts/custom/VisageApp/controllers/VideoCtrl.js",
+						"~/Scripts/custom/VisageApp/controllers/GiftCardCtrl.js",
 						"~/Scripts/custom/VisageApp/controllers/SpecialCtrl.js",
 						"~/Scripts/custom/VisageApp/controllers/SiteMapCtrl.js",
 						"~/Scripts/custom/VisageApp/controllers/TestimonialCtrl.js",

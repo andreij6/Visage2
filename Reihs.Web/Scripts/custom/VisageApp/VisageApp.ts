@@ -35,4 +35,5 @@ module VisageApp {
 	VisageApp.controller('SiteMapCtrl', SiteMapCtrl);
 	VisageApp.controller('SpecialCtrl', SpecialCtrl);
 	VisageApp.controller('PackageCtrl', PackageCtrl);
+	VisageApp.controller('GiftCardCtrl', GiftCardCtrl);
 }

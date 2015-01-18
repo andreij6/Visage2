@@ -9,8 +9,16 @@
 		constructor($scope: Extensions.IGalleryScope) {
 			var self = this;
 			self.$scope = $scope;
+			self.$scope.Showing = false;
+			self.$scope.Image = "";
 
-			self.$scope.test = "Gallery";
+			function LightBoxTrigger($event: ng.IAngularEvent) {
+				
+				self.$scope.Image = $event["currentTarget"]["src"];
+				self.$scope.Showing = true;
+			}
+
+			self.$scope.Trigger = LightBoxTrigger;
 
 			self.init();
 		}

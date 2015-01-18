@@ -377,6 +377,7 @@
     <Content Include="Templates\Front\Market\CartDetail.html" />
     <Content Include="Templates\Front\Market\Checkout.html" />
     <Content Include="Templates\Front\Market\CompletedOrder.html" />
+    <Content Include="Templates\Front\Market\GiftCards.html" />
     <Content Include="Templates\Front\Market\PackageDetail.html" />
     <Content Include="Templates\Front\Market\Packages.html" />
     <Content Include="Templates\Front\Market\ProductDetail.html" />
@@ -501,6 +502,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\CartCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Contact.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\GalleryCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\GiftCardCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\HeaderCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Index.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\LayoutCtrl.ts" />
@@ -524,6 +526,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ICartScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IContactScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IGalleryScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IGiftCardScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IHeaderCtrlScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IIndexScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ILayoutScope.ts" />

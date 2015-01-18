@@ -14,12 +14,14 @@
 			self.$scope.ShoppingCart = MarketSvc.Cart;
 			self.MarketSvc = MarketSvc;
 			self.$scope.HasItems = false;
+			self.$scope.IsAlertVisible = false;
 
 			self.$scope.addjQuery = function () {
 					$('#s3slider').s3Slider({
 						timeOut: 8000
 					});
 			}
+
 			function UpdateSO() {
 				if (self.$scope.SideOpen == true) {
 					self.$scope.SideOpen = false;
@@ -48,11 +50,14 @@
 			
 			function CartUpdated(event, data) {
 				console.log("shoppingcart");
-				
-				if (self.$scope.ShoppingCart.length > 0)
+
+				if (self.$scope.ShoppingCart.length > 0) {
 					self.$scope.HasItems = true;
-				else
+					self.$scope.IsAlertVisible = true;
+				}
+				else {
 					self.$scope.HasItems = false;
+				}
 
 				console.log(self.$scope.ShoppingCart);
 			}

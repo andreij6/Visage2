@@ -33,7 +33,11 @@
 					templateUrl: 'Templates/Front/Market/Index.html',
 					controller: 'Market'
 				}
-				).when('/Market/Treatments/:Product',
+				).when('/Market/Special/GiftCards',
+				{
+					templateUrl: 'Templates/Front/Market/GiftCards.html',
+					controller: 'GiftCardCtrl'
+				}).when('/Market/Treatments/:Product',
 				{
 					templateUrl: 'Templates/Front/Market/Packages.html',
 					controller: 'Market'

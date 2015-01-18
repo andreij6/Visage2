@@ -5,5 +5,6 @@
 		UpdateSO(): void;
 		ShoppingCart: Array<CartItem>;
 		HasItems: boolean;
+		IsAlertVisible: boolean;
 	}
 }    
