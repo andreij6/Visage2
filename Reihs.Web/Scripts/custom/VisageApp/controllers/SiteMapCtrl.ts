@@ -17,6 +17,7 @@
 				{ Name: 'Photo Gallery', Url: '#/Gallery' },
 				{ Name: 'Our Locations', Url: '#/Locations' },
 				{ Name: 'Market', Url: '#/Market' },
+				{ Name: 'Gift Cards', Url: '#/Market/Special/GiftCards' },
 				{ Name: 'Treatments', Url: '#/Treatments' },
 				{ Name: 'Testimonials', Url: '#/Testimonials' },
 				{ Name: 'Patient Resources', Url: '#/Resources' },

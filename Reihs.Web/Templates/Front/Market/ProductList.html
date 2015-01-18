@@ -18,22 +18,15 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-3">
-			<div class="sidebar-box margin40">
-				<h4>Search</h4>
-				<form role="form" class="search-widget">
-					<input type="text" class="form-control">
-					<i class="fa fa-search"></i>
-				</form>
-			</div><!--sidebar-box-->
 
 			<div class="sidebar-box margin40">
 				<h4><a href="#/Market">Products</a></h4>
-				<ul class="list-unstyled cat-list visible-md visible-lg" ng-repeat="category in Categories">
-					<li><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a> <i class="fa fa-angle-right"></i></li>
+				<ul class="list-unstyled cat-list visible-md visible-lg">
+					<li ng-repeat="category in Categories"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a> <i class="fa fa-angle-right"></i></li>
 				</ul>
 
-				<ul class="portfolio-filters text-center cat-list visible-sm visible-xs" ng-repeat="category in Categories">
-					<li class="filter"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a></li>
+				<ul class="portfolio-filters text-center cat-list visible-sm visible-xs">
+					<li class="filter" ng-repeat="category in Categories"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a></li>
 				</ul>
 			</div><!--sidebar-box-->
 
