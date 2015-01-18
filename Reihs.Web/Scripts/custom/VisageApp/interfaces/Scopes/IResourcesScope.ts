@@ -1,5 +1,7 @@
 ﻿module Extensions {
 	export interface IResourcesScope extends ng.IScope {
-		test: string;
+		SetTemplate(name: string): void;
+		template: any;
+		Pages: any;
 	}
 }   

@@ -386,6 +386,21 @@
     <Content Include="Templates\Front\Resources\Index.html" />
     <Content Include="Templates\Front\Resources\FactSheets.html" />
     <Content Include="Templates\Front\Resources\NewPatients.html" />
+    <Content Include="Templates\Front\Resources\Partials\FactSheets\Fraxel.html" />
+    <Content Include="Templates\Front\Resources\Partials\FactSheets\Index.html" />
+    <Content Include="Templates\Front\Resources\Partials\FactSheets\IPL.html" />
+    <Content Include="Templates\Front\Resources\Partials\FactSheets\LFLV.html" />
+    <Content Include="Templates\Front\Resources\Partials\FactSheets\LaserHairRemoval.html" />
+    <Content Include="Templates\Front\Resources\Partials\FactSheets\LegVein.html" />
+    <Content Include="Templates\Front\Resources\Partials\FactSheets\NonTCA.html" />
+    <Content Include="Templates\Front\Resources\Partials\FactSheets\Sclerotherapy.html" />
+    <Content Include="Templates\Front\Resources\Partials\Index.html" />
+    <Content Include="Templates\Front\Resources\Partials\PostCare\IPLPhotofacial.html" />
+    <Content Include="Templates\Front\Resources\Partials\PostCare\LaserHairReduction.html" />
+    <Content Include="Templates\Front\Resources\Partials\PostCare\LFLV.html" />
+    <Content Include="Templates\Front\Resources\Partials\PostCare\Mesotherapy.html" />
+    <Content Include="Templates\Front\Resources\Partials\PostCare\Sclerotherapy.html" />
+    <Content Include="Templates\Front\Resources\Partials\PostCare\TCAPeel.html" />
     <Content Include="Templates\Front\Resources\PostCare.html" />
     <Content Include="Templates\Front\SiteMap.html" />
     <Content Include="Templates\Front\Special\Events.html" />
@@ -445,8 +460,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Scripts\custom\AdminApp\models\" />
     <Folder Include="Scripts\custom\VisageApp\models\" />
-    <Folder Include="Templates\Front\Resources\Partials\FactSheets\" />
-    <Folder Include="Templates\Front\Resources\Partials\PostCare\" />
     <Folder Include="Views\Emails\" />
   </ItemGroup>
   <ItemGroup>
