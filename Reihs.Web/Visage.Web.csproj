@@ -264,6 +264,7 @@
     <Content Include="Images\eye.jpg" />
     <Content Include="Images\Face_1170x344.jpg" />
     <Content Include="Images\Hips_1170x344.jpg" />
+    <Content Include="Images\LBV_Logo.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\mother.jpg" />
     <Content Include="Images\winter.jpg" />
