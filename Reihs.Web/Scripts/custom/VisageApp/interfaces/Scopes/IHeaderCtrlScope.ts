@@ -6,5 +6,18 @@
 		ShoppingCart: Array<CartItem>;
 		HasItems: boolean;
 		IsAlertVisible: boolean;
+
+		SetNav(name: string): void;
+		HomeActive: boolean;
+		AboutActive: boolean;
+		MarketActive: boolean;
+		CartActive: boolean;
+		TreatmentActive: boolean;
+		GalleryActive: boolean;
+		ResourceActive: boolean;
+		ContactActive: boolean;
+
+		Navs: any;
+
 	}
 }    
