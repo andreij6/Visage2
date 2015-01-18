@@ -149,10 +149,8 @@
 						self.$scope.Navs[x].IsOn = false;
 						self.$scope.Navs[x].off();
 					}
-						
-
 				}
-				console.log(self.$scope.AboutActive);
+				self.$scope.SideOpen = false;
 			}
 
 			self.$scope.$watch('SideOpen', CloseSideBar);
