@@ -601,7 +601,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   margin-top: 120px; }
 
 .slide-text h1 {
-  color: #fff;
+  color: #3498db;;
   font-weight: 700;
   font-size: 75px;
   letter-spacing: 0.1em;
@@ -615,7 +615,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   font-weight: 700; }
 
 .slide-text p {
-  color: #fff;
+  color: #3498db;;
   font-weight: 300;
   font-size: 30px;
   font-family: 'Shadows Into Light', cursive;

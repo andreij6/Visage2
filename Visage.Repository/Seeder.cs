@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Reihs.Repository.Models;
 using Microsoft.AspNet.Identity;
 using Reihs.Repository.Models.Market;
+using Visage.Repository.Models.Market;
 
 namespace Reihs.Repository
 {
@@ -21,7 +22,7 @@ namespace Reihs.Repository
 
 			SeedBlogInfo(context);
 			
-			SeedMarketInfo(context);
+			//SeedMarketInfo(context);
 		}
 
 		#region Market Seeders
@@ -31,6 +32,7 @@ namespace Reihs.Repository
 			SeedClarisonic(context);
 			SeedRevitaLashProducts(context);
 			SeedEltaMDProducts(context);
+			SeedPackages(context);
 			SeedCartItems(context);
 			SeedOrderDetails(context);
 			SeedOrders(context);
@@ -310,7 +312,274 @@ namespace Reihs.Repository
 
 			context.SaveChanges();
 		}
-		
+
+		private static void SeedPackageCategories(AppDB context)
+		{
+			context.pCategories.AddOrUpdate(p => p.Id,
+					new pTags
+					{
+						Name = "Laser Vien Therapy"
+					},
+					new pTags
+					{
+						Name = "Schlerotherapy (Leg Veins) Injections"
+					},
+					new pTags
+					{
+						Name = "Laser Hair Reduction"
+					},
+					new pTags
+					{
+						Name = "Permanent Cosmetics"
+					},
+					new pTags
+					{
+						Name = "Microdermabrasion"
+					},
+					new pTags
+					{
+						Name = "Chemical Peels"
+					},
+					new pTags
+					{
+						Name = "BodyFX (Non-Invasive Fat Reduction)"
+					},
+					new pTags
+					{
+						Name = "HCG Diet"
+					},
+					new pTags
+					{
+						Name = "Mesotherapy/Lipodissolve"
+					},
+					new pTags
+					{
+						Name = "Fractora"
+					},
+					new pTags
+					{
+						Name = "Forma"
+					},
+					new pTags
+					{
+						Name = "Fraxel"
+					},
+					new pTags
+					{
+						Name = "IPL Photo Facial"
+					},
+					new pTags
+					{
+						Name = "Botox"
+					},
+					new pTags
+					{
+						Name = "Dysport"
+					},
+					new pTags
+					{
+						Name = "Restylane"
+					},
+					new pTags
+					{
+						Name = "Juvederm"
+					},
+					new pTags
+					{
+						Name = "Perlane"
+					},
+					new pTags
+					{
+						Name = "Voluma"
+					},
+					new pTags
+					{
+						Name = "Sculptra"
+					}
+				);
+
+			context.SaveChanges();
+		}
+
+		private static void SeedPackages(AppDB context) 
+		{
+			SeedFacialInjectibles(context);
+			SeedPigmentation(context);
+			SeedSkinTightening(context);
+			SeedBodyShaping(context);
+			SeedMicroDerm(context);
+			SeedPermCosmetic(context);
+			SeedLaserHairReduction(context);
+			SeedVeinReduction(context);
+
+
+			context.SaveChanges();
+		}
+
+		private static void SeedFacialInjectibles(AppDB context)
+		{
+			//36 total
+			//context.Packages.AddOrUpdate(x => x.PackageId,
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+			//	new mPackage { Name = , UnitPrice = },
+
+			//	new mPackage { Name = , UnitPrice = },
+
+			//	new mPackage { Name = , UnitPrice = }
+				
+			//	);
+		}
+
+		private static void SeedPigmentation(AppDB context)
+		{
+			context.Packages.AddOrUpdate(x => x.PackageId,
+					new mPackage { Name = "Package of 3 Treatments-Face Area", UnitPrice = 1580.0},
+					new mPackage { Name = "Package of 3 Treatments-Neck Area", UnitPrice = 1580.0},
+					new mPackage { Name = "Package of 3 Treatments-Chest Area", UnitPrice = 1580.0},
+					new mPackage { Name = "Package of 3 Treatments-Hands Area", UnitPrice = 1580.0},
+					new mPackage { Name = "Package of 3 Treatments-Spot Treatment on Extremities", UnitPrice = 1580.0},
+					new mPackage { Name = "Package of 2 Treatments-Face Area", UnitPrice = 1790.0},
+					new mPackage { Name = "Package of 2 Treatments-Neck Area", UnitPrice = 1390.0},
+					new mPackage { Name = "Package of 2 Treatments-Chest Area•", UnitPrice = 1790.0}
+				);
+		}
+
+		private static void SeedSkinTightening(AppDB context)
+		{
+			context.Packages.AddOrUpdate(x => x.PackageId,
+					new mPackage { Name = "Face (Esthetician)", UnitPrice = 500.0},
+					new mPackage { Name = "Chest (Esthetician)", UnitPrice = 500.0},
+					new mPackage { Name = "Neck (Esthetician)", UnitPrice = 400.0},
+					new mPackage { Name = "Face (Physician)", UnitPrice = 1500.0},
+					new mPackage { Name = "Chest (Physician)", UnitPrice = 1500.0},
+					new mPackage { Name = "Neck (Physician)", UnitPrice = 1200.0},
+					new mPackage { Name = "One area (8 treatments)", UnitPrice = 1600.0}
+				);
+		}
+
+		private static void SeedBodyShaping(AppDB context)
+		{
+			context.Packages.AddOrUpdate(x => x.PackageId,
+					new mPackage { Name = "One area (8 Treatments)", UnitPrice = 1600.0},
+
+					new mPackage { Name = "21 Days Program", UnitPrice = 295.0},
+					new mPackage { Name = "42 Days Program", UnitPrice = 550.0},
+					new mPackage { Name = "4 B12 Injections", UnitPrice = 100.0},
+
+					new mPackage { Name = "Package of 5 Single Area", UnitPrice = 1000.0},
+					new mPackage { Name = "Package of 10 Single Area", UnitPrice = 2000.0}
+				);
+		}
+
+		private static void SeedMicroDerm(AppDB context)
+		{
+			context.Packages.AddOrUpdate(x => x.PackageId,
+					new mPackage { Name = "Package of 5 Micros", UnitPrice = 500.0},
+					new mPackage { Name = "6 Mo. Membership", UnitPrice = 70.0},
+					new mPackage { Name = "12 Mo. Memebership", UnitPrice = 65.0},
+
+					new mPackage { Name = "Package of 3 TCA Peels", UnitPrice = 475.0},
+					new mPackage { Name = "Package of 3 Non-TCA Peels", UnitPrice = 375.0},
+					new mPackage { Name = "Package of 3 SkinMedica Vitialize Peels", UnitPrice = 375.0},
+					new mPackage { Name = "Package of 3 SkinMedicat Rejuvenize Peels", UnitPrice = 450.0 }
+				);
+		}
+
+		private static void SeedPermCosmetic(AppDB context)
+		{
+			context.Packages.AddOrUpdate(x => x.PackageId,
+					new mPackage { Name = "Eyebrows, Hairline Strokes", UnitPrice = 575.0},
+					new mPackage { Name = "Eyebrows", UnitPrice = 475.0},
+					new mPackage { Name = "Eyeliner", UnitPrice = 475.0},
+					new mPackage { Name = "Eyeliner (Upper or Lower)", UnitPrice = 350.0},
+					new mPackage { Name = "Eyes, Inner Tissue", UnitPrice = 450.0},
+					new mPackage { Name = "Lip Linner", UnitPrice = 350.0},
+					new mPackage { Name = "Lip Tatto", UnitPrice = 650.0}
+				);
+		}
+
+		private static void SeedLaserHairReduction(AppDB context)
+		{
+			//29
+			//context.Packages.AddOrUpdate(x => x.PackageId,
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = },
+			//		new mPackage { Name = , UnitPrice = }
+			//	);
+		}
+
+		private static void SeedVeinReduction(AppDB context)
+		{
+			context.Packages.AddOrUpdate(x => x.PackageId,
+					new mPackage { Name = "1 Treatment Area", UnitPrice = 75.0},
+					new mPackage { Name = "2 Treatment Areas", UnitPrice = 150.0},
+					new mPackage { Name = "3 Treatment Areas", UnitPrice = 225.0},
+
+					new mPackage { Name = "Both Legs/including Hose", UnitPrice = 350.0}
+				);
+		}
 		#endregion
 
 		#region Blog Seeders

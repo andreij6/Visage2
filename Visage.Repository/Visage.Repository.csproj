@@ -72,7 +72,17 @@
     <Compile Include="Migrations\201501170211508_mTags.Designer.cs">
       <DependentUpon>201501170211508_mTags.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201501181922397_addPackage.cs" />
+    <Compile Include="Migrations\201501181922397_addPackage.Designer.cs">
+      <DependentUpon>201501181922397_addPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201501190022333_pTagsAdded.cs" />
+    <Compile Include="Migrations\201501190022333_pTagsAdded.Designer.cs">
+      <DependentUpon>201501190022333_pTagsAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Market\cTags.cs" />
+    <Compile Include="Models\Market\mPackage.cs" />
+    <Compile Include="Models\Market\pTags.cs" />
     <Compile Include="ViewModels\bCategoryModel.cs" />
     <Compile Include="ViewModels\ContactMessage.cs" />
     <Compile Include="ViewModels\NewCategoryModel.cs" />
@@ -98,6 +108,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201501170211508_mTags.resx">
       <DependentUpon>201501170211508_mTags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201501181922397_addPackage.resx">
+      <DependentUpon>201501181922397_addPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201501190022333_pTagsAdded.resx">
+      <DependentUpon>201501190022333_pTagsAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

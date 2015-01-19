@@ -32,11 +32,13 @@ namespace Reihs.Repository
 		public DbSet<bTag> bTags { get; set; }
 
 		//Market
+		public DbSet<pTags> pCategories { get; set; }
 		public DbSet<mTags> mTags { get; set; }
 		public DbSet<mProduct> mProducts { get; set; }
 		public DbSet<CartItem> ShoppingCartItems { get; set; }
 		public DbSet<Order> Orders { get; set; }
 		public DbSet<OrderDetail> OrderDetails { get; set; }
+		public DbSet<mPackage> Packages { get; set; }
 
 	}
 }
