@@ -27,6 +27,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{9EFBF167-CF74-4707-BDE1-0F36C1B51505}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{D41E2D11-937F-4C40-92F8-1E0BE34261EB}"
+	ProjectSection(SolutionItems) = preProject
+		Visage.Repository\App.config = Visage.Repository\App.config
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{659996DD-73C7-4397-8A00-4F009CB7F89D}"
 EndProject

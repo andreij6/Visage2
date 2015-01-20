@@ -419,51 +419,51 @@ namespace Reihs.Repository
 		private static void SeedFacialInjectibles(AppDB context)
 		{
 			//36 total
-			//context.Packages.AddOrUpdate(x => x.PackageId,
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
+            //context.Packages.AddOrUpdate(x => x.PackageId,
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
 
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
 
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
 
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
 
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
-			//	new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
 
-			//	new mPackage { Name = , UnitPrice = },
+            //    new mPackage { Name = , UnitPrice = },
 
-			//	new mPackage { Name = , UnitPrice = }
+            //    new mPackage { Name = , UnitPrice = }
 				
-			//	);
+            //    );
 		}
 
 		private static void SeedPigmentation(AppDB context)
