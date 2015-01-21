@@ -215,6 +215,8 @@
       <DependentUpon>Colors.css</DependentUpon>
     </Content>
     <Content Include="Content\Front\li-scroller.css" />
+    <Content Include="Content\Front\PhotoGallery\component.css" />
+    <Content Include="Content\Front\PhotoGallery\demo.css" />
     <Content Include="Content\Front\s3slider.css" />
     <Content Include="Content\Front\theme\animate.css" />
     <Content Include="Content\Front\theme\Colors.css">
@@ -246,8 +248,6 @@
     <Content Include="Content\Images\coffee-569178_1280.jpg" />
     <Content Include="Content\Images\DrJMRiehs_600x600.jpg" />
     <Content Include="Content\Images\eye.jpg" />
-    <Content Include="Content\Images\Face_1170x344.jpg" />
-    <Content Include="Content\Images\Hips_1170x344.jpg" />
     <Content Include="Content\Images\Zoom.ico" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\mother.jpg" />
@@ -258,12 +258,15 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Images\bollard.jpg" />
+    <Content Include="Images\Banner1.jpg" />
+    <Content Include="Images\Banner2.jpg" />
+    <Content Include="Images\Banner3.jpg" />
     <Content Include="Images\coffee-569178_1280.jpg" />
     <Content Include="Images\DrJMRiehs_600x600.jpg" />
-    <Content Include="Images\eye.jpg" />
     <Content Include="Images\Face_1170x344.jpg" />
-    <Content Include="Images\Hips_1170x344.jpg" />
+    <Content Include="Images\LBVfull_C4.png" />
+    <Content Include="Images\LBVlogo_green.png" />
+    <Content Include="Images\LBVword_C4.png" />
     <Content Include="Images\LBV_Logo.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\mother.jpg" />
@@ -276,6 +279,11 @@
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.min.js" />
     <Content Include="Scripts\custom\google-map\HomeMap.js" />
+    <Content Include="Scripts\Plugins\GridGallery\cbpGridGallery.js" />
+    <Content Include="Scripts\Plugins\GridGallery\classie.js" />
+    <Content Include="Scripts\Plugins\GridGallery\imagesloaded.pkgd.min.js" />
+    <Content Include="Scripts\Plugins\GridGallery\masonry.pkgd.min.js" />
+    <Content Include="Scripts\Plugins\GridGallery\modernizr.custom.js" />
     <Content Include="Scripts\Plugins\li-scroller\li-scroller.js" />
     <Content Include="Scripts\Plugins\s3Slider\s3Slider.js" />
     <Content Include="Scripts\Plugins\textAngular\textAngular-sanitize.js" />
@@ -384,6 +392,7 @@
     <Content Include="Templates\Front\Market\ProductDetail.html" />
     <Content Include="Templates\Front\Market\Index.html" />
     <Content Include="Templates\Front\Market\ProductList.html" />
+    <Content Include="Templates\Front\OldGallery.html" />
     <Content Include="Templates\Front\Resources\Index.html" />
     <Content Include="Templates\Front\Resources\FactSheets.html" />
     <Content Include="Templates\Front\Resources\NewPatients.html" />

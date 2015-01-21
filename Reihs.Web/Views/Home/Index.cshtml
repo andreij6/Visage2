@@ -50,9 +50,8 @@
 									<div class="col-sm-3">
 										<h3 class="heading">Categories</h3>
 										<ul class="nav mega-vertical-nav">
-											<li><a href="#/Market">Gift Cards</a></li>
+											<li><a href="#/Market/Special/GiftCards">Gift Cards</a></li>
 											<li><a href="#/Market">Skin Care</a></li>
-											<li><a href="#/Market">Treatment Packages</a></li>
 										</ul>
 									</div>
 								</div>
@@ -78,12 +77,12 @@
 		<div class="navbar navbar-default" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" ng-click="UpdateSO()">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#/" title="LeBeau Visage">LeBeau Visage</a>
+					<a class="pull-right" ng-click="UpdateSO()">
+						<i class="fa fa-bars fa-2x" ng-show="!SideOpen" style="margin-right: 25px;"></i>
+						<i class="fa fa-times-circle-o fa-3x" ng-show="SideOpen" style="margin-right: 25px;"></i>
+					</a>
+					
+					<a class="navbar-brand" href="#/" title="LeBeau Visage"><img src="../../Images/LBV_Logo.png" alt="" width="50%" style="margin-top: -75px;"/></a>
 				</div>
 			</div>
 		</div>
@@ -91,7 +90,7 @@
 			<div>
 				<ul class="nav navbar-nav side-nav">
 					<li class="nav-title">
-						<a href="#/">LEBEAU VISAGE</a>
+						<a href="#/"><img src="../../Images/LBVword_C4.png" alt="" width="75%" /></a>
 						<hr />
 					</li>
 					<li ng-click="SetNav('Home')">
@@ -225,10 +224,10 @@
 
 			</div><!--top bar end hidden in small devices-->
 			<ul id="ticker01" class="newsticker pull-left">
-				<li><span>1/20/2015</span><a href="#/Market">The Revamped Market is amazing ...</a></li>
-				<li><span>1/31/2015</span><a href="#/About">Learn More About Dr. Reihs ...</a></li>
-				<li><span>11/18/2015</span><a href="#/Market/Special/GiftCards">Buy a Gift Card for a friend this holiday ...</a></li>
-				<li><span>12/26/2015</span><a href="#/Treatments">Check out the services we offer ...</a></li>
+				<li><span>1/20/2015</span><a href="#/Market">The Revamped Market is amazing...</a></li>
+				<li><span>1/31/2015</span><a href="#/About">Learn More About Dr. Riehs...</a></li>
+				<li><span>11/18/2015</span><a href="#/Market/Special/GiftCards">Buy a Gift Card for a friend this holiday...</a></li>
+				<li><span>12/26/2015</span><a href="#/Treatments">Check out the services we offer...</a></li>
 			</ul>
 		</div>
 	</nav>

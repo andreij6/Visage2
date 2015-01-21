@@ -12,6 +12,8 @@
 	<link href='//fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 	@Styles.Render("~/bundles/Theme")
 	@Styles.Render("~/Content/Front/css")
+	<link href="~/Content/Front/PhotoGallery/component.css" rel="stylesheet" />
+	<link href="~/Content/Front/PhotoGallery/demo.css" rel="stylesheet" />
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -20,6 +22,7 @@
 	<![endif]-->
 	@Scripts.Render("~/bundles/modernizr")
 	@Scripts.Render("~/bundles/holder")
+	
 	<script type="text/javascript"
 		   src="@ViewBag.Gmaps">
 	</script>
@@ -32,5 +35,6 @@
 	@Scripts.Render("~/bundles/bootstrap")
 	@Scripts.Render("~/bundles/Plugins")
 	@RenderSection("scripts", required: false)
+	
 </body>
 </html>
