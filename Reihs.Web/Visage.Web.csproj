@@ -242,12 +242,11 @@
     <Content Include="Content\Front\Visage.min.css">
       <DependentUpon>Visage.css</DependentUpon>
     </Content>
-    <Content Include="Content\Images\bollard.jpg" />
+    <Content Include="Content\Images\Banner1.jpg" />
+    <Content Include="Content\Images\Banner2.jpg" />
+    <Content Include="Content\Images\Banner3.jpg" />
     <Content Include="Content\Images\coffee-569178_1280.jpg" />
     <Content Include="Content\Images\DrJMRiehs_600x600.jpg" />
-    <Content Include="Content\Images\eye.jpg" />
-    <Content Include="Content\Images\Face_1170x344.jpg" />
-    <Content Include="Content\Images\Hips_1170x344.jpg" />
     <Content Include="Content\Images\Zoom.ico" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\mother.jpg" />
@@ -258,12 +257,11 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Images\bollard.jpg" />
+    <Content Include="Images\Banner1.jpg" />
+    <Content Include="Images\Banner2.jpg" />
+    <Content Include="Images\Banner3.jpg" />
     <Content Include="Images\coffee-569178_1280.jpg" />
     <Content Include="Images\DrJMRiehs_600x600.jpg" />
-    <Content Include="Images\eye.jpg" />
-    <Content Include="Images\Face_1170x344.jpg" />
-    <Content Include="Images\Hips_1170x344.jpg" />
     <Content Include="Images\LBV_Logo.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\mother.jpg" />
@@ -458,6 +456,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\Gallery\" />
+    <Folder Include="Images\Gallery\" />
     <Folder Include="Scripts\custom\AdminApp\models\" />
     <Folder Include="Scripts\custom\VisageApp\models\" />
     <Folder Include="Views\Emails\" />
