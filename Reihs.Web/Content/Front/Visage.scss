@@ -244,3 +244,17 @@ text-transform: uppercase;
 //===================
 //End Light box
 //=====================
+
+.nav-justified {
+	li a {
+		font-weight: bold;
+		border-radius: 0px;
+
+		&:hover {
+			background-color: white;
+			border-bottom: 4px solid #3498db;
+		}
+	}
+
+
+}

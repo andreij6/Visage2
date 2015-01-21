@@ -199,4 +199,11 @@
   /* CSS3 */
   z-index: 99999; }
 
+.nav-justified li a {
+  font-weight: bold;
+  border-radius: 0px; }
+  .nav-justified li a:hover {
+    background-color: white;
+    border-bottom: 4px solid #3498db; }
+
 /*# sourceMappingURL=Visage.css.map */
