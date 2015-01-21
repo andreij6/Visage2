@@ -18,6 +18,7 @@
 				{ name: "LSHPost", url: nav + "PostCare/LaserHairReduction.html" },
 				{ name: "SclPost", url: nav + "PostCare/Sclerotherapy.html" },
 				{ name: "TCAPost", url: nav + "PostCare/TCAPeel.html" },
+				{ name: "MesoPost", url: nav + "PostCare/Mesotherapy.html" },
 				{ name: "Fraxel", url: nav + "FactSheets/Fraxel.html"},
 				{ name: "LV", url: nav + "FactSheets/LegVein.html" },
 				{ name: "Scl", url: nav + "FactSheets/Sclerotherapy.html" },

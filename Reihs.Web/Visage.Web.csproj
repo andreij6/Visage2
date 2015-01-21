@@ -398,7 +398,6 @@
     <Content Include="Templates\Front\Resources\Partials\Index.html" />
     <Content Include="Templates\Front\Resources\Partials\PostCare\IPLPhotofacial.html" />
     <Content Include="Templates\Front\Resources\Partials\PostCare\LaserHairReduction.html" />
-    <Content Include="Templates\Front\Resources\Partials\PostCare\LFLV.html" />
     <Content Include="Templates\Front\Resources\Partials\PostCare\Mesotherapy.html" />
     <Content Include="Templates\Front\Resources\Partials\PostCare\Sclerotherapy.html" />
     <Content Include="Templates\Front\Resources\Partials\PostCare\TCAPeel.html" />
