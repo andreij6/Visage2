@@ -1,7 +1,6 @@
 ﻿module VisageApp {
 	export class About {
 		private $scope: Extensions.IAboutScope;
-		private open: boolean;
 
 		private init(): void {
 			var self = this;
@@ -14,16 +13,16 @@
 			self.$scope.test = "About Page";
 
 			function menuTrigger() {
-				if (!self.open) 
+				if (!self.$scope.open) 
 					self.$scope.YouTubeMenu = ' dr-menu-open';
 				else
 					self.$scope.YouTubeMenu = '';
 
-				self.open = !self.open;
+				self.$scope.open = !self.$scope.open;
 				
 			}
 
-			self.open = false;
+			self.$scope.open = false;
 
 			self.$scope.YouTubeMenu = '';
 

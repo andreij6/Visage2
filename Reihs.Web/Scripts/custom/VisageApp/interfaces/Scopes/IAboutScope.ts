@@ -4,5 +4,6 @@
 		YouTubeMenu: string;
 		MenuTrigger(): void;
 		SideNavs: any;
+		open: boolean;
 	}
 }   

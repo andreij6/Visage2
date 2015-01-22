@@ -14,11 +14,10 @@
 	</div>
 </div>
 
-<div class="divide80"></div>
+<div class="divide40"></div>
 <div class="container">
 	<div class="row">
 		<div class="col-md-3">
-
 			<div class="sidebar-box margin40">
 				<h4 class="visiblie-md visible-lg">Menu</h4>
 				<ul class="list-unstyled cat-list visible-md visible-lg">
@@ -26,12 +25,14 @@
 				</ul>
 				<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
 					<div class="dr-trigger" ng-click="MenuTrigger()">
-						<span class="dr-icon dr-icon-menu"></span>
-						<a class="dr-label">Menu</a>
+						<span class="dr-icon dr-icon-settings"></span>
+						<a class="dr-label">Sub-Nav</a>
 					</div>
-					<ul>
-						<li ng-repeat="link in SideNavs"><a href="{{link.Url}}">{{link.Text}}</a><i class="fa fa-angle-right"></i></li>
-					</ul>
+					<div ng-show="open" class="subNav">
+						<ul>
+							<li ng-repeat="link in SideNavs"><a href="{{link.Url}}">{{link.Text}}</a><i class="fa fa-angle-right"></i></li>
+						</ul>
+					</div>
 				</div>
 			</div><!--sidebar-box-->
 
