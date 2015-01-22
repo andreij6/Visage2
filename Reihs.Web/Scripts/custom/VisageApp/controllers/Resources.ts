@@ -13,7 +13,8 @@
 			var nav = "../../../Templates/Front/Resources/Partials/";
 
 			var templates = [
-				{ name: "Index", url: nav + "Index.html" },
+				{ name: "Index-FactSheets", url: nav + "FactSheets/Index.html" },
+				{ name: "Index-PostCare", url: nav + "PostCare/Index.html" },
 				{ name: "IPLPost", url: nav + "PostCare/IPLPhotofacial.html" },
 				{ name: "LSHPost", url: nav + "PostCare/LaserHairReduction.html" },
 				{ name: "SclPost", url: nav + "PostCare/Sclerotherapy.html" },
