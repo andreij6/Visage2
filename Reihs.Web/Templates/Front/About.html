@@ -20,31 +20,19 @@
 		<div class="col-md-3">
 
 			<div class="sidebar-box margin40">
-				<h4>Categories</h4>
+				<h4 class="visiblie-md visible-lg">Menu</h4>
 				<ul class="list-unstyled cat-list visible-md visible-lg">
-					<li> <a href="#/Team">Meet the Team</a> <i class="fa fa-angle-right"></i></li>
-					<li> <a href="#/Testimonials">Testimonials</a> <i class="fa fa-angle-right"></i></li>
-					<li> <a href="#/Videos">Videos</a> <i class="fa fa-angle-right"></i></li>
-					<li> <a href="#/Locations">Locations</a> <i class="fa fa-angle-right"></i></li>
+					<li ng-repeat="link in SideNavs"> <a href="{{link.Url}}">{{link.Text}}</a> <i class="fa fa-angle-right"></i></li>
 				</ul>
-				<ul class="portfolio-filters text-center cat-list visible-sm visible-xs">
-					<li class="filter"><a href="#/Team">Meet the Team</a></li>
-					<li class="filter"><a href="#/Testimonials">Testimonials</a></li>
-					<li class="filter"><a href="#/Locations">Locations</a></li>
-					<li class="filter"><a href="#/Videos">Videos</a></li>
-				</ul>
-				<nav class="dr-menu {{YouTubeMenu}}">
-					<div class="dr-trigger" ng-click="MenuTrigger"><span class="dr-icon dr-icon-menu"></span><a class="dr-label">Account</a></div>
+				<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
+					<div class="dr-trigger" ng-click="MenuTrigger()">
+						<span class="dr-icon dr-icon-menu"></span>
+						<a class="dr-label">Menu</a>
+					</div>
 					<ul>
-						<li><a class="dr-icon dr-icon-user" href="#">Jason Quinn</a></li>
-						<li><a class="dr-icon dr-icon-camera" href="#">Videos</a></li>
-						<li><a class="dr-icon dr-icon-heart" href="#">Favorites</a></li>
-						<li><a class="dr-icon dr-icon-bullhorn" href="#">Subscriptions</a></li>
-						<li><a class="dr-icon dr-icon-download" href="#">Downloads</a></li>
-						<li><a class="dr-icon dr-icon-settings" href="#">Settings</a></li>
-						<li><a class="dr-icon dr-icon-switch" href="#">Logout</a></li>
+						<li ng-repeat="link in SideNavs"><a href="{{link.Url}}">{{link.Text}}</a><i class="fa fa-angle-right"></i></li>
 					</ul>
-				</nav>
+				</div>
 			</div><!--sidebar-box-->
 
 		</div>

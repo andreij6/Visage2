@@ -3,5 +3,6 @@
 		test: string;
 		YouTubeMenu: string;
 		MenuTrigger(): void;
+		SideNavs: any;
 	}
 }   

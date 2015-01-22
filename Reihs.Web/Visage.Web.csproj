@@ -408,7 +408,7 @@
     <Content Include="Templates\Front\Resources\Partials\FactSheets\LegVein.html" />
     <Content Include="Templates\Front\Resources\Partials\FactSheets\NonTCA.html" />
     <Content Include="Templates\Front\Resources\Partials\FactSheets\Sclerotherapy.html" />
-    <Content Include="Templates\Front\Resources\Partials\Index.html" />
+    <Content Include="Templates\Front\Resources\Partials\PostCare\Index.html" />
     <Content Include="Templates\Front\Resources\Partials\PostCare\IPLPhotofacial.html" />
     <Content Include="Templates\Front\Resources\Partials\PostCare\LaserHairReduction.html" />
     <Content Include="Templates\Front\Resources\Partials\PostCare\Mesotherapy.html" />
