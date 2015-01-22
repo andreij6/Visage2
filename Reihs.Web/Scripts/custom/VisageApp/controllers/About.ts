@@ -12,6 +12,15 @@
 
 			self.$scope.test = "About Page";
 
+			function menuTrigger() {
+				//$('dr-menu').addClass(' dr-menu-open');
+				console.log('hello');
+			}
+
+			self.$scope.YouTubeMenu = 'dr-menu';
+
+			self.$scope.MenuTrigger = menuTrigger;
+
 			self.init();
 		}
 	}

@@ -207,6 +207,8 @@
     <Content Include="Content\defaults\bootstrap.min.css" />
     <Content Include="Content\defaults\font-awesome.css" />
     <Content Include="Content\defaults\font-awesome.min.css" />
+    <Content Include="Content\fonts\icomoon.dev.svg" />
+    <Content Include="Content\fonts\icomoon.svg" />
     <Content Include="Content\Front\carousel.css" />
     <Content Include="Content\Front\Colors.css">
       <DependentUpon>Colors.scss</DependentUpon>
@@ -215,8 +217,6 @@
       <DependentUpon>Colors.css</DependentUpon>
     </Content>
     <Content Include="Content\Front\li-scroller.css" />
-    <Content Include="Content\Front\PhotoGallery\component.css" />
-    <Content Include="Content\Front\PhotoGallery\demo.css" />
     <Content Include="Content\Front\s3slider.css" />
     <Content Include="Content\Front\theme\animate.css" />
     <Content Include="Content\Front\theme\Colors.css">
@@ -244,6 +244,8 @@
     <Content Include="Content\Front\Visage.min.css">
       <DependentUpon>Visage.css</DependentUpon>
     </Content>
+    <Content Include="Content\Front\YouTubeMenu\component.css" />
+    <Content Include="Content\Front\YouTubeMenu\default.css" />
     <Content Include="Content\Images\Banner1.jpg" />
     <Content Include="Content\Images\Banner2.jpg" />
     <Content Include="Content\Images\Banner3.jpg" />
@@ -282,11 +284,6 @@
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.min.js" />
     <Content Include="Scripts\custom\google-map\HomeMap.js" />
-    <Content Include="Scripts\Plugins\GridGallery\cbpGridGallery.js" />
-    <Content Include="Scripts\Plugins\GridGallery\classie.js" />
-    <Content Include="Scripts\Plugins\GridGallery\imagesloaded.pkgd.min.js" />
-    <Content Include="Scripts\Plugins\GridGallery\masonry.pkgd.min.js" />
-    <Content Include="Scripts\Plugins\GridGallery\modernizr.custom.js" />
     <Content Include="Scripts\Plugins\li-scroller\li-scroller.js" />
     <Content Include="Scripts\Plugins\s3Slider\s3Slider.js" />
     <Content Include="Scripts\Plugins\textAngular\textAngular-sanitize.js" />
@@ -337,6 +334,9 @@
     <Content Include="PDFs\Health-Information-Form.pdf" />
     <Content Include="PDFs\HIPPA-Notice-of-Privacy-Practices.pdf" />
     <Content Include="PDFs\NOTICE-OF-PRIVACY-PRACTICES.pdf" />
+    <Content Include="Content\fonts\icomoon.eot" />
+    <Content Include="Content\fonts\icomoon.ttf" />
+    <Content Include="Content\fonts\icomoon.woff" />
     <None Include="Properties\PublishProfiles\Visage.pubxml" />
     <Content Include="Scripts\defaults\angular\angular.min.js.map" />
     <Content Include="Scripts\defaults\angular\angular-route.min.js.map" />
@@ -354,6 +354,7 @@
     <Content Include="Scripts\defaults\respond.min.js" />
     <Content Include="Scripts\defaults\_references.js" />
     <Content Include="Scripts\defaults\holder\holder.js" />
+    <Content Include="Scripts\Plugins\YouTubeMenu\ytmenu.js" />
     <Content Include="Scripts\theme\contact_me.js" />
     <Content Include="Scripts\theme\custom.js" />
     <Content Include="Scripts\theme\jqBootstrapValidation.js" />
