@@ -213,4 +213,9 @@
   background-color: white;
   width: 500px; }
 
+.active-pill {
+  color: #3498db;
+  background-color: white;
+  border-bottom: 4px solid #3498db; }
+
 /*# sourceMappingURL=Visage.css.map */

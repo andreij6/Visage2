@@ -2234,8 +2234,22 @@ label span{
     margin: 5px;
 }
 
+.location {
+	height: 300px;
+	-moz-box-shadow:    0 0 10px #ccc;
+	-webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow:         0 0 10px #ccc;
+}
+
 #location {
 	height: 200px;
+	-moz-box-shadow:    0 0 10px #ccc;
+	-webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow:         0 0 10px #ccc;
+}
+
+#locationsPage {
+	height: 350px;
 	-moz-box-shadow:    0 0 10px #ccc;
 	-webkit-box-shadow: 0 0 10px #ccc;
 	box-shadow:         0 0 10px #ccc;
