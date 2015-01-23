@@ -251,6 +251,10 @@
     <Content Include="Content\Images\coffee-569178_1280.jpg" />
     <Content Include="Content\Images\DrJMRiehs_600x600.jpg" />
     <Content Include="Content\Images\Gallery\Banner3.jpg" />
+    <Content Include="Content\Images\LBVfull_C4.png" />
+    <Content Include="Content\Images\LBVlogo_green.png" />
+    <Content Include="Content\Images\LBVword_C4.png" />
+    <Content Include="Content\Images\LBV_Logo.png" />
     <Content Include="Content\Images\Zoom.ico" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\mother.jpg" />
@@ -266,6 +270,9 @@
     <Content Include="Images\Banner3.jpg" />
     <Content Include="Images\coffee-569178_1280.jpg" />
     <Content Include="Images\DrJMRiehs_600x600.jpg" />
+    <Content Include="Images\LBVfull_C4.png" />
+    <Content Include="Images\LBVlogo_green.png" />
+    <Content Include="Images\LBVword_C4.png" />
     <Content Include="Images\LBV_Logo.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\mother.jpg" />
