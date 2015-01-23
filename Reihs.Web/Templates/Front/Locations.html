@@ -14,21 +14,20 @@
 	</div>
 </div>
 
-<div class="divide80"></div>
 <div class="container">
 	<div class="row">
 		<div class="col-md-3">
-
+			<div class="divide40"></div>
 			<div class="sidebar-box margin40">
-				<h4>Categories</h4>
+				<h4>Sub-Nav</h4>
 				<ul class="list-unstyled cat-list visible-md visible-lg">
-                    <li><a href="#/About">Dr. Riehs</a><i class="fa fa-angle-right"></i></li>
+					<li><a href="#/About">Dr. Riehs</a><i class="fa fa-angle-right"></i></li>
 					<li> <a href="#/Team">Meet the Team</a> <i class="fa fa-angle-right"></i></li>
 					<li> <a href="#/Testimonials">Testimonials</a> <i class="fa fa-angle-right"></i></li>
 					<li> <a href="#/Videos">Videos</a> <i class="fa fa-angle-right"></i></li>
 				</ul>
 				<ul class="portfolio-filters text-center cat-list visible-sm visible-xs">
-                    <li class="filter"><a href="#/About">Dr. Riehs</a></li>
+					<li class="filter"><a href="#/About">Dr. Riehs</a></li>
 					<li class="filter"><a href="#/Team">Meet the Team</a></li>
 					<li class="filter"><a href="#/Testimonials">Testimonials</a></li>
 					<li class="filter"><a href="#/Videos">Videos</a></li>
@@ -37,9 +36,16 @@
 
 		</div>
 		<div class="col-md-8">
+			<div class="divide40"></div>
 			<section class="col-md-12">
 				<div class="col-md-12">
-					<h3 class="heading">Frisco (Main)</h3><!--Frisco Location-->
+					<h3 class="heading">
+						<span id="{{Locations[Active].Name}}">{{Locations[Active].Name}} </span>
+						<span class="pull-right">
+							<small>| <a ng-click="SetActive(Others[0].Name)" id="{{Others[0].Name}}">{{Others[0].Name}}</a></small>
+							<small>| <a ng-click="SetActive(Others[1].Name)" id="{{Others[1].Name}}">{{Others[1].Name}}</a></small>
+						</span>
+					</h3><!--Frisco Location-->
 					<p>
 						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.
 						<div class="col-md-6">
@@ -47,37 +53,85 @@
 						</div>
 					</p>
 					<ul class="list-unstyled contact contact-info">
-						<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">3685 Preston Road, Ste. 129 Frisco, TX 75034</a></p></li>
-						<li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">info@lebeauvisagemedspa.com</a></p></li>
-						<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="tel:+12147057676">+214 705 7676</a></p></li>
-						<li> <p><strong><i class="fa fa-phone"></i> Toll:</strong> <a href="tel:+18665426869">+1 866 54 BOTOX (26869)</a></p></li>
+						<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">{{Locations[Active].Address}}</a></p></li>
+						<li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">{{Locations[Active].Email}}</a></p></li>
+						<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="{{Locations[Active].Phonetel}}">{{Locations[Active].Phone}}</a></p></li>
+						<li> <p><strong><i class="fa fa-phone"></i> Toll:</strong> <a href="{{Locations[Active].Tolltell}}>{{Locations[Active].Toll}}</a></p></li>
 					</ul>
 
-				</div>
-				
-			</section>
-			<div class="divide80"></div>
-			<section class="col-md-12">
-				<div class="col-md-12">
-					<h3 class="heading">La Grange / Schulenburg</h3><!--La Grange Location-->
-					<p>
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.
-						<div class="col-md-6">
-							<img src="../../Images/mother.jpg" class="img-responsive pull-right" alt="" />
-						</div>	
-					</p>
-					<ul class="list-unstyled contact contact-info">
-						<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">40 East Avenue Schulenburg, TX 78956</a></p></li>
-						<li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">info@lebeauvisagemedspa.com</a></p></li>
-						<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="tel:+12147057676">+214 705 7676</a></p></li>
-						<li> <p><strong><i class="fa fa-phone"></i> Toll:</strong> <a href="tel:+18665426869">+1 866 54 BOTOX (26869)</a></p></li>
-					</ul>
 				</div>
 
 			</section>
-			
+			<div class="divide80"></div>
+		</div>
+	</div>
+	<ul class="nav nav-pills nav-justified">
+		<li class="{{Frisco.Active}}" ng-click="SetActive(Frisco.Name)"><a>Frisco</a></li>
+		<li class="{{Dallas.Active}}" ng-click="SetActive(Dallas.Name)"><a>Dallas</a></li>
+		<li class="{{LaSchl.Active}}" ng-click="SetActive(LaSchl.Name)"><a>Schlenburg/ LaGrange</a></li>
+	</ul>
+</div>
 
+<div class="breadcrumb-wrap">
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1">
+			<div class="col-xs-12" id="location">
+
+			</div>
 		</div>
 	</div>
 </div>
-<div class="divide80"></div>
+
+<!--<div class="row">
+	<div class="col-md-12">
+		<section class="col-md-8">
+			<div class="col-md-12">
+				<h3 class="heading">La Grange / Schulenburg</h3>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.
+					<div class="col-md-6">
+						<img src="../../Images/mother.jpg" class="img-responsive pull-right" alt="" />
+					</div>
+				</p>
+				<ul class="list-unstyled contact contact-info">
+					<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">40 East Avenue Schulenburg, TX 78956</a></p></li>
+					<li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">info@lebeauvisagemedspa.com</a></p></li>
+					<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="tel:+12147057676">+214 705 7676</a></p></li>
+					<li> <p><strong><i class="fa fa-phone"></i> Toll:</strong> <a href="tel:+18665426869">+1 866 54 BOTOX (26869)</a></p></li>
+				</ul>
+			</div>
+
+		</section>
+
+
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<section class="col-md-8">
+			<div class="col-md-12">
+				<h3 class="heading">La Grange / Schulenburg</h3><!--La Grange Location
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.
+					<div class="col-md-6">
+						<img src="../../Images/mother.jpg" class="img-responsive pull-right" alt="" />
+					</div>
+				</p>
+				<ul class="list-unstyled contact contact-info">
+					<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">40 East Avenue Schulenburg, TX 78956</a></p></li>
+					<li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">info@lebeauvisagemedspa.com</a></p></li>
+					<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="tel:+12147057676">+214 705 7676</a></p></li>
+					<li> <p><strong><i class="fa fa-phone"></i> Toll:</strong> <a href="tel:+18665426869">+1 866 54 BOTOX (26869)</a></p></li>
+				</ul>
+			</div>
+
+		</section>
+
+
+	</div>
+</div>-->
+</div>
+
+<script>
+	gMap.initLocations();
+</script>
