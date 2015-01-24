@@ -7,5 +7,9 @@
 		LaSchl: any;
 		Others: any;
 		SetActive(name: string): void;
+
+		MenuTrigger(): void;
+		YouTubeMenu: string;
+		open: boolean;
 	}
 }   

@@ -1381,6 +1381,14 @@ ul.post-desc li + li {
 .social-1 li a i.fa-dribbble {
   background-color: #ea4c89; }
 
+.social-1 li a i.fa-linkedin {
+	background-color: #3b5998;
+}
+
+.social-1 li a i.fa-youtube-play {
+    background-color: #cb2027;
+}
+
 /**************coming soon*************/
 .soon-bg {
   background: url(../img/showcase-5.jpg);

@@ -43,6 +43,16 @@
 					});
 			}
 
+			function menuTrigger() {
+				if (!self.$scope.open)
+					self.$scope.YouTubeMenu = ' dr-menu-open';
+				else
+					self.$scope.YouTubeMenu = '';
+
+				self.$scope.open = !self.$scope.open;
+
+			}
+
 			self.$scope.GetProducts = GetProducts;
 
 			self.$scope.Products = self.ProductSvc.Products;
@@ -54,6 +64,10 @@
 			self.$scope.Category = $routeParams["Category"];
 
 			self.$scope.template = { name: "Index", url: nav + "Index.html" };
+
+			self.$scope.YouTubeMenu = '';
+
+			self.$scope.MenuTrigger = menuTrigger;
 
 			self.init();
 			

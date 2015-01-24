@@ -10,7 +10,19 @@
 			var self = this;
 			self.$scope = $scope;
 
-			self.$scope.test = "About Page";
+			function menuTrigger() {
+				if (!self.$scope.open)
+					self.$scope.YouTubeMenu = ' dr-menu-open';
+				else
+					self.$scope.YouTubeMenu = '';
+
+				self.$scope.open = !self.$scope.open;
+
+			}
+
+			self.$scope.YouTubeMenu = '';
+
+			self.$scope.MenuTrigger = menuTrigger;
 
 			self.init();
 		}

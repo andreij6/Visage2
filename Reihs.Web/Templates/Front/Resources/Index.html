@@ -20,17 +20,25 @@
 		<div class="col-md-3">
 
 			<div class="sidebar-box margin40">
-				<h4><a href="#/Resources">Patient Resource</a> <i class="fa fa-angle-right"></i></h4>
+				<h4 class="visible-md visible-lg"><a href="#/Resources">Patient Resource</a> <i class="fa fa-angle-right"></i></h4>
 				<ul class="list-unstyled cat-list visible-md visible-lg">
 					<li> <a href="#/Resources/NewPatients">New Patients</a> <i class="fa fa-angle-right"></i></li>
 					<li> <a href="#/Resources/PostCare">Post Care</a> <i class="fa fa-angle-right"></i></li>
 					<li> <a href="#/Resources/FactSheets">Fact Sheets</a> <i class="fa fa-angle-right"></i></li>
 				</ul>
-				<ul class="portfolio-filters text-center visible-sm visible-xs">
-					<li> <a href="#/Resources/NewPatients">New Patients</a></li>
-					<li> <a href="#/Resources/PostCare">Post Care</a></li>
-					<li> <a href="#/Resources/FactSheets">Fact Sheets</a></li>
-				</ul>
+				<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
+					<div class="dr-trigger" ng-click="MenuTrigger()">
+						<span class="dr-icon dr-icon-settings"></span>
+						<a class="dr-label">Menu</a>
+					</div>
+					<div ng-show="open" class="subNav">
+						<ul>
+							<li> <a href="#/Resources/NewPatients">New Patients</a><i class="fa fa-angle-right"></i></li>
+							<li> <a href="#/Resources/PostCare">Post Care</a><i class="fa fa-angle-right"></i></li>
+							<li> <a href="#/Resources/FactSheets">Fact Sheets</a><i class="fa fa-angle-right"></i></li>
+						</ul>
+					</div>
+				</div>
 			</div><!--sidebar-box-->
 		</div>
 

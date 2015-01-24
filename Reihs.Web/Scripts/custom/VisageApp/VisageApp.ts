@@ -36,4 +36,6 @@ module VisageApp {
 	VisageApp.controller('SpecialCtrl', SpecialCtrl);
 	VisageApp.controller('PackageCtrl', PackageCtrl);
 	VisageApp.controller('GiftCardCtrl', GiftCardCtrl);
+
+	//VisageApp.directive('youtubeMenu', 
 }

@@ -546,6 +546,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\TestimonialCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Treatments.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\VideoCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\directives\youtubeMenu.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\ContactAPIService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\MarketService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\ProductService.ts" />

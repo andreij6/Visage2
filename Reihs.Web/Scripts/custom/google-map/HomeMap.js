@@ -47,7 +47,3 @@ gMap.initLocations = function () {
 
 
 
-
-$(document).ready(gMap.initialize);
-
-

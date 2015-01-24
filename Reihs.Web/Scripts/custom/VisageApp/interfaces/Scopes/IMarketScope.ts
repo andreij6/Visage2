@@ -7,5 +7,9 @@
 		SeeDetail(product: string): void;
 		Products: any;
 		GetProducts(): void;
+
+		open: boolean;
+		YouTubeMenu: string;
+		MenuTrigger(): void;
 	}
 }    

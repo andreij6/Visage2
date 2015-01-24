@@ -35,11 +35,25 @@
 				}
 			}
 
+			function menuTrigger() {
+				if (!self.$scope.open)
+					self.$scope.YouTubeMenu = ' dr-menu-open';
+				else
+					self.$scope.YouTubeMenu = '';
+
+				self.$scope.open = !self.$scope.open;
+
+			}
+
 			self.$scope.SetTemplate = setTemplate;
 
 			self.$scope.templates = templates;
 
 			self.$scope.template = { name: "Index", url: nav + "Index.html" };
+
+			self.$scope.YouTubeMenu = '';
+
+			self.$scope.MenuTrigger = menuTrigger;
 
 			self.init();
 		}

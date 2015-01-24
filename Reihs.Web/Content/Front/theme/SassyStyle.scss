@@ -1454,7 +1454,7 @@ ul.post-desc li + li{
     opacity: 0.8;
 }
 .social-1 li a i.fa-facebook{
-    background-color: #$color_azure_approx;
+    background-color: $color_azure_approx;
 }
 .social-1 li a i.fa-twitter{
     background-color: $color_deep_cerulean_approx;
@@ -1467,6 +1467,13 @@ ul.post-desc li + li{
 }
 .social-1 li a i.fa-dribbble{
     background-color: #ea4c89;
+}
+.social-1 li a i.fa-linkedin {
+	background-color: $color_azure_approx;
+}
+
+.social-1 li a i.fa-youtube-play {
+    background-color: #cb2027;
 }
 
 

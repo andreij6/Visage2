@@ -64,6 +64,16 @@
 				}
 			}
 
+			function menuTrigger() {
+				if (!self.$scope.open)
+					self.$scope.YouTubeMenu = ' dr-menu-open';
+				else
+					self.$scope.YouTubeMenu = '';
+
+				self.$scope.open = !self.$scope.open;
+
+			}
+
 			self.$scope.Frisco = Frisco;
 			self.$scope.Dallas = Dallas;
 			self.$scope.LaSchl = LaSchl;
@@ -82,8 +92,11 @@
 
 				self.$scope.Locations = [self.$scope.Frisco, self.$scope.Dallas, self.$scope.LaSchl];
 			});
+			self.$scope.YouTubeMenu = '';
 
 			self.$scope.SetActive = setActive;
+
+			self.$scope.MenuTrigger = menuTrigger;
 
 		}
 	}

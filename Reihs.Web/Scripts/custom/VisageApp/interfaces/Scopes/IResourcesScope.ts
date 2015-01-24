@@ -3,5 +3,9 @@
 		SetTemplate(name: string): void;
 		template: any;
 		Pages: any;
+
+		open: boolean;
+		YouTubeMenu: string;
+		MenuTrigger(): void;
 	}
 }   
