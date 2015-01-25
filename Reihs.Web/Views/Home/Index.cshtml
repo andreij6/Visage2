@@ -11,7 +11,46 @@
 			<a href="#/" class="navbar-brand"><img class="img-resonsive" src="../../Images/LBV_Logo.png" alt="Le Beau Visage" width="225px" style="margin-top:-20px" /></a>
 			<ul class="nav navbar-nav pull-right">
 				<li>
-					<a href="#/About">DR RIEHS</a>
+					<a data-toggle="dropdown" class="dropdown-toggle">About<i class="fa fa-chevron-down"></i></a>
+					<ul class="dropdown-menu">
+						<li>
+							<div class="yamm-content yamm-about-content">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="col-sm-12">
+											<h3 class="heading"><a href="#/About">Dr. Reihs</a></h3>
+											<p>
+												Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+												<a href="#/About" class="pull-right">Read More</a>	
+											</p>
+											<div class="divide20"></div>
+										</div>
+										<div class="col-sm-12">
+											<h3 class="heading"><a href="#/Blog">Blog</a></h3>
+											<p></p>
+											<ul class="nav mega-vertical-nav">
+												<li><a href="#/Blog/1">Blog 1</a></li>
+												<li><a href="#/Blog/2">Blog 2</a></li>
+												<li><a href="#/Blog/3">Blog 3</a></li>
+											</ul>
+										</div>
+										<div class="divide10"></div>
+										<div class="col-sm-12">
+											<h3 class="heading">Sections</h3>
+											<p></p>
+											<ul class="nav mega-vertical-nav">
+												<li><a href="#/Team">Meet the Team</a></li>
+												<li><a href="#/Locations">Locations</a></li>
+												<li><a href="#/Testimonials">Skin Care</a></li>
+												<li><a href="#/Videos">Videos</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</li>
+					</ul>
 				</li>
 				<li>
 					<a href="#/Treatments" class="dropdown-toggle">TREATMENTS</a>
@@ -220,7 +259,7 @@
 					<li ng-click="GoToTop()"><a href=""><i class="fa fa-arrow-circle-up fa-2x"></i> Top</a></li>
 				</ul>
 			</div><!--top bar end hidden in small devices-->
-			<div class="pull-left">
+			<div class="pull-left visible-md visible-lg">
 				<ul class="list-inline top-social">
 					<li><a href="http://www.facebook.com/pages/Le-Beau-Visage-Med-Spa/130922822976?ref=ts"><i class="fa fa-facebook"></i></a></li>
 					<li><a href="https://twitter.com/LeBeauVisage"><i class="fa fa-twitter"></i></a></li>
@@ -247,7 +286,4 @@
 	<script src="~/Scripts/custom/scripts/navBar.js"></script>
 	<script src="~/Scripts/custom/google-map/HomeMap.js"></script>
 	<script src="~/Scripts/Plugins/YouTubeMenu/ytmenu.js"></script>
-	<script>
-
-	</script>
 }

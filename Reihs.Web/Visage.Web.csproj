@@ -395,13 +395,13 @@
     <Content Include="Templates\Admin\Market\Index.html" />
     <Content Include="Templates\Admin\Market\Orders.html" />
     <Content Include="Templates\Admin\Market\Products.html" />
-    <Content Include="Templates\Front\About.html" />
+    <Content Include="Templates\Front\About\About.html" />
     <Content Include="Templates\Front\Blog\Detail.html" />
     <Content Include="Templates\Front\Blog\Index.html" />
     <Content Include="Templates\Front\Contact.html" />
     <Content Include="Templates\Front\Gallery.html" />
     <Content Include="Templates\Front\Home.html" />
-    <Content Include="Templates\Front\Locations.html" />
+    <Content Include="Templates\Front\About\Locations.html" />
     <Content Include="Templates\Front\Market\CartDetail.html" />
     <Content Include="Templates\Front\Market\Checkout.html" />
     <Content Include="Templates\Front\Market\CompletedOrder.html" />
@@ -411,7 +411,6 @@
     <Content Include="Templates\Front\Market\ProductDetail.html" />
     <Content Include="Templates\Front\Market\Index.html" />
     <Content Include="Templates\Front\Market\ProductList.html" />
-    <Content Include="Templates\Front\OldGallery.html" />
     <Content Include="Templates\Front\Resources\Index.html" />
     <Content Include="Templates\Front\Resources\FactSheets.html" />
     <Content Include="Templates\Front\Resources\NewPatients.html" />
@@ -432,8 +431,8 @@
     <Content Include="Templates\Front\Resources\PostCare.html" />
     <Content Include="Templates\Front\SiteMap.html" />
     <Content Include="Templates\Front\Special\Events.html" />
-    <Content Include="Templates\Front\Team.html" />
-    <Content Include="Templates\Front\Testimonials.html" />
+    <Content Include="Templates\Front\About\Team.html" />
+    <Content Include="Templates\Front\About\Testimonials.html" />
     <Content Include="Templates\Front\Treatments\Index.html" />
     <Content Include="Templates\Front\Treatments\Partials\Bodyshaping.html" />
     <Content Include="Templates\Front\Treatments\Partials\FacialInjectibles.html" />

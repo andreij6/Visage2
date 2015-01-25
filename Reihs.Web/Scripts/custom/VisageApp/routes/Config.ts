@@ -7,7 +7,7 @@
 					controller: 'Index'
 				}).when('/About',
 				{
-					templateUrl: '/Templates/Front/About.html',
+					templateUrl: '/Templates/Front/About/About.html',
 					controller: 'About'
 				}
 				).when('/Contact',
@@ -20,13 +20,17 @@
 					templateUrl: '/Templates/Front/Blog/Index.html',
 					controller: 'Blog'
 				}
-				).when('/Gallery',
+				).when('/Blog/:id',
+				{
+					templateUrl: '/Templates/Front/Blog/Detail.html',
+					controller: 'Blog'
+				}).when('/Gallery',
 				{
 					templateUrl: '/Templates/Front/Gallery.html',
 					controller: 'GalleryCtrl'
 				}).when('/Locations',
 				{
-					templateUrl: 'Templates/Front/Locations.html',
+					templateUrl: 'Templates/Front/About/Locations.html',
 					controller: 'LocationsCtrl'
 				}).when('/Market',
 				{
@@ -72,11 +76,11 @@
 					controller: 'Treatments'
 				}).when('/Team',
 				{
-					templateUrl: 'Templates/Front/Team.html',
+					templateUrl: 'Templates/Front/About/Team.html',
 					controller: 'TeamCtrl'
 				}).when('/Testimonials',
 				{
-					templateUrl: 'Templates/Front/Testimonials.html',
+					templateUrl: 'Templates/Front/About/Testimonials.html',
 					controller: 'TestimonialCtrl'
 				}).when('/Resources',
 				{

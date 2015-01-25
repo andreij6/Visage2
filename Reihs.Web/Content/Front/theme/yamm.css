@@ -25,3 +25,9 @@
 	width: 950px;
 	height: 322px;
 }
+
+.yamm-about-content {
+	width: 500px;
+	height: 275px;
+	overflow-y: scroll;
+}
