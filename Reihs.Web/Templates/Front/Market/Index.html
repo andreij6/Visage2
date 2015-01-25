@@ -55,7 +55,16 @@
 					<p>
 						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni. Dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
 					</p>
-					<p><a href="#/Market/Item/1" class="btn btn-theme-bg">View Details</a></p>
+					<p>
+						<button ng-click="AddToCart('_s-xclick','4CXSMD8ASQT78')" class="btn btn-theme-bg">Add To Cart</button>
+
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="4CXSMD8ASQT78">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</p>
 				</div>
 				<div class="col-md-6 wrapper">
 					<div class="ribbon-wrapper-green"><div class="ribbon-green">HOT</div></div>

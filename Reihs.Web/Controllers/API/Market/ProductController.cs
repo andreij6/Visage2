@@ -32,5 +32,7 @@ namespace Reihs.Web.Controllers.API.Market
 		{
 			return ProductService.GetById(productId);
 		}
+
+		
 	}
 }

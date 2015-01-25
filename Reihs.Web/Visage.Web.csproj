@@ -183,6 +183,7 @@
     <Compile Include="Controllers\API\Blog\CategoryController.cs" />
     <Compile Include="Controllers\API\ContactController.cs" />
     <Compile Include="Controllers\API\Market\MarketController.cs" />
+    <Compile Include="Controllers\API\Market\PayPalController.cs" />
     <Compile Include="Controllers\API\Market\ProductController.cs" />
     <Compile Include="Controllers\MVC\AccountController.cs" />
     <Compile Include="Controllers\MVC\AdminController.cs" />
@@ -203,6 +204,8 @@
     <Content Include="Content\Admin\sb-admin-2.min.css">
       <DependentUpon>sb-admin-2.css</DependentUpon>
     </Content>
+    <Content Include="Content\defaults\bootstrap-theme.css" />
+    <Content Include="Content\defaults\bootstrap-theme.min.css" />
     <Content Include="Content\defaults\bootstrap.css" />
     <Content Include="Content\defaults\bootstrap.min.css" />
     <Content Include="Content\defaults\font-awesome.css" />
@@ -230,11 +233,11 @@
     <Content Include="Content\Front\theme\owl.carousel.css" />
     <Content Include="Content\Front\theme\owl.theme.css" />
     <Content Include="Content\Front\theme\style.css" />
-    <Content Include="Content\Front\theme\SassyStyle.css">
-      <DependentUpon>SassyStyle.scss</DependentUpon>
+    <Content Include="Content\Front\theme\Theme.css">
+      <DependentUpon>Theme.scss</DependentUpon>
     </Content>
-    <Content Include="Content\Front\theme\SassyStyle.min.css">
-      <DependentUpon>SassyStyle.css</DependentUpon>
+    <Content Include="Content\Front\theme\Theme.min.css">
+      <DependentUpon>Theme.css</DependentUpon>
     </Content>
     <Content Include="Content\Front\theme\yamm.css" />
     <Content Include="Content\Front\theme\YTPlayer.css" />
@@ -244,8 +247,13 @@
     <Content Include="Content\Front\Visage.min.css">
       <DependentUpon>Visage.css</DependentUpon>
     </Content>
-    <Content Include="Content\Front\YouTubeMenu\component.css" />
-    <Content Include="Content\Front\YouTubeMenu\default.css" />
+    <Content Include="Content\Front\YouTubeMenu\component.css">
+      <DependentUpon>component.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\YouTubeMenu\component.min.css">
+      <DependentUpon>component.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\YouTubeMenu\component1.css" />
     <Content Include="Content\Images\Banner1.jpg" />
     <Content Include="Content\Images\Banner2.jpg" />
     <Content Include="Content\Images\coffee-569178_1280.jpg" />
@@ -278,6 +286,8 @@
     <Content Include="Images\mother.jpg" />
     <Content Include="Images\winter.jpg" />
     <Content Include="Images\Zoom.ico" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom\scripts\li-scroller-starter.js" />
     <Content Include="Scripts\custom\scripts\navBar.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.js" />
@@ -308,10 +318,6 @@
       <DependentUpon>sb-admin-2.css</DependentUpon>
     </Content>
     <Content Include="AppSecrets.config" />
-    <Content Include="Content\Front\Visage.scss" />
-    <Content Include="Content\Front\Visage.css.map">
-      <DependentUpon>Visage.css</DependentUpon>
-    </Content>
     <Content Include="Content\Front\Colors.scss" />
     <Content Include="Content\Front\Colors.css.map">
       <DependentUpon>Colors.css</DependentUpon>
@@ -320,13 +326,6 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\FontAwesome.otf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\Front\theme\SassyStyle.scss" />
-    <Content Include="Content\Front\theme\SassyStyle.css.map">
-      <DependentUpon>SassyStyle.css</DependentUpon>
-    </Content>
     <Content Include="Content\Front\theme\Colors.scss" />
     <Content Include="Content\Front\theme\Colors.css.map">
       <DependentUpon>Colors.css</DependentUpon>
@@ -338,6 +337,21 @@
     <Content Include="Content\fonts\icomoon.eot" />
     <Content Include="Content\fonts\icomoon.ttf" />
     <Content Include="Content\fonts\icomoon.woff" />
+    <Content Include="Content\Front\theme\Theme.scss" />
+    <Content Include="Content\Front\theme\Theme.css.map">
+      <DependentUpon>Theme.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\Visage.scss" />
+    <Content Include="Content\Front\Visage.css.map">
+      <DependentUpon>Visage.css</DependentUpon>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Front\YouTubeMenu\component.scss" />
+    <Content Include="Content\Front\YouTubeMenu\component.css.map">
+      <DependentUpon>component.css</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\Visage.pubxml" />
     <Content Include="Scripts\defaults\angular\angular.min.js.map" />
     <Content Include="Scripts\defaults\angular\angular-route.min.js.map" />
@@ -431,7 +445,8 @@
     <Content Include="Templates\Front\Treatments\Partials\SkinResurface.html" />
     <Content Include="Templates\Front\Treatments\Partials\SkinTight.html" />
     <Content Include="Templates\Front\Treatments\Partials\VeinReduce.html" />
-    <Content Include="Templates\Front\Videos.html" />
+    <Content Include="Templates\Front\Videos\Single.html" />
+    <Content Include="Templates\Front\Videos\Index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

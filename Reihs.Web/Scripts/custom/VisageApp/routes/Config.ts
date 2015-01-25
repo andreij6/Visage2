@@ -103,9 +103,16 @@
 					controller: 'SpecialCtrl'
 				}).when('/Videos',
 				{
-					templateUrl: 'Templates/Front/Videos.html',
+					templateUrl: 'Templates/Front/Videos/Index.html',
 					controller: 'VideoCtrl'
-				}).otherwise({ redirectTo: '/' });
+				}).when('/Videos/:id',
+				{
+					templateUrl: 'Templates/Front/Videos/Single.html',
+					controller: 'VideoCtrl'
+				}).otherwise(
+				{
+					redirectTo: '/'
+				});
 
 			
 		}

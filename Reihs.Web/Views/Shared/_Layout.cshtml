@@ -21,19 +21,26 @@
 	<![endif]-->
 	@Scripts.Render("~/bundles/modernizr")
 	@Scripts.Render("~/bundles/holder")
-	
+	<script>
+		(function (a, b, c, d, e) {
+			var f = a + "Q"; b[a] = b[a] || {}; b[a][d] = b[a][d] || function () {
+				(b[f] = b[f] || []).push(arguments)
+			}; a = c.getElementsByTagName(e)[0]; c = c.createElement(e); c.async = 1;
+			c.src = "//static.reembed.com/data/scripts/g_4058_54e577dd0ace962f4d41be73b154c199.js";
+			a.parentNode.insertBefore(c, a)
+		})("reEmbed", window, document, "setupPlaylist", "script");
+	</script>
 	<script type="text/javascript"
 		   src="@ViewBag.Gmaps">
 	</script>
 </head>
 <body>
-
 	@RenderBody()
 
 	@Scripts.Render("~/bundles/jquery")
 	@Scripts.Render("~/bundles/bootstrap")
 	@Scripts.Render("~/bundles/Plugins")
 	@RenderSection("scripts", required: false)
-	
+
 </body>
 </html>

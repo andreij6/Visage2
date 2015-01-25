@@ -16,6 +16,8 @@
 
 				self.classes.unshift(self.currentClass);
 				self.currentClass = self.classes.pop();
+
+				
 			}
 
 			self.$interval(moveCarousel, 8000);

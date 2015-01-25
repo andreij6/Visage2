@@ -11,5 +11,7 @@
 		open: boolean;
 		YouTubeMenu: string;
 		MenuTrigger(): void;
+
+		AddToCart(cmd: string, hosted_button_id: string): void;
 	}
 }    

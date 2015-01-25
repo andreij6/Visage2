@@ -5,9 +5,18 @@
 
 		private init(): void {
 			var self = this;
+			function Affix() {
+				$('#sidebar-inner').affix({
+					offset: {
+						top: 0,
+					}
+				});	
+			}
+
+			Affix();
 		}
 
-		constructor($scope: Extensions.IHeaderCtrlScope, MarketSvc: MarketService) {
+		constructor($scope: Extensions.IHeaderCtrlScope, MarketSvc: MarketService, $location: ng.ILocationService, $anchorScroll: ng.IAnchorScrollService) {
 			var self = this;
 			self.$scope = $scope;
 			self.$scope.SideOpen = false;
@@ -153,6 +162,12 @@
 				self.$scope.SideOpen = false;
 			}
 
+			function goToTop() {
+				$location.hash('top');
+
+				$anchorScroll();
+			}
+
 			self.$scope.$watch('SideOpen', CloseSideBar);
 
 			self.$scope.$on('CartItem-Added', CartUpdated);
@@ -161,9 +176,11 @@
 
 			self.$scope.SetNav = setNav;
 
+			self.$scope.GoToTop = goToTop;
+
 			self.init();
 		}
 	}
 
-	HeaderCtrl.$inject = ['$scope', 'MarketService'];
+	HeaderCtrl.$inject = ['$scope', 'MarketService', '$location', '$anchorScroll'];
 } 

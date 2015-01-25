@@ -5,90 +5,90 @@
 
 <!--navigation -->
 <!-- Static navbar -->
-<div class="row row-offcanvas row-offcanvas-right" ng-controller="HeaderCtrl">
-	<div class="visible-sm visible-md visible-lg navbar navbar-default container" role="navigation">
-		<a href="#/" class="navbar-brand"><img class="img-resonsive" src="../../Images/LBV_Logo.png" alt="Le Beau Visage" width="225px" style="margin-top:-20px" /></a>
-		<ul class="nav navbar-nav pull-right">
-			<li>
-				<a href="#/About">DR RIEHS</a>
-			</li>
-			<li>
-				<a href="#/Treatments" class="dropdown-toggle">TREATMENTS</a>
-			</li>
-			<li>
-				<a href="#/Gallery" class="dropdown-toggle">PHOTO GALLERY</a>
-			</li>
-			<!--mega menu-->
-			<li>
-				<a href="#/Resources" class="dropdown-toggle">Patient Resources</a>
-			</li>
-			<li class="dropdown yamm-fw">
-				<a data-toggle="dropdown" class="dropdown-toggle">Market <i class="fa fa-chevron-down"></i></a>
-				<ul class="dropdown-menu">
-					<li>
-						<div class="yamm-content">
-							<div class="row">
-								<div class="col-sm-12">
-									<a href="#/Market" class="btn btn-block">Go To The Market</a>
-									<div class="col-sm-3">
-										<h3 class="heading">Shopping Cart</h3>
-										<p></p>
-										<ul ng-show="HasItems">
-											<li>Item</li>
-											<li>Item 2</li>
-											<li>More...</li>
-										</ul>
-										<a href="#/Market/Cart" ng-show="HasItems" class="btn btn-theme-dark">View Cart <i class="fa fa-shopping-cart"></i></a>
-										<a href="#/Market" ng-show="!HasItems" class="btn btn-theme-dark">Market <i class="fa fa-shopping-cart"></i></a>
-									</div>
-									<div class="col-sm-6">
-										<h3 class="heading">Featured Items</h3>
-										<p>
-											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam
-										</p>
-									</div>
-									<div class="col-sm-3">
-										<h3 class="heading">Categories</h3>
-										<ul class="nav mega-vertical-nav">
-											<li><a href="#/Market/Special/GiftCards">Gift Cards</a></li>
-											<li><a href="#/Market">Skin Care</a></li>
-										</ul>
+<div class="row row-offcanvas row-offcanvas-right" ng-controller="HeaderCtrl" id="top">
+	<div class="visible-sm visible-md visible-lg navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<a href="#/" class="navbar-brand"><img class="img-resonsive" src="../../Images/LBV_Logo.png" alt="Le Beau Visage" width="225px" style="margin-top:-20px" /></a>
+			<ul class="nav navbar-nav pull-right">
+				<li>
+					<a href="#/About">DR RIEHS</a>
+				</li>
+				<li>
+					<a href="#/Treatments" class="dropdown-toggle">TREATMENTS</a>
+				</li>
+				<li>
+					<a href="#/Gallery" class="dropdown-toggle">PHOTO GALLERY</a>
+				</li>
+				<!--mega menu-->
+				<li>
+					<a href="#/Resources" class="dropdown-toggle">Patient Resources</a>
+				</li>
+				<li class="dropdown yamm-fw">
+					<a data-toggle="dropdown" class="dropdown-toggle">Market <i class="fa fa-chevron-down"></i></a>
+					<ul class="dropdown-menu">
+						<li>
+							<div class="yamm-content">
+								<div class="row">
+									<div class="col-sm-12">
+										<a href="#/Market" class="btn btn-block">Go To The Market</a>
+										<div class="col-sm-3">
+											<h3 class="heading">Shopping Cart</h3>
+											<p></p>
+											<ul ng-show="HasItems">
+												<li>Item</li>
+												<li>Item 2</li>
+												<li>More...</li>
+											</ul>
+											<a href="#/Market/Cart" ng-show="HasItems" class="btn btn-theme-dark">View Cart <i class="fa fa-shopping-cart"></i></a>
+											<a href="#/Market" ng-show="!HasItems" class="btn btn-theme-dark">Market <i class="fa fa-shopping-cart"></i></a>
+										</div>
+										<div class="col-sm-6">
+											<h3 class="heading">Featured Items</h3>
+											<p>
+												Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam
+											</p>
+										</div>
+										<div class="col-sm-3">
+											<h3 class="heading">Categories</h3>
+											<ul class="nav mega-vertical-nav">
+												<li><a href="#/Market/Special/GiftCards">Gift Cards</a></li>
+												<li><a href="#/Market">Skin Care</a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
+
 							</div>
+						</li>
+					</ul>
+				</li>
 
-						</div>
-					</li>
-				</ul>
-			</li>
-
-			<!--mega menu end-->
-			<li>
-				<a href="#/Contact" class="dropdown-toggle">CONTACT US</a>
-			</li>
-			<li ng-show="HasItems">
-				<a href="#/Market/Cart">View Cart <span class="pull-right"> <i class="fa fa-shopping-cart fa-2x"></i><span class="badge">{{ShoppingCart.length}}</span></span></a>
-			</li>
-		</ul>
-		
+				<!--mega menu end-->
+				<li>
+					<a href="#/Contact" class="dropdown-toggle">CONTACT US</a>
+				</li>
+				<li ng-show="HasItems">
+					<a href="#/Market/Cart">View Cart <span class="pull-right"> <i class="fa fa-shopping-cart fa-2x"></i><span class="badge">{{ShoppingCart.length}}</span></span></a>
+				</li>
+			</ul>
+		</div>
 	</div>
-		
 	<div class=" visible-xs">
-		<div class="navbar navbar-default" role="navigation">
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation" ng-hide="SideOpen">
 			<div class="container">
 				<div class="navbar-header">
 					<a class="pull-right" ng-click="UpdateSO()">
 						<i class="fa fa-bars fa-2x" ng-show="!SideOpen" style="margin-right: 25px;"></i>
-						<i class="fa fa-remove fa-3x" ng-show="SideOpen" style="margin-right: 25px;"></i>
 					</a>
-					
-					<a class="navbar-brand" href="#/" title="LeBeau Visage"><img src="../../Images/LBV_Logo.png" alt="" width="50%" style="margin-top: -75px;"/></a>
+
+					<a class="navbar-brand" href="#/" title="LeBeau Visage"><img src="../../Images/LBV_Logo.png" alt="" width="50%" style="margin-top: -75px;" /></a>
 				</div>
 			</div>
 		</div>
 		<div class="col-xs-6 col-sm-3 sidebar-offcanvas showhide navbar-collapse" id="sidebar" role="navigation" style="">
-			<div>
+			<div id="sidebar-inner">
 				<ul class="nav navbar-nav side-nav">
+					<li ng-click=" UpdateSO()"><a>Close <i class="fa fa-remove"></i></a></li>
 					<li class="nav-title">
 						<a href="#/"><img src="../../Images/LBVword_C4.png" alt="" width="75%" /></a>
 						<hr />
@@ -149,7 +149,7 @@
 
 						<a href="#/Contact" ng-show="!ContactActive">CONTACT US <i class="fa fa-phone-square"></i></a>
 					</li>
-					
+
 					<li ng-click="SetNav('SiteMap')" class="sitemap">
 						<a href="#/SiteMap" id="site-map-link">Site Map <i class="fa fa-sitemap"></i></a>
 					</li>
@@ -158,6 +158,7 @@
 			</div>
 		</div>
 	</div>
+	<div class="divide70"></div>
 
 	<div class="alert-success alert container" ng-show="IsAlertVisible">
 		<button type="button" class="close" ng-click="IsAlertVisible = false">×</button>
@@ -185,7 +186,7 @@
 							<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> 3685 Preston Road, Suite 129<br />Frisco, Texas 75034</p></li>
 							<li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">info@lebeauvisagemedspa.com</a></p></li>
 							<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> +214 705 7676</p></li>
-                            <li> <p><strong><i class="fa fa-phone"></i> Toll:</strong> +1 866 54 BOTOX (26869)</p></li>
+							<li> <p><strong><i class="fa fa-phone"></i> Toll:</strong> +1 866 54 BOTOX (26869)</p></li>
 						</ul>
 					</div>
 				</div><!--footer col-->
@@ -214,15 +215,20 @@
 
 	<nav class="navbar navbar-default navbar-fixed-bottom" id="scroller">
 		<div class="container">
-			<div class="pull-right visible-md visible-lg">
+			<div class="pull-right">
+				<ul class="list-inline">
+					<li ng-click="GoToTop()"><a href=""><i class="fa fa-arrow-circle-up fa-2x"></i> Top</a></li>
+				</ul>
+			</div><!--top bar end hidden in small devices-->
+			<div class="pull-left">
 				<ul class="list-inline top-social">
 					<li><a href="http://www.facebook.com/pages/Le-Beau-Visage-Med-Spa/130922822976?ref=ts"><i class="fa fa-facebook"></i></a></li>
 					<li><a href="https://twitter.com/LeBeauVisage"><i class="fa fa-twitter"></i></a></li>
 					<li><a href="http://www.youtube.com/user/LeBeauVisageMedicalS"><i class="fa fa-youtube-play"></i></a></li>
 					<li><a href="https://www.linkedin.com/pub/jason-riehs/80/59a/4a5"><i class="fa fa-linkedin"></i></a></li>
 				</ul>
+			</div>
 
-			</div><!--top bar end hidden in small devices-->
 			<ul id="ticker01" class="newsticker pull-left">
 				<li><span>1/20/2015</span><a href="#/Market">The Revamped Market is amazing...</a></li>
 				<li><span>1/31/2015</span><a href="#/About">Learn More About Dr. Riehs...</a></li>
@@ -241,4 +247,7 @@
 	<script src="~/Scripts/custom/scripts/navBar.js"></script>
 	<script src="~/Scripts/custom/google-map/HomeMap.js"></script>
 	<script src="~/Scripts/Plugins/YouTubeMenu/ytmenu.js"></script>
+	<script>
+
+	</script>
 }

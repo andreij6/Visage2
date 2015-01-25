@@ -108,7 +108,7 @@ namespace Reihs.Web
 					"~/Content/Front/theme/owl.theme.css",
 					"~/Content/Front/theme/yamm.css",
 					"~/Content/Front/theme/magnific-popup.css",
-					"~/Content/Front/theme/SassyStyle.css"));
+					"~/Content/Front/theme/Theme.min.css"));
 
 			bundles.Add(new StyleBundle("~/Content/css").Include(
 					"~/Content/defaults/bootstrap.css",

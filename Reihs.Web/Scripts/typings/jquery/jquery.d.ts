@@ -3585,7 +3585,9 @@ interface JQuery {
      * 
      * @param obj An existing jQuery object to add to the set of matched elements.
      */
-    add(obj: JQuery): JQuery;
+	add(obj: JQuery): JQuery;
+
+	affix(obj: any): void;
 
     /**
      * Get the children of each element in the set of matched elements, optionally filtered by a selector.

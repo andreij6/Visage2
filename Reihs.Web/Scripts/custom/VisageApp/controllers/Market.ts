@@ -69,6 +69,19 @@
 
 			self.$scope.MenuTrigger = menuTrigger;
 
+			function addToCart(cmd: string, hosted_button_id: string) {
+				console.log(self.ProductSvc);
+				self.ProductSvc.addToCart(cmd, hosted_button_id).then(
+					function (data) {
+						console.log(data);
+					},
+					function (error) {
+						console.log(error);
+					});
+			}
+
+			self.$scope.AddToCart = addToCart;
+
 			self.init();
 			
 		}

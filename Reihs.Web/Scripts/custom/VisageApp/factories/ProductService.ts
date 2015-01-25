@@ -49,7 +49,21 @@
 					deferred.reject(error);
 				});
 			
-			
+			return deferred.promise;
+		}
+
+		addToCart(cmd: string, hosted_button_id: string){
+			var self = this;
+			var deferred = self.qService.defer();
+
+			var data = { cmd: cmd, hosted_button_id: hosted_button_id };
+
+			self.httpService.post("api/PayPal/Add", data).then(
+				function (result: any) {
+					deferred.resolve(result);
+				}, function (error) {
+					deferred.reject(error);
+				});
 
 			return deferred.promise;
 		}

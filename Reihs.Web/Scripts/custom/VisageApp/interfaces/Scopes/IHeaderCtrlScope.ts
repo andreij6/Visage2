@@ -18,6 +18,6 @@
 		ContactActive: boolean;
 
 		Navs: any;
-
+		GoToTop(): void;
 	}
 }    

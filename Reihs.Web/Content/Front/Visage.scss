@@ -1,6 +1,7 @@
 ﻿@import "Colors";
 @import "theme/Colors";
 //Ugly I know Please change it
+
 .side-nav {
 	margin-top: 40px;
 
@@ -74,7 +75,7 @@
 }
 
 .selected-nav i {
-	color: #3498db;
+	color: $color_curious_blue_approx;
 }
 
 .cart-items-list {
@@ -90,7 +91,7 @@
 	color: #ffffff;
 
 	&:hover{
-		color: #3498db;
+		color: $color_curious_blue_approx;
 	}
 }
 
@@ -214,7 +215,7 @@ text-transform: uppercase;
 //Light box
 //=========================
 #lightbox {
-    position:fixed; /* keeps the lightbox window in the current viewport */
+    position:fixed;  
     top:0; 
     left:0; 
     width:100%; 
@@ -234,9 +235,9 @@ text-transform: uppercase;
 
 #lighbox-img {
     max-width:940px;
-    filter:alpha(opacity=1); /* IE */
-    -moz-opacity:1; /* Mozilla */
-    opacity: 1; /* CSS3 */
+    filter:alpha(opacity=1); 
+    -moz-opacity:1; 
+    opacity: 1; 
     z-index: 99999;
 }
 
@@ -251,7 +252,7 @@ text-transform: uppercase;
 
 		&:hover {
 			background-color: white;
-			border-bottom: 4px solid #3498db;
+			border-bottom: 4px solid $color_curious_blue_approx;
 		}
 	}
 
@@ -268,7 +269,60 @@ text-transform: uppercase;
 }
 
 .active-pill {
-	color: #3498db;
+	color: $color_curious_blue_approx;
 	background-color: white;
-	border-bottom: 4px solid #3498db;
+	border-bottom: 4px solid $color_curious_blue_approx;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+    height: 40px;
+    background: $white;
+}
+
+.navbar-visage {
+    font-family: 'Raleway', sans-serif;
+    border:none;
+    border-radius: 0;
+    margin-bottom: 0;
+    width:100%;
+    max-height: 55px;
+    padding: 15px 0;
+    background-color: $white;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+}
+
+.navbar-visage .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: $color_curious_blue_approx;
+    background-color: transparent;
+}
+.navbar-visage .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    color: $color_curious_blue_approx;
+    background-color: transparent;
+}
+
+.navbar-visage .navbar-nav>li>a {
+    color: #060606;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.navbar-visage .navbar-nav>li>a:hover {
+    color: $color_curious_blue_approx;
+
+}
+
+#sidebar-inner.affix {
+    position: fixed;
+}
+
+.fa-remove {
+	color: $color_curious_blue_approx;
 }
