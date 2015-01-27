@@ -16,27 +16,6 @@
 			self.MarketService = MarketSvc;
 			self.ProductSvc = productSvc;
 			self.$routeParams = $routeParams;
-			self.$scope.Quantity = 1;
-
-			function addtocart(product: Extensions.Product, quantity: number) {
-
-				var date = new Date();
-
-				var cartItem = {
-					ItemId: "itemId",
-					CartId: "CartId",
-					Quantity: quantity,
-					DateCreated: date.toLocaleDateString(),
-					ProductId: 4, Product: product
-				}
-
-				self.MarketService.AddCartItem(cartItem);
-
-				self.$scope.$root.$broadcast('CartItem-Added');
-				
-			}
-
-			self.$scope.AddToCart = addtocart;
 
 			function GetProductById() {
 				self.ProductSvc.getById($routeParams["id"]).then(
@@ -47,6 +26,18 @@
 						console.log(error);
 					});
 			}
+
+			function GetAll() {
+				self.ProductSvc.getAll().then(
+					function (data) {
+						self.$scope.Products = data;
+					},
+					function (error) {
+						console.log(error);
+					});
+			}
+
+			GetAll();
 
 			GetProductById();
 			

@@ -69,7 +69,6 @@
 							<div class="yamm-content">
 								<div class="row">
 									<div class="col-sm-12">
-										<a href="#/Market" class="btn btn-block">Go To The Market</a>
 										<div class="col-sm-3">
 											<h3 class="heading">Shopping Cart</h3>
 											<p></p>
@@ -79,7 +78,9 @@
 												<li>More...</li>
 											</ul>
 											<a href="#/Market/Cart" ng-show="HasItems" class="btn btn-theme-dark">View Cart <i class="fa fa-shopping-cart"></i></a>
-											<a href="#/Market" ng-show="!HasItems" class="btn btn-theme-dark">Market <i class="fa fa-shopping-cart"></i></a>
+											
+											<div class="divide10"></div>
+											<a href="#/Market" ng-show="!HasItems">Shop Now <i class="fa fa-shopping-cart"></i></a>
 										</div>
 										<div class="col-sm-6">
 											<h3 class="heading">Featured Items</h3>
@@ -94,6 +95,8 @@
 												<li><a href="#/Market">Skin Care</a></li>
 											</ul>
 										</div>
+
+										<a href="#/Market" class="btn btn-block btn-theme-dark clear">Go To The Market</a>
 									</div>
 								</div>
 

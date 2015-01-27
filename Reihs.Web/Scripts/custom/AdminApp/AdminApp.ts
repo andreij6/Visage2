@@ -22,4 +22,5 @@ module AdminApp {
 	AdminApp.controller('LayoutCtrl', LayoutCtrl);
 	AdminApp.controller('Blogs', Blogs);
 	AdminApp.controller('MarketCtrl', MarketCtrl);
+	AdminApp.controller('TickCtrl', TickerCtrl);
 }

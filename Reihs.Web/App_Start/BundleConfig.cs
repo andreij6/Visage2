@@ -35,6 +35,7 @@ namespace Reihs.Web
 						"~/Scripts/custom/AdminApp/controllers/Blogs.js",
 						"~/Scripts/custom/AdminApp/controllers/MarketCtrl.js",
 						"~/Scripts/custom/AdminApp/controllers/Index.js",
+						"~/Scripts/custom/AdminApp/controllers/TickerCtrl.js",
 						"~/Scripts/custom/AdminApp/factories/bCategoryDataService.js",
 						"~/Scripts/custom/AdminApp/factories/PostDataService.js",
 						"~/Scripts/custom/AdminApp/factories/mCategoryDataService.js",

@@ -65,6 +65,8 @@
     <Compile Include="Adapters\Market\Product\ProductRepository.cs" />
     <Compile Include="Adapters\Market\ShoppingCart\IShoppingCartRepository.cs" />
     <Compile Include="Adapters\Market\ShoppingCart\ShoppingCartRepository.cs" />
+    <Compile Include="Adapters\Ticker\ITickerItemRepository.cs" />
+    <Compile Include="Adapters\Ticker\TickerItemRepository.cs" />
     <Compile Include="Adapters\User\IUserRepository.cs" />
     <Compile Include="Adapters\User\UserRepository.cs" />
     <Compile Include="DbContext.cs" />

@@ -56,7 +56,16 @@ namespace Reihs.Repository.Adapters.Market.Product
 		{
 			using (AppDB db = new AppDB())
 			{
-				throw new NotImplementedException();
+				mProduct found = db.mProducts.FirstOrDefault(x => x.Id == product.Id);
+
+				found.Brand = product.Brand;
+				found.Description = product.Description;
+				found.ImagePath = product.ImagePath;
+				found.Name = product.Name;
+				found.PayPalId = product.PayPalId;
+				found.UnitPrice = product.UnitPrice;
+
+				db.SaveChanges();
 			}
 		}
 	}

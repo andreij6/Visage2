@@ -394,7 +394,10 @@
     <Content Include="Templates\Admin\Blogs\New.html" />
     <Content Include="Templates\Admin\Market\Index.html" />
     <Content Include="Templates\Admin\Market\Orders.html" />
-    <Content Include="Templates\Admin\Market\Products.html" />
+    <Content Include="Templates\Admin\Market\Products\CreateEdit.html" />
+    <Content Include="Templates\Admin\Market\Products\List.html" />
+    <Content Include="Templates\Admin\Ticker\List.html" />
+    <Content Include="Templates\Admin\Ticker\New.html" />
     <Content Include="Templates\Front\About\About.html" />
     <Content Include="Templates\Front\Blog\Detail.html" />
     <Content Include="Templates\Front\Blog\Index.html" />
@@ -520,6 +523,7 @@
     <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\Index.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\LayoutCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\MarketCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\TickerCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\bCategoryDataService.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\mCategoryDataService.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\OrderDataService.ts" />
@@ -529,6 +533,7 @@
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IIndexScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\ILayoutScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IMarketScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\ITickerScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\routes\Config.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\interfaces\IRouteParams.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\bCategory.ts" />

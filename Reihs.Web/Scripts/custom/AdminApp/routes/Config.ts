@@ -36,8 +36,24 @@
 					controller: 'MarketCtrl'
 				}).when('/Market/Products',
 				{
-					templateUrl: 'Templates/Admin/Market/Products.html',
+					templateUrl: 'Templates/Admin/Market/Products/List.html',
 					controller: 'MarketCtrl'
+				}).when('/Market/Products/New',
+				{
+					templateUrl: 'Templates/Admin/Market/Products/CreateEdit.html',
+					controller: 'MarketCtrl'
+				}).when('/Market/Products/Edit/:id',
+				{
+					templateUrl: 'Templates/Admin/Market/Products/CreateEdit.html',
+					controller: 'MarketCtrl'
+				}).when('/Ticker',
+				{
+					templateUrl: 'Templates/Admin/Ticker/List.html',
+					controller: 'TickerCtrl'
+				}).when('/Ticker/New',
+				{
+					templateUrl: 'Templates/Admin/Ticker/New.html',
+					controller: 'TickerCtrl'
 				}).otherwise({ redirectTo: '/' })
 		}
 	}
