@@ -4,6 +4,30 @@
 
 		private init(): void {
 			var self = this;
+
+			function Carousel() {
+				$('#myCarousel').carousel({
+					interval: 5000
+				});
+
+				$('#carousel-text').html($('#slide-content-0').html());
+
+				//Handles the carousel thumbnails
+				$('[id^=carousel-selector-]').click(function () {
+					var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+					var newId = parseInt(id);
+					$('#myCarousel').carousel(newId);
+				});
+
+
+				// When the carousel slides, auto update the text
+				$('#myCarousel').on('slid.bs.carousel', function (e) {
+					var id = $('.item.active').data('slide-number');
+					$('#carousel-text').html($('#slide-content-' + id).html());
+				});
+			}
+
+			Carousel();
 		}
 
 		constructor($scope: Extensions.IVideoScope) {

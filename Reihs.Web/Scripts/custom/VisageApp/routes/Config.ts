@@ -20,7 +20,7 @@
 					templateUrl: '/Templates/Front/Blog/Index.html',
 					controller: 'Blog'
 				}
-				).when('/Blog/:id',
+				).when('/Blog/:Id',
 				{
 					templateUrl: '/Templates/Front/Blog/Detail.html',
 					controller: 'Blog'

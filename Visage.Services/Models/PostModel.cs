@@ -11,6 +11,8 @@ namespace Reihs.Services.Models
 	{
 		public int Id { get; set; }
 
+		public DateTime Created { get; set; }
+
 		public int CategoryId { get; set; }
 
 		public IEnumerable<string> Tags { get; set; }

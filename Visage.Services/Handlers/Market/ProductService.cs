@@ -26,5 +26,17 @@ namespace Visage.Services.Handlers.Market
 		{
 			return ProductRepo.GetById(productId);
 		}
+
+
+		public void Delete(int productId)
+		{
+			ProductRepo.Remove(productId);
+		}
+
+
+		public void Save(mProduct product)
+		{
+			ProductRepo.Add(product);
+		}
 	}
 }

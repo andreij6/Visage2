@@ -22,5 +22,7 @@ namespace Reihs.Repository.Models.Market
 		public string Brand { get; set; }
 
 		public double UnitPrice { get; set; }
+
+		public string PayPalId { get; set; }
 	}
 }

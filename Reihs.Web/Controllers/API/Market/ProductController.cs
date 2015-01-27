@@ -33,6 +33,21 @@ namespace Reihs.Web.Controllers.API.Market
 			return ProductService.GetById(productId);
 		}
 
+		[Route("Post")]
+		[HttpPost]
+		public void SaveProduct(mProduct product)
+		{
+			ProductService.Save(product);
+		}
+
+
+		[Route("Delete/{productId:int}")]
+		[HttpDelete]
+		public void DeleteProduct(int productId)
+		{
+			ProductService.Delete(productId);
+		}
+
 		
 	}
 }

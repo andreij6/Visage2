@@ -9,14 +9,13 @@
 			<div class="row">
 
 				<div class="col-md-12">
-					<h4>Bootstrap Snipp for Datatable</h4>
+					<h4>Products List</h4>
 					<div class="table-responsive">
 
 						<table id="mytable" class="table table-bordred table-striped">
 
 							<thead>
 
-							<th><input type="checkbox" id="checkall" /></th>
 							<th>Name</th>
 							<th>Brand</th>
 							<th>Unit Price</th>
@@ -26,7 +25,6 @@
 							<tbody ng-repeat="product in Products">
 
 								<tr>
-									<td><input type="checkbox" class="checkthis" /></td>
 									<td>{{product.Name}}</td>
 									<td>{{product.Brand}}</td>
 									<td>{{product.UnitPrice}}</td>

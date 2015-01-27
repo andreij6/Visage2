@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-sm-6 hidden-xs text-right">
 				<ol class="breadcrumb">
-					<li><a href="#/">Market</a></li>
+					<li><a href="#/Market">Market</a></li>
 					<li>Home</li>
 				</ol>
 			</div>
@@ -17,11 +17,29 @@
 <div class="divide80"></div>
 <div class="container">
 	<div class="row">
-		<div class="col-md-3">
+		<div class="col-xs-3 visible-md visible-lg" style="height: 600px; overflow-y: scroll">
+			<h4>Others you might Like</h4>
+			<div class="divide15"></div>
+			<div class="thumbnail">
+				<h3 class="heading">Product Name</h3>
+				<img src="http://placehold.it/320x150" alt="">
+			</div>
+			<div class="thumbnail">
+				<h3 class="heading">Product Name</h3>
+				<img src="http://placehold.it/320x150" alt="">
+			</div>
+			<div class="thumbnail">
+				<h3 class="heading">Product Name</h3>
+				<img src="http://placehold.it/320x150" alt="">
+			</div>
+			<div class="thumbnail">
+				<h3 class="heading">Product Name</h3>
+				<img src="http://placehold.it/320x150" alt="">
+			</div>
 		</div>
 
 		<div class="col-md-8 col-md-offset-1">
-			<div class="mix col-sm-8 page1 page4 margin30 mix_all" style="display: inline-block; opacity: 1;">
+			<div class="mix col-md-8 page1 page4 margin30 mix_all" style="display: inline-block; opacity: 1;">
 				<div class="item-img-wrap ">
 					<img src="../../../Images/coffee-569178_1280.jpg" class="img-responsive" alt="coffee" />
 					<div class="item-img-overlay">
@@ -33,6 +51,7 @@
 				<div class="work-desc">
 					<h3><a href="portfolio-single.html">{{Product.Name}}</a></h3>
 					<span>Product Category or Brand slogan</span>
+					<button class="btn btn-theme-bg pull-right" ng-click="AddToCart(Product, Quantity)">Add To Cart</button>
 				</div><!--work desc-->
 			</div>
 			<div class="col-md-4 margin20 wow animated fadeInRight animated" style="visibility: visible; -webkit-animation: fadeInRight;">
@@ -42,33 +61,23 @@
 					</div><!--price title-->
 					<div class="price-price popular">
 						{{Product.UnitPrice | currency:"$"}}
-						<span>Per Month</span>
 					</div><!--price price-->
-					<div class="price-features">
-						<ul class="list-unstyled">
-							<li>{{Product.Brand}}</li>
-							<li>5 Email account</li>
-							<li>50 GB disk space</li>
-							<li>1 year validity</li>
-							<li>Phone / email support</li>
-						</ul>
-					</div><!--price features-->
 					<div class="price-action">
 					</div><!--price action-->
 				</div><!--price-wrap-->
 			</div>
-			<div class="col-md-12">
-				
-				<button class="btn btn-theme-bg btn-block" ng-click="AddToCart(Product, Quantity)">Add To Cart</button>
-				<label for="quantity">Quantity</label>
-				<input name="quantity" type="number" value="1" min="1" ng-model="Quantity"/>
-				<p class="lead">
-					{{Product.Name}}
-				</p><hr>
+			<div class="divide20"></div>
+			<section class="col-xs-12 clear">
+				<h3 class="heading">{{Product.Name}} Product Description</h3>
 				<p>
-					{{Product.Description}}
+					Bacon ipsum dolor amet tongue meatloaf shoulder, brisket sausage beef ribs pork chop pancetta corned beef tri-tip. Shank tri-tip drumstick prosciutto short loin rump ham hock flank biltong filet mignon. Ham hock kielbasa ball tip, andouille tri-tip meatloaf shank chuck picanha cow capicola. Landjaeger chicken turkey ball tip ham, jerky short ribs chuck bresaola hamburger pastrami meatball sirloin. Short loin doner frankfurter fatback, jerky shoulder porchetta salami. Pastrami landjaeger kevin, pig brisket short ribs pancetta rump.
 				</p>
-			</div>
+				<p>
+					Tenderloin rump jowl, beef corned beef bacon leberkas short loin t-bone kevin pastrami strip steak salami. Venison brisket shank short ribs shankle cupim bresaola flank short loin ribeye. Tongue short loin pig, chicken kevin rump fatback porchetta pancetta frankfurter andouille cow venison tail corned beef. Pork corned beef shankle shank sausage tri-tip andouille short loin drumstick pork belly turkey ham flank venison beef ribs. Shankle pig pork chop, tenderloin pancetta prosciutto jowl t-bone flank leberkas cupim pork loin. Ball tip cow pig, pork chop boudin ribeye ham hock alcatra shoulder tongue chuck. Turkey jerky drumstick cow, pork loin t-bone short loin bacon strip steak jowl pastrami.
+				</p>
+			</section>
 		</div>
 	</div>
 </div>
+
+

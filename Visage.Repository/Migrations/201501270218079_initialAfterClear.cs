@@ -1,9 +1,9 @@
-namespace Reihs.Repository.Migrations
+namespace Visage.Repository.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class mTags : DbMigration
+    public partial class initialAfterClear : DbMigration
     {
         public override void Up()
         {
@@ -38,7 +38,7 @@ namespace Reihs.Repository.Migrations
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.AspNetUsers", t => t.AuthorId)
-                .ForeignKey("dbo.bCategories", t => t.CategoryId, cascadeDelete: false)
+                .ForeignKey("dbo.bCategories", t => t.CategoryId, cascadeDelete: true)
                 .Index(t => t.CategoryId)
                 .Index(t => t.AuthorId);
             
@@ -119,6 +119,7 @@ namespace Reihs.Repository.Migrations
                         ImagePath = c.String(),
                         Brand = c.String(),
                         UnitPrice = c.Double(nullable: false),
+                        PayPalId = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -163,6 +164,25 @@ namespace Reihs.Repository.Migrations
                         Total = c.Decimal(nullable: false, precision: 18, scale: 2),
                         PaymentTransactionId = c.String(),
                         HasBeenShipped = c.Boolean(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.mPackages",
+                c => new
+                    {
+                        PackageId = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
+                        UnitPrice = c.Double(nullable: false),
+                    })
+                .PrimaryKey(t => t.PackageId);
+            
+            CreateTable(
+                "dbo.pTags",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -216,12 +236,27 @@ namespace Reihs.Repository.Migrations
                 .Index(t => t.mTags_Id)
                 .Index(t => t.mProduct_Id);
             
+            CreateTable(
+                "dbo.pTagsmPackages",
+                c => new
+                    {
+                        pTags_Id = c.Int(nullable: false),
+                        mPackage_PackageId = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => new { t.pTags_Id, t.mPackage_PackageId })
+                .ForeignKey("dbo.pTags", t => t.pTags_Id, cascadeDelete: true)
+                .ForeignKey("dbo.mPackages", t => t.mPackage_PackageId, cascadeDelete: true)
+                .Index(t => t.pTags_Id)
+                .Index(t => t.mPackage_PackageId);
+            
         }
         
         public override void Down()
         {
             DropForeignKey("dbo.CartItems", "ProductId", "dbo.mProducts");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
+            DropForeignKey("dbo.pTagsmPackages", "mPackage_PackageId", "dbo.mPackages");
+            DropForeignKey("dbo.pTagsmPackages", "pTags_Id", "dbo.pTags");
             DropForeignKey("dbo.mTagsmProducts", "mProduct_Id", "dbo.mProducts");
             DropForeignKey("dbo.mTagsmProducts", "mTags_Id", "dbo.mTags");
             DropForeignKey("dbo.bTagbPosts", "bPost_Id", "dbo.bPosts");
@@ -231,6 +266,8 @@ namespace Reihs.Repository.Migrations
             DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
+            DropIndex("dbo.pTagsmPackages", new[] { "mPackage_PackageId" });
+            DropIndex("dbo.pTagsmPackages", new[] { "pTags_Id" });
             DropIndex("dbo.mTagsmProducts", new[] { "mProduct_Id" });
             DropIndex("dbo.mTagsmProducts", new[] { "mTags_Id" });
             DropIndex("dbo.bTagbPosts", new[] { "bPost_Id" });
@@ -244,10 +281,13 @@ namespace Reihs.Repository.Migrations
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.bPosts", new[] { "AuthorId" });
             DropIndex("dbo.bPosts", new[] { "CategoryId" });
+            DropTable("dbo.pTagsmPackages");
             DropTable("dbo.mTagsmProducts");
             DropTable("dbo.bTagbPosts");
             DropTable("dbo.CartItems");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.pTags");
+            DropTable("dbo.mPackages");
             DropTable("dbo.Orders");
             DropTable("dbo.OrderDetails");
             DropTable("dbo.mTags");

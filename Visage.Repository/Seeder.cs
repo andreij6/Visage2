@@ -20,9 +20,9 @@ namespace Reihs.Repository
 		{
 			SeedUserInfo(context);
 
-			SeedBlogInfo(context);
+			//SeedBlogInfo(context);
 			
-			//SeedMarketInfo(context);
+			SeedMarketInfo(context);
 		}
 
 		#region Market Seeders
@@ -32,10 +32,10 @@ namespace Reihs.Repository
 			SeedClarisonic(context);
 			SeedRevitaLashProducts(context);
 			SeedEltaMDProducts(context);
-			SeedPackages(context);
-			SeedCartItems(context);
-			SeedOrderDetails(context);
-			SeedOrders(context);
+			//SeedPackages(context);
+			//SeedCartItems(context);
+			//SeedOrderDetails(context);
+			//SeedOrders(context);
 		}
 
 
@@ -56,7 +56,7 @@ namespace Reihs.Repository
 
 		private static void SeedSkinMedicaProducts(AppDB context)
 		{
-			context.mProducts.AddOrUpdate(x => x.Id,
+			context.mProducts.AddOrUpdate(x => x.Name,
 					new mProduct
 					{
 						Name = "Lytera® Skin Brightening Complex",
@@ -233,7 +233,7 @@ namespace Reihs.Repository
 
 		private static void SeedEltaMDProducts(AppDB context) 
 		{
-			context.mProducts.AddOrUpdate(x => x.Id,
+			context.mProducts.AddOrUpdate(x => x.Name,
 					new mProduct
 					{
 						Name = "Intense Moisturizer",
@@ -271,7 +271,7 @@ namespace Reihs.Repository
 
 		private static void SeedRevitaLashProducts(AppDB context) 
 		{
-			context.mProducts.AddOrUpdate(x => x.Id,
+			context.mProducts.AddOrUpdate(x => x.Name,
 				new mProduct
 				{
 					Name = "RevitaLash Advanced Formula",
@@ -284,7 +284,7 @@ namespace Reihs.Repository
 
 		private static void SeedClarisonic(AppDB context) 
 		{
-			context.mProducts.AddOrUpdate(x => x.Id,
+			context.mProducts.AddOrUpdate(x => x.Name,
 				new mProduct
 				{
 					Name = "Clarisonic Mia",
@@ -315,7 +315,7 @@ namespace Reihs.Repository
 
 		private static void SeedPackageCategories(AppDB context)
 		{
-			context.pCategories.AddOrUpdate(p => p.Id,
+			context.pCategories.AddOrUpdate(p => p.Name,
 					new pTags
 					{
 						Name = "Laser Vien Therapy"
@@ -468,7 +468,7 @@ namespace Reihs.Repository
 
 		private static void SeedPigmentation(AppDB context)
 		{
-			context.Packages.AddOrUpdate(x => x.PackageId,
+			context.Packages.AddOrUpdate(x => x.Name,
 					new mPackage { Name = "Package of 3 Treatments-Face Area", UnitPrice = 1580.0},
 					new mPackage { Name = "Package of 3 Treatments-Neck Area", UnitPrice = 1580.0},
 					new mPackage { Name = "Package of 3 Treatments-Chest Area", UnitPrice = 1580.0},
@@ -482,7 +482,7 @@ namespace Reihs.Repository
 
 		private static void SeedSkinTightening(AppDB context)
 		{
-			context.Packages.AddOrUpdate(x => x.PackageId,
+			context.Packages.AddOrUpdate(x => x.Name,
 					new mPackage { Name = "Face (Esthetician)", UnitPrice = 500.0},
 					new mPackage { Name = "Chest (Esthetician)", UnitPrice = 500.0},
 					new mPackage { Name = "Neck (Esthetician)", UnitPrice = 400.0},
@@ -495,7 +495,7 @@ namespace Reihs.Repository
 
 		private static void SeedBodyShaping(AppDB context)
 		{
-			context.Packages.AddOrUpdate(x => x.PackageId,
+			context.Packages.AddOrUpdate(x => x.Name,
 					new mPackage { Name = "One area (8 Treatments)", UnitPrice = 1600.0},
 
 					new mPackage { Name = "21 Days Program", UnitPrice = 295.0},
@@ -509,7 +509,7 @@ namespace Reihs.Repository
 
 		private static void SeedMicroDerm(AppDB context)
 		{
-			context.Packages.AddOrUpdate(x => x.PackageId,
+			context.Packages.AddOrUpdate(x => x.Name,
 					new mPackage { Name = "Package of 5 Micros", UnitPrice = 500.0},
 					new mPackage { Name = "6 Mo. Membership", UnitPrice = 70.0},
 					new mPackage { Name = "12 Mo. Memebership", UnitPrice = 65.0},
@@ -572,7 +572,7 @@ namespace Reihs.Repository
 
 		private static void SeedVeinReduction(AppDB context)
 		{
-			context.Packages.AddOrUpdate(x => x.PackageId,
+			context.Packages.AddOrUpdate(x => x.Name,
 					new mPackage { Name = "1 Treatment Area", UnitPrice = 75.0},
 					new mPackage { Name = "2 Treatment Areas", UnitPrice = 150.0},
 					new mPackage { Name = "3 Treatment Areas", UnitPrice = 225.0},

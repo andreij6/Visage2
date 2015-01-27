@@ -48,6 +48,7 @@ namespace Reihs.Repository.Adapters.Market.Product
 			{
 				var prod = db.mProducts.FirstOrDefault(x => x.Id == ProductId);
 				db.mProducts.Remove(prod);
+				db.SaveChanges();
 			}
 		}
 

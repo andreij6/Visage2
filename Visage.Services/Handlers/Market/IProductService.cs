@@ -12,5 +12,9 @@ namespace Visage.Services.Handlers.Market
 		IEnumerable<mProduct> GetAll();
 
 		mProduct GetById(int productId);
+
+		void Delete(int productId);
+
+		void Save(mProduct product);
 	}
 }

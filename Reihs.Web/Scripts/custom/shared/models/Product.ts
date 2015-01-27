@@ -7,5 +7,6 @@
 		ImagePath: string;
 		Brand: string;
 		UnitPrice: number;
+		PayPalId: string;
 	}
 } 

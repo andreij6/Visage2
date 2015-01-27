@@ -13,5 +13,6 @@
 		Clicks: number;
 		Tags: Array<bTags>;
 		Public: boolean;
+		Created: string;
 	}
 } 

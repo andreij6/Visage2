@@ -563,6 +563,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\directives\youtubeMenu.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\ContactAPIService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\MarketService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\PostDataService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\ProductService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IAboutScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IBlogScope.ts" />

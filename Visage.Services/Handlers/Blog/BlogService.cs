@@ -68,6 +68,7 @@ namespace Reihs.Services.Blog
 				{
 					Id = post.Id,
 					CategoryId = post.CategoryId,
+					Created = post.Created,
 					Tags = tags,
 					Title = post.Title,
 					Subtitle = post.Subtitle,

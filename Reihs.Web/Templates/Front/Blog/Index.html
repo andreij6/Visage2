@@ -17,11 +17,10 @@
 <div class="container blog-left-img">
 	<div class="row">
 		<div class="col-md-8">
-			<div class="blog-post">
-
+			<div class="blog-post" ng-repeat="post in Posts">
 				<div class="row">
 					<div class="col-md-6 margin20">
-						<a href="#/Blog/3">
+						<a href="#/Blog/{{post.Id}}">
 							<div class="item-img-wrap">
 								<img class="img-responsive" src="http://placehold.it/700x400" alt="">
 								<div class="item-img-overlay">
@@ -36,92 +35,9 @@
 							<li><i class="fa fa-calendar"></i> 31st july 2014</li>
 							<li><i class="fa fa-tag"></i> <a href="#">Sports</a></li>
 						</ul>
-						<h2><a href="#/Blog/3">Lorem ipsum dollor sit amet</a></h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
-						</p>
-						<p><a href="blog-single.html" class="btn btn-theme-dark">Read More...</a></p>
-					</div>
-				</div>
-			</div><!--blog post-->
-			<div class="blog-post">
-
-				<div class="row">
-					<div class="col-md-6 margin20">
-						<a href="#/Blog/3">
-							<div class="item-img-wrap">
-								<img class="img-responsive" src="http://placehold.it/700x400" alt="">
-								<div class="item-img-overlay">
-									<span></span>
-								</div>
-							</div>
-						</a><!--work link-->
-					</div>
-					<div class="col-md-6 margin20">
-						<ul class="list-inline post-detail">
-							<li>by <a href="#">assan</a></li>
-							<li><i class="fa fa-calendar"></i> 31st july 2014</li>
-							<li><i class="fa fa-tag"></i> <a href="#">Sports</a></li>
-						</ul>
-						<h2><a href="#/Blog/3">Lorem ipsum dollor sit amet</a></h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
-						</p>
-						<p><a href="#/Blog/3" class="btn btn-theme-dark">Read More...</a></p>
-					</div>
-				</div>
-			</div><!--blog post-->
-			<div class="blog-post">
-
-				<div class="row">
-					<div class="col-md-6 margin20">
-						<a href="#/Blog/3">
-							<div class="item-img-wrap">
-								<img class="img-responsive" src="http://placehold.it/700x400" alt="">
-								<div class="item-img-overlay">
-									<span></span>
-								</div>
-							</div>
-						</a><!--work link-->
-					</div>
-					<div class="col-md-6 margin20">
-						<ul class="list-inline post-detail">
-							<li>by <a href="#">assan</a></li>
-							<li><i class="fa fa-calendar"></i> 31st july 2014</li>
-							<li><i class="fa fa-tag"></i> <a href="#">Sports</a></li>
-						</ul>
-						<h2><a href="#/Blog/3">Lorem ipsum dollor sit amet</a></h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
-						</p>
-						<p><a href="#/Blog/3" class="btn btn-theme-dark">Read More...</a></p>
-					</div>
-				</div>
-			</div><!--blog post-->
-			<div class="blog-post">
-
-				<div class="row">
-					<div class="col-md-6 margin20">
-						<a href="#/Blog/3">
-							<div class="item-img-wrap">
-								<img class="img-responsive" src="http://placehold.it/700x400" alt="">
-								<div class="item-img-overlay">
-									<span></span>
-								</div>
-							</div>
-						</a><!--work link-->
-					</div>
-					<div class="col-md-6 margin20">
-						<ul class="list-inline post-detail">
-							<li>by <a href="#/About">assan</a></li>
-							<li><i class="fa fa-calendar"></i> 31st july 2014</li>
-							<li><i class="fa fa-tag"></i> <a href="#">Sports</a></li>
-						</ul>
-						<h2><a href="#">Lorem ipsum dollor sit amet</a></h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
-						</p>
-						<p><a href="#/Blog/3" class="btn btn-theme-dark">Read More...</a></p>
+						<h2><a href="#/Blog/{{post.Id}}">{{post.Title}}</a></h2>
+						<p>{{post.SubTitle}}</p>
+						<p><a href="#/Blog/{{post.Id}}" class="btn btn-theme-dark">Read More...</a></p>
 					</div>
 				</div>
 			</div><!--blog post-->

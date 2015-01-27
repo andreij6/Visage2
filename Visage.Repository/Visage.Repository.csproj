@@ -68,18 +68,11 @@
     <Compile Include="Adapters\User\IUserRepository.cs" />
     <Compile Include="Adapters\User\UserRepository.cs" />
     <Compile Include="DbContext.cs" />
-    <Compile Include="Migrations\201501170211508_mTags.cs" />
-    <Compile Include="Migrations\201501170211508_mTags.Designer.cs">
-      <DependentUpon>201501170211508_mTags.cs</DependentUpon>
+    <Compile Include="Migrations\201501270218079_initialAfterClear.cs" />
+    <Compile Include="Migrations\201501270218079_initialAfterClear.Designer.cs">
+      <DependentUpon>201501270218079_initialAfterClear.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201501181922397_addPackage.cs" />
-    <Compile Include="Migrations\201501181922397_addPackage.Designer.cs">
-      <DependentUpon>201501181922397_addPackage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201501190022333_pTagsAdded.cs" />
-    <Compile Include="Migrations\201501190022333_pTagsAdded.Designer.cs">
-      <DependentUpon>201501190022333_pTagsAdded.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Market\cTags.cs" />
     <Compile Include="Models\Market\mPackage.cs" />
     <Compile Include="Models\Market\pTags.cs" />
@@ -88,7 +81,6 @@
     <Compile Include="ViewModels\NewCategoryModel.cs" />
     <Compile Include="ViewModels\NewPostModel.cs" />
     <Compile Include="Models\Interfaces\IRate.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Audit.cs" />
     <Compile Include="Models\Blog\bCategory.cs" />
@@ -106,14 +98,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201501170211508_mTags.resx">
-      <DependentUpon>201501170211508_mTags.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201501181922397_addPackage.resx">
-      <DependentUpon>201501181922397_addPackage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201501190022333_pTagsAdded.resx">
-      <DependentUpon>201501190022333_pTagsAdded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201501270218079_initialAfterClear.resx">
+      <DependentUpon>201501270218079_initialAfterClear.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
