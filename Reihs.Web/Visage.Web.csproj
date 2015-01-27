@@ -352,10 +352,10 @@
     <Content Include="Content\Front\YouTubeMenu\component.css.map">
       <DependentUpon>component.css</DependentUpon>
     </Content>
-    <None Include="Properties\PublishProfiles\Visage.pubxml" />
     <Content Include="Scripts\defaults\angular\angular.min.js.map" />
     <Content Include="Scripts\defaults\angular\angular-route.min.js.map" />
     <Content Include="Scripts\defaults\angular\angular-sanitize.min.js.map" />
+    <None Include="Properties\PublishProfiles\Lebeau.pubxml" />
     <None Include="Scripts\defaults\jquery\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\defaults\jquery\jquery-1.10.2.js" />
     <Content Include="Scripts\defaults\jquery\jquery-1.10.2.min.js" />
@@ -446,7 +446,9 @@
     <Content Include="Templates\Front\Treatments\Partials\VeinReduce.html" />
     <Content Include="Templates\Front\Videos\Single.html" />
     <Content Include="Templates\Front\Videos\Index.html" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

@@ -10,6 +10,7 @@ using Reihs.Repository.Models.Blog;
 using Reihs.Repository.Models.Market;
 using Visage.Repository;
 using Visage.Repository.Models.Market;
+using Visage.Repository.Models.Ticker;
 
 namespace Reihs.Repository
 {
@@ -39,6 +40,9 @@ namespace Reihs.Repository
 		public DbSet<Order> Orders { get; set; }
 		public DbSet<OrderDetail> OrderDetails { get; set; }
 		public DbSet<mPackage> Packages { get; set; }
+
+		//TickerItems
+		public DbSet<TickerItem> TickerItems { get; set; }
 
 	}
 }

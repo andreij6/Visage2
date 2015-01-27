@@ -3588,6 +3588,7 @@ interface JQuery {
 	add(obj: JQuery): JQuery;
 
 	affix(obj: any): void;
+	carousel(obj: any): void;
 
     /**
      * Get the children of each element in the set of matched elements, optionally filtered by a selector.

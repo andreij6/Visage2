@@ -1,4 +1,20 @@
-﻿<div id="lightbox" ng-show="Showing" ng-click="Showing = false">
+﻿<div class="breadcrumb-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h4>Photo Gallery</h4>
+			</div>
+			<div class="col-sm-6 hidden-xs text-right">
+				<ol class="breadcrumb">
+					<li><a href="#/">Le Beau Visage</a></li>
+					<li>Gallery</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="divide40"></div>
+<div id="lightbox" ng-show="Showing" ng-click="Showing = false">
 	<p>Click to close</p>
 	<div id="content">
 		<img ng-src="{{Image}}" id="lighbox-img" />

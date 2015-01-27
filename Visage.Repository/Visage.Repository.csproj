@@ -72,10 +72,15 @@
     <Compile Include="Migrations\201501270218079_initialAfterClear.Designer.cs">
       <DependentUpon>201501270218079_initialAfterClear.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201501270512056_addTicker.cs" />
+    <Compile Include="Migrations\201501270512056_addTicker.Designer.cs">
+      <DependentUpon>201501270512056_addTicker.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Market\cTags.cs" />
     <Compile Include="Models\Market\mPackage.cs" />
     <Compile Include="Models\Market\pTags.cs" />
+    <Compile Include="Models\Ticker\Ticker.cs" />
     <Compile Include="ViewModels\bCategoryModel.cs" />
     <Compile Include="ViewModels\ContactMessage.cs" />
     <Compile Include="ViewModels\NewCategoryModel.cs" />
@@ -100,6 +105,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201501270218079_initialAfterClear.resx">
       <DependentUpon>201501270218079_initialAfterClear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201501270512056_addTicker.resx">
+      <DependentUpon>201501270512056_addTicker.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
