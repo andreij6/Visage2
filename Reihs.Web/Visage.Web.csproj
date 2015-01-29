@@ -257,6 +257,10 @@
     <Content Include="Content\Front\YouTubeMenu\component1.css" />
     <Content Include="Content\Images\Banner1.jpg" />
     <Content Include="Content\Images\Banner2.jpg" />
+    <Content Include="Content\Images\Banner3.jpg" />
+    <Content Include="Content\Images\Blog\Feb15_Promo.jpg" />
+    <Content Include="Content\Images\Blog\Jan15_Promo.jpg" />
+    <Content Include="Content\Images\Blog\LBVSchDates_Promo.jpg" />
     <Content Include="Content\Images\coffee-569178_1280.jpg" />
     <Content Include="Content\Images\DrJMRiehs_600x600.jpg" />
     <Content Include="Content\Images\Gallery\Banner3.jpg" />
@@ -305,6 +309,9 @@
     <Content Include="Images\Banner1.jpg" />
     <Content Include="Images\Banner2.jpg" />
     <Content Include="Images\Banner3.jpg" />
+    <Content Include="Images\Blog\Feb15_Promo.jpg" />
+    <Content Include="Images\Blog\Jan15_Promo.jpg" />
+    <Content Include="Images\Blog\LBVSchDates_Promo.jpg" />
     <Content Include="Images\coffee-569178_1280.jpg" />
     <Content Include="Images\DrJMRiehs_600x600.jpg" />
     <Content Include="Images\LBVfull_C4.png" />
