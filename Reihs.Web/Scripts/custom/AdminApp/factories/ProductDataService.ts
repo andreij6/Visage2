@@ -72,6 +72,13 @@
 		update(product: Extensions.Product): ng.IPromise<any> {
 			var self = this;
 			var deferred = self.qService.defer();
+
+			self.httpService.put(self.ProductAPI + '/Edit/' + product.Id, product).then(
+				function (result) {
+					console.log(result);
+				},
+				function (error) { deferred.reject(error); });
+
 			return deferred.promise;
 		}
 

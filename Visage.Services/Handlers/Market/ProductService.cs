@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Visage.Repository.ViewModels;
 
 namespace Visage.Services.Handlers.Market
 {
@@ -33,10 +34,24 @@ namespace Visage.Services.Handlers.Market
 			ProductRepo.Remove(productId);
 		}
 
-
-		public void Save(mProduct product)
+		public void Save(NewProductModel product)
 		{
-			ProductRepo.Add(product);
+			mProduct newProd = new mProduct();
+
+			newProd.Brand = product.Brand;
+			newProd.Categories = product.Categories;
+			newProd.Description = product.Description;
+			newProd.ImagePath = product.ImagePath;
+			newProd.Name = product.Name;
+			newProd.PayPalId = product.PayPalId;
+			newProd.UnitPrice = product.UnitPrice;
+
+			ProductRepo.Add(newProd);
+		}
+
+		public void Update(int ProductId, NewProductModel value)
+		{
+			ProductRepo.Update(ProductId, value);
 		}
 	}
 }

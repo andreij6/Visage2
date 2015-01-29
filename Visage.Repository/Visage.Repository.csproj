@@ -99,6 +99,7 @@
     <Compile Include="Models\Market\OrderDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seeder.cs" />
+    <Compile Include="ViewModels\NewProductModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

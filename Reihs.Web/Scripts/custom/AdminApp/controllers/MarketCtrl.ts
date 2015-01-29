@@ -29,23 +29,6 @@
 					});
 			}
 
-			function edit() { }
-
-			function deleteProduct(Product: Extensions.Product) {
-				self.ProductSvc.deleteProduct(Product).then(
-					function (data) {
-						console.log(data);
-					}, function (error) { HandleFailedAPI(error) });
-			}
-
-			function save(Product: Extensions.Product) { }
-
-			function getSingle(Id: number) { }
-
-			self.$scope.Update = edit;
-			self.$scope.Delete = deleteProduct;
-			self.$scope.Save = save;
-			self.$scope.GetById = getSingle;
 			self.$scope.GetAll = getAll;
 
 			self.init();

@@ -17,7 +17,7 @@ namespace Reihs.Repository.Adapters.Market.Product
 
 		void Remove(int ProductId);
 
-		void Update(int ProductId, mProduct product);
+		void Update(int ProductId, IProduct product);
 
 	}
 }

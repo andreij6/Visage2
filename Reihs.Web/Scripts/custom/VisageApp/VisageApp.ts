@@ -5,7 +5,7 @@
 
 module VisageApp {
 
-	var VisageApp = angular.module("VisageApp", ['ngRoute', 'ngSanitize', 'ui.bootstrap']);
+	var VisageApp = angular.module("VisageApp", ['ngRoute', 'ngSanitize', 'ui.bootstrap', 'angular-loading-bar']);
 
 	Config.$inject = ['$routeProvider'];
 

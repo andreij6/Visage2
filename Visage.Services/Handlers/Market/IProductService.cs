@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Visage.Repository.ViewModels;
 
 namespace Visage.Services.Handlers.Market
 {
@@ -15,6 +16,8 @@ namespace Visage.Services.Handlers.Market
 
 		void Delete(int productId);
 
-		void Save(mProduct product);
+		void Save(NewProductModel product);
+
+		void Update(int ProductId, NewProductModel value);
 	}
 }

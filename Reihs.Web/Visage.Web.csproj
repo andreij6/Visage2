@@ -220,6 +220,7 @@
       <DependentUpon>Colors.css</DependentUpon>
     </Content>
     <Content Include="Content\Front\li-scroller.css" />
+    <Content Include="Content\Front\loading-bar\loading-bar.css" />
     <Content Include="Content\Front\s3slider.css" />
     <Content Include="Content\Front\theme\animate.css" />
     <Content Include="Content\Front\theme\Colors.css">
@@ -346,6 +347,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom\scripts\li-scroller-starter.js" />
     <Content Include="Scripts\custom\scripts\navBar.js" />
+    <Content Include="Scripts\Plugins\angular-loading-bar\loading-bar.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.min.js" />
     <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.js" />
@@ -579,6 +581,7 @@
     <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\Index.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\LayoutCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\MarketCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\ProductCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\controllers\TickerCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\bCategoryDataService.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\mCategoryDataService.ts" />
@@ -589,6 +592,7 @@
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IIndexScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\ILayoutScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IMarketScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IProductScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\ITickerScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\routes\Config.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\interfaces\IRouteParams.ts" />

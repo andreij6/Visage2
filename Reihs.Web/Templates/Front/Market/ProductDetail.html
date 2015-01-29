@@ -51,7 +51,7 @@
 				<div class="work-desc">
 					<h3><a href="portfolio-single.html">{{Product.Name}}</a></h3>
 					<span>Product Category or Brand slogan</span>
-					<button class="btn btn-theme-bg pull-right" ng-click="AddToCart(Product, Quantity)">Add To Cart</button>
+					<button class="btn btn-theme-bg pull-right">Add To Cart</button>
 				</div><!--work desc-->
 			</div>
 			<div class="col-md-4 margin20 wow animated fadeInRight animated" style="visibility: visible; -webkit-animation: fadeInRight;">
@@ -68,13 +68,8 @@
 			</div>
 			<div class="divide20"></div>
 			<section class="col-xs-12 clear">
-				<h3 class="heading">{{Product.Name}} Product Description</h3>
-				<p>
-					Bacon ipsum dolor amet tongue meatloaf shoulder, brisket sausage beef ribs pork chop pancetta corned beef tri-tip. Shank tri-tip drumstick prosciutto short loin rump ham hock flank biltong filet mignon. Ham hock kielbasa ball tip, andouille tri-tip meatloaf shank chuck picanha cow capicola. Landjaeger chicken turkey ball tip ham, jerky short ribs chuck bresaola hamburger pastrami meatball sirloin. Short loin doner frankfurter fatback, jerky shoulder porchetta salami. Pastrami landjaeger kevin, pig brisket short ribs pancetta rump.
-				</p>
-				<p>
-					Tenderloin rump jowl, beef corned beef bacon leberkas short loin t-bone kevin pastrami strip steak salami. Venison brisket shank short ribs shankle cupim bresaola flank short loin ribeye. Tongue short loin pig, chicken kevin rump fatback porchetta pancetta frankfurter andouille cow venison tail corned beef. Pork corned beef shankle shank sausage tri-tip andouille short loin drumstick pork belly turkey ham flank venison beef ribs. Shankle pig pork chop, tenderloin pancetta prosciutto jowl t-bone flank leberkas cupim pork loin. Ball tip cow pig, pork chop boudin ribeye ham hock alcatra shoulder tongue chuck. Turkey jerky drumstick cow, pork loin t-bone short loin bacon strip steak jowl pastrami.
-				</p>
+				<h3 class="heading">{{Product.Name}}</h3>
+				<div ng-bind-html="Product.Description"></div>
 			</section>
 		</div>
 	</div>

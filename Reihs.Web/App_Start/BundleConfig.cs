@@ -36,6 +36,7 @@ namespace Reihs.Web
 						"~/Scripts/custom/AdminApp/controllers/MarketCtrl.js",
 						"~/Scripts/custom/AdminApp/controllers/Index.js",
 						"~/Scripts/custom/AdminApp/controllers/TickerCtrl.js",
+						"~/Scripts/custom/AdminApp/controllers/ProductCtrl.js",
 						"~/Scripts/custom/AdminApp/factories/bCategoryDataService.js",
 						"~/Scripts/custom/AdminApp/factories/PostDataService.js",
 						"~/Scripts/custom/AdminApp/factories/mCategoryDataService.js",
@@ -46,6 +47,7 @@ namespace Reihs.Web
 					));
 
 			bundles.Add(new ScriptBundle("~/bundles/VisageApp").Include(
+						"~/Scripts/Plugins/angular-loading-bar/loading-bar.js",
 						"~/Scripts/custom/VisageApp/controllers/LayoutCtrl.js",
 						"~/Scripts/custom/VisageApp/controllers/HeaderCtrl.js",
 						"~/Scripts/custom/VisageApp/controllers/Resources.js",
@@ -118,6 +120,7 @@ namespace Reihs.Web
 					));
 
 			bundles.Add(new StyleBundle("~/Content/Front/css").Include(
+					"~/Content/Front/loading-bar/loading-bar.css",
 					"~/Content/Front/s3slider.css",
 					"~/Content/Front/li-scroller.css",
 					"~/Content/Front/Visage.css"));

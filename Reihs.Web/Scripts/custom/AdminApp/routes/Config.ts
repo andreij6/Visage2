@@ -41,11 +41,11 @@
 				}).when('/Market/Products/New',
 				{
 					templateUrl: 'Templates/Admin/Market/Products/CreateEdit.html',
-					controller: 'MarketCtrl'
-				}).when('/Market/Products/Edit/:id',
+					controller: 'ProductCtrl'
+				}).when('/Market/Products/Edit/:Id',
 				{
 					templateUrl: 'Templates/Admin/Market/Products/CreateEdit.html',
-					controller: 'MarketCtrl'
+					controller: 'ProductCtrl'
 				}).when('/Ticker',
 				{
 					templateUrl: 'Templates/Admin/Ticker/List.html',

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Visage.Repository.ViewModels;
 using Visage.Services.Handlers.Market;
 
 namespace Reihs.Web.Controllers.API.Market
@@ -33,11 +34,18 @@ namespace Reihs.Web.Controllers.API.Market
 			return ProductService.GetById(productId);
 		}
 
+		[Route("Edit/{ProductId:int}")]
+		[HttpPut]
+		public void EditProduct(int ProductId, [FromBody] NewProductModel value)
+		{
+			ProductService.Update(ProductId, value);
+		}
+
 		[Route("Post")]
 		[HttpPost]
-		public void SaveProduct(mProduct product)
+		public void SaveProduct([FromBody]NewProductModel value)
 		{
-			ProductService.Save(product);
+			ProductService.Save(value);
 		}
 
 

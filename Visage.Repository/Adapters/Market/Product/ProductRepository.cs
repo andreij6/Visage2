@@ -52,7 +52,7 @@ namespace Reihs.Repository.Adapters.Market.Product
 			}
 		}
 
-		public void Update(int ProductId, mProduct product)
+		public void Update(int ProductId, IProduct product)
 		{
 			using (AppDB db = new AppDB())
 			{
