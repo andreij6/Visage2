@@ -16,7 +16,6 @@ namespace Reihs.Web.Controllers
 			string key = WebConfigurationManager.AppSettings["GoogleMapsAPI"];
 
 			ViewBag.Gmaps = String.Format("https://maps.googleapis.com/maps/api/js?key={0}", key);
-
 			return View();
 		}
 
