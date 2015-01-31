@@ -297,6 +297,9 @@
     <Content Include="Content\Images\Products\Ultra_Sheer_Moisturizer_2oz.png" />
     <Content Include="Content\Images\Products\Uplifting_Eye_Serum.png" />
     <Content Include="Content\Images\Products\Vitamin_C_E_Complex_1oz.png" />
+    <Content Include="Content\Images\Videos\ClientStory.jpg" />
+    <Content Include="Content\Images\Videos\Promo.jpg" />
+    <Content Include="Content\Images\Videos\Welcome.jpg" />
     <Content Include="Content\Images\Zoom.ico" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\mother.jpg" />
@@ -349,6 +352,9 @@
     <Content Include="Images\Products\Ultra_Sheer_Moisturizer_2oz.png" />
     <Content Include="Images\Products\Uplifting_Eye_Serum.png" />
     <Content Include="Images\Products\Vitamin_C_E_Complex_1oz.png" />
+    <Content Include="Images\Videos\ClientStory.jpg" />
+    <Content Include="Images\Videos\Promo.jpg" />
+    <Content Include="Images\Videos\Welcome.jpg" />
     <Content Include="Images\winter.jpg" />
     <Content Include="Images\Zoom.ico" />
     <Content Include="Scripts\bootstrap.js" />

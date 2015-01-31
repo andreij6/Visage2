@@ -2131,4 +2131,9 @@ label span {
   background: #121214;
   border-radius: 5px; }
 
+.selectpicker {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  padding: 2px; }
+
 /*# sourceMappingURL=Theme.css.map */
