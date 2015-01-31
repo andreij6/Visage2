@@ -185,6 +185,7 @@
     <Compile Include="Controllers\API\Market\MarketController.cs" />
     <Compile Include="Controllers\API\Market\PayPalController.cs" />
     <Compile Include="Controllers\API\Market\ProductController.cs" />
+    <Compile Include="Controllers\API\VideoController.cs" />
     <Compile Include="Controllers\MVC\AccountController.cs" />
     <Compile Include="Controllers\MVC\AdminController.cs" />
     <Compile Include="Controllers\MVC\HomeController.cs" />

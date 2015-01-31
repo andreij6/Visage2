@@ -11,6 +11,7 @@ using Reihs.Repository.Models.Market;
 using Visage.Repository;
 using Visage.Repository.Models.Market;
 using Visage.Repository.Models.Ticker;
+using Visage.Repository.Models.Videos;
 
 namespace Reihs.Repository
 {
@@ -43,6 +44,9 @@ namespace Reihs.Repository
 
 		//TickerItems
 		public DbSet<TickerItem> TickerItems { get; set; }
+
+		//Videos
+		public DbSet<Video> Videos { get; set; }
 
 	}
 }

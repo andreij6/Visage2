@@ -76,6 +76,8 @@
     <Compile Include="Handlers\Market\PayPal.cs" />
     <Compile Include="Handlers\Market\ProductService.cs" />
     <Compile Include="Handlers\Market\ShoppingCartService.cs" />
+    <Compile Include="Handlers\Videos\IVideoService.cs" />
+    <Compile Include="Handlers\Videos\VideoService.cs" />
     <Compile Include="Models\PostModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

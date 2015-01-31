@@ -11,6 +11,7 @@ using Reihs.Repository.Models;
 using Microsoft.AspNet.Identity;
 using Reihs.Repository.Models.Market;
 using Visage.Repository.Models.Market;
+using Visage.Repository.Models.Videos;
 
 namespace Reihs.Repository
 {
@@ -691,6 +692,55 @@ namespace Reihs.Repository
 				);
 		}
 
+		#endregion
+
+		#region Video Seeders
+		private static void SeedVideos(AppDB context)
+		{
+			context.Videos.AddOrUpdate(x => x.Name,
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+								
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/"}
+				);
+		}
 		#endregion
 	}
 }

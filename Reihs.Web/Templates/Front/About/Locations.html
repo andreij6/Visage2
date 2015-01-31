@@ -50,34 +50,53 @@
 					<h3 class="heading">
 						<span id="{{Locations[Active].Name}}">{{Locations[Active].Name}} </span>
 						<span class="pull-right">
-							<small>| <a ng-click="SetActive(Others[0].Name)" id="{{Others[0].Name}}">{{Others[0].Name}}</a></small>
-							<small>| <a ng-click="SetActive(Others[1].Name)" id="{{Others[1].Name}}">{{Others[1].Name}}</a></small>
+							<p>| <a ng-click="SetActive(Others[0].Name)" id="{{Others[0].Name}}">{{Others[0].Name}}</a></p>
+							<p>| <a ng-click="SetActive(Others[1].Name)" id="{{Others[1].Name}}">{{Others[1].Name}}</a></p>
 						</span>
 					</h3><!--Frisco Location-->
-					<p>
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.
+					<div class="divide40"></div>
+					<div class="col-md-12">
 						<div class="col-md-6">
 							<img src="../../Images/mother.jpg" class="img-responsive pull-right" alt="" />
 						</div>
-					</p>
-					<ul class="list-unstyled contact contact-info">
-						<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">{{Locations[Active].Address}}</a></p></li>
-						<li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">{{Locations[Active].Email}}</a></p></li>
-						<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="{{Locations[Active].Phonetel}}">{{Locations[Active].Phone}}</a></p></li>
-						<li> <p><strong><i class="fa fa-phone"></i> Toll:</strong> <a href="{{Locations[Active].Tolltell}}>{{Locations[Active].Toll}}</a></p></li>
-					</ul>
 
+						<ul class="list-unstyled contact contact-info">
+							<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">{{Locations[Active].Address}}</a></p></li>
+							<li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">{{Locations[Active].Email}}</a></p></li>
+							<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="{{Locations[Active].Phonetel}}">{{Locations[Active].Phone}}</a></p></li>
+							<li>st<p><strong><i class="fa fa-phone"></i> Toll:</strong> <a href="{{Locations[Active].Tolltel}}">{{Locations[Active].Toll}}</a></p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="divide30"></div>
+				<div class="col-md-12">
+					<h3 class="heading">Services</h3>
+					<div ng-repeat="service in Locations[Active].Services" class="col-md-12 clear">
+						<h4>{{service.category}}</h4>
+
+						<p ng-repeat="treatment in service.treatments" class="col-md-4">
+							{{service.treatments[$index]}}
+						</p>
+					</div>
 				</div>
 
+
+
 			</section>
+				
+
+			</section>
+			
+
+			
 			<div class="divide80"></div>
 		</div>
 	</div>
-	<ul class="nav nav-pills nav-justified">
+	<!--<ul class="nav nav-pills nav-justified">
 		<li class="{{Frisco.Active}}" ng-click="SetActive(Frisco.Name)"><a>Frisco</a></li>
 		<li class="{{Dallas.Active}}" ng-click="SetActive(Dallas.Name)"><a>Dallas</a></li>
 		<li class="{{LaSchl.Active}}" ng-click="SetActive(LaSchl.Name)"><a>Schlenburg/ LaGrange</a></li>
-	</ul>
+	</ul>-->
 </div>
 
 <div class="breadcrumb-wrap">

@@ -13,6 +13,15 @@
 
 			self.init();
 
+			var services = [
+				{ category: "Wrinkle Reduction", treatments: ["Botox", "Dysport"] },
+				{ category: "Fillers", treatments: ["Restylane", 'Restylane Silk', 'Perlane', 'Juvederm', 'Voluma', 'Sculptra'] },
+				{ category: 'Vein Reduction', treatments: ['Laser Vein Therapy', 'Sclerotherapy'] },
+				{ category: 'Pigmentation', treatments: ['IPL Photo Facial', 'Chemical Peels'] },
+				{ category: 'Fat Reduction', treatments: ['HCG Diet', 'LipoDissolve'] },
+				{ category: 'Microdermabrasion' }, { category: 'Laser Hair Removal' }, { category: 'Skin Resurfacing'}
+			]
+
 			//#region Location Objects
 			var Frisco =
 				{
@@ -24,33 +33,33 @@
 					Phonetel: 'tel:+12147057676',
 					Toll: '+1 866 54 BOTOX',
 					Tolltell: 'tel:+18665426869',
-					Services: [],
+					Services: services,
 					MapUrl: ''
 				};
 			var Dallas =
 				{
 					Active: '',
 					Name: 'Dallas',
-					Address: '',
+					Address: 'Lovers Lane',
 					Email: 'info@lebeauvisagemedspa.com',
-					Phone: '',
-					Phonetel: '',
+					Phone: '+214 705 7676',
+					Phonetel: 'tel:+12147057676',
 					Toll: '+1 866 54 BOTOX',
 					Tolltel: 'tel:+18665426869',
-					Services: [],
+					Services: services,
 					MapUrl: ''
 				};
 			var LaSchl =
 				{
 					Active: '',
 					Name: 'La Grange-Schulenburg',
-					Address: '',
+					Address: '40 East Avenue Schulenburg, TX 78956',
 					Email: 'info@lebeauvisagemedspa.com',
-					Phone: '',
-					Phonetel: '',
+					Phone: '+214 705 7676',
+					Phonetel: 'tel:+12147057676',
 					Toll: '+1 866 54 BOTOX',
 					Tolltel: 'tel:+18665426869',
-					Services: [],
+					Services: services,
 					MapUrl: ''
 				};
 			//#endregion

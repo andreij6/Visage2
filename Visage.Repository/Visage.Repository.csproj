@@ -69,6 +69,8 @@
     <Compile Include="Adapters\Ticker\TickerItemRepository.cs" />
     <Compile Include="Adapters\User\IUserRepository.cs" />
     <Compile Include="Adapters\User\UserRepository.cs" />
+    <Compile Include="Adapters\Video\IVideoRepository.cs" />
+    <Compile Include="Adapters\Video\VideoRepository.cs" />
     <Compile Include="DbContext.cs" />
     <Compile Include="Migrations\201501270218079_initialAfterClear.cs" />
     <Compile Include="Migrations\201501270218079_initialAfterClear.Designer.cs">
@@ -78,11 +80,17 @@
     <Compile Include="Migrations\201501270512056_addTicker.Designer.cs">
       <DependentUpon>201501270512056_addTicker.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201501311642539_addVideosTable.cs" />
+    <Compile Include="Migrations\201501311642539_addVideosTable.Designer.cs">
+      <DependentUpon>201501311642539_addVideosTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Market\cTags.cs" />
     <Compile Include="Models\Market\mPackage.cs" />
     <Compile Include="Models\Market\pTags.cs" />
     <Compile Include="Models\Ticker\Ticker.cs" />
+    <Compile Include="Models\Videos\IVideo.cs" />
+    <Compile Include="Models\Videos\Video.cs" />
     <Compile Include="ViewModels\bCategoryModel.cs" />
     <Compile Include="ViewModels\ContactMessage.cs" />
     <Compile Include="ViewModels\NewCategoryModel.cs" />
@@ -100,6 +108,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seeder.cs" />
     <Compile Include="ViewModels\NewProductModel.cs" />
+    <Compile Include="ViewModels\VideoModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -111,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201501270512056_addTicker.resx">
       <DependentUpon>201501270512056_addTicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201501311642539_addVideosTable.resx">
+      <DependentUpon>201501311642539_addVideosTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
