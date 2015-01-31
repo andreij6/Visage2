@@ -273,8 +273,10 @@
     <Content Include="Content\Images\Products\AHABHA_Cream_2oz-copy.png" />
     <Content Include="Content\Images\Products\ClarisonicMia.jpg" />
     <Content Include="Content\Images\Products\ClarisonicPro.jpg" />
+    <Content Include="Content\Images\Products\Clarisonic_Banner.jpg" />
     <Content Include="Content\Images\Products\Daily-Physical-Defense_SPF30_3oz.png" />
     <Content Include="Content\Images\Products\Dermal_Repair_1_7oz.png" />
+    <Content Include="Content\Images\Products\EltaMD_Banner.jpg" />
     <Content Include="Content\Images\Products\EltaMD_IntenseMoisturizer.jpg" />
     <Content Include="Content\Images\Products\EltaMD_UVClear46SPF.jpg" />
     <Content Include="Content\Images\Products\EltaMD_UVDaily40SPF.jpg" />
@@ -288,6 +290,7 @@
     <Content Include="Content\Images\Products\Rejuvenative_Toner_6oz-copy.png" />
     <Content Include="Content\Images\Products\RevitaLash_AdvForm.jpg" />
     <Content Include="Content\Images\Products\Sensitive_Skin_Cleanser_6oz-copy.png" />
+    <Content Include="Content\Images\Products\SkinMedica_Banner.jpg" />
     <Content Include="Content\Images\Products\Skin_Polisher_2oz-copy.png" />
     <Content Include="Content\Images\Products\TNS_Ceramide_Treatment_Cream_2oz.png" />
     <Content Include="Content\Images\Products\TNS_Essential_Serum_1oz.png" />
@@ -325,8 +328,10 @@
     <Content Include="Images\Products\AHABHA_Cream_2oz-copy.png" />
     <Content Include="Images\Products\ClarisonicMia.jpg" />
     <Content Include="Images\Products\ClarisonicPro.jpg" />
+    <Content Include="Images\Products\Clarisonic_Banner.jpg" />
     <Content Include="Images\Products\Daily-Physical-Defense_SPF30_3oz.png" />
     <Content Include="Images\Products\Dermal_Repair_1_7oz.png" />
+    <Content Include="Images\Products\EltaMD_Banner.jpg" />
     <Content Include="Images\Products\EltaMD_IntenseMoisturizer.jpg" />
     <Content Include="Images\Products\EltaMD_UVClear46SPF.jpg" />
     <Content Include="Images\Products\EltaMD_UVDaily40SPF.jpg" />
@@ -340,6 +345,7 @@
     <Content Include="Images\Products\Rejuvenative_Toner_6oz-copy.png" />
     <Content Include="Images\Products\RevitaLash_AdvForm.jpg" />
     <Content Include="Images\Products\Sensitive_Skin_Cleanser_6oz-copy.png" />
+    <Content Include="Images\Products\SkinMedica_Banner.jpg" />
     <Content Include="Images\Products\Skin_Polisher_2oz-copy.png" />
     <Content Include="Images\Products\TNS_Ceramide_Treatment_Cream_2oz.png" />
     <Content Include="Images\Products\TNS_Essential_Serum_1oz.png" />
