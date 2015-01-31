@@ -21,7 +21,7 @@ namespace Reihs.Repository
 			SeedUserInfo(context);
 
 			//SeedBlogInfo(context);
-			
+
 			SeedMarketInfo(context);
 		}
 
@@ -41,186 +41,158 @@ namespace Reihs.Repository
 
 		private static void SeedOrders(AppDB context)
 		{
-			
+
 		}
 
 		private static void SeedOrderDetails(AppDB context)
 		{
-			
+
 		}
 
 		private static void SeedCartItems(AppDB context)
 		{
-			
+
 		}
 
 		private static void SeedSkinMedicaProducts(AppDB context)
 		{
 			context.mProducts.AddOrUpdate(x => x.Name,
-					new mProduct
-					{
+					new mProduct {
 						Name = "Lytera® Skin Brightening Complex",
 						Brand = "SkinMedica",
 						UnitPrice = 125.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "AHA / BHA Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 46.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "AHA/BHA Cream",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Daily Physical Defense® Sunscreen Broad Spectrum SPF 30+",
 						Brand = "SkinMedica",
 						UnitPrice = 46.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Dermal Repair Cream",
 						Brand = "SkinMedica",
 						UnitPrice = 124.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Environmental Defense Sunscreen™ SPF 50+ with UV ProPlex™",
 						Brand = "SkinMedica",
 						UnitPrice = 46.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Facial Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Hydrating Complex",
 						Brand = "SkinMedica",
 						UnitPrice = 84.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Purifying Foaming Wash",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Redness Relief CalmPlex",
 						Brand = "SkinMedica",
 						UnitPrice = 84.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Rejuvenative Moisturizer",
 						Brand = "SkinMedica",
 						UnitPrice = 56.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Rejuvenative Toner",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Retinol Complex .25",
 						Brand = "SkinMedica",
 						UnitPrice = 60.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Retinol Complex 0.5",
 						Brand = "SkinMedica",
 						UnitPrice = 75.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Retinol Complex 1.0",
 						Brand = "SkinMedica",
 						UnitPrice = 90.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Scar Recovery Gel with Centelline™ (0.5 Oz.)",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Scar Recovery Gel with Centelline™ (2 Oz.)",
 						Brand = "SkinMedica",
 						UnitPrice = 98.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Sensitive Skin Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "TNS Ceramide Treatment Cream™",
 						Brand = "SkinMedica",
 						UnitPrice = 66.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "TNS Essential Serum®",
 						Brand = "SkinMedica",
 						UnitPrice = 270.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "TNS Eye Repair™",
 						Brand = "SkinMedica",
 						UnitPrice = 98.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "TNS Illuminating Eye Cream®",
 						Brand = "SkinMedica",
 						UnitPrice = 88.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "TNS Lip Plump System®",
 						Brand = "SkinMedica",
 						UnitPrice = 58.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "TNS Recovery Complex®",
 						Brand = "SkinMedica",
 						UnitPrice = 172.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "TNS Ultimate Daily Moisturizer™ SPF 20 Sunscreen",
 						Brand = "SkinMedica",
 						UnitPrice = 88.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Ultra Sheer Moisturizer",
 						Brand = "SkinMedica",
 						UnitPrice = 56.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Uplifting Eye Serum™",
 						Brand = "SkinMedica",
 						UnitPrice = 58.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "Vitamin C+E Complex",
 						Brand = "SkinMedica",
 						UnitPrice = 98.0
@@ -231,35 +203,30 @@ namespace Reihs.Repository
 			context.SaveChanges();
 		}
 
-		private static void SeedEltaMDProducts(AppDB context) 
+		private static void SeedEltaMDProducts(AppDB context)
 		{
 			context.mProducts.AddOrUpdate(x => x.Name,
-					new mProduct
-					{
+					new mProduct {
 						Name = "Intense Moisturizer",
 						Brand = "Elta MD",
 						UnitPrice = 14.5
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "UV Clear 46 SPF",
 						Brand = "Elta MD",
 						UnitPrice = 37.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "UV Daily 40 SPF",
 						Brand = "Elta MD",
 						UnitPrice = 30
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "UV Physical 41",
 						Brand = "Elta MD",
 						UnitPrice = 36.0
 					},
-					new mProduct
-					{
+					new mProduct {
 						Name = "UV Shield 45 SPF",
 						Brand = "Elta MD",
 						UnitPrice = 36.0
@@ -269,11 +236,10 @@ namespace Reihs.Repository
 			context.SaveChanges();
 		}
 
-		private static void SeedRevitaLashProducts(AppDB context) 
+		private static void SeedRevitaLashProducts(AppDB context)
 		{
 			context.mProducts.AddOrUpdate(x => x.Name,
-				new mProduct
-				{
+				new mProduct {
 					Name = "RevitaLash Advanced Formula",
 					Brand = "RevitaLash",
 					UnitPrice = 120.0
@@ -282,29 +248,25 @@ namespace Reihs.Repository
 			context.SaveChanges();
 		}
 
-		private static void SeedClarisonic(AppDB context) 
+		private static void SeedClarisonic(AppDB context)
 		{
 			context.mProducts.AddOrUpdate(x => x.Name,
-				new mProduct
-				{
+				new mProduct {
 					Name = "Clarisonic Mia",
 					Brand = "Clarisonic",
 					UnitPrice = 125.0
 				},
-				new mProduct
-				{
+				new mProduct {
 					Name = "Clarisonic Pro",
 					Brand = "Clarisonic",
 					UnitPrice = 195.0
 				},
-				new mProduct
-				{
+				new mProduct {
 					Name = "Clarisonic Pro System Kit",
 					Brand = "Clarisonic",
 					UnitPrice = 195.0
 				},
-				new mProduct 
-				{
+				new mProduct {
 					Name = "Clarisonic Pro System Plus Body",
 					Brand = "Clarisonic",
 					UnitPrice = 250.0
@@ -316,84 +278,64 @@ namespace Reihs.Repository
 		private static void SeedPackageCategories(AppDB context)
 		{
 			context.pCategories.AddOrUpdate(p => p.Name,
-					new pTags
-					{
+					new pTags {
 						Name = "Laser Vien Therapy"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Schlerotherapy (Leg Veins) Injections"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Laser Hair Reduction"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Permanent Cosmetics"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Microdermabrasion"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Chemical Peels"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "BodyFX (Non-Invasive Fat Reduction)"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "HCG Diet"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Mesotherapy/Lipodissolve"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Fractora"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Forma"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Fraxel"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "IPL Photo Facial"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Botox"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Dysport"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Restylane"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Juvederm"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Perlane"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Voluma"
 					},
-					new pTags
-					{
+					new pTags {
 						Name = "Sculptra"
 					}
 				);
@@ -401,7 +343,7 @@ namespace Reihs.Repository
 			context.SaveChanges();
 		}
 
-		private static void SeedPackages(AppDB context) 
+		private static void SeedPackages(AppDB context)
 		{
 			SeedFacialInjectibles(context);
 			SeedPigmentation(context);
@@ -419,104 +361,104 @@ namespace Reihs.Repository
 		private static void SeedFacialInjectibles(AppDB context)
 		{
 			//36 total
-            //context.Packages.AddOrUpdate(x => x.PackageId,
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
+			//context.Packages.AddOrUpdate(x => x.PackageId,
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
 
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
 
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
 
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
 
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
-            //    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
 
-            //    new mPackage { Name = , UnitPrice = },
+			//    new mPackage { Name = , UnitPrice = },
 
-            //    new mPackage { Name = , UnitPrice = }
-				
-            //    );
+			//    new mPackage { Name = , UnitPrice = }
+
+			//    );
 		}
 
 		private static void SeedPigmentation(AppDB context)
 		{
 			context.Packages.AddOrUpdate(x => x.Name,
-					new mPackage { Name = "Package of 3 Treatments-Face Area", UnitPrice = 1580.0},
-					new mPackage { Name = "Package of 3 Treatments-Neck Area", UnitPrice = 1580.0},
-					new mPackage { Name = "Package of 3 Treatments-Chest Area", UnitPrice = 1580.0},
-					new mPackage { Name = "Package of 3 Treatments-Hands Area", UnitPrice = 1580.0},
-					new mPackage { Name = "Package of 3 Treatments-Spot Treatment on Extremities", UnitPrice = 1580.0},
-					new mPackage { Name = "Package of 2 Treatments-Face Area", UnitPrice = 1790.0},
-					new mPackage { Name = "Package of 2 Treatments-Neck Area", UnitPrice = 1390.0},
-					new mPackage { Name = "Package of 2 Treatments-Chest Area•", UnitPrice = 1790.0}
+					new mPackage { Name = "Package of 3 Treatments-Face Area", UnitPrice = 1580.0 },
+					new mPackage { Name = "Package of 3 Treatments-Neck Area", UnitPrice = 1580.0 },
+					new mPackage { Name = "Package of 3 Treatments-Chest Area", UnitPrice = 1580.0 },
+					new mPackage { Name = "Package of 3 Treatments-Hands Area", UnitPrice = 1580.0 },
+					new mPackage { Name = "Package of 3 Treatments-Spot Treatment on Extremities", UnitPrice = 1580.0 },
+					new mPackage { Name = "Package of 2 Treatments-Face Area", UnitPrice = 1790.0 },
+					new mPackage { Name = "Package of 2 Treatments-Neck Area", UnitPrice = 1390.0 },
+					new mPackage { Name = "Package of 2 Treatments-Chest Area•", UnitPrice = 1790.0 }
 				);
 		}
 
 		private static void SeedSkinTightening(AppDB context)
 		{
 			context.Packages.AddOrUpdate(x => x.Name,
-					new mPackage { Name = "Face (Esthetician)", UnitPrice = 500.0},
-					new mPackage { Name = "Chest (Esthetician)", UnitPrice = 500.0},
-					new mPackage { Name = "Neck (Esthetician)", UnitPrice = 400.0},
-					new mPackage { Name = "Face (Physician)", UnitPrice = 1500.0},
-					new mPackage { Name = "Chest (Physician)", UnitPrice = 1500.0},
-					new mPackage { Name = "Neck (Physician)", UnitPrice = 1200.0},
-					new mPackage { Name = "One area (8 treatments)", UnitPrice = 1600.0}
+					new mPackage { Name = "Face (Esthetician)", UnitPrice = 500.0 },
+					new mPackage { Name = "Chest (Esthetician)", UnitPrice = 500.0 },
+					new mPackage { Name = "Neck (Esthetician)", UnitPrice = 400.0 },
+					new mPackage { Name = "Face (Physician)", UnitPrice = 1500.0 },
+					new mPackage { Name = "Chest (Physician)", UnitPrice = 1500.0 },
+					new mPackage { Name = "Neck (Physician)", UnitPrice = 1200.0 },
+					new mPackage { Name = "One area (8 treatments)", UnitPrice = 1600.0 }
 				);
 		}
 
 		private static void SeedBodyShaping(AppDB context)
 		{
 			context.Packages.AddOrUpdate(x => x.Name,
-					new mPackage { Name = "One area (8 Treatments)", UnitPrice = 1600.0},
+					new mPackage { Name = "One area (8 Treatments)", UnitPrice = 1600.0 },
 
-					new mPackage { Name = "21 Days Program", UnitPrice = 295.0},
-					new mPackage { Name = "42 Days Program", UnitPrice = 550.0},
-					new mPackage { Name = "4 B12 Injections", UnitPrice = 100.0},
+					new mPackage { Name = "21 Days Program", UnitPrice = 295.0 },
+					new mPackage { Name = "42 Days Program", UnitPrice = 550.0 },
+					new mPackage { Name = "4 B12 Injections", UnitPrice = 100.0 },
 
-					new mPackage { Name = "Package of 5 Single Area", UnitPrice = 1000.0},
-					new mPackage { Name = "Package of 10 Single Area", UnitPrice = 2000.0}
+					new mPackage { Name = "Package of 5 Single Area", UnitPrice = 1000.0 },
+					new mPackage { Name = "Package of 10 Single Area", UnitPrice = 2000.0 }
 				);
 		}
 
 		private static void SeedMicroDerm(AppDB context)
 		{
 			context.Packages.AddOrUpdate(x => x.Name,
-					new mPackage { Name = "Package of 5 Micros", UnitPrice = 500.0},
-					new mPackage { Name = "6 Mo. Membership", UnitPrice = 70.0},
-					new mPackage { Name = "12 Mo. Memebership", UnitPrice = 65.0},
+					new mPackage { Name = "Package of 5 Micros", UnitPrice = 500.0 },
+					new mPackage { Name = "6 Mo. Membership", UnitPrice = 70.0 },
+					new mPackage { Name = "12 Mo. Memebership", UnitPrice = 65.0 },
 
-					new mPackage { Name = "Package of 3 TCA Peels", UnitPrice = 475.0},
-					new mPackage { Name = "Package of 3 Non-TCA Peels", UnitPrice = 375.0},
-					new mPackage { Name = "Package of 3 SkinMedica Vitialize Peels", UnitPrice = 375.0},
+					new mPackage { Name = "Package of 3 TCA Peels", UnitPrice = 475.0 },
+					new mPackage { Name = "Package of 3 Non-TCA Peels", UnitPrice = 375.0 },
+					new mPackage { Name = "Package of 3 SkinMedica Vitialize Peels", UnitPrice = 375.0 },
 					new mPackage { Name = "Package of 3 SkinMedicat Rejuvenize Peels", UnitPrice = 450.0 }
 				);
 		}
@@ -524,13 +466,13 @@ namespace Reihs.Repository
 		private static void SeedPermCosmetic(AppDB context)
 		{
 			context.Packages.AddOrUpdate(x => x.PackageId,
-					new mPackage { Name = "Eyebrows, Hairline Strokes", UnitPrice = 575.0},
-					new mPackage { Name = "Eyebrows", UnitPrice = 475.0},
-					new mPackage { Name = "Eyeliner", UnitPrice = 475.0},
-					new mPackage { Name = "Eyeliner (Upper or Lower)", UnitPrice = 350.0},
-					new mPackage { Name = "Eyes, Inner Tissue", UnitPrice = 450.0},
-					new mPackage { Name = "Lip Linner", UnitPrice = 350.0},
-					new mPackage { Name = "Lip Tatto", UnitPrice = 650.0}
+					new mPackage { Name = "Eyebrows, Hairline Strokes", UnitPrice = 575.0 },
+					new mPackage { Name = "Eyebrows", UnitPrice = 475.0 },
+					new mPackage { Name = "Eyeliner", UnitPrice = 475.0 },
+					new mPackage { Name = "Eyeliner (Upper or Lower)", UnitPrice = 350.0 },
+					new mPackage { Name = "Eyes, Inner Tissue", UnitPrice = 450.0 },
+					new mPackage { Name = "Lip Linner", UnitPrice = 350.0 },
+					new mPackage { Name = "Lip Tatto", UnitPrice = 650.0 }
 				);
 		}
 
@@ -573,11 +515,11 @@ namespace Reihs.Repository
 		private static void SeedVeinReduction(AppDB context)
 		{
 			context.Packages.AddOrUpdate(x => x.Name,
-					new mPackage { Name = "1 Treatment Area", UnitPrice = 75.0},
-					new mPackage { Name = "2 Treatment Areas", UnitPrice = 150.0},
-					new mPackage { Name = "3 Treatment Areas", UnitPrice = 225.0},
+					new mPackage { Name = "1 Treatment Area", UnitPrice = 75.0 },
+					new mPackage { Name = "2 Treatment Areas", UnitPrice = 150.0 },
+					new mPackage { Name = "3 Treatment Areas", UnitPrice = 225.0 },
 
-					new mPackage { Name = "Both Legs/including Hose", UnitPrice = 350.0}
+					new mPackage { Name = "Both Legs/including Hose", UnitPrice = 350.0 }
 				);
 		}
 		#endregion
@@ -608,14 +550,12 @@ namespace Reihs.Repository
 			blogThreeTags.Add(tags[2]);
 			blogThreeTags.Add(tags[0]);
 			#endregion
-			if (context.bPosts == null) 
-			{
+			if (context.bPosts == null) {
 				throw new Exception("Context is null");
 			}
 
 			context.bPosts.AddOrUpdate(x => x.Id,
-			   new bPost
-			   {
+			   new bPost {
 				   Id = 1,
 				   Title = "My first Blog Post",
 				   Subtitle = "The subtitle is...",
@@ -629,8 +569,7 @@ namespace Reihs.Repository
 				   Created = DateTime.Now.AddDays(-3),
 				   Modified = DateTime.Now.AddDays(-2)
 			   },
-				new bPost
-				{
+				new bPost {
 					Id = 2,
 					Title = "My second Blog Post",
 					Subtitle = "The subtitle is that I dont know",
@@ -644,8 +583,7 @@ namespace Reihs.Repository
 					Created = DateTime.Now.AddDays(-1),
 					Modified = DateTime.Now.AddDays(-1)
 				},
-				new bPost
-				{
+				new bPost {
 					Id = 3,
 					Title = "My third Blog Post",
 					Subtitle = "The subtitle is a little stranger",
@@ -669,18 +607,15 @@ namespace Reihs.Repository
 		private static void SeedTags(AppDB context)
 		{
 			context.bTags.AddOrUpdate(x => x.Id,
-					new bTag
-					{
+					new bTag {
 						Id = 1,
 						Name = "Flavor"
 					},
-					new bTag
-					{
+					new bTag {
 						Id = 2,
 						Name = "Symbology"
 					},
-					new bTag
-					{
+					new bTag {
 						Id = 3,
 						Name = "Arches"
 					}
@@ -692,8 +627,7 @@ namespace Reihs.Repository
 		private static void SeedCategories(AppDB context)
 		{
 			context.bCategories.AddOrUpdate(x => x.Id,
-					new bCategory
-					{
+					new bCategory {
 						Id = 1,
 						Name = "News",
 						Description = "Visage in the news",
@@ -701,8 +635,7 @@ namespace Reihs.Repository
 						Created = DateTime.Now.AddDays(-4),
 						Modified = DateTime.Now
 					},
-					new bCategory
-					{
+					new bCategory {
 						Id = 2,
 						Name = "Deals",
 						Description = "Visage Daily Deals",
@@ -725,8 +658,7 @@ namespace Reihs.Repository
 
 		private static void SeedUsers(AppDB context)
 		{
-			if (!context.Roles.Any(r => r.Name == "SuperAdmin"))
-			{
+			if (!context.Roles.Any(r => r.Name == "SuperAdmin")) {
 				var store = new RoleStore<IdentityRole>(context);
 				var manager = new RoleManager<IdentityRole>(store);
 				var role = new IdentityRole { Name = "SuperAdmin" };
@@ -734,8 +666,7 @@ namespace Reihs.Repository
 				manager.Create(role);
 			}
 
-			if (!context.Users.Any(u => u.UserName == "andreij6@gmail.com"))
-			{
+			if (!context.Users.Any(u => u.UserName == "andreij6@gmail.com")) {
 				var store = new UserStore<ApplicationUser>(context);
 				var manager = new UserManager<ApplicationUser>(store);
 				var user = new ApplicationUser { UserName = "andreij6@gmail.com" };
@@ -751,12 +682,10 @@ namespace Reihs.Repository
 		private static void SeedRoles(AppDB context)
 		{
 			context.Roles.AddOrUpdate(r => r.Name,
-					new IdentityRole
-					{
+					new IdentityRole {
 						Name = "Editor"
 					},
-					new IdentityRole
-					{
+					new IdentityRole {
 						Name = "User"
 					}
 				);

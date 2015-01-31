@@ -49,6 +49,12 @@
 			self.$scope.MenuTrigger = menuTrigger;
 
 			self.init();
+
+			self.$scope.Videos = [{
+								Url: "#/Videos/1",
+								Image: "http://placehold.it/770x300&text=",
+								Title: "Botox",
+							}]
 		}
 	}
 

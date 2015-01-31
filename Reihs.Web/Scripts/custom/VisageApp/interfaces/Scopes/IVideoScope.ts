@@ -3,5 +3,7 @@
 		open: boolean;
 		YouTubeMenu: string;
 		MenuTrigger(): void;
+
+		Videos: any;
 	}
 }    
