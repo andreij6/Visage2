@@ -25,99 +25,21 @@
 	<div class="row">
 		<div class="col-md-12">
 			<ul class=" portfolio-filters text-center">
-				<li class="filter active" data-filter="all">all</li>
-				<li class="filter" data-filter="page1">Facial Injectibles</li>
-				<li class="filter" data-filter="page2">Pigmentation/Melasma</li>
-				<li class="filter" data-filter="page3">Skin Resurfacing</li>
-				<li class="filter" data-filter="page4">Skin Tightening</li>
-				<li class="filter" data-filter="page5">Bodyshaping/HCG</li>
-				<li class="filter" data-filter="page6">Microdermabrasion</li>
-				<li class="filter" data-filter="page7">Permanent Cosmetics</li>
-				<li class="filter" data-filter="page8">Laser Hair Removal</li>
-				<li class="filter" data-filter="page9">Vein Reduction</li>
+				<li class="filter {{allactive}}" ng-click="SetFilter('')">all</li>
+				<li ng-repeat="Category in Categories"
+				    class="filter {{Category.Active}}"
+				    ng-click="SetFilter(Category)">{{Category.Name}}</li>
 			</ul>
 
 			<div id="grid" class="row">
-				<div class="mix col-sm-4 page1 page4 margin30 mix_all" style="display: inline-block; opacity: 1;">
+				<div class="mix col-sm-4 page1 page4 margin30 mix_all" style="display: inline-block; opacity: 1;" ng-repeat="Photo in Photos | filter: { Category: filterValue}">
 					<div class="item-img-wrap">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
+						<img src="{{Photo.Image}}" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
 
 					</div>
 					<div class="work-desc">
-						<h3><a href="portfolio-single.html">Psd Design</a></h3>
-						<span>Photoshop</span>
-					</div><!--work desc-->
-				</div>
-				<div class="mix col-sm-4 page2 page3 margin30 mix_all" style="display: inline-block; opacity: 1;">
-					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
-					</div>
-					<div class="work-desc">
-						<h3><a href="portfolio-single.html">Mockup Design</a></h3>
-						<span>Photoshop</span>
-					</div><!--work desc-->
-				</div>
-				<div class="mix col-sm-4  page3 page2 margin30  mix_all" style="display: inline-block; opacity: 1;">
-					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
-					</div>
-					<div class="work-desc">
-						<h3><a href="portfolio-single.html"> Real estate</a></h3>
-						<span>Php</span>
-					</div><!--work desc-->
-				</div>
-				<div class="mix col-sm-4  page4 margin30 mix_all" style="display: inline-block; opacity: 1;">
-					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
-					</div>
-					<div class="work-desc">
-						<h3><a href="portfolio-single.html">E Commerce</a></h3>
-						<span>magento</span>
-					</div><!--work desc-->
-				</div>
-				<div class="mix col-sm-4 page1 margin30  mix_all" style="display: inline-block; opacity: 1;">
-					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
-					</div>
-					<div class="work-desc">
-						<h3><a href="portfolio-single.html">Website Design</a></h3>
-						<span>Html5 / Css3</span>
-					</div><!--work desc-->
-				</div>
-				<div class="mix col-sm-4  page2 margin30 mix_all" style="display: inline-block; opacity: 1;">
-					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
-					</div>
-					<div class="work-desc">
-						<h3><a href="portfolio-single.html">Graphics Design</a></h3>
-						<span>Corel Draw</span>
-					</div><!--work desc-->
-				</div>
-				<div class="mix col-sm-4  page3 margin30 mix_all" style="display: inline-block; opacity: 1;">
-					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
-					</div>
-					<div class="work-desc">
-						<h3><a href="portfolio-single.html">Website Develop </a></h3>
-						<span>Wordpress</span>
-					</div><!--work desc-->
-				</div>
-				<div class="mix col-sm-4 page4  margin30 mix_all" style="display: inline-block; opacity: 1;">
-					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
-					</div>
-					<div class="work-desc">
-						<h3><a href="portfolio-single.html">Logo Design</a></h3>
-						<span>illustrate</span>
-					</div><!--work desc-->
-				</div>
-				<div class="mix col-sm-4 page3  margin30 mix_all" style="display: inline-block; opacity: 1;">
-					<div class="item-img-wrap ">
-						<img src="../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
-					</div>
-					<div class="work-desc">
-						<h3><a href="portfolio-single.html">Logo Design</a></h3>
-						<span>illustrate</span>
+						<h3><a href="">{{Photo.Name}}</a></h3>
+						<span>{{Photo.Category.Name}}</span>
 					</div><!--work desc-->
 				</div>
 			</div><!--#grid-->

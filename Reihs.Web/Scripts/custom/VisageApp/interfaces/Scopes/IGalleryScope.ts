@@ -3,5 +3,12 @@
 		Trigger(event: ng.IAngularEvent): void;
 		Showing: boolean;
 		Image: string;
+
+		Photos: any;
+		filterValue: any;
+		Categories: any;
+
+		SetFilter(Category: any): void;
+		allactive: string;
 	}
 }    
