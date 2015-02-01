@@ -2,6 +2,7 @@
 	export class HeaderCtrl {
 		private $scope: Extensions.IHeaderCtrlScope;
 		private MarketSvc: MarketService;
+		private PostDataSvc: PostDataService;
 
 		private init(): void {
 			var self = this;
@@ -10,18 +11,24 @@
 					offset: {
 						top: 0,
 					}
-				});	
+				});
 			}
 
 			Affix();
 		}
 
-		constructor($scope: Extensions.IHeaderCtrlScope, MarketSvc: MarketService, $location: ng.ILocationService, $anchorScroll: ng.IAnchorScrollService) {
+		constructor(
+			$scope: Extensions.IHeaderCtrlScope,
+			MarketSvc: MarketService,
+			postDataSvc: PostDataService,
+			$location: ng.ILocationService,
+			$anchorScroll: ng.IAnchorScrollService) {
 			var self = this;
 			self.$scope = $scope;
 			self.$scope.SideOpen = false;
 			self.$scope.ShoppingCart = MarketSvc.Cart;
 			self.MarketSvc = MarketSvc;
+			self.PostDataSvc = postDataSvc;
 
 			self.$scope.HasItems = false;
 			self.$scope.IsAlertVisible = false;
@@ -91,10 +98,10 @@
 			//#endregion
 
 			self.$scope.Navs = [
-				{ name: 'Home', IsOn: self.$scope.HomeActive, action: homeOn, off: homeOff},
-				{ name: 'About', IsOn: self.$scope.AboutActive, action: aboutOn, off: aboutOff},
+				{ name: 'Home', IsOn: self.$scope.HomeActive, action: homeOn, off: homeOff },
+				{ name: 'About', IsOn: self.$scope.AboutActive, action: aboutOn, off: aboutOff },
 				{ name: 'Market', IsOn: self.$scope.MarketActive, action: marketOn, off: marketOff },
-				{ name: 'Cart', IsOn: self.$scope.CartActive, action: cartOn, off: cartOff},
+				{ name: 'Cart', IsOn: self.$scope.CartActive, action: cartOn, off: cartOff },
 				{ name: 'Treatment', IsOn: self.$scope.TreatmentActive, action: treatmentOn, off: treatmentOff },
 				{ name: 'Gallery', IsOn: self.$scope.GalleryActive, action: galleryOn, off: galleryOff },
 				{ name: 'Resource', IsOn: self.$scope.ResourceActive, action: resourceOn, off: resourceOff },
@@ -148,8 +155,7 @@
 
 			function setNav(name: string) {
 				console.log(self.$scope.Navs);
-				for (var x in self.$scope.Navs)
-				{
+				for (var x in self.$scope.Navs) {
 					if (self.$scope.Navs[x].name === name) {
 						self.$scope.Navs[x].IsOn = true;
 						self.$scope.Navs[x].action();
@@ -168,6 +174,20 @@
 				$anchorScroll();
 			}
 
+
+			function getBlogs() {
+				self.PostDataSvc.getAll().then(
+					function (data) {
+						self.$scope.Posts = data;
+						console.log(self.$scope.Posts);
+					},
+					function (error) {
+						console.log(error);
+					});
+			}
+
+			getBlogs();
+
 			self.$scope.$watch('SideOpen', CloseSideBar);
 
 			self.$scope.$on('CartItem-Added', CartUpdated);
@@ -182,5 +202,5 @@
 		}
 	}
 
-	HeaderCtrl.$inject = ['$scope', 'MarketService', '$location', '$anchorScroll'];
+	HeaderCtrl.$inject = ['$scope', 'MarketService', 'PostDataService', '$location', '$anchorScroll'];
 } 

@@ -19,5 +19,7 @@
 
 		Navs: any;
 		GoToTop(): void;
+
+		Posts: any;
 	}
 }    
