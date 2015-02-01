@@ -56,39 +56,21 @@
 					</h3><!--Frisco Location-->
 					<div class="divide40"></div>
 					<div class="col-md-12">
-						<div class="col-md-6">
-							<img src="../../Images/mother.jpg" class="img-responsive pull-right" alt="" />
-						</div>
-
+						<img src="http://placehold.it/700x250" class=" img-responsive" alt="working">
+					</div>
+					<div class="divide40"></div>
+					<div class="col-md-12">
 						<ul class="list-unstyled contact contact-info">
 							<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">{{Locations[Active].Address}}</a></p></li>
 							<li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">{{Locations[Active].Email}}</a></p></li>
 							<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="{{Locations[Active].Phonetel}}">{{Locations[Active].Phone}}</a></p></li>
-							<li>st<p><strong><i class="fa fa-phone"></i> Toll:</strong> <a href="{{Locations[Active].Tolltel}}">{{Locations[Active].Toll}}</a></p></li>
+							<li><p><strong><i class="fa fa-phone"></i> Toll:</strong> <a href="{{Locations[Active].Tolltel}}">{{Locations[Active].Toll}}</a></p></li>
 						</ul>
 					</div>
 				</div>
 				<div class="divide30"></div>
-				<div class="col-md-12">
-					<h3 class="heading">Services</h3>
-					<div ng-repeat="service in Locations[Active].Services" class="col-md-12 clear">
-						<h4>{{service.category}}</h4>
-
-						<p ng-repeat="treatment in service.treatments" class="col-md-4">
-							{{service.treatments[$index]}}
-						</p>
-					</div>
-				</div>
-
-
-
 			</section>
 				
-
-			</section>
-			
-
-			
 			<div class="divide80"></div>
 		</div>
 	</div>
@@ -98,7 +80,118 @@
 		<li class="{{LaSchl.Active}}" ng-click="SetActive(LaSchl.Name)"><a>Schlenburg/ LaGrange</a></li>
 	</ul>-->
 </div>
+<section class="services-wrap location-services-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="center-heading">
+					<h2>Services at the {{Locations[Active].Name}} Location</h2>
+					<span class="center-line"></span>
+				</div>
+			</div>
+		</div><!--center heading row-->
+		<div class="row">
+			<div class="col-md-4 col-sm-6 margin20">
+				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="100ms">
+					<div class="services-box-icon">
 
+					</div><!--services icon-->
+					<div class="services-box-info">
+						<h4>Wrinkle Reduction</h4>
+						<p>
+							BOTOX® Cosmetic, Dysport
+						</p>
+					</div>
+				</div><!--services box-->
+			</div><!--services col-->
+			<div class="col-md-4 col-sm-6 margin20">
+				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="200ms">
+					<div class="services-box-icon">
+
+					</div><!--services icon-->
+					<div class="services-box-info">
+						<h4>Fillers</h4>
+						<p>
+							Restylane, Restylane Silk, Perlane, Juvederm, Voluma, Sculptra
+						</p>
+					</div>
+				</div><!--services box-->
+			</div><!--services col-->
+			<div class="col-md-4 col-sm-6 margin20">
+				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+					<div class="services-box-icon">
+
+					</div><!--services icon-->
+					<div class="services-box-info">
+						<h4>Vein Reduction</h4>
+						<p>
+							Laser Vein Therapy, Sclerotherapy
+						</p>
+					</div>
+				</div><!--services box-->
+			</div><!--services col-->
+			<div class="col-md-4 col-sm-6 margin20">
+				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="400ms">
+					<div class="services-box-icon">
+
+					</div><!--services icon-->
+					<div class="services-box-info">
+						<h4>Pigmentation</h4>
+						<p>
+							IPL Photo Facial, Chemical Peels
+						</p>
+					</div>
+				</div><!--services box-->
+			</div><!--services col-->
+			<div class="col-md-4 col-sm-6 margin20">
+				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
+					<div class="services-box-icon">
+
+					</div><!--services icon-->
+					<div class="services-box-info">
+						<h4>Fat Reduction</h4>
+						<p>
+							HCG Diet, LipoDissolve
+						</p>
+					</div>
+				</div><!--services box-->
+			</div><!--services col-->
+			<div class="col-md-4 col-sm-6 margin20">
+				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
+					<div class="services-box-icon">
+
+					</div><!--services icon-->
+					<div class="services-box-info">
+						<h4>Microdermabrasion</h4>
+					</div>
+				</div><!--services box-->
+			</div><!--services col-->
+			<div class="col-md-4 col-sm-6 margin20">
+				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
+					<div class="services-box-icon">
+
+					</div><!--services icon-->
+					<div class="services-box-info">
+						<h4>Laser Hair Removal</h4>
+					</div>
+				</div><!--services box-->
+			</div><!--services col-->
+			<div class="col-md-4 col-sm-6 margin20">
+				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
+					<div class="services-box-icon">
+
+					</div><!--services icon-->
+					<div class="services-box-info">
+						<h4>Skin Resurfacing</h4>
+					</div>
+				</div><!--services box-->
+			</div><!--services col-->
+		</div><!--services row-->
+	</div>
+	<div class="col-md-12 col-sm-12 text-center">
+		<a href="#/Treatments" class=" btn border-black btn-lg">View Details</a>
+	</div>
+</section>
 <div class="breadcrumb-wrap">
 	<div class="row">
 		<div class="col-sm-10 col-sm-offset-1">

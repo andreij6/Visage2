@@ -18,11 +18,11 @@
 	<section class="col-md-12">
 		<div id="main_area">
 			<!-- Slider -->
-			<div class="row">
-				<div class="col-xs-12" id="slider">
+			<div class="col-sm-6 hidden-xs">
+				<div class="col-xs-12 col-sm-12" id="slider">
 					<!-- Top part of the slider -->
 					<div class="row">
-						<div class="col-sm-8" id="carousel-bounding-box">
+						<div class="col-sm-12 " id="carousel-bounding-box">
 							<div class="carousel slide" id="myCarousel">
 								<!-- Carousel items -->
 								<div class="carousel-inner">
@@ -53,7 +53,7 @@
 							</div>
 						</div>
 
-						<div class="col-sm-4" id="carousel-text"></div>
+						<div class="col-sm-12" id="carousel-text"></div>
 
 						<div id="slide-content" style="display: none;">
 							<div id="slide-content-0">
@@ -95,34 +95,210 @@
 				</div>
 			</div><!--/Slider-->
 			<div class="divide20"></div>
-			<div class="row hidden-xs" id="slider-thumbs">
+			<h2 class="visible-xs">Video Library</h2>
+			<div class="row col-sm-6 hidden-xs" id="slider-thumbs" style="height: 400px; overflow-y: scroll">
 				<!-- Bottom switcher of slider -->
-				<ul class="hide-bullets">
-					<li class="col-sm-2">
+				<section class="col-sm-12">
+					<h3 class="heading">Client Story</h3>
+					<p class="col-sm-4">
 						<a class="thumbnail" id="carousel-selector-0"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
-					</li>
+					</p>
 
-					<li class="col-sm-2">
+					<p class="col-sm-4">
 						<a class="thumbnail" id="carousel-selector-1"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
-					</li>
+					</p>
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-0"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
 
-					<li class="col-sm-2">
-						<a class="thumbnail" id="carousel-selector-2"><img src="../../../Images/Videos/Promo.jpg" alt="" /></a>
-					</li>
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-1"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-0"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
 
-					<li class="col-sm-2">
-						<a class="thumbnail" id="carousel-selector-3"><img src="../../../Images/Videos/Promo.jpg" alt="" /></a>
-					</li>
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-1"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+				</section>
 
-					<li class="col-sm-2">
+				<section class="col-sm-12 clear">
+					<h3 class="heading">Welcome Videos</h3>
+					<p class="col-sm-4">
 						<a class="thumbnail" id="carousel-selector-4"><img src="../../../Images/Videos/Welcome.jpg" alt="" /></a>
-					</li>
+					</p>
 
-					<li class="col-sm-2">
+					<p class="col-sm-4">
 						<a class="thumbnail" id="carousel-selector-5"><img src="../../../Images/Videos/Welcome.jpg" alt="" /></a>
-					</li>
-				</ul>
+					</p>
+				</section>
+
+				<section class="col-sm-12 clear">
+					<h3 class="heading">Promo Videos</h3>
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-2"><img src="../../../Images/Videos/Promo.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-3"><img src="../../../Images/Videos/Promo.jpg" alt="" /></a>
+					</p>
+				</section>
+
+				<section class="col-sm-12 clear">
+					<h3 class="heading">Client Story</h3>
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-0"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-1"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-0"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-1"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-0"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-1"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+				</section>
+
+				<section class="col-sm-12 clear">
+					<h3 class="heading">Welcome Videos</h3>
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-4"><img src="../../../Images/Videos/Welcome.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-5"><img src="../../../Images/Videos/Welcome.jpg" alt="" /></a>
+					</p>
+				</section>
+
+				<section class="col-sm-12 clear">
+					<h3 class="heading">Promo Videos</h3>
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-2"><img src="../../../Images/Videos/Promo.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a class="thumbnail" id="carousel-selector-3"><img src="../../../Images/Videos/Promo.jpg" alt="" /></a>
+					</p>
+				</section>
+
+			</div>
+			<!-- Extra Small Version - Only diffence is that the thumbnails are links-->
+			<div class="row col-sm-6 visible-xs" id="slider-thumbs" style="height: 400px; overflow-y: scroll">
+				<!-- Bottom switcher of slider -->
+				<section class="col-sm-12">
+					<h3 class="heading">Client Story</h3>
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-0"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-1"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-0"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-1"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-0"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-1"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+				</section>
+
+				<section class="col-sm-12 clear">
+					<h3 class="heading">Welcome Videos</h3>
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-4"><img src="../../../Images/Videos/Welcome.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-5"><img src="../../../Images/Videos/Welcome.jpg" alt="" /></a>
+					</p>
+				</section>
+
+				<section class="col-sm-12 clear">
+					<h3 class="heading">Promo Videos</h3>
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-2"><img src="../../../Images/Videos/Promo.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-3"><img src="../../../Images/Videos/Promo.jpg" alt="" /></a>
+					</p>
+				</section>
+
+				<section class="col-sm-12 clear">
+					<h3 class="heading">Client Story</h3>
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-0"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-1"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-0"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-1"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-0"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-1"><img src="../../../Images/Videos/ClientStory.jpg" alt="" /></a>
+					</p>
+				</section>
+
+				<section class="col-sm-12 clear">
+					<h3 class="heading">Welcome Videos</h3>
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-4"><img src="../../../Images/Videos/Welcome.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-5"><img src="../../../Images/Videos/Welcome.jpg" alt="" /></a>
+					</p>
+				</section>
+
+				<section class="col-sm-12 clear">
+					<h3 class="heading">Promo Videos</h3>
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-2"><img src="../../../Images/Videos/Promo.jpg" alt="" /></a>
+					</p>
+
+					<p class="col-sm-4">
+						<a href="#/Videos/1" class="thumbnail" id="carousel-selector-3"><img src="../../../Images/Videos/Promo.jpg" alt="" /></a>
+					</p>
+				</section>
+
 			</div>
 		</div>
 	</section>
 </div>
+<div class="divide50"></div>
+<section id="cta-1">
+	<div class="container">
+		<h1>Subscribe to our Youtube Channel</h1>
+		<a href="https://www.youtube.com/user/LeBeauVisageMedicalS" class="btn border-white btn-lg">Go to Youtube</a>
+	</div>
+</section>
+<div class="divide50"></div>

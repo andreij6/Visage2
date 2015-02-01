@@ -52,7 +52,7 @@
 			var LaSchl =
 				{
 					Active: '',
-					Name: 'La Grange-Schulenburg',
+					Name: 'Schulenburg Clinic',
 					Address: '40 East Avenue Schulenburg, TX 78956',
 					Email: 'info@lebeauvisagemedspa.com',
 					Phone: '+214 705 7676',

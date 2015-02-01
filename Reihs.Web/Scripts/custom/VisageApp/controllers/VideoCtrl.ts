@@ -50,11 +50,18 @@
 
 			self.init();
 
-			self.$scope.Videos = [{
-								Url: "#/Videos/1",
-								Image: "http://placehold.it/770x300&text=",
-								Title: "Botox",
-							}]
+			self.$scope.Videos = [
+				{
+					Url: "#/Videos/1",
+					Image: "../../../Images/Videos/ClientStory.jpg",
+					Title: "Tesitmonial"
+				},
+				{
+					Url: "#/Videos/1",
+					Image: "../../../Images/Videos/ClientStory.jpg",
+					Title: "Tesitmonial"
+				}
+			]
 		}
 	}
 
