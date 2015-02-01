@@ -514,6 +514,7 @@
     <Content Include="Templates\Front\Special\Events.html" />
     <Content Include="Templates\Front\About\Team.html" />
     <Content Include="Templates\Front\About\Testimonials.html" />
+    <Content Include="Templates\Front\Special\Monthly.html" />
     <Content Include="Templates\Front\Treatments\Index.html" />
     <Content Include="Templates\Front\Treatments\Partials\Bodyshaping.html" />
     <Content Include="Templates\Front\Treatments\Partials\FacialInjectibles.html" />

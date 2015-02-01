@@ -105,6 +105,10 @@
 				{
 					templateUrl: 'Templates/Front/Special/Events.html',
 					controller: 'SpecialCtrl'
+				}).when('/Special/Monthly',
+				{
+					templateUrl: 'Templates/Front/Special/Monthly.html',
+					controller: 'SpecialCtrl'
 				}).when('/Videos',
 				{
 					templateUrl: 'Templates/Front/Videos/Index.html',
