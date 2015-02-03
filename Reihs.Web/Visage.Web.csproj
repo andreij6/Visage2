@@ -313,9 +313,6 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Images\Banner1.jpg" />
-    <Content Include="Images\Banner2.jpg" />
-    <Content Include="Images\Banner3.jpg" />
     <Content Include="Images\Blog\Feb15_Promo.jpg" />
     <Content Include="Images\Blog\Jan15_Promo.jpg" />
     <Content Include="Images\Blog\LBVSchDates_Promo.jpg" />
@@ -358,6 +355,9 @@
     <Content Include="Images\Products\Ultra_Sheer_Moisturizer_2oz.png" />
     <Content Include="Images\Products\Uplifting_Eye_Serum.png" />
     <Content Include="Images\Products\Vitamin_C_E_Complex_1oz.png" />
+    <Content Include="Images\Banner1.jpg" />
+    <Content Include="Images\Banner2.jpg" />
+    <Content Include="Images\Banner3.jpg" />
     <Content Include="Images\Videos\ClientStory.jpg" />
     <Content Include="Images\Videos\Promo.jpg" />
     <Content Include="Images\Videos\Welcome.jpg" />
