@@ -18,6 +18,7 @@
 				{ Name: 'Fact Sheets', Url: '#/Resources/FactSheets' },
 				{ Name: 'Gift Cards', Url: '#/Market/Special/GiftCards' },
 				{ Name: 'Market', Url: '#/Market' },
+				{ Name: 'Monthly Specials', Url: '#/Specials/Monthly'},
 				{ Name: 'New Patient', Url: '#/Resources/NewPatients' },
 				{ Name: 'Our Locations', Url: '#/Locations' },
 				{ Name: 'Patient Resources', Url: '#/Resources' },

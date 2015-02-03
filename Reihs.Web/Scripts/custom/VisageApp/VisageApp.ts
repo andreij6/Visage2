@@ -38,11 +38,10 @@ module VisageApp {
 	VisageApp.controller('PackageCtrl', PackageCtrl);
 	VisageApp.controller('GiftCardCtrl', GiftCardCtrl);
 
-	VisageApp.run(function ($rootScope, $templateCache) {
+	VisageApp.run(['$rootScope', '$templateCache', function ($rootScope, $templateCache) {
 		$rootScope.$on('$viewContentLoaded', function () {
 			$templateCache.removeAll();
 		});
-		console.log("clearing cache");
-	})
+	}])
 	//VisageApp.directive('youtubeMenu', 
 }

@@ -17,7 +17,7 @@
 <div class="container blog-left-img">
 	<div class="row">
 		<div class="col-md-8">
-			<div class="blog-post" ng-repeat="post in Posts">
+			<div class="blog-post" ng-repeat="post in Posts| filter : { Public: true}">
 				<div class="row">
 					<div class="col-md-6 margin20">
 						<a href="#/Blog/{{post.Id}}">

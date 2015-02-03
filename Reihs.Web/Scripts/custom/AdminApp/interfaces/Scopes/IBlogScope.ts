@@ -13,6 +13,7 @@
 		Delete(post: Extensions.bPost): void;
 		Save(post: Extensions.bPost): void;
 		Publish(post: Extensions.bPost): void;
+		UnPublish(post: Extensions.bPost): void;
 		EditLink(post: Extensions.bPost): void;
 		Print(): void;
 

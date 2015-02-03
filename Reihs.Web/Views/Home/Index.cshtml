@@ -29,7 +29,7 @@
 										<div class="col-sm-12">
 											<h3 class="heading"><a href="#/Blog">Our Blog</a></h3>
 											<p></p>
-											<ul class="nav mega-vertical-nav" ng-repeat="blog in Posts | limitTo : 3">
+											<ul class="nav mega-vertical-nav" ng-repeat="blog in Posts | limitTo : 3 | filter : { Public: true}">
 												<li><a href="#/Blog/{{blog.Id}}">{{blog.Title}}</a></li>
 											</ul>
 										</div>

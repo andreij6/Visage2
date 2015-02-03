@@ -23,12 +23,12 @@
 			</div>
 			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default" ng-click="Print()">Print</button>
 
 					<button type="submit" class="btn btn-default" ng-click="Save(Post)" ng-hide="Editing">Save</button>
 					<button type="submit" class="btn btn-default" ng-click="Publish(Post)" ng-hide="Editing">Save And Publish</button>
 
 					<button type="submit" class="btn btn-default" ng-click="SaveExisting(Post)" ng-hide="!Editing">Save</button>
+					<button type="submit" class="btn btn-default" ng-click="SaveExisting(Post)" ng-hide="!Editing">Publish</button>
 					<button type="submit" class="btn btn-default" ng-click="UnPublish(Post)" ng-hide="!Editing">Unpublish and Save</button>
 				</div>
 			</div>

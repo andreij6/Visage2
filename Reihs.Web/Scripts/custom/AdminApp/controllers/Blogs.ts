@@ -97,6 +97,14 @@
 					function (reason) { HandleFailedAPI(reason) });
 			}
 
+			function Unpublish(post: Extensions.bPost): void {
+				post.Public = false;
+
+				self.postSvc.save(post).then(
+					function (data) { },
+					function (reason) { HandleFailedAPI(reason) });
+			}
+
 			function EditLink(post: Extensions.bPost): void {
 				self.$location.path('/Blogs/Edit/' + post.Id);
 			}
@@ -143,6 +151,7 @@
 			self.$scope.Edit = EditPost;
 			self.$scope.Save = Save;
 			self.$scope.Publish = Publish;
+			self.$scope.UnPublish = Unpublish;
 			self.$scope.EditLink = EditLink;
 			self.$scope.Print = Print;
 
