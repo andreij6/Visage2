@@ -59,19 +59,21 @@
 		<div class="col-md-9">
 			<div class="row">
 				<div class="col-sm-4 col-lg-4 col-md-4" ng-repeat="product in Products | limitTo: 5">
-					<div class="thumbnail">
-						<p>
-							<a href="#">{{product.Name}}</a>
-						</p>
-						<img src="http://placehold.it/320x150" alt="">
-						<div class="caption">
-							<h4 class="pull-right">{{product.UnitPrice | currency: "$"}}</h4>
+					
+						<div class="thumbnail">
+							<p>
+								<a href="#/Market/Item/{{product.Id}}">{{product.Name}}</a>
+							</p>
+							<img src="http://placehold.it/320x150" alt="">
+							<div class="caption">
+								<h4 class="pull-right">{{product.UnitPrice | currency: "$"}}</h4>
 
-							<p>See more snippets like this online store item at.</p>
+								<p>See more snippets like this online store item at.</p>
 
-							<a href="#/Market/Item/{{product.Id}}" class="btn border-black">Buy It</a>
+								<a href="#/Market/Item/{{product.Id}}" class="btn border-theme">View Details</a>
+							</div>
 						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>

@@ -317,6 +317,7 @@
     <Content Include="Images\Blog\Jan15_Promo.jpg" />
     <Content Include="Images\Blog\LBVSchDates_Promo.jpg" />
     <Content Include="Images\coffee-569178_1280.jpg" />
+    <Content Include="Images\Dallas.JPG" />
     <Content Include="Images\DrJMRiehs_600x600.jpg" />
     <Content Include="Images\LBVfull_C4.png" />
     <Content Include="Images\LBVlogo_green.png" />
@@ -358,6 +359,7 @@
     <Content Include="Images\Banner1.jpg" />
     <Content Include="Images\Banner2.jpg" />
     <Content Include="Images\Banner3.jpg" />
+    <Content Include="Images\Schulenburg.JPG" />
     <Content Include="Images\Videos\ClientStory.jpg" />
     <Content Include="Images\Videos\Promo.jpg" />
     <Content Include="Images\Videos\Welcome.jpg" />

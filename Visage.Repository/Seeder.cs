@@ -62,169 +62,169 @@ namespace Reihs.Repository
 						Name = "Lytera® Skin Brightening Complex",
 						Brand = "SkinMedica",
 						UnitPrice = 125.0,
-                        PayPalId = "C8GPXCKXK7JAA"
+						PayPalId = "C8GPXCKXK7JAA"
 					},
 					new mProduct {
 						Name = "AHA / BHA Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 46.0,
-                        PayPalId = "9CMV7RRVWCCAA"
+						PayPalId = "9CMV7RRVWCCAA"
 					},
 					new mProduct {
 						Name = "AHA/BHA Cream",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0,
-                        PayPalId = "886KF2LBAZCSS"
+						PayPalId = "886KF2LBAZCSS"
 					},
 					new mProduct {
 						Name = "Daily Physical Defense® Sunscreen Broad Spectrum SPF 30+",
 						Brand = "SkinMedica",
 						UnitPrice = 46.0,
-                        PayPalId = "L5V73ZL3CPR4E"
+						PayPalId = "L5V73ZL3CPR4E"
 					},
 					new mProduct {
 						Name = "Dermal Repair Cream",
 						Brand = "SkinMedica",
 						UnitPrice = 124.0,
-                        PayPalId = "TMMZML8T7UH8N"
+						PayPalId = "TMMZML8T7UH8N"
 					},
 					new mProduct {
 						Name = "Environmental Defense Sunscreen™ SPF 50+ with UV ProPlex™",
 						Brand = "SkinMedica",
 						UnitPrice = 46.0,
-                        PayPalId = "XEGEL2NVP8DGC"
+						PayPalId = "XEGEL2NVP8DGC"
 					},
 					new mProduct {
 						Name = "Facial Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0,
-                        PayPalId = "38STWVQQLDJMA"
+						PayPalId = "38STWVQQLDJMA"
 					},
 					new mProduct {
 						Name = "Hydrating Complex",
 						Brand = "SkinMedica",
 						UnitPrice = 84.0,
-                        PayPalId = "WW2CDDQBK8QDL"
+						PayPalId = "WW2CDDQBK8QDL"
 					},
 					new mProduct {
 						Name = "Purifying Foaming Wash",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0,
-                        PayPalId = "FEE6PDEGSYD3S"
+						PayPalId = "FEE6PDEGSYD3S"
 					},
 					new mProduct {
 						Name = "Redness Relief CalmPlex",
 						Brand = "SkinMedica",
 						UnitPrice = 84.0,
-                        PayPalId = "ZG34BPMJSGPXE"
+						PayPalId = "ZG34BPMJSGPXE"
 					},
 					new mProduct {
 						Name = "Rejuvenative Moisturizer",
 						Brand = "SkinMedica",
 						UnitPrice = 56.0,
-                        PayPalId = "4VESWU62UYLCJ"
+						PayPalId = "4VESWU62UYLCJ"
 					},
 					new mProduct {
 						Name = "Rejuvenative Toner",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0,
-                        PayPalId = "8FBNWSENXFLK6"
+						PayPalId = "8FBNWSENXFLK6"
 					},
 					new mProduct {
 						Name = "Retinol Complex .25",
 						Brand = "SkinMedica",
 						UnitPrice = 60.0,
-                        PayPalId = "VL7WJ37J5GMX6"
+						PayPalId = "VL7WJ37J5GMX6"
 					},
 					new mProduct {
 						Name = "Retinol Complex 0.5",
 						Brand = "SkinMedica",
 						UnitPrice = 75.0,
-                        PayPalId = "ZWDJPNDRZZTU6"
+						PayPalId = "ZWDJPNDRZZTU6"
 					},
 					new mProduct {
 						Name = "Retinol Complex 1.0",
 						Brand = "SkinMedica",
 						UnitPrice = 90.0,
-                        PayPalId = "8HAVECYSMFUQ"
+						PayPalId = "8HAVECYSMFUQ"
 					},
 					new mProduct {
 						Name = "Scar Recovery Gel with Centelline™ (0.5 Oz.)",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0,
-                        PayPalId = "V4LUU2VZ8GDUQ"
+						PayPalId = "V4LUU2VZ8GDUQ"
 					},
 					new mProduct {
 						Name = "Scar Recovery Gel with Centelline™ (2 Oz.)",
 						Brand = "SkinMedica",
 						UnitPrice = 98.0,
-                        PayPalId = "DQ98XZFGS5RLS"
+						PayPalId = "DQ98XZFGS5RLS"
 					},
 					new mProduct {
 						Name = "Sensitive Skin Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0,
-                        PayPalId = "39P93MBJ2BRM2"
+						PayPalId = "39P93MBJ2BRM2"
 					},
 					new mProduct {
 						Name = "TNS Ceramide Treatment Cream™",
 						Brand = "SkinMedica",
 						UnitPrice = 66.0,
-                        PayPalId = "3XPTCKR9KR3H4"
+						PayPalId = "3XPTCKR9KR3H4"
 					},
 					new mProduct {
 						Name = "TNS Essential Serum®",
 						Brand = "SkinMedica",
 						UnitPrice = 270.0,
-                        PayPalId = "JJ3KRHYFXS722"
+						PayPalId = "JJ3KRHYFXS722"
 					},
 					new mProduct {
 						Name = "TNS Eye Repair™",
 						Brand = "SkinMedica",
 						UnitPrice = 98.0,
-                        PayPalId = "WVB9WJB6PWYNJ"
+						PayPalId = "WVB9WJB6PWYNJ"
 					},
 					new mProduct {
 						Name = "TNS Illuminating Eye Cream®",
 						Brand = "SkinMedica",
 						UnitPrice = 88.0,
-                        PayPalId = "73EDPAZLQXVNC"
+						PayPalId = "73EDPAZLQXVNC"
 					},
 					new mProduct {
 						Name = "TNS Lip Plump System®",
 						Brand = "SkinMedica",
 						UnitPrice = 58.0,
-                        PayPalId = "XJJ7HWH8P6FP2"
+						PayPalId = "XJJ7HWH8P6FP2"
 					},
 					new mProduct {
 						Name = "TNS Recovery Complex®",
 						Brand = "SkinMedica",
 						UnitPrice = 172.0,
-                        PayPalId = "24AWZEVSBZUVE"
+						PayPalId = "24AWZEVSBZUVE"
 					},
 					new mProduct {
 						Name = "TNS Ultimate Daily Moisturizer™ SPF 20 Sunscreen",
 						Brand = "SkinMedica",
 						UnitPrice = 88.0,
-                        PayPalId = "KEH9G9EJSAW6W"
+						PayPalId = "KEH9G9EJSAW6W"
 					},
 					new mProduct {
 						Name = "Ultra Sheer Moisturizer",
 						Brand = "SkinMedica",
 						UnitPrice = 56.0,
-                        PayPalId = "SVCA7TEVK3MCE"
+						PayPalId = "SVCA7TEVK3MCE"
 					},
 					new mProduct {
 						Name = "Uplifting Eye Serum™",
 						Brand = "SkinMedica",
 						UnitPrice = 58.0,
-                        PayPalId = "RNFMP5QRGXP68"
+						PayPalId = "RNFMP5QRGXP68"
 					},
 					new mProduct {
 						Name = "Vitamin C+E Complex",
 						Brand = "SkinMedica",
 						UnitPrice = 98.0,
-                        PayPalId = "HQSJR49JEZRAY"
+						PayPalId = "HQSJR49JEZRAY"
 					}
 
 				);
@@ -239,31 +239,31 @@ namespace Reihs.Repository
 						Name = "Intense Moisturizer",
 						Brand = "Elta MD",
 						UnitPrice = 14.5,
-                        PayPalId = "23VUY55JF8QQU"
+						PayPalId = "23VUY55JF8QQU"
 					},
 					new mProduct {
 						Name = "UV Clear 46 SPF",
 						Brand = "Elta MD",
 						UnitPrice = 37.0,
-                        PayPalId = "JSRYJAWF7WTK8"
+						PayPalId = "JSRYJAWF7WTK8"
 					},
 					new mProduct {
 						Name = "UV Daily 40 SPF",
 						Brand = "Elta MD",
 						UnitPrice = 30.0,
-                        PayPalId = "HC5XP4S54CJCL"
+						PayPalId = "HC5XP4S54CJCL"
 					},
 					new mProduct {
 						Name = "UV Physical 41",
 						Brand = "Elta MD",
 						UnitPrice = 36.0,
-                        PayPalId = "BLTSS3PDPVUQL"
+						PayPalId = "BLTSS3PDPVUQL"
 					},
 					new mProduct {
 						Name = "UV Shield 45 SPF",
 						Brand = "Elta MD",
 						UnitPrice = 36.0,
-                        PayPalId = "CCNBJLUW2GGRS"
+						PayPalId = "CCNBJLUW2GGRS"
 					}
 			);
 
@@ -277,7 +277,7 @@ namespace Reihs.Repository
 					Name = "RevitaLash Advanced Formula",
 					Brand = "RevitaLash",
 					UnitPrice = 120.0,
-                    PayPalId = "E9G58TQK3UYAY"
+					PayPalId = "E9G58TQK3UYAY"
 				});
 
 			context.SaveChanges();
@@ -290,32 +290,31 @@ namespace Reihs.Repository
 					Name = "Clarisonic Mia",
 					Brand = "Clarisonic",
 					UnitPrice = 125.0,
-                    PayPalId = "S73DYTU3DGURJ"
+					PayPalId = "S73DYTU3DGURJ"
 				},
 				new mProduct {
 					Name = "Clarisonic Pro",
 					Brand = "Clarisonic",
 					UnitPrice = 195.0,
-                    PayPalId = "8VXQ6Q9GGKU36"
+					PayPalId = "8VXQ6Q9GGKU36"
 				},
 				new mProduct {
 					Name = "Clarisonic Pro System Kit",
 					Brand = "Clarisonic",
 					UnitPrice = 195.0,
-                    PayPalId = "FT6U7TE7T6LF4"
+					PayPalId = "FT6U7TE7T6LF4"
 				},
 				new mProduct {
 					Name = "Clarisonic Pro System Plus Body",
 					Brand = "Clarisonic",
 					UnitPrice = 250.0,
-                    PayPalId = "Z56ZFFNW2C8RE"
+					PayPalId = "Z56ZFFNW2C8RE"
 				},
-                new mProduct
-                {
-                    Name = "Gift Card",
-                    UnitPrice = 0.0,
-                    PayPalId = "SJ22FXJAFF9RL"
-                });
+			 new mProduct {
+				 Name = "Gift Card",
+				 UnitPrice = 0.0,
+				 PayPalId = "SJ22FXJAFF9RL"
+			 });
 
 			context.SaveChanges();
 		}
@@ -742,47 +741,47 @@ namespace Reihs.Repository
 		private static void SeedVideos(AppDB context)
 		{
 			context.Videos.AddOrUpdate(x => x.Name,
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-								
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
 
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
 
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"},
-					new Video { Name = "", Url = "//www.youtube.com/embed/"}
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" },
+					new Video { Name = "", Url = "//www.youtube.com/embed/" }
 				);
 		}
 		#endregion

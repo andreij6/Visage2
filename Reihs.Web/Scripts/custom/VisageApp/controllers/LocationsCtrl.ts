@@ -33,6 +33,7 @@
 					Phonetel: 'tel:+12147057676',
 					Toll: '+1 866 54 BOTOX',
 					Tolltell: 'tel:+18665426869',
+					Photo: "http://placehold.it/700x250",
 					Hours: 'Mon,Wed-Th: 9a-5p; Tues: 11a-8p; Fri: 9a-1:30p',
 					Services: services,
 					MapUrl: ''
@@ -47,6 +48,7 @@
 					Phonetel: 'tel:+12147057676',
 					Toll: '+1 866 54 BOTOX',
 					Tolltel: 'tel:+18665426869',
+					Photo: "../../../Images/Dallas.JPG",
 					//Hours: 'Mon,Wed-Th: 9a-5p; Tues: 11a-8p; Fri: 9a-1:30p',
 					Services: services,
 					MapUrl: ''
@@ -61,6 +63,7 @@
 					Phonetel: 'tel:+12147057676',
 					Toll: '+1 866 54 BOTOX',
 					Tolltel: 'tel:+18665426869',
+					Photo: "../../../Images/Schulenburg.JPG",
 					//Hours: 'Mon,Wed-Th: 9a-5p; Tues: 11a-8p; Fri: 9a-1:30p',
 					Services: services,
 					MapUrl: ''

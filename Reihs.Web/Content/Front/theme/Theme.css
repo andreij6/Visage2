@@ -2142,4 +2142,29 @@ label span {
 .location-services-wrap {
   background-color: #ebe8e8; }
 
+.location-image-contain {
+  height: 250px;
+  width: 750px;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  position: relative; }
+  .location-image-contain img {
+    margin: 0;
+    position: absolute;
+    /* 2 */
+    top: 50%;
+    /* 3 */
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%); }
+
+.team-row {
+  border-bottom: 1px solid #e4e1e1;
+  margin-bottom: 20px; }
+
 /*# sourceMappingURL=Theme.css.map */
