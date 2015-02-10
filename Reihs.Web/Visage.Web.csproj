@@ -528,6 +528,16 @@
     <Content Include="Templates\Front\Treatments\Partials\SkinResurface.html" />
     <Content Include="Templates\Front\Treatments\Partials\SkinTight.html" />
     <Content Include="Templates\Front\Treatments\Partials\VeinReduce.html" />
+    <Content Include="Templates\Front\Videos\Partials\BodyFX.html" />
+    <Content Include="Templates\Front\Videos\Partials\Botox.html" />
+    <Content Include="Templates\Front\Videos\Partials\BotoxDemo.html" />
+    <Content Include="Templates\Front\Videos\Partials\BotoxTestimonial.html" />
+    <Content Include="Templates\Front\Videos\Partials\IPL.html" />
+    <Content Include="Templates\Front\Videos\Partials\Overview.html" />
+    <Content Include="Templates\Front\Videos\Partials\Sclerotherapy.html" />
+    <Content Include="Templates\Front\Videos\Partials\SkinMedica.html" />
+    <Content Include="Templates\Front\Videos\Partials\Testimonialbjb.html" />
+    <Content Include="Templates\Front\Videos\Partials\TSN.html" />
     <Content Include="Templates\Front\Videos\Single.html" />
     <Content Include="Templates\Front\Videos\Index.html" />
     <Content Include="Web.config">

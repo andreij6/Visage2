@@ -5,5 +5,7 @@
 		MenuTrigger(): void;
 
 		Videos: any;
+		Video: any;
+		template: any;
 	}
 }    

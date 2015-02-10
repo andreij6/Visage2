@@ -113,7 +113,7 @@
 				{
 					templateUrl: 'Templates/Front/Videos/Index.html',
 					controller: 'VideoCtrl'
-				}).when('/Videos/:id',
+				}).when('/Videos/:Id',
 				{
 					templateUrl: 'Templates/Front/Videos/Single.html',
 					controller: 'VideoCtrl'

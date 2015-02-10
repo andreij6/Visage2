@@ -30,7 +30,7 @@
 			Carousel();
 		}
 
-		constructor($scope: Extensions.IVideoScope) {
+		constructor($scope: Extensions.IVideoScope, $routeParams: ng.route.IRouteParamsService) {
 			var self = this;
 			self.$scope = $scope;
 
@@ -44,26 +44,41 @@
 
 			}
 
+			function AssignVideo(id: number) {
+				for (var x in self.$scope.Videos) {
+					if (self.$scope.Videos[x].Id == id) {
+						self.$scope.Video = self.$scope.Videos[x];
+						self.$scope.template = self.$scope.Video.Template;
+					}
+				}
+			}
+
 			self.$scope.YouTubeMenu = '';
 
 			self.$scope.MenuTrigger = menuTrigger;
+			var nav = '../../../Templates/Front/Videos/Partials/'
+			self.$scope.Videos = [
+				{ Id: 1, Title: 'Botox & Restylane Patient Testimonial', Template: nav + 'BotoxTestimonial.html' },
+				{ Id: 2, Title: 'Testimonial: Botox, Juvederm, BodyFX', Template: nav + 'Testimonialbjb.html'},
+				{ Id: 3, Title: 'Intense Pulsed Light (IPL)', Template: nav + 'IPL.html'},
+				{ Id: 4, Title: 'Botox Demo', Template: nav + 'BotoxDemo.html'},
+				{ Id: 5, Title: 'BodyFX', Template: nav + 'BodyFX.html'},
+				{ Id: 6, Title: 'Skin Medica', Template: nav + 'SkinMedica.html'},
+				{ Id: 7, Title: 'TSN Essential', Template: nav + 'TSN.html'},
+				{ Id: 8, Title: 'Services and Products Overview', Template: nav + 'Overview.html'},
+				{ Id: 9, Title: 'Botox', Template: nav + 'Botox.html' },
+				{ Id: 10, Title: 'Sclerotherapy', Template: nav + 'Sclerotherapy.html' },
+			]
+			self.$scope.Video = {};
+
+			if ($routeParams['Id'] !== undefined)
+				AssignVideo($routeParams['Id']);
 
 			self.init();
 
-			self.$scope.Videos = [
-				{
-					Url: "#/Videos/1",
-					Image: "../../../Images/Videos/ClientStory.jpg",
-					Title: "Tesitmonial"
-				},
-				{
-					Url: "#/Videos/1",
-					Image: "../../../Images/Videos/ClientStory.jpg",
-					Title: "Tesitmonial"
-				}
-			]
+			console.log('in constructor');
 		}
 	}
 
-	VideoCtrl.$inject = ['$scope'];
+	VideoCtrl.$inject = ['$scope', '$routeParams'];
 } 

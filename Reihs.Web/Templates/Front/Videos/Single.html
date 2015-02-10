@@ -13,9 +13,8 @@
 		</div>
 	</div>
 </div>
-<div class="divide60"></div>
 <section>
-	<div class="col-sm-3 hidden-xs">
+	<!--<div class="col-sm-3 hidden-xs">
 		<section style="height: 500px; overflow-y: scroll; padding: 8px;">
 			<div>
 				<a href="#/Video/1">
@@ -56,21 +55,22 @@
 				</a>
 			</div>
 		</section>
-	</div>
+	</div>-->
 
-	<div class="col-md-9 theater">
-		<div class="col-md-6">
-			<iframe class="video-wrapper"
-				   src="//www.youtube.com/embed/RyfllCRDrus"
-				   frameborder="0"
-				   allowfullscreen></iframe>
+	<div class="col-md-12 theater">
+		<div class="col-md-offset-3">
+			
+			<h3 style="color: white"><a href="#/Videos"><small style="color: white">Back</small></a> - {{Video.Title}}</h3>
 		</div>
-		<div class="col-md-6">
-			<div class="divide40"></div>
-			<h3 style="color: white">Video Title</h3>
+		<div class="col-md-6 col-md-offset-3">
+			<div ng-include="template"></div>
 		</div>
 	</div>
 </section>
-
-<div class="divide50"></div>
+<section id="cta-1">
+	<div class="container">
+		<h1>Subscribe to our Youtube Channel</h1>
+		<a href="https://www.youtube.com/user/LeBeauVisageMedicalS" class="btn border-white btn-lg">Go to Youtube</a>
+	</div>
+</section>
 
