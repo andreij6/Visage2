@@ -264,6 +264,9 @@
     <Content Include="Content\Images\Blog\LBVSchDates_Promo.jpg" />
     <Content Include="Content\Images\coffee-569178_1280.jpg" />
     <Content Include="Content\Images\DrJMRiehs_600x600.jpg" />
+    <Content Include="Content\Images\EventHosting\event.JPG" />
+    <Content Include="Content\Images\EventHosting\event2.JPG" />
+    <Content Include="Content\Images\EventHosting\event3.JPG" />
     <Content Include="Content\Images\LBVfull_C4.png" />
     <Content Include="Content\Images\LBVlogo_green.png" />
     <Content Include="Content\Images\LBVword_C4.png" />
@@ -318,6 +321,9 @@
     <Content Include="Images\coffee-569178_1280.jpg" />
     <Content Include="Images\Dallas.JPG" />
     <Content Include="Images\DrJMRiehs_600x600.jpg" />
+    <Content Include="Images\EventHosting\event.JPG" />
+    <Content Include="Images\EventHosting\event2.JPG" />
+    <Content Include="Images\EventHosting\event3.JPG" />
     <Content Include="Images\Frisco.jpg" />
     <Content Include="Images\Gallery\Banner3.jpg" />
     <Content Include="Images\Gallery\Bodyshaping\bodyfx_tcwilde1.jpg" />

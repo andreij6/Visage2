@@ -2144,7 +2144,7 @@ label span {
 .location-services-wrap {
   background-color: #ebe8e8; }
 
-.location-image-contain {
+.image-contain {
   height: 250px;
   width: 750px;
   overflow: hidden;
@@ -2153,7 +2153,7 @@ label span {
   margin-right: auto;
   vertical-align: middle;
   position: relative; }
-  .location-image-contain img {
+  .image-contain img {
     margin: 0;
     position: absolute;
     /* 2 */
