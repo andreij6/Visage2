@@ -14,20 +14,27 @@
 	</div>
 </div>
 
+<div id="lightbox" ng-show="Showing" ng-click="Showing = false">
+	<p>Click to close</p>
+	<div id="content">
+		<img ng-src="{{Image}}" id="lighbox-img" class="lightbox-view"/>
+	</div>
+</div>
+
 <div class="divide80"></div>
 <div class="container">
 	<div class="row">
 		<div class="col-md-3">
 
 			<div class="sidebar-box margin40">
-                <div class="affix visible-md visible-lg">
-                    <h4>Menu</h4>
-                    <ul class="list-unstyled cat-list visible-md visible-lg">
-                        <li> <a href="#/Team">Meet the Team</a><i class="fa fa-angle-right"></i></li>
-                        <li> <a href="#/Videos">Videos</a><i class="fa fa-angle-right"></i></li>
-                        <li> <a href="#/Locations">Locations</a><i class="fa fa-angle-right"></i></li>
-                    </ul>
-                </div>
+				<div class="affix visible-md visible-lg">
+					<h4>Menu</h4>
+					<ul class="list-unstyled cat-list visible-md visible-lg">
+						<li> <a href="#/Team">Meet the Team</a><i class="fa fa-angle-right"></i></li>
+						<li> <a href="#/Videos">Videos</a><i class="fa fa-angle-right"></i></li>
+						<li> <a href="#/Locations">Locations</a><i class="fa fa-angle-right"></i></li>
+					</ul>
+				</div>
 				<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
 					<div class="dr-trigger" ng-click="MenuTrigger()">
 						<span class="dr-icon dr-icon-settings"></span>
@@ -47,9 +54,30 @@
 		</div>
 
 		<div class="col-md-9">
+			<div >
+				<div class="col-md-12">
+					<div class="center-heading">
+						<h2>Handwritten</h2>
+						<span class="center-line"></span>
+						<div class="handwritten-wrapper">
+							<div class="testimonials-handwritten">
+								<img src="http://placehold.it/200x200" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
+								<img src="http://placehold.it/200x200" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
+								<img src="http://placehold.it/200x200" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
+								<img src="http://placehold.it/200x200" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
+								<img src="http://placehold.it/200x200" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
+								<img src="http://placehold.it/200x200" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
+								<img src="http://placehold.it/200x200" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
+								<img src="http://placehold.it/200x200" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
+								<img src="http://placehold.it/200x200" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
+								<img src="http://placehold.it/200x200" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
+							</div>
+						</div>
+					</div><!--center-heading-->
+				</div>
 			<div class="col-md-12">
 				<div class="center-heading">
-					<h2>Testimonials</h2>
+					<h2>From around the Web</h2>
 					<span class="center-line"></span>
 					<p class="lead"><i class="fa fa-quote-left"></i> I have been going to Dr. Riehs & his amazing staff at Le Beau Visage for years and have always received top notch service there.  They are professional, friendly and always on the top of their game with the newest treatments.  I would never go anywhere else! <i class="fa fa-quote-right"></i></p>
 					<p class="lead">Sandra B.</p>
@@ -66,12 +94,12 @@
 					<p class="lead"><i class="fa fa-quote-left"></i> I have been a patient of Dr. Riehs' at Le Beau Visage for over 5 years. Having received numerous different treatments I can honestly say Dr. Riehs is an amazing physician managing a fabulous med spa. He is extremely professional and caring, always making me feel like my time is valuable. I have never felt pressured to buy a service, however he has great "Open House" and monthly specials that are hard to pass up. The staff at Le Beau Visage goes above and beyond to assure the scheduling is done efficiently. I have never waited more than 10 minutes and that was highly unusual, and apologized for! Thank you Dr. Riehs and your staff for helping me to grow old gracefully with the assistance of the latest cosmetic procedures!!! <i class="fa fa-quote-right"></i></p>
 					<p class="lead">Kim M.</p>
 				</div><!--center-heading-->
-                <div class="divide40"></div>
-                <div class="center-heading">
-                    <span class="center-line"></span>
-                    <p class="lead"><i class="fa fa-quote-left"></i> I travel an hour away to visit this spa because there's no other place I trust with my face.  I've been coming here for about three years. I tried another closer spa once about a year ago, which was a huge mistake that I regretted for several months.  The other place caused dark circles and swelling under my eye from a botched filler procedure that set me back $1000.  Fortunately, Dr. Riehs was able to correct it.  Never again will I make that mistake.  Another thing that is a huge plus for me is that they have extended hours at least one day a week and work some Saturdays.  They are great about fitting me in when I really need to see the doctor and I am rarely kept waiting longer than five minutes.  I highly recommend this spa...I would travel cross country if I had to. <i class="fa fa-quote-right"></i></p>
-                    <p class="lead">Crissi S.</p>
-                </div><!--center-heading-->
+				<div class="divide40"></div>
+				<div class="center-heading">
+					<span class="center-line"></span>
+					<p class="lead"><i class="fa fa-quote-left"></i> I travel an hour away to visit this spa because there's no other place I trust with my face.  I've been coming here for about three years. I tried another closer spa once about a year ago, which was a huge mistake that I regretted for several months.  The other place caused dark circles and swelling under my eye from a botched filler procedure that set me back $1000.  Fortunately, Dr. Riehs was able to correct it.  Never again will I make that mistake.  Another thing that is a huge plus for me is that they have extended hours at least one day a week and work some Saturdays.  They are great about fitting me in when I really need to see the doctor and I am rarely kept waiting longer than five minutes.  I highly recommend this spa...I would travel cross country if I had to. <i class="fa fa-quote-right"></i></p>
+					<p class="lead">Crissi S.</p>
+				</div><!--center-heading-->
 			</div>
 		</div>
 	</div>

@@ -20,6 +20,13 @@
 
 			}
 
+			function LightBoxTrigger($event: ng.IAngularEvent) {
+				self.$scope.Image = $event["currentTarget"]["src"];
+				self.$scope.Showing = true;
+			}
+
+			self.$scope.Trigger = LightBoxTrigger;
+
 			self.$scope.YouTubeMenu = '';
 
 			self.$scope.MenuTrigger = menuTrigger;
