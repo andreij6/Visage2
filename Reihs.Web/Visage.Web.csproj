@@ -267,6 +267,29 @@
     <Content Include="Content\Images\EventHosting\event.JPG" />
     <Content Include="Content\Images\EventHosting\event2.JPG" />
     <Content Include="Content\Images\EventHosting\event3.JPG" />
+    <Content Include="Content\Images\Gallery\Pigmentation\fraxel_terri.jpg" />
+    <Content Include="Content\Images\Gallery\Pigmentation\ipl_carol.jpg" />
+    <Content Include="Content\Images\Gallery\Pigmentation\ipl_david.jpg" />
+    <Content Include="Content\Images\Gallery\Pigmentation\ipl_paula.jpg" />
+    <Content Include="Content\Images\Gallery\SkinResurfacing\fractora_leslie_legs.jpg" />
+    <Content Include="Content\Images\Gallery\SkinResurfacing\fractora_leslie_neck.jpg" />
+    <Content Include="Content\Images\Gallery\SkinResurfacing\fractora_lynn.jpg" />
+    <Content Include="Content\Images\Gallery\SkinResurfacing\fractora_sandra.jpg" />
+    <Content Include="Content\Images\Gallery\SkinResurfacing\peel_1.jpg" />
+    <Content Include="Content\Images\Gallery\SkinResurfacing\peel_3.jpg" />
+    <Content Include="Content\Images\Gallery\SkinResurfacing\peel_4.jpg" />
+    <Content Include="Content\Images\Gallery\SkinResurfacing\peel_5.jpg" />
+    <Content Include="Content\Images\Gallery\SkinResurfacing\peel_6.jpg" />
+    <Content Include="Content\Images\Gallery\SkinTight\forma_cheryl2.jpg" />
+    <Content Include="Content\Images\Gallery\VeinReduction\laservein_gary.jpg" />
+    <Content Include="Content\Images\Gallery\VeinReduction\laservein_nose.jpg" />
+    <Content Include="Content\Images\Gallery\VeinReduction\laservein_nose2.jpg" />
+    <Content Include="Content\Images\Gallery\VeinReduction\sclero_1.jpg" />
+    <Content Include="Content\Images\Gallery\VeinReduction\sclero_2.jpg" />
+    <Content Include="Content\Images\Gallery\VeinReduction\sclero_3.jpg" />
+    <Content Include="Content\Images\Locations\Dallas.JPG" />
+    <Content Include="Content\Images\Locations\Frisco.jpg" />
+    <Content Include="Content\Images\Locations\Schulenburg.JPG" />
     <Content Include="Content\Images\Logos\LBVfull_C4.png" />
     <Content Include="Content\Images\Logos\LBVlogo_green.png" />
     <Content Include="Content\Images\Logos\LBVword_C4.png" />
@@ -313,9 +336,6 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Images\Locations\Dallas.JPG" />
-    <Content Include="Content\Images\Locations\Frisco.jpg" />
-    <Content Include="Content\Images\Locations\Schulenburg.JPG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom\scripts\li-scroller-starter.js" />
@@ -533,6 +553,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\Gallery\LaserHair\" />
     <Folder Include="Scripts\custom\AdminApp\models\" />
     <Folder Include="Scripts\custom\VisageApp\models\" />
     <Folder Include="Views\Emails\" />
