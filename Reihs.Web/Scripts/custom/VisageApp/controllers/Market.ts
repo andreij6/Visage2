@@ -17,7 +17,6 @@
 			self.ProductSvc = productSvc;
 			self.$location = $location;
 
-
 			var nav = "../../../Templates/Front/Market/Partials/";
 
 			var categories = [
@@ -36,6 +35,7 @@
 			function GetProducts() {
 				self.ProductSvc.getAll().then(
 					function (data) {
+						console.log(data);
 						self.$scope.Products = data;
 					},
 					function (error) {
@@ -70,7 +70,6 @@
 			self.$scope.MenuTrigger = menuTrigger;
 
 			function addToCart(cmd: string, hosted_button_id: string) {
-				console.log(self.ProductSvc);
 				self.ProductSvc.addToCart(cmd, hosted_button_id).then(
 					function (data) {
 						console.log(data);

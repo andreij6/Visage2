@@ -194,7 +194,7 @@
 			
 			self.$scope.Categories = categories;
 
-			var route = "../../Images/Gallery/";
+			var route = "../../Content/Images/Gallery/";
 			var ext = ".jpg";
 			
 

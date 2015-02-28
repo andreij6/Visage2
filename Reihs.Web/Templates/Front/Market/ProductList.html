@@ -50,11 +50,12 @@
 
 			<div>
 				<section class="row col-md-12">
-					<div class="col-md-4" ng-repeat="product in Products | filter: { Brand : Category} | orderBy: 'Name.length'">
+					<div class="col-md-4 product-showcase" ng-repeat="product in Products | filter: { Brand : Category} | orderBy: 'Name.length'">
 						<div class="mix" style="display: inline-block; opacity: 1;">
 							<div class="item-img-wrap ">
-								<img src="http://placehold.it/320x320" class="img-responsive" alt="Product Name">
-
+								<div class="img-wrap">
+									<img src="../../../Content/Images/Products/Dermal_Repair_1_7oz.png" class="img-responsive productlist-image" alt="" />
+								</div>
 								<div class="item-img-overlay">
 									<a href="#/Market/Item/{{product.Id}}" class="show-image">
 										<span></span>

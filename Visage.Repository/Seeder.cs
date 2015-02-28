@@ -62,43 +62,50 @@ namespace Reihs.Repository
 						Name = "Lytera® Skin Brightening Complex",
 						Brand = "SkinMedica",
 						UnitPrice = 125.0,
-						PayPalId = "C8GPXCKXK7JAA"
+						PayPalId = "C8GPXCKXK7JAA",
+						ImagePath = getImgSM("LYTERA Primary 2oz")
 					},
 					new mProduct {
 						Name = "AHA / BHA Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 46.0,
-						PayPalId = "9CMV7RRVWCCAA"
+						PayPalId = "9CMV7RRVWCCAA",
+						ImagePath = getImgSM("AHABHA Cleanser")
 					},
 					new mProduct {
 						Name = "AHA/BHA Cream",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0,
-						PayPalId = "886KF2LBAZCSS"
+						PayPalId = "886KF2LBAZCSS",
+						ImagePath = getImgSM("AHABHA Cream 2oz-copy")
 					},
 					new mProduct {
 						Name = "Daily Physical Defense® Sunscreen Broad Spectrum SPF 30+",
 						Brand = "SkinMedica",
 						UnitPrice = 46.0,
-						PayPalId = "L5V73ZL3CPR4E"
+						PayPalId = "L5V73ZL3CPR4E",
+						ImagePath = getImgSM("Daily-Physical-Defense SPF30 3oz")
 					},
 					new mProduct {
 						Name = "Dermal Repair Cream",
 						Brand = "SkinMedica",
 						UnitPrice = 124.0,
-						PayPalId = "TMMZML8T7UH8N"
+						PayPalId = "TMMZML8T7UH8N",
+						ImagePath = getImgSM("Dermal Repair 1 7oz")
 					},
 					new mProduct {
 						Name = "Environmental Defense Sunscreen™ SPF 50+ with UV ProPlex™",
 						Brand = "SkinMedica",
 						UnitPrice = 46.0,
-						PayPalId = "XEGEL2NVP8DGC"
+						PayPalId = "XEGEL2NVP8DGC",
+						ImagePath = getImgSM("Environmental Defense Sunscreen SPF50 3oz")
 					},
 					new mProduct {
 						Name = "Facial Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0,
-						PayPalId = "38STWVQQLDJMA"
+						PayPalId = "38STWVQQLDJMA",
+						ImagePath = getImgSM("Facial Cleanser 6oz-copy")
 					},
 					new mProduct {
 						Name = "Hydrating Complex",
@@ -110,7 +117,8 @@ namespace Reihs.Repository
 						Name = "Purifying Foaming Wash",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0,
-						PayPalId = "FEE6PDEGSYD3S"
+						PayPalId = "FEE6PDEGSYD3S",
+						ImagePath = getImgSM("Purifying Foaming Wash 5oz-copy")
 					},
 					new mProduct {
 						Name = "Redness Relief CalmPlex",
@@ -122,13 +130,15 @@ namespace Reihs.Repository
 						Name = "Rejuvenative Moisturizer",
 						Brand = "SkinMedica",
 						UnitPrice = 56.0,
-						PayPalId = "4VESWU62UYLCJ"
+						PayPalId = "4VESWU62UYLCJ",
+						ImagePath = getImgSM("Rejuvenative Moisturizer 2oz-copy")
 					},
 					new mProduct {
 						Name = "Rejuvenative Toner",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0,
-						PayPalId = "8FBNWSENXFLK6"
+						PayPalId = "8FBNWSENXFLK6",
+						ImagePath = getImgSM("Rejuvenative Toner 6oz")
 					},
 					new mProduct {
 						Name = "Retinol Complex .25",
@@ -164,19 +174,22 @@ namespace Reihs.Repository
 						Name = "Sensitive Skin Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0,
-						PayPalId = "39P93MBJ2BRM2"
+						PayPalId = "39P93MBJ2BRM2",
+						ImagePath = getImgSM("Sensitive Skin Cleanser 6oz-copy")
 					},
 					new mProduct {
 						Name = "TNS Ceramide Treatment Cream™",
 						Brand = "SkinMedica",
 						UnitPrice = 66.0,
-						PayPalId = "3XPTCKR9KR3H4"
+						PayPalId = "3XPTCKR9KR3H4",
+						ImagePath = getImgSM("TNS Ceramide Treatment Cream 2oz")
 					},
 					new mProduct {
 						Name = "TNS Essential Serum®",
 						Brand = "SkinMedica",
 						UnitPrice = 270.0,
-						PayPalId = "JJ3KRHYFXS722"
+						PayPalId = "JJ3KRHYFXS722",
+						ImagePath = getImgSM("TNS Essential Serum 1oz")
 					},
 					new mProduct {
 						Name = "TNS Eye Repair™",
@@ -194,42 +207,64 @@ namespace Reihs.Repository
 						Name = "TNS Lip Plump System®",
 						Brand = "SkinMedica",
 						UnitPrice = 58.0,
-						PayPalId = "XJJ7HWH8P6FP2"
+						PayPalId = "XJJ7HWH8P6FP2",
+						ImagePath = getImgSM("TNS LipPlump System 06oz")
 					},
 					new mProduct {
 						Name = "TNS Recovery Complex®",
 						Brand = "SkinMedica",
 						UnitPrice = 172.0,
-						PayPalId = "24AWZEVSBZUVE"
+						PayPalId = "24AWZEVSBZUVE",
+						ImagePath = getImgSM("TNS Recovery Complex 063oz")
 					},
 					new mProduct {
 						Name = "TNS Ultimate Daily Moisturizer™ SPF 20 Sunscreen",
 						Brand = "SkinMedica",
 						UnitPrice = 88.0,
-						PayPalId = "KEH9G9EJSAW6W"
+						PayPalId = "KEH9G9EJSAW6W",
+						ImagePath = getImgSM("TNS Ultimate Daily Moisturizer SPF20 2oz")
 					},
 					new mProduct {
 						Name = "Ultra Sheer Moisturizer",
 						Brand = "SkinMedica",
 						UnitPrice = 56.0,
-						PayPalId = "SVCA7TEVK3MCE"
+						PayPalId = "SVCA7TEVK3MCE",
+						ImagePath = getImgSM("Ultra Sheer Moisturizer 2oz")
 					},
 					new mProduct {
 						Name = "Uplifting Eye Serum™",
 						Brand = "SkinMedica",
 						UnitPrice = 58.0,
-						PayPalId = "RNFMP5QRGXP68"
+						PayPalId = "RNFMP5QRGXP68",
+						ImagePath = getImgSM("Uplifting Eye Serum")
 					},
 					new mProduct {
 						Name = "Vitamin C+E Complex",
 						Brand = "SkinMedica",
 						UnitPrice = 98.0,
-						PayPalId = "HQSJR49JEZRAY"
+						PayPalId = "HQSJR49JEZRAY",
+						ImagePath = getImgSM("Vitamin C E Complex 1 oz")
 					}
 
 				);
 
 			context.SaveChanges();
+		}
+
+		private static string getImgSM(string imageName)
+		{
+			return getImg(imageName, "SkinMedica", ".png");
+		}
+
+		private static string getImg(string imageName, string folder, string ext)
+		{
+			string path = "../../../Content/Images/Products/" + folder;
+
+			string image = imageName.Replace(' ', '_');
+
+			string formattedImage = String.Format("{0}{1}{2}", path, image, ext);
+
+			return formattedImage;
 		}
 
 		private static void SeedEltaMDProducts(AppDB context)
@@ -239,35 +274,45 @@ namespace Reihs.Repository
 						Name = "Intense Moisturizer",
 						Brand = "Elta MD",
 						UnitPrice = 14.5,
-						PayPalId = "23VUY55JF8QQU"
+						PayPalId = "23VUY55JF8QQU",
+						ImagePath = getImgEMD("_IntenseMoisturizer")
 					},
 					new mProduct {
 						Name = "UV Clear 46 SPF",
 						Brand = "Elta MD",
 						UnitPrice = 37.0,
-						PayPalId = "JSRYJAWF7WTK8"
+						PayPalId = "JSRYJAWF7WTK8",
+						ImagePath = getImgEMD("_UVClear46SPF")
 					},
 					new mProduct {
 						Name = "UV Daily 40 SPF",
 						Brand = "Elta MD",
 						UnitPrice = 30.0,
-						PayPalId = "HC5XP4S54CJCL"
+						PayPalId = "HC5XP4S54CJCL",
+						ImagePath = getImgEMD("_UVDaily40SPF")
 					},
 					new mProduct {
 						Name = "UV Physical 41",
 						Brand = "Elta MD",
 						UnitPrice = 36.0,
-						PayPalId = "BLTSS3PDPVUQL"
+						PayPalId = "BLTSS3PDPVUQL",
+						ImagePath = getImgEMD("_UVPhysical41SPF")
 					},
 					new mProduct {
 						Name = "UV Shield 45 SPF",
 						Brand = "Elta MD",
 						UnitPrice = 36.0,
-						PayPalId = "CCNBJLUW2GGRS"
+						PayPalId = "CCNBJLUW2GGRS",
+						ImagePath = getImgEMD("_UVShield45SPF")
 					}
 			);
 
 			context.SaveChanges();
+		}
+
+		private static string getImgEMD(string imageName)
+		{
+			return getImg("EltaMD" + imageName, "EltaMD", ".jpg");
 		}
 
 		private static void SeedRevitaLashProducts(AppDB context)
@@ -277,10 +322,16 @@ namespace Reihs.Repository
 					Name = "RevitaLash Advanced Formula",
 					Brand = "RevitaLash",
 					UnitPrice = 120.0,
-					PayPalId = "E9G58TQK3UYAY"
+					PayPalId = "E9G58TQK3UYAY",
+					ImagePath = getImgRL("RevitaLash AdvForm")
 				});
 
 			context.SaveChanges();
+		}
+
+		private static string getImgRL(string imageName)
+		{
+			return getImg(imageName, "RevitaLash", ".jpg");
 		}
 
 		private static void SeedClarisonic(AppDB context)
@@ -290,13 +341,15 @@ namespace Reihs.Repository
 					Name = "Clarisonic Mia",
 					Brand = "Clarisonic",
 					UnitPrice = 125.0,
-					PayPalId = "S73DYTU3DGURJ"
+					PayPalId = "S73DYTU3DGURJ",
+					ImagePath = getImgClarsonic("ClarisonicMia")
 				},
 				new mProduct {
 					Name = "Clarisonic Pro",
 					Brand = "Clarisonic",
 					UnitPrice = 195.0,
-					PayPalId = "8VXQ6Q9GGKU36"
+					PayPalId = "8VXQ6Q9GGKU36",
+					ImagePath = getImgClarsonic("ClarisonicPro")
 				},
 				new mProduct {
 					Name = "Clarisonic Pro System Kit",
@@ -317,6 +370,11 @@ namespace Reihs.Repository
 			 });
 
 			context.SaveChanges();
+		}
+
+		private static string getImgClarsonic(string imageName)
+		{
+			return getImg(imageName, "Clarisonic", ".jpg");
 		}
 
 		private static void SeedPackageCategories(AppDB context)

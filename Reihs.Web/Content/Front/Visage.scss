@@ -49,18 +49,18 @@
 	
 }
 
-.bollard {
-	background: url('../../Images/Banner1.jpg') no-repeat center center fixed;
+.banner-1 {
+	background: url('../../Content/Images/Banner/Banner1.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
 
 .mother {
-	background: url('../../Images/Banner2.jpg') no-repeat center center fixed;
+	background: url('../../Content/Images/Banner/Banner2.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
 
 .winter {
-	background: url('../../Images/Banner3.jpg') no-repeat center center fixed; 
+	background: url('../../Content/Images/Banner/Banner3.jpg') no-repeat center center fixed; 
 	background-size: cover;
 }
 
@@ -363,4 +363,18 @@ text-transform: uppercase;
 	height: 100%;
 	width: 50%;
 	margin-top: 50px;
+}
+
+.productlist-image {
+	height: 250px;
+	display:block;
+	margin:auto;
+}
+
+.product-showcase {
+	margin-top: 25px;
+}
+
+.img-wrap {
+	padding: 30px;
 }

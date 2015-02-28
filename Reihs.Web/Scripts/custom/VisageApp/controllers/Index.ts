@@ -27,8 +27,8 @@
 			var self = this;
 			self.$scope = $scope;
 			self.$interval = $interval;
-			self.currentClass = "bollard";
-			self.classes = ["mother", "winter"];
+			self.currentClass = "banner-1";
+			self.classes = ["banner-2", "banner-3"];
 			self.$scope.test = "Your are Home";
 
 			
