@@ -4,6 +4,7 @@
 		Image: any;
 		Showing: boolean;
 		Trigger(event: ng.IAngularEvent): void;
+		TestimonialImages: any;
 
 		MenuTrigger(): void;
 		YouTubeMenu: string;
