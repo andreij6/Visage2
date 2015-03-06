@@ -4,8 +4,6 @@
 
 		private init(): void {
 			var self = this;
-
-			console.log(self.$scope.TestimonialImages);
 		}
 
 		constructor($scope: Extensions.ITestimonialScope) {

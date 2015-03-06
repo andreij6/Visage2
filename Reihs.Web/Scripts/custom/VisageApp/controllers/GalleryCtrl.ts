@@ -19,8 +19,8 @@
 				{ Name: "Skin Tightening", Active: false },
 				{ Name: "Pigmentation/Melasma", Active: false },
 				{ Name: "BodyShaping/HCG", Active: false },
-				{ Name: "Microdermabrasion", Active: false },
-				{ Name: "Permanent Cosmetics", Active: false },
+				//{ Name: "Microdermabrasion", Active: false },
+				//{ Name: "Permanent Cosmetics", Active: false },
 				{ Name: "Laser Hair Removal", Active: false },
 				{ Name: "Vein Reduction", Active: false }
 			];
