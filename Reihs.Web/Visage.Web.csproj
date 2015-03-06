@@ -350,6 +350,8 @@
     <Content Include="Content\Images\Products\SkinMedica\Ultra_Sheer_Moisturizer_2oz.png" />
     <Content Include="Content\Images\Products\SkinMedica\Uplifting_Eye_Serum.png" />
     <Content Include="Content\Images\Products\SkinMedica\Vitamin_C_E_Complex_1oz.png" />
+    <Content Include="Content\Images\profile.jpg" />
+    <Content Include="Content\Images\Special\March15_Monthly.jpg" />
     <Content Include="Content\Images\Testimonials\Angela.jpg" />
     <Content Include="Content\Images\Testimonials\Brad.jpg" />
     <Content Include="Content\Images\Testimonials\Brandi.jpg" />
