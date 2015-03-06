@@ -283,6 +283,12 @@
     <Content Include="Content\Images\Gallery\FacialInj\sculptra_lisa.jpg" />
     <Content Include="Content\Images\Gallery\FacialInj\sculptra_rhonda.jpg" />
     <Content Include="Content\Images\Gallery\FacialInj\voluma_diane.jpg" />
+    <Content Include="Content\Images\Gallery\LaserHair\lhr_back.jpg" />
+    <Content Include="Content\Images\Gallery\LaserHair\lhr_chest.jpg" />
+    <Content Include="Content\Images\Gallery\LaserHair\lhr_chin.jpg" />
+    <Content Include="Content\Images\Gallery\LaserHair\lhr_chin2.jpg" />
+    <Content Include="Content\Images\Gallery\LaserHair\lhr_lips.jpg" />
+    <Content Include="Content\Images\Gallery\Pigmentation\fraxel_joe1.jpg" />
     <Content Include="Content\Images\Gallery\Pigmentation\fraxel_terri.jpg" />
     <Content Include="Content\Images\Gallery\Pigmentation\ipl_carol.jpg" />
     <Content Include="Content\Images\Gallery\Pigmentation\ipl_david.jpg" />
@@ -292,11 +298,14 @@
     <Content Include="Content\Images\Gallery\SkinResurfacing\fractora_lynn.jpg" />
     <Content Include="Content\Images\Gallery\SkinResurfacing\fractora_sandra.jpg" />
     <Content Include="Content\Images\Gallery\SkinResurfacing\peel_1.jpg" />
+    <Content Include="Content\Images\Gallery\SkinResurfacing\peel_2.jpg" />
     <Content Include="Content\Images\Gallery\SkinResurfacing\peel_3.jpg" />
     <Content Include="Content\Images\Gallery\SkinResurfacing\peel_4.jpg" />
     <Content Include="Content\Images\Gallery\SkinResurfacing\peel_5.jpg" />
     <Content Include="Content\Images\Gallery\SkinResurfacing\peel_6.jpg" />
+    <Content Include="Content\Images\Gallery\SkinTight\forma_cheryl1.jpg" />
     <Content Include="Content\Images\Gallery\SkinTight\forma_cheryl2.jpg" />
+    <Content Include="Content\Images\Gallery\SkinTight\forma_shirley.jpg" />
     <Content Include="Content\Images\Gallery\VeinReduction\laservein_gary.jpg" />
     <Content Include="Content\Images\Gallery\VeinReduction\laservein_nose.jpg" />
     <Content Include="Content\Images\Gallery\VeinReduction\laservein_nose2.jpg" />
@@ -341,6 +350,8 @@
     <Content Include="Content\Images\Products\SkinMedica\Ultra_Sheer_Moisturizer_2oz.png" />
     <Content Include="Content\Images\Products\SkinMedica\Uplifting_Eye_Serum.png" />
     <Content Include="Content\Images\Products\SkinMedica\Vitamin_C_E_Complex_1oz.png" />
+    <Content Include="Content\Images\profile.jpg" />
+    <Content Include="Content\Images\Special\March15_Monthly.jpg" />
     <Content Include="Content\Images\Testimonials\Angela.jpg" />
     <Content Include="Content\Images\Testimonials\Brad.jpg" />
     <Content Include="Content\Images\Testimonials\Brandi.jpg" />
@@ -443,9 +454,18 @@
     <Content Include="Scripts\defaults\angular\angular-route.min.js.map" />
     <Content Include="Scripts\defaults\angular\angular-sanitize.min.js.map" />
     <None Include="Properties\PublishProfiles\Lebeau.pubxml" />
+    <Content Include="Scripts\bootstrap.min.js.map">
+      <DependentUpon>bootstrap.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\defaults\bootstrap\bootstrap.min.js.map">
+      <DependentUpon>bootstrap.min.js</DependentUpon>
+    </Content>
     <None Include="Scripts\defaults\jquery\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\defaults\jquery\jquery-1.10.2.js" />
     <Content Include="Scripts\defaults\jquery\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\defaults\jquery\jquery-1.10.2.min.js.map">
+      <DependentUpon>jquery-1.10.2.min.js</DependentUpon>
+    </Content>
     <None Include="Scripts\defaults\jquery\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\defaults\jquery\jquery.validate.js" />
     <Content Include="Scripts\defaults\jquery\jquery.validate.min.js" />
@@ -586,10 +606,24 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Shared\_AdminLayoutPage.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Scripts\defaults\respond.min.js.map">
+      <DependentUpon>respond.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\defaults\jquery\jquery.validate.unobtrusive.min.js.map">
+      <DependentUpon>jquery.validate.unobtrusive.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\defaults\jquery\jquery.validate.min.js.map">
+      <DependentUpon>jquery.validate.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap-tpls.min.js.map">
+      <DependentUpon>ui-bootstrap-tpls.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\Plugins\angular-ui\ui-bootstrap.min.js.map">
+      <DependentUpon>ui-bootstrap.min.js</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\Gallery\LaserHair\" />
     <Folder Include="Scripts\custom\AdminApp\models\" />
     <Folder Include="Scripts\custom\VisageApp\models\" />
     <Folder Include="Views\Emails\" />
@@ -721,7 +755,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>18661</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
