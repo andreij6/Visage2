@@ -16,7 +16,7 @@
 				//{ Name: 'Blog', Url: '#/Blog' },
 				{ Name: 'Contact', Url: '#/Contact' },
 				{ Name: 'Fact Sheets', Url: '#/Resources/FactSheets' },
-				{ Name: 'Gift Cards', Url: '#/Market/Special/GiftCards' },
+				//{ Name: 'Gift Cards', Url: '#/Market/Special/GiftCards' },
 				//{ Name: 'Market', Url: '#/Market' },
 				{ Name: 'Monthly Specials', Url: '#/Specials/Monthly'},
 				{ Name: 'New Patient', Url: '#/Resources/NewPatients' },
