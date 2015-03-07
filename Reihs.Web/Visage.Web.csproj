@@ -373,6 +373,7 @@
     <Content Include="Content\Images\Testimonials\Tamme.jpg" />
     <Content Include="Content\Images\Testimonials\Tara.jpg" />
     <Content Include="Content\Images\Videos\ClientStory.jpg" />
+    <Content Include="Content\Images\Videos\InfoVid.jpg" />
     <Content Include="Content\Images\Videos\Promo.jpg" />
     <Content Include="Content\Images\Videos\Welcome.jpg" />
     <Content Include="Content\Images\Zoom.ico" />
