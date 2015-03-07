@@ -561,9 +561,13 @@
     <Content Include="Templates\Front\Videos\Partials\BotoxDemo.html" />
     <Content Include="Templates\Front\Videos\Partials\BotoxTestimonial.html" />
     <Content Include="Templates\Front\Videos\Partials\IPL.html" />
+    <Content Include="Templates\Front\Videos\Partials\KimTestimonial.html" />
+    <Content Include="Templates\Front\Videos\Partials\LynnTestimonial.html" />
+    <Content Include="Templates\Front\Videos\Partials\NancyTestimonial.html" />
     <Content Include="Templates\Front\Videos\Partials\Overview.html" />
     <Content Include="Templates\Front\Videos\Partials\Sclerotherapy.html" />
     <Content Include="Templates\Front\Videos\Partials\SkinMedica.html" />
+    <Content Include="Templates\Front\Videos\Partials\SkinMedica_2.html" />
     <Content Include="Templates\Front\Videos\Partials\Testimonialbjb.html" />
     <Content Include="Templates\Front\Videos\Partials\TSN.html" />
     <Content Include="Templates\Front\Videos\Single.html" />
