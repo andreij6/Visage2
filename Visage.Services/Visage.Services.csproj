@@ -82,10 +82,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Visage.Library\Visage.Library.csproj">
-      <Project>{96ee6122-7265-400c-83ff-e88ef33eb9dd}</Project>
-      <Name>Visage.Library</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Visage.Repository\Visage.Repository.csproj">
       <Project>{0c4928f1-99ef-4124-8edd-79cf4cae589a}</Project>
       <Name>Visage.Repository</Name>

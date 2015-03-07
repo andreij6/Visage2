@@ -262,7 +262,7 @@ namespace Reihs.Repository
 
 			string image = imageName.Replace(' ', '_');
 
-			string formattedImage = String.Format("{0}{1}{2}", path, image, ext);
+			string formattedImage = String.Format("{0}/{1}{2}", path, image, ext);
 
 			return formattedImage;
 		}

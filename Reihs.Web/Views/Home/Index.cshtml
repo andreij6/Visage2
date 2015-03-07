@@ -25,13 +25,13 @@
 											</p>
 											<div class="divide20"></div>
 										</div>
-										<div class="col-sm-12">
+										@*<div class="col-sm-12">
 											<h3 class="heading"><a href="#/Blog">Our Blog</a></h3>
 											<p></p>
 											<ul class="nav mega-vertical-nav" ng-repeat="blog in Posts | limitTo : 3 | filter : { Public: true}">
 												<li><a href="#/Blog/{{blog.Id}}">{{blog.Title}}</a></li>
 											</ul>
-										</div>
+										</div>*@
 										<div class="divide10"></div>
 										<div class="col-sm-12">
 											<h3 class="heading">Sections</h3>
@@ -60,7 +60,7 @@
 				<li>
 					<a href="#/Resources" class="dropdown-toggle">Patient Resources</a>
 				</li>
-				<li class="dropdown yamm-fw">
+				@*<li class="dropdown yamm-fw">
 					<a data-toggle="dropdown" class="dropdown-toggle">Market <i class="fa fa-chevron-down"></i></a>
 					<ul class="dropdown-menu">
 						<li>
@@ -101,7 +101,7 @@
 							</div>
 						</li>
 					</ul>
-				</li>
+				</li>*@
 
 				<!--mega menu end-->
 				<li>
@@ -128,9 +128,9 @@
 		<div class="col-xs-6 col-sm-3 sidebar-offcanvas showhide navbar-collapse" id="sidebar" role="navigation" style="">
 			<div id="sidebar-inner">
 				<ul class="nav navbar-nav side-nav">
-					<li ng-click=" UpdateSO()"><a>Close <i class="fa fa-remove"></i></a></li>
+					<li ng-click=" UpdateSO()" class="pull-left"><a>Close <i class="fa fa-remove fa-2x"></i></a></li>
 					<li class="nav-title">
-						<a href="#/"><img src="../../Content/Images/LBVword_C4.png" alt="" width="75%" /></a>
+						<a href="#/"><img src="../../Content/Images/Logos/LBVword_C4.png" alt="" width="75%" /></a>
 						<hr />
 					</li>
 					<li ng-click="SetNav('Home')">
@@ -147,12 +147,12 @@
 						<a href="#/About" ng-show="!AboutActive">DR RIEHS <i class="fa fa-male"></i></a>
 					</li>
 
-					<li ng-click="SetNav('Market')">
-						<div class="pull-left arrow-right" ng-show="MarketActive"></div>
-						<a href="#/Market" class="selected-nav" ng-show="MarketActive">MARKET <i class="fa fa-gift"></i></a>
+					@*<li ng-click="SetNav('Market')">
+				<div class="pull-left arrow-right" ng-show="MarketActive"></div>
+				<a href="#/Market" class="selected-nav" ng-show="MarketActive">MARKET <i class="fa fa-gift"></i></a>
 
-						<a href="#/Market" ng-show="!MarketActive">MARKET <i class="fa fa-gift"></i></a>
-					</li>
+				<a href="#/Market" ng-show="!MarketActive">MARKET <i class="fa fa-gift"></i></a>
+			</li>*@
 
 					<li ng-click="SetNav('Cart')" ng-show="HasItems">
 						<div class="pull-left arrow-right" ng-show="CartActive"></div>

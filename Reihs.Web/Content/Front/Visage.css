@@ -263,7 +263,7 @@
 .carousel-indicators li {
   width: 12px;
   height: 12px;
-  border: 2px solid #8EBF45; }
+  border: 2px solid #1e1b1b; }
 
 .carousel-indicators .active {
   width: 14px;
@@ -305,5 +305,30 @@
 .t-img {
   height: 200px;
   width: 200px; }
+
+.breadcrumb-wrap {
+  background-color: #d9f1a2;
+  border-bottom: 2px solid #8EBF45; }
+  .breadcrumb-wrap h4 {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px #8EBF45; }
+  .breadcrumb-wrap li {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 2px 2px #8EBF45; }
+    .breadcrumb-wrap li a {
+      font-weight: 600;
+      text-transform: capitalize;
+      color: #8EBF45;
+      text-shadow: 2px 2px #fff; }
+    .breadcrumb-wrap li a:hover {
+      font-weight: 600;
+      text-transform: capitalize;
+      color: #FFF;
+      text-shadow: 2px 2px #BFDC7A; }
 
 /*# sourceMappingURL=Visage.css.map */

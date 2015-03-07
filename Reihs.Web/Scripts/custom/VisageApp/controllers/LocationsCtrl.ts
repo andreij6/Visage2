@@ -33,7 +33,7 @@
 					Phonetel: 'tel:+12147057676',
 					Toll: '+1 866 54 BOTOX',
 					Tolltell: 'tel:+18665426869',
-					Photo: "../../../Content/Images/Frisco.jpg",
+					Photo: "../../../Content/Images/Locations/Frisco.jpg",
 					Hours: 'Mon,Wed-Th: 9a-5p; Tues: 11a-8p; Fri: 9a-1:30p',
 					Services: services,
 					MapUrl: ''
@@ -48,7 +48,7 @@
 					Phonetel: 'tel:+12147057676',
 					Toll: '+1 866 54 BOTOX',
 					Tolltel: 'tel:+18665426869',
-					Photo: "../../../Content/Images/Dallas.JPG",
+					Photo: "../../../Content/Images/Locations/Dallas.JPG",
 					//Hours: 'Mon,Wed-Th: 9a-5p; Tues: 11a-8p; Fri: 9a-1:30p',
 					Services: services,
 					MapUrl: ''
@@ -63,7 +63,7 @@
 					Phonetel: 'tel:+12147057676',
 					Toll: '+1 866 54 BOTOX',
 					Tolltel: 'tel:+18665426869',
-					Photo: "../../../Content/Images/Schulenburg.JPG",
+					Photo: "../../../Content/Images/Locations/Schulenburg.JPG",
 					//Hours: 'Mon,Wed-Th: 9a-5p; Tues: 11a-8p; Fri: 9a-1:30p',
 					Services: services,
 					MapUrl: ''

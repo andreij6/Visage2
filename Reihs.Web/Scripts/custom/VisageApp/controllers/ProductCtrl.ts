@@ -31,6 +31,7 @@
 				self.ProductSvc.getAll().then(
 					function (data) {
 						self.$scope.Products = data;
+						console.log(data);
 					},
 					function (error) {
 						console.log(error);
