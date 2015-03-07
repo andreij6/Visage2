@@ -213,8 +213,6 @@
 
 				{ Name: getProcedure(4), Image: setimg("alesia", 4), Category: categories[0] },
 				{ Name: getProcedure(4), Image: setimg("yolanda", 4), Category: categories[0] },
-
-				{ Name: getProcedure(5), Image: setimg("lisa", 5), Category: categories[0] },
 				{ Name: getProcedure(5), Image: setimg("lisa", 5), Category: categories[0] },
 
 				{ Name: getProcedure(6), Image: setimg("diane", 6), Category: categories[0] },
