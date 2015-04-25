@@ -42,14 +42,14 @@
 				{
 					Active: '',
 					Name: 'Dallas',
-					Address: 'Lovers Lane',
+					Address: '4306 Lovers Lane Dallas, TX 75225',
 					Email: 'info@lebeauvisagemedspa.com',
 					Phone: '+214 705 7676',
 					Phonetel: 'tel:+12147057676',
 					Toll: '+1 866 54 BOTOX',
 					Tolltel: 'tel:+18665426869',
 					Photo: "../../../Content/Images/Locations/Dallas.JPG",
-					//Hours: 'Mon,Wed-Th: 9a-5p; Tues: 11a-8p; Fri: 9a-1:30p',
+					Hours: 'Thurs: 10a-4p',
 					Services: services,
 					MapUrl: ''
 				};

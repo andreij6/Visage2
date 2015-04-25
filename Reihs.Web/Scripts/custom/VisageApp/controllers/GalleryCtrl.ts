@@ -254,7 +254,6 @@
 				{ Name: getProcedure(11), Image: setimg("paula", 11), Category: categories[3] },
 
 				//Laser hair
-				{ Name: getProcedure(9), Image: setimg("back", 9), Category: categories[5] },
 				{ Name: getProcedure(9), Image: setimg("chest", 9), Category: categories[5] },
 				{ Name: getProcedure(9), Image: setimg("chin", 9), Category: categories[5] },
 				{ Name: getProcedure(9), Image: setimg("chin2", 9), Category: categories[5] },
