@@ -50,18 +50,18 @@
 }
 
 .banner-1 {
-	background: url('../../Content/Images/Banner/Banner1.jpg') no-repeat center center fixed;
-	background-size: cover;
+	background: url('../../Content/Images/Banner/Nancy.jpg') no-repeat center center;
+	background-size: auto;
 }
 
 .banner-2 {
-	background: url('../../Content/Images/Banner/Banner2.jpg') no-repeat center center fixed;
-	background-size: cover;
+	background: url('../../Content/Images/Banner/Dallas.jpg') no-repeat center center;
+	background-size: auto;
 }
 
 .banner-3 {
-	background: url('../../Content/Images/Banner/Banner3.jpg') no-repeat center center fixed;
-	background-size: cover;
+	background: url('../../Content/Images/Banner/Dallas.jpg') no-repeat center center;
+	background-size: auto;
 }
 
 .arrow-right {
@@ -312,7 +312,7 @@
 }
 
 .navbar-visage .navbar-nav > li > a {
-	color: #060606;
+	color: #fff;
 	font-weight: 600;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -447,4 +447,27 @@
 .video-slider {
 	border-bottom: 1px solid #cfcaca;
 	margin-bottom: 10px;
+}
+
+.header-side {
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+
+	a {
+		color: #fff;
+	}
+}
+
+body {
+	background-color: #92795B;
+}
+
+.main-navbar {
+	z-index: 999;
+	background-color: #92795B;
+}
+
+#nav-elements li a {
+	color: white
 }

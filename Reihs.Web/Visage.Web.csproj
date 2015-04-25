@@ -259,6 +259,8 @@
     <Content Include="Content\Images\Banner\Banner1.jpg" />
     <Content Include="Content\Images\Banner\Banner2.jpg" />
     <Content Include="Content\Images\Banner\Banner3.jpg" />
+    <Content Include="Content\Images\Banner\Nancy.jpg" />
+    <Content Include="Content\Images\Banner\Dallas.jpg" />
     <Content Include="Content\Images\Blog\Feb15_Promo.jpg" />
     <Content Include="Content\Images\Blog\Jan15_Promo.jpg" />
     <Content Include="Content\Images\Blog\LBVSchDates_Promo.jpg" />
@@ -315,6 +317,7 @@
     <Content Include="Content\Images\Locations\Dallas.JPG" />
     <Content Include="Content\Images\Locations\Frisco.jpg" />
     <Content Include="Content\Images\Locations\Schulenburg.JPG" />
+    <Content Include="Content\Images\Logos\CremeLogo.jpg" />
     <Content Include="Content\Images\Logos\LBVfull_C4.png" />
     <Content Include="Content\Images\Logos\LBVlogo_green.png" />
     <Content Include="Content\Images\Logos\LBVword_C4.png" />
