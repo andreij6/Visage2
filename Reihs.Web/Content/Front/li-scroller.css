@@ -34,10 +34,14 @@ ul.newsticker li {
 ul.newsticker a {
 	white-space: nowrap;
 	padding: 0;
-	color: #ff0000;
+	color: #281b0b;
 	font: bold 13px Arial;
 	margin: 0 50px 0 0;
 } 
 ul.newsticker span {
 	margin: 0 10px 0 0;
 } 
+
+.mask {
+	padding: 5px;
+}

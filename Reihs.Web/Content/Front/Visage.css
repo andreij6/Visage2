@@ -307,8 +307,7 @@
   width: 200px; }
 
 .breadcrumb-wrap {
-  background-color: transparent;
-  border-bottom: 1px solid #f9f1cd; }
+  background-color: transparent; }
   .breadcrumb-wrap h4 {
     font-size: 17px;
     font-weight: 600;
@@ -397,5 +396,14 @@ body {
 
 #location-crumb {
   height: 350px; }
+
+/*.navbar-default {
+	background-color: #281b0b;
+}*/
+.related-images img {
+  border: 1px solid #fff;
+  margin-top: -150px;
+  margin-right: 10px;
+  z-index: 999; }
 
 /*# sourceMappingURL=Visage.css.map */
