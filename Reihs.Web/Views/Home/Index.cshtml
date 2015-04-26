@@ -22,15 +22,15 @@
 						<li><a href="https://www.linkedin.com/pub/jason-riehs/80/59a/4a5"><i class="fa fa-linkedin"></i></a></li>
 				</ul><br />
 				<ul class="nav navbar-nav pull-right">
-					<li>
-						<a href="#/Treatments" class="dropdown-toggle">TREATMENTS</a>
+					<li class="top-nav">
+						<a href="#/Treatments">TREATMENTS</a>
 					</li>
 					<li>
-						<a href="#/Gallery" class="dropdown-toggle">PHOTO GALLERY</a>
+						<a href="#/Gallery">PHOTO GALLERY</a>
 					</li>
 					<!--mega menu-->
 					<li>
-						<a href="#/Resources" class="dropdown-toggle">Patient Resources</a>
+						<a href="#/Resources">Patient Resources</a>
 					</li>
 					<!-- Market
 			@*<li class="dropdown yamm-fw">
@@ -78,26 +78,19 @@
 	-->
 						<li>
 						<a data-toggle="dropdown" class="dropdown-toggle">About<i class="fa fa-chevron-down"></i></a>
-							<ul class="dropdown-menu">
+							<ul class="dropdown-menu" id="about-dropdown">
 								<li>
 									<div class="yamm-content yamm-about-content">
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="col-sm-12">
-													<h3 class="heading"><a href="#/About">Dr. Riehs</a></h3>
+													<h3 class="heading">Dr. Riehs</h3>
 													<p>
 														Meet the Owner and Full-time, On-site Physician of Le Beau Visage Medical Spa.
 														<a href="#/About" class="pull-right">Read More</a>
 													</p>
 													<div class="divide20"></div>
 												</div>
-												@*<div class="col-sm-12">
-												<h3 class="heading"><a href="#/Blog">Our Blog</a></h3>
-												<p></p>
-												<ul class="nav mega-vertical-nav" ng-repeat="blog in Posts | limitTo : 3 | filter : { Public: true}">
-													<li><a href="#/Blog/{{blog.Id}}">{{blog.Title}}</a></li>
-												</ul>
-											</div>*@
 												<div class="divide10"></div>
 												<div class="col-sm-12">
 													<h3 class="heading">Sections</h3>
@@ -118,7 +111,7 @@
 						</li>
 						<!--mega menu end-->
 						<li>
-							<a href="#/Contact" class="dropdown-toggle">CONTACT US</a>
+							<a href="#/Contact">CONTACT US</a>
 						</li>
 						<li ng-show="HasItems">
 							<a href="#/Market/Cart">View Cart <span class="pull-right"> <i class="fa fa-shopping-cart fa-2x"></i><span class="badge">{{ShoppingCart.length}}</span></span></a>
@@ -128,11 +121,11 @@
 				</div>
 				<div class="clear col-sm-3 header-side">
 					<ul class="nav nav-pills nav-stacked">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Online Expo</a></li>
-						<li><a href="#">Meet the Team</a></li>
-						<li><a href="#">Monthly Specials</a></li>
-						<li><a href="#">Call Now: 1.214.705.7676</a></li>
+						<li><a href="#/">Home</a></li>
+						<li><a href="#/">Online Expo</a></li>
+						<li><a href="#/Team">Meet the Team</a></li>
+						<li><a href="#/Special/Monthly">Monthly Specials</a></li>
+						<li><a>Call Now: 1.214.705.7676</a></li>
 					</ul>
 				</div>
 

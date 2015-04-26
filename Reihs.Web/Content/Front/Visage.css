@@ -55,7 +55,7 @@
   border-left: 10px solid #c4c4c4; }
 
 .selected-nav i {
-  color: #289c4e; }
+  color: #f9f1cd; }
 
 .cart-items-list {
   height: 400px;
@@ -67,7 +67,7 @@
 #CreativeJones {
   color: #ffffff; }
   #CreativeJones:hover {
-    color: #289c4e; }
+    color: #f9f1cd; }
 
 .badge {
   background-color: #FFF;
@@ -200,7 +200,7 @@
   border-radius: 0px; }
   .nav-justified li a:hover {
     background-color: white;
-    border-bottom: 4px solid #289c4e; }
+    border-bottom: 4px solid #f9f1cd; }
 
 .navbar-toggle {
   border: none; }
@@ -210,9 +210,9 @@
   width: 500px; }
 
 .active-pill {
-  color: #289c4e;
+  color: #f9f1cd;
   background-color: white;
-  border-bottom: 4px solid #289c4e; }
+  border-bottom: 4px solid #f9f1cd; }
 
 #nav.affix {
   position: fixed;
@@ -238,11 +238,11 @@
   -ms-transition: all 0.4s ease-in-out; }
 
 .navbar-visage .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #289c4e;
+  color: #f9f1cd;
   background-color: transparent; }
 
 .navbar-visage .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #289c4e;
+  color: #f9f1cd;
   background-color: transparent; }
 
 .navbar-visage .navbar-nav > li > a {
@@ -252,13 +252,13 @@
   text-transform: uppercase; }
 
 .navbar-visage .navbar-nav > li > a:hover {
-  color: #289c4e; }
+  color: #f9f1cd; }
 
 #sidebar-inner.affix {
   position: fixed; }
 
 .fa-remove {
-  color: #289c4e; }
+  color: #f9f1cd; }
 
 .carousel-indicators li {
   width: 12px;
@@ -307,8 +307,8 @@
   width: 200px; }
 
 .breadcrumb-wrap {
-  background-color: #87cf80;
-  border-bottom: 2px solid #53964c; }
+  background-color: transparent;
+  border-bottom: 1px solid #f9f1cd; }
   .breadcrumb-wrap h4 {
     font-size: 17px;
     font-weight: 600;
@@ -370,5 +370,32 @@ body {
 
 #nav-elements li a {
   color: white; }
+
+#nav-elements li a:hover {
+  color: #281b0b; }
+
+#about-dropdown li a {
+  color: #92795B; }
+
+.dropdown-menu li a {
+  color: #000; }
+
+.top-social li a i {
+  background-color: transparent; }
+  .top-social li a i:hover {
+    background-color: #281b0b; }
+
+.nav-pills > li a:hover {
+  background-color: transparent;
+  color: #f9f1cd;
+  border-left: 1px solid #f9f1cd; }
+.nav-pills > li a:focus {
+  background-color: transparent; }
+
+.breadcrumb-wrap {
+  height: 250px; }
+
+#location-crumb {
+  height: 350px; }
 
 /*# sourceMappingURL=Visage.css.map */

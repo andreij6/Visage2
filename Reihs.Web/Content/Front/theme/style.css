@@ -365,9 +365,10 @@ p {
     margin: 0;
     padding:0;
 }
+
 .top-social li a{
     font-size: 14px;
-    color:#888;
+    color:#000;
     margin: 0px;
 }
 .top-social li a i{

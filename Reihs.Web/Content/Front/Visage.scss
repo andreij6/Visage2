@@ -387,8 +387,8 @@
 }
 
 .breadcrumb-wrap {
-	background-color: #87cf80;
-	border-bottom: 2px solid #53964c;
+	background-color: transparent;
+	border-bottom: 1px solid #f9f1cd;
 
 	h4 {
 		font-size: 17px;
@@ -470,4 +470,44 @@ body {
 
 #nav-elements li a {
 	color: white
+}
+
+#nav-elements li a:hover {
+	color: #281b0b;
+}
+
+
+#about-dropdown li a{
+	color: #92795B;
+}
+
+.dropdown-menu li a {
+	color: #000;
+}
+
+.top-social li a i {
+	background-color: transparent;
+
+	&:hover {
+		background-color: #281b0b;
+	}
+}
+.nav-pills > li a{
+	&:hover {
+		background-color: transparent;
+		color: #f9f1cd;
+		border-left: 1px solid #f9f1cd;
+	}
+
+	&:focus{
+		background-color: transparent;
+	}
+}
+
+.breadcrumb-wrap {
+	height: 250px;
+}
+
+#location-crumb {
+	height: 350px;
 }

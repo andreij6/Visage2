@@ -1,68 +1,62 @@
-﻿<div class="breadcrumb-wrap visible-md visible-lg">
+﻿<section class="container">
+	<div class="breadcrumb-wrap visible-sm visible-md visible-lg">
+		<div class="container">
+			<div class="row">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="divide80 visible-md visible-lg"></div>
+
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
-				<h4>Treatments</h4>
+			<div class="col-md-3">
+				<div class="sidebar-box margin40">
+					<div class="visible-md visible-lg">
+						<h4 ng-click="SetTemplate('Index')"><a>Overview</a></h4>
+
+						<ul class="list-unstyled cat-list visible-md visible-lg">
+							<li ng-click="SetTemplate('FacialInject')"> <a>Facial Injectibles</a> <i class="fa fa-angle-right"></i></li>
+							<li ng-click="SetTemplate('Pigment')"><a>Pigmentation/Melasma</a><i class="fa fa-angle-right"></i></li>
+							<li ng-click="SetTemplate('SkinResurface')"><a>Skin Resurfacing</a><i class="fa fa-angle-right"></i></li>
+							<li ng-click="SetTemplate('SkinTight')"><a>Skin Tightening</a><i class="fa fa-angle-right"></i></li>
+							<li ng-click="SetTemplate('Bodyshaping')"><a>Bodyshaping/HCG</a><i class="fa fa-angle-right"></i></li>
+							<li ng-click="SetTemplate('Microderma')"><a>Microdermabrasion</a><i class="fa fa-angle-right"></i></li>
+							<li ng-click="SetTemplate('PermCos')"><a>Permanent Cosmetics</a><i class="fa fa-angle-right"></i></li>
+							<li ng-click="SetTemplate('LaserHair')"><a>Laser Hair Removal</a><i class="fa fa-angle-right"></i></li>
+							<li ng-click="SetTemplate('VeinReduce')"><a>Vein Reduction</a><i class="fa fa-angle-right"></i></li>
+						</ul>
+						<a href="#/Contact" class="btn border-theme btn-block">Schedule a Consultation</a>
+					</div>
+					<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
+						<div class="dr-trigger" ng-click="MenuTrigger()">
+							<span class="dr-icon dr-icon-settings"></span>
+							<a class="dr-label">Treatments</a>
+						</div>
+						<div ng-show="open" class="subNav">
+							<ul>
+								<li ng-click="SetTemplate('FacialInject')"> <a>Facial Injectibles</a><i class="fa fa-angle-right"></i></li>
+								<li ng-click="SetTemplate('Pigment')"><a>Pigmentation/Melasma</a><i class="fa fa-angle-right"></i></li>
+								<li ng-click="SetTemplate('SkinResurface')"><a>Skin Resurfacing</a><i class="fa fa-angle-right"></i></li>
+								<li ng-click="SetTemplate('SkinTight')"><a>Skin Tightening</a><i class="fa fa-angle-right"></i></li>
+								<li ng-click="SetTemplate('Bodyshaping')"><a>Bodyshaping/HCG</a><i class="fa fa-angle-right"></i></li>
+								<li ng-click="SetTemplate('Microderma')"><a>Microdermabrasion</a><i class="fa fa-angle-right"></i></li>
+								<li ng-click="SetTemplate('PermCos')"><a>Permanent Cosmetics</a><i class="fa fa-angle-right"></i></li>
+								<li ng-click="SetTemplate('LaserHair')"><a>Laser Hair Removal</a><i class="fa fa-angle-right"></i></li>
+								<li ng-click="SetTemplate('VeinReduce')"><a>Vein Reduction</a><i class="fa fa-angle-right"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--sidebar-box-->
+
 			</div>
-			<div class="col-sm-6 hidden-xs text-right">
-				<ol class="breadcrumb">
-					<li><a href="#/">Le Beau Visage</a></li>
-					<li>Treatments</li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</div>
 
-<div class="divide80 visible-md visible-lg"></div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-3">
-			<div class="sidebar-box margin40">
-				<div class="visible-md visible-lg">
-					<h4 ng-click="SetTemplate('Index')"><a>Overview</a></h4>
-
-					<ul class="list-unstyled cat-list visible-md visible-lg">
-						<li ng-click="SetTemplate('FacialInject')"> <a>Facial Injectibles</a> <i class="fa fa-angle-right"></i></li>
-						<li ng-click="SetTemplate('Pigment')"><a>Pigmentation/Melasma</a><i class="fa fa-angle-right"></i></li>
-						<li ng-click="SetTemplate('SkinResurface')"><a>Skin Resurfacing</a><i class="fa fa-angle-right"></i></li>
-						<li ng-click="SetTemplate('SkinTight')"><a>Skin Tightening</a><i class="fa fa-angle-right"></i></li>
-						<li ng-click="SetTemplate('Bodyshaping')"><a>Bodyshaping/HCG</a><i class="fa fa-angle-right"></i></li>
-						<li ng-click="SetTemplate('Microderma')"><a>Microdermabrasion</a><i class="fa fa-angle-right"></i></li>
-						<li ng-click="SetTemplate('PermCos')"><a>Permanent Cosmetics</a><i class="fa fa-angle-right"></i></li>
-						<li ng-click="SetTemplate('LaserHair')"><a>Laser Hair Removal</a><i class="fa fa-angle-right"></i></li>
-						<li ng-click="SetTemplate('VeinReduce')"><a>Vein Reduction</a><i class="fa fa-angle-right"></i></li>
-					</ul>
-					<a href="#/Contact" class="btn border-theme btn-block">Schedule a Consultation</a>
+			<div class="col-md-8 col-md-offset-1">
+				<div class="mobile-container">
+					<div ng-include="template.url"></div>
 				</div>
-                    <div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
-                        <div class="dr-trigger" ng-click="MenuTrigger()">
-                            <span class="dr-icon dr-icon-settings"></span>
-                            <a class="dr-label">Treatments</a>
-                        </div>
-                        <div ng-show="open" class="subNav">
-                            <ul>
-                                <li ng-click="SetTemplate('FacialInject')"> <a>Facial Injectibles</a><i class="fa fa-angle-right"></i></li>
-                                <li ng-click="SetTemplate('Pigment')"><a>Pigmentation/Melasma</a><i class="fa fa-angle-right"></i></li>
-                                <li ng-click="SetTemplate('SkinResurface')"><a>Skin Resurfacing</a><i class="fa fa-angle-right"></i></li>
-                                <li ng-click="SetTemplate('SkinTight')"><a>Skin Tightening</a><i class="fa fa-angle-right"></i></li>
-                                <li ng-click="SetTemplate('Bodyshaping')"><a>Bodyshaping/HCG</a><i class="fa fa-angle-right"></i></li>
-                                <li ng-click="SetTemplate('Microderma')"><a>Microdermabrasion</a><i class="fa fa-angle-right"></i></li>
-                                <li ng-click="SetTemplate('PermCos')"><a>Permanent Cosmetics</a><i class="fa fa-angle-right"></i></li>
-                                <li ng-click="SetTemplate('LaserHair')"><a>Laser Hair Removal</a><i class="fa fa-angle-right"></i></li>
-                                <li ng-click="SetTemplate('VeinReduce')"><a>Vein Reduction</a><i class="fa fa-angle-right"></i></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!--sidebar-box-->
-
-		</div>
-
-		<div class="col-md-8 col-md-offset-1">
-			<div class="mobile-container">
-				<div ng-include="template.url"></div>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
