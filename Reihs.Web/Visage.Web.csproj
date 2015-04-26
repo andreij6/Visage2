@@ -222,6 +222,7 @@
     </Content>
     <Content Include="Content\Front\li-scroller.css" />
     <Content Include="Content\Front\loading-bar\loading-bar.css" />
+    <Content Include="Content\Front\Pages\homepage.css" />
     <Content Include="Content\Front\s3slider.css" />
     <Content Include="Content\Front\theme\animate.css" />
     <Content Include="Content\Front\theme\Colors.css">
