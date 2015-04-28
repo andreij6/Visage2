@@ -55,7 +55,7 @@
   border-left: 10px solid #c4c4c4; }
 
 .selected-nav i {
-  color: #f9f1cd; }
+  color: #4f3514; }
 
 .cart-items-list {
   height: 400px;
@@ -67,7 +67,7 @@
 #CreativeJones {
   color: #ffffff; }
   #CreativeJones:hover {
-    color: #f9f1cd; }
+    color: #4f3514; }
 
 .badge {
   background-color: #FFF;
@@ -200,7 +200,7 @@
   border-radius: 0px; }
   .nav-justified li a:hover {
     background-color: white;
-    border-bottom: 4px solid #f9f1cd; }
+    border-bottom: 4px solid #4f3514; }
 
 .navbar-toggle {
   border: none; }
@@ -210,9 +210,9 @@
   width: 500px; }
 
 .active-pill {
-  color: #f9f1cd;
+  color: #4f3514;
   background-color: white;
-  border-bottom: 4px solid #f9f1cd; }
+  border-bottom: 4px solid #4f3514; }
 
 #nav.affix {
   position: fixed;
@@ -238,11 +238,11 @@
   -ms-transition: all 0.4s ease-in-out; }
 
 .navbar-visage .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #f9f1cd;
+  color: #4f3514;
   background-color: transparent; }
 
 .navbar-visage .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #f9f1cd;
+  color: #4f3514;
   background-color: transparent; }
 
 .navbar-visage .navbar-nav > li > a {
@@ -252,13 +252,13 @@
   text-transform: uppercase; }
 
 .navbar-visage .navbar-nav > li > a:hover {
-  color: #f9f1cd; }
+  color: #4f3514; }
 
 #sidebar-inner.affix {
   position: fixed; }
 
 .fa-remove {
-  color: #f9f1cd; }
+  color: #4f3514; }
 
 .carousel-indicators li {
   width: 12px;

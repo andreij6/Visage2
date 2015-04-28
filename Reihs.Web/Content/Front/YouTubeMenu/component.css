@@ -13,7 +13,7 @@
   font-size: 1.3em;
   line-height: 2.5;
   font-weight: 400;
-  color: #f9f1cd;
+  color: #4f3514;
   padding-top: 2em; }
 
 .dr-menu > div {
@@ -34,7 +34,7 @@
   transition: all 0.2s ease; }
 
 .dr-menu.dr-menu-open > div .dr-icon {
-  color: #f9f1cd;
+  color: #4f3514;
   left: 100%;
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
@@ -56,7 +56,7 @@
   padding-left: 3em;
   position: relative;
   display: block;
-  color: #f9f1cd;
+  color: #4f3514;
   font-size: 0.9em;
   font-weight: 700;
   letter-spacing: 1px;
@@ -136,7 +136,7 @@
 .dr-menu ul li a {
   display: inline-block;
   padding: 0 20px;
-  color: #f9f1cd; }
+  color: #4f3514; }
 
 .dr-menu ul li a:hover {
   color: #000;
