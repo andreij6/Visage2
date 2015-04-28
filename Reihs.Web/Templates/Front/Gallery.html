@@ -3,37 +3,39 @@
 		
 	</div>
 </div>
-<div class="divide40"></div>
-<div id="lightbox" ng-show="Showing" ng-click="Showing = false">
-	<p>Click anywhere to close</p>
-	<div id="content">
-		<img ng-src="{{Image}}" id="lighbox-img" class="lightbox-view-pg" />
-	</div>
-</div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<ul class=" portfolio-filters text-center">
-				<li class="filter {{allactive}}" ng-click="SetFilter('')">all</li>
-				<li ng-repeat="Category in Categories"
-				    class="filter {{Category.Active}}"
-				    ng-click="SetFilter(Category)">{{Category.Name}}</li>
-			</ul>
-
-			<div id="grid" class="row">
-				<div class="mix col-sm-4 page1 page4 margin30 mix_all" style="display: inline-block; opacity: 1;" ng-repeat="Photo in Photos | filter: { Category: filterValue}">
-					<div class="item-img-wrap">
-						<img src="{{Photo.Image}}" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
-
-					</div>
-					<div class="work-desc">
-						<h3><a href="">{{Photo.Name}}</a></h3>
-						<span>{{Photo.Category.Name}}</span>
-					</div><!--work desc-->
-				</div>
-			</div><!--#grid-->
+<section class="page-content">
+	<div class="divide40"></div>
+	<div id="lightbox" ng-show="Showing" ng-click="Showing = false">
+		<p>Click anywhere to close</p>
+		<div id="content">
+			<img ng-src="{{Image}}" id="lighbox-img" class="lightbox-view-pg" />
 		</div>
 	</div>
-</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class=" portfolio-filters text-center">
+					<li class="filter {{allactive}}" ng-click="SetFilter('')">all</li>
+					<li ng-repeat="Category in Categories"
+					    class="filter {{Category.Active}}"
+					    ng-click="SetFilter(Category)">{{Category.Name}}</li>
+				</ul>
+
+				<div id="grid" class="row">
+					<div class="mix col-sm-4 page1 page4 margin30 mix_all" style="display: inline-block; opacity: 1;" ng-repeat="Photo in Photos | filter: { Category: filterValue}">
+						<div class="item-img-wrap">
+							<img src="{{Photo.Image}}" class="img-responsive" alt="workimg" ng-click="Trigger($event)">
+
+						</div>
+						<div class="work-desc">
+							<h3><a href="">{{Photo.Name}}</a></h3>
+							<span>{{Photo.Category.Name}}</span>
+						</div><!--work desc-->
+					</div>
+				</div><!--#grid-->
+			</div>
+		</div>
+	</div>
+</section>
 

@@ -3,36 +3,38 @@
 		
 	</div>
 </div>
-
-<div class="divide80 visible-md visible-lg"></div>
-<div class="container">
-	<div class="row">
-		<div class="col-md-3">
-			<div class="sidebar-box margin40">
-                <div class="visible-md visible-lg"><!-- affix was here -->
-                    <h4><i class="fa fa-angle-left"></i> <a href="#/Resources">Back to Patient Resource</a></h4>
-			 	<h3><a ng-click="SetTemplate('Index-PostCare')">Overview</a></h3>
-                    <ul class="list-unstyled cat-list visible-md visible-lg">
-                        <li> <a ng-click="SetTemplate('TCAPost')">TCA Peel </a> <i class="fa fa-angle-right"></i></li>
-                        <li> <a ng-click="SetTemplate('SclPost')">Sclerotherapy</a> <i class="fa fa-angle-right"></i></li>
-                        <li> <a ng-click="SetTemplate('MesoPost')">Mesotherapy (Lipodissolve)</a> <i class="fa fa-angle-right"></i></li>
-                        <li> <a ng-click="SetTemplate('LSHPost')">Laser Hair Reduction</a> <i class="fa fa-angle-right"></i></li>
-                        <li> <a ng-click="SetTemplate('IPLPost')">IPL-Photofacial</a> <i class="fa fa-angle-right"></i></li>
-                    </ul>
-                </div>
-                    <ul class="portfolio-filters text-center visible-sm visible-xs">
-                        <li class="filter"><a ng-click="SetTemplate('TCAPost')">TCA Peel </a></li>
-                        <li class="filter"><a ng-click="SetTemplate('SclPost')">Sclerotherapy</a></li>
-                        <li class="filter"><a ng-click="SetTemplate('MesoPost')">Mesotherapy (Lipodissolve)</a></li>
-                        <li class="filter"><a ng-click="SetTemplate('LSHPost')">Laser Hair Reduction</a></li>
-                        <li class="filter"><a ng-click="SetTemplate('IPLPost')">IPL-Photofacial</a></li>
-                    </ul>
-                </div><!--sidebar-box-->
-		</div>
-		<div class="col-md-8 col-md-offset-1" ng-init="SetTemplate('Index-PostCare')">
-			<div class="mobile-container">
-				<div ng-include="template.url"></div>
+<section class="page-content">
+	<div class="divide80 visible-md visible-lg"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="sidebar-box margin40">
+					<div class="visible-md visible-lg">
+						<!-- affix was here -->
+						<h4><i class="fa fa-angle-left"></i> <a href="#/Resources">Back to Patient Resource</a></h4>
+						<h3><a ng-click="SetTemplate('Index-PostCare')">Overview</a></h3>
+						<ul class="list-unstyled cat-list visible-md visible-lg">
+							<li> <a ng-click="SetTemplate('TCAPost')">TCA Peel </a> <i class="fa fa-angle-right"></i></li>
+							<li> <a ng-click="SetTemplate('SclPost')">Sclerotherapy</a> <i class="fa fa-angle-right"></i></li>
+							<li> <a ng-click="SetTemplate('MesoPost')">Mesotherapy (Lipodissolve)</a> <i class="fa fa-angle-right"></i></li>
+							<li> <a ng-click="SetTemplate('LSHPost')">Laser Hair Reduction</a> <i class="fa fa-angle-right"></i></li>
+							<li> <a ng-click="SetTemplate('IPLPost')">IPL-Photofacial</a> <i class="fa fa-angle-right"></i></li>
+						</ul>
+					</div>
+					<ul class="portfolio-filters text-center visible-sm visible-xs">
+						<li class="filter"><a ng-click="SetTemplate('TCAPost')">TCA Peel </a></li>
+						<li class="filter"><a ng-click="SetTemplate('SclPost')">Sclerotherapy</a></li>
+						<li class="filter"><a ng-click="SetTemplate('MesoPost')">Mesotherapy (Lipodissolve)</a></li>
+						<li class="filter"><a ng-click="SetTemplate('LSHPost')">Laser Hair Reduction</a></li>
+						<li class="filter"><a ng-click="SetTemplate('IPLPost')">IPL-Photofacial</a></li>
+					</ul>
+				</div><!--sidebar-box-->
+			</div>
+			<div class="col-md-8 col-md-offset-1" ng-init="SetTemplate('Index-PostCare')">
+				<div class="mobile-container">
+					<div ng-include="template.url"></div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</section>

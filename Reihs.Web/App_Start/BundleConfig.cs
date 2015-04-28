@@ -124,7 +124,9 @@ namespace Reihs.Web
 					"~/Content/Front/s3slider.css",
 					"~/Content/Front/li-scroller.css",
 					"~/Content/Front/Visage.css",
-					"~/Content/Front/Pages/homepage.css"));
+					"~/Content/Front/Pages/homepage.css",
+					"~/Content/Front/Pages/TopBottomNav.css",
+					"~/Content/Front/Pages/sitewide.css"));
 
 			bundles.Add(new StyleBundle("~/Content/Admin/css").Include(
 					"~/Content/Admin/sb-admin-2.min.css"

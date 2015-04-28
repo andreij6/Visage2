@@ -223,6 +223,7 @@
     <Content Include="Content\Front\li-scroller.css" />
     <Content Include="Content\Front\loading-bar\loading-bar.css" />
     <Content Include="Content\Front\Pages\homepage.css" />
+    <Content Include="Content\Front\Pages\sitewide.css" />
     <Content Include="Content\Front\Pages\TopBottomNav.css" />
     <Content Include="Content\Front\s3slider.css" />
     <Content Include="Content\Front\theme\animate.css" />
@@ -258,6 +259,7 @@
       <DependentUpon>component.css</DependentUpon>
     </Content>
     <Content Include="Content\Front\YouTubeMenu\component1.css" />
+    <Content Include="Content\Images\About\About.jpg" />
     <Content Include="Content\Images\Banner\Banner1.jpg" />
     <Content Include="Content\Images\Banner\Banner2.jpg" />
     <Content Include="Content\Images\Banner\Banner3.jpg" />
@@ -324,6 +326,7 @@
     <Content Include="Content\Images\Logos\LBVlogo_green.png" />
     <Content Include="Content\Images\Logos\LBVword_C4.png" />
     <Content Include="Content\Images\Logos\LBV_Logo.png" />
+    <Content Include="Content\Images\PatientResources\PatResources.jpg" />
     <Content Include="Content\Images\Products\SkinMedica\AHABHA_Cleanser.png" />
     <Content Include="Content\Images\Products\SkinMedica\AHABHA_Cream_2oz-copy.png" />
     <Content Include="Content\Images\Products\Clarisonic\ClarisonicMia.jpg" />
@@ -377,6 +380,7 @@
     <Content Include="Content\Images\Testimonials\Shirley.jpg" />
     <Content Include="Content\Images\Testimonials\Tamme.jpg" />
     <Content Include="Content\Images\Testimonials\Tara.jpg" />
+    <Content Include="Content\Images\Treatments\Treatment.jpg" />
     <Content Include="Content\Images\Videos\ClientStory.jpg" />
     <Content Include="Content\Images\Videos\InfoVid.jpg" />
     <Content Include="Content\Images\Videos\Promo.jpg" />

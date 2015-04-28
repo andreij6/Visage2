@@ -1,200 +1,204 @@
 ﻿<div class="breadcrumb-wrap visible-md visible-lg">
 	<div class="container">
-		
-	</div>
-</div>
+		<div class="container">
+			<div class="row">
+				<img class="pull-right" src="../../../Content/Images/About/About.jpg" />
+				<section class="related-images pull-right">
+					<img src="http://placehold.it/140x110&text=Dallas" alt="">
+					<img src="http://placehold.it/140x110&text=Schulenburg" alt="">
+					<img src="http://placehold.it/140x110&text=Frisco" alt="">
+				</section>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-3">
-			<div class="divide40"></div>
-			<div class="sidebar-box margin40">
-				<h4 class="visible-md visible-lg">About Menu</h4>
-				<ul class="list-unstyled cat-list visible-md visible-lg">
-					<li><a href="#/About">Dr. Riehs</a><i class="fa fa-angle-right"></i></li>
-					<li> <a href="#/Team">Meet the Team</a> <i class="fa fa-angle-right"></i></li>
-					<li> <a href="#/Testimonials">Testimonials</a> <i class="fa fa-angle-right"></i></li>
-					<li> <a href="#/Videos">Videos</a> <i class="fa fa-angle-right"></i></li>
-				</ul>
-				<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
-					<div class="dr-trigger" ng-click="MenuTrigger()">
-						<span class="dr-icon dr-icon-settings"></span>
-						<a class="dr-label">About Menu</a>
-					</div>
-					<div ng-show="open" class="subNav">
-						<ul>
-							<li><a href="#/About">Dr. Riehs</a><i class="fa fa-angle-right"></i></li>
-							<li><a href="#/Team">Meet the Team</a><i class="fa fa-angle-right"></i></li>
-							<li><a href="#/Testimonials">Testimonials</a><i class="fa fa-angle-right"></i></li>
-							<li><a href="#/Videos">Videos</a><i class="fa fa-angle-right"></i></li>
-						</ul>
-					</div>
-				</div>
-			</div><!--sidebar-box-->
-
-		</div>
-		<div class="col-md-8">
-			<div class="divide40"></div>
-			<section class="col-md-12">
-				<div class="col-md-12">
-					<h3 class="heading">
-						<span id="{{Locations[Active].Name}}">{{Locations[Active].Name}} </span>
-						<span class="pull-right">
-							<p>| <a ng-click="SetActive(Others[0].Name)" id="{{Others[0].Name}}">{{Others[0].Name}}</a></p>
-							<p>| <a ng-click="SetActive(Others[1].Name)" id="{{Others[1].Name}}">{{Others[1].Name}}</a></p>
-						</span>
-					</h3><!--Frisco Location-->
-					<div class="divide40"></div>
-					<div class="col-md-12">
-						<div class="image-contain">
-							<img src="{{Locations[Active].Photo}}" class=" img-responsive" alt="working">
-						</div>
-					</div>
-					<div class="divide40"></div>
-					<div class="col-md-12">
-						<ul class="list-unstyled contact contact-info">
-							<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">{{Locations[Active].Address}}</a></p></li>
-							<li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">{{Locations[Active].Email}}</a></p></li>
-							<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="{{Locations[Active].Phonetel}}">{{Locations[Active].Phone}}</a></p></li>
-							<li><p><strong><i class="fa fa-phone"></i> Toll:</strong> <a href="{{Locations[Active].Tolltel}}">{{Locations[Active].Toll}}</a></p></li>
-							<li><p><strong><i class="fa fa-calendar"></i> Hours:</strong> <a href="{{Locations[Active].Hours}}">{{Locations[Active].Hours}}</a></p></li>
-						</ul>
-					</div>
-				</div>
-				<div class="divide30"></div>
-			</section>
-
-			<div class="divide80"></div>
+			</div>
 		</div>
 	</div>
-	<!--<ul class="nav nav-pills nav-justified">
-		<li class="{{Frisco.Active}}" ng-click="SetActive(Frisco.Name)"><a>Frisco</a></li>
-		<li class="{{Dallas.Active}}" ng-click="SetActive(Dallas.Name)"><a>Dallas</a></li>
-		<li class="{{LaSchl.Active}}" ng-click="SetActive(LaSchl.Name)"><a>Schlenburg/ LaGrange</a></li>
-	</ul>-->
 </div>
-<section class="services-wrap location-services-wrap">
+<section class="page-content">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<div class="center-heading">
-					<h2>Services at the {{Locations[Active].Name}} Location</h2>
-					<span class="center-line"></span>
-				</div>
+			<div class="col-md-3">
+				<div class="divide40"></div>
+				<div class="sidebar-box margin40">
+					<h4 class="visible-md visible-lg">About Menu</h4>
+					<ul class="list-unstyled cat-list visible-md visible-lg">
+						<li><a href="#/About">Dr. Riehs</a><i class="fa fa-angle-right"></i></li>
+						<li> <a href="#/Team">Meet the Team</a> <i class="fa fa-angle-right"></i></li>
+						<li> <a href="#/Testimonials">Testimonials</a> <i class="fa fa-angle-right"></i></li>
+						<li> <a href="#/Videos">Videos</a> <i class="fa fa-angle-right"></i></li>
+					</ul>
+					<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
+						<div class="dr-trigger" ng-click="MenuTrigger()">
+							<span class="dr-icon dr-icon-settings"></span>
+							<a class="dr-label">About Menu</a>
+						</div>
+						<div ng-show="open" class="subNav">
+							<ul>
+								<li><a href="#/About">Dr. Riehs</a><i class="fa fa-angle-right"></i></li>
+								<li><a href="#/Team">Meet the Team</a><i class="fa fa-angle-right"></i></li>
+								<li><a href="#/Testimonials">Testimonials</a><i class="fa fa-angle-right"></i></li>
+								<li><a href="#/Videos">Videos</a><i class="fa fa-angle-right"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--sidebar-box-->
+
 			</div>
-		</div><!--center heading row-->
-		<div class="row">
-			<div class="col-md-4 col-sm-6 margin20">
-				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="100ms">
-					<div class="services-box-icon">
-
-					</div><!--services icon-->
-					<div class="services-box-info">
-						<h4>Wrinkle Reduction</h4>
-						<!--<p>
-							BOTOX® Cosmetic, Dysport
-						</p>-->
+			<div class="col-md-8">
+				<div class="divide40"></div>
+				<section class="col-md-12">
+					<div class="col-md-12">
+						<h3 class="heading">
+							<span id="{{Locations[Active].Name}}">{{Locations[Active].Name}} </span>
+							<span class="pull-right">
+								<p>| <a ng-click="SetActive(Others[0].Name)" id="{{Others[0].Name}}">{{Others[0].Name}}</a></p>
+								<p>| <a ng-click="SetActive(Others[1].Name)" id="{{Others[1].Name}}">{{Others[1].Name}}</a></p>
+							</span>
+						</h3><!--Frisco Location-->
+						<div class="divide40"></div>
+						<div class="col-md-12">
+							<div class="image-contain">
+								<img src="{{Locations[Active].Photo}}" class=" img-responsive" alt="working">
+							</div>
+						</div>
+						<div class="divide40"></div>
+						<div class="col-md-12">
+							<ul class="list-unstyled contact contact-info">
+								<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">{{Locations[Active].Address}}</a></p></li>
+								<li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">{{Locations[Active].Email}}</a></p></li>
+								<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="{{Locations[Active].Phonetel}}">{{Locations[Active].Phone}}</a></p></li>
+								<li><p><strong><i class="fa fa-phone"></i> Toll:</strong> <a href="{{Locations[Active].Tolltel}}">{{Locations[Active].Toll}}</a></p></li>
+								<li><p><strong><i class="fa fa-calendar"></i> Hours:</strong> <a href="{{Locations[Active].Hours}}">{{Locations[Active].Hours}}</a></p></li>
+							</ul>
+						</div>
 					</div>
-				</div><!--services box-->
-			</div><!--services col-->
-			<div class="col-md-4 col-sm-6 margin20">
-				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="200ms">
-					<div class="services-box-icon">
+					<div class="divide30"></div>
+				</section>
 
-					</div><!--services icon-->
-					<div class="services-box-info">
-						<h4>Fillers</h4>
-						<!--<p>
-							Restylane, Restylane Silk, Perlane, Juvederm, Voluma, Sculptra
-						</p>-->
-					</div>
-				</div><!--services box-->
-			</div><!--services col-->
-			<div class="col-md-4 col-sm-6 margin20">
-				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
-					<div class="services-box-icon">
-
-					</div><!--services icon-->
-					<div class="services-box-info">
-						<h4>Vein Reduction</h4>
-						<!--<p>
-							Laser Vein Therapy, Sclerotherapy
-						</p>-->
-					</div>
-				</div><!--services box-->
-			</div><!--services col-->
-			<div class="col-md-4 col-sm-6 margin20">
-				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="400ms">
-					<div class="services-box-icon">
-
-					</div><!--services icon-->
-					<div class="services-box-info">
-						<h4>Pigmentation</h4>
-						<!--<p>
-							IPL Photo Facial, Chemical Peels
-						</p>-->
-					</div>
-				</div><!--services box-->
-			</div><!--services col-->
-			<div class="col-md-4 col-sm-6 margin20">
-				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
-					<div class="services-box-icon">
-
-					</div><!--services icon-->
-					<div class="services-box-info">
-						<h4>Fat Reduction</h4>
-						<!--<p>
-							HCG Diet, LipoDissolve
-						</p>-->
-					</div>
-				</div><!--services box-->
-			</div><!--services col-->
-			<div class="col-md-4 col-sm-6 margin20">
-				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
-					<div class="services-box-icon">
-
-					</div><!--services icon-->
-					<div class="services-box-info">
-						<h4>Microdermabrasion</h4>
-					</div>
-				</div><!--services box-->
-			</div><!--services col-->
-			<div class="col-md-4 col-sm-6 margin20">
-				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
-					<div class="services-box-icon">
-
-					</div><!--services icon-->
-					<div class="services-box-info">
-						<h4>Laser Hair Removal</h4>
-					</div>
-				</div><!--services box-->
-			</div><!--services col-->
-			<div class="col-md-4 col-sm-6 margin20">
-				<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
-					<div class="services-box-icon">
-
-					</div><!--services icon-->
-					<div class="services-box-info">
-						<h4>Skin Resurfacing</h4>
-					</div>
-				</div><!--services box-->
-			</div><!--services col-->
-		</div><!--services row-->
-	</div>
-	<div class="col-md-12 col-sm-12 text-center">
-		<a href="#/Treatments" class=" btn border-theme btn-lg">View Details</a>
-	</div>
-</section>
-<div class="breadcrumb-wrap visible-md visible-lg">
-	<div class="row">
-		<div class="col-sm-10 col-sm-offset-1">
-			<div class="col-xs-12" id="location">
-
+				<div class="divide80"></div>
 			</div>
 		</div>
+		<!--<ul class="nav nav-pills nav-justified">
+			<li class="{{Frisco.Active}}" ng-click="SetActive(Frisco.Name)"><a>Frisco</a></li>
+			<li class="{{Dallas.Active}}" ng-click="SetActive(Dallas.Name)"><a>Dallas</a></li>
+			<li class="{{LaSchl.Active}}" ng-click="SetActive(LaSchl.Name)"><a>Schlenburg/ LaGrange</a></li>
+		</ul>-->
 	</div>
-</div>
+	<section class="services-wrap location-services-wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="center-heading">
+						<h2>Services at the {{Locations[Active].Name}} Location</h2>
+						<span class="center-line"></span>
+					</div>
+				</div>
+			</div><!--center heading row-->
+			<div class="row">
+				<div class="col-md-4 col-sm-6 margin20">
+					<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="100ms">
+						<div class="services-box-icon">
 
+						</div><!--services icon-->
+						<div class="services-box-info">
+							<h4>Wrinkle Reduction</h4>
+							<!--<p>
+								BOTOX® Cosmetic, Dysport
+							</p>-->
+	`						</div>
+					</div><!--services box-->
+				</div><!--services col-->
+				<div class="col-md-4 col-sm-6 margin20">
+					<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="200ms">
+						<div class="services-box-icon">
+
+						</div><!--services icon-->
+						<div class="services-box-info">
+							<h4>Fillers</h4>
+							<!--<p>
+								Restylane, Restylane Silk, Perlane, Juvederm, Voluma, Sculptra
+							</p>-->
+						</div>
+					</div><!--services box-->
+				</div><!--services col-->
+				<div class="col-md-4 col-sm-6 margin20">
+					<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+						<div class="services-box-icon">
+
+						</div><!--services icon-->
+						<div class="services-box-info">
+							<h4>Vein Reduction</h4>
+							<!--<p>
+								Laser Vein Therapy, Sclerotherapy
+							</p>-->
+						</div>
+					</div><!--services box-->
+				</div><!--services col-->
+				<div class="col-md-4 col-sm-6 margin20">
+					<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="400ms">
+						<div class="services-box-icon">
+
+						</div><!--services icon-->
+						<div class="services-box-info">
+							<h4>Pigmentation</h4>
+							<!--<p>
+								IPL Photo Facial, Chemical Peels
+							</p>-->
+						</div>
+					</div><!--services box-->
+				</div><!--services col-->
+				<div class="col-md-4 col-sm-6 margin20">
+					<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
+						<div class="services-box-icon">
+
+						</div><!--services icon-->
+						<div class="services-box-info">
+							<h4>Fat Reduction</h4>
+							<!--<p>
+								HCG Diet, LipoDissolve
+							</p>-->
+						</div>
+					</div><!--services box-->
+				</div><!--services col-->
+				<div class="col-md-4 col-sm-6 margin20">
+					<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
+						<div class="services-box-icon">
+
+						</div><!--services icon-->
+						<div class="services-box-info">
+							<h4>Microdermabrasion</h4>
+						</div>
+					</div><!--services box-->
+				</div><!--services col-->
+				<div class="col-md-4 col-sm-6 margin20">
+					<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
+						<div class="services-box-icon">
+
+						</div><!--services icon-->
+						<div class="services-box-info">
+							<h4>Laser Hair Removal</h4>
+						</div>
+					</div><!--services box-->
+				</div><!--services col-->
+				<div class="col-md-4 col-sm-6 margin20">
+					<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
+						<div class="services-box-icon">
+
+						</div><!--services icon-->
+						<div class="services-box-info">
+							<h4>Skin Resurfacing</h4>
+						</div>
+					</div><!--services box-->
+				</div><!--services col-->
+			</div><!--services row-->
+		</div>
+		<div class="col-md-12 col-sm-12 text-center">
+			<a href="#/Treatments" class=" btn border-theme btn-lg">View Details</a>
+		</div>
+	</section>
+</section>
+<div class="breadcrumb-wrap" id="location-crumb">
+	<div id="location"></div>
+</div>
 
 <script>
 	gMap.initLocations();
