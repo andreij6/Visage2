@@ -13,15 +13,25 @@
 			self.$scope.Image = "";
 			self.$scope.allactive = "active";
 
-			var categories = [
-				{ Name: "Facial Injectibles", Active: false },
-				{ Name: "Skin Resurfacing", Active: false },
-				{ Name: "Skin Tightening", Active: false },
-				{ Name: "Pigmentation/Melasma", Active: false },
-				{ Name: "BodyShaping/HCG", Active: false },
-				{ Name: "Laser Hair Removal", Active: false },
-				{ Name: "Vein Reduction", Active: false }
-			];
+			var botox = { Name: "Botox", Active: false };
+			var facialInj = { Name: "Facial Injectibles", Active: false };
+			var resurface = { Name: "Skin Resurfacing", Active: false };
+			var tighten = { Name: "Skin Tightening", Active: false };
+			var pigmentation = { Name: "Pigmentation/Melasma", Active: false };
+			var hcg = { Name: "BodyShaping/HCG", Active: false };
+			var laser = { Name: "Laser Hair Removal", Active: false };
+			var vein = { Name: "Vein Reduction", Active: false };
+
+			var categories = [];
+
+			categories.push(botox);
+			categories.push(facialInj);
+			categories.push(resurface);
+			categories.push(tighten);
+			categories.push(pigmentation);
+			categories.push(hcg);
+			categories.push(laser);
+			categories.push(vein);
 
 			//{ Name: "Microdermabrasion", Active: false },
 			//{ Name: "Permanent Cosmetics", Active: false },
@@ -199,71 +209,66 @@
 			
 
 			self.$scope.Photos = [
-				//categories[0] = FacialInjectebles
-				{ Name: getProcedure(1), Image: setimg("alex", 1), Category: categories[0] },
-				{ Name: getProcedure(1), Image: setimg("bruno", 1), Category: categories[0] },
-				{ Name: getProcedure(1), Image: setimg("cassy" , 1), Category: categories[0] },
+				{ Name: getProcedure(1), Image: setimg("alex", 1), Category: botox },
+				{ Name: getProcedure(1), Image: setimg("bruno", 1), Category: botox },
+				{ Name: getProcedure(1), Image: setimg("cassy", 1), Category: botox },
 
-				{ Name: getProcedure(2), Image: setimg("alida", 2), Category: categories[0] },
-				{ Name: getProcedure(2), Image: setimg("donna", 2), Category: categories[0] },
-
-				{ Name: getProcedure(3), Image: setimg("holland", 3), Category: categories[0] },
-				{ Name: getProcedure(3), Image: setimg("jennifer", 3), Category: categories[0] },
-				{ Name: getProcedure(3), Image: setimg("suzy", 3), Category: categories[0] },
-
-				{ Name: getProcedure(4), Image: setimg("alesia", 4), Category: categories[0] },
-				{ Name: getProcedure(4), Image: setimg("yolanda", 4), Category: categories[0] },
-				{ Name: getProcedure(5), Image: setimg("lisa", 5), Category: categories[0] },
-
-				{ Name: getProcedure(6), Image: setimg("diane", 6), Category: categories[0] },
+				{ Name: getProcedure(2), Image: setimg("alida", 2), Category: facialInj },
+				{ Name: getProcedure(2), Image: setimg("donna", 2), Category: facialInj },
+				{ Name: getProcedure(3), Image: setimg("holland", 3), Category: facialInj },
+				{ Name: getProcedure(3), Image: setimg("jennifer", 3), Category: facialInj },
+				{ Name: getProcedure(3), Image: setimg("suzy", 3), Category: facialInj },
+				{ Name: getProcedure(4), Image: setimg("alesia", 4), Category: facialInj },
+				{ Name: getProcedure(4), Image: setimg("yolanda", 4), Category: facialInj },
+				{ Name: getProcedure(5), Image: setimg("lisa", 5), Category: facialInj },
+				{ Name: getProcedure(6), Image: setimg("diane", 6), Category: facialInj },
 
 				//categoires[1] = Skin Resurfacing
-				{ Name: getProcedure(12), Image: setimg("leslie_legs", 12), Category: categories[1] },
-				{ Name: getProcedure(12), Image: setimg("leslie_neck", 12), Category: categories[1] },
-				{ Name: getProcedure(12), Image: setimg("lynn", 12), Category: categories[1] },
-				{ Name: getProcedure(12), Image: setimg("sandra", 12), Category: categories[1] },
-				
-				{ Name: getProcedure(13), Image: setimg("1", 13), Category: categories[1] },
-				{ Name: getProcedure(13), Image: setimg("2", 13), Category: categories[1] },
-				{ Name: getProcedure(13), Image: setimg("3", 13), Category: categories[1] },
-				{ Name: getProcedure(13), Image: setimg("4", 13), Category: categories[1] },
-				{ Name: getProcedure(13), Image: setimg("5", 13), Category: categories[1] },
-				{ Name: getProcedure(13), Image: setimg("6", 13), Category: categories[1] },
+				{ Name: getProcedure(12), Image: setimg("leslie_legs", 12), Category: resurface },
+				{ Name: getProcedure(12), Image: setimg("leslie_neck", 12), Category: resurface },
+				{ Name: getProcedure(12), Image: setimg("lynn", 12), Category: resurface },
+				{ Name: getProcedure(12), Image: setimg("sandra", 12), Category: resurface },
+				{ Name: getProcedure(13), Image: setimg("1", 13), Category: resurface },
+				{ Name: getProcedure(13), Image: setimg("2", 13), Category: resurface },
+				{ Name: getProcedure(13), Image: setimg("3", 13), Category: resurface },
+				{ Name: getProcedure(13), Image: setimg("4", 13), Category: resurface },
+				{ Name: getProcedure(13), Image: setimg("5", 13), Category: resurface },
+				{ Name: getProcedure(13), Image: setimg("6", 13), Category: resurface },
 
 				//categories[2] Skin tightening
-				{ Name: getProcedure(14), Image: setimg("cheryl1", 14), Category: categories[2] },
-				{ Name: getProcedure(14), Image: setimg("cheryl2", 14), Category: categories[2] },
-				{ Name: getProcedure(14), Image: setimg("shirley", 14), Category: categories[2] },
+				{ Name: getProcedure(14), Image: setimg("cheryl1", 14), Category: tighten },
+				{ Name: getProcedure(14), Image: setimg("cheryl2", 14), Category: tighten },
+				{ Name: getProcedure(14), Image: setimg("shirley", 14), Category: tighten },
 
 				//VeinReduction
-				{ Name: getProcedure(15), Image: setimg("gary", 15), Category: categories[6] },
-				{ Name: getProcedure(15), Image: setimg("nose", 15), Category: categories[6] },
-				{ Name: getProcedure(15), Image: setimg("nose2", 15), Category: categories[6] },
+				{ Name: getProcedure(15), Image: setimg("gary", 15), Category: vein },
+				{ Name: getProcedure(15), Image: setimg("nose", 15), Category: vein },
+				{ Name: getProcedure(15), Image: setimg("nose2", 15), Category: vein },
 																	  
-				{ Name: getProcedure(16), Image: setimg("1", 16), Category: categories[6] },
-				{ Name: getProcedure(16), Image: setimg("2", 16), Category: categories[6] },
-				{ Name: getProcedure(16), Image: setimg("3", 16), Category: categories[6] },
+				{ Name: getProcedure(16), Image: setimg("1", 16), Category: vein },
+				{ Name: getProcedure(16), Image: setimg("2", 16), Category: vein },
+				{ Name: getProcedure(16), Image: setimg("3", 16), Category: vein },
 				//{ Name: getProcedure(16), Image: setimg("4", 16), Category: categories[6] },
 
 				//Pigmentation
-				{ Name: getProcedure(10), Image: setimg("joe1", 10), Category: categories[3] },
-				{ Name: getProcedure(10), Image: setimg("terri", 10), Category: categories[3] },
-
-				{ Name: getProcedure(11), Image: setimg("carol", 11), Category: categories[3] },
-				{ Name: getProcedure(11), Image: setimg("david", 11), Category: categories[3] },
-				{ Name: getProcedure(11), Image: setimg("paula", 11), Category: categories[3] },
+				{ Name: getProcedure(10), Image: setimg("joe1", 10), Category: pigmentation },
+				{ Name: getProcedure(10), Image: setimg("terri", 10), Category: pigmentation },
+				{ Name: getProcedure(11), Image: setimg("carol", 11), Category: pigmentation },
+				{ Name: getProcedure(11), Image: setimg("david", 11), Category: pigmentation },
+				{ Name: getProcedure(11), Image: setimg("paula", 11), Category: pigmentation },
 
 				//Laser hair
-				{ Name: getProcedure(9), Image: setimg("chest", 9), Category: categories[5] },
-				{ Name: getProcedure(9), Image: setimg("chin", 9), Category: categories[5] },
-				{ Name: getProcedure(9), Image: setimg("chin2", 9), Category: categories[5] },
-				{ Name: getProcedure(9), Image: setimg("lips", 9), Category: categories[5] },
+				{ Name: getProcedure(9), Image: setimg("chest", 9), Category: laser },
+				{ Name: getProcedure(9), Image: setimg("chin", 9), Category: laser },
+				{ Name: getProcedure(9), Image: setimg("chin2", 9), Category: laser },
+				{ Name: getProcedure(9), Image: setimg("lips", 9), Category: laser },
 				
 				//Bodyshaping
-				{ Name: getProcedure(7), Image: setimg("tcwilde1", 7), Category: categories[4] },
-				{ Name: getProcedure(7), Image: setimg("tcwilde2", 7), Category: categories[4] },
+				{ Name: getProcedure(7), Image: setimg("tcwilde1", 7), Category: hcg },
+				{ Name: getProcedure(7), Image: setimg("tcwilde2", 7), Category: hcg },
+				{ Name: getProcedure(8), Image: setimg("crombie", 8), Category: hcg }
 
-				{ Name: getProcedure(8), Image: setimg("crombie", 8), Category: categories[4] },
+				
 			]
 
 			self.$scope.filterValue = {};
