@@ -1,4 +1,8 @@
-﻿.banner-1 {
+﻿.creme{
+    color: #f9f1cd;
+}
+
+.banner-1 {
 	background: url('../../Images/Banner/Nancy.jpg') no-repeat center center;
 	background-size: auto;
 }
