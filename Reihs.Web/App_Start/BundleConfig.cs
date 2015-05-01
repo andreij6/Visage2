@@ -77,19 +77,21 @@ namespace Reihs.Web
 						"~/Scripts/custom/VisageApp/VisageApp.js"
 						));
 
+			var ScriptsPlugins = "~/Scripts/Plugins/theme/";
+
 			bundles.Add(new ScriptBundle("~/bundle/ThemeScripts").Include(
-					"~/Scripts/theme/owl.carousel.min.js",
-					"~/Scripts/theme/typed.js",
-					"~/Scripts/theme/wow.min.js",
-					"~/Scripts/theme/jquery.sticky.js",
-					"~/Scripts/theme/jquery.stellar.min.js",
-					"~/Scripts/theme/jquery.easing.1.3.min.js",
-					"~/Scripts/theme/jquery.flexslider-min.js",
-					"~/Scripts/theme/jquery.mixitup.min.js",
-					"~/Scripts/theme/jquery.countdown.js",
-					"~/Scripts/theme/jquery.counterup.min.js",
-					"~/Scripts/theme/jquery.magnific-popup.min.js",
-					"~/Scripts/theme/custom.js"
+					ScriptsPlugins + "owl.carousel.min.js",
+					ScriptsPlugins + "typed.js",
+					ScriptsPlugins + "wow.min.js",
+					ScriptsPlugins + "jquery.sticky.js",
+					ScriptsPlugins + "jquery.stellar.min.js",
+					ScriptsPlugins + "jquery.easing.1.3.min.js",
+					ScriptsPlugins + "jquery.flexslider-min.js",
+					ScriptsPlugins + "jquery.mixitup.min.js",
+					ScriptsPlugins + "jquery.countdown.js",
+					ScriptsPlugins + "jquery.counterup.min.js",
+					ScriptsPlugins + "jquery.magnific-popup.min.js",
+					ScriptsPlugins + "custom.js"
 				));
 
 			// Use the development version of Modernizr to develop with and learn from. Then, when you're
@@ -106,27 +108,31 @@ namespace Reihs.Web
 					"~/Scripts/Plugins/li-scroller/li-scroller.js"));
 
 			bundles.Add(new StyleBundle("~/bundles/Theme").Include(
-					"~/Content/Front/theme/flexslider.css",
-					"~/Content/Front/theme/animate.css",
-					"~/Content/Front/theme/owl.carousel.css",
-					"~/Content/Front/theme/owl.theme.css",
-					"~/Content/Front/theme/yamm.css",
-					"~/Content/Front/theme/magnific-popup.css",
-					"~/Content/Front/theme/Theme.min.css"));
+					"~/Content/Front/ThirdParty/theme/flexslider.css",
+					"~/Content/Front/ThirdParty/theme/animate.css",
+					"~/Content/Front/ThirdParty/theme/owl.carousel.css",
+					"~/Content/Front/ThirdParty/theme/owl.theme.css",
+					"~/Content/Front/ThirdParty/theme/yamm.css",
+					"~/Content/Front/ThirdParty/theme/magnific-popup.css",
+					"~/Content/Front/ThirdParty/theme/Theme.min.css"));
 
 			bundles.Add(new StyleBundle("~/Content/css").Include(
 					"~/Content/defaults/bootstrap.css",
 					"~/Content/defaults/font-awesome.min.css"
 					));
 
+			var CFTP = "~/Content/Front/ThirdParty/";
+			var CFC = "~/Content/Front/Custom/";
+
 			bundles.Add(new StyleBundle("~/Content/Front/css").Include(
-					"~/Content/Front/loading-bar/loading-bar.css",
-					"~/Content/Front/s3slider.css",
-					"~/Content/Front/li-scroller.css",
-					"~/Content/Front/Visage.css",
-					"~/Content/Front/Pages/homepage.css",
-					"~/Content/Front/Pages/TopBottomNav.css",
-					"~/Content/Front/Pages/sitewide.css"));
+					CFTP + "loading-bar/loading-bar.css",
+					CFTP + "s3slider.css",
+					CFTP + "li-scroller.css",
+					CFC + "Visage.css",
+					CFC + "homepage.css",
+					CFC + "TopBottomNav.css",
+					CFC + "MobileSideNavigation.css",
+					CFC + "sitewide.css"));
 
 			bundles.Add(new StyleBundle("~/Content/Admin/css").Include(
 					"~/Content/Admin/sb-admin-2.min.css"
