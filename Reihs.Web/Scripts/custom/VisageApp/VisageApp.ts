@@ -15,6 +15,7 @@ module VisageApp {
 	VisageApp.factory('MarketService', [MarketService.Builder]);
 	VisageApp.factory('ProductService', ['$http', '$q', ProductService.Builder]);
 	VisageApp.factory('PostDataService', ['$http', '$q', PostDataService.Builder]);
+	VisageApp.factory('TickerDataService', ['$http', '$q', TickerDataService.Builder]);
 
 	VisageApp.controller('Index', Index);
 	VisageApp.controller('About', About);

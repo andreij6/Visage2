@@ -39,7 +39,7 @@ namespace Visage.Services.Handlers.Ticker.Implementations
 		{
 			var tickerItems =  TickerRepository.GetAll();
 
-			return Enumerable.Empty<TickerModel>();
+			return tickerItems.Select(x => new TickerModel(x));
 		}
 
 		public bool Update(int PostId, TickerItem value)

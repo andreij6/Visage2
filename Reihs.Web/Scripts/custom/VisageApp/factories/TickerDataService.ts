@@ -1,4 +1,4 @@
-﻿module AdminApp {
+﻿module VisageApp {
 
 	export class TickerDataService {
 		private httpService: ng.IHttpService;
@@ -26,12 +26,12 @@
 				var deferred = self.qService.defer();
 
 				self.httpService.get(self.TickerAPI + "/Get").then(
-				function (result: any) {
-					self.Messages = result.data;
-					deferred.resolve(self.Messages);
-				}, function (error) {
-					deferred.reject(error);
-				});
+					function (result: any) {
+						self.Messages = result.data;
+						deferred.resolve(self.Messages);
+					}, function (error) {
+						deferred.reject(error);
+					});
 			}
 
 			return deferred.promise;
@@ -72,4 +72,4 @@
 			return deferred.promise;
 		}
 	}
-}
+} 

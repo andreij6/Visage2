@@ -1,6 +1,6 @@
 ﻿module Extensions {
 	export class TickerMessage {
-		Content: string;
+		Message: string;
 		Url: string;
 		Dates: string;
 	}

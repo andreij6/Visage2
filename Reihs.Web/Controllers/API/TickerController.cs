@@ -12,7 +12,7 @@ using Visage.Services.Models;
 
 namespace Reihs.Web.Controllers.API
 {
-	[RoutePrefix("api/Blog")]
+	[RoutePrefix("api/Ticker")]
 	public class TickerController : ApiController
 	{
 		#region Dependencies

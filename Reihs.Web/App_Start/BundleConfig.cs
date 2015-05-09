@@ -74,6 +74,7 @@ namespace Reihs.Web
 						"~/Scripts/custom/VisageApp/factories/PostDataService.js",
 						"~/Scripts/custom/VisageApp/factories/ContactAPIService.js",
 						"~/Scripts/custom/VisageApp/factories/MarketService.js",
+						"~/Scripts/custom/VisageApp/factories/TickerDataService.js",
 						"~/Scripts/custom/VisageApp/routes/Config.js",
 						"~/Scripts/custom/VisageApp/VisageApp.js"
 						));

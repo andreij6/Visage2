@@ -7,6 +7,8 @@
 		HasItems: boolean;
 		IsAlertVisible: boolean;
 
+		Messages: Array<Extensions.TickerMessage>;
+
 		SetNav(name: string): void;
 		HomeActive: boolean;
 		AboutActive: boolean;

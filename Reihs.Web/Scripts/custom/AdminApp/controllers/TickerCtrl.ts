@@ -31,8 +31,8 @@
 
 			function isValid() {
 				if (self.$scope.Message.Dates === ""
-					|| self.$scope.Message.Content === undefined
-					|| self.$scope.Message.Content.length < 5 
+					|| self.$scope.Message.Message === undefined
+					|| self.$scope.Message.Message.length < 5 
 					|| self.$scope.Message.Url === undefined
 					|| self.$scope.Message.Url.length < 4)
 				{
@@ -43,9 +43,13 @@
 			}
 
 			function NotifyInValid() {
-				alert("Ticker Message Not Valid. \n Content Must be at least 5 characters."
+				alert("Ticker Message Not Valid. \n Message Must be at least 5 characters."
 					+ "\n Url Must be at least 4 characters."
 					+ "\n Date Must be included");
+			}
+
+			function HandleFailedAPI(message: any) {
+				console.log(message);
 			}
 
 			function actualSave() {
@@ -55,7 +59,7 @@
 
 			function clearInputs() {
 				self.$scope.Message.Dates = "";
-				self.$scope.Message.Content = "";
+				self.$scope.Message.Message = "";
 				self.$scope.Message.Url = "";
 			}
 
@@ -80,11 +84,21 @@
 				}
 			}
 
+			function GetAllTickerItems() {
+				self.TickerSvc.getAll().then(
+					function (data) {
+						self.$scope.Messages = data;
+					},
+					function (reason) { HandleFailedAPI(reason) }
+					);
+			}
+
 			self.$scope.Save = save;
 			self.$scope.SaveNew = saveNew;
 			self.$scope.Cancel = cancel;
 
 			self.init();
+			GetAllTickerItems();
 		}
 	}
 

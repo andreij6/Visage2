@@ -285,9 +285,9 @@
 
 
 			<ul id="ticker01" class="newsticker pull-left">
-				<li><span>4/10/2015</span><a href="#/Special/Event">Host a Party!!!</a></li>
-				<li><span>May Specials</span><a href="#/Specials">Micro Wednesday for $69</a></li>
-				<li><span>Saturdays</span><a href="#/Contact">By Appointments Only, Schedule TodaY!</a></li>
+				<li ng-repeat="message in Messages">
+					<span>{{message.Dates}}</span><a href="{{message.Url}}">{{message.Message}}</a>
+				</li>
 			</ul>
 		</div>
 	</nav>

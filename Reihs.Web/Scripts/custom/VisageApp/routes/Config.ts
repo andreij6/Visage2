@@ -101,6 +101,10 @@
 				{
 					templateUrl: 'Templates/Front/About/Testimonials.html',
 					controller: 'TestimonialCtrl'
+				}).when('/Stories/:name',
+				{
+					templateUrl: 'Templates/Front/About/IndividualPatientStory.html',
+					controller: 'TestimonialCtrl'
 				}).when('/Special/Event',
 				{
 					templateUrl: 'Templates/Front/Special/Events.html',

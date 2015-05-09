@@ -19,9 +19,9 @@
 				<th></th>
 				</thead>
 				<tbody>
-					<tr ng-repeat="message in TickerMessages" class="{{message.Public}}">
+					<tr ng-repeat="message in Messages">
 						<td>{{message.Message}}</td>
-						<td>{{message.Date}}</td>
+						<td>{{message.Dates}}</td>
 						<td>{{message.Url}}</td>
 						<td><p><button ng-click="EditLink(post)" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
 						<td><p><button class="btn btn-danger btn-xs" ng-click="Delete(post)"><span class="glyphicon glyphicon-trash"></span></button></p></td>

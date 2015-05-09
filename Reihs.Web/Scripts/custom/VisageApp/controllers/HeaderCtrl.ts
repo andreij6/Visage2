@@ -3,6 +3,7 @@
 		private $scope: Extensions.IHeaderCtrlScope;
 		private MarketSvc: MarketService;
 		private PostDataSvc: PostDataService;
+		private TickerSvc: TickerDataService;
 
 		private init(): void {
 			var self = this;
@@ -22,14 +23,16 @@
 			MarketSvc: MarketService,
 			postDataSvc: PostDataService,
 			$location: ng.ILocationService,
-			$anchorScroll: ng.IAnchorScrollService) {
+			$anchorScroll: ng.IAnchorScrollService,
+			tickerSvc: TickerDataService)
+		{
 			var self = this;
 			self.$scope = $scope;
 			self.$scope.SideOpen = false;
 			self.$scope.ShoppingCart = MarketSvc.Cart;
 			self.MarketSvc = MarketSvc;
 			self.PostDataSvc = postDataSvc;
-
+			self.TickerSvc = tickerSvc;
 			self.$scope.HasItems = false;
 			self.$scope.IsAlertVisible = false;
 
@@ -114,6 +117,10 @@
 				});
 			}
 
+			function HandleFailedAPI(message: any) {
+				console.log(message);
+			}
+
 			function UpdateSO() {
 				if (self.$scope.SideOpen == true) {
 					self.$scope.SideOpen = false;
@@ -174,12 +181,20 @@
 				$anchorScroll();
 			}
 
+			function GetAllTickerItems() {
+				self.TickerSvc.getAll().then(
+					function (data) {
+						self.$scope.Messages = data;
+						console.log(data);
+					},
+					function (reason) { HandleFailedAPI(reason) }
+					);
+			}
 
 			function getBlogs() {
 				self.PostDataSvc.getAll().then(
 					function (data) {
 						self.$scope.Posts = data;
-						console.log(self.$scope.Posts);
 					},
 					function (error) {
 						console.log(error);
@@ -199,8 +214,9 @@
 			self.$scope.GoToTop = goToTop;
 
 			self.init();
+			GetAllTickerItems();
 		}
 	}
 
-	HeaderCtrl.$inject = ['$scope', 'MarketService', 'PostDataService', '$location', '$anchorScroll'];
+	HeaderCtrl.$inject = ['$scope', 'MarketService', 'PostDataService', '$location', '$anchorScroll', 'TickerDataService'];
 } 
