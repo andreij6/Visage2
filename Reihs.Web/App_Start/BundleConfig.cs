@@ -135,6 +135,7 @@ namespace Reihs.Web
 					CFC + "homepage.css",
 					CFC + "TopBottomNav.css",
 					CFC + "MobileSideNavigation.css",
+					CFC + "PatientStory.css",
 					MarketSection + "MaketIndex.css",
 					MarketSection + "ProductDetail.css",
 					MarketSection + "ProductList.css",
