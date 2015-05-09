@@ -54,6 +54,7 @@
 					category.Active = "active";
 					self.$scope.allactive = "";
 					self.$scope.filterValue = category;
+					self.$location.search('c', category['UrlCode']);
 					self.$scope.CurrentCategory = category.Name;
 				} else {
 					self.$scope.allactive = "active";
