@@ -33,7 +33,7 @@ namespace Reihs.Web.Tests.Controllers.API
 		public void GetBlogById()
 		{
 			//using real DB
-			BlogController controller = new BlogController();
+			TickerController controller = new TickerController();
 
 			IHttpActionResult actionResult = controller.Get(1);
 

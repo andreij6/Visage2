@@ -25,7 +25,7 @@
 				{ Name: 'Photo Gallery', Url: '#/Gallery' },
 				{ Name: 'Post Care', Url: '#/Resources/PostCare' },
 				{ Name: 'Treatments', Url: '#/Treatments' },
-				{ Name: 'Testimonials', Url: '#/Testimonials' },
+				{ Name: 'Testimonials', Url: '#/Stories' },
 				//{ Name: 'Videos', Url: '#/Videos'}
 			]
 

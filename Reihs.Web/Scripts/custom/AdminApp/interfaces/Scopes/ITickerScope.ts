@@ -1,5 +1,9 @@
 ﻿module Admin_Extensions {
 	export interface ITickerScope extends ng.IScope {
-		test: string;
+		Message: Extensions.TickerMessage;
+
+		SaveNew(): void;
+		Save(): void;
+		Cancel(): void;
 	}
 }  

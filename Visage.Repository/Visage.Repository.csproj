@@ -88,6 +88,7 @@
     <Compile Include="Models\Market\cTags.cs" />
     <Compile Include="Models\Market\mPackage.cs" />
     <Compile Include="Models\Market\pTags.cs" />
+    <Compile Include="Models\Ticker\NewTickerItem.cs" />
     <Compile Include="Models\Ticker\Ticker.cs" />
     <Compile Include="Models\Videos\IVideo.cs" />
     <Compile Include="Models\Videos\Video.cs" />

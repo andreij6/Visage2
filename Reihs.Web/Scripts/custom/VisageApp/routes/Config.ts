@@ -78,10 +78,6 @@
 				{
 					templateUrl: 'Templates/Front/About/Team.html',
 					controller: 'TeamCtrl'
-				}).when('/Testimonials',
-				{
-					templateUrl: 'Templates/Front/About/Testimonials.html',
-					controller: 'TestimonialCtrl'
 				}).when('/Resources',
 				{
 					templateUrl: 'Templates/Front/Resources/Index.html',
@@ -101,6 +97,10 @@
 				{
 					templateUrl: 'Templates/Front/SiteMap.html',
 					controller: 'SiteMapCtrl'
+				}).when('/Stories',
+				{
+					templateUrl: 'Templates/Front/About/Testimonials.html',
+					controller: 'TestimonialCtrl'
 				}).when('/Special/Event',
 				{
 					templateUrl: 'Templates/Front/Special/Events.html',

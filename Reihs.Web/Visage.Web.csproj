@@ -179,6 +179,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\API\TickerController.cs" />
     <Compile Include="Controllers\API\Blog\BlogController.cs" />
     <Compile Include="Controllers\API\Blog\CategoryController.cs" />
     <Compile Include="Controllers\API\ContactController.cs" />
@@ -670,6 +671,7 @@
     <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\OrderDataService.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\PostDataService.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\ProductDataService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\AdminApp\factories\TickerDataService.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IBlogScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\IIndexScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\AdminApp\interfaces\Scopes\ILayoutScope.ts" />
@@ -688,6 +690,7 @@
     <TypeScriptCompile Include="Scripts\custom\shared\models\OrderDetail.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\Product.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\ShoppingCart.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\TickerMessage.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\About.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Blog.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\CartCtrl.ts" />

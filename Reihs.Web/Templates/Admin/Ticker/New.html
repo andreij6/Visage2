@@ -13,9 +13,15 @@
 				<input type="text" class="form-control" placeholder="Ticker Url" ng-model="Message.Url">
 			</div>
 			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Date" ng-model="Message.Date">
+				<input type="text" class="form-control" placeholder="Dates" ng-model="Message.Dates">
 			</div>
 		</form>
+
+		<button class="btn btn-primary" ng-click="Save()">Save</button>
+		<button class="btn btn-primary" ng-click="SaveNew()">Save &amp; New</button>
+		<button class="btn btn-default" ng-click="Cancel()">Cancel</button>
+
+		<div class="clearfix"></div>
 	</div>
 </div>
 

@@ -2,6 +2,7 @@
 /// <reference path="../../typings/angularjs/angular-route.d.ts" />
 /// <reference path="../../typings/angularjs/angular-sanitize.d.ts" />
 /// <reference path="factories/postdataservice.ts" />
+/// <reference path="factories/tickerdataservice.ts" />
 
 
 module AdminApp {
@@ -17,6 +18,7 @@ module AdminApp {
 	AdminApp.factory('OrderDataService', ['$http', '$q', OrderDataService.Builder]);
 	AdminApp.factory('mCategoryDataService', ['$http', '$q', mCategoryDataService.Builder]);
 	AdminApp.factory('ProductDataService', ['$http', '$q', ProductDataService.Builder]);
+	AdminApp.factory('TickerDataService', ['$http', '$q', TickerDataService.Builder]);
 
 	AdminApp.controller('Index', Index);
 	AdminApp.controller('LayoutCtrl', LayoutCtrl);
