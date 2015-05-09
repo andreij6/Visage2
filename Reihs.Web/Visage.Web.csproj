@@ -215,7 +215,11 @@
     <Content Include="Content\defaults\font-awesome.min.css" />
     <Content Include="Content\fonts\icomoon.dev.svg" />
     <Content Include="Content\fonts\icomoon.svg" />
+    <Content Include="Content\Front\Custom\Market\MarketIndex.css" />
+    <Content Include="Content\Front\Custom\Market\ProductDetail.css" />
+    <Content Include="Content\Front\Custom\Market\ProductList.css" />
     <Content Include="Content\Front\Custom\MobileSideNavigation.css" />
+    <Content Include="Content\Front\Custom\SiteMap.css" />
     <Content Include="Content\Front\ThirdParty\carousel.css" />
     <Content Include="Content\Front\ThirdParty\li-scroller.css" />
     <Content Include="Content\Front\ThirdParty\loading-bar\loading-bar.css" />

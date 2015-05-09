@@ -123,6 +123,7 @@ namespace Reihs.Web
 
 			var CFTP = "~/Content/Front/ThirdParty/";
 			var CFC = "~/Content/Front/Custom/";
+			var MarketSection = CFC + "Market/";
 
 			bundles.Add(new StyleBundle("~/Content/Front/css").Include(
 					CFTP + "loading-bar/loading-bar.css",
@@ -132,6 +133,10 @@ namespace Reihs.Web
 					CFC + "homepage.css",
 					CFC + "TopBottomNav.css",
 					CFC + "MobileSideNavigation.css",
+					MarketSection + "MaketIndex.css",
+					MarketSection + "ProductDetail.css",
+					MarketSection + "ProductList.css",
+					CFC + "SiteMap.css",
 					CFC + "sitewide.css"));
 
 			bundles.Add(new StyleBundle("~/Content/Admin/css").Include(

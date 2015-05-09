@@ -1,27 +1,32 @@
 ﻿module VisageApp {
 	export class GalleryCtrl {
 		private $scope: Extensions.IGalleryScope;
+		private $location: ng.ILocationService;
 
 		private init(): void {
 			var self = this;
+
+			//check the query String
+			
 		}
 
-		constructor($scope: Extensions.IGalleryScope) {
+		constructor($scope: Extensions.IGalleryScope, $location: ng.ILocationService) {
 			var self = this;
 			self.$scope = $scope;
 			self.$scope.Showing = false;
 			self.$scope.Image = "";
 			self.$scope.allactive = "active";
 			self.$scope.CurrentCategory = "All Categories";
+			self.$location = $location;
 
-			var botox = { Name: "Botox", Active: false };
-			var facialInj = { Name: "Facial Injectibles", Active: false };
-			var resurface = { Name: "Skin Resurfacing", Active: false };
-			var tighten = { Name: "Skin Tightening", Active: false };
-			var pigmentation = { Name: "Pigmentation/Melasma", Active: false };
-			var hcg = { Name: "BodyShaping/HCG", Active: false };
-			var laser = { Name: "Laser Hair Removal", Active: false };
-			var vein = { Name: "Vein Reduction", Active: false };
+			var botox =		{ UrlCode: "bx", Name: "Botox", Active: false };
+			var facialInj =	{ UrlCode: "fi", Name: "Facial Injectibles", Active: false };
+			var resurface =	{ UrlCode: "sr", Name: "Skin Resurfacing", Active: false };
+			var tighten =		{ UrlCode: "st", Name: "Skin Tightening", Active: false };
+			var pigmentation =	{ UrlCode: "pm", Name: "Pigmentation/Melasma", Active: false };
+			var hcg =			{ UrlCode: "bsh", Name: "BodyShaping/HCG", Active: false };
+			var laser =		{ UrlCode: "lhr", Name: "Laser Hair Removal", Active: false };
+			var vein =		{ UrlCode: "vr", Name: "Vein Reduction", Active: false };
 
 			var categories = [];
 
@@ -282,13 +287,37 @@
 				self.$scope.Showing = true;
 			}
 
+			function findCategoryByName(name: string) {
+				for (var position = 0; position < categories.length; position++) {
+					console.log(position);
+					var current = self.$scope.Categories[position];
+					console.log(current);
+					console.log(name);
+					if (current["UrlCode"].toLowerCase() == name.toLowerCase()) {
+						return current;
+					}
+				}
+			}
+
+			function CheckQueryString() {
+				var params = self.$location.search();
+
+				if (params['c'] !== undefined) {
+					var localCategory = findCategoryByName(params['c']);
+					if (localCategory !== undefined) {
+						setFilter(localCategory);
+					}
+				}
+			}
+
 			self.$scope.Trigger = LightBoxTrigger;
 
 			self.$scope.SetFilter = setFilter;
-
+			
 			self.init();
+			CheckQueryString();
 		}
 	}
 
-	GalleryCtrl.$inject = ['$scope'];
+	GalleryCtrl.$inject = ['$scope', '$location'];
 } 

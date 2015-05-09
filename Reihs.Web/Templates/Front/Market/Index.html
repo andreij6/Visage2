@@ -1,65 +1,70 @@
-﻿<div class="row carousel-holder">
+﻿<div class="breadcrumb-wrap visible-sm visible-md visible-lg">
+	<div class="container">
+		<div class="row carousel-holder">
 
-	<div class="col-md-12">
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="item active">
-                    <img class="slide-image" src="../../Content/Images/Products/Banners/SkinMedica_Banner.jpg" alt="">
-				</div>
-				<div class="item">
-                    <img class="slide-image" src="../../Content/Images/Products/Banners/Clarisonic_Banner.jpg" alt="">
-				</div>
-				<div class="item">
-                    <img class="slide-image" src="../../Content/Images/Products/Banners/EltaMD_Banner.jpg" alt="">
+			<div class="col-md-9 col-md-offset-3">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!--<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+					</ol>-->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img class="slide-image" src="../../Content/Images/Products/Banners/SkinMedica_Banner.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="../../Content/Images/Products/Banners/Clarisonic_Banner.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="../../Content/Images/Products/Banners/EltaMD_Banner.jpg" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
+	</div>
 </div>
 
-<div class="divide80"></div>
-<div class="container">
-	<div class="row">
-		<div class="col-md-3">
+<section class="page-content">
+	<div class="divide80"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
 
-			<div class="sidebar-box margin40">
-				<h4 class="heading visible-md visible-lg"><a href="#/Market/Special/GiftCards"><i class="fa fa-gift"></i> Gift Cards</a></h4>
+				<div class="sidebar-box margin40">
+					<h4 class="heading visible-md visible-lg"><a href="#/Market/Special/GiftCards"><i class="fa fa-gift"></i> Gift Cards</a></h4>
 
-				<h4 class="heading visible-md visible-lg"><a href="#/Market">Products</a></h4>
+					<h4 class="heading visible-md visible-lg"><a href="#/Market">Products</a></h4>
 
-				<ul class="list-unstyled cat-list visible-md visible-lg">
-					<li ng-repeat="category in Categories"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a> <i class="fa fa-angle-right"></i></li>
-				</ul>
+					<ul class="list-unstyled cat-list visible-md visible-lg">
+						<li ng-repeat="category in Categories"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a> <i class="fa fa-angle-right"></i></li>
+					</ul>
 
-				<!--<ul class=" portfolio-filters text-center visible-sm visible-xs">
-					<li class="filter" ng-repeat="category in Categories"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a></li>
-				</ul>-->
+					<!--<ul class=" portfolio-filters text-center visible-sm visible-xs">
+						<li class="filter" ng-repeat="category in Categories"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a></li>
+					</ul>-->
 
-				<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
-					<div class="dr-trigger" ng-click="MenuTrigger()">
-						<span class="dr-icon dr-icon-settings"></span>
-						<a class="dr-label">Market Menu</a>
+					<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
+						<div class="dr-trigger" ng-click="MenuTrigger()">
+							<span class="dr-icon dr-icon-settings"></span>
+							<a class="dr-label">Market Menu</a>
+						</div>
+						<div ng-show="open" class="subNav">
+							<ul>
+								<li><a href="#/Market/Special/GiftCards">Gift Cards</a><i class="fa fa-angle-right"></i></li>
+								<li ng-repeat="category in Categories"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a><i class="fa f</a><i class="fa fa-angle-right"></i></li>
+							</ul>
+						</div>
 					</div>
-					<div ng-show="open" class="subNav">
-						<ul>
-							<li><a href="#/Market/Special/GiftCards">Gift Cards</a><i class="fa fa-angle-right"></i></li>
-							<li ng-repeat="category in Categories"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a><i class="fa f</a><i class="fa fa-angle-right"></i></li>
-						</ul>
-					</div>
-				</div>
 
-			</div><!--sidebar-box-->
-		</div>
-		<div class="col-md-9">
-			<div class="row">
-				<div class="col-sm-4 col-lg-4 col-md-4" ng-repeat="product in Products | limitTo: 5">
-					
+				</div><!--sidebar-box-->
+			</div>
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-sm-4 col-lg-4 col-md-4" ng-repeat="product in Products | limitTo: 5">
+
 						<div class="thumbnail">
 							<p>
 								<a href="#/Market/Item/{{product.Id}}">{{product.Name}}</a>
@@ -73,9 +78,10 @@
 								<a href="#/Market/Item/{{product.Id}}" class="btn border-theme">View Details</a>
 							</div>
 						</div>
-					
+
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</section>

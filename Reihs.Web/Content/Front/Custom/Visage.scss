@@ -24,14 +24,6 @@
 }
 
 
-#CreativeJones {
-	color: #ffffff;
-
-	&:hover {
-		color: $color_curious_blue_approx;
-	}
-}
-
 .badge {
 	background-color: #FFF;
 	color: #000;
@@ -72,13 +64,7 @@
 	}
 }
 
-.sitemap {
-	background-color: #c4c4c4;
-}
 
-#site-map-link {
-	color: #323232;
-}
 
 .wrapper {
 	position: relative;
