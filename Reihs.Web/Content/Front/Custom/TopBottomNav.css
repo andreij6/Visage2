@@ -1,8 +1,4 @@
-﻿.creme{
-    color: #f9f1cd;
-}
-
-.banner-1 {
+﻿.banner-1 {
 	background: url('../../Images/Banner/Nancy.jpg') no-repeat center center;
 	background-size: auto;
 }
@@ -15,4 +11,62 @@
 .banner-3 {
 	background: url('../../Images/Banner/Dallas.jpg') no-repeat center center;
 	background-size: auto;
+}
+
+/** Top Navigation */
+
+#main-navigation li a:hover {
+	color: #f5eccf;
+	font-weight: bold;
+}
+
+/** top side navigation */
+
+.nav-pills > li a:hover{
+	background-color: transparent;
+	color: #f5eccf;
+	border: none;
+}
+
+.nav-pills > li a:focus{
+	background-color: transparent;
+}
+
+.phone-number {
+	font-weight: bold;
+	color: #f5eccf;
+	padding-left: 15px;
+	font-size: 1.3em;
+}
+
+
+/** Footer Stuffs */
+#footer-option .contact a {
+	color: white;
+}
+
+#footer-option .contact a:hover {
+	color: #f5eccf;
+}
+
+
+#footer-option {
+	background-color: #6d5d49;
+}
+
+.footer-col p {
+	color: white;
+}
+
+#footer-option .footer-btm {
+	background-color: #574c3e;
+}
+
+#footer-option a {
+	color: white;
+}
+
+
+#footer-option {
+	margin-bottom: 60px;
 }

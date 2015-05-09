@@ -23,9 +23,6 @@
 	overflow: auto;
 }
 
-#footer-option {
-	margin-bottom: 80px;
-}
 
 #CreativeJones {
 	color: #ffffff;
@@ -431,17 +428,7 @@ body {
 		background-color: #281b0b;
 	}
 }
-.nav-pills > li a{
-	&:hover {
-		background-color: transparent;
-		color: #281b0b;
-		border-left: 1px solid #f9f1cd;
-	}
 
-	&:focus{
-		background-color: transparent;
-	}
-}
 
 .breadcrumb-wrap {
 	height: 250px;

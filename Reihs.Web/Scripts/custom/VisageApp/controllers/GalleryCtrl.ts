@@ -12,6 +12,7 @@
 			self.$scope.Showing = false;
 			self.$scope.Image = "";
 			self.$scope.allactive = "active";
+			self.$scope.CurrentCategory = "All Categories";
 
 			var botox = { Name: "Botox", Active: false };
 			var facialInj = { Name: "Facial Injectibles", Active: false };
@@ -48,9 +49,11 @@
 					category.Active = "active";
 					self.$scope.allactive = "";
 					self.$scope.filterValue = category;
+					self.$scope.CurrentCategory = category.Name;
 				} else {
 					self.$scope.allactive = "active";
 					self.$scope.filterValue = {};
+					self.$scope.CurrentCategory = "All Categories";
 				}
 
 

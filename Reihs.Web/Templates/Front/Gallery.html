@@ -21,15 +21,18 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<ul class=" portfolio-filters text-center">
-					<li class="filter {{allactive}}" ng-click="SetFilter('')">all</li>
+			<div class="col-md-3">
+				<h4>Gallery</h4>
+				<ul class=" list-unstyled cat-list visible-md visible-lg">
+					<li class="filter {{allactive}}" ng-click="SetFilter('')"><a>All Photos</a></li>
 					<li ng-repeat="Category in Categories"
 					    class="filter {{Category.Active}}"
-					    ng-click="SetFilter(Category)">{{Category.Name}}</li>
+					    ng-click="SetFilter(Category)"><a>{{Category.Name}}</a></li>
 				</ul>
-
-				<div id="grid" class="row">
+			</div>
+			<div class="col-md-8 col-md-offset-1">
+				<h1>{{CurrentCategory}}</h1>
+				<div id="grid" class="row image-gallery">
 					<div class="mix col-sm-4 page1 page4 margin30 mix_all" style="display: inline-block; opacity: 1;" ng-repeat="Photo in Photos | filter: { Category: filterValue}">
 						<div class="item-img-wrap">
 							<img src="{{Photo.Image}}" class="img-responsive" alt="workimg" ng-click="Trigger($event)">

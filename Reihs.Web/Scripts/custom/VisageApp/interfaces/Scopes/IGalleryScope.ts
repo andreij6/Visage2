@@ -7,6 +7,7 @@
 		Photos: any;
 		filterValue: any;
 		Categories: any;
+		CurrentCategory: string;
 
 		SetFilter(Category: any): void;
 		allactive: string;

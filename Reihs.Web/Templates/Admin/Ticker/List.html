@@ -1,7 +1,39 @@
 ﻿<div id="page-wrapper">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">Ticker List</h1>
+			<h1 class="page-header">Ticker Items</h1>
 		</div>
+	</div>
+
+
+	<div class="col-md-12">
+		<div class="table-responsive">
+
+			<table id="mytable" class="table table-bordred table-striped">
+
+				<thead>
+				<th>Message</th>
+				<th>Date</th>
+				<th>Url</th>
+				<th></th>
+				<th></th>
+				</thead>
+				<tbody>
+					<tr ng-repeat="message in TickerMessages" class="{{message.Public}}">
+						<td>{{message.Message}}</td>
+						<td>{{message.Date}}</td>
+						<td>{{message.Url}}</td>
+						<td><p><button ng-click="EditLink(post)" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+						<td><p><button class="btn btn-danger btn-xs" ng-click="Delete(post)"><span class="glyphicon glyphicon-trash"></span></button></p></td>
+					</tr>
+
+				</tbody>
+
+			</table>
+			<a href="#/Ticker/New" class="btn btn-primary">New Ticker Message</a>
+			<div class="clearfix"></div>
+
+		</div>
+
 	</div>
 </div>

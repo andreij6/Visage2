@@ -1,11 +1,49 @@
 ﻿.intro-text {
-	background-color: #523a1d;
+	background-color: #f5eccf;
 }
 
 .intro-text p {
-	color: #fff;
+	color: #92795b;
 }
 
-.services-wrap {
-	background-color: #e2dada;
+.wow {
+	visibility: visible;
+	-webkit-animation: fadeInDown;
+	-moz-animation: fadeInDown;
+	-o-animation: fadeInDown;
+	animation: fadeInDown;
 }
+
+#Identity {
+	color: #92795b;
+}
+
+/* Buttons */
+.border-drkbrown{
+    border: 1px solid #92795b;
+    color:#92795b;
+    background-color: transparent;
+}
+.border-drkbrown:hover{
+    background-color: #92795b;
+    border-color: #92795b;
+    color:#fff;
+}
+
+/* What We Offer (2nd) AKA Services Section*/
+
+.services-wrap {
+	background-color: white;
+	color: #92795b;
+}
+
+.services-wrap h2 {
+	color: #92795b;
+}
+
+.services-box h4, p {
+    color: #92795b;
+}
+
+
+/** Move me to the Photo Gallery CSS that u are going to make*/

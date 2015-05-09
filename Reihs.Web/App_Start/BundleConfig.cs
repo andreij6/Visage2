@@ -135,7 +135,8 @@ namespace Reihs.Web
 					CFC + "sitewide.css"));
 
 			bundles.Add(new StyleBundle("~/Content/Admin/css").Include(
-					"~/Content/Admin/sb-admin-2.min.css"
+					"~/Content/Admin/ThirdParty/sb-admin-2.min.css",
+					"~/Content/Admin/Custom/AdminStyles.css"
 				));
 		}
 	}
