@@ -47,8 +47,8 @@
 				<div class="blog-post">
 					<h2>{{Client.Name}},{{Client.Age}}</h2>
 					<ul>
-						<li ng-repeat="t in TreatmentObjs">
-							{{t.Name}}
+						<li ng-repeat="t in TreatmentObjs" class="treatments">
+							<a href="#/Treatments?t={{t.Code}}">{{t.Name}}</a>
 						</li>
 					</ul>
 					<div class="col-xs-12">

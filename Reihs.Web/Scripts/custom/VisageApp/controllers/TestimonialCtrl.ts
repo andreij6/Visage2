@@ -20,22 +20,22 @@
 			var clients = [];
 
 			//#region Treatments
-			var botox = { Name: "Botox", Code: "fi" }
-            var dysport = { Name: "Dysport", Code: "fi" }
-            var photo = { Name: "Photofacial", Code: "pig" }
-            var sculptra = { Name: "Sculptra", Code: "fi" }
-            var fraxel = { Name: "Fraxel", Code: "sr" }
-            var restylane = { Name: "Restylane", Code: "fi" }
-            var forma = { Name: "Forma", Code: "st" }
-            var microderma = { Name: "Microdermabrasion", Code: "micro" }
-            var tca = { Name: "TCA Peels", Code: "st" }
-            var fractora = { Name: "Fractora", Code: "sr" }
-            var hcg = { Name: "HCG Diet Program", Code: "body" }
-            var bodyfx = { Name: "BodyFX", Code: "body" }
-            var teartrough = { Name: "Filler-Tear Trough", Code: "" }
-            var skincare = { Name: "Skin Care", Code: "" }
-            var filler = { Name: "Fillers", Code: "" }
-            var medica = { Name: "Skin Medica", Code: "" }
+			var botox = { Name: "Botox", Code: "fj" }
+			var dysport = { Name: "Dysport", Code: "fj" }
+			var photo = { Name: "Photofacial", Code: "pm" }
+			var sculptra = { Name: "Sculptra", Code: "fj" }
+			var fraxel = { Name: "Fraxel", Code: "sr" }
+			var restylane = { Name: "Restylane", Code: "fj" }
+			var forma = { Name: "Forma", Code: "st" }
+			var microderma = { Name: "Microdermabrasion", Code: "mderm" }
+			var tca = { Name: "TCA Peels", Code: "st" }
+			var fractora = { Name: "Fractora", Code: "sr" }
+			var hcg = { Name: "HCG Diet Program", Code: "bhcg" }
+			var bodyfx = { Name: "BodyFX", Code: "bhcg" }
+			var teartrough = { Name: "Filler-Tear Trough", Code: "" }
+			var skincare = { Name: "Skin Care", Code: "" }
+			var filler = { Name: "Fillers", Code: "" }
+			var medica = { Name: "Skin Medica", Code: "" }
 
 			//#endregion
 
@@ -119,7 +119,7 @@
 
 			//#endregion
 
-				clients.push(brad);
+			clients.push(brad);
 			clients.push(kim);
 
 			function setCurrentClient() {

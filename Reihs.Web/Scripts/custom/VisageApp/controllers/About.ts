@@ -33,7 +33,6 @@
 			self.$scope.SideNavs = [
 				{ Text: 'Team', Url: '#/Team' },
 				{ Text: 'Patient Stories', Url: '#/Stories' },
-				{ Text: 'Videos', Url: '#/Videos' },
 				{ Text: 'Locations & Contact', Url: '#/Contact' }
 			] 
 		}
