@@ -45,7 +45,7 @@
 
 			<div class="col-md-8 col-md-offset-1">
 				<div class="blog-post">
-					<h2>{{Client.Name}}</h2>
+					<h2>{{Client.Name}},{{Client.Age}}</h2>
 					<ul>
 						<li ng-repeat="t in TreatmentObjs">
 							{{t.Name}}
@@ -65,6 +65,9 @@
 						<p>
 							{{Client.Story_Part_Three}}
 						</p>
+                        <p>
+                            {{Client.Story_Part_Four}}
+                        </p>
 					</div><!--bio-->
 					<div class="col-md-6">
 						<img src="{{Client.VideoImg}}" class="img-responsive">
