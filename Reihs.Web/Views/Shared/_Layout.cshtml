@@ -21,7 +21,7 @@
 	<![endif]-->
 	@Scripts.Render("~/bundles/modernizr")
 	@Scripts.Render("~/bundles/holder")
-	<script>
+	@*<script>
 		(function (a, b, c, d, e) {
 			var f = a + "Q"; b[a] = b[a] || {}; b[a][d] = b[a][d] || function () {
 				(b[f] = b[f] || []).push(arguments)
@@ -29,7 +29,7 @@
 			c.src = "//static.reembed.com/data/scripts/g_4058_54e577dd0ace962f4d41be73b154c199.js";
 			a.parentNode.insertBefore(c, a)
 		})("reEmbed", window, document, "setupPlaylist", "script");
-	</script>
+	</script>*@
 	<script type="text/javascript"
 		   src="@ViewBag.Gmaps">
 	</script>

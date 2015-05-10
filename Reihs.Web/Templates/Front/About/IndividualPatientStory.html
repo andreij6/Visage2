@@ -1,16 +1,16 @@
 ﻿<div class="breadcrumb-wrap visible-md visible-lg">
-    <div class="container">
-        <div class="row">
-            <img class="pull-right" src="../../../Content/Images/About/About.jpg" />
-            <!--<section class="related-images pull-right">
-                <img src="http://placehold.it/140x110" alt="">
-                <img src="http://placehold.it/140x110" alt="">
-                <img src="http://placehold.it/140x110" alt="">
-                <img src="http://placehold.it/140x110" alt="">
-            </section>-->
+	<div class="container">
+		<div class="row">
+			<img class="pull-right" src="../../../Content/Images/About/About.jpg" />
+			<!--<section class="related-images pull-right">
+			    <img src="http://placehold.it/140x110" alt="">
+			    <img src="http://placehold.it/140x110" alt="">
+			    <img src="http://placehold.it/140x110" alt="">
+			    <img src="http://placehold.it/140x110" alt="">
+			</section>-->
 
-        </div>
-    </div>
+		</div>
+	</div>
 </div>
 <section class="page-content">
 	<div id="lightbox" ng-show="Showing" ng-click="Showing = false">
@@ -46,11 +46,6 @@
 			<div class="col-md-8 col-md-offset-1">
 				<div class="blog-post">
 					<h2>{{Client.Name}},{{Client.Age}}</h2>
-					<ul>
-						<li ng-repeat="t in TreatmentObjs" class="treatments">
-							<a href="#/Treatments?t={{t.Code}}">{{t.Name}}</a>
-						</li>
-					</ul>
 					<div class="col-xs-12">
 						<p class="dropcap">
 							{{Client.Story_Part_One}}
@@ -58,22 +53,42 @@
 						<p>
 							{{Client.Story_Part_Two}}
 						</p>
-
-						<img src="http://placehold.it/725x325" class="img-responsive">
-						<div class="divide30"></div>
+						<div class="col-md-12">
+							<!--<img src="{{Client.VideoImg}}" class="img-responsive">-->
+							<div class="col-md-12">
+								<iframe class="video-wrapper" src="https://www.youtube.com/embed/Qtzvy2HLU8I" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						
 
 						<p>
 							{{Client.Story_Part_Three}}
 						</p>
-                        <p>
-                            {{Client.Story_Part_Four}}
-                        </p>
+						<p>
+							{{Client.Story_Part_Four}}
+						</p>
 					</div><!--bio-->
 					<div class="col-md-6">
-						<img src="{{Client.VideoImg}}" class="img-responsive">
+						<img src="//www.dropbox.com/s/hv8oohogs7wfh84/Brad.jpg" class="img-responsive">
+						<div class="divide30"></div>
 					</div>
+					
 					<div class="col-md-6">
 						<img src="{{Client.TestimonialImg}}" class="img-responsive">
+					</div>
+					<div class="col-md-12">
+						<h5>Treatment Links</h5>
+						<ul>
+							<li ng-repeat="t in TreatmentObjs" class="treatments">
+								<a href="#/Treatments?t={{t.Code}}">{{t.Name}}</a>
+							</li>
+						</ul>
+						<h6>Photo Gallery Links</h6>
+						<ul>
+							<li ng-repeat="t in TreatmentObjs" class="treatments">
+								<a href="#/Gallery?c={{t.Code}}">{{t.Name}}</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>

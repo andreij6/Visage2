@@ -20,11 +20,11 @@
 			self.$location = $location;
 
 			var botox =		{ UrlCode: "bx", Name: "Botox", Active: false };
-			var facialInj =	{ UrlCode: "fi", Name: "Facial Injectibles", Active: false };
+			var facialInj =	{ UrlCode: "fj", Name: "Facial Injectibles", Active: false };
 			var resurface =	{ UrlCode: "sr", Name: "Skin Resurfacing", Active: false };
 			var tighten =		{ UrlCode: "st", Name: "Skin Tightening", Active: false };
 			var pigmentation =	{ UrlCode: "pm", Name: "Pigmentation/Melasma", Active: false };
-			var hcg =			{ UrlCode: "bsh", Name: "BodyShaping/HCG", Active: false };
+			var hcg =			{ UrlCode: "bhcg", Name: "BodyShaping/HCG", Active: false };
 			var laser =		{ UrlCode: "lhr", Name: "Laser Hair Removal", Active: false };
 			var vein =		{ UrlCode: "vr", Name: "Vein Reduction", Active: false };
 
