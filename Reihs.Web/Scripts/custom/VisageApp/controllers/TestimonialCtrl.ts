@@ -46,7 +46,6 @@ module VisageApp {
 				42,
 				false,
 				true,
-				"/",
 				"Photofacials and Dysport",
 				[photo, dysport],
 				"Meet Brad, a 42-year-old Kentucky native, a successful entrepreneur who prides himself on “living a healthy lifestyle” that focuses on his family, a prominent career  and his own personal growth and fitness.",
@@ -60,7 +59,6 @@ module VisageApp {
 				49,
 				false,
 				true,
-				"/",
 				"Botox and Sculptra",
 				[botox, sculptra],
 				"Meet Kim, a very youthful 49 year-old mother of four, who presented to Le Beau Visage Aesthetic Center in 2012 primarily concerned with wanting to improve the “11’s” between my brows.",
@@ -74,7 +72,6 @@ module VisageApp {
 				46,
 				false,
 				true,
-				"/",
 				"Botox, Fillers and Fraxel",
 				[botox, filler, fraxel],
 				"“I have to admit, the first appointment I made with Dr. Riehs, I was so nervous.  Never having had any major facial procedures done, I had no idea what to expect.” She states that she expected to be fussed over and was concerned that her flaws may be escalated in an attempt to have more services.But, the exact opposite happened.",
@@ -88,7 +85,6 @@ module VisageApp {
 				43,
 				false,
 				true,
-				"/",
 				"Restylane and Botox",
 				[restylane, botox],
 				'Iliana is  a 43 year old woman full of energy and charisma.  Her happy life is spent as a mother, wife and owner of the “cutest” dog in the world—Bruno(a French bulldog who really is the cutest thing in the world).',
@@ -102,7 +98,6 @@ module VisageApp {
 				66,
 				false,
 				true,
-				"/",
 				"Forma Skin Tightening",
 				[forma],
 				"Shirley is one of the clinic sweethearts.  She is a 66 year-old and first presented to the clinic almost three years ago with the hopes of  “receiving a fresher, younger look.”  She especially hoped to find a treatment that would help provide some lifting and tightening across the jaw line and neck.",
@@ -116,7 +111,6 @@ module VisageApp {
 				66,
 				false,
 				true,
-				"/",
 				"Skin Medica and Sculptra",
 				[medica, sculptra],
 				"Jan is another clinic sweetheart.  She is 66 years young and an avid golfer.  She quickly became a member of the Le Beau Visage family in summer of 2012.  “When I met with Dr.Riehs, he knew exactly what procedures would benefit me and explained each with  great detail.”  When Jan met with Dr.Riehs, she was reassured that Dr.Riehs would only recommend treatments that were right for her.For Jan, the reassurance and patience were pivotal components to the entire treatment process.  “When you have your treatments done, you are very comfortable and totally relaxed with great results.",
@@ -130,7 +124,6 @@ module VisageApp {
 				54,
 				false,
 				false,
-				"/",
 				'Microdermabrasion, Botox, Restylane & Photofacials',
 				[micro, botox, restylane, photo],
 				'Debbie, a young and energetic 54 year-old, first presented to Le Beau Visage Aesthetic Center almost six years ago.  Debbie was new to Frisco and need to find a physician she could trust to advise her “age gracefully” with expertise.Debbie says playfully, “I was coming up to that dreaded big birthday, had middle school girls and wanted to make sure I started taking care of me.”',
@@ -144,7 +137,6 @@ module VisageApp {
 				38,
 				false,
 				true,
-				"/",
 				'Microdermabrasion',
 				[micro],
 				'Angela started her journey at Le Beau Visage Aesthetic Center with microdermabrasion. She had recently moved to the north Dallas area and was searching for a cosmetic center that could offer a wide variety of services from spa to injectable services.She was immediately drawn to the facility because of the unique team of individuals.',
@@ -158,7 +150,6 @@ module VisageApp {
 				52,
 				false,
 				true,
-				"/",
 				'Fillers: Sculptura and Restylane',
 				[filler, sculptra, restylane],
 				"Nancy said that she wasn't happy with her appearance and was losing confidence before coming to Dr. Riehs’ office.It was word of mouth that introduced Nancy to the practice. She says her daughter- in -law, Angela, who sung high praises for Dr.Riehs and the team at Le Beau Visage Aesthetic Center, told her of the practice.Nancy shared a curiosity and excitement about seeing the results of Angela’s treatments and elected to visit the practice herself.She considered the benefits and prices of multiple procedures but did not want to be “overdone.”  Ultimately, she elected to undergo treatments using injectable fillers.",
@@ -172,7 +163,6 @@ module VisageApp {
 				43,
 				false,
 				true,
-				"/",
 				'Botox, Fillers, TCA Peels',
 				[botox, filler, tca],
 				'“I have known Dr. Riehs for almost 20 years and actually helped him open his practice here in Frisco.”  She jokes, “I was here in the early days and have almost done all the procedures.”  This vibrant, sophisticated woman really desires her reflection to match her very lively and gregarious personality.',
@@ -186,7 +176,6 @@ module VisageApp {
 				51,
 				false,
 				true,
-				"/",
 				'Fractora Laser Eye Treatment, Botox & Fillers)',
 				[fractora, botox, filler],
 				'“I found out about Dr. Riehs from another flight attendant who always looks fresh and fabulous.”  One of Lynn’s biggest concerns was undergoing treatments and then looking “overdone and unnatural.”    Lynn began undergoing treatments at Le Beau Visage Aesthetic Center in 2011; she engaged in a wide variety of treatments ranging from Botox and Fillers, to radiofrequency technology including Fractora and Forma.',
@@ -200,7 +189,6 @@ module VisageApp {
 				39,
 				false,
 				false,
-				"/",
 				'Botox and Fillers',
 				[botox, filler],
 				'Chad, a 39 year young man, and prominent attorney, received his first cosmetic treatment at Le Beau Visage almost 4 years ago; his primary focus was using Botox around the corners of his eyes.',
@@ -214,7 +202,6 @@ module VisageApp {
 				54,
 				false,
 				true,
-				"/",
 				'Microdermabrasion and Skin Care',
 				[microderma, skincare],
 				'Fernando was born in Columbia and has been a Dallas native for over 30 years.  His career has focused extensively on customer service and hospitality.  These were important qualities when he was deciding an aesthetic facility.He says, “I love Dr. Riehs and his entire team.They are all very well trained and professional.  Hospitality is top of the line.”',
@@ -228,7 +215,6 @@ module VisageApp {
 				"",
 				false,
 				true,
-				"/",
 				'HCG & Body FX',
 				[hcg, bodyfx],
 				'Liz, like so many of the patients at Le Beau Visage, was introduced to the facility through a friend, Susan.  She attended one of the twice-a - year expos where she met Dr. Riehs.  “I was getting very close to 50 years old…and felt like a I needed a pick - me -up.”  Like many patients, Liz was searching for the “perfect” place to have treatments performed. When she met Dr.Riehs, “He immediately put me at ease and the rest is history!”',
@@ -242,7 +228,6 @@ module VisageApp {
 				52,
 				false,
 				true,
-				"/",
 				'Filler-Tear Trough and Botox',
 				[teartrough, botox],
 				'Like a lot of women, Peggy does not like the idea of getting older, but realizes “you just can not alter nature.”  “I want to look the best I can for whatever age I am.”',
@@ -256,7 +241,6 @@ module VisageApp {
 				55,
 				false,
 				false,
-				"/",
 				'Botox & Forma',
 				[botox, forma],
 				'I came to Dr. Riehs because my mom never really engaged in anything luxurious for herself; so she has made it her mission to change that mentality for both herself and her daughters. “I just wanted to take care of me!”   Different from her rearing, Isabel now focuses on her own mental and physical well being.',
@@ -270,7 +254,6 @@ module VisageApp {
 				42,
 				false,
 				true,
-				"/",
 				'(Microdermabrasion and Botox)',
 				[microderma, botox],
 				'“The best way you can halt time is with reinforcements,” jokes Brandi, who has been a patient at Dr. Riehs’ for a number of years.This vibrant woman began to seek out non-surgical treatments in 2012 after feeling a little aged--“I was feeling blah, boring and just plain old.”',
@@ -284,7 +267,6 @@ module VisageApp {
 				51,
 				false,
 				true,
-				"/",
 				'Fractora and Botox',
 				[fractora, botox],
 				'Tamme said that she was not happy with the appearance of her eyes and was losing hope before coming to Dr.Riehs.It is the word of mouth that introduced Tamme to Dr. Riehs’ practice.',
@@ -298,7 +280,6 @@ module VisageApp {
 				60,
 				false,
 				true,
-				"/",
 				'Sculptra, Restylane and Botox',
 				[sculptra, restylane, botox],
 				'“I have been here since the early days.”',
@@ -312,7 +293,6 @@ module VisageApp {
 				51,
 				false,
 				false,
-				"/",
 				'Fraxel, Microdermabrasion & Botox',
 				[fraxel, microderma, botox],
 				'Meet Hamidan, a beautifully elegant 51 year old, who first presented to the facility in 2006 because she was feeling her “skin looked a little dull.”',
@@ -408,7 +388,6 @@ module VisageApp {
 			public Age,
 			public IsCurrent,
 			public HasVideo,
-			public ImagePath,
 			public TreatmentString,
 			public TreatmentObjs,
 			public Story_Part_One,
@@ -418,11 +397,29 @@ module VisageApp {
 
 		}
 
+		private static get TESTIMONIAL_PATH(): string { return "../../../Content/Images/Testimonials/"; }
+		private static get PATIENT_PATH(): string { return "../../../Content/Images/Patients/"; }  
+		private static get VIDEO_PATH(): string { return "../../../Templates/Front/About/StoryVideos/"; }
+
 		VideoTemplateString(): string {
-			return "../../../Templates/Front/About/StoryVideos/" + this.Name + ".html";
+			return Client.VIDEO_PATH + this.Name + ".html";
+		}
+
+		HeadShotImage(): string {
+			return Client.PATIENT_PATH + this.Name + "_Head.jpg";
+		}
+
+		ActiveImage(): string {
+			return Client.PATIENT_PATH + this.Name + "_Active.jpg"
+		}
+
+		TestimonialPath(): string {
+			return Client.TESTIMONIAL_PATH + this.Name + ".jpg";
 		}
 
 	}
+
+
 
 	TestimonialCtrl.$inject = ['$scope', '$location', '$routeParams'];
 } 

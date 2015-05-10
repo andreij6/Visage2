@@ -16,7 +16,7 @@
 	<div id="lightbox" ng-show="Showing" ng-click="Showing = false">
 		<p>Click anywhere to close</p>
 		<div id="content">
-			<img ng-src="{{Image}}" id="lighbox-img" class="lightbox-view" />
+			<img ng-src="{{Client.TestimonialPath()}}" id="lighbox-img" class="lightbox-view" />
 		</div>
 	</div>
 	<div class="divide40"></div>
@@ -50,16 +50,14 @@
 						<p class="dropcap">
 							{{Client.Story_Part_One}}
 						</p>
+						<div class="col-md-6">
+							<img src="{{Client.ActiveImage()}}" class="img-responsive">
+							<div class="divide30"></div>
+						</div>
 						<p>
 							{{Client.Story_Part_Two}}
 						</p>
-						<div class="col-md-6">
-							<img src="//www.dropbox.com/s/hv8oohogs7wfh84/Brad.jpg" class="img-responsive">
-							<div class="divide30"></div>
-						</div>
-						
-						
-
+					
 						<p>
 							{{Client.Story_Part_Three}}
 						</p>
@@ -69,14 +67,13 @@
 					</div><!--bio-->
 					
 					<div class="col-md-12" ng-show="Client.HasVideo">
-						<!--<img src="{{Client.VideoImg}}" class="img-responsive">-->
 						<div class="col-md-12">
 							<div ng-include="VideoTemplate"></div>
 						</div>
 					</div>
 					
-					<div class="col-md-6">
-						<img src="{{Client.TestimonialImg}}" class="img-responsive">
+					<div class="col-md-6" ng-click="Showing = true">
+						<img src="http://placehold.it/300&text=Testimonial" class="img-responsive">
 					</div>
 					<div class="col-md-12">
 						<h5>Treatment Links</h5>
