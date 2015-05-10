@@ -6,6 +6,12 @@
 		Trigger(event: ng.IAngularEvent): void;
 		TestimonialImages: any;
 
+		TreatmentObjs: any;
+
+		Treat
+		Clients: any;
+		Client: any;
+
 		MenuTrigger(): void;
 		YouTubeMenu: string;
 		open: boolean;
