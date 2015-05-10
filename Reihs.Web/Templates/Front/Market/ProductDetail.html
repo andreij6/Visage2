@@ -45,7 +45,7 @@
 						<a href="#/Market/Item/{{product.Id}}">
 							<div class="thumbnail">
 								<h3 class="heading">{{product.Name}}</h3>
-								<img src="http://placehold.it/320x150" alt="">
+								<img src="{{product.ImagePath}}" style="height: 150px;" alt="">
 							</div>
 						</a>
 					</div>
@@ -55,7 +55,7 @@
 			<div class="col-md-9">
 				<div class="mix col-md-8 page1 page4 margin30 mix_all" style="display: inline-block; opacity: 1;">
 					<div class="item-img-wrap ">
-						<img src="../../../Content/Images/coffee-569178_1280.jpg" class="img-responsive" alt="coffee" />
+						<img src="{{Product.ImagePath}}" class="img-responsive" style="height: 350px; padding-left: 100px;" />
 						<div class="item-img-overlay">
 							<a href="img/img-1.jpg" class="show-image">
 								<span></span>
@@ -65,7 +65,7 @@
 					<div class="work-desc">
 						<h3><a href="portfolio-single.html">{{Product.Name}}</a></h3>
 						<span>Product Category or Brand slogan</span>
-						<button class="btn btn-theme-bg pull-right">Add To Cart</button>
+						<a class="btn btn-theme-bg pull-right" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id={{Product.PayPalId}}" target="_new" role="button">Add to Cart</a>
 
 
 					</div><!--work desc-->

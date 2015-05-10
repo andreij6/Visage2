@@ -30,19 +30,28 @@
 							<li> <a ng-click="SetTemplate('IPLPost')">IPL-Photofacial</a> <i class="fa fa-angle-right"></i></li>
 						</ul>
 					</div>
-					<ul class="portfolio-filters text-center visible-sm visible-xs">
-						<li class="filter"><a ng-click="SetTemplate('TCAPost')">TCA Peel </a></li>
-						<li class="filter"><a ng-click="SetTemplate('SclPost')">Sclerotherapy</a></li>
-						<li class="filter"><a ng-click="SetTemplate('MesoPost')">Mesotherapy (Lipodissolve)</a></li>
-						<li class="filter"><a ng-click="SetTemplate('LSHPost')">Laser Hair Reduction</a></li>
-						<li class="filter"><a ng-click="SetTemplate('IPLPost')">IPL-Photofacial</a></li>
-					</ul>
+					<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
+						<div class="dr-trigger" ng-click="MenuTrigger()">
+							<span class="dr-icon dr-icon-settings"></span>
+							<a class="dr-label">Post Care Options</a>
+						</div>
+						<div ng-show="open" class="subNav">
+							<ul>
+								<li class="filter"><a ng-click="SetTemplate('TCAPost')">TCA Peel <i class="fa fa-angle-right"></i></li>
+								<li class="filter"><a ng-click="SetTemplate('SclPost')">Sclerotherapy<i class="fa fa-angle-right"></i></li>
+								<li class="filter"><a ng-click="SetTemplate('MesoPost')">Mesotherapy (Lipodissolve)<i class="fa fa-angle-right"></i></li>
+								<li class="filter"><a ng-click="SetTemplate('LSHPost')">Laser Hair Reduction<i class="fa fa-angle-right"></i></li>
+								<li class="filter"><a ng-click="SetTemplate('IPLPost')">IPL-Photofacial<i class="fa fa-angle-right"></i></li>
+							</ul>
+						</div>
+					</div>
 				</div><!--sidebar-box-->
 			</div>
 			<div class="col-md-8 col-md-offset-1" ng-init="SetTemplate('Index-PostCare')">
 				<div class="mobile-container">
 					<div ng-include="template.url"></div>
 				</div>
+				<div class="divide60"></div>
 			</div>
 		</div>
 	</div>

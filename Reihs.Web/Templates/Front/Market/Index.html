@@ -69,11 +69,9 @@
 							<p>
 								<a href="#/Market/Item/{{product.Id}}">{{product.Name}}</a>
 							</p>
-							<img src="http://placehold.it/320x150" alt="">
+							<img src="{{product.ImagePath}}" class="product_index" style="height: 200px;">
 							<div class="caption">
 								<h4 class="pull-right">{{product.UnitPrice | currency: "$"}}</h4>
-
-								<p>See more snippets like this online store item at.</p>
 
 								<a href="#/Market/Item/{{product.Id}}" class="btn border-theme">View Details</a>
 							</div>
