@@ -516,6 +516,22 @@
     <Content Include="Templates\Admin\Ticker\New.html" />
     <Content Include="Templates\Front\About\About.html" />
     <Content Include="Templates\Front\About\IndividualPatientStory.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Angela.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Brad.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Brandi.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Fernando.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Iliana.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Jan.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Kim.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Liz.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Lynn.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Marlene.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Michelle.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Nancy.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Peggy.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Shirley.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Tamme.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Tara.html" />
     <Content Include="Templates\Front\Blog\Detail.html" />
     <Content Include="Templates\Front\Blog\Index.html" />
     <Content Include="Templates\Front\Contact.html" />
@@ -640,7 +656,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Scripts\custom\AdminApp\models\" />
-    <Folder Include="Scripts\custom\VisageApp\models\" />
     <Folder Include="Views\Emails\" />
   </ItemGroup>
   <ItemGroup>
@@ -741,6 +756,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITestimonialScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITreatmentScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IVideoScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\models\Client.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\routes\Config.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\VisageApp.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />

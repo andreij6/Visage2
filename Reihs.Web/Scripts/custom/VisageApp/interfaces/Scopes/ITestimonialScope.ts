@@ -5,6 +5,7 @@
 		Showing: boolean;
 		Trigger(event: ng.IAngularEvent): void;
 		TestimonialImages: any;
+		VideoTemplate: string;
 
 		TreatmentObjs: any;
 
