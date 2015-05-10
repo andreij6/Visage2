@@ -2,36 +2,41 @@
 	export class Treatments {
 
 		private $scope: Extensions.ITreatmentScope;
+		private $location: ng.ILocationService;
 
 		private init(): void {
 			var self = this;
 		}
 
-		constructor($scope: Extensions.ITreatmentScope) {
+		constructor($scope: Extensions.ITreatmentScope, $location: ng.ILocationService) {
 
 			var self = this;
 
 			self.$scope = $scope;
+			self.$location = $location;
 
 			var nav = "../../../Templates/Front/Treatments/Partials/";
 
 			var templates = [
-				{ name: "Index", url: nav + "Index.html" },
-				{ name: "FacialInject", url: nav + "FacialInjectibles.html" },
-				{ name: "Pigment", url: nav + "Pigment.html" },
-				{ name: "SkinResurface", url: nav + "SkinResurface.html" },
-				{ name: "SkinTight", url: nav + "SkinTight.html" },
-				{ name: "Bodyshaping", url: nav + "Bodyshaping.html" },
-				{ name: "Microderma", url: nav + "Microderma.html" },
-				{ name: "PermCos", url: nav + "PermCos.html" },
-				{ name: "LaserHair", url: nav + "LaserHair.html" },
-				{ name: "VeinReduce", url: nav + "VeinReduce.html" }
+				{ Code: "", name: "Index", url: nav + "Index.html" },
+				{ Code: "fj", name: "FacialInject", url: nav + "FacialInjectibles.html" },
+				{ Code: "pm", name: "Pigment", url: nav + "Pigment.html" },
+				{ Code: "sr", name: "SkinResurface", url: nav + "SkinResurface.html" },
+				{ Code: "st", name: "SkinTight", url: nav + "SkinTight.html" },
+				{ Code: "bhcg", name: "Bodyshaping", url: nav + "Bodyshaping.html" },
+				{ Code: "mderm", name: "Microderma", url: nav + "Microderma.html" },
+				{ Code: "pcos", name: "PermCos", url: nav + "PermCos.html" },
+				{ Code: "lsrh", name: "LaserHair", url: nav + "LaserHair.html" },
+				{ Code: "vr", name: "VeinReduce", url: nav + "VeinReduce.html" }
 			];
 
 			function setTemplate(name: string) {
 				for (var temp in templates) {
-					if (templates[temp].name == name)
+					if (templates[temp].name.toLowerCase() === name.toLowerCase()) {
+					
 						self.$scope.template = templates[temp];
+						self.$location.search('t', templates[temp]['Code']);
+					}
 				}
 			}
 
@@ -45,6 +50,29 @@
 
 			}
 
+			function findCategoryByCode(code: string) {
+				for (var position = 0; position < templates.length; position++) {
+
+					var current = templates[position];
+
+					if (current["Code"].toLowerCase() == code.toLowerCase()) {
+						return current.name;
+					}
+				}
+			}
+
+			function CheckQueryString() {
+				var params = self.$location.search();
+				
+				if (params['t'] !== undefined) {
+					var param = findCategoryByCode(params['t']);
+					
+					if (param !== undefined) {
+						setTemplate(param);
+					}
+				}
+			}
+
 			self.$scope.SetTemplate = setTemplate;
 
 			self.$scope.templates = templates;
@@ -56,8 +84,9 @@
 			self.$scope.MenuTrigger = menuTrigger;
 
 			self.init();
+			CheckQueryString();
 		}
 	}
 
-	Treatments.$inject = ['$scope'];
+	Treatments.$inject = ['$scope', '$location'];
 } 

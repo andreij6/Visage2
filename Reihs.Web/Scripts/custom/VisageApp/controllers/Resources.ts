@@ -31,8 +31,13 @@
 
 			function setTemplate(name: string) {
 				for (var temp in templates) {
-					if (templates[temp].name == name)
+					if (templates[temp].name == name) {
 						self.$scope.template = templates[temp];
+
+						if (self.$scope.template["name"] !== "Index-FactSheets" && self.$scope.open) {
+							menuTrigger();
+						}
+					}
 				}
 			}
 

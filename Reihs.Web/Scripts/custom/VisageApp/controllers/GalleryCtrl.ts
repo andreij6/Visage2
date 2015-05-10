@@ -290,10 +290,8 @@
 
 			function findCategoryByName(name: string) {
 				for (var position = 0; position < categories.length; position++) {
-					console.log(position);
+
 					var current = self.$scope.Categories[position];
-					console.log(current);
-					console.log(name);
 					if (current["UrlCode"].toLowerCase() == name.toLowerCase()) {
 						return current;
 					}

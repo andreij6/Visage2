@@ -33,15 +33,23 @@
 							<li> <a ng-click="SetTemplate('LFLV')">Laser Facial/Leg Vein</a> <i class="fa fa-angle-right"></i></li>
 						</ul>
 					</div>
-					<ul class="portfolio-filters text-center visible-sm visible-xs">
-						<li class="filter"> <a ng-click="SetTemplate('LSH')">Laser Hair Removal</a></li>
-						<li class="filter"> <a ng-click="SetTemplate('Fraxel')">Fraxel</a></li>
-						<li class="filter"> <a ng-click="SetTemplate('LV')">Leg Vein</a></li>
-						<li class="filter"> <a ng-click="SetTemplate('Scl')">Sclerotherapy</a></li>
-						<li class="filter"> <a ng-click="SetTemplate('IPL')">IPL</a></li>
-						<li class="filter"> <a ng-click="SetTemplate('NonTCA')">Non-TCA Peel</a></li>
-						<li class="filter"> <a ng-click="SetTemplate('LFLV')">Laser Facial/Leg Vein</a></li>
-					</ul>
+					<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
+						<div class="dr-trigger" ng-click="MenuTrigger()">
+							<span class="dr-icon dr-icon-settings"></span>
+							<a class="dr-label">Fact Sheet Menu</a>
+						</div>
+						<div ng-show="open" class="subNav">
+							<ul>
+								<li class="filter"> <a ng-click="SetTemplate('LSH')">Laser Hair Removal</a><i class="fa fa-angle-right"></i></li>
+								<li class="filter"> <a ng-click="SetTemplate('Fraxel')">Fraxel</a><i class="fa fa-angle-right"></i></li>
+								<li class="filter"> <a ng-click="SetTemplate('LV')">Leg Vein</a><i class="fa fa-angle-right"></i></li>
+								<li class="filter"> <a ng-click="SetTemplate('Scl')">Sclerotherapy</a><i class="fa fa-angle-right"></i></li>
+								<li class="filter"> <a ng-click="SetTemplate('IPL')">IPL</a><i class="fa fa-angle-right"></i></li>
+								<li class="filter"> <a ng-click="SetTemplate('NonTCA')">Non-TCA Peel</a><i class="fa fa-angle-right"></i></li>
+								<li class="filter"> <a ng-click="SetTemplate('LFLV')">Laser Facial/Leg Vein</a><i class="fa fa-angle-right"></i></li>
+							</ul>
+						</div>
+					</div>
 				</div><!--sidebar-box-->
 			</div>
 			<div class="col-md-8 col-md-offset-1" ng-init="SetTemplate('Index-FactSheets')">
