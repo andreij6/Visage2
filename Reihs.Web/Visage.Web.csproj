@@ -266,8 +266,10 @@
     <Content Include="Content\Images\Banner\Banner1.jpg" />
     <Content Include="Content\Images\Banner\Banner2.jpg" />
     <Content Include="Content\Images\Banner\Banner3.jpg" />
+    <Content Include="Content\Images\Banner\Dallas12.jpg" />
     <Content Include="Content\Images\Banner\Nancy.jpg" />
     <Content Include="Content\Images\Banner\Dallas.jpg" />
+    <Content Include="Content\Images\Banner\Nancy2.jpg" />
     <Content Include="Content\Images\Blog\Feb15_Promo.jpg" />
     <Content Include="Content\Images\Blog\Jan15_Promo.jpg" />
     <Content Include="Content\Images\Blog\LBVSchDates_Promo.jpg" />
@@ -394,6 +396,16 @@
     <Content Include="Content\Images\Products\SkinMedica\Vitamin_C_E_Complex_1oz.png" />
     <Content Include="Content\Images\profile.jpg" />
     <Content Include="Content\Images\Special\March15_Monthly.jpg" />
+    <Content Include="Content\Images\Staff\122A7911.jpg" />
+    <Content Include="Content\Images\Staff\122A8049-2.jpg" />
+    <Content Include="Content\Images\Staff\122A8056.jpg" />
+    <Content Include="Content\Images\Staff\122A9607-3.jpg" />
+    <Content Include="Content\Images\Staff\Jennifer.jpg" />
+    <Content Include="Content\Images\Staff\Jordan.jpg" />
+    <Content Include="Content\Images\Staff\RachealG.jpg" />
+    <Content Include="Content\Images\Staff\RachealO.jpg" />
+    <Content Include="Content\Images\Staff\Reihs.jpg" />
+    <Content Include="Content\Images\Staff\Reihs_Dogs.jpg" />
     <Content Include="Content\Images\Testimonials\Angela.jpg" />
     <Content Include="Content\Images\Testimonials\Brad.jpg" />
     <Content Include="Content\Images\Testimonials\Brandi.jpg" />
