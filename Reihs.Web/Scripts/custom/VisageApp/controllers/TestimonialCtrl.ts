@@ -302,8 +302,15 @@ module VisageApp {
 			);
 
 
+			lynn.HasActiveShot = false;
+			lynn.HasHeadShot = false;
 
-			
+			debbie.HasHeadShot = false;
+			debbie.HasHeadShot = false;
+
+			marlene.HasActiveShot = false;
+
+			shirley.HasHeadShot = false;
 
 			clients.push(brad);
 			clients.push(michelle);
@@ -383,6 +390,9 @@ module VisageApp {
 
 	export class Client {
 
+		public HasHeadShot;
+		public HasActiveShot;
+
 		constructor(
 			public Name,
 			public Age,
@@ -395,6 +405,8 @@ module VisageApp {
 			public Story_Part_Three,
 			public Story_Part_Four) {
 
+			this.HasHeadShot = true;
+			this.HasActiveShot = true;
 		}
 
 		private static get TESTIMONIAL_PATH(): string { return "../../../Content/Images/Testimonials/"; }
@@ -409,6 +421,7 @@ module VisageApp {
 			return Client.PATIENT_PATH + this.Name + "_Head.jpg";
 		}
 
+
 		ActiveImage(): string {
 			return Client.PATIENT_PATH + this.Name + "_Active.jpg"
 		}
@@ -416,6 +429,8 @@ module VisageApp {
 		TestimonialPath(): string {
 			return Client.TESTIMONIAL_PATH + this.Name + ".jpg";
 		}
+
+		
 
 	}
 

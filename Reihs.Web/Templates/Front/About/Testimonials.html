@@ -1,13 +1,12 @@
 ﻿<div class="breadcrumb-wrap visible-md visible-lg">
 	<div class="container">
 		<img class="pull-right" src="../../../Content/Images/About/About.jpg" />
-		<!--<section class="related-images pull-right">
-			<img src="http://placehold.it/140x110" alt="">
-			<img src="http://placehold.it/140x110" alt="">
-			<img src="http://placehold.it/140x110" alt="">
-			<img src="http://placehold.it/140x110" alt="">
-		</section>-->
-
+<!--<section class="related-images pull-right">
+	<img src="http://placehold.it/140x110" alt="">
+	<img src="http://placehold.it/140x110" alt="">
+	<img src="http://placehold.it/140x110" alt="">
+	<img src="http://placehold.it/140x110" alt="">
+</section>-->
 	</div>
 </div>
 <section class="page-content">
@@ -56,13 +55,13 @@
 					<div class="center-heading">
 						<h2>Patient Stories</h2>
 					</div><!--center-heading-->
-					<div ng-repeat="client in Clients">
+					<div ng-repeat="client in Clients | filter : { HasHeadShot : true }">
 						<a href="#/Stories/{{client.Name}}">
 							<div class="col-md-4 col-sm-6 margin20 text-center"
 							<a href=""><img src="{{client.HeadShotImage()}}" class="headshot" alt=""></a>
 							<h3 class="patientname">{{client.Name}}</h3>
-                            <p>{{client.TreatmentString}}</p>
-						</div>
+						   <p>{{client.TreatmentString}}</p>
+							</div>
 						</a>
 					</div>
 				</div>

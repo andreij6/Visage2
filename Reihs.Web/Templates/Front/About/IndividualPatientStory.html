@@ -45,50 +45,55 @@
 
 			<div class="col-md-8 col-md-offset-1">
 				<div class="blog-post">
-					<h2>{{Client.Name}},{{Client.Age}}</h2>
-					<div class="col-xs-12">
-						<p class="dropcap">
-							{{Client.Story_Part_One}}
-						</p>
-						<div class="col-md-6">
-							<img ng-src="{{Client.ActiveImage()}}" class="img-responsive">
-							<div class="divide30"></div>
+					<section class="col-md-12">
+						<h2>{{Client.Name}},{{Client.Age}}</h2>
+						<div class="col-xs-12">
+							<p class="dropcap">
+								{{Client.Story_Part_One}}
+							</p>
+							<div class="col-md-6" ng-show="Client.HasActiveShot">
+								<img ng-src="{{Client.ActiveImage()}}" class="img-responsive">
+								<div class="divide30"></div>
+							</div>
+							<p>
+								{{Client.Story_Part_Two}}
+							</p>
+
+							<p>
+								{{Client.Story_Part_Three}}
+							</p>
+							<p>
+								{{Client.Story_Part_Four}}
+							</p>
+						</div><!--bio-->
+
+						<div class="col-md-12" ng-show="Client.HasVideo">
+							<div class="col-md-12">
+								<div ng-include="VideoTemplate"></div>
+							</div>
 						</div>
-						<p>
-							{{Client.Story_Part_Two}}
-						</p>
-					
-						<p>
-							{{Client.Story_Part_Three}}
-						</p>
-						<p>
-							{{Client.Story_Part_Four}}
-						</p>
-					</div><!--bio-->
-					
-					<div class="col-md-12" ng-show="Client.HasVideo">
+					</section>
+					<div class="divide30"></div>
+					<hr />
+					<section class="col-md-12">
+						<div class="col-md-6" ng-click="Showing = true">
+							<img src="http://placehold.it/300&text=View+Testimonial" class="img-responsive" ng-click="Showing = true">
+						</div>
 						<div class="col-md-12">
-							<div ng-include="VideoTemplate"></div>
+							<h5>Treatment Information</h5>
+							<ul>
+								<li ng-repeat="t in TreatmentObjs" class="treatments">
+									<a href="#/Treatments?t={{t.Code}}">{{t.Name}}</a>
+								</li>
+							</ul>
+							<h6>Photos of treatments</h6>
+							<ul>
+								<li ng-repeat="t in TreatmentObjs" class="treatments">
+									<a href="#/Gallery?c={{t.Code}}">{{t.Name}}</a>
+								</li>
+							</ul>
 						</div>
-					</div>
-					
-					<div class="col-md-6" ng-click="Showing = true">
-						<img src="http://placehold.it/300&text=Testimonial" class="img-responsive">
-					</div>
-					<div class="col-md-12">
-						<h5>Treatment Information>/h5>
-						<ul>
-							<li ng-repeat="t in TreatmentObjs" class="treatments">
-								<a href="#/Treatments?t={{t.Code}}">{{t.Name}}</a>
-							</li>
-						</ul>
-						<h6>Photos of treatments</h6>
-						<ul>
-							<li ng-repeat="t in TreatmentObjs" class="treatments">
-								<a href="#/Gallery?c={{t.Code}}">{{t.Name}}</a>
-							</li>
-						</ul>
-					</div>
+					</section>
 				</div>
 			</div>
 		</div>
