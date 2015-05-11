@@ -11,62 +11,63 @@
 	</div>
 </div>
 <section class="page-content">
-	<div id="lightbox" ng-show="Showing" ng-click="Showing = false">
-		<p>Click anywhere to close</p>
-		<div id="content">
-			<img ng-src="{{Image}}" id="lighbox-img" class="lightbox-view" />
-		</div>
-	</div>
+    <div id="lightbox" ng-show="Showing" ng-click="Showing = false">
+        <p>Click anywhere to close</p>
+        <div id="content">
+            <img ng-src="{{Image}}" id="lighbox-img" class="lightbox-view" />
+        </div>
+    </div>
 
-	<div class="divide80 visible-md visible-lg"></div>
+    <div class="divide80 visible-md visible-lg"></div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
 
-				<div class="sidebar-box margin40">
-					<div class="visible-md visible-lg">
-						<h4>Patient Stories</h4>
-						<ul class="list-unstyled cat-list visible-md visible-lg">
-							<li> <a href="#/Team">Meet the Team</a><i class="fa fa-angle-right"></i></li>
-							<li><a href="#/Contact">Locations &amp; Contact</a><i class="fa fa-angle-right"></i></li>
-							<li><a href="">Yelp Review</a><i class="fa fa-angle-right"></i></li>
-							<li><a href="">Google Reviews</a><i class="fa fa-angle-right"></i></li>
-						</ul>
-					</div>
-					<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
-						<div class="dr-trigger" ng-click="MenuTrigger()">
-							<span class="dr-icon dr-icon-settings"></span>
-							<a class="dr-label">About Menu</a>
-						</div>
-						<div ng-show="open" class="subNav">
-							<ul>
-								<li class="filter"><a href="#/Team">Meet the Team</a><i class="fa fa-angle-right"></i></li>
-								<li class="filter"><a href="#/ContactUs">Locations &amp; Contact</a><i class="fa fa-angle-right"></i></li>
-								<li class="filter"><a href="">Yelp Review</a><i class="fa fa-angle-right"></i></li>
-								<li class="filter"><a href="">Google Reviews</a><i class="fa fa-angle-right"></i></li>
-							</ul>
-						</div>
-					</div>
-				</div><!--sidebar-box-->
-			</div>
+                <div class="sidebar-box margin40">
+                    <div class="visible-md visible-lg">
+                        <h4>Patient Stories</h4>
+                        <ul class="list-unstyled cat-list visible-md visible-lg">
+                            <li> <a href="#/Team">Meet the Team</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#/Contact">Locations &amp; Contact</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="">Yelp Review</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="">Google Reviews</a><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div>
+                    <div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
+                        <div class="dr-trigger" ng-click="MenuTrigger()">
+                            <span class="dr-icon dr-icon-settings"></span>
+                            <a class="dr-label">About Menu</a>
+                        </div>
+                        <div ng-show="open" class="subNav">
+                            <ul>
+                                <li class="filter"><a href="#/Team">Meet the Team</a><i class="fa fa-angle-right"></i></li>
+                                <li class="filter"><a href="#/ContactUs">Locations &amp; Contact</a><i class="fa fa-angle-right"></i></li>
+                                <li class="filter"><a href="">Yelp Review</a><i class="fa fa-angle-right"></i></li>
+                                <li class="filter"><a href="">Google Reviews</a><i class="fa fa-angle-right"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--sidebar-box-->
+            </div>
 
-			<div class="col-md-9">
-				<div class="col-md-12">
-					<div class="center-heading">
-						<h2>Patient Stories</h2>
-					</div><!--center-heading-->
-					<div ng-repeat="client in Clients">
-						<a href="#/Stories/{{client.Name}}">
-							<div class="col-md-4 col-sm-6 margin20 text-center"
+            <div class="col-md-9">
+                <div class="col-md-12">
+                    <div class="center-heading">
+                        <h2>Patient Stories</h2>
+                    </div><!--center-heading-->
+                    <div ng-repeat="client in Clients">
+                        <a href="#/Stories/{{client.Name}}">
+                            <div class="col-md-4 col-sm-6 margin20 text-center"
 							<a href=""><img src="{{client.HeadShotImage()}}" class="headshot" alt=""></a>
-							<h4>{{client.Treatments}}</h4> <p>{{client.Name}}</p>
+							<h3 class="patientname">{{client.Name}}</h3>
+                            <p>{{client.TreatmentString}}</p>
 						</div>
-						</a>
-					</div>
-				</div>
-				<div class="divide60"></div>
-			</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="divide60"></div>
+            </div>
 
-		</div>
+        </div>
 </section>
