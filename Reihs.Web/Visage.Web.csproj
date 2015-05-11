@@ -264,12 +264,9 @@
     <Content Include="Content\Front\ThirdParty\YouTubeMenu\component1.css" />
     <Content Include="Content\Images\About\About.jpg" />
     <Content Include="Content\Images\Banner\Banner1.jpg" />
-    <Content Include="Content\Images\Banner\Banner2.jpg" />
-    <Content Include="Content\Images\Banner\Banner3.jpg" />
-    <Content Include="Content\Images\Banner\Dallas12.jpg" />
-    <Content Include="Content\Images\Banner\Nancy.jpg" />
     <Content Include="Content\Images\Banner\Dallas.jpg" />
-    <Content Include="Content\Images\Banner\Nancy2.jpg" />
+    <Content Include="Content\Images\Banner\Nancy.jpg" />
+    <Content Include="Content\Images\Banner\Banner3.jpg" />
     <Content Include="Content\Images\Blog\Feb15_Promo.jpg" />
     <Content Include="Content\Images\Blog\Jan15_Promo.jpg" />
     <Content Include="Content\Images\Blog\LBVSchDates_Promo.jpg" />
@@ -830,7 +827,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>18661</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

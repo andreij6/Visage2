@@ -80,16 +80,16 @@
 							<img src="http://placehold.it/300&text=View+Testimonial" class="img-responsive" ng-click="Showing = true">
 						</div>
 						<div class="col-md-12">
-							<h5>Treatment Information</h5>
+							<h3>Treatment Information</h3>
 							<ul>
 								<li ng-repeat="t in TreatmentObjs" class="treatments">
-									<a href="#/Treatments?t={{t.Code}}">{{t.Name}}</a>
+									<a href="#/Treatments?t={{t.Code}}">{{t.Name}}</a> |
 								</li>
 							</ul>
-							<h6>Photos of treatments</h6>
+							<h3>Photos of treatments</h3>
 							<ul>
 								<li ng-repeat="t in TreatmentObjs" class="treatments">
-									<a href="#/Gallery?c={{t.Code}}">{{t.Name}}</a>
+									<a href="#/Gallery?c={{t.Code}}">{{t.Name}}</a> |
 								</li>
 							</ul>
 						</div>
