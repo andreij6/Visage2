@@ -59,8 +59,9 @@
 					<div ng-repeat="client in Clients">
 						<a href="#/Stories/{{client.Name}}">
 							<div class="col-md-4 col-sm-6 margin20 text-center"
-							<a href=""><img ng-src="{{client.HeadShotImage()}}" class="headshot" alt=""></a>
-							<h4>{{client.Treatments}}</h4> <p>{{client.Name}}</p>
+							<a href=""><img src="{{client.HeadShotImage()}}" class="headshot" alt=""></a>
+							<h3 class="patientname">{{client.Name}}</h3>
+                            <p>{{client.TreatmentString}}</p>
 						</div>
 						</a>
 					</div>
