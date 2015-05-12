@@ -28,5 +28,23 @@
 		}
 	}
 
+	export class Staffer {
+
+		constructor(
+			public Postion,
+			public Biography,
+			public FirstName,
+			public LastName,
+			public MiddleInitial,
+			public OrderNumber
+			) {
+		}
+
+		ImagePath(): string {
+			return "../../Content/Images/Staff/" + this.FirstName + ".jpg";
+		}
+
+	}
+
 	TeamCtrl.$inject = ['$scope'];
 } 

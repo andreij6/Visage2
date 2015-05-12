@@ -3,5 +3,7 @@
 		MenuTrigger(): void;
 		YouTubeMenu: string;
 		open: boolean;
+
+		TeamMembers: any;
 	}
 }  
