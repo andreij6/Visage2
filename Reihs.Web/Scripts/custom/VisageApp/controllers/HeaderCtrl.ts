@@ -147,8 +147,6 @@
 			}
 
 			function CartUpdated(event, data) {
-				console.log("shoppingcart");
-
 				if (self.$scope.ShoppingCart.length > 0) {
 					self.$scope.HasItems = true;
 					self.$scope.IsAlertVisible = true;

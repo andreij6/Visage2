@@ -5,7 +5,8 @@
 		Categories: any;
 		Category: string;
 		SeeDetail(product: string): void;
-		Products: any;
+		Products: Array<any>;
+		FeaturedProducts: any;
 		GetProducts(): void;
 
 		open: boolean;

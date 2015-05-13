@@ -75,3 +75,7 @@
 	color: #ffffff;
 }
 
+/* Ticker */
+#ticker01 li {
+	display: inline;
+}

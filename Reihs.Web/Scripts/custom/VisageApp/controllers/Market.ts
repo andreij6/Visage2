@@ -30,12 +30,30 @@
 				{ name: "Index", url: nav + "Index.html" },
 			];
 
-			console.log("Market Initiated");
+			function HasImage(value) {
+				return value["ImagePath"] !== undefined && value["ImagePath"] !== null;
+			}
+
+			function SetFeaturedProducts() {
+				var filtered = self.$scope.Products.filter(HasImage);
+				var result = [];
+
+				for (var x = 0; x < 5; x++) {
+					var rand = filtered[Math.floor(Math.random() * filtered.length)];
+
+					result.push(rand);
+				}
+
+				return result;
+			}
 
 			function GetProducts() {
 				self.ProductSvc.getAll().then(
 					function (data) {
 						self.$scope.Products = data;
+
+						self.$scope.FeaturedProducts = SetFeaturedProducts();
+						console.log(self.$scope.FeaturedProducts);
 					},
 					function (error) {
 						console.log(error);
@@ -84,6 +102,8 @@
 			
 		}
 	}
+
+
 
 	Market.$inject = ['$scope', 'ProductService', '$location', '$routeParams'];
 }
