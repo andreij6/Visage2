@@ -77,7 +77,7 @@ namespace Reihs.Repository
 						Brand = "SkinMedica",
 						UnitPrice = 42.0,
 						PayPalId = "886KF2LBAZCSS",
-						ImagePath = getImgSM("AHABHA Cream 2oz-copy")
+						ImagePath = getImgSM("AHABHA Cream 2oz")
 					},
 					new mProduct {
 						Name = "Daily Physical Defense® Sunscreen Broad Spectrum SPF 30+",
@@ -105,33 +105,35 @@ namespace Reihs.Repository
 						Brand = "SkinMedica",
 						UnitPrice = 36.0,
 						PayPalId = "38STWVQQLDJMA",
-						ImagePath = getImgSM("Facial Cleanser 6oz-copy")
+						ImagePath = getImgSM("Facial Cleanser 6oz")
 					},
 					new mProduct {
 						Name = "Hydrating Complex",
 						Brand = "SkinMedica",
 						UnitPrice = 84.0,
-						PayPalId = "WW2CDDQBK8QDL"
+						PayPalId = "WW2CDDQBK8QDL",
+						ImagePath = getImgSM("Hydrating Complex")
 					},
 					new mProduct {
 						Name = "Purifying Foaming Wash",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0,
 						PayPalId = "FEE6PDEGSYD3S",
-						ImagePath = getImgSM("Purifying Foaming Wash 5oz-copy")
+						ImagePath = getImgSM("Purifying Foaming Wash 5oz")
 					},
 					new mProduct {
 						Name = "Redness Relief CalmPlex",
 						Brand = "SkinMedica",
 						UnitPrice = 84.0,
-						PayPalId = "ZG34BPMJSGPXE"
+						PayPalId = "ZG34BPMJSGPXE",
+						ImagePath = getImgSM("Redness Relief CalmPlex")
 					},
 					new mProduct {
 						Name = "Rejuvenative Moisturizer",
 						Brand = "SkinMedica",
 						UnitPrice = 56.0,
 						PayPalId = "4VESWU62UYLCJ",
-						ImagePath = getImgSM("Rejuvenative Moisturizer 2oz-copy")
+						ImagePath = getImgSM("Rejuvenative Moisturizer 2oz")
 					},
 					new mProduct {
 						Name = "Rejuvenative Toner",
@@ -144,38 +146,43 @@ namespace Reihs.Repository
 						Name = "Retinol Complex .25",
 						Brand = "SkinMedica",
 						UnitPrice = 60.0,
-						PayPalId = "VL7WJ37J5GMX6"
+						PayPalId = "VL7WJ37J5GMX6",
+						ImagePath = getImgSM("Retinol Complex 25")
 					},
 					new mProduct {
 						Name = "Retinol Complex 0.5",
 						Brand = "SkinMedica",
 						UnitPrice = 75.0,
-						PayPalId = "ZWDJPNDRZZTU6"
+						PayPalId = "ZWDJPNDRZZTU6",
+						ImagePath = getImgSM("Retinol Complex 50")
 					},
 					new mProduct {
 						Name = "Retinol Complex 1.0",
 						Brand = "SkinMedica",
 						UnitPrice = 90.0,
-						PayPalId = "8HAVECYSMFUQ"
+						PayPalId = "8HAVECYSMFUQ",
+						ImagePath = getImgSM("Retinol Complex 1")
 					},
 					new mProduct {
 						Name = "Scar Recovery Gel with Centelline™ (0.5 Oz.)",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0,
-						PayPalId = "V4LUU2VZ8GDUQ"
+						PayPalId = "V4LUU2VZ8GDUQ",
+						ImagePath = getImgSM("Scar Recovery50oz")
 					},
 					new mProduct {
 						Name = "Scar Recovery Gel with Centelline™ (2 Oz.)",
 						Brand = "SkinMedica",
 						UnitPrice = 98.0,
-						PayPalId = "DQ98XZFGS5RLS"
+						PayPalId = "DQ98XZFGS5RLS",
+						ImagePath = getImgSM("Scar Recovery2oz")
 					},
 					new mProduct {
 						Name = "Sensitive Skin Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0,
 						PayPalId = "39P93MBJ2BRM2",
-						ImagePath = getImgSM("Sensitive Skin Cleanser 6oz-copy")
+						ImagePath = getImgSM("Sensitive Skin Cleanser 6oz")
 					},
 					new mProduct {
 						Name = "TNS Ceramide Treatment Cream™",
@@ -195,13 +202,15 @@ namespace Reihs.Repository
 						Name = "TNS Eye Repair™",
 						Brand = "SkinMedica",
 						UnitPrice = 98.0,
-						PayPalId = "WVB9WJB6PWYNJ"
+						PayPalId = "WVB9WJB6PWYNJ",
+						ImagePath = getImgSM("TNS Eye Repair")
 					},
 					new mProduct {
 						Name = "TNS Illuminating Eye Cream®",
 						Brand = "SkinMedica",
 						UnitPrice = 88.0,
-						PayPalId = "73EDPAZLQXVNC"
+						PayPalId = "73EDPAZLQXVNC",
+						ImagePath = getImgSM("TNS IlluminatingEyeCream")
 					},
 					new mProduct {
 						Name = "TNS Lip Plump System®",
@@ -243,7 +252,7 @@ namespace Reihs.Repository
 						Brand = "SkinMedica",
 						UnitPrice = 98.0,
 						PayPalId = "HQSJR49JEZRAY",
-						ImagePath = getImgSM("Vitamin C E Complex 1 oz")
+						ImagePath = getImgSM("VitaminCE")
 					}
 
 				);
@@ -344,25 +353,25 @@ namespace Reihs.Repository
 					PayPalId = "S73DYTU3DGURJ",
 					ImagePath = getImgClarsonic("ClarisonicMia")
 				},
-				new mProduct {
-					Name = "Clarisonic Pro",
-					Brand = "Clarisonic",
-					UnitPrice = 195.0,
-					PayPalId = "8VXQ6Q9GGKU36",
-					ImagePath = getImgClarsonic("ClarisonicPro")
-				},
-				new mProduct {
-					Name = "Clarisonic Pro System Kit",
-					Brand = "Clarisonic",
-					UnitPrice = 195.0,
-					PayPalId = "FT6U7TE7T6LF4"
-				},
-				new mProduct {
-					Name = "Clarisonic Pro System Plus Body",
-					Brand = "Clarisonic",
-					UnitPrice = 250.0,
-					PayPalId = "Z56ZFFNW2C8RE"
-				},
+				//new mProduct {
+				//	Name = "Clarisonic Pro",
+				//	Brand = "Clarisonic",
+				//	UnitPrice = 195.0,
+				//	PayPalId = "8VXQ6Q9GGKU36",
+				//	ImagePath = getImgClarsonic("ClarisonicPro")
+				//},
+				//new mProduct {
+				//	Name = "Clarisonic Pro System Kit",
+				//	Brand = "Clarisonic",
+				//	UnitPrice = 195.0,
+				//	PayPalId = "FT6U7TE7T6LF4"
+				//},
+				//new mProduct {
+				//	Name = "Clarisonic Pro System Plus Body",
+				//	Brand = "Clarisonic",
+				//	UnitPrice = 250.0,
+				//	PayPalId = "Z56ZFFNW2C8RE"
+				//},
 			 new mProduct {
 				 Name = "Gift Card",
 				 UnitPrice = 0.0,

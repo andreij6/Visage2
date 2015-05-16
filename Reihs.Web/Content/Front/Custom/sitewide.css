@@ -5,3 +5,9 @@
 h1 {
 	color: #92795b;
 }
+
+.header-img {
+	position: absolute;
+	top: 135px;
+	left: 400px;
+}

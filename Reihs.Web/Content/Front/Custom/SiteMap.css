@@ -14,3 +14,19 @@
 .box-name span {
 	color: #1a1818;
 }
+
+body {
+	background: #544022; /* Old browsers */
+	background: -moz-linear-gradient(top,  #544022 1%, #544022 1%, #997857 10%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#544022), color-stop(1%,#544022), color-stop(10%,#997857)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #544022 1%,#544022 1%,#997857 10%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #544022 1%,#544022 1%,#997857 10%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #544022 1%,#544022 1%,#997857 10%); /* IE10+ */
+	background: linear-gradient(to bottom,  #544022 1%,#544022 1%,#997857 10%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#544022', endColorstr='#997857',GradientType=0 ); /* IE6-9 */
+
+}
+
+.main-navbar {
+	background-color: transparent;
+}

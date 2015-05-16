@@ -48,6 +48,7 @@
 			}
 
 			function GetProducts() {
+				console.log("get Products");
 				self.ProductSvc.getAll().then(
 					function (data) {
 						self.$scope.Products = data;

@@ -1,15 +1,15 @@
 ﻿.banner-1 {
-	background: url('../../Images/Banner/Nancy.jpg') no-repeat center center;
+	background: url('../../Images/Banner/Nancy.png') no-repeat center center;
 	background-size: auto;
 }
 
 .banner-2 {
-	background: url('../../Images/Banner/Dallas.jpg') no-repeat center center;
+	background: url('../../Images/Banner/Dallas.png') no-repeat center center;
 	background-size: auto;
 }
 
 .banner-3 {
-	background: url('../../Images/Banner/Dallas.jpg') no-repeat center center;
+	background: url('../../Images/Banner/Dallas.png') no-repeat center center;
 	background-size: auto;
 }
 
@@ -76,6 +76,10 @@
 }
 
 /* Ticker */
+span.ng-binding {
+	display: inline;
+}
+
 #ticker01 li {
 	display: inline;
 }

@@ -21,23 +21,23 @@ module VisageApp {
 			var clients = [];
 
 			//#region Treatments
-			var botox = { Name: "Botox", Code: "fj" }
-			var dysport = { Name: "Dysport", Code: "fj" }
-			var photo = { Name: "Photofacial", Code: "pm" }
-			var sculptra = { Name: "Sculptra", Code: "fj" }
-			var fraxel = { Name: "Fraxel", Code: "sr" }
-			var restylane = { Name: "Restylane", Code: "fj" }
-			var forma = { Name: "Forma", Code: "st" }
-			var microderma = { Name: "Microdermabrasion", Code: "mderm" }
-			var tca = { Name: "TCA Peels", Code: "st" }
-			var fractora = { Name: "Fractora", Code: "sr" }
-			var hcg = { Name: "HCG Diet Program", Code: "bhcg" }
-			var bodyfx = { Name: "BodyFX", Code: "bhcg" }
-			var teartrough = { Name: "Filler-Tear Trough", Code: "" }
-			var skincare = { Name: "Skin Care", Code: "" }
-			var filler = { Name: "Fillers", Code: "" }
-			var medica = { Name: "Skin Medica", Code: "" }
-			var micro = { Name: "Microdermabrasion", Code: "" }
+			var botox = new Treatment("Botox", "fj");
+			var dysport = new Treatment("Dysport", "fj");
+			var photo = new Treatment("Photofacial", "pm");
+			var sculptra = new Treatment("Sculptra", "fj");
+			var fraxel = new Treatment("Fraxel", "sr");
+			var restylane = new Treatment("Restylane", "fj");
+			var forma = new Treatment("Forma","st")
+			var microderma = new Treatment("Microdermabrasion", "mderm");
+			var tca = new Treatment("TCA Peels", "st");
+			var fractora = new Treatment("Fractora", "sr");
+			var hcg = new Treatment("HCG Diet Program", "bhcg");
+			var bodyfx = new Treatment("BodyFX", "bhcg");
+			var teartrough = new Treatment("Filler-Tear Trough", "");
+			var skincare = new Treatment("Skin Care","");
+			var filler = new Treatment("Fillers", "");
+			var medica = new Treatment("Skin Medica", "");
+			var micro = new Treatment("Microdermabrasion", "");
 			//#endregion
 
 			//#region Clients Setup
@@ -306,7 +306,7 @@ module VisageApp {
 			lynn.HasHeadShot = false;
 
 			debbie.HasHeadShot = false;
-			debbie.HasHeadShot = false;
+			debbie.HasActiveShot = false;
 
 			marlene.HasActiveShot = false;
 
@@ -362,24 +362,7 @@ module VisageApp {
 				self.$scope.Showing = true;
 			}
 
-			function GenerateImages() {
-				var testimonialImages = ['Angela', 'Brad', 'Brandi', 'Chad', 'Debbie', 'Fernando', 'Hamidan', 'Iliana', 'Isabel', 'Jan', 'Kim', 'Liz', 'Lynn', 'Marlene', 'Michelle', 'Nancy', 'Peggy', 'Shirley', 'Tamme', 'Tara'];
-
-				var imageLocation = '../../../Content/Images/Testimonials/';
-				var ext = '.jpg';
-
-				var result = [];
-
-				for (var i = 0; i < testimonialImages.length; i++) {
-					var src = imageLocation + testimonialImages[i] + ext;
-					result.push(src);
-				}
-
-				return result;
-			};
-
 			self.$scope.Clients = clients;
-			self.$scope.TestimonialImages = GenerateImages();
 			self.$scope.Trigger = LightBoxTrigger;
 			self.$scope.YouTubeMenu = '';
 			self.$scope.MenuTrigger = menuTrigger;
@@ -434,6 +417,11 @@ module VisageApp {
 
 	}
 
+	export class Treatment {
+		constructor(public Name, public Code) {
+		}
+
+	}
 
 
 	TestimonialCtrl.$inject = ['$scope', '$location', '$routeParams'];
