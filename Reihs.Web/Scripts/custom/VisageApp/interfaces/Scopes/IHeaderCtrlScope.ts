@@ -18,6 +18,7 @@
 		GalleryActive: boolean;
 		ResourceActive: boolean;
 		ContactActive: boolean;
+		TeamActive: boolean;
 
 		Navs: any;
 		GoToTop(): void;

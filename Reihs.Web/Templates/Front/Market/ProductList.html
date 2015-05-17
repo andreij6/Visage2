@@ -12,7 +12,7 @@
 	<div class="divide80 visible-md visible-lg"></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-3">
+			<div class="col-md-3">
 
 				<div class="sidebar-box margin40">
 					<h4 class="visible-md visible-lg"><a href="#/Market">Products</a></h4>
@@ -33,41 +33,45 @@
 				</div><!--sidebar-box-->
 			</div>
 
-			<div class="col-xs-9">
+			<div class="col-md-9">
 
-				<div class="col-md-8">
+				<div class="col-sm-12">
 					<h1 class="heading">
 						{{Category}}
 					</h1>
-					
+					<section class="pull-right"></section>
+					<button class="{{OrderBy.LoHiClass}}" ng-click="LoHi()">Lo to Hi</button>
+					<button class="{{OrderBy.HiLoClass}}" ng-click="HiLo()">Hi to Lo</button>
 				</div>
 				<br />
-				<button class="{{OrderBy.LoHiClass}}" ng-click="LoHi()">Lo to Hi</button>
-				<button class="{{OrderBy.HiLoClass}}" ng-click="HiLo()">Hi to Lo</button>
+				
 
 				<!--SubCategories-->
 
-				<div>
-					<section class="row col-md-12">
-						<div class="col-md-4 product-showcase" ng-repeat="product in Products | filter: { Brand : Category} | orderBy: OrderBy.Parameter">
-							<div class="mix" style="display: inline-block; opacity: 1;">
-								<div class="item-img-wrap ">
-									<div class="img-wrap">
-										<img ng-src="{{product.ImagePath}}" class="img-responsive productlist-image" alt="" />
-									</div>
-									<div class="item-img-overlay">
-										<a href="#/Market/Item/{{product.Id}}" class="show-image">
-											<span></span>
-										</a>
-									</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-repeat-start="product in Products| filter: { Brand : Category} | orderBy: OrderBy.Parameter">
+						<div class="thumbnail">
+							<div class="item-img-wrap ">
+								<div class="img-wrap">
+									<img ng-src="{{product.ImagePath}}" class="img-responsive productlist-image" alt="" />
 								</div>
-								<div class="work-desc">
-									<p><a href="#/Market/Item/{{product.Id}}">{{product.Name}}</a></p>
-									<span>{{product.UnitPrice | currency : "$"}}</span>
-								</div><!--work desc-->
+								<div class="item-img-overlay">
+									<a href="#/Market/Item/{{product.Id}}" class="show-image">
+										<span></span>
+									</a>
+								</div>
 							</div>
+							<div class="work-desc">
+								<p><a href="#/Market/Item/{{product.Id}}">{{product.Name}}</a></p>
+								<div class="caption">
+									<h4 class="pull-right">{{product.UnitPrice | currency: "$"}}</h4>
+
+									<a href="#/Market/Item/{{product.Id}}" class="btn border-theme">Details</a>
+								</div>
+							</div><!--work desc-->
 						</div>
-					</section>
+					</div>
+					<div ng-repeat-end ng-if="$index + 1 % 2 === 0 && $index > 0" class="clear"></div>
 				</div>
 			</div>
 		</div>

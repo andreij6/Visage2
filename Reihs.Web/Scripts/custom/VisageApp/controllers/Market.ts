@@ -26,6 +26,19 @@
 				{ Name: "Clarisonic" }
 			];
 
+			function everyThird(index: number): boolean {
+				console.log('here');
+				if (index == 0)
+					return false;
+
+				if(index % 3 === 0)
+					return true;
+				else
+					return false;
+			}
+
+			self.$scope.EveryThird = everyThird;
+
 			var templates = [
 				{ name: "Index", url: nav + "Index.html" },
 			];

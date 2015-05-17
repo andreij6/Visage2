@@ -169,12 +169,12 @@
 						<a href="#/About" ng-show="!AboutActive">DR RIEHS <i class="fa fa-male"></i></a>
 					</li>
 
-					@*<li ng-click="SetNav('Market')">
+					<li ng-click="SetNav('Market')">
 							<div class="pull-left arrow-right" ng-show="MarketActive"></div>
 							<a href="#/Market" class="selected-nav" ng-show="MarketActive">MARKET <i class="fa fa-gift"></i></a>
 
 							<a href="#/Market" ng-show="!MarketActive">MARKET <i class="fa fa-gift"></i></a>
-						</li>*@
+						</li>
 
 					<li ng-click="SetNav('Cart')" ng-show="HasItems">
 						<div class="pull-left arrow-right" ng-show="CartActive"></div>
@@ -188,6 +188,13 @@
 						<a href="#/Treatments" class="selected-nav" ng-show="TreatmentActive">TREATMENTS <i class="fa fa-eyedropper"></i></a>
 
 						<a href="#/Treatments" ng-show="!TreatmentActive">TREATMENTS <i class="fa fa-eyedropper"></i></a>
+					</li>
+
+					<li ng-click="SetNav('Team')">
+						<div class="pull-left arrow-right" ng-show="TeamActive"></div>
+						<a href="#/Team" class="selected-nav" ng-show="TeamActive">Meet the Team <i class="fa fa-users"></i></a>
+
+						<a href="#/Team" ng-show="!TeamActive">Meet the Team <i class="fa fa-users"></i></a>
 					</li>
 
 

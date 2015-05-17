@@ -50,6 +50,10 @@
 			function homeOn() {
 				self.$scope.HomeActive = true;
 			}
+
+			function teamOn() {
+				self.$scope.TeamActive = true;
+			}
 			function aboutOn() {
 				self.$scope.AboutActive = true;
 			}
@@ -79,6 +83,9 @@
 			function aboutOff() {
 				self.$scope.AboutActive = false;
 			}
+			function teamOff() {
+				self.$scope.TeamActive = false;
+			}
 			function marketOff() {
 				self.$scope.MarketActive = false;
 			}
@@ -102,6 +109,7 @@
 
 			self.$scope.Navs = [
 				{ name: 'Home', IsOn: self.$scope.HomeActive, action: homeOn, off: homeOff },
+				{ name: 'Team', IsOn: self.$scope.TeamActive, action: teamOn, off: teamOff },
 				{ name: 'About', IsOn: self.$scope.AboutActive, action: aboutOn, off: aboutOff },
 				{ name: 'Market', IsOn: self.$scope.MarketActive, action: marketOn, off: marketOff },
 				{ name: 'Cart', IsOn: self.$scope.CartActive, action: cartOn, off: cartOff },
