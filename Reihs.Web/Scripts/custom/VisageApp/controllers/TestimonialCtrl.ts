@@ -288,15 +288,15 @@ module VisageApp {
 				''
 			);
 
-			var hamidan = new Client(
-				"Hamidan",
+			var maria = new Client(
+				"Maria",
 				51,
 				false,
-				false,
+				true,
 				'Fraxel, Microdermabrasion & Botox',
 				[fraxel, microderma, botox],
-				'Meet Hamidan, a beautifully elegant 51 year old, who first presented to the facility in 2006 because she was feeling her “skin looked a little dull.”',
-				'She began her cosmetic history with a series of microdermabrasions to improve the texture and reduce the dark pigmentation.Several years later, Hamidan, with direction from Dr.Riehs, elected to undergo melasma treatment with the Fraxel laser.The treatment modality tremendously improved her hyperpigmentation and she has been singing its praises ever since. She says, “I get this treatment twice yearly.Thanks to Dr.Riehs and his helpful staff, my skin has improved!”',
+				'Meet Maria, a beautifully elegant 51 year old, who first presented to the facility in 2006 because she was feeling her “skin looked a little dull.”',
+				'She began her cosmetic history with a series of microdermabrasions to improve the texture and reduce the dark pigmentation.Several years later, Maria, with direction from Dr.Riehs, elected to undergo melasma treatment with the Fraxel laser.The treatment modality tremendously improved her hyperpigmentation and she has been singing its praises ever since. She says, “I get this treatment twice yearly.Thanks to Dr.Riehs and his helpful staff, my skin has improved!”',
 				'',
 				''
 			);
@@ -311,6 +311,7 @@ module VisageApp {
 			marlene.HasActiveShot = false;
 
 			shirley.HasHeadShot = false;
+
 
 			clients.push(brad);
 			clients.push(michelle);
@@ -330,7 +331,7 @@ module VisageApp {
 			clients.push(brandi);
 			clients.push(tamme);
 			clients.push(marlene);
-			clients.push(hamidan);
+			clients.push(maria);
 			//#endregion
 
 			function setCurrentClient() {

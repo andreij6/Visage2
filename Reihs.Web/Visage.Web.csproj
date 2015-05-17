@@ -340,8 +340,8 @@
     <Content Include="Content\Images\Patients\Chad_Head.jpg" />
     <Content Include="Content\Images\Patients\Fernando_Active.jpg" />
     <Content Include="Content\Images\Patients\Fernando_Head.jpg" />
-    <Content Include="Content\Images\Patients\Hamidan_Active.jpg" />
-    <Content Include="Content\Images\Patients\Hamidan_Head.jpg" />
+    <Content Include="Content\Images\Patients\Maria_Active.jpg" />
+    <Content Include="Content\Images\Patients\Maria_Head.jpg" />
     <Content Include="Content\Images\Patients\Iliana_Active.jpg" />
     <Content Include="Content\Images\Patients\Iliana_Head.jpg" />
     <Content Include="Content\Images\Patients\Isabel_Active.jpg" />
@@ -580,6 +580,7 @@
     <Content Include="Templates\Front\About\StoryVideos\Kim.html" />
     <Content Include="Templates\Front\About\StoryVideos\Liz.html" />
     <Content Include="Templates\Front\About\StoryVideos\Lynn.html" />
+    <Content Include="Templates\Front\About\StoryVideos\Maria.html" />
     <Content Include="Templates\Front\About\StoryVideos\Marlene.html" />
     <Content Include="Templates\Front\About\StoryVideos\Michelle.html" />
     <Content Include="Templates\Front\About\StoryVideos\Nancy.html" />

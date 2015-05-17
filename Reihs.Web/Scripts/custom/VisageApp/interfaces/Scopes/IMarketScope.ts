@@ -11,7 +11,12 @@
 
 		open: boolean;
 		YouTubeMenu: string;
+
 		MenuTrigger(): void;
+		LoHi(): void;
+		HiLo(): void;
+
+		OrderBy: any;
 
 		AddToCart(cmd: string, hosted_button_id: string): void;
 	}

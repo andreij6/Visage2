@@ -71,6 +71,23 @@
 
 			}
 
+			function hiLo() {
+				console.log("Hi Lo");
+				self.$scope.OrderBy.Parameter = '-UnitPrice';
+				self.$scope.OrderBy.HiLoClass = ' btn btn-theme-brown ';
+				self.$scope.OrderBy.LoHiClass = 'btn btn-theme-dark'
+			}
+
+			function loHi() {
+				console.log("Lo Hi");
+				self.$scope.OrderBy.Parameter = 'UnitPrice';
+				self.$scope.OrderBy.HiLoClass = ' btn btn-theme-dark';
+				self.$scope.OrderBy.LoHiClass = 'btn btn-theme-brown';
+			}
+
+			self.$scope.LoHi = loHi;
+			self.$scope.HiLo = hiLo;
+
 			self.$scope.GetProducts = GetProducts;
 
 			self.$scope.Products = self.ProductSvc.Products;
@@ -87,6 +104,8 @@
 
 			self.$scope.MenuTrigger = menuTrigger;
 
+			self.$scope.OrderBy = new OrderBy("btn btn-theme-dark", "btn btn-theme-dark", "Name.length");
+
 			function addToCart(cmd: string, hosted_button_id: string) {
 				self.ProductSvc.addToCart(cmd, hosted_button_id).then(
 					function (data) {
@@ -102,6 +121,12 @@
 			self.init();
 			
 		}
+	}
+
+	export class OrderBy {
+
+		constructor(public LoHiClass, public HiLoClass, public Parameter) { }
+
 	}
 
 

@@ -35,17 +35,21 @@
 
 			<div class="col-xs-9">
 
-				<div class="col-md-8 col-lg-offset-4">
-					<h3 class="heading">
+				<div class="col-md-8">
+					<h1 class="heading">
 						{{Category}}
-					</h3>
+					</h1>
+					
 				</div>
+				<br />
+				<button class="{{OrderBy.LoHiClass}}" ng-click="LoHi()">Lo to Hi</button>
+				<button class="{{OrderBy.HiLoClass}}" ng-click="HiLo()">Hi to Lo</button>
 
 				<!--SubCategories-->
 
 				<div>
 					<section class="row col-md-12">
-						<div class="col-md-4 product-showcase" ng-repeat="product in Products | filter: { Brand : Category} | orderBy: 'Name.length'">
+						<div class="col-md-4 product-showcase" ng-repeat="product in Products | filter: { Brand : Category} | orderBy: OrderBy.Parameter">
 							<div class="mix" style="display: inline-block; opacity: 1;">
 								<div class="item-img-wrap ">
 									<div class="img-wrap">
