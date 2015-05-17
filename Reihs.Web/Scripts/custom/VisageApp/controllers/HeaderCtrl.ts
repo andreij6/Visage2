@@ -4,9 +4,11 @@
 		private MarketSvc: MarketService;
 		private PostDataSvc: PostDataService;
 		private TickerSvc: TickerDataService;
+		private $routeParams: IRouteParams;
 
 		private init(): void {
 			var self = this;
+
 			function Affix() {
 				$('#sidebar-inner').affix({
 					offset: {
@@ -24,7 +26,8 @@
 			postDataSvc: PostDataService,
 			$location: ng.ILocationService,
 			$anchorScroll: ng.IAnchorScrollService,
-			tickerSvc: TickerDataService)
+			tickerSvc: TickerDataService,
+			$routeParams: IRouteParams)
 		{
 			var self = this;
 			self.$scope = $scope;
@@ -35,88 +38,18 @@
 			self.TickerSvc = tickerSvc;
 			self.$scope.HasItems = false;
 			self.$scope.IsAlertVisible = false;
-
-			self.$scope.HomeActive = true;
-			self.$scope.AboutActive = false;
-			self.$scope.MarketActive = false;
-			self.$scope.CartActive = false;
-			self.$scope.TreatmentActive = false;
-			self.$scope.GalleryActive = false;
-			self.$scope.ResourceActive = false;
-			self.$scope.ContactActive = false;
-
-			//#region Switches
-			//#region On
-			function homeOn() {
-				self.$scope.HomeActive = true;
-			}
-
-			function teamOn() {
-				self.$scope.TeamActive = true;
-			}
-			function aboutOn() {
-				self.$scope.AboutActive = true;
-			}
-			function marketOn() {
-				self.$scope.MarketActive = true;
-			}
-			function cartOn() {
-				self.$scope.CartActive = true;
-			}
-			function treatmentOn() {
-				self.$scope.TreatmentActive = true;
-			}
-			function galleryOn() {
-				self.$scope.GalleryActive = true;
-			}
-			function resourceOn() {
-				self.$scope.ResourceActive = true;
-			}
-			function contactOn() {
-				self.$scope.ContactActive = true;
-			}
-			//#endregion
-			//#region Off
-			function homeOff() {
-				self.$scope.HomeActive = false;
-			}
-			function aboutOff() {
-				self.$scope.AboutActive = false;
-			}
-			function teamOff() {
-				self.$scope.TeamActive = false;
-			}
-			function marketOff() {
-				self.$scope.MarketActive = false;
-			}
-			function cartOff() {
-				self.$scope.CartActive = false;
-			}
-			function treatmentOff() {
-				self.$scope.TreatmentActive = false;
-			}
-			function galleryOff() {
-				self.$scope.GalleryActive = false;
-			}
-			function resourceOff() {
-				self.$scope.ResourceActive = false;
-			}
-			function contactOff() {
-				self.$scope.ContactActive = false;
-			}
-			//#endregion
-			//#endregion
+			self.$routeParams = $routeParams;
+			self.$scope.SearchFail = false;
 
 			self.$scope.Navs = [
-				{ name: 'Home', IsOn: self.$scope.HomeActive, action: homeOn, off: homeOff },
-				{ name: 'Team', IsOn: self.$scope.TeamActive, action: teamOn, off: teamOff },
-				{ name: 'About', IsOn: self.$scope.AboutActive, action: aboutOn, off: aboutOff },
-				{ name: 'Market', IsOn: self.$scope.MarketActive, action: marketOn, off: marketOff },
-				{ name: 'Cart', IsOn: self.$scope.CartActive, action: cartOn, off: cartOff },
-				{ name: 'Treatment', IsOn: self.$scope.TreatmentActive, action: treatmentOn, off: treatmentOff },
-				{ name: 'Gallery', IsOn: self.$scope.GalleryActive, action: galleryOn, off: galleryOff },
-				{ name: 'Resource', IsOn: self.$scope.ResourceActive, action: resourceOn, off: resourceOff },
-				{ name: 'Contact', IsOn: self.$scope.ContactActive, action: contactOn, off: contactOff }
+				new SideMenuItem('Home', 'fa-home', 1, '#/', true),
+				new SideMenuItem('Team', 'fa-users', 2, '#/Team'),
+				new SideMenuItem('About', 'fa-male', 3, '#/About'),
+				new SideMenuItem('Market', 'fa-gift', 4, '#/Market'),
+				new SideMenuItem('Treatment', 'fa-eyedropper', 5, '#/Treatments'),
+				new SideMenuItem('Gallery', 'fa-file-image-o', 6, '#/Gallery'),
+				new SideMenuItem('Resource', 'fa-newspaper-o', 7, '#/Resources'),
+				new SideMenuItem('Contact', 'fa-phone-square', 8, '#/Contact')
 			];
 
 			self.$scope.addjQuery = function () {
@@ -124,6 +57,36 @@
 					timeOut: 8000
 				});
 			}
+
+			self.$scope.selected = undefined;
+
+			function StoreDescription(name: string): string {
+				return name + ': Shop ' + name + ' Products';
+			}
+
+			function StoreLink(name: string): string {
+				return '/Market/Products/' + name;
+			}
+
+			self.$scope.SearchItems = [
+				new SearchItem("Team: Meet the Staff", "/Team"),
+				new SearchItem('About: Meet Dr. Riehs', '/About'),
+				new SearchItem('Patient Stories', '/Stories'),
+				
+				//Break this up
+				new SearchItem('New Patient Resources: Hippa Policy, Privacy Policy, Cancellation Policy, Health Information', '/Resources/NewPatients'),
+				new SearchItem('Locations', '/Contact'),
+
+				new SearchItem('Treatments: Botox, Microdermabrasion, and more', '/Treatments'),
+				new SearchItem('Photo Gallery: Before and After Images', '/Gallery'),
+				new SearchItem('SiteMap', '/SiteMap'),
+
+				new SearchItem('Market: Shop at Lebeau Visage', '/Market'),
+				new SearchItem(StoreDescription('SkinMedica'), StoreLink('SkinMedica')),
+				new SearchItem(StoreDescription('Elta MD'), StoreLink('Elta MD')),
+				new SearchItem(StoreDescription('RevitaLash'), StoreLink('RevitaLash')),
+				new SearchItem(StoreDescription('Clarisonic'), StoreLink('Clarisonic')),
+			];
 
 			function HandleFailedAPI(message: any) {
 				console.log(message);
@@ -163,19 +126,15 @@
 					self.$scope.HasItems = false;
 				}
 
-				console.log(self.$scope.ShoppingCart);
 			}
 
 			function setNav(name: string) {
-				console.log(self.$scope.Navs);
 				for (var x in self.$scope.Navs) {
-					if (self.$scope.Navs[x].name === name) {
-						self.$scope.Navs[x].IsOn = true;
-						self.$scope.Navs[x].action();
+					if (self.$scope.Navs[x].Name === name) {
+						self.$scope.Navs[x].TurnOn();
 					}
 					else {
-						self.$scope.Navs[x].IsOn = false;
-						self.$scope.Navs[x].off();
+						self.$scope.Navs[x].TurnOff();
 					}
 				}
 				self.$scope.SideOpen = false;
@@ -197,17 +156,33 @@
 					);
 			}
 
-			function getBlogs() {
-				self.PostDataSvc.getAll().then(
-					function (data) {
-						self.$scope.Posts = data;
-					},
-					function (error) {
-						console.log(error);
-					});
+			function search() {
+				var link = self.$scope.selected['Link'];
+
+				if (link !== undefined) {
+					$location.path(link);
+					document.getElementById('search').className = 'closed';
+					self.$scope.selected = undefined;
+				} else {
+					self.$scope.SearchFail = true;
+				}
 			}
 
-			getBlogs();
+			//#region Wasted Time
+			//function getBlogs() {
+			//	self.PostDataSvc.getAll().then(
+			//		function (data) {
+			//			self.$scope.Posts = data;
+			//		},
+			//		function (error) {
+			//			console.log(error);
+			//		});
+			//}
+
+			//getBlogs();
+			//#endregion
+
+			self.$scope.Search = search;
 
 			self.$scope.$watch('SideOpen', CloseSideBar);
 
@@ -224,5 +199,25 @@
 		}
 	}
 
-	HeaderCtrl.$inject = ['$scope', 'MarketService', 'PostDataService', '$location', '$anchorScroll', 'TickerDataService'];
+	export class SideMenuItem {
+
+		constructor(public Name, public Icon, public OrderNumber, public Link, public IsActive = false) {
+		}
+
+		TurnOn(): void {
+			this.IsActive = true;
+		}
+
+		TurnOff(): void {
+			this.IsActive = false;
+		}
+	}
+
+	export class SearchItem {
+		constructor(public Description, public Link) {
+
+		}
+	}
+
+	HeaderCtrl.$inject = ['$scope', 'MarketService', 'PostDataService', '$location', '$anchorScroll', 'TickerDataService', '$routeParams'];
 } 

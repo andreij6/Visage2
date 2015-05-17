@@ -25,92 +25,13 @@
 					</ul><br /><br />
 					<ul class="nav navbar-nav pull-right" id="main-navigation">
 						<li><a href="#/">Home</a></li>
-						<li>
-							<a href="#/About">About</a>
-							<!--@*<a data-toggle="dropdown" class="dropdown-toggle">About<i class="fa fa-chevron-down"></i></a>
-							<ul class="dropdown-menu" id="about-dropdown">
-								<li>
-									<div class="yamm-content yamm-about-content">
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="col-sm-12">
-													<h3 class="heading">Dr. Riehs</h3>
-													<p>
-														Meet the Owner and Full-time, On-site Physician of Le Beau Visage Medical Spa.
-														<a href="#/About" class="pull-right">Read More</a>
-													</p>
-													<div class="divide20"></div>
-												</div>
-												<div class="divide10"></div>
-												<div class="col-sm-12">
-													<h3 class="heading">Sections</h3>
-													<p></p>
-													<ul class="nav mega-vertical-nav">
-														<li><a href="#/Team">Meet the Team</a></li>
-														<li><a href="#/Locations">Locations</a></li>
-														<li><a href="#/Stories">Testimonials</a></li>
-														<li><a href="#/Videos">Videos</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-
-									</div>
-								</li>
-							</ul>*@-->
-						</li>
+						<li><a href="#/About">About</a></li>
 						<li><a href="#/Market">Market</a></li>
 						<li><a href="#/Treatments">TREATMENTS</a></li>
-						<!-- Market
-								@*<li class="dropdown yamm-fw">
-									<a data-toggle="dropdown" class="dropdown-toggle">Market <i class="fa fa-chevron-down"></i></a>
-									<ul class="dropdown-menu">
-										<li>
-										<div class="yamm-content">
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="col-sm-3">
-														<h3 class="heading">Shopping Cart</h3>
-														<p></p>
-														<ul ng-show="HasItems">
-															<li>Item</li>
-															<li>Item 2</li>
-															<li>More...</li>
-														</ul>
-														<a href="#/Market/Cart" ng-show="HasItems" class="btn btn-theme-dark">View Cart <i class="fa fa-shopping-cart"></i></a>
-
-														<div class="divide10"></div>
-														<a href="#/Market" ng-show="!HasItems">Shop Now <i class="fa fa-shopping-cart"></i></a>
-													</div>
-													<div class="col-sm-6">
-														<h3 class="heading">Featured Items</h3>
-														<p>
-															Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam
-														</p>
-													</div>
-													<div class="col-sm-3">
-														<h3 class="heading">Categories</h3>
-														<ul class="nav mega-vertical-nav">
-															<li><a href="#/Market/Special/GiftCards">Gift Cards</a></li>
-															<li><a href="#/Market">Skin Care</a></li>
-														</ul>
-													</div>
-
-													<a href="#/Market" class="btn btn-block btn-theme-dark clear">Go To The Market</a>
-												</div>
-											</div>
-
-										</div>
-									</li>
-								</ul>
-							</li>*@
-						-->
 						<li><a href="#/Stories">Patient Stories</a></li>
 						<li><a href="#/Resources">Resources</a></li>
 						<li><a href="#/Contact">CONTACT US</a></li>
-						<li ng-show="HasItems">
-							<a href="#/Market/Cart">View Cart <span class="pull-right"> <i class="fa fa-shopping-cart fa-2x"></i><span class="badge">{{ShoppingCart.length}}</span></span></a>
-						</li>
+						<li><a href="#search"><i class="fa fa-search"></i> Search</a></li>
 					</ul>
 
 				</div>
@@ -151,72 +72,19 @@
 			<div id="sidebar-inner">
 				<ul class="nav navbar-nav side-nav">
 					<li ng-click="UpdateSO()"><a>Close <i class="fa fa-remove fa-2x"></i></a></li>
+
 					<li class="nav-title">
 						<a href="#/"><img src="../../Content/Images/Logos/LBVword_C4.png" alt="" width="75%" /></a>
-						<hr />
+
 					</li>
-					<li ng-click="SetNav('Home')">
-						<div class="pull-left arrow-right" ng-show="HomeActive"></div>
-						<a href="#/" class="selected-nav" ng-show="HomeActive">HOME <i class="fa fa-home"></i></a>
-
-						<a href="#/" ng-show="!HomeActive">HOME <i class="fa fa-home"></i></a>
+					<li>
+						<a href="#search"><i class="fa fa-search"></i> Search</a><hr />
 					</li>
+					<li ng-click="SetNav(navItem.Name)" ng-repeat="navItem in Navs | orderBy: naviItem.OrderNumber">
+						<div class="pull-left arrow-right" ng-show="navItem.IsActive"></div>
+						<a href="{{navItem.Link}}" class="selected-nav" ng-show="navItem.IsActive">{{navItem.Name}} <i class="fa {{navItem.Icon}}"></i></a>
 
-					<li ng-click="SetNav('About')">
-						<div class="pull-left arrow-right" ng-show="AboutActive"></div>
-						<a href="#/About" class="selected-nav" ng-show="AboutActive">DR RIEHS <i class="fa fa-male"></i></a>
-
-						<a href="#/About" ng-show="!AboutActive">DR RIEHS <i class="fa fa-male"></i></a>
-					</li>
-
-					<li ng-click="SetNav('Market')">
-							<div class="pull-left arrow-right" ng-show="MarketActive"></div>
-							<a href="#/Market" class="selected-nav" ng-show="MarketActive">MARKET <i class="fa fa-gift"></i></a>
-
-							<a href="#/Market" ng-show="!MarketActive">MARKET <i class="fa fa-gift"></i></a>
-						</li>
-
-					<li ng-click="SetNav('Cart')" ng-show="HasItems">
-						<div class="pull-left arrow-right" ng-show="CartActive"></div>
-						<a href="#/Market/Cart" class="selected-nav" ng-show="CartActive">Shopping Cart <i class="fa fa-shopping-cart fa"></i></a>
-
-						<a href="#/Market/Cart" ng-show="!CartActive">Shopping Cart <i class="fa fa-shopping-cart fa"></i></a>
-					</li>
-
-					<li ng-click="SetNav('Treatment')">
-						<div class="pull-left arrow-right" ng-show="TreatmentActive"></div>
-						<a href="#/Treatments" class="selected-nav" ng-show="TreatmentActive">TREATMENTS <i class="fa fa-eyedropper"></i></a>
-
-						<a href="#/Treatments" ng-show="!TreatmentActive">TREATMENTS <i class="fa fa-eyedropper"></i></a>
-					</li>
-
-					<li ng-click="SetNav('Team')">
-						<div class="pull-left arrow-right" ng-show="TeamActive"></div>
-						<a href="#/Team" class="selected-nav" ng-show="TeamActive">Meet the Team <i class="fa fa-users"></i></a>
-
-						<a href="#/Team" ng-show="!TeamActive">Meet the Team <i class="fa fa-users"></i></a>
-					</li>
-
-
-					<li ng-click="SetNav('Gallery')">
-						<div class="pull-left arrow-right" ng-show="GalleryActive"></div>
-						<a href="#/Gallery" class="selected-nav" ng-show="GalleryActive">PHOTO GALLERY <i class="fa fa-file-image-o"></i></a>
-
-						<a href="#/Gallery" ng-show="!GalleryActive">PHOTO GALLERY <i class="fa fa-file-image-o"></i></a>
-					</li>
-
-					<li ng-click="SetNav('Resource')">
-						<div class="pull-left arrow-right" ng-show="ResourceActive"></div>
-						<a href="#/Resources" class="selected-nav" ng-show="ResourceActive">Resources <i class="fa fa-newspaper-o"></i></a>
-
-						<a href="#/Resources" ng-show="!ResourceActive">Resources <i class="fa fa-newspaper-o"></i></a>
-					</li>
-
-					<li ng-click="SetNav('Contact')">
-						<div class="pull-left arrow-right" ng-show="ContactActive"></div>
-						<a href="#/Contact" class="selected-nav" ng-show="ContactActive">CONTACT US <i class="fa fa-phone-square"></i></a>
-
-						<a href="#/Contact" ng-show="!ContactActive">CONTACT US <i class="fa fa-phone-square"></i></a>
+						<a href="{{navItem.Link}}" ng-show="!navItem.IsActive">{{navItem.Name}} <i class="fa {{navItem.Icon}}"></i></a>
 					</li>
 
 					<li ng-click="SetNav('SiteMap')" class="sitemap">
@@ -233,6 +101,20 @@
 	<div class="alert-success alert container" ng-show="IsAlertVisible">
 		<button type="button" class="close" ng-click="IsAlertVisible = false">×</button>
 		Item Successfully added!!!
+	</div>
+	
+	<div id="search">
+		<button type="button" class="close">×</button>
+		<form>
+			<h1 ng-show="SearchFail">No Items Found</h1>
+			<input type="search" value="" placeholder="type keyword(s) here" ng-model="selected" typeahead="searchItem as searchItem.Description for searchItem in SearchItems | filter:$viewValue | limitTo:15" />
+			<script type="text/ng-template" id="customTemplate.html">
+				<a>
+					<span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+				</a>
+			</script>
+			<a class="btn btn-primary" ng-click="Search()">Search</a>
+		</form>
 	</div>
 	<div class="ng-view" autoscroll></div>
 
@@ -263,7 +145,7 @@
 				<div class="col-md-4 margin20">
 					<div class="footer-col">
 						<h3><a href="#/SiteMap">SiteMap</a></h3>
-                        <h3><a href=" https://lebeauvisagemedspa.nextechweb.com/patient ">Patient Portal</a></h3>
+						<h3><a href=" https://lebeauvisagemedspa.nextechweb.com/patient ">Patient Portal</a></h3>
 						<h3><a href="/Admin">Admin Login</a></h3>
 					</div>
 				</div><!--footer col-->
@@ -292,17 +174,15 @@
 					<li ng-click="GoToTop()"><a href=""><i class="fa fa-arrow-circle-up fa-2x"></i> Top</a></li>
 				</ul>
 			</div><!--top bar end hidden in small devices-->
-
-
 			@*<ul id="ticker01" class="newsticker pull-left">
-				<li>
-					<span>{{message.Dates}}</span> <a href="{{message.Url}}">{{message.Message}}</a>
-					a;slkdf
-				</li>
-				<li>alskjdf</li>
-				<li>cxlknv</li>
+					<li>
+						<span>{{message.Dates}}</span> <a href="{{message.Url}}">{{message.Message}}</a>
+						a;slkdf
+					</li>
+					<li>alskjdf</li>
+					<li>cxlknv</li>
 
-			</ul>*@
+				</ul>*@
 			<ul id="ticker01" class="newsticker pull-left">
 				<li ng-repeat="message in Messages"><span>{{message.Dates}}<span> <a href="{{message.Url}}">{{message.Message}}</a></li>
 				<!-- IDK y this works for 2 tickers but it does so dont remove it-->
@@ -325,4 +205,26 @@
 	<script src="~/Scripts/custom/scripts/navBar.js"></script>
 	<script src="~/Scripts/custom/google-map/HomeMap.js"></script>
 	<script src="~/Scripts/Plugins/YouTubeMenu/ytmenu.js"></script>
+	<script>
+		$(function () {
+			$('a[href="#search"]').on('click', function (event) {
+				event.preventDefault();
+				$('#search').addClass('open');
+				$('#search > form > input[type="search"]').focus();
+			});
+
+			$('#search, #search button.close').on('click keyup', function (event) {
+				if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+					$(this).removeClass('open');
+				}
+			});
+
+
+			//Do not include! This prevents the form from submitting for DEMO purposes only!
+			$('form').submit(function (event) {
+				event.preventDefault();
+				return false;
+			})
+		});
+	</script>
 }

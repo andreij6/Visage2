@@ -54,9 +54,6 @@
   border-bottom: 10px solid transparent;
   border-left: 10px solid #c4c4c4; }
 
-.selected-nav i {
-  color: #4f3514; }
-
 .cart-items-list {
   height: 400px;
   overflow: auto; }

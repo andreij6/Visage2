@@ -7,18 +7,14 @@
 		HasItems: boolean;
 		IsAlertVisible: boolean;
 
+		SearchItems: Array<any>;
+		selected: any;
+		Search(): void;
+		SearchFail: boolean;
+
 		Messages: Array<Extensions.TickerMessage>;
 
 		SetNav(name: string): void;
-		HomeActive: boolean;
-		AboutActive: boolean;
-		MarketActive: boolean;
-		CartActive: boolean;
-		TreatmentActive: boolean;
-		GalleryActive: boolean;
-		ResourceActive: boolean;
-		ContactActive: boolean;
-		TeamActive: boolean;
 
 		Navs: any;
 		GoToTop(): void;

@@ -49,6 +49,14 @@
 	color: #f5eccf;
 }
 
+.selected-nav i {
+	color: #f5eccf;
+}
+
+.fa-remove {
+	color: #a5a4a4;
+}
+
 
 #footer-option {
 	background-color: #6d5d49;
