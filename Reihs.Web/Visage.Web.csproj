@@ -263,6 +263,7 @@
     </Content>
     <Content Include="Content\Front\ThirdParty\YouTubeMenu\component1.css" />
     <Content Include="Content\Images\About\About.png" />
+    <Content Include="Content\Images\favicon.png" />
     <Content Include="Content\Images\Banner\Banner1.jpg" />
     <Content Include="Content\Images\Banner\Dallas.png" />
     <Content Include="Content\Images\Banner\Banner3.jpg" />
