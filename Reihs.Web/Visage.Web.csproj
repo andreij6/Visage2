@@ -376,10 +376,8 @@
     <Content Include="Content\Images\Products\EltaMD\EltaMD_UVPhysical41SPF.jpg" />
     <Content Include="Content\Images\Products\EltaMD\EltaMD_UVShield45SPF.jpg" />
     <Content Include="Content\Images\Products\SkinMedica\Environmental_Defense_Sunscreen_SPF50_3oz.png" />
-    <Content Include="Content\Images\Products\SkinMedica\Facial_Cleanser_6oz.png" />
     <Content Include="Content\Images\Products\SkinMedica\Hydrating_Complex.png" />
     <Content Include="Content\Images\Products\SkinMedica\LYTERA_Primary_2oz.png" />
-    <Content Include="Content\Images\Products\SkinMedica\Purifying_Foaming_Wash_5oz.png" />
     <Content Include="Content\Images\Products\SkinMedica\Redness_Relief_CalmPlex.png" />
     <Content Include="Content\Images\Products\RevitaLash\RevitaLash_AdvForm.jpg" />
     <Content Include="Content\Images\Products\SkinMedica\Rejuvenative_Moisturizer_2oz.png" />
@@ -394,7 +392,6 @@
     <Content Include="Content\Images\Products\SkinMedica\TNS_Ceramide_Treatment_Cream_2oz.png" />
     <Content Include="Content\Images\Products\SkinMedica\TNS_Essential_Serum_1oz.png" />
     <Content Include="Content\Images\Products\SkinMedica\TNS_Eye_Repair.png" />
-    <Content Include="Content\Images\Products\SkinMedica\TNS_IlluminatingEyeCream.png" />
     <Content Include="Content\Images\Products\SkinMedica\TNS_LipPlump_System_06oz.png" />
     <Content Include="Content\Images\Products\SkinMedica\TNS_Recovery_Complex_063oz.png" />
     <Content Include="Content\Images\Products\SkinMedica\TNS_Ultimate_Daily_Moisturizer_SPF20_2oz.png" />
@@ -447,8 +444,8 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Images\Banner\Dallas.jpg" />
-    <Content Include="Images\Banner\Nancy.jpg" />
+    <Content Include="Images\Banner\Dallas.png" />
+    <Content Include="Images\Banner\Nancy.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom\scripts\li-scroller-starter.js" />
