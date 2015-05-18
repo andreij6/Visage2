@@ -20,6 +20,7 @@
 
 					<ul class="list-unstyled cat-list visible-md visible-lg">
 						<li ng-repeat="category in Categories"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a> <i class="fa fa-angle-right"></i></li>
+						<li><a href="#search"><i class="fa fa-search"></i> Search</a></li>
 					</ul>
 					<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
 						<div class="dr-trigger" ng-click="MenuTrigger()">
@@ -37,7 +38,7 @@
 			</div>
 			<div class="col-md-9">
 				<div class="row">
-					<h1>Featured Products</h1>
+					<h1 class="heading featuredProducts">Featured Products</h1>
 					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" ng-repeat="product in FeaturedProducts track by $index" ng-show="$index < 3">
 						
 						<div class="thumbnail">
@@ -76,3 +77,25 @@
 		</div>
 	</div>
 </section>
+<script>
+		$(function () {
+			$('a[href="#search"]').on('click', function (event) {
+				event.preventDefault();
+				$('#search').addClass('open');
+				$('#search > form > input[type="search"]').focus();
+			});
+
+			$('#search, #search button.close').on('click keyup', function (event) {
+				if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+					$(this).removeClass('open');
+				}
+			});
+
+
+			//Do not include! This prevents the form from submitting for DEMO purposes only!
+			$('form').submit(function (event) {
+				event.preventDefault();
+				return false;
+			})
+		});
+</script>

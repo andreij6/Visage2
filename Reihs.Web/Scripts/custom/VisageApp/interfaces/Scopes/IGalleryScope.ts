@@ -5,6 +5,11 @@
 		Showing: boolean;
 		Image: string;
 
+		open: boolean;
+		YouTubeMenu: string;
+		MenuTrigger(): void;
+		SideNavs: any;
+
 		Photos: any;
 		filterValue: any;
 		Categories: any;

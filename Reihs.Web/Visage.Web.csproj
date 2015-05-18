@@ -668,6 +668,8 @@
     <Content Include="Templates\Front\Videos\Partials\TSN.html" />
     <Content Include="Templates\Front\Videos\Single.html" />
     <Content Include="Templates\Front\Videos\Index.html" />
+    <Content Include="template\pagination\pager.html" />
+    <Content Include="template\pagination\pagination.html" />
     <Content Include="template\typeahead\typeahead-match.html" />
     <Content Include="template\typeahead\typeahead-popup.html" />
     <Content Include="Web.config">

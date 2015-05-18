@@ -8,6 +8,11 @@
 		Products: Array<any>;
 		FeaturedProducts: any;
 		GetProducts(): void;
+		page: number;
+		BrandProducts: any;
+
+		currentPage: number;
+		setPage(pageNo: number): void;
 
 		open: boolean;
 		YouTubeMenu: string;

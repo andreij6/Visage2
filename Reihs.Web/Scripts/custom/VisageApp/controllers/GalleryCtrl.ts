@@ -283,7 +283,6 @@
 			self.$scope.filterValue = {};
 
 			function LightBoxTrigger($event: ng.IAngularEvent) {
-				
 				self.$scope.Image = $event["currentTarget"]["src"];
 				self.$scope.Showing = true;
 			}
@@ -313,6 +312,36 @@
 
 			self.$scope.SetFilter = setFilter;
 			
+			function menuTrigger() {
+				if (!self.$scope.open)
+					self.$scope.YouTubeMenu = ' dr-menu-open';
+				else
+					self.$scope.YouTubeMenu = '';
+
+				self.$scope.open = !self.$scope.open;
+
+			}
+
+			self.$scope.open = false;
+
+			self.$scope.YouTubeMenu = '';
+
+			self.$scope.MenuTrigger = menuTrigger;
+
+			var g = '#/Gallery?c=';
+
+			self.$scope.SideNavs = [
+				{ Text: 'All', Url: '#/Gallery' },
+				{ Text: 'Botox', Url: g + 'bx' },
+				{ Text: 'Facial Injectibles', Url: g + 'fj' },
+				{ Text: 'Skin Resurfacing', Url: g + 'sr' },
+				{ Text: 'Skin Tightening', Url: g + 'st' },
+				{ Text: 'Pigmentation/Melasma', Url: g + 'pm' },
+				{ Text: 'BodyShaping/HCG', Url: g + 'bhcg' },
+				{ Text: 'Laser Hair Removal', Url: g + 'lhr' },
+				{ Text: 'Vein Reduction', Url: g + 'vr' }
+			] 
+
 			self.init();
 			CheckQueryString();
 		}

@@ -37,6 +37,7 @@
 					return false;
 			}
 
+
 			self.$scope.EveryThird = everyThird;
 
 			var templates = [
@@ -67,12 +68,19 @@
 						self.$scope.Products = data;
 
 						self.$scope.FeaturedProducts = SetFeaturedProducts();
-						console.log(self.$scope.FeaturedProducts);
+						self.$scope.BrandProducts = self.$scope.Products.filter(FilterCategory);
 					},
 					function (error) {
 						console.log(error);
 					});
 			}
+
+			self.$scope.currentPage = 1;
+
+			self.$scope.setPage = function (pageNo) {
+				self.$scope.currentPage = pageNo;
+
+			};
 
 			function menuTrigger() {
 				if (!self.$scope.open)
@@ -98,6 +106,12 @@
 				self.$scope.OrderBy.LoHiClass = 'btn btn-theme-brown';
 			}
 
+			function FilterCategory(value) {
+				console.log('filtering');
+				console.log(value);
+				return value["Brand"] == $routeParams["Category"];
+			}
+
 			self.$scope.LoHi = loHi;
 			self.$scope.HiLo = hiLo;
 
@@ -110,6 +124,7 @@
 			self.$scope.Categories = categories;
 
 			self.$scope.Category = $routeParams["Category"];
+			
 
 			self.$scope.template = { name: "Index", url: nav + "Index.html" };
 

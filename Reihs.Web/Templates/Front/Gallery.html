@@ -15,13 +15,24 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
-				<h4>Gallery</h4>
 				<ul class=" list-unstyled cat-list visible-md visible-lg">
 					<li class="filter {{allactive}}" ng-click="SetFilter('')"><a>All Photos</a></li>
 					<li ng-repeat="Category in Categories"
 					    class="filter {{Category.Active}}"
 					    ng-click="SetFilter(Category)"><a>{{Category.Name}}</a></li>
 				</ul>
+				<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
+					<div class="dr-trigger" ng-click="MenuTrigger()">
+						<span class="dr-icon dr-icon-settings"></span>
+						<a class="dr-label">Menu</a>
+					</div>
+					<div ng-show="open" class="subNav">
+						<ul>
+							<li ng-repeat="link in SideNavs"><a href="{{link.Url}}">{{link.Text}}</a><i class="fa fa-angle-right"></i></li>
+						</ul>
+					</div>
+				</div>
+				<br /><br />
 			</div>
 			<div class="col-md-8 col-md-offset-1">
 				<h1>{{CurrentCategory}}</h1>

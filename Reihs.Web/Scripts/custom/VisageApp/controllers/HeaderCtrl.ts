@@ -3,8 +3,10 @@
 		private $scope: Extensions.IHeaderCtrlScope;
 		private MarketSvc: MarketService;
 		private PostDataSvc: PostDataService;
+		private ProductSvc: ProductService;
 		private TickerSvc: TickerDataService;
 		private $routeParams: IRouteParams;
+		private Products: any;
 
 		private init(): void {
 			var self = this;
@@ -27,7 +29,8 @@
 			$location: ng.ILocationService,
 			$anchorScroll: ng.IAnchorScrollService,
 			tickerSvc: TickerDataService,
-			$routeParams: IRouteParams)
+			$routeParams: IRouteParams,
+			productSvc: ProductService)
 		{
 			var self = this;
 			self.$scope = $scope;
@@ -40,6 +43,7 @@
 			self.$scope.IsAlertVisible = false;
 			self.$routeParams = $routeParams;
 			self.$scope.SearchFail = false;
+			self.ProductSvc = productSvc;
 
 			self.$scope.Navs = [
 				new SideMenuItem('Home', 'fa-home', 1, '#/', true),
@@ -82,6 +86,7 @@
 				new SearchItem('SiteMap', '/SiteMap'),
 
 				new SearchItem('Market: Shop at Lebeau Visage', '/Market'),
+
 				new SearchItem(StoreDescription('SkinMedica'), StoreLink('SkinMedica')),
 				new SearchItem(StoreDescription('Elta MD'), StoreLink('Elta MD')),
 				new SearchItem(StoreDescription('RevitaLash'), StoreLink('RevitaLash')),
@@ -163,24 +168,38 @@
 					$location.path(link);
 					document.getElementById('search').className = 'closed';
 					self.$scope.selected = undefined;
+					self.$scope.SearchFail = false;
 				} else {
 					self.$scope.SearchFail = true;
 				}
 			}
 
-			//#region Wasted Time
-			//function getBlogs() {
-			//	self.PostDataSvc.getAll().then(
-			//		function (data) {
-			//			self.$scope.Posts = data;
-			//		},
-			//		function (error) {
-			//			console.log(error);
-			//		});
-			//}
+			function GetProducts() {
+				console.log("get Products");
+				self.ProductSvc.getAll().then(
+					function (data) {
+						self.Products = data;
+						SetProductSearchItems();
+					},
+					function (error) {
+						console.log(error);
+					});
+			}
 
-			//getBlogs();
-			//#endregion
+			function ProductDescription(name: string): string {
+				return name;
+			}
+
+			function ProductLink(id: number): string {
+				return "/Market/Item/" + id;
+			}
+
+			function SetProductSearchItems() {
+				for (var x in self.Products) {
+					self.$scope.SearchItems.push(new SearchItem(ProductDescription(self.Products[x].Name), ProductLink(self.Products[x].Id))); 
+				}
+			}
+
 
 			self.$scope.Search = search;
 
@@ -196,6 +215,9 @@
 
 			self.init();
 			GetAllTickerItems();
+			GetProducts();
+			
+			
 		}
 	}
 
@@ -219,5 +241,5 @@
 		}
 	}
 
-	HeaderCtrl.$inject = ['$scope', 'MarketService', 'PostDataService', '$location', '$anchorScroll', 'TickerDataService', '$routeParams'];
+	HeaderCtrl.$inject = ['$scope', 'MarketService', 'PostDataService', '$location', '$anchorScroll', 'TickerDataService', '$routeParams', 'ProductService'];
 } 
