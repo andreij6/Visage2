@@ -3,5 +3,8 @@
 		Message: ContactMessage;
 		MapUrl: string;
 		sendMessage(): void;
+		ShowImage(locationCode: string): void;
+		LocationImage: string;
+		Showing: boolean;
 	}
 }    

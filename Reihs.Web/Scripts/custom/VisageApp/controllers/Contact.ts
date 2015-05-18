@@ -19,7 +19,26 @@
 					function (error) { console.log(error); });
 			}
 
+			function showImage(code: string) {
+				self.$scope.Showing = true;
+
+				switch (code) {
+					case 'D':
+						self.$scope.LocationImage = "../../Content/Images/Locations/Dallas.JPG";
+						break;
+					case 'S':
+						self.$scope.LocationImage = "../../Content/Images/Locations/Schulenburg.JPG";
+						break;
+					case 'F':
+						self.$scope.LocationImage = "../../Content/Images/Locations/Frisco.jpg";
+						break;
+					default:
+						break;
+				}
+			}
+
 			self.$scope.sendMessage = SendMessage;
+			self.$scope.ShowImage = showImage;
 
 			self.init();
 		}
