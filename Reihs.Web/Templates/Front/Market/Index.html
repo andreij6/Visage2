@@ -29,7 +29,9 @@
 						</div>
 						<div ng-show="open" class="subNav">
 							<ul>
-								<li ng-repeat="category in Categories"><a href="#/Market/Products/{{category.Name}}">{{category.Name}}></a><i class="fa fa-angle-right"></i></li>
+								<li ng-repeat="category in Categories">
+									<a href="#/Market/Products/{{category.Name}}">{{category.Name}}</a> <i class="fa fa-angle-right"></i>
+								</li>
 							</ul>
 						</div>
 					</div>
