@@ -3,6 +3,7 @@
 		<img class="pull-right  header-img" src="../../../Content/Images/About/About.png" />
 	</div>
 </div>
+
 <div id="lightbox" ng-show="Showing" ng-click="Showing = false">
 	<p>Click anywhere to close</p>
 	<div id="content">
@@ -82,11 +83,10 @@
 					<li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#">info@lebeauvisagemedspa.com</a></p></li>
 					<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="tel:+12147057676">+214 705 7676</a></p></li>
 					<li> <p><strong><i class="fa fa-phone"></i> Toll:</strong> <a href="tel:+18665426869">+1 866 54 BOTOX (26869)</a></p></li>
-					<li> <p><strong><i class="fa fa-calendar"></i> Hours:</strong> Mon,Wed-Thurs: 9a-5p; Tues:11a-8p, Fri:9a-1:30p, Sat: By Appointment Only!</p></li>
+					<li> <p><strong><i class="fa fa-calendar"></i> Hours:</strong> Mon,Wed,Thurs: 9a-5p; Tues:11a-8p, Fri:9a-1:30p, Sat: By Appointment Only!</p></li>
 				</ul>
 			</div>
 		</div>
-
 		<div class="row">
 			<div class="divide50"></div>
 			<div class="col-md-12">
@@ -100,50 +100,18 @@
 	<div class="row">
 		<section class="services-wrap location-services-wrap">
 			<div class="container">
-				<div class="col-md-4 col-sm-6 margin20">
+				<div class="col-md-4 col-sm-6 margin20" ng-repeat="location in Locations">
 					<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="100ms">
 						<div class="services-box-icon">
 
 						</div><!--services icon-->
 						<div class="services-box-info">
-							<h4>Frisco (Main)</h4>
+							<h4>{{location.Name}}</h4>
 							<ul class="list-unstyled contact contact-info">
-								<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">3685 Preston Road, Ste. 129 Frisco, TX 75034</a></p></li>
-								<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="tel:+12147057676">+214 705 7676</a></p></li>
-								<li> <p><strong><i class="fa fa-calendar"></i> Hours:</strong> Mon,Wed-Thurs: 9a-5p; Tues:11a-8p, Fri:9a-1:30p, Sat: By Appointment Only!</p></li>
-								<li ng-click="ShowImage('F')"><i class="fa fa-camera"></i> Location Photo</li>
-							</ul>
-						</div>
-					</div><!--services box-->
-				</div><!--services col-->
-				<div class="col-md-4 col-sm-6 margin20">
-					<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="200ms">
-						<div class="services-box-icon">
-
-						</div><!--services icon-->
-						<div class="services-box-info">
-							<h4>Dallas</h4>
-							<ul class="list-unstyled contact contact-info">
-								<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">4306 Lovers Lane Dallas, TX 75225</a></p></li>
-								<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="tel:+12147057676">+214 705 7676</a></p></li>
-								<li> <p><strong><i class="fa fa-calendar"></i> Hours:</strong> Thurs: 10a-4p;</p></li>
-								<li ng-click="ShowImage('D')"><i class="fa fa-camera"></i> Location Photo</li>
-							</ul>
-						</div>
-					</div><!--services box-->
-				</div><!--services col-->
-				<div class="col-md-4 col-sm-6 margin20">
-					<div class="services-box wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
-						<div class="services-box-icon">
-
-						</div><!--services icon-->
-						<div class="services-box-info">
-							<h4>Schulenburg Clinic</h4>
-							<ul class="list-unstyled contact contact-info">
-								<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{MapUrl}}">40 East Avenue Schulenburg, TX 78956</a></p></li>
-								<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="tel:+12147057676">+214 705 7676</a></p></li>
-								<li> <p><strong><i class="fa fa-calendar"></i> Hours:</strong> June 19th; August 14th; September 25th; December 4th: 10a-5p;</p></li>
-								<li ng-click="ShowImage('S')"><i class="fa fa-camera"></i> Location Photo</li>
+								<li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> <a href="{{location.MapUrl}}">{{location.Address}}</a></p></li>
+								<li> <p><strong><i class="fa fa-mobile"></i> Phone:</strong> <a href="tel:+12147057676">{{location.Phone}}</a></p></li>
+								<li> <p><strong><i class="fa fa-calendar"></i> Hours:</strong>{{location.Hours}}</p></li>
+								<li ng-click="ShowImage(location)"><i class="fa fa-camera"></i> Facility Photo</li>
 							</ul>
 						</div>
 					</div><!--services box-->
@@ -156,8 +124,8 @@
 		<div id="location"></div>
 	</div>
 
-
-	<script>
-		gMap.initLocations();
-		//gMap.initialize_ContactUs();
-	</script>
+</section>
+<script>
+	gMap.initLocations();
+	//gMap.initialize_ContactUs();
+</script>
