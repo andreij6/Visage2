@@ -1,4 +1,5 @@
 ﻿module VisageApp {
+
 	export class About {
 		private $scope: Extensions.IAboutScope;
 

@@ -618,6 +618,7 @@
     <Content Include="Templates\Front\Market\ProductDetail.html" />
     <Content Include="Templates\Front\Market\Index.html" />
     <Content Include="Templates\Front\Market\ProductList.html" />
+    <Content Include="Templates\Front\ProductDescriptions.html" />
     <Content Include="Templates\Front\Resources\Index.html" />
     <Content Include="Templates\Front\Resources\FactSheets.html" />
     <Content Include="Templates\Front\Resources\NewPatients.html" />

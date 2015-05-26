@@ -25,11 +25,12 @@ module AdminApp {
 			function edit(product: Extensions.Product) {
 				self.ProductSvc.update(product).then(
 					function (data) {
-						console.log('done editing');
 					},
 					function (error) {
 						console.log(error);
 					});
+
+				$location.path('/Market/Products');
 			}
 
 			function getSingle(Id: number) {
@@ -50,10 +51,12 @@ module AdminApp {
 			function save(Product: Extensions.Product) {
 				self.ProductSvc.save(Product).then(
 					function (data) {
-						console.log(data);
+
 					}, function (error) {
 						HandleFailedAPI(error);
 					});
+
+				$location.path('/Market/Products');
 			}
 
 			function deleteProduct(Product: Extensions.Product) {
@@ -72,8 +75,6 @@ module AdminApp {
 					self.$scope.Editing = false;
 					self.$scope.PageTitle = "New Product";
 				}
-
-				console.log(self.$scope.Product);
 			}
 
 			SetStage();
@@ -84,6 +85,7 @@ module AdminApp {
 
 			self.init();
 		}
+
 	}
 
 	ProductCtrl.$inject = ['$scope', '$location', '$routeParams', 'ProductDataService'];
