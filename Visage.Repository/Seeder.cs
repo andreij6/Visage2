@@ -786,6 +786,24 @@ namespace Reihs.Repository
 				manager.AddToRole(user.Id, "SuperAdmin");
 			}
 
+			if (!context.Users.Any(u => u.UserName == "acreativej@gmail.com")) {
+				var store = new UserStore<ApplicationUser>(context);
+				var manager = new UserManager<ApplicationUser>(store);
+				var user = new ApplicationUser { UserName = "acreativej@gmail.com" };
+
+				manager.Create(user, "ChangeItAsap!2");
+				manager.AddToRole(user.Id, "SuperAdmin");
+			}
+
+			if (!context.Users.Any(u => u.UserName == "info@lebeauvisage.com")) {
+				var store = new UserStore<ApplicationUser>(context);
+				var manager = new UserManager<ApplicationUser>(store);
+				var user = new ApplicationUser { UserName = "info@lebeauvisage.com" };
+
+				manager.Create(user, "ChangeItAsap!");
+				manager.AddToRole(user.Id, "SuperAdmin");
+			}
+
 			context.SaveChanges();
 
 		}
