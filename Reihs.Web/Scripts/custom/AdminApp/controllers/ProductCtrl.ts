@@ -27,7 +27,7 @@ module AdminApp {
 					function (data) {
 					},
 					function (error) {
-						console.log(error);
+						//console.log(error);
 					});
 
 				$location.path('/Market/Products');
@@ -37,10 +37,10 @@ module AdminApp {
 				self.ProductSvc.getById(Id).then(
 					function (data) {
 						self.$scope.Product = data;
-						console.log("Data:");
-						console.log(data);
-						console.log("Product");
-						console.log(self.$scope.Product);
+						//console.log("Data:");
+						//console.log(data);
+						//console.log("Product");
+						//console.log(self.$scope.Product);
 
 					},
 					function (error) {
@@ -62,7 +62,7 @@ module AdminApp {
 			function deleteProduct(Product: Extensions.Product) {
 				self.ProductSvc.deleteProduct(Product).then(
 					function (data) {
-						console.log(data);
+						//console.log(data);
 					}, function (error) { HandleFailedAPI(error) });
 			}
 

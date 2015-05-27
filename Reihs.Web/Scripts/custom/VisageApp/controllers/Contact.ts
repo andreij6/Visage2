@@ -57,8 +57,8 @@
 
 		SendMessage() {
 			this.ApiService.sendMessage(this.$scope.Message).then(
-				function (data) { console.log("send me to the success message"); },
-				function (error) { console.log(error); });
+				function (data) { //console.log("send me to the success message"); },
+				function (error) { //console.log(error); });
 		}
 	}
 

@@ -23,7 +23,7 @@
 						self.$scope.Product = data;
 					},
 					function (error) {
-						console.log(error);
+						//console.log(error);
 					});
 			}
 
@@ -31,10 +31,10 @@
 				self.ProductSvc.getAll().then(
 					function (data) {
 						self.$scope.Products = data;
-						console.log(data);
+						//console.log(data);
 					},
 					function (error) {
-						console.log(error);
+						//console.log(error);
 					});
 			}
 

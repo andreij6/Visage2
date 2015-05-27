@@ -27,7 +27,7 @@
 			];
 
 			function everyThird(index: number): boolean {
-				console.log('here');
+				//console.log('here');
 				if (index == 0)
 					return false;
 
@@ -62,7 +62,7 @@
 			}
 
 			function GetProducts() {
-				console.log("get Products");
+				//console.log("get Products");
 				self.ProductSvc.getAll().then(
 					function (data) {
 						self.$scope.Products = data;
@@ -71,7 +71,7 @@
 						self.$scope.BrandProducts = self.$scope.Products.filter(FilterCategory);
 					},
 					function (error) {
-						console.log(error);
+						//console.log(error);
 					});
 			}
 
@@ -93,25 +93,30 @@
 			}
 
 			function hiLo() {
-				console.log("Hi Lo");
+				//console.log("Hi Lo");
 				self.$scope.OrderBy.Parameter = '-UnitPrice';
 				self.$scope.OrderBy.HiLoClass = ' btn btn-theme-brown ';
 				self.$scope.OrderBy.LoHiClass = 'btn btn-theme-dark'
 			}
 
 			function loHi() {
-				console.log("Lo Hi");
+				//console.log("Lo Hi");
 				self.$scope.OrderBy.Parameter = 'UnitPrice';
 				self.$scope.OrderBy.HiLoClass = ' btn btn-theme-dark';
 				self.$scope.OrderBy.LoHiClass = 'btn btn-theme-brown';
 			}
 
 			function FilterCategory(value) {
-				console.log('filtering');
-				console.log(value);
+				//console.log('filtering');
+				//console.log(value);
 				return value["Brand"] == $routeParams["Category"];
 			}
 
+			function goToProductPage(product: any) {
+				$location.path('/Market/Item/' + product.Id);
+			}
+
+			self.$scope.GoToProductPage = goToProductPage;
 			self.$scope.LoHi = loHi;
 			self.$scope.HiLo = hiLo;
 
@@ -137,10 +142,10 @@
 			function addToCart(cmd: string, hosted_button_id: string) {
 				self.ProductSvc.addToCart(cmd, hosted_button_id).then(
 					function (data) {
-						console.log(data);
+						//console.log(data);
 					},
 					function (error) {
-						console.log(error);
+						//console.log(error);
 					});
 			}
 

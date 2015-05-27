@@ -13,6 +13,7 @@
 
 		currentPage: number;
 		setPage(pageNo: number): void;
+		GoToProductPage(product: any): void;
 
 		open: boolean;
 		YouTubeMenu: string;

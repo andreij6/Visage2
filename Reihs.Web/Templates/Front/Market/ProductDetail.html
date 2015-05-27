@@ -22,11 +22,11 @@
 				<div class="divide20"></div>
 				<div class="divide15"></div>
 				<section style="height: 400px; overflow-y: scroll; padding: 8px;">
-					<div ng-repeat="product in Products | filter: { Brand : Product.Brand } | limitTo: 5">
+					<div ng-repeat="product in Products | filter: { Brand : Product.Brand } | limitTo: 8">
 						<a href="#/Market/Item/{{product.Id}}">
 							<div class="thumbnail">
 								<h3 class="heading">{{product.Name}}</h3>
-								<img src="{{product.ImagePath}}" style="height: 150px;" alt="">
+								<img src="{{product.ImagePath}}" style="height: 150px;" alt="{{product.Name}}">
 							</div>
 						</a>
 					</div>

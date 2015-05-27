@@ -28,7 +28,7 @@
 
 			self.init();
 			self.BuildStaffers();
-			console.log(self.$scope.TeamMembers);
+			//console.log(self.$scope.TeamMembers);
 		}
 
 		BuildStaffers(): any {

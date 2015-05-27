@@ -80,7 +80,7 @@
 
 			self.init();
 
-			console.log('in constructor');
+			//console.log('in constructor');
 		}
 	}
 

@@ -51,8 +51,8 @@
 
 			//#region Registered Functions
 			function Print(): void {
-				console.log(self.$scope.Post);
-				console.log(self.$scope.Editing);
+				////console.log(self.$scope.Post);
+				////console.log(self.$scope.Editing);
 			}
 
 			//#region Post Functions
@@ -77,7 +77,7 @@
 			function Delete(post: Extensions.bPost): void {
 				self.postSvc.Delete(post).then(
 					function (data) {
-						console.log(data);
+						//console.log(data);
 					}, function (error) { HandleFailedAPI(error) });
 			}
 
@@ -134,12 +134,12 @@
 			function DeleteCategory(category: Extensions.bCategory): void {
 				self.catSvc.deleteCategory(category).then(
 					function (data) {
-						console.log(data);
+						//console.log(data);
 					}, function (error) { HandleFailedAPI(error) });
 			}
 
 			function SaveCategory(category: Extensions.bCategory): void {
-				console.log("Saved");
+				//console.log("Saved");
 				self.$location.path('/Blogs/Manage');
 			}
 			//#endregion

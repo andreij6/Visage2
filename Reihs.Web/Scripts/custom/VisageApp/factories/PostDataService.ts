@@ -26,7 +26,7 @@
 				var deferred = self.qService.defer();
 
 				self.httpService.get(self.PostAPI + "/Get").then(function (result: any) {
-					console.log(result);
+					//console.log(result);
 					self.Posts = result.data;
 					deferred.resolve(self.Posts);
 				}, function (error) {
@@ -46,7 +46,7 @@
 				var deferred = self.qService.defer();
 
 				self.httpService.get(self.PostAPI + "/Get/" + postId).then(function (result: any) {
-					console.log(result);
+					//console.log(result);
 					self.Post = result.data;
 					deferred.resolve(self.Post);
 				}, function (error) {

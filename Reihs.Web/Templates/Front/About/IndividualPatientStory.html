@@ -60,17 +60,18 @@
 					<div class="divide30"></div>
 					<hr />
 					<section class="col-md-12">
-						<div class="col-md-6" ng-click="Showing = true">
-							<img src="http://placehold.it/300&text=View+Testimonial" class="img-responsive">
+						<div class="col-xs-12" style="cursor: pointer;">
+							<a  ng-href="" ng-click="Showing = true"><h3 class="heading">Click to View Written Testimonial</h3></a>
+							<!--<img src="http://placehold.it/300&text=View+Testimonial" class="img-responsive">-->
 						</div>
-						<div class="col-md-12">
-							<h3>Treatment Information</h3>
+						<div class="col-xs-12">
+							<h5>Treatment Information</h5>
 							<ul>
 								<li ng-repeat="t in TreatmentObjs" class="treatments">
 									<a href="#/Treatments?t={{t.Code}}">{{t.Name}}</a> |
 								</li>
 							</ul>
-							<h3>Photos of treatments</h3>
+							<h5>Photos of treatments</h5>
 							<ul>
 								<li ng-repeat="t in TreatmentObjs" class="treatments">
 									<a href="#/Gallery?c={{t.Code}}">{{t.Name}}</a> |

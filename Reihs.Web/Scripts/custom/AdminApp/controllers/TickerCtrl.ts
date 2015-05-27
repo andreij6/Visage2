@@ -49,7 +49,7 @@
 			}
 
 			function HandleFailedAPI(message: any) {
-				console.log(message);
+				//console.log(message);
 			}
 
 			function actualSave() {

@@ -25,7 +25,7 @@
 						self.$scope.Products = data;
 					},
 					function (error) {
-						console.log(error);
+						//console.log(error);
 					});
 			}
 

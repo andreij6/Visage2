@@ -342,7 +342,7 @@ module VisageApp {
 						self.$scope.Client = clients[pos];
 						clients[pos].Current = true;
 						self.$scope.TreatmentObjs = self.$scope.Client.TreatmentObjs;
-						console.log(self.$scope.TreatmentObjs);
+						//console.log(self.$scope.TreatmentObjs);
 						self.$scope.VideoTemplate = clients[pos].VideoTemplateString();
 					}
 				}

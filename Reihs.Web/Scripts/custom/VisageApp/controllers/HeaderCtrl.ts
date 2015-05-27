@@ -94,7 +94,7 @@
 			];
 
 			function HandleFailedAPI(message: any) {
-				console.log(message);
+				//console.log(message);
 			}
 
 			function UpdateSO() {
@@ -155,7 +155,7 @@
 				self.TickerSvc.getAll().then(
 					function (data) {
 						self.$scope.Messages = data;
-						console.log(data);
+						//console.log(data);
 					},
 					function (reason) { HandleFailedAPI(reason) }
 					);
@@ -175,14 +175,14 @@
 			}
 
 			function GetProducts() {
-				console.log("get Products");
+				//console.log("get Products");
 				self.ProductSvc.getAll().then(
 					function (data) {
 						self.Products = data;
 						SetProductSearchItems();
 					},
 					function (error) {
-						console.log(error);
+						//console.log(error);
 					});
 			}
 

@@ -58,12 +58,12 @@
 		save(ticker: Extensions.TickerMessage): ng.IPromise<any> {
 			var self = this;
 			var deferred = self.qService.defer();
-			console.log(ticker);
+			//console.log(ticker);
 
 			self.httpService.post(self.TickerAPI + '/Post',
 				{ "Message": ticker.Message, "Dates": ticker.Dates, "Url": ticker.Url }).then(
 				function (result) {
-					console.log(ticker);
+					//console.log(ticker);
 					self.Messages.push(ticker);
 				}, function (error) {
 					deferred.reject(error);

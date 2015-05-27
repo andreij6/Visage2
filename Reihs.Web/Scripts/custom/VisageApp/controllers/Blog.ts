@@ -7,7 +7,7 @@
 			var self = this;
 
 			self.$scope.GetAll();
-			console.log(self.$scope.Posts);
+			//console.log(self.$scope.Posts);
 		}
 
 		constructor(
@@ -23,7 +23,7 @@
 			}
 
 			function addPost(post: Extensions.bPost, Id: number): void {
-				console.log('here');
+				//console.log('here');
 				if (post.Id == Id)
 					self.$scope.Post = post;
 			}
@@ -32,7 +32,7 @@
 				self.PostSvc.getAll().then(
 					function (data) {
 						self.$scope.Posts = data;
-						console.log($routeParams.Id);
+						//console.log($routeParams.Id);
 						if ($routeParams.Id) {
 							self.$scope.Posts.forEach(post => addPost(post, $routeParams.Id));
 						}
