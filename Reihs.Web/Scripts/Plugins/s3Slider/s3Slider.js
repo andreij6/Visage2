@@ -42,7 +42,7 @@ long as you leave my infos at the top.
 			if (items.length > 0) {
 				timeOutFn = setTimeout(makeSlider, thisTimeOut);
 			} else {
-				//console.log("Poof..");
+				console.log("Poof..");
 			}
 		}
 
