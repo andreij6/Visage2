@@ -63,7 +63,8 @@ namespace Reihs.Repository
 						Brand = "SkinMedica",
 						UnitPrice = 125.0,
 						PayPalId = "C8GPXCKXK7JAA",
-						ImagePath = getImgSM("LYTERA Primary 2oz")
+						ImagePath = getImgSM("LYTERA Primary 2oz"),
+						Description = ProductDescriptions.Lyteria;
 					},
 					new mProduct {
 						Name = "AHA / BHA Cleanser",
