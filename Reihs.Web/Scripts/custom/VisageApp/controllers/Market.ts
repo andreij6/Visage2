@@ -23,7 +23,8 @@
 				{ Name: "SkinMedica" },
 				{ Name: "Elta MD" },
 				{ Name: "RevitaLash" },
-				{ Name: "Clarisonic" }
+                { Name: "Clarisonic" },
+                { Name: "Colorscience" }
 			];
 
 			function everyThird(index: number): boolean {

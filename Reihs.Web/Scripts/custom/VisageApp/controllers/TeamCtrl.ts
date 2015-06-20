@@ -39,7 +39,7 @@
 				"Physician",
 				"Owner and Full-time Physician of Le Beau Visage.",
 				true,
-				"Jason M.", "Riehs, MD JD", 1);
+				"Jason", "Riehs", 1);
 
 			self.$scope.TeamMembers.push(drReihs);
 
@@ -52,7 +52,7 @@
 			self.$scope.TeamMembers.push(RachelO);
 
 			var Jennifer = new Staffer(
-				"Front Office",
+                "Esthetician",
 				"I was born and raised in Dallas, Texas.  I graduated top of the class from Paul Mitchell The School and have been part of this amazing industry for over 10 years.  Making people look and feel better about themselves is a truly rewarding experience that never gets old.  Thank you for letting me be a daily part of your life and here’s to many more years to come!",
 				false,
 				"Jennifer", "Manning", 3
@@ -61,7 +61,7 @@
 			self.$scope.TeamMembers.push(Jennifer);
 
 			var Arden = new Staffer(
-				'',
+                "Esthetician",
 				'',
 				false,
 				'Arden', 'Alexander', 4
