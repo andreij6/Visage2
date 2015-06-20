@@ -17,12 +17,7 @@
 					<ul class="nav navbar-nav pull-left visible-sm">
 						<li><a href="#/" class="navbar-brand">Le Beau Visage</a></li>
 					</ul>
-					<ul class="list-inline top-social pull-right">
-						<li><a href="http://www.facebook.com/pages/Le-Beau-Visage-Med-Spa/130922822976?ref=ts"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/LeBeauVisage"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="http://www.youtube.com/user/LeBeauVisageMedicalS"><i class="fa fa-youtube-play"></i></a></li>
-						<li><a href="https://www.linkedin.com/pub/jason-riehs/80/59a/4a5"><i class="fa fa-linkedin"></i></a></li>
-					</ul><br /><br />
+					<br /><br />
 					<ul class="nav navbar-nav pull-right" id="main-navigation">
 						<li><a href="#/">Home</a></li>
 						<li><a href="#/About">About</a></li>
@@ -35,7 +30,6 @@
 					</ul>
 
 				</div>
-
 				<div class="clear col-sm-3 header-side">
 					<ul class="nav nav-pills nav-stacked visible-md visible-lg">
 						<li><a href="http://lebeauvisagemedspa.com/expo/">Cosmetic Expo</a></li>
@@ -43,18 +37,13 @@
 						<li>
 							<a href="#/Gallery">PHOTO GALLERY</a>
 						</li>
-
-
 						<li><a href="#/Special/Monthly">Monthly Specials</a></li>
-
 						<li class="phone-number">Phone: +1.214.705.7676</li>
-
+						
 					</ul>
 				</div>
-
 			</div>
 		</section>
-
 	</div>
 	<div class="visible-xs">
 		<div class="navbar navbar-default navbar-fixed-top" role="navigation" ng-hide="SideOpen">
@@ -95,10 +84,10 @@
 
 	<div class="divide70"></div>
 
-	<div class="alert-success alert container" ng-show="IsAlertVisible">
+	<!--<div class="alert-success alert container" ng-show="IsAlertVisible">
 		<button type="button" class="close" ng-click="IsAlertVisible = false">×</button>
 		Item Successfully added!!!
-	</div>
+	</div> -->
 	
 	<div id="search">
 		<button type="button" class="close">×</button>
@@ -113,7 +102,9 @@
 			<a class="btn btn-primary" ng-click="Search()">Search</a>
 		</form>
 	</div>
-	<div class="ng-view" autoscroll></div>
+
+	<div class="ng-view" autoscroll>
+	</div>
 
 	<footer id="footer-option">
 		<div class="container ">

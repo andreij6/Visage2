@@ -11,3 +11,9 @@
 .patientname{
     margin: 5px 0 0 0;
 }
+
+.lightbox-written {
+	height: 60%;
+	width: 50%;
+	margin-top: 0;
+}

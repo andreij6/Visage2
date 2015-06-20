@@ -60,14 +60,14 @@
 
 			self.$scope.TeamMembers.push(Jennifer);
 
-			var Jenny = new Staffer(
-				'Esthetician',
-				'A true Texas girl and the newest addition to the team, I am a medical aesthetician with prior dermatology experience.  I graduated from the Aveda Institute Dallas then went on to continue my education specializing in laser and aesthetic treatments.  I also worked closely with skin care patients.  I am a music lover who also enjoys traveling the world and living a healthy life.',
+			var Arden = new Staffer(
+				'',
+				'',
 				false,
-				'Jenny', 'Rector', 4
+				'Arden', 'Alexander', 4
 				);
 
-			self.$scope.TeamMembers.push(Jenny);
+			self.$scope.TeamMembers.push(Arden);
 
 			var RachelG = new Staffer(
 				'Medical Assitant',
