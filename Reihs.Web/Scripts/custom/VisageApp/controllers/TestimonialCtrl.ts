@@ -320,7 +320,7 @@ module VisageApp {
 			clients.push(jan);
 			clients.push(debbie);
 			clients.push(angela);
-			//clients.push(nancy);  //once her information is filled out we'll add her back
+			clients.push(nancy);  //once her information is filled out we'll add her back
 			clients.push(tara);
 			clients.push(lynn);
 			clients.push(chad);
