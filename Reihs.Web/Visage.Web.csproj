@@ -407,9 +407,12 @@
     <Content Include="Content\Images\Products\SkinMedica\Ultra_Sheer_Moisturizer_2oz.png" />
     <Content Include="Content\Images\Products\SkinMedica\Uplifting_Eye_Serum.png" />
     <Content Include="Content\Images\Products\SkinMedica\VitaminCE.png" />
+    <Content Include="Content\Images\Staff\group.jpg" />
+    <Content Include="Content\Images\Staff\Alexander.jpg" />
     <Content Include="Content\Images\Staff\Karagiannias.jpg" />
     <Content Include="Content\Images\Special\March15_Monthly.jpg" />
     <Content Include="Content\Images\Staff\Marchand.jpg" />
+    <Content Include="Content\Images\Staff\TeamBanner.png" />
     <Content Include="Content\Images\Staff\Wheeler.jpg" />
     <Content Include="Content\Images\Staff\Thompson-2.jpg" />
     <Content Include="Content\Images\Staff\Rector.jpg" />

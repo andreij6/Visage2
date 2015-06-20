@@ -11,6 +11,12 @@
 	border: none;
 }
 
+.btn-theme-bg:hover{
+    background-color: white !important;
+    border-color: #92795b !important;
+    color: #92795b;
+}
+
 h1 {
 	color: #92795b;
 }

@@ -1,7 +1,7 @@
 ﻿<div class="breadcrumb-wrap visible-md visible-lg">
     <div class="container">
     	<div class="row">
-	    	<img class="pull-right header-img" src="../../../Content/Images/About/About.png" />
+	    	<img class="pull-right header-img" src="../../../Content/Images/Staff/TeamBanner.png" />
     	</div>
     </div>
 </div>
@@ -25,9 +25,8 @@
 						<h4>Menu</h4>
 						<ul class="list-unstyled cat-list">
 							<li><a href="#/About">Dr. Riehs</a><i class="fa fa-angle-right"></i></li>
-							<li> <a href="#/Stories">Patient Stories</a> <i class="fa fa-angle-right"></i></li>
-							<li> <a href="#/Contact">Locations &amp; Contact</a> <i class="fa fa-angle-right"></i></li>
 						</ul>
+						<a href="#/Contact" class="btn btn-theme-bg btn-block">Schedule a Consultation</a>
 					</div>
 					<div class="dr-menu visible-sm visible-xs {{YouTubeMenu}}">
 						<div class="dr-trigger" ng-click="MenuTrigger()">
@@ -37,8 +36,6 @@
 						<div ng-show="open" class="subNav">
 							<ul>
 								<li><a href="#/About">Dr. Riehs</a><i class="fa fa-angle-right"></i></li>
-								<li><a href="#/Stories">Patient Stories</a><i class="fa fa-angle-right"></i></li>
-								<li> <a href="#/Contact">Locations &amp; Contact</a> <i class="fa fa-angle-right"></i></li>
 							</ul>
 						</div>
 					</div>
@@ -61,7 +58,8 @@
 						</div>
 					</div>
 					<div class="col-md-7 margin20">
-						<h4>{{Member.FullName()}}</h4>
+						<span ng-if="Member.OrderNumber === 1"><h4>Jason M. Riehs MD, JD</h4></span>
+						<span ng-if="Member.OrderNumber > 1"><h4>{{Member.FullName()}}</h4></span>
 						<span>{{Member.Position}}</span>
 						<p> {{Member.Biography}} <a href="#/About" ng-show="Member.ReadMore">Read More...</a></p>
 					</div><!--end JMR-->

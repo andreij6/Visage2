@@ -37,9 +37,16 @@
 
 			var drReihs = new Staffer(
 				"Physician",
-				"Owner and Full-time Physician of Le Beau Visage.",
-				true,
-				"Jason M.", "Riehs, MD JD", 1);
+				"Dr. Riehs received his undergraduate degree from Oklahoma Christian University in Biology, Pre-med, Suma Cum-Laude and attended medical school at the prestigious University of Texas Health Science Center located in the Texas Medical Center in Houston."
+					+ "He completed his internship and trained in internal medicine and as a pediatrics resident in Houston at MD Anderson Cancer"
+					+ "Hospital, Hermann Hospital, and St. Luke’s Hospital.In addition to his medical degree, he earned a graduate degree from"
+				     + "the University of Houston Law Center in 2004 with a focus in Health Law."
+				     + "After completing law school, Dr.Riehs relocated in Frisco, Texas, where he opened his cosmetic practice in 2005. Dr.Riehs is"
+				     + "currently an advanced injectable trainer with Medicis Aesthetics, Inc., the sole provider of Restylane / Perlane dermal filler."
+				     + "As a faculty member, he provides advanced aesthetic injection training to physician and nurse injectors and is recognized"
+				     + "throughout the country as an elite Botox and Restylane / Perlane injector.",
+						false,
+				"Jason", "Riehs", 1);
 
 			self.$scope.TeamMembers.push(drReihs);
 
