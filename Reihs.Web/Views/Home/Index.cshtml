@@ -30,7 +30,7 @@
 					
 				</div>
 				<div class="clear col-sm-3 header-side">
-					<ul class="nav nav-pills nav-stacked visible-md visible-lg">
+					<ul class="nav nav-pills nav-stacked visible-md visible-lg" id="rightSideNav">
 						<li><a href="#/About">Meet Dr. Riehs</a></li>
 						<li><a href="#/Team">Meet the Team</a></li>
 						<li><a href="#/Contact">Locations</a></li>
@@ -40,6 +40,7 @@
 						
 					</ul>
 				</div>
+
 			</div>
 		</section>
 	</div>
@@ -170,13 +171,15 @@
 
 				</ul>*@
 			<ul id="ticker01" class="newsticker pull-left">
-				<li ng-repeat="message in Messages"><span>{{message.Dates}}<span> <a href="{{message.Url}}">{{message.Message}}</a></li>
-				<!-- IDK y this works for 2 tickers but it does so dont remove it-->
+
+				<!--<li ng-repeat="message in Messages"><span>{{message.Dates}}<span> <a href="{{message.Url}}">{{message.Message}}</a></li>
 				<li><span>{{Messages[1].Dates}}</span> <a href="{{Messages[1].Url}}">{{Messages[1].Message}}</a></li>
 				<li><span>{{Messages[0].Dates}}<span> <a href="{{Messages[0].Url}}">{{Messages[0].Message}}</a></li>
-				<li><span>{{Messages[1].Dates}}</span> <a href="{{Messages[1].Url}}">{{Messages[1].Message}}</a></li>
-
+				<li><span>{{Messages[1].Dates}}</span> <a href="{{Messages[1].Url}}">{{Messages[1].Message}}</a></li>-->
+				<li><a href="#/Special/Event">Host a Party</a></li>
+				<li><span>Wednesdays</span><a href="#/Special/Monthly">Micro Wednesdays for $69</a></li>
 				<li><span>Saturdays</span><a href="#/Contact">By Appointments Only, Schedule Today!</a></li>
+
 			</ul>
 		</div>
 	</nav>

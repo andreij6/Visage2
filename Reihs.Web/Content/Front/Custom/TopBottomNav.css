@@ -9,7 +9,7 @@
 }
 
 .banner-3 {
-	background: url('../../Images/Banner/Dallas.png') no-repeat center center;
+	background: url('../../Images/Banner/Isabel.png') no-repeat center center;
 	background-size: auto;
 }
 
@@ -92,3 +92,10 @@ span.ng-binding {
 	display: inline;
 }
 
+#myCarousel {
+	z-index: 2;
+}
+
+#rightSideNav {
+	z-index: 3;
+}

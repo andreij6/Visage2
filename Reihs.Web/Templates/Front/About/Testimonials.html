@@ -29,9 +29,9 @@
 
 				<div class="sidebar-box margin40">
 					<div class="visible-md visible-lg">
-						<h4>Patient Stories</h4>
-						<ul class="list-unstyled cat-list visible-md visible-lg">
-							<li ng-repeat="client in Clients"><a href="#/Stories/{{client.Name}}">{{client.Name}}</a><i class="fa fa-angle-right"></i></li>
+						<!--<h4>Patient Stories</h4>-->
+						<ul class="visible-md visible-lg">
+							<li ng-repeat="client in Clients"><a href="#/Stories/{{client.Name}}"><h3 class="heading">{{client.Name}}: <small>{{client.TreatmentString}}</small></h3></a></li>
 						</ul>
 						<a href="#/Contact" class="btn btn-theme-bg btn-block">Schedule a Consultation</a>
 					</div>

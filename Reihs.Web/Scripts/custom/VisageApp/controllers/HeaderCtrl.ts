@@ -93,6 +93,41 @@
 				new SearchItem(StoreDescription('Clarisonic'), StoreLink('Clarisonic')),
 			];
 
+			//#region Carousel
+			//self.$scope.myInterval = 5000;
+
+			//var slides = [
+			//	{ image: '../../Images/Banner/Dallas.png'},
+			//	{ image: '../../Images/Banner/Nancy.png'},
+			//];
+
+			//self.$scope.Slides = slides;
+			//#endregion
+
+			self.$scope.$watch(function () {
+				return $('#myCarousel').attr('class');
+			}, function (newVal) {
+				console.log(newVal);
+				if (newVal != undefined) {
+					
+					switch (newVal) {
+						case "carousel slide ng-scope banner-1":
+							self.$scope.bannerLink = "#/Stories/Nancy";
+							break;
+						case "carousel slide ng-scope banner-2":
+							self.$scope.bannerLink = "#/";
+							break;
+						case "carousel slide ng-scope banner-3":
+							self.$scope.bannerLink = "#/Stories/Isabel";
+							break;
+						default:
+							break;
+					}
+				} else {
+					self.$scope.bannerLink = "#/Stories/Nancy";
+				}
+			});
+
 			function HandleFailedAPI(message: any) {
 				//console.log(message);
 			}

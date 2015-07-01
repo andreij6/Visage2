@@ -12,6 +12,12 @@
 		Search(): void;
 		SearchFail: boolean;
 
+		//carousel
+		Slides: Array<any>;
+		myInterval: number;
+
+		bannerLink: string;
+
 		Messages: Array<Extensions.TickerMessage>;
 
 		SetNav(name: string): void;

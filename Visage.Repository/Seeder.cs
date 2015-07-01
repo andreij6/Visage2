@@ -33,6 +33,7 @@ namespace Reihs.Repository
 			SeedClarisonic(context);
 			SeedRevitaLashProducts(context);
 			SeedEltaMDProducts(context);
+			SeedColorscience(context);
 			//SeedPackages(context);
 			//SeedCartItems(context);
 			//SeedOrderDetails(context);
@@ -333,7 +334,15 @@ namespace Reihs.Repository
 					UnitPrice = 120.0,
 					PayPalId = "E9G58TQK3UYAY",
 					ImagePath = getImgRL("RevitaLash AdvForm")
-				});
+				},
+				new mProduct {
+					Name = "RevitaBrow Advanced",
+					Brand = "RevitaLash",
+					UnitPrice = 110.0,
+					PayPalId = "",
+					ImagePath = getImgRL("RevitaLash ReVitaBrow")
+				}
+				);
 
 			context.SaveChanges();
 		}
@@ -341,6 +350,32 @@ namespace Reihs.Repository
 		private static string getImgRL(string imageName)
 		{
 			return getImg(imageName, "RevitaLash", ".jpg");
+		}
+
+		private static void SeedColorscience(AppDB context)
+		{
+			context.mProducts.AddOrUpdate(x => x.Name,
+				new mProduct {
+					Name = "Even Up™ Clinical Pigment Perfector™ SPF 50",
+					Brand = "Colorscience",
+					UnitPrice = 120.0,
+					PayPalId = "",
+					ImagePath = getImgCS("Colorscience EvenUp")
+				},
+				new mProduct {
+					Name = "Sunforgettable® Mineral Sunscreen Brush SPF 50 for active use",
+					Brand = "Colorscience",
+					UnitPrice = 64.0,
+					PayPalId = "",
+					ImagePath = getImgCS("Colorscience Sunforgettable")
+				});
+
+			context.SaveChanges();
+		}
+
+		private static string getImgCS(string imageName)
+		{
+			return getImg(imageName, "Colorscience", ".jpg");
 		}
 
 		private static void SeedClarisonic(AppDB context)

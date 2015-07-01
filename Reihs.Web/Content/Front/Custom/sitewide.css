@@ -27,6 +27,9 @@ h1 {
 	left: 400px;
 }
 
+.carousel-inner > .next.active {
+  left: 0;
+}
 
 .item-img-overlay span {
 	background: rgba(245, 236, 207, 0.10);
