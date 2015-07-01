@@ -45,7 +45,7 @@
 								{{Client.Story_Part_One}}
 							</p>
 							<div class="col-md-6" ng-show="Client.HasActiveShot">
-								<img ng-src="{{Client.ActiveImage()}}" class="img-responsive" style="z-index: 2">
+								<img ng-src="{{Client.ActiveImage()}}" class="img-responsive">
 								<div class="divide30"></div>
 							</div>
 							<p>
@@ -60,17 +60,17 @@
 							</p>
 						</div><!--bio-->
 
-						<div class="col-md-12" ng-show="Client.HasVideo">
+						<div class="col-xs-12" ng-show="Client.HasVideo">
 							<div class="col-md-12">
 								<div ng-include="VideoTemplate"></div>
 							</div>
 						</div>
 					</section>
 					<div class="divide30"></div>
-					<hr />
-					<section class="col-md-12">
+					<section class="col-xs-12 clear">
+						<hr />
 						<div class="col-xs-12" style="cursor: pointer;">
-							<a  ng-href="" ng-click="Showing = true"><h3 class="heading">Click to View Written Testimonial</h3></a>
+							<a ng-href="" ng-click="Showing = true"><h3 class="heading">Click to View Written Testimonial</h3></a>
 						</div>
 						<div class="col-xs-12">
 							<h5>Treatment Information</h5>
