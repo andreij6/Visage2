@@ -411,10 +411,11 @@
     <Content Include="Content\Images\Products\SkinMedica\Ultra_Sheer_Moisturizer_2oz.png" />
     <Content Include="Content\Images\Products\SkinMedica\Uplifting_Eye_Serum.png" />
     <Content Include="Content\Images\Products\SkinMedica\VitaminCE.png" />
+    <Content Include="Content\Images\Special\botoxbuddy.jpg" />
     <Content Include="Content\Images\Special\June15.jpg" />
+    <Content Include="Content\Images\Special\microwed.png" />
     <Content Include="Content\Images\Staff\Alexander.jpg" />
     <Content Include="Content\Images\Staff\Karagiannias.jpg" />
-    <Content Include="Content\Images\Special\March15_Monthly.jpg" />
     <Content Include="Content\Images\Staff\Marchand.jpg" />
     <Content Include="Content\Images\Staff\TeamBanner.png" />
     <Content Include="Content\Images\Staff\Wheeler.jpg" />
@@ -422,7 +423,6 @@
     <Content Include="Content\Images\Staff\Gilbreath.jpg" />
     <Content Include="Content\Images\Staff\Thompson.jpg" />
     <Content Include="Content\Images\Staff\Gonzalez.jpg" />
-    <Content Include="Content\Images\Staff\Oteo.jpg" />
     <Content Include="Content\Images\Staff\Reihs_Dogs.jpg" />
     <Content Include="Content\Images\Staff\Riehs.jpg" />
     <Content Include="Content\Images\Testimonials\Angela.jpg" />

@@ -50,14 +50,6 @@
 
 			self.$scope.TeamMembers.push(drReihs);
 
-			var RachelO = new Staffer(
-				"Esthetician",
-				"After having lived in New York several times, I am now happily settled here in Texas!  As a licensed esthetician since 2009, I have had great opportunities working with many different lasers and I love to make patients feel comfortable.   It is my passion to ensure everyone gets the most out of their treatments!",
-				false,
-				"Rachel", "Oteo", 2);
-
-			self.$scope.TeamMembers.push(RachelO);
-
 			var Jennifer = new Staffer(
                 "Esthetician",
 				"I was born and raised in Dallas, Texas.  I graduated top of the class from Paul Mitchell The School and have been part of this amazing industry for over 10 years.  Making people look and feel better about themselves is a truly rewarding experience that never gets old.  Thank you for letting me be a daily part of your life and here’s to many more years to come!",

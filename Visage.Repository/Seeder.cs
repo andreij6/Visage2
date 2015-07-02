@@ -339,7 +339,7 @@ namespace Reihs.Repository
 					Name = "RevitaBrow Advanced",
 					Brand = "RevitaLash",
 					UnitPrice = 110.0,
-					PayPalId = "",
+					PayPalId = "DQ5ZWAMXVE54S",
 					ImagePath = getImgRL("RevitaLash ReVitaBrow")
 				}
 				);
@@ -358,15 +358,15 @@ namespace Reihs.Repository
 				new mProduct {
 					Name = "Even Up™ Clinical Pigment Perfector™ SPF 50",
 					Brand = "Colorscience",
-					UnitPrice = 120.0,
-					PayPalId = "",
+					UnitPrice = 110.0,
+					PayPalId = "B68USQLA37324",
 					ImagePath = getImgCS("Colorscience EvenUp")
 				},
 				new mProduct {
 					Name = "Sunforgettable® Mineral Sunscreen Brush SPF 50 for active use",
 					Brand = "Colorscience",
 					UnitPrice = 64.0,
-					PayPalId = "",
+					PayPalId = "DRLJNG73CTYEA",
 					ImagePath = getImgCS("Colorscience Sunforgettable")
 				});
 
