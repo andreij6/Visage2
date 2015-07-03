@@ -12,6 +12,7 @@ using Microsoft.AspNet.Identity;
 using Reihs.Repository.Models.Market;
 using Visage.Repository.Models.Market;
 using Visage.Repository.Models.Videos;
+using Visage.Repository;
 
 namespace Reihs.Repository
 {
@@ -64,168 +65,192 @@ namespace Reihs.Repository
 						Brand = "SkinMedica",
 						UnitPrice = 125.0,
 						PayPalId = "C8GPXCKXK7JAA",
-						ImagePath = getImgSM("LYTERA Primary 2oz")
+						ImagePath = getImgSM("LYTERA Primary 2oz"),
+						Description = DescriptionsResource.SkinBrightening
 					},
 					new mProduct {
 						Name = "AHA / BHA Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 46.0,
 						PayPalId = "9CMV7RRVWCCAA",
-						ImagePath = getImgSM("AHABHA Cleanser")
+						ImagePath = getImgSM("AHABHA Cleanser"),
+						Description = DescriptionsResource.AHABHACleanser
 					},
 					new mProduct {
 						Name = "AHA/BHA Cream",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0,
 						PayPalId = "886KF2LBAZCSS",
-						ImagePath = getImgSM("AHABHA Cream 2oz")
+						ImagePath = getImgSM("AHABHA Cream 2oz"),
+						Description = DescriptionsResource.AHABHACream
 					},
 					new mProduct {
 						Name = "Daily Physical Defense® Sunscreen Broad Spectrum SPF 30+",
 						Brand = "SkinMedica",
 						UnitPrice = 46.0,
 						PayPalId = "L5V73ZL3CPR4E",
-						ImagePath = getImgSM("Daily-Physical-Defense SPF30 3oz")
+						ImagePath = getImgSM("Daily-Physical-Defense SPF30 3oz"),
+						Description = DescriptionsResource.DailyPhysicalDefense
 					},
 					new mProduct {
 						Name = "Dermal Repair Cream",
 						Brand = "SkinMedica",
 						UnitPrice = 124.0,
 						PayPalId = "TMMZML8T7UH8N",
-						ImagePath = getImgSM("Dermal Repair 1 7oz")
+						ImagePath = getImgSM("Dermal Repair 1 7oz"),
+						Description = DescriptionsResource.DermalRepairCream
 					},
 					new mProduct {
 						Name = "Environmental Defense Sunscreen™ SPF 50+ with UV ProPlex™",
 						Brand = "SkinMedica",
 						UnitPrice = 46.0,
 						PayPalId = "XEGEL2NVP8DGC",
-						ImagePath = getImgSM("Environmental Defense Sunscreen SPF50 3oz")
+						ImagePath = getImgSM("Environmental Defense Sunscreen SPF50 3oz"),
+						Description = DescriptionsResource.EnvironmentalDefenseSunscreen50
 					},
 					new mProduct {
 						Name = "Facial Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0,
 						PayPalId = "38STWVQQLDJMA",
-						ImagePath = getImgSM("Facial Cleanser 6oz")
+						ImagePath = getImgSM("Facial Cleanser 6oz"),
+						Description = DescriptionsResource.FacialCleanser
 					},
 					new mProduct {
 						Name = "Hydrating Complex",
 						Brand = "SkinMedica",
 						UnitPrice = 84.0,
 						PayPalId = "WW2CDDQBK8QDL",
-						ImagePath = getImgSM("Hydrating Complex")
+						ImagePath = getImgSM("Hydrating Complex"),
+						Description = DescriptionsResource.HydratingComplex
 					},
 					new mProduct {
 						Name = "Purifying Foaming Wash",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0,
 						PayPalId = "FEE6PDEGSYD3S",
-						ImagePath = getImgSM("Purifying Foaming Wash 5oz")
+						ImagePath = getImgSM("Purifying Foaming Wash 5oz"),
+						Description = DescriptionsResource.PurifyingFoamingWash
 					},
 					new mProduct {
 						Name = "Redness Relief CalmPlex",
 						Brand = "SkinMedica",
 						UnitPrice = 84.0,
 						PayPalId = "ZG34BPMJSGPXE",
-						ImagePath = getImgSM("Redness Relief CalmPlex")
+						ImagePath = getImgSM("Redness Relief CalmPlex"),
+						Description = DescriptionsResource.RednessReliefCream
 					},
 					new mProduct {
 						Name = "Rejuvenative Moisturizer",
 						Brand = "SkinMedica",
 						UnitPrice = 56.0,
 						PayPalId = "4VESWU62UYLCJ",
-						ImagePath = getImgSM("Rejuvenative Moisturizer 2oz")
+						ImagePath = getImgSM("Rejuvenative Moisturizer 2oz"),
+						Description = DescriptionsResource.RejuvenateMoisturizer
 					},
 					new mProduct {
 						Name = "Rejuvenative Toner",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0,
 						PayPalId = "8FBNWSENXFLK6",
-						ImagePath = getImgSM("Rejuvenative Toner 6oz")
+						ImagePath = getImgSM("Rejuvenative Toner 6oz"),
+						Description = DescriptionsResource.RejuvenateToner
 					},
 					new mProduct {
 						Name = "Retinol Complex .25",
 						Brand = "SkinMedica",
 						UnitPrice = 60.0,
 						PayPalId = "VL7WJ37J5GMX6",
-						ImagePath = getImgSM("Retinol Complex 25")
+						ImagePath = getImgSM("Retinol Complex 25"),
+						Description = DescriptionsResource.RetinolComplex25
 					},
 					new mProduct {
 						Name = "Retinol Complex 0.5",
 						Brand = "SkinMedica",
 						UnitPrice = 75.0,
 						PayPalId = "ZWDJPNDRZZTU6",
-						ImagePath = getImgSM("Retinol Complex 50")
+						ImagePath = getImgSM("Retinol Complex 50"),
+						Description = DescriptionsResource.RetinolComplex05
 					},
 					new mProduct {
 						Name = "Retinol Complex 1.0",
 						Brand = "SkinMedica",
 						UnitPrice = 90.0,
 						PayPalId = "8HAVECYSMFUQ",
-						ImagePath = getImgSM("Retinol Complex 1")
+						ImagePath = getImgSM("Retinol Complex 1"),
+						Description = DescriptionsResource.RetinolComplex1
 					},
 					new mProduct {
 						Name = "Scar Recovery Gel with Centelline™ (0.5 Oz.)",
 						Brand = "SkinMedica",
 						UnitPrice = 42.0,
 						PayPalId = "V4LUU2VZ8GDUQ",
-						ImagePath = getImgSM("Scar Recovery50oz")
+						ImagePath = getImgSM("Scar Recovery50oz"),
+						Description = DescriptionsResource.ScarRecoveryGelwithC5oz
 					},
 					new mProduct {
 						Name = "Scar Recovery Gel with Centelline™ (2 Oz.)",
 						Brand = "SkinMedica",
 						UnitPrice = 98.0,
 						PayPalId = "DQ98XZFGS5RLS",
-						ImagePath = getImgSM("Scar Recovery2oz")
+						ImagePath = getImgSM("Scar Recovery2oz"),
+						Description = DescriptionsResource.ScarRecoveryGelwithC2oz
 					},
 					new mProduct {
 						Name = "Sensitive Skin Cleanser",
 						Brand = "SkinMedica",
 						UnitPrice = 36.0,
 						PayPalId = "39P93MBJ2BRM2",
-						ImagePath = getImgSM("Sensitive Skin Cleanser 6oz")
+						ImagePath = getImgSM("Sensitive Skin Cleanser 6oz"),
+						Description = DescriptionsResource.SensitiveSkinCleanser
 					},
 					new mProduct {
 						Name = "TNS Ceramide Treatment Cream™",
 						Brand = "SkinMedica",
 						UnitPrice = 66.0,
 						PayPalId = "3XPTCKR9KR3H4",
-						ImagePath = getImgSM("TNS Ceramide Treatment Cream 2oz")
+						ImagePath = getImgSM("TNS Ceramide Treatment Cream 2oz"),
+						Description = DescriptionsResource.TNSCeramideTreatmentCream
 					},
 					new mProduct {
 						Name = "TNS Essential Serum®",
 						Brand = "SkinMedica",
 						UnitPrice = 270.0,
 						PayPalId = "JJ3KRHYFXS722",
-						ImagePath = getImgSM("TNS Essential Serum 1oz")
+						ImagePath = getImgSM("TNS Essential Serum 1oz"),
+						Description = DescriptionsResource.TNSEssentialSerum
 					},
 					new mProduct {
 						Name = "TNS Eye Repair™",
 						Brand = "SkinMedica",
 						UnitPrice = 98.0,
 						PayPalId = "WVB9WJB6PWYNJ",
-						ImagePath = getImgSM("TNS Eye Repair")
+						ImagePath = getImgSM("TNS Eye Repair"),
+						Description = DescriptionsResource.TNSEyeRepair
 					},
 					new mProduct {
 						Name = "TNS Illuminating Eye Cream®",
 						Brand = "SkinMedica",
 						UnitPrice = 88.0,
 						PayPalId = "73EDPAZLQXVNC",
-						ImagePath = getImgSM("TNS IlluminatingEyeCream")
+						ImagePath = getImgSM("TNS IlluminatingEyeCream"),
+						Description = DescriptionsResource.TNSIlluminatingEyeCream
 					},
 					new mProduct {
 						Name = "TNS Lip Plump System®",
 						Brand = "SkinMedica",
 						UnitPrice = 58.0,
 						PayPalId = "XJJ7HWH8P6FP2",
-						ImagePath = getImgSM("TNS LipPlump System 06oz")
+						ImagePath = getImgSM("TNS LipPlump System 06oz"),
+						Description = DescriptionsResource.TNSPlumpLipSystem
 					},
 					new mProduct {
 						Name = "TNS Recovery Complex®",
 						Brand = "SkinMedica",
 						UnitPrice = 172.0,
 						PayPalId = "24AWZEVSBZUVE",
-						ImagePath = getImgSM("TNS Recovery Complex 063oz")
+						ImagePath = getImgSM("TNS Recovery Complex 063oz"),
+						Description = DescriptionsResource.TNSRecovery
 					},
 					new mProduct {
 						Name = "TNS Ultimate Daily Moisturizer™ SPF 20 Sunscreen",
@@ -239,21 +264,24 @@ namespace Reihs.Repository
 						Brand = "SkinMedica",
 						UnitPrice = 56.0,
 						PayPalId = "SVCA7TEVK3MCE",
-						ImagePath = getImgSM("Ultra Sheer Moisturizer 2oz")
+						ImagePath = getImgSM("Ultra Sheer Moisturizer 2oz"),
+						Description = DescriptionsResource.UltraSheer
 					},
 					new mProduct {
 						Name = "Uplifting Eye Serum™",
 						Brand = "SkinMedica",
 						UnitPrice = 58.0,
 						PayPalId = "RNFMP5QRGXP68",
-						ImagePath = getImgSM("Uplifting Eye Serum")
+						ImagePath = getImgSM("Uplifting Eye Serum"),
+						Description = DescriptionsResource.UpliftingEyeSerum
 					},
 					new mProduct {
 						Name = "Vitamin C+E Complex",
 						Brand = "SkinMedica",
 						UnitPrice = 98.0,
 						PayPalId = "HQSJR49JEZRAY",
-						ImagePath = getImgSM("VitaminCE")
+						ImagePath = getImgSM("VitaminCE"),
+						Description = DescriptionsResource.VitaminCE
 					}
 
 				);
@@ -285,35 +313,40 @@ namespace Reihs.Repository
 						Brand = "Elta MD",
 						UnitPrice = 14.5,
 						PayPalId = "23VUY55JF8QQU",
-						ImagePath = getImgEMD("_IntenseMoisturizer")
+						ImagePath = getImgEMD("_IntenseMoisturizer"),
+						Description = DescriptionsResource.IntenseMoisturizer
 					},
 					new mProduct {
 						Name = "UV Clear 46 SPF",
 						Brand = "Elta MD",
 						UnitPrice = 37.0,
 						PayPalId = "JSRYJAWF7WTK8",
-						ImagePath = getImgEMD("_UVClear46SPF")
+						ImagePath = getImgEMD("_UVClear46SPF"),
+						Description = DescriptionsResource.UVClear46
 					},
 					new mProduct {
 						Name = "UV Daily 40 SPF",
 						Brand = "Elta MD",
 						UnitPrice = 30.0,
 						PayPalId = "HC5XP4S54CJCL",
-						ImagePath = getImgEMD("_UVDaily40SPF")
+						ImagePath = getImgEMD("_UVDaily40SPF"),
+						Description = DescriptionsResource.UVDaily40
 					},
 					new mProduct {
 						Name = "UV Physical 41",
 						Brand = "Elta MD",
 						UnitPrice = 36.0,
 						PayPalId = "BLTSS3PDPVUQL",
-						ImagePath = getImgEMD("_UVPhysical41SPF")
+						ImagePath = getImgEMD("_UVPhysical41SPF"),
+						Description = DescriptionsResource.UVPhysical41
 					},
 					new mProduct {
 						Name = "UV Shield 45 SPF",
 						Brand = "Elta MD",
 						UnitPrice = 36.0,
 						PayPalId = "CCNBJLUW2GGRS",
-						ImagePath = getImgEMD("_UVShield45SPF")
+						ImagePath = getImgEMD("_UVShield45SPF"),
+						Description = DescriptionsResource.UVShield45
 					}
 			);
 
@@ -333,14 +366,16 @@ namespace Reihs.Repository
 					Brand = "RevitaLash",
 					UnitPrice = 120.0,
 					PayPalId = "E9G58TQK3UYAY",
-					ImagePath = getImgRL("RevitaLash AdvForm")
+					ImagePath = getImgRL("RevitaLash AdvForm"),
+					Description = DescriptionsResource.Revitalash1
 				},
 				new mProduct {
 					Name = "RevitaBrow Advanced",
 					Brand = "RevitaLash",
 					UnitPrice = 110.0,
 					PayPalId = "DQ5ZWAMXVE54S",
-					ImagePath = getImgRL("RevitaLash ReVitaBrow")
+					ImagePath = getImgRL("RevitaLash ReVitaBrow"),
+					Description = DescriptionsResource.RevitaBrow
 				}
 				);
 
@@ -358,16 +393,18 @@ namespace Reihs.Repository
 				new mProduct {
 					Name = "Even Up™ Clinical Pigment Perfector™ SPF 50",
 					Brand = "Colorscience",
-					UnitPrice = 110.0,
+					UnitPrice = 120.0,
 					PayPalId = "B68USQLA37324",
-					ImagePath = getImgCS("Colorscience EvenUp")
+					ImagePath = getImgCS("Colorscience EvenUp"),
+					Description = DescriptionsResource.EvenUp
 				},
 				new mProduct {
 					Name = "Sunforgettable® Mineral Sunscreen Brush SPF 50 for active use",
 					Brand = "Colorscience",
 					UnitPrice = 64.0,
 					PayPalId = "DRLJNG73CTYEA",
-					ImagePath = getImgCS("Colorscience Sunforgettable")
+					ImagePath = getImgCS("Colorscience Sunforgettable"),
+					Description = DescriptionsResource.Sunforgettable
 				});
 
 			context.SaveChanges();

@@ -72,6 +72,12 @@
     <Compile Include="Adapters\Video\IVideoRepository.cs" />
     <Compile Include="Adapters\Video\VideoRepository.cs" />
     <Compile Include="DbContext.cs" />
+    <Compile Include="Descriptions.cs" />
+    <Compile Include="DescriptionsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DescriptionsResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201501270218079_initialAfterClear.cs" />
     <Compile Include="Migrations\201501270218079_initialAfterClear.Designer.cs">
       <DependentUpon>201501270218079_initialAfterClear.cs</DependentUpon>
@@ -116,6 +122,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DescriptionsResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DescriptionsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201501270218079_initialAfterClear.resx">
       <DependentUpon>201501270218079_initialAfterClear.cs</DependentUpon>
     </EmbeddedResource>
