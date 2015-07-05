@@ -179,6 +179,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\API\ConstantContactController.cs" />
     <Compile Include="Controllers\API\TickerController.cs" />
     <Compile Include="Controllers\API\Blog\BlogController.cs" />
     <Compile Include="Controllers\API\Blog\CategoryController.cs" />
@@ -793,6 +794,7 @@
     <TypeScriptCompile Include="Scripts\custom\shared\models\OrderDetail.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\Product.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\ShoppingCart.ts" />
+    <TypeScriptCompile Include="Scripts\custom\shared\models\Subscriber.ts" />
     <TypeScriptCompile Include="Scripts\custom\shared\models\TickerMessage.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\About.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Blog.ts" />
@@ -811,12 +813,14 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Resources.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\SiteMapCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\SpecialCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\SubscriberCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\TeamCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\TestimonialCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\Treatments.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\controllers\VideoCtrl.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\directives\youtubeMenu.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\ContactAPIService.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\EmailSubscriberService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\MarketService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\PostDataService.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\factories\ProductService.ts" />
@@ -838,6 +842,7 @@
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\IResourcesScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ISiteMapScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ISpecialScope.ts" />
+    <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ISubscriberScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITeamScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITestimonialScope.ts" />
     <TypeScriptCompile Include="Scripts\custom\VisageApp\interfaces\Scopes\ITreatmentScope.ts" />

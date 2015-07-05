@@ -16,6 +16,7 @@ module VisageApp {
 	VisageApp.factory('ProductService', ['$http', '$q', ProductService.Builder]);
 	VisageApp.factory('PostDataService', ['$http', '$q', PostDataService.Builder]);
 	VisageApp.factory('TickerDataService', ['$http', '$q', TickerDataService.Builder]);
+	VisageApp.factory('EmailSubscriberService', ['$http', '$q', EmailSubscriberService.Builder]);
 
 	VisageApp.controller('Index', Index);
 	VisageApp.controller('About', About);
@@ -38,6 +39,7 @@ module VisageApp {
 	VisageApp.controller('SpecialCtrl', SpecialCtrl);
 	VisageApp.controller('PackageCtrl', PackageCtrl);
 	VisageApp.controller('GiftCardCtrl', GiftCardCtrl);
+	VisageApp.controller('SubscriberCtrl', SubscriberCtrl);
 
 	VisageApp.run(['$rootScope', '$templateCache', function ($rootScope, $templateCache) {
 		$rootScope.$on('$viewContentLoaded', function () {

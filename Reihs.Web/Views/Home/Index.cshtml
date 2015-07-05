@@ -27,7 +27,7 @@
 						<li><a href="#/Contact">CONTACT US</a></li>
 						<li><a href="#search"><i class="fa fa-search"></i> Search</a></li>
 					</ul>
-					
+
 				</div>
 				<div class="clear col-sm-3 header-side">
 					<ul class="nav nav-pills nav-stacked visible-md visible-lg" id="rightSideNav">
@@ -37,7 +37,7 @@
 						<li><a href="#/Stories">Patient Stories</a></li>
 						<li><a href="#/Special/Monthly">Monthly Specials</a></li>
 						<!---<li class="phone-number">Phone: +1.214.705.7676</li>-->
-						
+
 					</ul>
 				</div>
 
@@ -63,7 +63,7 @@
 
 					<li class="nav-title">
 						<a href="#/"><img src="../../Content/Images/Logos/LBVword_C4.png" alt="" width="75%" /></a>
-						<hr/>
+						<hr />
 					</li>
 					<li ng-click="SetNav(navItem.Name)" ng-repeat="navItem in Navs | orderBy: naviItem.OrderNumber">
 						<div class="pull-left arrow-right" ng-show="navItem.IsActive"></div>
@@ -87,7 +87,7 @@
 		<button type="button" class="close" ng-click="IsAlertVisible = false">×</button>
 		Item Successfully added!!!
 	</div> -->
-	
+
 	<div id="search">
 		<button type="button" class="close">×</button>
 		<form>
@@ -171,7 +171,6 @@
 
 				</ul>*@
 			<ul id="ticker01" class="newsticker pull-left">
-
 				<!--<li ng-repeat="message in Messages"><span>{{message.Dates}}<span> <a href="{{message.Url}}">{{message.Message}}</a></li>
 				<li><span>{{Messages[1].Dates}}</span> <a href="{{Messages[1].Url}}">{{Messages[1].Message}}</a></li>
 				<li><span>{{Messages[0].Dates}}<span> <a href="{{Messages[0].Url}}">{{Messages[0].Message}}</a></li>
@@ -183,6 +182,38 @@
 			</ul>
 		</div>
 	</nav>
+</div>
+
+<!-- Email Subscriber Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ng-controller="SubscriberCtrl">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Join our Mailing List</h4>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="first_name">First Name</label>
+						<input type="text" class="form-control" id="first_name" placeholder="First Name" ng-model="Subscriber.FirstName">
+					</div>
+					<div class="form-group">
+						<label for="last_name">Last Name</label>
+						<input type="text" class="form-control" id="last_name" placeholder="Last Name" ng-model="Subscriber.LastName">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model="Subscriber.Email">
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary" ng-click="Subscribe()">Join</button>
+			</div>
+		</div>
+	</div>
 </div>
 
 @section Scripts {
