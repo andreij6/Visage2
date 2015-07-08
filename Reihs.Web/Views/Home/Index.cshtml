@@ -209,8 +209,9 @@
 				</form>
 			</div>
 			<div class="modal-footer">
+				{{SuccessMessage}}
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary" ng-click="Subscribe()">Join</button>
+				<button type="button" class="btn btn-primary" ng-disabled="FormInvalid" ng-click="Subscribe()">Join</button>
 			</div>
 		</div>
 	</div>
