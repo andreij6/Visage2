@@ -9,7 +9,7 @@ namespace Reihs.Web
 		{
 			filters.Add(new HandleErrorAttribute());
 			filters.Add(new AuthorizeAttribute());
-			filters.Add(new RequireHttpsAttribute());
+			//filters.Add(new RequireHttpsAttribute());
 		}
 	}
 }
