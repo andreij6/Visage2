@@ -19,5 +19,11 @@ namespace Reihs.Web.Controllers
 			return View();
 		}
 
+		//our-blog
+		//public ActionResult Blog()
+		//{
+		//	return View();
+		//}
+
 	}
 }
