@@ -101,6 +101,7 @@
     <Compile Include="Models\Ticker\Ticker.cs" />
     <Compile Include="Models\Videos\IVideo.cs" />
     <Compile Include="Models\Videos\Video.cs" />
+    <Compile Include="DI\RepositoryModule.cs" />
     <Compile Include="ViewModels\bCategoryModel.cs" />
     <Compile Include="ViewModels\ContactMessage.cs" />
     <Compile Include="ViewModels\NewCategoryModel.cs" />
@@ -138,6 +139,16 @@
     <EmbeddedResource Include="Migrations\201501311642539_addVideosTable.resx">
       <DependentUpon>201501311642539_addVideosTable.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Visage.Domain\Visage.Domain.csproj">
+      <Project>{7fbf0197-6518-42bb-9e67-5d4ca4e6f392}</Project>
+      <Name>Visage.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Visage.Repository.Interfaces\Visage.Repository.Interfaces.csproj">
+      <Project>{93fa7cec-a5bf-43d7-b25f-4f81e9ff3208}</Project>
+      <Name>Visage.Repository.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

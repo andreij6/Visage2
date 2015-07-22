@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Reihs.Web.App_Start;
 
 namespace Reihs.Web
 {
@@ -13,6 +14,7 @@ namespace Reihs.Web
 	{
 		protected void Application_Start()
 		{
+			DIConfig.RegisterDependencies();
 			GlobalConfiguration.Configure(WebApiConfig.Register);
 			AreaRegistration.RegisterAllAreas();
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

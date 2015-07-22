@@ -181,6 +181,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\DIConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -760,9 +761,21 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Visage.Domain\Visage.Domain.csproj">
+      <Project>{7fbf0197-6518-42bb-9e67-5d4ca4e6f392}</Project>
+      <Name>Visage.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Visage.Repository.Interfaces\Visage.Repository.Interfaces.csproj">
+      <Project>{93fa7cec-a5bf-43d7-b25f-4f81e9ff3208}</Project>
+      <Name>Visage.Repository.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Visage.Repository\Visage.Repository.csproj">
       <Project>{0c4928f1-99ef-4124-8edd-79cf4cae589a}</Project>
       <Name>Visage.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Visage.Services.Interfaces\Visage.Services.Interfaces.csproj">
+      <Project>{6adb749a-3054-406a-8faf-3ec28c8fd66b}</Project>
+      <Name>Visage.Services.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\Visage.Services\Visage.Services.csproj">
       <Project>{24d1d175-309e-4a27-89a7-d86605f582dd}</Project>
