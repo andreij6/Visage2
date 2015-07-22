@@ -36,6 +36,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{947548
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{285CE0B4-6F45-4D3D-9985-30C4970CE37D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Domain", "Visage.Domain\Visage.Domain.csproj", "{7FBF0197-6518-42BB-9E67-5D4CA4E6F392}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Repository.Interfaces", "Visage.Repository.Interfaces\Visage.Repository.Interfaces.csproj", "{93FA7CEC-A5BF-43D7-B25F-4F81E9FF3208}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visage.Services.Interfaces", "Visage.Services.Interfaces\Visage.Services.Interfaces.csproj", "{6ADB749A-3054-406A-8FAF-3EC28C8FD66B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +70,18 @@ Global
 		{33FF4DE8-77AD-4891-BF1F-63A99D94C410}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33FF4DE8-77AD-4891-BF1F-63A99D94C410}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33FF4DE8-77AD-4891-BF1F-63A99D94C410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FBF0197-6518-42BB-9E67-5D4CA4E6F392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FBF0197-6518-42BB-9E67-5D4CA4E6F392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FBF0197-6518-42BB-9E67-5D4CA4E6F392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FBF0197-6518-42BB-9E67-5D4CA4E6F392}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93FA7CEC-A5BF-43D7-B25F-4F81E9FF3208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FA7CEC-A5BF-43D7-B25F-4F81E9FF3208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FA7CEC-A5BF-43D7-B25F-4F81E9FF3208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FA7CEC-A5BF-43D7-B25F-4F81E9FF3208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ADB749A-3054-406A-8FAF-3EC28C8FD66B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADB749A-3054-406A-8FAF-3EC28C8FD66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADB749A-3054-406A-8FAF-3EC28C8FD66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADB749A-3054-406A-8FAF-3EC28C8FD66B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,5 +93,8 @@ Global
 		{0C4928F1-99EF-4124-8EDD-79CF4CAE589A} = {D41E2D11-937F-4C40-92F8-1E0BE34261EB}
 		{24D1D175-309E-4A27-89A7-D86605F582DD} = {5A3C0931-3D38-45FD-965C-1E0EEC13FAC2}
 		{33FF4DE8-77AD-4891-BF1F-63A99D94C410} = {5A3C0931-3D38-45FD-965C-1E0EEC13FAC2}
+		{7FBF0197-6518-42BB-9E67-5D4CA4E6F392} = {285CE0B4-6F45-4D3D-9985-30C4970CE37D}
+		{93FA7CEC-A5BF-43D7-B25F-4F81E9FF3208} = {D41E2D11-937F-4C40-92F8-1E0BE34261EB}
+		{6ADB749A-3054-406A-8FAF-3EC28C8FD66B} = {5A3C0931-3D38-45FD-965C-1E0EEC13FAC2}
 	EndGlobalSection
 EndGlobal

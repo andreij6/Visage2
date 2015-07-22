@@ -1,109 +1,123 @@
 ﻿<div class="breadcrumb-wrap visible-md visible-lg">
 	<div class="container">
-		
-	</div>
-</div>
-<div class="divide60"></div>
-<div class="container">
-	<div class="row">
-		<div class="col-md-8">
-			<div class="blog-post">
-				<div>
-					<img src="http://placehold.it/700x400" class=" img-responsive" alt="working">
-
-				</div>
-				<ul class="list-inline post-detail">
-					<li>by <a href="#">LeBeau Visage</a></li>
-					<li><i class="fa fa-calendar"></i> {{Post.Created | date:'dd MMMM yyyy'}}</li>
-					<li ng-repeat="tag in Post.Tags"><i class="fa fa-tag"></i> <a href="#">{{tag}}</a></li>
-				</ul>
-				<h2>{{Post.Title}}</h2>
-				
-				<div ng-bind-html="Post.Content"></div>
-				<!--<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
-				</p>
-				<p class="lead">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
-
-				</p>
-				<p class="dropcap">
-					Sed iaculis condimentum nibh posuere gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="colored-text"> Donec mollis tempor erat</span> ut rhoncus. Nullam tincidunt pretium lectus. Ut at lacinia nisl. Fusce eu risus non quam vehicula volutpat in eget elit. Vestibulum id nunc tellus. Integer sollicitudin nibh est, a volutpat mi interdum et. Ut felis justo, rutrum a ligula ut, lobortis facilisis metus. Etiam vel enim ante. Integer tempor, odio id cursus iaculis, est magna porta metus, vitae mollis est lacus id nibh. Integer pharetra purus eros, hendrerit semper orci elementum sit amet. Etiam suscipit turpis nunc. Vivamus a eleifend lorem. Donec vehicula sem non aliquam consequa
-				</p>-->
-			</div><!--blog post-->
-			<div class="about-author">
-				<h4 class="colored-text">About the Author</h4>
-				<img src="http://placehold.it/700x400" class="img-responsive" alt="">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, <span class="colored-text">adipiscing condimentum tristique</span> vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
-				</p>
-			</div><!--about author-->
+		<div class="row">
+			<img class="pull-right header-img" src="../../../Content/Images/About/About.png" />
 		</div>
-		<div class="col-md-3 col-md-offset-1">
-			<div class="sidebar-box margin40">
-				<h4>Tag Cloud</h4>
-				<div class="tag-list">
-					<a>Wordpress</a>
-					<a>Design</a>
-					<a>Graphics</a>
-					<a>Seo</a>
-					<a>Development</a>
-					<a>Marketing</a>
-					<a>fashion</a>
-					<a>Media</a>
-					<a>Photoshop</a>
-				</div>
-			</div>
-			<div class="sidebar-box margin40">
-				<h4>Popular Post</h4>
-				<ul class="list-unstyled popular-post">
-					<li>
-						<div class="popular-img">
-							<a href="#"> <img src="http://placehold.it/700x400" class="img-responsive" alt=""></a>
-						</div>
-						<div class="popular-desc">
-							<h5> <a href="#">blog post image</a></h5>
-							<h6>31st july 2014</h6>
-						</div>
-					</li>
-					<li>
-						<div class="popular-img">
-							<a href="#"> <img src="http://placehold.it/700x400" class="img-responsive" alt=""></a>
-						</div>
-						<div class="popular-desc">
-							<h5> <a href="#">blog post image</a></h5>
-							<h6>31st july 2014</h6>
-						</div>
-					</li>
-					<li>
-						<div class="popular-img">
-							<a href="#"> <img src="http://placehold.it/700x400" class="img-responsive" alt=""></a>
-						</div>
-						<div class="popular-desc">
-							<h5> <a href="#">blog post image</a></h5>
-							<h6>31st july 2014</h6>
-						</div>
-					</li>
-				</ul>
-			</div><!--sidebar-box-->
-			<!--<div class="sidebar-box margin40">
-				<h4>Tag Cloud</h4>
-				<div class="tag-list">
-					<a href="#">Wordpress</a>
-					<a href="#">Design</a>
-					<a href="#">Graphics</a>
-					<a href="#">Seo</a>
-					<a href="#">Development</a>
-					<a href="#">Marketing</a>
-					<a href="#">fashion</a>
-					<a href="#">Media</a>
-					<a href="#">Photoshop</a>
-				</div>
-			</div>-->
-		</div><!--sidebar-col-->
 	</div>
 </div>
+<div class="divide35"></div>
+
+<section class="page-content">
+	<div class="container">
+		<ul class="list-inline social-1">
+			<li><a href="http://www.facebook.com/pages/Le-Beau-Visage-Med-Spa/130922822976?ref=ts"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://twitter.com/LeBeauVisage"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="http://www.youtube.com/user/LeBeauVisageMedicalS"><i class="fa fa-youtube-play"></i></a></li>
+			<li><a href="https://www.linkedin.com/pub/jason-riehs/80/59a/4a5"><i class="fa fa-linkedin"></i></a></li>
+		</ul>
+	</div>
+	<div class="divide40"></div>
+	<div class="container blog-left-img">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="blog-post">
+					<div>
+						<img src="http://placehold.it/700x400" class=" img-responsive" alt="working">
+
+					</div>
+					<ul class="list-inline post-detail">
+						<li>by <a href="#">LeBeau Visage</a></li>
+						<li><i class="fa fa-calendar"></i> {{Post.Created | date:'dd MMMM yyyy'}}</li>
+						<li ng-repeat="tag in Post.Tags"><i class="fa fa-tag"></i> <a href="#">{{tag}}</a></li>
+					</ul>
+					<h2>{{Post.Title}}</h2>
+
+					<div ng-bind-html="Post.Content"></div>
+					<!--<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
+					</p>
+					<p class="lead">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
+
+					</p>
+					<p class="dropcap">
+						Sed iaculis condimentum nibh posuere gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="colored-text"> Donec mollis tempor erat</span> ut rhoncus. Nullam tincidunt pretium lectus. Ut at lacinia nisl. Fusce eu risus non quam vehicula volutpat in eget elit. Vestibulum id nunc tellus. Integer sollicitudin nibh est, a volutpat mi interdum et. Ut felis justo, rutrum a ligula ut, lobortis facilisis metus. Etiam vel enim ante. Integer tempor, odio id cursus iaculis, est magna porta metus, vitae mollis est lacus id nibh. Integer pharetra purus eros, hendrerit semper orci elementum sit amet. Etiam suscipit turpis nunc. Vivamus a eleifend lorem. Donec vehicula sem non aliquam consequa
+					</p>-->
+				</div><!--blog post-->
+				<div class="about-author">
+					<h4 class="colored-text">About the Author</h4>
+					<img src="http://placehold.it/700x400" class="img-responsive" alt="">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, <span class="colored-text">adipiscing condimentum tristique</span> vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie
+					</p>
+				</div><!--about author-->
+			</div>
+			<div class="col-md-3 col-md-offset-1">
+				<div class="sidebar-box margin40">
+					<h4>Tag Cloud</h4>
+					<div class="tag-list">
+						<a>Wordpress</a>
+						<a>Design</a>
+						<a>Graphics</a>
+						<a>Seo</a>
+						<a>Development</a>
+						<a>Marketing</a>
+						<a>fashion</a>
+						<a>Media</a>
+						<a>Photoshop</a>
+					</div>
+				</div>
+				<div class="sidebar-box margin40">
+					<h4>Popular Post</h4>
+					<ul class="list-unstyled popular-post">
+						<li>
+							<div class="popular-img">
+								<a href="#"> <img src="http://placehold.it/700x400" class="img-responsive" alt=""></a>
+							</div>
+							<div class="popular-desc">
+								<h5> <a href="#">blog post image</a></h5>
+								<h6>31st july 2014</h6>
+							</div>
+						</li>
+						<li>
+							<div class="popular-img">
+								<a href="#"> <img src="http://placehold.it/700x400" class="img-responsive" alt=""></a>
+							</div>
+							<div class="popular-desc">
+								<h5> <a href="#">blog post image</a></h5>
+								<h6>31st july 2014</h6>
+							</div>
+						</li>
+						<li>
+							<div class="popular-img">
+								<a href="#"> <img src="http://placehold.it/700x400" class="img-responsive" alt=""></a>
+							</div>
+							<div class="popular-desc">
+								<h5> <a href="#">blog post image</a></h5>
+								<h6>31st july 2014</h6>
+							</div>
+						</li>
+					</ul>
+				</div><!--sidebar-box-->
+				<!--<div class="sidebar-box margin40">
+					<h4>Tag Cloud</h4>
+					<div class="tag-list">
+						<a href="#">Wordpress</a>
+						<a href="#">Design</a>
+						<a href="#">Graphics</a>
+						<a href="#">Seo</a>
+						<a href="#">Development</a>
+						<a href="#">Marketing</a>
+						<a href="#">fashion</a>
+						<a href="#">Media</a>
+						<a href="#">Photoshop</a>
+					</div>
+				</div>-->
+			</div><!--sidebar-col-->
+		</div>
+	</div>
+</section>
