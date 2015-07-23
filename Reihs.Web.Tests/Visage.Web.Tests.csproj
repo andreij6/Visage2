@@ -126,6 +126,10 @@
       <Project>{D3715040-3B5E-41F6-8AA1-7ED4AE3E139F}</Project>
       <Name>Visage.Web</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Visage.Domain\Visage.Domain.csproj">
+      <Project>{7fbf0197-6518-42bb-9e67-5d4ca4e6f392}</Project>
+      <Name>Visage.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Visage.Repository\Visage.Repository.csproj">
       <Project>{0c4928f1-99ef-4124-8edd-79cf4cae589a}</Project>
       <Name>Visage.Repository</Name>

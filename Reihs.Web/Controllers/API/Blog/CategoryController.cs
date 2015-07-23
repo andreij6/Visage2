@@ -4,8 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Reihs.Repository.ViewModels;
 using Reihs.Services.Blog;
+using Visage.Domain.Models.View;
+using Visage.Services.Interfaces;
 
 namespace Reihs.Web.Controllers.API.Blog
 {
@@ -15,15 +16,11 @@ namespace Reihs.Web.Controllers.API.Blog
 		private readonly ICategoryService CatService;
 
 		#region Controllers
-		public CategoryController()
+		public CategoryController(ICategoryService service)
 		{
-			CatService = new CategoryService();
+			CatService = service;
 		}
 
-		public CategoryController(ICategoryService cservice)
-		{
-			CatService = cservice;
-		}
 		#endregion
 
 		[Route("Get")]

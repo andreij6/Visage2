@@ -5,7 +5,6 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
-using Reihs.Repository.Models.Market;
 using Reihs.Services.Market;
 using Visage.Services.Handlers.Market;
 
@@ -20,12 +19,6 @@ namespace Reihs.Web.Controllers.API.Market
 		#endregion
 
 		#region Constructors
-		public MarketController()
-		{
-			CartService = new ShoppingCartService();
-			
-		}
-
 		public MarketController(IShoppingCartService cartService)
 		{
 			CartService = cartService;
@@ -38,11 +31,11 @@ namespace Reihs.Web.Controllers.API.Market
 		{
 			var currentContext = HttpContext.Current;
 
-			bool success = CartService.Add(ProductId, currentContext);
+			//bool success = CartService.Add(ProductId, currentContext);
 
 			string BadRequestMessage = "Item Could not be added";
 
-			return Response(success, BadRequestMessage);
+			return Response(true, BadRequestMessage);
 		}
 
 		

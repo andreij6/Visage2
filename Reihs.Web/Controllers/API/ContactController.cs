@@ -6,9 +6,10 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Mail;
 using System.Web.Http;
-using Reihs.Repository.ViewModels;
 using Reihs.Services.Handlers.Contact;
 using System.Web.Configuration;
+using Visage.Services.Interfaces;
+using Visage.Domain.Models.View;
 
 namespace Reihs.Web.Controllers.API
 {
@@ -16,9 +17,9 @@ namespace Reihs.Web.Controllers.API
 	public class ContactController : ApiController
 	{
 		private readonly IContactUsService contactService;
-		public ContactController()
+		public ContactController(IContactUsService service)
 		{
-			contactService = new ContactUsService();
+			contactService = service;
 		}
 
 		[Route()]

@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visage.Repository.Models.Ticker;
+using Visage.Repository.Interfaces;
+using Visage.Domain.Models.Main;
 
 namespace Visage.Repository.Adapters.Ticker
 {

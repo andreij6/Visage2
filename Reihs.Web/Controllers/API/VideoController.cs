@@ -5,7 +5,9 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Visage.Repository.ViewModels;
+using Visage.Repository.ViewModels.View;
 using Visage.Services.Handlers.Videos;
+using Visage.Services.Interfaces;
 
 namespace Reihs.Web.Controllers.API
 {
@@ -14,9 +16,9 @@ namespace Reihs.Web.Controllers.API
     {
 		private readonly IVideoService videoService;
 
-		public VideoController()
+		public VideoController(IVideoService service)
 		{
-			videoService = new VideoService();
+			videoService = service;
 		}
 
 		[Route()]

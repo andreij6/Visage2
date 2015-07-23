@@ -39,7 +39,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IBlogAPIService.cs" />
+    <Compile Include="IBlogService.cs" />
+    <Compile Include="ICategoryService.cs" />
+    <Compile Include="IContactUsService.cs" />
+    <Compile Include="IProductService.cs" />
+    <Compile Include="IShoppingCartService.cs" />
+    <Compile Include="ISubscriberService.cs" />
+    <Compile Include="ITickerService.cs" />
+    <Compile Include="IVideoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Visage.Domain\Visage.Domain.csproj">
+      <Project>{7fbf0197-6518-42bb-9e67-5d4ca4e6f392}</Project>
+      <Name>Visage.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

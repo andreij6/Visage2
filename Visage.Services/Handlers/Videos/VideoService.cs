@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Visage.Domain.Models.Main;
 using Visage.Repository.Adapters.VideoRepo;
+using Visage.Repository.Interfaces;
 using Visage.Repository.Models.Videos;
 using Visage.Repository.ViewModels;
+using Visage.Repository.ViewModels.View;
+using Visage.Services.Interfaces;
 
 namespace Visage.Services.Handlers.Videos
 {
@@ -13,9 +17,9 @@ namespace Visage.Services.Handlers.Videos
 	{
 		protected readonly IVideoRepository Repository;
 
-		public VideoService()
+		public VideoService(IVideoRepository repo)
 		{
-			Repository = new VideoRepository();
+			Repository = repo;
 		}
 
 		public IEnumerable<VideoModel> GetAll()

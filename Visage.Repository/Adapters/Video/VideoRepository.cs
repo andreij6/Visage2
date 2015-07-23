@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Reihs.Repository;
+using Visage.Domain.Models.Main;
+using Visage.Repository.Interfaces;
 using Visage.Repository.Models.Videos;
 
 namespace Visage.Repository.Adapters.VideoRepo

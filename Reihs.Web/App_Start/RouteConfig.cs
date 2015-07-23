@@ -14,6 +14,12 @@ namespace Reihs.Web
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
 			routes.MapRoute(
+				name: "Blog",
+				url: "Blog/{blogId}",
+				defaults: new { controller = "Blog", action = "Detail" }
+			);
+
+			routes.MapRoute(
 			    name: "Default",
 			    url: "{controller}/{action}/{id}",
 			    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

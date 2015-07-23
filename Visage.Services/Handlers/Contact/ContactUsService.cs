@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Reihs.Repository.ViewModels;
 using SendGrid;
 using System.Net.Mail;
 using System.Net;
+using Visage.Services.Interfaces;
+using Visage.Domain.Models.View;
 
 namespace Reihs.Services.Handlers.Contact
 {

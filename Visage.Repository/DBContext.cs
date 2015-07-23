@@ -5,13 +5,8 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Reihs.Repository.Models;
-using Reihs.Repository.Models.Blog;
-using Reihs.Repository.Models.Market;
-using Visage.Repository;
-using Visage.Repository.Models.Market;
-using Visage.Repository.Models.Ticker;
 using Visage.Repository.Models.Videos;
+using Visage.Domain.Models.Main;
 
 namespace Reihs.Repository
 {

@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Reihs.Repository.Adapters.User;
-using Reihs.Repository.Models;
+using Visage.Repository.Interfaces;
 
 namespace Reihs.Web.Controllers.MVC
 {
@@ -16,9 +15,9 @@ namespace Reihs.Web.Controllers.MVC
 		#endregion
 
 		#region Constructors
-		public AdminController()
+		public AdminController(IUserRepository repo)
 		{
-			UserRepo = new UserRepository();
+			UserRepo = repo;
 		}
 		#endregion
 

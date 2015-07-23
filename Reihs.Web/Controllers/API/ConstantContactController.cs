@@ -1,6 +1,8 @@
 ﻿using System.Web.Http;
+using Visage.Domain.Models;
+using Visage.Domain.Models.View;
 using Visage.Services.Handlers.Subscriber;
-using Visage.Services.Models;
+using Visage.Services.Interfaces;
 
 namespace Reihs.Web.Controllers.API
 {
@@ -8,9 +10,9 @@ namespace Reihs.Web.Controllers.API
 	public class ConstantContactController : ApiController
 	{
 		private readonly ISubscriberService Service;
-		public ConstantContactController()
+		public ConstantContactController(ISubscriberService service)
 		{
-			Service = new SubscriberService();
+			Service = service;
 		}
 
 		[Route()]

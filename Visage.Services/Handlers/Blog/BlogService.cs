@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Reihs.Repository.Adapters.Blog.Category;
-using Reihs.Repository.Adapters.Blog.Post;
 using Reihs.Repository.Adapters.Blog.Tag;
 using Reihs.Repository.Adapters;
-using Reihs.Repository.Models;
-using Reihs.Repository.Models.Blog;
-using Reihs.Repository.Adapters.User;
-using Reihs.Services.Models;
+using Visage.Services.Interfaces;
+using Visage.Domain.Models.View;
+using Visage.Domain.Models.Main;
+using Visage.Repository.Interfaces;
 
 namespace Reihs.Services.Blog
 {
@@ -24,12 +23,12 @@ namespace Reihs.Services.Blog
 		#endregion
 
 		#region Constructors
-		public BlogService()
+		public BlogService(IPostRepository postRepo, ICategoryRepository catRepo, ITagRepository tagRepo, IUserRepository userRepo)
 		{
-			PostRepo = new PostRepository();
-			CategoryRepo = new CategoryRepository();
-			TagRepo = new TagRepository();
-			UserRepo = new UserRepository();
+			PostRepo = postRepo;
+			CategoryRepo = catRepo;
+			TagRepo = tagRepo;
+			UserRepo = userRepo;
 		}
 
 		public BlogService(IPostRepository postrepo, ICategoryRepository catrepo, ITagRepository tagrepo)

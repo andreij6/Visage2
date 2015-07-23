@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Reihs.Repository.Models.Blog;
 using Reihs.Services.Blog;
 
 namespace Reihs.Web.Tests.Services

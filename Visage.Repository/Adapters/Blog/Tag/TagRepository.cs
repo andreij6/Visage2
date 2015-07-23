@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Reihs.Repository.Models.Blog;
+using Visage.Domain.Models.Main;
+using Visage.Repository.Interfaces;
 
 namespace Reihs.Repository.Adapters.Blog.Tag
 {

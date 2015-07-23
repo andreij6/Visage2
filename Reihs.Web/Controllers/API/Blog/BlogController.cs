@@ -4,9 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Reihs.Repository.Models.Blog;
-using Reihs.Services.Blog;
-using Reihs.Services.Models;
+using Visage.Domain.Models.Main;
+using Visage.Domain.Models.View;
+using Visage.Services.Interfaces;
 
 namespace Reihs.Web.Controllers.API
 {
@@ -18,11 +18,6 @@ namespace Reihs.Web.Controllers.API
 		#endregion
 
 		#region Constructors
-		public BlogController()
-		{
-			BlogService = new BlogService();
-		}
-
 		public BlogController(IBlogService blogService)
 		{
 			BlogService = blogService;

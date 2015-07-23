@@ -4,11 +4,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Reihs.Services.Models;
-using Visage.Repository.Models.Ticker;
+using Visage.Domain.Models.Main;
+using Visage.Domain.Models.View;
 using Visage.Services.Handlers.Ticker;
 using Visage.Services.Handlers.Ticker.Implementations;
-using Visage.Services.Models;
+using Visage.Services.Interfaces;
 
 namespace Reihs.Web.Controllers.API
 {
@@ -20,11 +20,6 @@ namespace Reihs.Web.Controllers.API
 		#endregion
 
 		#region Constructors
-		public TickerController()
-		{
-			TickerService = new TickerService();
-		}
-
 		public TickerController(ITickerService tickerService)
 		{
 			TickerService = tickerService;

@@ -56,23 +56,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\Blog\Category\CategoryRepository.cs" />
-    <Compile Include="Adapters\Blog\Category\ICategoryRepository.cs" />
-    <Compile Include="Adapters\Blog\Post\IPostRepository.cs" />
     <Compile Include="Adapters\Blog\Post\PostRepository.cs" />
-    <Compile Include="Adapters\Blog\Tag\ITagRepository.cs" />
     <Compile Include="Adapters\Blog\Tag\TagRepository.cs" />
-    <Compile Include="Adapters\Market\OrderRepository\IOrderDetailRepository.cs" />
-    <Compile Include="Adapters\Market\OrderRepository\IOrderRepository.cs" />
     <Compile Include="Adapters\Market\OrderRepository\OrderRepository.cs" />
-    <Compile Include="Adapters\Market\Product\IProductRepository.cs" />
     <Compile Include="Adapters\Market\Product\ProductRepository.cs" />
-    <Compile Include="Adapters\Market\ShoppingCart\IShoppingCartRepository.cs" />
     <Compile Include="Adapters\Market\ShoppingCart\ShoppingCartRepository.cs" />
-    <Compile Include="Adapters\Ticker\ITickerItemRepository.cs" />
     <Compile Include="Adapters\Ticker\TickerItemRepository.cs" />
-    <Compile Include="Adapters\User\IUserRepository.cs" />
     <Compile Include="Adapters\User\UserRepository.cs" />
-    <Compile Include="Adapters\Video\IVideoRepository.cs" />
     <Compile Include="Adapters\Video\VideoRepository.cs" />
     <Compile Include="DbContext.cs" />
     <Compile Include="Descriptions.cs" />
@@ -94,32 +84,9 @@
       <DependentUpon>201501311642539_addVideosTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Market\cTags.cs" />
-    <Compile Include="Models\Market\mPackage.cs" />
-    <Compile Include="Models\Market\pTags.cs" />
-    <Compile Include="Models\Ticker\NewTickerItem.cs" />
-    <Compile Include="Models\Ticker\Ticker.cs" />
-    <Compile Include="Models\Videos\IVideo.cs" />
-    <Compile Include="Models\Videos\Video.cs" />
     <Compile Include="DI\RepositoryModule.cs" />
-    <Compile Include="ViewModels\bCategoryModel.cs" />
-    <Compile Include="ViewModels\ContactMessage.cs" />
-    <Compile Include="ViewModels\NewCategoryModel.cs" />
-    <Compile Include="ViewModels\NewPostModel.cs" />
-    <Compile Include="Models\Interfaces\IRate.cs" />
-    <Compile Include="Models\ApplicationUser.cs" />
-    <Compile Include="Models\Audit.cs" />
-    <Compile Include="Models\Blog\bCategory.cs" />
-    <Compile Include="Models\Blog\bPost.cs" />
-    <Compile Include="Models\Blog\bTags.cs" />
-    <Compile Include="Models\Market\CartItem.cs" />
-    <Compile Include="Models\Market\mProduct.cs" />
-    <Compile Include="Models\Market\Order.cs" />
-    <Compile Include="Models\Market\OrderDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seeder.cs" />
-    <Compile Include="ViewModels\NewProductModel.cs" />
-    <Compile Include="ViewModels\VideoModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

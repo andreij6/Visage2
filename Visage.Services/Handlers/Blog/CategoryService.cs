@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Reihs.Repository.Adapters.Blog.Category;
-using Reihs.Repository.Adapters.User;
-using Reihs.Repository.Models.Blog;
-using Reihs.Repository.ViewModels;
+using Visage.Domain.Models.Main;
+using Visage.Domain.Models.View;
+using Visage.Repository.Adapters.User;
+using Visage.Repository.Interfaces;
+using Visage.Services.Interfaces;
 
 namespace Reihs.Services.Blog
 {
@@ -18,16 +20,10 @@ namespace Reihs.Services.Blog
 		#endregion
 
 		#region Constructors
-		public CategoryService()
+		public CategoryService(ICategoryRepository crepo, IUserRepository urepo)
 		{
-			CategoryRepo = new CategoryRepository();
-			UserRepo = new UserRepository();
-		}
-
-		public CategoryService(ICategoryRepository catRepo, IUserRepository userRepo)
-		{
-			CategoryRepo = catRepo;
-			UserRepo = userRepo;
+			CategoryRepo = crepo;
+			UserRepo = urepo;
 		}
 		#endregion
 

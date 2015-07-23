@@ -1,17 +1,25 @@
 ﻿using Reihs.Repository.Adapters.Market.Product;
-using Reihs.Repository.Models.Market;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Visage.Repository.ViewModels;
+using Visage.Services.Interfaces;
+using Visage.Domain.Models.Main;
+using Visage.Domain.Models.View;
+using Visage.Repository.Interfaces;
 
 namespace Visage.Services.Handlers.Market
 {
 	public class ProductService : IProductService
 	{
 		public readonly IProductRepository ProductRepo;
+
+		public ProductService(IProductRepository repo)
+		{
+			ProductRepo = repo;
+		}
 
 		public ProductService()
 		{

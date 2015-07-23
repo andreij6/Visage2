@@ -48,6 +48,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="RestSharp">
       <HintPath>..\packages\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
     </Reference>
@@ -73,28 +77,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DI\ServiceModule.cs" />
+    <Compile Include="Handlers\Blog\BlogAPIService.cs" />
     <Compile Include="Handlers\Blog\BlogService.cs" />
     <Compile Include="Handlers\Blog\CategoryService.cs" />
-    <Compile Include="Handlers\Blog\IBlogService.cs" />
-    <Compile Include="Handlers\Blog\ICategoryService.cs" />
     <Compile Include="Handlers\Contact\ContactUsService.cs" />
-    <Compile Include="Handlers\Contact\IContactUsService.cs" />
-    <Compile Include="Handlers\Market\HttpClient.cs" />
-    <Compile Include="Handlers\Market\IProductService.cs" />
-    <Compile Include="Handlers\Market\IShoppingCartService.cs" />
     <Compile Include="Handlers\Market\PayPal.cs" />
     <Compile Include="Handlers\Market\ProductService.cs" />
     <Compile Include="Handlers\Market\ShoppingCartService.cs" />
-    <Compile Include="Handlers\Subscriber\ISubscriberService.cs" />
     <Compile Include="Handlers\Subscriber\SubscriberService.cs" />
-    <Compile Include="Handlers\Ticker\Implementations\TickerService.cs" />
-    <Compile Include="Handlers\Ticker\ITickerService.cs" />
-    <Compile Include="Handlers\Videos\IVideoService.cs" />
+    <Compile Include="Handlers\Ticker\TickerService.cs" />
     <Compile Include="Handlers\Videos\VideoService.cs" />
-    <Compile Include="Models\PostModel.cs" />
-    <Compile Include="Models\SubscriberModel.cs" />
-    <Compile Include="Models\SubscriberRequestModel.cs" />
-    <Compile Include="Models\TickerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

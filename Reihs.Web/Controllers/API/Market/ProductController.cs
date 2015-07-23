@@ -1,12 +1,14 @@
-﻿using Reihs.Repository.Models.Market;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Visage.Domain.Models.Main;
+using Visage.Domain.Models.View;
 using Visage.Repository.ViewModels;
 using Visage.Services.Handlers.Market;
+using Visage.Services.Interfaces;
 
 namespace Reihs.Web.Controllers.API.Market
 {
@@ -15,9 +17,9 @@ namespace Reihs.Web.Controllers.API.Market
 	{
 		public readonly IProductService ProductService;
 
-		public ProductController()
+		public ProductController(IProductService service)
 		{
-			ProductService = new ProductService();
+			ProductService = service;
 		}
 
 		[Route()]

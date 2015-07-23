@@ -6,7 +6,9 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using RestSharp;
-using Visage.Services.Models;
+using Visage.Domain.Models;
+using Visage.Domain.Models.View;
+using Visage.Services.Interfaces;
 
 namespace Visage.Services.Handlers.Subscriber
 {
@@ -23,8 +25,6 @@ namespace Visage.Services.Handlers.Subscriber
 			var request = new RestRequest("/contacts", Method.POST);
 
 			request.RequestFormat = DataFormat.Json;
-
-			
 
 			request.Parameters.Clear();
 			request.AddHeader("Authorization", "Bearer " + AuthToken);

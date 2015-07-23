@@ -1,0 +1,29 @@
+﻿@model Visage.Domain.Models.View.BlogViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+	@Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+	<tr>
+		<th>Title</th>
+	</tr>
+
+	@foreach (var item in Model.items) {
+	<tr>
+		<td>@item.title</td>
+		<td>
+			@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+			<a href="/Blog/@item.friendlyUrl()">Details</a>
+			@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+		</td>
+	</tr>
+	}
+
+</table>

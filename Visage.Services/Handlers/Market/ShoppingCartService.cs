@@ -7,9 +7,11 @@ using System.Web;
 using System.Web.SessionState;
 using Reihs.Repository;
 using Reihs.Repository.Adapters.Market;
-using Reihs.Repository.Models.Market;
+using Reihs.Services.Market;
+using Visage.Domain.Models.Main;
+using Visage.Repository.Interfaces;
 
-namespace Reihs.Services.Market
+namespace Visage.Services.Market
 {
 	public class ShoppingCartService : IShoppingCartService
 	{
@@ -32,8 +34,6 @@ namespace Reihs.Services.Market
 			MarketRepo = new ShoppingCartRepository();
 		}
 		#endregion
-
-
 
 		//public void AddToCart(int id)
 		//{

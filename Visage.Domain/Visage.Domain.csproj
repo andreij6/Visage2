@@ -33,7 +33,20 @@
     <Reference Include="Autofac">
       <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,9 +59,41 @@
     <Compile Include="DI\DomainModule.cs" />
     <Compile Include="DI\ProjectTypes.cs" />
     <Compile Include="DI\VisageModuleBase.cs" />
+    <Compile Include="Models\Main\ApplicationUser.cs" />
+    <Compile Include="Models\Main\Audit.cs" />
+    <Compile Include="Models\Main\Blog\bCategory.cs" />
+    <Compile Include="Models\Main\Blog\bPost.cs" />
+    <Compile Include="Models\Main\Blog\bTags.cs" />
+    <Compile Include="Models\Main\Interfaces\IRate.cs" />
+    <Compile Include="Models\Main\Market\CartItem.cs" />
+    <Compile Include="Models\Main\Market\cTags.cs" />
+    <Compile Include="Models\Main\Market\mPackage.cs" />
+    <Compile Include="Models\Main\Market\mProduct.cs" />
+    <Compile Include="Models\Main\Market\Order.cs" />
+    <Compile Include="Models\Main\Market\OrderDetail.cs" />
+    <Compile Include="Models\Main\Market\pTags.cs" />
+    <Compile Include="Models\Main\Ticker\NewTickerItem.cs" />
+    <Compile Include="Models\Main\Ticker\Ticker.cs" />
+    <Compile Include="Models\Main\Videos\IVideo.cs" />
+    <Compile Include="Models\Main\Videos\Video.cs" />
+    <Compile Include="Models\View\bCategoryModel.cs" />
+    <Compile Include="Models\View\BlogViewModel.cs" />
+    <Compile Include="Models\View\ContactMessage.cs" />
+    <Compile Include="Models\View\NewCategoryModel.cs" />
+    <Compile Include="Models\View\NewPostModel.cs" />
+    <Compile Include="Models\View\NewProductModel.cs" />
+    <Compile Include="Models\View\VideoModel.cs" />
+    <Compile Include="Models\View\PostModel.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="Models\View\SubscriberModel.cs" />
+    <Compile Include="Models\View\SubscriberRequestModel.cs" />
+    <Compile Include="Models\View\TickerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

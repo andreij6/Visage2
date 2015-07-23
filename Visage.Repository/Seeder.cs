@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Reihs.Repository.Models.Blog;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Reihs.Repository.Models;
 using Microsoft.AspNet.Identity;
-using Reihs.Repository.Models.Market;
-using Visage.Repository.Models.Market;
 using Visage.Repository.Models.Videos;
 using Visage.Repository;
+using Visage.Domain.Models.Main;
 
 namespace Reihs.Repository
 {

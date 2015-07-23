@@ -14,7 +14,7 @@ namespace Reihs.Web
 	{
 		protected void Application_Start()
 		{
-			DIConfig.RegisterDependencies();
+			DIConfig.RegisterDependencies(GlobalConfiguration.Configuration);
 			GlobalConfiguration.Configure(WebApiConfig.Register);
 			AreaRegistration.RegisterAllAreas();
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
