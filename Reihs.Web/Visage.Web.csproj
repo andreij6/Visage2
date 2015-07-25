@@ -609,6 +609,7 @@
     <Content Include="Scripts\Plugins\theme\tweetie.min.js" />
     <Content Include="Scripts\Plugins\theme\typed.js" />
     <Content Include="Scripts\Plugins\theme\wow.min.js" />
+    <None Include="Scripts\_references.js" />
     <Content Include="Templates\Admin\Blogs\Index.html" />
     <Content Include="Templates\Admin\Blogs\Manage.html" />
     <Content Include="Templates\Admin\Blogs\NewCategory.html" />
