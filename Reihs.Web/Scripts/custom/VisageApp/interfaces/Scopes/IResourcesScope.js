@@ -1,0 +1,1 @@
+﻿//# sourceMappingURL=IResourcesScope.js.map

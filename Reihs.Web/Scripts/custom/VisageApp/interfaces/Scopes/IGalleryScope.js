@@ -1,0 +1,1 @@
+﻿//# sourceMappingURL=IGalleryScope.js.map

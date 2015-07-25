@@ -1,0 +1,1 @@
+﻿//# sourceMappingURL=ISubscriberScope.js.map

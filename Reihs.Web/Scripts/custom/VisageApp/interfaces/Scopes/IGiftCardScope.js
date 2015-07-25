@@ -1,0 +1,1 @@
+﻿//# sourceMappingURL=IGiftCardScope.js.map
