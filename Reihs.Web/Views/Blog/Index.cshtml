@@ -1,29 +1,32 @@
 ﻿@model Visage.Domain.Models.View.BlogViewModel
 
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout2.cshtml";
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout2.cshtml";
 }
 
-<h2>Index</h2>
+<section class="container">
+	<div class="row">
+		@foreach (var item in Model.items) {
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-preview">
+					<a href="post.html">
+						<h2 class="post-title">
+							<a href="/Blog/@item.friendlyUrl()">@item.title</a>
+						</h2>
+					</a>
+					<p class="post-meta">Posted by <a href="#">Lebeau Visage</a> on @item.friendlyPublished()</p>
+					@*<p>@item.getLabels()</p>*@
+				</div>
+				<hr>
+			</div>
+		}
+	</div>
+</section>
 
-<p>
-	@Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-	<tr>
-		<th>Title</th>
-	</tr>
 
-	@foreach (var item in Model.items) {
-	<tr>
-		<td>@item.title</td>
-		<td>
-			@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-			<a href="/Blog/@item.friendlyUrl()">Details</a>
-			@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-		</td>
-	</tr>
-	}
 
-</table>
+
+
+
+

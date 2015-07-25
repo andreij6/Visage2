@@ -98,6 +98,10 @@ namespace Reihs.Web
 					ScriptsPlugins + "custom.js"
 				));
 
+			bundles.Add(new ScriptBundle("~/bundle/BlogThemeScripts").Include(
+					"~/Scripts/blog/clean-blog.min.js"
+				));
+
 			// Use the development version of Modernizr to develop with and learn from. Then, when you're
 			// ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
 			bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
@@ -124,6 +128,16 @@ namespace Reihs.Web
 					"~/Content/defaults/bootstrap.css",
 					"~/Content/defaults/font-awesome.min.css"
 					));
+
+			bundles.Add(new StyleBundle("~/Content/BlogTheme").Include(
+					"~/Content/Blog/Theme/clean-blog.min.css"
+				));
+
+			bundles.Add(new StyleBundle("~/Content/blogCss").Include(
+					"~/Content/Blog/blog_layout.css",
+					"~/Content/Blog/blog_list.css",
+					"~/Content/Blog/blog_detail.css"
+				));
 
 			var CFTP = "~/Content/Front/ThirdParty/";
 			var CFC = "~/Content/Front/Custom/";

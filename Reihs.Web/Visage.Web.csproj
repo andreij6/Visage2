@@ -222,6 +222,16 @@
     <Content Include="Content\Admin\ThirdParty\sb-admin-2.min.css">
       <DependentUpon>sb-admin-2.css</DependentUpon>
     </Content>
+    <Content Include="Content\Blog\blog_detail.css" />
+    <Content Include="Content\Blog\blog_layout.css" />
+    <Content Include="Content\Blog\blog_list.css" />
+    <Content Include="Content\Blog\Theme\clean-blog.min.css" />
+    <Content Include="Content\Blog\Theme\img\about-bg.jpg" />
+    <Content Include="Content\Blog\Theme\img\BlogHead.jpg" />
+    <Content Include="Content\Blog\Theme\img\contact-bg.jpg" />
+    <Content Include="Content\Blog\Theme\img\home-bg.jpg" />
+    <Content Include="Content\Blog\Theme\img\post-bg.jpg" />
+    <Content Include="Content\Blog\Theme\img\post-sample-image.jpg" />
     <Content Include="Content\defaults\bootstrap-theme.css" />
     <Content Include="Content\defaults\bootstrap-theme.min.css" />
     <Content Include="Content\defaults\bootstrap.css" />
@@ -478,6 +488,7 @@
     <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.min.js" />
     <Content Include="Scripts\angular-ui\ui-bootstrap.js" />
     <Content Include="Scripts\angular-ui\ui-bootstrap.min.js" />
+    <Content Include="Scripts\blog\clean-blog.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom\scripts\li-scroller-starter.js" />
@@ -755,8 +766,8 @@
       <DependentUpon>ui-bootstrap.min.js</DependentUpon>
     </Content>
     <Content Include="Views\Event\Index.cshtml" />
-    <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Blog\Detail.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,21 @@
+﻿@model Visage.Domain.Models.View.BlogItem
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<div class="divide30"></div>
+
+<div>
+    <h1>@Model.title</h1>
+    <hr />
+    <dl class="dl-horizontal">
+    </dl>
+	<p>
+		@Html.Raw(Model.content)
+	</p>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
