@@ -64,7 +64,7 @@
     <Compile Include="Adapters\Ticker\TickerItemRepository.cs" />
     <Compile Include="Adapters\User\UserRepository.cs" />
     <Compile Include="Adapters\Video\VideoRepository.cs" />
-    <Compile Include="DbContext.cs" />
+    <Compile Include="DBContext.cs" />
     <Compile Include="Descriptions.cs" />
     <Compile Include="DescriptionsResource.Designer.cs">
       <AutoGen>True</AutoGen>
