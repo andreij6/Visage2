@@ -30,6 +30,21 @@
 							<input type="text" class="form-control" placeholder="Unit Price" ng-model="Product.UnitPrice">
 						</div>
 						<div class="form-group">
+							<select class="form-control" ng-model="Product.MainCategory">
+								<option value="Acne">Acne</option>
+								<option value="Age Defense">Age Defense</option>
+								<option value="Brighteners">Brighteners</option>
+								<option value="Brow">Brow</option>
+								<option value="Cleansers">Cleansers and Toners</option>
+								<option value="Moisturizers">Moisturizers</option>
+								<option value="Redness Relief">Redness Relief</option>
+								<option value="Retinols">Retinols</option>
+								<option value="Scar Recovery">Scar Recovery</option>
+								<option value="Sunscreens">Sunscreens</option>
+								<option value="Systems & Kits">Systems and Kits</option>
+							</select>
+						</div>
+						<div class="form-group">
 							<div text-angular placeholder="Write A Product Description" id="txtEditor" ng-model="Product.Description"></div>
 						</div>
 						<div class="form-group">

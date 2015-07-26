@@ -35,7 +35,7 @@
             }).when('/Market/Packages/:Id', {
                 templateUrl: 'Templates/Front/Market/PackageDetail.html',
                 controller: 'PackageCtrl'
-            }).when('/Market/Products/:Category', {
+            }).when('/Market/Category', {
                 templateUrl: 'Templates/Front/Market/ProductList.html',
                 controller: 'Market'
             }).when('/Market/Item/:id', {

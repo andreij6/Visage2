@@ -2,6 +2,7 @@
 	export interface IMarketScope extends ng.IScope {
 		templates: any;
 		template: any;
+		Brands: any;
 		Categories: any;
 		Category: string;
 		SeeDetail(product: string): void;
@@ -25,7 +26,9 @@
 		EveryThird(index: number): boolean;
 
 		OrderBy: any;
-
+		FilterQuery: any;
 		AddToCart(cmd: string, hosted_button_id: string): void;
+		PageHeading: string;
+		Brand: string;
 	}
 }    

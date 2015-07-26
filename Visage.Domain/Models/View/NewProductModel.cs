@@ -24,5 +24,7 @@ namespace Visage.Domain.Models.View
 		public double UnitPrice { get; set; }
 		 
 		public string PayPalId { get; set; }
+
+		public string MainCategory { get; set; }
 	}
 }

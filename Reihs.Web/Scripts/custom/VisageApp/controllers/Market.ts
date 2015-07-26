@@ -19,12 +19,26 @@
 
 			var nav = "../../../Templates/Front/Market/Partials/";
 
-			var categories = [
+			var brands = [
 				{ Name: "SkinMedica" },
 				{ Name: "Elta MD" },
 				{ Name: "RevitaLash" },
-                { Name: "Clarisonic" },
-                { Name: "Colorscience" }
+				{ Name: "Clarisonic" },
+				{ Name: "Colorscience" }
+			];
+
+			var categories = [
+				{ Name: "Acne" },
+				{ Name: "Age Defense" },
+				{ Name: "Brighteners" },
+				{ Name: "Brow" },
+				{ Name: "Cleansers and Toners" },
+				{ Name: "Moisturizers" },
+				{ Name: "Redness Relief" },
+				{ Name: "Retinols" },
+				{ Name: "Scar Recovery" },
+				{ Name: "Sunscreens" },
+				{ Name: "Systems and Kits" }
 			];
 
 			function everyThird(index: number): boolean {
@@ -32,7 +46,7 @@
 				if (index == 0)
 					return false;
 
-				if(index % 3 === 0)
+				if (index % 3 === 0)
 					return true;
 				else
 					return false;
@@ -110,11 +124,28 @@
 			function FilterCategory(value) {
 				//console.log('filtering');
 				//console.log(value);
-				return value["Brand"] == $routeParams["Category"];
+				if ($routeParams["brd"] === "" || $routeParams["brd"] === undefined) {
+					return value["Brand"] == $routeParams["cat"];
+				} else {
+					return value["MainCategory"] == $routeParams["brd"];
+				}
 			}
 
 			function goToProductPage(product: any) {
 				$location.path('/Market/Item/' + product.Id);
+			}
+
+			function setFilter() {
+				if (self.$scope.Category == "" || self.$scope.Category == undefined) {
+					self.$scope.FilterQuery = { Brand: self.$scope.Brand };
+					self.$scope.PageHeading = self.$scope.Brand;
+					console.log("Heading: " + self.$scope.PageHeading);
+				} else {
+					self.$scope.FilterQuery = { MainCategory: self.$scope.Category };
+					self.$scope.PageHeading = self.$scope.Category;
+					console.log("Heading: " + self.$scope.PageHeading);
+
+				}
 			}
 
 			self.$scope.GoToProductPage = goToProductPage;
@@ -127,10 +158,13 @@
 
 			self.$scope.templates = templates;
 
+			self.$scope.Brands = brands;
 			self.$scope.Categories = categories;
 
-			self.$scope.Category = $routeParams["Category"];
-			
+			self.$scope.Category = $routeParams["cat"];
+			self.$scope.Brand = $routeParams["brd"];
+
+			self.$scope.FilterQuery = setFilter();
 
 			self.$scope.template = { name: "Index", url: nav + "Index.html" };
 
@@ -153,7 +187,7 @@
 			self.$scope.AddToCart = addToCart;
 
 			self.init();
-			
+
 		}
 	}
 

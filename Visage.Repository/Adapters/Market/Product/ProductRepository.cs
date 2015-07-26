@@ -65,6 +65,7 @@ namespace Reihs.Repository.Adapters.Market.Product
 				found.Name = product.Name;
 				found.PayPalId = product.PayPalId;
 				found.UnitPrice = product.UnitPrice;
+				found.MainCategory = product.MainCategory;
 
 				db.SaveChanges();
 			}

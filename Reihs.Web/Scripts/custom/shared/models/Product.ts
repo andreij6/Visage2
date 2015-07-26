@@ -8,5 +8,6 @@
 		Brand: string;
 		UnitPrice: number;
 		PayPalId: string;
+		MainCategory: string;
 	}
 } 

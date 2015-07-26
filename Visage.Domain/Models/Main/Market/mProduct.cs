@@ -23,6 +23,8 @@ namespace Visage.Domain.Models.Main
 		public double UnitPrice { get; set; }
 
 		public string PayPalId { get; set; }
+
+		public string MainCategory { get; set; }
 	}
 
 	public interface IProduct
@@ -42,5 +44,7 @@ namespace Visage.Domain.Models.Main
 		double UnitPrice { get; set; }
 
 		string PayPalId { get; set; }
+
+		string MainCategory { get; set; }
 	}
 }

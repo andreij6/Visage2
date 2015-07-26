@@ -83,6 +83,10 @@
     <Compile Include="Migrations\201501311642539_addVideosTable.Designer.cs">
       <DependentUpon>201501311642539_addVideosTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201507260038555_AddMainCategoryColumn.cs" />
+    <Compile Include="Migrations\201507260038555_AddMainCategoryColumn.Designer.cs">
+      <DependentUpon>201507260038555_AddMainCategoryColumn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DI\RepositoryModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201501311642539_addVideosTable.resx">
       <DependentUpon>201501311642539_addVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507260038555_AddMainCategoryColumn.resx">
+      <DependentUpon>201507260038555_AddMainCategoryColumn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
