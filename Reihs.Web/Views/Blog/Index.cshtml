@@ -16,7 +16,9 @@
 						</h2>
 					</a>
 					<p class="post-meta">Posted by <a href="#">Lebeau Visage</a> on @item.friendlyPublished()</p>
-					@*<p>@item.getLabels()</p>*@
+					@*@foreach (var label in item.labels) {
+						<p class="pull-right">@label</p>
+					}*@
 				</div>
 				<hr>
 			</div>

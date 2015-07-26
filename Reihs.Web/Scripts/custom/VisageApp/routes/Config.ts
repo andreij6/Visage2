@@ -15,12 +15,14 @@
 					templateUrl: '/Templates/Front/Contact.html',
 					controller: 'Contact'
 				}
-				).when('/Blog',
-				{
-					templateUrl: '/Templates/Front/Blog/Index.html',
-					controller: 'Blog'
-				}
-				).when('/Blog/:Id',
+				)
+				//.when('/Blog',
+				//{
+				//	templateUrl: '/Templates/Front/Blog/Index.html',
+				//	controller: 'Blog'
+				//}
+				//)
+				.when('/Blog/:Id',
 				{
 					templateUrl: '/Templates/Front/Blog/Detail.html',
 					controller: 'Blog'

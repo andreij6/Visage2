@@ -13,7 +13,7 @@
 			self.$scope.Pages = [
 				{ Name: 'Home', Url: '#/' },
 				{ Name: 'About', Url: '#/About' },
-				//{ Name: 'Blog', Url: '#/Blog' },
+				{ Name: 'Blog', Url: '/Blog' },
 				{ Name: 'Contact', Url: '#/Contact' },
 				{ Name: 'Fact Sheets', Url: '#/Resources/FactSheets' },
 				//{ Name: 'Gift Cards', Url: '#/Market/Special/GiftCards' },
