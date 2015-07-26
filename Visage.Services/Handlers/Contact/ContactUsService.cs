@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SendGrid;
 using System.Net.Mail;
 using System.Net;
 using Visage.Services.Interfaces;
@@ -15,33 +14,33 @@ namespace Reihs.Services.Handlers.Contact
 	{
 		public void Send(ContactMessage value, string username, string pswd)
 		{
-			var myMessage = new SendGridMessage();
+			//var myMessage = new SendGridMessage();
 
-			myMessage.From = new MailAddress("john@example.com");
+			//myMessage.From = new MailAddress("john@example.com");
 
-			// Add multiple addresses to the To field.
-			List<String> recipients = new List<String>
-			{
-			    @"Andre Jones <andreij6@gmail.com>"
-			};
+			//// Add multiple addresses to the To field.
+			//List<String> recipients = new List<String>
+			//{
+			//    @"Andre Jones <andreij6@gmail.com>"
+			//};
 
-			myMessage.AddTo(recipients);
+			//myMessage.AddTo(recipients);
 
-			myMessage.Subject = "Testing the SendGrid Library";
+			//myMessage.Subject = "Testing the SendGrid Library";
 
-			myMessage.Html = "<p>Contact Us Submission</p>" +
-				"<ul><li> Name: "+ value.Name +"<li>"+
-					"<li>Email:"+ value.Email +"<li>"+
-					"<li>Phone Number:"+ value.PhoneNumber +"<li>"+
-				"</ul>";
+			//myMessage.Html = "<p>Contact Us Submission</p>" +
+			//	"<ul><li> Name: "+ value.Name +"<li>"+
+			//		"<li>Email:"+ value.Email +"<li>"+
+			//		"<li>Phone Number:"+ value.PhoneNumber +"<li>"+
+			//	"</ul>";
 			
-			myMessage.Text = "Contact Us Submission \n Name: " + value.Name + "Email: " + value.Email + "Phone Number:" + value.PhoneNumber;
+			//myMessage.Text = "Contact Us Submission \n Name: " + value.Name + "Email: " + value.Email + "Phone Number:" + value.PhoneNumber;
 
-			var credentials = new NetworkCredential(username, pswd);
+			//var credentials = new NetworkCredential(username, pswd);
 
-			var transportWeb = new SendGrid.Web(credentials);
+			//var transportWeb = new SendGrid.Web(credentials);
 
-			transportWeb.Deliver(myMessage);
+			//transportWeb.Deliver(myMessage);
 		}
 	}
 }
