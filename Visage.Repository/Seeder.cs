@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity;
 using Visage.Repository.Models.Videos;
 using Visage.Repository;
 using Visage.Domain.Models.Main;
+using Visage.Repository.SeederHelpers;
 
 namespace Reihs.Repository
 {
@@ -63,7 +64,8 @@ namespace Reihs.Repository
 						UnitPrice = 125.0,
 						PayPalId = "C8GPXCKXK7JAA",
 						ImagePath = getImgSM("LYTERA Primary 2oz"),
-						Description = DescriptionsResource.SkinBrightening
+						Description = DescriptionsResource.SkinBrightening,
+						MainCategory = Categories.Brighteners
 					},
 					new mProduct {
 						Name = "AHA / BHA Cleanser",
@@ -71,7 +73,8 @@ namespace Reihs.Repository
 						UnitPrice = 46.0,
 						PayPalId = "9CMV7RRVWCCAA",
 						ImagePath = getImgSM("AHABHA Cleanser"),
-						Description = DescriptionsResource.AHABHACleanser
+						Description = DescriptionsResource.AHABHACleanser,
+						MainCategory = Categories.Cleansers
 					},
 					new mProduct {
 						Name = "AHA/BHA Cream",
@@ -79,7 +82,8 @@ namespace Reihs.Repository
 						UnitPrice = 42.0,
 						PayPalId = "886KF2LBAZCSS",
 						ImagePath = getImgSM("AHABHA Cream 2oz"),
-						Description = DescriptionsResource.AHABHACream
+						Description = DescriptionsResource.AHABHACream,
+						MainCategory = Categories.Moisturizers
 					},
 					new mProduct {
 						Name = "Daily Physical Defense® Sunscreen Broad Spectrum SPF 30+",
@@ -87,7 +91,8 @@ namespace Reihs.Repository
 						UnitPrice = 46.0,
 						PayPalId = "L5V73ZL3CPR4E",
 						ImagePath = getImgSM("Daily-Physical-Defense SPF30 3oz"),
-						Description = DescriptionsResource.DailyPhysicalDefense
+						Description = DescriptionsResource.DailyPhysicalDefense,
+						MainCategory = Categories.Sunscreens
 					},
 					new mProduct {
 						Name = "Dermal Repair Cream",
@@ -95,7 +100,9 @@ namespace Reihs.Repository
 						UnitPrice = 124.0,
 						PayPalId = "TMMZML8T7UH8N",
 						ImagePath = getImgSM("Dermal Repair 1 7oz"),
-						Description = DescriptionsResource.DermalRepairCream
+						Description = DescriptionsResource.DermalRepairCream,
+						MainCategory = Categories.Moisturizers
+
 					},
 					new mProduct {
 						Name = "Environmental Defense Sunscreen™ SPF 50+ with UV ProPlex™",
@@ -103,7 +110,8 @@ namespace Reihs.Repository
 						UnitPrice = 46.0,
 						PayPalId = "XEGEL2NVP8DGC",
 						ImagePath = getImgSM("Environmental Defense Sunscreen SPF50 3oz"),
-						Description = DescriptionsResource.EnvironmentalDefenseSunscreen50
+						Description = DescriptionsResource.EnvironmentalDefenseSunscreen50,
+						MainCategory = Categories.Sunscreens
 					},
 					new mProduct {
 						Name = "Facial Cleanser",
@@ -111,7 +119,8 @@ namespace Reihs.Repository
 						UnitPrice = 36.0,
 						PayPalId = "38STWVQQLDJMA",
 						ImagePath = getImgSM("Facial Cleanser 6oz"),
-						Description = DescriptionsResource.FacialCleanser
+						Description = DescriptionsResource.FacialCleanser,
+						MainCategory = Categories.Cleansers
 					},
 					new mProduct {
 						Name = "Hydrating Complex",
@@ -119,7 +128,8 @@ namespace Reihs.Repository
 						UnitPrice = 84.0,
 						PayPalId = "WW2CDDQBK8QDL",
 						ImagePath = getImgSM("Hydrating Complex"),
-						Description = DescriptionsResource.HydratingComplex
+						Description = DescriptionsResource.HydratingComplex,
+						MainCategory = Categories.AgeDefense
 					},
 					new mProduct {
 						Name = "Purifying Foaming Wash",
@@ -127,7 +137,8 @@ namespace Reihs.Repository
 						UnitPrice = 42.0,
 						PayPalId = "FEE6PDEGSYD3S",
 						ImagePath = getImgSM("Purifying Foaming Wash 5oz"),
-						Description = DescriptionsResource.PurifyingFoamingWash
+						Description = DescriptionsResource.PurifyingFoamingWash,
+						MainCategory = Categories.Acne
 					},
 					new mProduct {
 						Name = "Redness Relief CalmPlex",
@@ -135,7 +146,8 @@ namespace Reihs.Repository
 						UnitPrice = 84.0,
 						PayPalId = "ZG34BPMJSGPXE",
 						ImagePath = getImgSM("Redness Relief CalmPlex"),
-						Description = DescriptionsResource.RednessReliefCream
+						Description = DescriptionsResource.RednessReliefCream,
+						MainCategory = Categories.Redness
 					},
 					new mProduct {
 						Name = "Rejuvenative Moisturizer",
@@ -143,7 +155,8 @@ namespace Reihs.Repository
 						UnitPrice = 56.0,
 						PayPalId = "4VESWU62UYLCJ",
 						ImagePath = getImgSM("Rejuvenative Moisturizer 2oz"),
-						Description = DescriptionsResource.RejuvenateMoisturizer
+						Description = DescriptionsResource.RejuvenateMoisturizer,
+						MainCategory = Categories.Moisturizers
 					},
 					new mProduct {
 						Name = "Rejuvenative Toner",
@@ -151,7 +164,8 @@ namespace Reihs.Repository
 						UnitPrice = 36.0,
 						PayPalId = "8FBNWSENXFLK6",
 						ImagePath = getImgSM("Rejuvenative Toner 6oz"),
-						Description = DescriptionsResource.RejuvenateToner
+						Description = DescriptionsResource.RejuvenateToner,
+						MainCategory = Categories.Cleansers
 					},
 					new mProduct {
 						Name = "Retinol Complex .25",
@@ -159,7 +173,8 @@ namespace Reihs.Repository
 						UnitPrice = 60.0,
 						PayPalId = "VL7WJ37J5GMX6",
 						ImagePath = getImgSM("Retinol Complex 25"),
-						Description = DescriptionsResource.RetinolComplex25
+						Description = DescriptionsResource.RetinolComplex25,
+						MainCategory = Categories.Retinols
 					},
 					new mProduct {
 						Name = "Retinol Complex 0.5",
@@ -167,7 +182,8 @@ namespace Reihs.Repository
 						UnitPrice = 75.0,
 						PayPalId = "ZWDJPNDRZZTU6",
 						ImagePath = getImgSM("Retinol Complex 50"),
-						Description = DescriptionsResource.RetinolComplex05
+						Description = DescriptionsResource.RetinolComplex05,
+						MainCategory = Categories.Retinols
 					},
 					new mProduct {
 						Name = "Retinol Complex 1.0",
@@ -175,7 +191,8 @@ namespace Reihs.Repository
 						UnitPrice = 90.0,
 						PayPalId = "8HAVECYSMFUQ",
 						ImagePath = getImgSM("Retinol Complex 1"),
-						Description = DescriptionsResource.RetinolComplex1
+						Description = DescriptionsResource.RetinolComplex1,
+						MainCategory = Categories.Retinols
 					},
 					new mProduct {
 						Name = "Scar Recovery Gel with Centelline™ (0.5 Oz.)",
@@ -183,7 +200,8 @@ namespace Reihs.Repository
 						UnitPrice = 42.0,
 						PayPalId = "V4LUU2VZ8GDUQ",
 						ImagePath = getImgSM("Scar Recovery50oz"),
-						Description = DescriptionsResource.ScarRecoveryGelwithC5oz
+						Description = DescriptionsResource.ScarRecoveryGelwithC5oz,
+						MainCategory = Categories.ScarRecovery
 					},
 					new mProduct {
 						Name = "Scar Recovery Gel with Centelline™ (2 Oz.)",
@@ -191,7 +209,8 @@ namespace Reihs.Repository
 						UnitPrice = 98.0,
 						PayPalId = "DQ98XZFGS5RLS",
 						ImagePath = getImgSM("Scar Recovery2oz"),
-						Description = DescriptionsResource.ScarRecoveryGelwithC2oz
+						Description = DescriptionsResource.ScarRecoveryGelwithC2oz,
+						MainCategory = Categories.ScarRecovery
 					},
 					new mProduct {
 						Name = "Sensitive Skin Cleanser",
@@ -199,7 +218,8 @@ namespace Reihs.Repository
 						UnitPrice = 36.0,
 						PayPalId = "39P93MBJ2BRM2",
 						ImagePath = getImgSM("Sensitive Skin Cleanser 6oz"),
-						Description = DescriptionsResource.SensitiveSkinCleanser
+						Description = DescriptionsResource.SensitiveSkinCleanser,
+						MainCategory = Categories.Acne
 					},
 					new mProduct {
 						Name = "TNS Ceramide Treatment Cream™",
@@ -207,7 +227,8 @@ namespace Reihs.Repository
 						UnitPrice = 66.0,
 						PayPalId = "3XPTCKR9KR3H4",
 						ImagePath = getImgSM("TNS Ceramide Treatment Cream 2oz"),
-						Description = DescriptionsResource.TNSCeramideTreatmentCream
+						Description = DescriptionsResource.TNSCeramideTreatmentCream,
+						MainCategory = Categories.Moisturizers
 					},
 					new mProduct {
 						Name = "TNS Essential Serum®",
@@ -215,7 +236,8 @@ namespace Reihs.Repository
 						UnitPrice = 270.0,
 						PayPalId = "JJ3KRHYFXS722",
 						ImagePath = getImgSM("TNS Essential Serum 1oz"),
-						Description = DescriptionsResource.TNSEssentialSerum
+						Description = DescriptionsResource.TNSEssentialSerum,
+						MainCategory = Categories.AgeDefense
 					},
 					new mProduct {
 						Name = "TNS Eye Repair™",
@@ -223,7 +245,8 @@ namespace Reihs.Repository
 						UnitPrice = 98.0,
 						PayPalId = "WVB9WJB6PWYNJ",
 						ImagePath = getImgSM("TNS Eye Repair"),
-						Description = DescriptionsResource.TNSEyeRepair
+						Description = DescriptionsResource.TNSEyeRepair,
+						MainCategory = Categories.AgeDefense
 					},
 					new mProduct {
 						Name = "TNS Illuminating Eye Cream®",
@@ -231,7 +254,8 @@ namespace Reihs.Repository
 						UnitPrice = 88.0,
 						PayPalId = "73EDPAZLQXVNC",
 						ImagePath = getImgSM("TNS IlluminatingEyeCream"),
-						Description = DescriptionsResource.TNSIlluminatingEyeCream
+						Description = DescriptionsResource.TNSIlluminatingEyeCream,
+						MainCategory = Categories.AgeDefense
 					},
 					new mProduct {
 						Name = "TNS Lip Plump System®",
@@ -239,7 +263,8 @@ namespace Reihs.Repository
 						UnitPrice = 58.0,
 						PayPalId = "XJJ7HWH8P6FP2",
 						ImagePath = getImgSM("TNS LipPlump System 06oz"),
-						Description = DescriptionsResource.TNSPlumpLipSystem
+						Description = DescriptionsResource.TNSPlumpLipSystem,
+						MainCategory = Categories.Systems
 					},
 					new mProduct {
 						Name = "TNS Recovery Complex®",
@@ -247,14 +272,16 @@ namespace Reihs.Repository
 						UnitPrice = 172.0,
 						PayPalId = "24AWZEVSBZUVE",
 						ImagePath = getImgSM("TNS Recovery Complex 063oz"),
-						Description = DescriptionsResource.TNSRecovery
+						Description = DescriptionsResource.TNSRecovery,
+						MainCategory = Categories.AgeDefense
 					},
 					new mProduct {
 						Name = "TNS Ultimate Daily Moisturizer™ SPF 20 Sunscreen",
 						Brand = "SkinMedica",
 						UnitPrice = 88.0,
 						PayPalId = "KEH9G9EJSAW6W",
-						ImagePath = getImgSM("TNS Ultimate Daily Moisturizer SPF20 2oz")
+						ImagePath = getImgSM("TNS Ultimate Daily Moisturizer SPF20 2oz"),
+						MainCategory = Categories.Sunscreens
 					},
 					new mProduct {
 						Name = "Ultra Sheer Moisturizer",
@@ -262,7 +289,8 @@ namespace Reihs.Repository
 						UnitPrice = 56.0,
 						PayPalId = "SVCA7TEVK3MCE",
 						ImagePath = getImgSM("Ultra Sheer Moisturizer 2oz"),
-						Description = DescriptionsResource.UltraSheer
+						Description = DescriptionsResource.UltraSheer,
+						MainCategory = Categories.Moisturizers
 					},
 					new mProduct {
 						Name = "Uplifting Eye Serum™",
@@ -270,7 +298,8 @@ namespace Reihs.Repository
 						UnitPrice = 58.0,
 						PayPalId = "RNFMP5QRGXP68",
 						ImagePath = getImgSM("Uplifting Eye Serum"),
-						Description = DescriptionsResource.UpliftingEyeSerum
+						Description = DescriptionsResource.UpliftingEyeSerum,
+						MainCategory = Categories.AgeDefense
 					},
 					new mProduct {
 						Name = "Vitamin C+E Complex",
@@ -278,7 +307,8 @@ namespace Reihs.Repository
 						UnitPrice = 98.0,
 						PayPalId = "HQSJR49JEZRAY",
 						ImagePath = getImgSM("VitaminCE"),
-						Description = DescriptionsResource.VitaminCE
+						Description = DescriptionsResource.VitaminCE,
+						MainCategory = Categories.AgeDefense
 					}
 
 				);
@@ -311,7 +341,8 @@ namespace Reihs.Repository
 						UnitPrice = 14.5,
 						PayPalId = "23VUY55JF8QQU",
 						ImagePath = getImgEMD("_IntenseMoisturizer"),
-						Description = DescriptionsResource.IntenseMoisturizer
+						Description = DescriptionsResource.IntenseMoisturizer,
+						MainCategory = Categories.Moisturizers
 					},
 					new mProduct {
 						Name = "UV Clear 46 SPF",
@@ -319,7 +350,8 @@ namespace Reihs.Repository
 						UnitPrice = 37.0,
 						PayPalId = "JSRYJAWF7WTK8",
 						ImagePath = getImgEMD("_UVClear46SPF"),
-						Description = DescriptionsResource.UVClear46
+						Description = DescriptionsResource.UVClear46,
+						MainCategory = Categories.Sunscreens
 					},
 					new mProduct {
 						Name = "UV Daily 40 SPF",
@@ -327,7 +359,8 @@ namespace Reihs.Repository
 						UnitPrice = 30.0,
 						PayPalId = "HC5XP4S54CJCL",
 						ImagePath = getImgEMD("_UVDaily40SPF"),
-						Description = DescriptionsResource.UVDaily40
+						Description = DescriptionsResource.UVDaily40,
+						MainCategory = Categories.Sunscreens
 					},
 					new mProduct {
 						Name = "UV Physical 41",
@@ -335,7 +368,8 @@ namespace Reihs.Repository
 						UnitPrice = 36.0,
 						PayPalId = "BLTSS3PDPVUQL",
 						ImagePath = getImgEMD("_UVPhysical41SPF"),
-						Description = DescriptionsResource.UVPhysical41
+						Description = DescriptionsResource.UVPhysical41,
+						MainCategory = Categories.Sunscreens
 					},
 					new mProduct {
 						Name = "UV Shield 45 SPF",
@@ -343,7 +377,8 @@ namespace Reihs.Repository
 						UnitPrice = 36.0,
 						PayPalId = "CCNBJLUW2GGRS",
 						ImagePath = getImgEMD("_UVShield45SPF"),
-						Description = DescriptionsResource.UVShield45
+						Description = DescriptionsResource.UVShield45,
+						MainCategory = Categories.Sunscreens
 					}
 			);
 
@@ -364,7 +399,8 @@ namespace Reihs.Repository
 					UnitPrice = 120.0,
 					PayPalId = "E9G58TQK3UYAY",
 					ImagePath = getImgRL("RevitaLash AdvForm"),
-					Description = DescriptionsResource.Revitalash1
+					Description = DescriptionsResource.Revitalash1,
+					MainCategory = Categories.Brow
 				},
 				new mProduct {
 					Name = "RevitaBrow Advanced",
@@ -372,7 +408,8 @@ namespace Reihs.Repository
 					UnitPrice = 110.0,
 					PayPalId = "DQ5ZWAMXVE54S",
 					ImagePath = getImgRL("RevitaLash ReVitaBrow"),
-					Description = DescriptionsResource.RevitaBrow
+					Description = DescriptionsResource.RevitaBrow,
+					MainCategory = Categories.Brow
 				}
 				);
 
@@ -393,7 +430,8 @@ namespace Reihs.Repository
 					UnitPrice = 120.0,
 					PayPalId = "B68USQLA37324",
 					ImagePath = getImgCS("Colorscience EvenUp"),
-					Description = DescriptionsResource.EvenUp
+					Description = DescriptionsResource.EvenUp,
+					MainCategory = Categories.Sunscreens
 				},
 				new mProduct {
 					Name = "Sunforgettable® Mineral Sunscreen Brush SPF 50 for active use",
@@ -401,7 +439,8 @@ namespace Reihs.Repository
 					UnitPrice = 64.0,
 					PayPalId = "DRLJNG73CTYEA",
 					ImagePath = getImgCS("Colorscience Sunforgettable"),
-					Description = DescriptionsResource.Sunforgettable
+					Description = DescriptionsResource.Sunforgettable,
+					MainCategory = Categories.Sunscreens
 				});
 
 			context.SaveChanges();
@@ -420,7 +459,8 @@ namespace Reihs.Repository
 					Brand = "Clarisonic",
 					UnitPrice = 125.0,
 					PayPalId = "S73DYTU3DGURJ",
-					ImagePath = getImgClarsonic("ClarisonicMia")
+					ImagePath = getImgClarsonic("ClarisonicMia"),
+					MainCategory = Categories.Systems
 				},
 				//new mProduct {
 				//	Name = "Clarisonic Pro",
@@ -444,7 +484,8 @@ namespace Reihs.Repository
 			 new mProduct {
 				 Name = "Gift Card",
 				 UnitPrice = 0.0,
-				 PayPalId = "SJ22FXJAFF9RL"
+				 PayPalId = "SJ22FXJAFF9RL",
+				 MainCategory = Categories.GiftCard
 			 });
 
 			context.SaveChanges();

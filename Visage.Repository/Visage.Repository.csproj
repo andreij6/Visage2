@@ -65,7 +65,8 @@
     <Compile Include="Adapters\User\UserRepository.cs" />
     <Compile Include="Adapters\Video\VideoRepository.cs" />
     <Compile Include="DBContext.cs" />
-    <Compile Include="Descriptions.cs" />
+    <Compile Include="SeederHelpers\Categories.cs" />
+    <Compile Include="SeederHelpers\Descriptions.cs" />
     <Compile Include="DescriptionsResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
