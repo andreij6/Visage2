@@ -4,7 +4,7 @@
 		private $scope: Extensions.IContactScope;
 		private ApiService: ContactAPIService;
 
-		constructor($scope: Extensions.IContactScope, apiService: ContactAPIService) {
+		constructor($scope: Extensions.IContactScope, apiService: ContactAPIService, $location: ng.ILocationService, $anchorScroll: ng.IAnchorScrollService) {
 			var self = this;
 			self.$scope = $scope;
 			self.ApiService = apiService;
@@ -17,6 +17,10 @@
 				self.$scope.LocationImage = location.SetImage();
 
 				self.$scope.Showing = true;
+			}
+
+			if ($location.hash() === "locations") {
+				$anchorScroll();
 			}
 
 			self.init();
@@ -63,6 +67,7 @@
 					//console.log(error); 
 				});
 		}
+
 	}
 
 	export class ContactInfo {
@@ -79,5 +84,5 @@
 		}
 	}
 
-	Contact.$inject = ['$scope', 'ContactAPIService'];
+	Contact.$inject = ['$scope', 'ContactAPIService', '$location', '$anchorScroll'];
 }

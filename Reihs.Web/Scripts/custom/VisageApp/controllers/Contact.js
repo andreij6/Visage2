@@ -1,7 +1,7 @@
 ﻿var VisageApp;
 (function (VisageApp) {
     var Contact = (function () {
-        function Contact($scope, apiService) {
+        function Contact($scope, apiService, $location, $anchorScroll) {
             var self = this;
             self.$scope = $scope;
             self.ApiService = apiService;
@@ -14,6 +14,10 @@
                 self.$scope.LocationImage = location.SetImage();
 
                 self.$scope.Showing = true;
+            }
+
+            if ($location.hash() === "locations") {
+                $anchorScroll();
             }
 
             self.init();
@@ -59,6 +63,6 @@
     })();
     VisageApp.ContactInfo = ContactInfo;
 
-    Contact.$inject = ['$scope', 'ContactAPIService'];
+    Contact.$inject = ['$scope', 'ContactAPIService', '$location', '$anchorScroll'];
 })(VisageApp || (VisageApp = {}));
 //# sourceMappingURL=Contact.js.map
