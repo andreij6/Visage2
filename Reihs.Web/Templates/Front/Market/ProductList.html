@@ -50,6 +50,7 @@
 						</div>
 					</div>
 				</div><!--sidebar-box-->
+
 			</div>
 
 			<div class="col-md-9">
@@ -60,10 +61,10 @@
 					</h1>
 				</div>
 				<br /><br />
-				
+
 
 				<!--SubCategories-->
-				<!--<pager total-items="BrandProducts.length" ng-model="currentPage"></pager> Not working correctly with HiLo Buttons --> 
+				<!--<pager total-items="BrandProducts.length" ng-model="currentPage"></pager> Not working correctly with HiLo Buttons -->
 				<!-- | limitTo: 6" ng-show="$index >= currentPage - 1 && $index < currentPage + 5" extra stuf for pagination - GOES ON DIV BELOW ROW DIV-->
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-repeat-start="product in BrandProducts| filter: FilterQuery | orderBy: OrderBy.Parameter">
@@ -91,6 +92,26 @@
 					<div ng-repeat-end ng-if="$index + 1 % 2 === 0 && $index > 0" class="clear"></div>
 				</div>
 			</div>
+
+			<div class="col-sm-12 clear">
+				<hr />
+				<div class="col-sm-2 col-sm-offset-1">
+					<a href="http://www.clarisonic.com/"><img class="img-responsive" src="../../../Content/Images/Brands/clarisonic-logo.png" alt="clarisonic" /></a>
+				</div>
+				<div class="col-sm-2">
+					<a href="https://www.colorescience.com/"><img class="img-responsive" src="../../../Content/Images/Brands/colorescience-Logo.jpg" alt="colorescience" /></a>
+				</div>
+				<div class="col-sm-2">
+					<a href="http://eltamd.com/"><img class="img-responsive" src="../../../Content/Images/Brands/EltaMD_LOGO.jpg" alt="EltaMD" /></a>
+				</div>
+				<div class="col-sm-2">
+					<a href="https://www.revitalash.com/"><img class="img-responsive" src="../../../Content/Images/Brands/RevitaLash-logo.jpg" alt="RevitaLash" /></a>
+				</div>
+				<div class="col-sm-2">
+					<a href="http://www.skinmedica.com/"><img class="img-responsive" src="../../../Content/Images/Brands/skin-medica.jpg" alt="SkinMedica" /></a>
+				</div>
+			</div>
+
 		</div>
 	</div>
 	<div class="divide80"></div>
